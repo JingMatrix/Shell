@@ -1,0 +1,54 @@
+Preface,7
+Contents,8
+Introductory Remarks: a Guide for the Reader,10
+d=17
+PART i: BASIC CONCEPTS,1
+	1. Affine Sets,3
+	2. Convex Sets and Cones,10
+	3. The Algebra of Convex Sets,16
+	4. Convex Functions,23
+	5. Functional Operations,32
+PART II: TOPOLOGICAL PROPERTIES,41
+	6. Relative Interiors of Convex Sets,43
+	7. Closures of Convex Functions,51
+	8. Recession Cones and Unboundedness,60
+	9. Some Closedness Criteria,72
+	10. Continuity of Convex Functions,82
+PART III: DUALITY CORRESPONDENCES,93
+	11. Separation Theorems,95
+	12. Conjugates of Convex Functions,102
+	13. Support Functions,112
+	14. Polars of Convex Sets,121
+	15. Polars of Convex Functions,128
+	16. Dual Operations,140
+PART IV: REPRESENTATION AND INEQUALITIES,151
+	17. Caratheodory's Theorem,153
+	18. Extreme Points and Faces of Convex Sets,162
+	19. Polyhedral Convex Sets and Functions,170
+	20. Some Applications of Polyhedral Convexity,179
+	21. Helly's Theorem and Systems of Inequalities,185
+	22. Linear Inequalities,198
+PART V: DIFFERENTIAL THEORY,211
+	23. Directional Derivatives and Subgradients,213
+	24. Differential Continuity and Monotonicity,227
+	25. Differentiability of Convex Functions,241
+	26. The Legendre Transformation,251
+PART VI: CONSTRAINED EXTREMUM PROBLEMS,261
+	27. The Minimum of a Convex Function,263
+	28. Ordinary Convex Programs and Lagrange Multipliers,273
+	29. Bifunctions and Generalized Convex Programs,291
+	30. Adjoint Bifunctions and Dual Programs,307
+	31. Fenchel's Duality Theorem,327
+	32. The Maximum of a Convex Function,342
+PART VII: SADDLE-FUNCTIONS AND MINIMAX THEORY,347
+	33. Saddle-Functions,349
+	34. Closures and Equivalence Classes,359
+	35. Continuity and Differentiability of Saddle-functions,370
+	36. Minimax Problems,379
+	37. Conjugate Saddle-functions and Minimax Theorems,388
+PART VIII: CONVEX ALGEBRA,399
+	38. The Algebra of Bifunctions,401
+	39. Convex Processes,413
+Comments and References,425
+Bibliography,433
+Index,447

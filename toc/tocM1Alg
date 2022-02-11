@@ -1,0 +1,44 @@
+﻿Groupes,4
+	Actions de groupes,5
+		1.1 Définitions&#44; exemples&#44; vocabulaire,5
+		1.2 p-groupes,8
+		1.3 les théorèmes de Sylow,10
+		1.4 Exercices sur le chapitre “Actions de groupes ”,12
+	Représentations linéaires,13
+		2.1 Définitions&#44; vocabulaire&#44; exemples,13
+		2.2 Représentations irréductibles,15
+		2.3 Complète réductibilité,16
+		2.4 Représentations des groupes abéliens finis,17
+		2.5 Théorie des caractères,19
+		2.6 Exercices sur le chapitre “Représentations linéaires ”,25
+Corps,26	
+	Extensions de corps,27
+		1.0 Rappels et compléments,27
+		1.1 Notion d’extension,28
+		1.2 Éléments algébriques&#44; éléments transcendants,29
+		1.3 Extensions finies,29
+		1.4 Extensions quadratiques,30
+		1.5 Extensions cyclotomiques,31
+		1.6 Extensions algébriques,34
+		1.7 Corps de rupture,35
+		1.8 Clôture algébrique,35
+		1.9 Corps de décomposition&#44; extensions normales,37
+		1.10 Exercices sur le chapitre “Extensions de corps ”,39
+	Corps finis,40
+		2.1 Extensions quadratiques de Fp,40
+		2.2 Corps finis,41
+		2.3 Sous-corps de Fp,42
+		2.4 Le théorème de Wedderburn,43
+		2.5 Exercices sur le chapitre “Corps finis ”,44
+Modules,45
+	Généralités sur les modules,46
+		1.1 Modules&#44; sous-modules,46
+		1.2 Morphismes,49
+		1.3 Familles,51
+		1.4 Exercices sur le chapitre “Généralités”,58
+		2.1 Modules libres,60
+	Modules sur un anneau principal,60
+		2.2 Modules de type fini sur un anneau principal,65
+		2.3 Diviseurs élémentaires,66
+		2.4 Applications,68
+		2.5 Exercices sur le chapitre “Modules sur un anneau principal”,71

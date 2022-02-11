@@ -1,0 +1,141 @@
+Preface,12
+d=15
+Chapter 1. Differentiable Manifolds,1
+	§1.1. Preliminaries,2
+	§1.2. Topological Manifolds,6
+	§1.3. Charts, Atlases and Smooth Structures,11
+	§1.4. Smooth Maps and Diffeomorphisms,22
+	§1.5. Cut-off Functions and Partitions of Unity,28
+	§1.6. Coverings and Discrete Groups,31
+	§1.7. Regular Submanifolds,46
+	§1.8. Manifolds with Boundary,48
+	Problems,51
+Chapter 2. The Tangent Structure,55
+	§2.1. The Tangent Space,55
+	§2.2. Interpretations,65
+	§2.3. The Tangent Map,66
+	§2.4. Tangents of Products,72
+	§2.5. Critical Points and Values,74
+	§2.6. Rank and Level Set,78
+	§2.7. The Tangent and Cotangent Bundles,81
+	§2.8. Vector Fields,87
+	§2.9. 1-Forms,110
+	§2.10. Line Integrals and Conservative Fields,116
+	§2.11. Moving Frames,120
+	Problems,122
+Chapter 3. Immersion and Submersion,127
+	§3.1. Immersions,127
+	§3.2. Immersed and Weakly Embedded Submanifolds,130
+	§3.3. Submersions,138
+	Problems,140
+Chapter 4. Curves and Hypersurfaces in Euclidean Space,143
+	§4.1. Curves,145
+	§4.2. Hypersurfaces,152
+	§4.3. The Levi-Civita Covariant Derivative,165
+	§4.4. Area and Mean Curvature,178
+	§4.5. More on Gauss Curvature,180
+	§4.6. Gauss Curvature Heuristics,184
+	Problems,187
+Chapter 5. Lie Groups,189
+	§5.1. Deﬁnitions and Examples,189
+	§5.2. Linear Lie Groups,192
+	§5.3. Lie Group Homomorphisms,201
+	§5.4. Lie Algebras and Exponential Maps,204
+	§5.5. The Adjoint Representation of a Lie Group,220
+	§5.6. The Maurer-Cartan Form,224
+	§5.7. Lie Group Actions,228
+	§5.8. Homogeneous Spaces,240
+	§5.9. Combining Representations,249
+	Problems,253
+Chapter 6. Fiber Bundles,257
+	§6.1. General Fiber Bundles,257
+	§6.2. Vector Bundles,270
+	§6.3. Tensor Products of Vector Bundles,282
+	§6.4. Smooth Functors,283
+	§6.5. Hom,285
+	§6.6. Algebra Bundles,287
+	§6.7. Sheaves,288
+	§6.8. Principal and Associated Bundles,291
+	Problems,303
+Chapter 7. Tensors,307
+	§7.1. Some Multilinear Algebra,308
+	§7.2. Bottom-Up Approach to Tensor Fields,318
+	§7.3. Top-Down Approach to Tensor Fields,323
+	§7.4. Matching the Two Approaches to Tensor Fields,324
+	§7.5. Tensor Derivations,327
+	§7.6. Metric Tensors,331
+	Problems,342
+Chapter 8. Differential Forms,345
+	§8.1. More Multilinear Algebra,345
+	§8.2. Differential Forms,358
+	§8.3. Exterior Derivative,363
+	§8.4. Vector-Valued and Algebra-Valued Forms,367
+	§8.5. Bundle-Valued Forms,370
+	§8.6. Operator Interactions,373
+	§8.7. Orientation,375
+	§8.8. Invariant Forms,384
+	Problems,388
+Chapter 9. Integration and Stokes’ Theorem,391
+	§9.1. Stokes’ Theorem,394
+	§9.2. Differentiating Integral Expressions; Divergence,397
+	§9.3. Stokes’ Theorem for Chains,400
+	§9.4. Differential Forms and Metrics,404
+	§9.5. Integral Formulas,414
+	§9.6. The Hodge Decomposition,418
+	§9.7. Vector Analysis on R3,425
+	§9.8. Electromagnetism,429
+	§9.9. Surface Theory Redux,434
+	Problems,437
+Chapter 10. De Rham Cohomology,441
+	§10.1. The Mayer-Vietoris Sequence,447
+	§10.2. Homotopy Invariance,449
+	§10.3. Compactly Supported Cohomology,456
+	§10.4. Poincaré Duality,460
+	Problems,465
+Chapter 11. Distributions and Frobenius’ Theorem,467
+	§11.1. Deﬁnitions,468
+	§11.2. The Local Frobenius Theorem,471
+	§11.3. Differential Forms and Integrability,473
+	§11.4. Global Frobenius Theorem,478
+	§11.5. Applications to Lie Groups,484
+	§11.6. Fundamental Theorem of Surface Theory,486
+	§11.7. Local Fundamental Theorem of Calculus,494
+	Problems,498
+Chapter 12. Connections and Covariant Derivatives,501
+	§12.1. Deﬁnitions,501
+	§12.2. Connection Forms,506
+	§12.3. Differentiation Along a Map,507
+	§12.4. Ehresmann Connections,509
+	§12.5. Curvature,525
+	§12.6. Connections on Tangent Bundles,530
+	§12.7. Comparing the Differential Operators,532
+	§12.8. Higher Covariant Derivatives,534
+	§12.9. Exterior Covariant Derivative,536
+	§12.10. Curvature Again,540
+	§12.11. The Bianchi Identity,541
+	§12.12. G-Connections,542
+	Problems,544
+Chapter 13. Riemannian and Semi-Riemannian Geometry,547
+	§13.1. Levi-Civita Connection,550
+	§13.2. Riemann Curvature Tensor,553
+	§13.3. Semi-Riemannian Submanifolds,560
+	§13.4. Geodesics,567
+	§13.5. Riemannian Manifolds and Distance,585
+	§13.6. Lorentz Geometry,588
+	§13.7. Jacobi Fields,594
+	§13.8. First and Second Variation of Arc Length,599
+	§13.9. More Riemannian Geometry,612
+	§13.10. Cut Locus,617
+	§13.11. Rauch’s Comparison Theorem,619
+	§13.12. Weitzenböck Formulas,623
+	§13.13. Structure of General Relativity,627
+	Problems,634
+Appendix A. The Language of Category Theory,637
+Appendix B. Topology,643
+	§B.1. The Shrinking Lemma,643
+	§B.2. Locally Euclidean Spaces,645
+Appendix C. Some Calculus Theorems,647
+Appendix D. Modules and Multilinearity,649
+	§D.1. R-Algebras,660
+Bibliography,663
+Index,667

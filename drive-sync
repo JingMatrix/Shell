@@ -1,0 +1,13 @@
+#! /bin/bash
+
+## Pull news change
+rclone copy -L --ignore-existing drive:Mathematics ~/Mathematics
+rclone copy -L --ignore-existing drive:Reading ~/Reading
+
+## Upload local changes
+rclone -L sync ~/Mathematics drive:Mathematics
+rclone -L sync ~/Reading drive:Reading
+
+## Backup to Seafile at cnrs
+rclone -L sync ~/Mathematics cnrs:Mathematics
+rclone -L sync ~/Reading cnrs:Reading

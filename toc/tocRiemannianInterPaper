@@ -1,0 +1,10 @@
+1 Introduction and main results,2
+2 Riemannian geometry: exponential map, distance functions, and,9
+3 Background on mass transport and properties of c-concave,16
+	3.1 Mass transport and c-concave functions,16
+	3.2 Semi-concavity and Hessians for c-concave functions,18
+4 The optimal transport Jacobian,23
+	4.1 Non-smooth differentiation of mass transport,23
+	4.2 Jacobian equation and optimal changes of variables,25
+5 Optimal interpolating maps and densities,29
+6 Proof of Main Theorem and its corollaries,33

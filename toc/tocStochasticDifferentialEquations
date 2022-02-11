@@ -1,0 +1,64 @@
+﻿Table of Contents,18
+1. Introduction,21
+     1.1 Stochastic Analogs of Classical Differential Equations,21
+     1.2 Filtering Problems,22
+     1.3 Stochastic Approach to Deterministic Boundary Value Problems,22
+     1.4 Optimal Stopping,23
+     1.5 Stochastic Control,24
+     1.6 Mathematical Finance,24
+2. Some Mathematical Preliminaries,27
+     2.1 Probability Spaces Random Variables and Stochastic Processes,27
+     2.2 An Important Example: Brownian Motion,31
+     Exercises,34
+3. Itô Integrals,41
+     3.1 Construction of the Itô Integral,41
+     3.2 Some properties of the Itô integral,50
+     3.3 Extensions of the Itô integral,54
+     Exercises,57
+4. The Itô Formula and the Martingale Representation Theorem,63
+     4.1 The 1-dimensional Itô formula,63
+     4.2 The Multi-dimensional Itô Formula,68
+     4.3 The Martingale Representation Theorem,69
+     Exercises,74
+5. Stochastic Differential Equations,81
+     5.1 Examples and Some Solution Methods,81
+     5.2 An Existence and Uniqueness Result,86
+     5.3 Weak and Strong Solutions,90
+     Exercises,92
+6. The Filtering Problem,101
+     6.1 Introduction,101
+     6.2 The 1-Dimensional Linear Filtering Problem,103
+     6.3 The Multidimensional Linear Filtering Problem,122
+     Exercises,123
+7. Diffusions: Basic Properties,129
+     7.1 The Markov Property,129
+     7.2 The Strong Markov Property,132
+     7.3 The Generator of an Itô Diffusion,137
+     7.4 The Dynkin Formula,140
+     7.5 The Characteristic Operator,142
+     Exercises,144
+8. Other Topics in Diffusion Theory,153
+     8.1 Kolmogorov's Backward Equation. The Resolvent,153
+     8.2 The Feynman-Kac Formula. Killing,157
+     8.3 The Martingale Problem,160
+     8.4 When is an Itô Process a Diffusion?,162
+     8.5 Random Time Change,167
+     8.6 The Girsanov Theorem,173
+     Exercises,180
+9. Applications to Boundary Value Problems,187
+     9.1 The Combined Dirichlet-Poisson Problem. Uniqueness,187
+     9.2 The Dirichlet Problem. Regular Points,189
+     9.3 The Poisson Problem,201
+     Exercises,208
+10. Application to Optimal Stopping,215
+     10.1 The Time-Homogeneous Case,215
+     10.2 The Time-Inhomogeneous Case,227
+     10.3 Optimal Stopping Problems Involving an Integral,232
+     10.4 Connection with Variational Inequalities,234
+     Exercises,238
+11. Application to Stochastic Control,245
+     11.1 Statement of the Problem,245
+     11.2 The Hamilton-Jacobi-Bellman Equation,247
+     11.3 Stochastic control problems with terminal conditions,261
+     Exercises,263
+     

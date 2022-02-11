@@ -1,0 +1,47 @@
+#!zsh
+# dependency
+#  - ./scripts/epubee-download
+#
+set -e
+curl -s -X POST 'http://www.ferebook.com/keys/get_ebook_list_search.asmx/getSearchList' \
+	-H 'Accept: application/json, text/javascript, */*; q=0.01' \
+	-H 'Content-Type: application/json' \
+	-H 'X-Requested-With: XMLHttpRequest' \
+	-d "{skey:\"$1\"}" \
+	>/tmp/epubee.json
+
+# An example of decode
+# GqPFOb5Wz5Cj7pJGRFYmXk4dUE6UXlcXL0YE4cC3pLv6jL8tA9yRgQ==
+# 8c60af99e78b946c57eca793cb7341ac
+# This is difficult to decrypt, maybe related to SQL database, binary to Base64 and md5
+# http://reader.epubee.com/mobile/?rq=GqPFOb5Wz5Cj7pJGRFYmXk4dUE6UXlcXL0YE4cC3pLv6jL8tA9yRgQ==
+download_book() {
+	# curl -s "http://reader.epubee.com/mobile/?rq=$BID" >/tmp/epubee.html
+	# url=$(grep -oE 'books/mobile/\w\w/[^&]+' /tmp/epubee.html)
+	# This no longer works, they change stratege to encode bid
+	# hope oneday I can comment next line
+	exit
+	if [[ -z $url ]]; then
+		bat -p /tmp/epubee.html
+	else
+		link=http://reader.epubee.com/$url/
+		echo -n "Continue to download book from: $link?"
+		(if read -q; then
+			echo $link | epub-download 2>&/dev/null
+		fi)
+	fi
+}
+
+# Now I only need to add a UI for user to select books to download
+# BID=$(jq -r '.d | .[1] | .BID' /tmp/epubee.json)
+# download_book
+#
+jq '.d | .[] | "\(.FileSize)\t\(.Title)"' /tmp/epubee.json -r | bat --style=numbers
+while read -r cmd; do
+	if [[ $cmd -gt 0 ]]; then
+		BID=$(jq -r '.d | .['$((cmd - 1))'] | .BID' /tmp/epubee.json)
+		download_book
+	else
+		exit
+	fi
+done

@@ -1,0 +1,86 @@
+CONTENTS,12
+Basic terminology and notation,16
+d=17
+Measure theory,1
+	1.1 Abstract measure theory,1
+	1.2 Weak convergence in Lp spaces,15
+	1.3 Measures in metric spaces,18
+	1.4 Outer measures and weak* convergence,21
+	1.5 Operations on measures,29
+	1.6 Exercises,35
+Basic geometric measure theory,40
+	2.1 Convolution,40
+	2.2 Sobolev spaces,42
+	2.3 Lipschitz functions,45
+	2.4 Covering and derivation of measures,48
+	2.5 Disintegration,56
+	2.6 Functional defined on measures,62
+	2.7 Tangent measures,69
+	2.8 Hausdorff measures,72
+	2.9 Rectifiable sets,79
+	2.10 Area formula,85
+	2.11 Approximate tangent space,92
+	2.12 Coarea formula,100
+	2.13 Minkowski content,108
+	2.14 Exercises,113
+Functions of bounded variation,116
+	3.1 The space BV,117
+	3.2 В V functions of one variable,134
+	3.3 Sets of finite perimeter,143
+	3.4 Embedding theorems and isoperimetric inequalities,148
+	3.5 Structure of sets of finite perimeter,153
+	3.6 Approximate continuity and differentiability,160
+	3.7 Fine properties of В V functions,167
+	3.8 Decomposability of В V and boundary trace theorems,177
+	3.9 Decomposition of derivative and rank one properties,184
+	3.10 The chain rule in В V,188
+	3.11 One-dimensional restrictions of В V functions,193
+	3.12 A brief historical note on В V functions,204
+	3.13 Exercises,208
+Special functions of bounded variation,211
+	4.1 The space SB V,212
+	4.2 Proof of the closure and compactness theorems,217
+	4.3 Poincare inequality in SB V,225
+	4.4 Caccioppoli partitions,227
+	4.5 Generalised functions of bounded variation,235
+	4.6 Introduction to free discontinuity problems,243
+	4.6.1 Sets with prescribed mean curvature,244
+	4.6.2 Optimal partitions,244
+	4.6.3 The Mumford-Shah image segmentation problem,245
+	4.6.4 A problem related to the theory of liquid crystals,246
+	4.6.5 Vector valued and higher order problems,247
+	4.6.6 Connexions with plasticity theory,249
+	4.6.7 Brittle fracture,250
+	4.6.8 Structured deformations,251
+	4.7 Exercises,251
+Semicontinuity in В V,254
+	5.1 Isotropic functional in В V,255
+	5.2 Convex volume energies,264
+	5.3 Surface energies for partitions,269
+	5.4 Lower semicontinuous functionals in 55 V,281
+	5.5 Functionals with linear growth in В V,298
+	5.6 Exercises,316
+The Mumford-Shah functional,319
+	6.1 Weak and strong solutions,320
+	6.2 Regularity theory: the state of the art,323
+	6.3 Local and global minimisers,325
+	6.4 Variational approximation and discrete models,331
+Minimisers of free discontinuity problems,337
+	7.1 Limit behaviour of sequences in SB V,339
+	7.2 The density lower bound,347
+	7.3 First variation of the area and mean curvature,354
+	7.4 The Euler-Lagrange equation,360
+	7.5 Harmonic functions,366
+	7.6 Regularity of solutions of the Neumann problem,370
+	7.7 Equations of mean curvature type,376
+	7.8 Exercises,379
+Regularity of the free discontinuity set,381
+	8.1 Limit behaviour of sequences of quasi-minimisers,383
+	8.2 Lipschitz approximation,391
+	8.3 Flatness improvement,402
+	8.4 Energy improvement,406
+	8.5 Proof of the decay theorem,414
+References,419
+Index,431
+
+

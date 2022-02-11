@@ -1,0 +1,64 @@
+﻿Contents,12
+PART I NEWTONIAN MECHANICS,16
+1 The principles of relativity and determinacy,17
+2 The galilean group and Newton's equations,18
+3 Examples of mechanical systems,25
+4 Systems with one degree of freedom,29
+5 Systems with two degrees of freedom,36
+6 Conservative force fields,42
+7 Angular momentum,44
+8 Investigation of motion in a central field,47
+9 The motion of a point in three-space,56
+10 Motions of a system of,58
+11 The method of similarity,64
+PART II LAGRANGIAN MECHANICS,67
+12 Calculus of variations,68
+13 Lagrange's equations,72
+14 Legendre transformations,74
+15 Hamilton's equations,78
+16 Liouville's theorem,81
+17 Holonomic constraints,88
+18 Differentiable manifolds,90
+19 Lagrangian dynamical systems,96
+20 E. Noether's theorem,101
+21 D'Alembert's principle,104
+22 Linearization,111
+23 Small oscillations,116
+24 Behavior of characteristic frequencies,123
+25 Parametric resonance,126
+26 Motion in a moving coordinate system,136
+27 Inertial forces and the Coriolis force,142
+28 Rigid bodies,146
+29 Euler's equations. Poinsot's description of the motion,155
+30 Lagrange's top,161
+31 Sleeping tops and fast tops,167
+PART III HAMILTONIAN MECHANICS,173
+32 Exterior forms,174
+33 Exterior multiplication,181
+34 Differential forms,185
+35 Integration of differential forms,192
+36 Exterior differentiation,199
+37 Symplectic structures on manifolds,212
+38 Hamiltonian phase flows and their integral invariants,215
+39 The Lie algebra of vector fields,219
+40 The Lie algebra of hamiltonian functions,225
+41 Symplectic geometry,230
+42 Parametric resonance in systems with many degrees of freedom,236
+43 A symplectic atlas,240
+44 The integral invariant of Poincare-Cartan,244
+45 Applications of the integral invariant of Poincare-Cartan,251
+46 Huygens' principle,259
+47 The Hamilton-Jacobi method for integrating Hamilton's canonical equations,269
+48 Generating functions,277
+49 Integrable systems,282
+50 Action-angle variables,290
+51 Averaging,296
+52 Averaging of perturbations,302
+Riemannian curvature,312
+Geodesics of left-invariant metrics on Lie groups and&#13; the hydrodynamics of ideal fluids,329
+Symplectic structures on algebraic manifolds,354
+Contact structures,360
+Dynamical systems with symmetries,382
+Normal forms of quadratic hamiltonians,392
+Normal forms of hamiltonian systems near stationary points&#13; and closed trajectories,396
+Theory of perturbations of conditionally periodic motion&#44;&#13; and Kolmogorov's theorem,410

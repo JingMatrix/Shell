@@ -1,0 +1,63 @@
+﻿1 Théorie de la mesure,5
+	1.1 Algèbres et tribus,5
+	1.2 Fonctions mesurables,6
+	1.3 Classes monotones,7
+	1.4 Mesures,7
+2 Rappels d'intégration,9
+	2.1 Construction de l'intégrale de Lebesgue,9
+	2.2 Théorèmes de convergence,10
+	2.3 Mesures à densité,10
+	2.4 Changements de variables,11
+	2.5 Interversions,11
+	2.6 Inégalités&#44; espaces Lp( ;A,12
+3 Mesures de probabilité&#44; variables aléatoires,13
+	3.1 Mesures de probabilités&#44; lois,13
+	3.2 Moyennes&#44; calculs et inégalités,14
+	3.3 Fonction de répartition d'une v.a.r,14
+	3.4 Fonction caractéristique,15
+	3.5 Transformée de Laplace,16
+4 Rappels sur la notion d'indépendance,17
+	4.1 Indépendance,17
+	4.2 Sommes de variables aléatoire indépendantes,18
+	4.3 Suites de tribus ou de v.a. indépendantes,19
+5 Calcul conditionnel,21
+	5.1 Conditionnement discret,21
+		5.1.1 Par rapport à un événement,21
+		5.1.2 Par rapport à une v.a. discrète,21
+	5.2 Espérance conditionnelle d'une v.a. par rapport à une tribu,22
+		5.2.1 Définition pour des variables aléatoires dans L2,22
+		5.2.2 Extension aux variables aléatoires positives,23
+		5.2.3 Définition pour des variables aléatoires dans L1,23
+		5.2.4 Propriétés de l'espérance conditionnelle,23
+	5.3 Loi conditionnelle sachant une variable aléatoire,24
+6 Vecteurs gaussiens,25
+	6.1 Variables gaussiennes,25
+	6.2 Vecteurs gaussiens de Rd,25
+	6.3 Indépendance&#44; conditionnement,26
+		6.3.1 Calculs d'espérance conditionnelle,26
+		6.3.2 Lois associées,27
+7 Convergence des suites de v.a. et de lois,28
+	7.1 Convergence presque sure,28
+	7.2 Convergence en probabilité,28
+	7.3 Convergence dans Lp; p>1,29
+	7.4 Convergence en loi,30
+8 Théorèmes limites,32
+	8.1 Loi des grands nombres,32
+	8.2 Théorème de la limite centrale,32
+	8.3 Valeurs extr^emes (hors programme,33
+	8.4 Méthode Delta,34
+9 Introduction à la statistique,35
+	9.1 Structure statistique,35
+	9.2 Quelques techniques d'estimation,37
+		9.2.1 Moments empiriques,37
+		9.2.2 Maximum de vraisemblance,37
+		9.2.3 Intervalle de confiance,37
+	9.3 Exhaustivité,37
+	9.4 Complétude,38
+	9.5 Liberté,38
+	9.6 Modèles exponentiels,39
+	9.7 Information et efficacité,39
+	9.8 Initiation aux tests,39
+		9.8.1 Definitions,40
+		9.8.2 Mesures de qualité des tests,40
+		9.8.3 Construction de tests,41

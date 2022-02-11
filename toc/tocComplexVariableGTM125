@@ -1,0 +1,60 @@
+CHAPTER I Topology of the Complex Plane and Holomorphic Functions,12  
+	1.1. Some Linear Algebra and Differential Calculus  ,12
+	1.2. Differential Forms on an Open Subset n of C  ,16
+	1.3. Partitions of Unity    ,26
+	1.4. Regular Boundaries     ,33
+	1.5. Integration of Differential Forms of Degree,13. The Stokes Formula,39
+	1.6. Homotopy. Fundamental Group     ,53
+	1.7. Integration of Closed I-Forms Along Continuous Paths ,67
+	1.8. Index of a Loop     ,77
+	1.9. Homology      ,82
+	1.10. Residues     ,95
+	1.11. Holomorphic Functions    ,102
+CHAPTER II Analytic Properties of Holomorphic Functions ,109
+	2.1. Integral Representation Formulas   ,109
+	2.2. The Frechet Space Jt(n)    ,128
+	2.3. Holomorphic Maps       ,139
+	2.4. Isolated Singularities and Residues   ,149
+	2.5. Residues and the Computation of Definite Integrals ,159
+	2.6. Other Applications of the Residue Theorem  ,176
+	2.7. The Area Theorem       ,189
+	2.8. Conformal Mappings     ,203
+CHAPTER III The a-Equation    ,224
+	3.1. Runge's Theorem     ,224
+	3.2. Mittag Leftler's Theorem   ,232
+	3.3. The Weierstrass Theorem   ,239
+	3.4. An Interpolation Theorem   ,246
+	3.5. Closed Ideals in    ,248
+	3.6. The Operator Acting on Distributions,256
+	3.7. Mergelyan's Theorem,279
+	3.8. Short Survey of the Theory of Distributions. Their Relation to the Theory of Residues,289
+CHAPTER IV Harmonic and Subharmonic Functions  ,310
+	4.1. Introduction     ,310
+	4.2. A Remark on the Theory of Integration  ,311
+	4.3. Harmonic Functions    ,315
+	4.4. Subharmonic Functions     ,329
+	4.5. Order and Type of Subharmonic Functions in C ,363
+	4.6. Integral Representations   ,377
+	4.7. Green Functions and Harmonic Measure  ,403
+	4.8. Smoothness up to the Boundary of Biholomorphic Mappings,424
+	4.9. Introduction to Potential Theory   ,444
+CHAPTER V Analytic Continuation and Singularities ,491
+	5.1. Introduction     ,492
+	5.2. Elementary Study of Singularities and Dirichlet Series,493
+	5.3. A Brief Study of the Functions rand,  ,510
+	5.4. Covering Spaces    ,519
+	5.5. Riemann Surfaces    ,526
+	5.6. The Sheaf of Germs of Holomorphic Functions ,534
+	5.7. Cocycles     ,545
+	5.8. Group Actions and Covering Spaces  ,552
+	5.9. Galois Coverings    ,555
+	5.10 The Exact Sequence of a Galois Covering  ,557
+	5.11. Universal Covering Space   ,561
+	5.12. Algebraic Functions, I   ,570
+	5.13. Algebraic Functions, II   ,576
+	5.14. The Periods ofa Differential Form  ,583
+	5.15. Linear Differential Equations     ,594
+	5.16. The Index of Differential Operators  ,624
+References     ,644
+Notation and Selected Terminology   ,649
+Index        ,657

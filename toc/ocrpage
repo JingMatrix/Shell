@@ -1,0 +1,4 @@
+#! sh
+
+xclip -selection clipboard -t image/png -o >/tmp/clip.png
+tesseract /tmp/clip.png stdout -c tessedit_char_whitelist=0123456789 --psm 6

@@ -1,0 +1,222 @@
+﻿Preface;6
+Contents;8
+1  Introduction;14
+      Quantum Open Systems;14
+      Approaches to Continuous Measurements;15
+      Classical SDEs in Continuous Measurement Theory ;16
+      The Plan of the Book;16
+     References;17
+2  The Stochastic Schrödinger Equation;21
+      Introduction;21
+      Linear Stochastic Differential Equations;22
+           An Homogeneous Linear SDE in Hilbert Space;23
+           The Stochastic Evolution Operator;24
+           The Square Norm of the Solution;27
+      The Linear Stochastic Schrödinger Equation;29
+           A Key Restriction;29
+           A Change of Probability;31
+      The Physical Interpretation;31
+           The POM of the Output and the Physical Probabilities;33
+           The A Posteriori States;35
+           Infinite Time Horizon;36
+           The Conservative Case ;37
+      The Stochastic Schrödinger Equation;38
+           The Stochastic Differential of the A Posteriori State;38
+           Four Stochastic Schrödinger Equations;40
+           Existence and Uniqueness of the Solution;43
+           The Stochastic Schrödinger Equation as a Starting Point;48
+      The Linear Approach Versus the Nonlinear One;50
+      Tricks to Simplify the Equations;51
+           Time-Dependent Coefficients and Unitary Transformations;51
+           Complex Noise;52
+      Summary: The Stochastic Schrödinger Equation;53
+           The Linear Stochastic Schrödinger Equation;53
+           The Nonlinear Stochastic Schrödinger Equation;56
+     References;57
+3  The Stochastic Master Equation: Part I;60
+      From Hilbert Space to Statistical Formulation;60
+           A Mixed Initial State;60
+           The Linear Stochastic Master Equation -- I;63
+      The Master Equation;63
+           The Mean Statistical Operator;63
+           The Mean Dynamics;64
+           Quantum Dynamical Semigroups;66
+      An Incomplete Observation;67
+      The Statistical Formulation;70
+           The Linear Stochastic Master Equation -- II;70
+           The Physical Probabilities, the A Posteriori and the A Priori States;76
+           Back to the Hilbert Space Formulation;79
+      The Stochastic Master Equation;79
+      Summary of Linear Quantum Trajectories;80
+           The Master Equation;80
+           Reference Probability Space and Filtrations;81
+           The Linear Stochastic Master Equationfor Non-normalised States;82
+           The Physical Probability and the POMs;83
+           The Nonlinear Stochastic Master Equationfor Normalised States;83
+     References;83
+4  Continuous Measurements and Instruments;85
+      The Instruments;85
+           The Construction of the Instruments;85
+           Interpretation of the Instruments and the Output;87
+      Characteristic Functional and Characteristic Operator;91
+           Characteristic Function;91
+           Characteristic Functional and Finite Dimensional Laws;92
+           Characteristic Operator;94
+           One-to-One Correspondence Between Characteristic Operators and Instruments;96
+      Moments;98
+           The Mean;98
+           Higher Moments;99
+      Classical Post-measurement Processing;102
+           Time-Local Transformations;102
+           Response with Time Delay;107
+      Autocorrelation and Spectrum of the Output Process;108
+           The Spectrum of a Stationary Process;108
+           The Spectrum of an Asymptotically Stationary Process;110
+           The Spectrum of the Output of the Continuous Measurement;112
+      Summary;116
+     References;117
+5  The Stochastic Master Equation: Part II;119
+      Quantum Trajectories: The Nonlinear SDE Formulation;119
+           The Nonlinear SDE;120
+           Stochastic Master Equation, A Posteriori States and Output;123
+           The Linear SDE;123
+           Characteristic Functional and Instruments;124
+      Purification of the A Posteriori States;126
+           Preservation of Pure States;126
+           From Mixed to Pure States;127
+     References;131
+6  Mutual Entropies and Information Gain in Quantum Continuous Measurements;132
+      Introduction;132
+      States and Entropies in the Discrete Case;133
+           Algebras and States;133
+           Entropies and Relative Entropies;133
+           Mutual Entropy and -Quantities;134
+      The Continuous Measurement as a Channel;136
+           von Neumann Algebras and Normal States;136
+           Entropies;137
+           Channels
+      A Classical Continuous Information Gain
+           Product Densities
+           The Classical Information Gain
+           An Upper Bound on the Increments of the Classical Information gain
+      The Information Embedded in the A Posteriori States
+      Gain of Information on the Initial State: The Input/Output Classical Information
+     References
+7  Quantum Optical Systems;150
+      How to Construct Physical Models;150
+           From the Full Quantum Level to the Reduced Description by SDEs;150
+           Observed and Unobserved Channels --- The Generators;151
+      Heterodyne and Homodyne Detection;153
+           The Measurement Scheme;153
+           Homodyning Versus Heterodyning;155
+     References;155
+8  A Two-Level Atom: General Setup;156
+      A Two-Level Atom Stimulated by a Laser;156
+           The Pauli Matrices;156
+           The Bloch Representation;157
+           The System Operators;158
+      The Reduced Dynamics of the Two-Level Atom;162
+           The Reduced Dynamics and the Rotating Frame;163
+           The Bloch Equations;164
+           The Evolution in the Generic Case;168
+      The Equilibrium State eq;170
+           Convergence to Equilibrium;170
+           The Explicit Expression of eq;172
+           Some Properties of eq;173
+      The SDEs for the Two-Level Atom;177
+           The SDEs in the Hilbert Space;177
+           The Stochastic Master Equation;180
+           Linear Entropy and Atomic Squeezing;182
+           The Instruments in the Rotating Frame;184
+      Summary;184
+           Bloch Representation of States and Terminology;184
+           The Model and the Parameters;185
+     References;187
+9  A Two-Level Atom: Heterodyne and Homodyne Spectra;188
+      Heterodyne Detection and Mollow Spectrum;188
+           The Output Current and the Electrical Power;188
+           The Fluorescence Spectrum;193
+      Homodyne Detection;204
+           The Spectrum of the Homodyne Current;204
+           Examples of Spectra and Squeezing;211
+      Summary;219
+           Atomic and Measurement Quantities;219
+           Heterodyne Spectral Density;219
+           Homodyne Spectral Density;221
+     References;224
+10  Feedback;226
+      Introduction;226
+           Feedback and Control of Quantum Systems;226
+           Feedback Control of a Quantum Optical System;227
+      The Feedback Scheme of Wiseman and Milburn;227
+           Observation Without Feedback;228
+           Introduction of the Feedback;229
+      The Two-Level Atom with Feedback;230
+           The Model;231
+           A Priori States;234
+           The Case of Many Stationary States;238
+           Equilibrium;239
+           The Nonlinear Stochastic Master Equation;239
+      Control of the Atomic State;240
+      Control of the Squeezing of Fluorescence Light;244
+           The Spectral Densities;245
+           Channel 1: The In-Loop Light;246
+           Channel 2;248
+           The Spectrum of the Cross-Correlations;250
+           Global Squeezing of Light and Atomic Squeezing;251
+      Control and Line Narrowing;253
+           A First Case of Line Narrowing;254
+           A Second Case of Line Narrowing;261
+      Summary;263
+           Atomic and Measurement Quantities;264
+           Homodyne Spectral Densities;264
+           Important Features of the Homodyne Spectral Densities;266
+     References;266
+A  Ordinary SDEs                                                          ;268
+      Probability Spaces and Random Variables                             ;268
+           Probability Spaces                                             ;268
+           Densities, Absolute Continuity, Conditional Expectations       ;272
+      Filtrations and Processes                                           ;274
+           Stochastic Processes                                           ;274
+           Filtrations                                                    ;275
+           Adapted Processes                                              ;275
+           The Law of a Continuous Process                                ;277
+           Martingales and Stopping Times                                 ;277
+           The Wiener Process                                             ;278
+      Stochastic Calculus                                                 ;279
+           Classes of Integrands                                          ;280
+           Integrals on Time                                              ;280
+           Stochastic Integrals                                           ;281
+           Itô Formula                                                    ;282
+      Ordinary Stochastic Differential Equations                          ;284
+           The Main Class of SDEs                                         ;284
+           Types of Solutions                                             ;284
+           Sufficient Conditions for Existence and Uniqueness             ;285
+           Lp-Estimates on the Solution                                   ;286
+      Change of Measure and Girsanov Transformation                       ;287
+           A Characterisation of the Wiener Process                       ;287
+           Exponential of Itô Processes                                   ;288
+           Positive Martingales and Change of Measure                     ;290
+           Girsanov Theorem                                               ;291
+           Extension of the Local Probability Measures                    ;294
+     References                                                           ;296
+B  Some Notions of Quantum Mechanics                                      ;298
+      Notations                                                           ;298
+           The Hilbert Space H= Cn                                        ;298
+           Operators                                                      ;298
+           Dirac Notations                                                ;300
+      The Hilbert Space Formulation of Quantum Mechanics                  ;301
+           Observables                                                    ;301
+           The Abstract Schrödinger Equation                              ;303
+      The Statistical Formulation of Quantum Mechanics                    ;303
+           Statistical Operators                                          ;304
+           The von Neumann Equation                                       ;305
+           Master Equation and Quantum Dynamical Semigroups               ;306
+      Instruments                                                         ;307
+           Operations and Events                                          ;307
+           Instruments and Observables                                    ;309
+           A Sequence of Measurements                                     ;314
+     References                                                           ;316
+References                                                                ;318
+Acronyms & Symbols                                                        ;326
+Index                                                                     ;328

@@ -1,0 +1,74 @@
+Preface,8
+Table of contents,10
+d=11
+Introduction,1
+
+
+Chapter 1: Manifolds and Maps,8
+	Submanifolds of R^(n+k),8
+	Differential Structures,11
+	Differentiable Maps and the Tangent Bundle  ,15
+	Embeddings and Immersions,21
+	Manifolds with Boundary,29
+	A Convention,32
+
+
+Chapter 2: Function Spaces,34
+	The Weak and Strong Topologies on C(M,N),34
+	Approximations,41
+	Approximations on v-Manifolds and Manifold Pairs   ,56
+	Jets and the Baire Property,58
+	Analytic Approximations,65
+
+
+Chapter 3: Transversality,68
+	The Morse-Sard Theorem,68
+	Transversality,74
+
+
+Chapter 4: Vector Bundles and Tubular Neighborhoods,86
+	Vector Bundles,86
+	Constructions with Vector Bundles,92
+	The Classification of Vector Bundles,99
+	Oriented Vector Bundles,103
+	Tubular Neighborhoods,109
+	Collars and Tubular Neighborhoods of Neat Submanifolds  ,113
+	Analytic Differential Structures,118
+
+
+Chapter 5: Degrees, Intersection Numbers, and the Euler Characteristic,121
+	Degrees of Maps,121
+	Intersection Numbers and the Euler Characteristic   ,131
+	Historical Remarks,140
+
+Chapter 6 : Morse Theory,143
+	Morse Functions,143
+	Differential Equations and Regular Level Surfaces  ,149
+	Passing Critical Levels and Attaching Cells,156
+	CW-Complexes,166
+
+
+Chapter 7: Cobordism,169
+	Cobordism and Transversality,169
+	The Thorn Homomorphism,172
+
+
+Chapter 8: Isotopy,179
+	Extending Isotopies,179
+	Gluing Manifolds Together      ,184
+	Isotopies of Disks,185
+
+
+Chapter 9: Surfaces,189
+	Models of Surfaces,189
+	Characterization of the Disk,194
+	The Classification of Compact Surfaces   ,200
+
+
+Bibliography,209
+
+
+Appendix,213
+
+
+Index,217

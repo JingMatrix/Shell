@@ -1,0 +1,120 @@
+﻿1 Smooth Manifolds,13
+	Topological Manifolds,15
+	Smooth Structures,18
+	Examples,23
+	Local Coordinate Representations,30
+	Manifolds With Boundary,31
+	Problems,33
+2 Smooth Maps,35
+	Smooth Functions and Smooth Maps,36
+	Smooth Covering Maps,40
+	Lie Groups,42
+	Bump Functions and Partitions of Unity,46
+	Problems,52
+3 The Tangent Bundle,53
+	Tangent Vectors,54
+	Push-Forwards,58
+	Computations in Coordinates,61
+	The Tangent Space to a Manifold With Boundary,64
+	Tangent Vectors to Curves,65
+	Alternative Definitions of the Tangent Space,17
+	The Tangent Bundle,69
+	Vector Fields,72
+	Problems,76
+4 The Cotangent Bundle,77
+	Covectors,77
+	Tangent Covectors on Manifolds,80
+	The Cotangent Bundle,81
+	The Differential of a Function,83
+	Pullbacks,87
+	Line Integrals,90
+	Conservative Covector Fields,94
+	Problems,102
+5 Submanifolds,105
+	Submersions&#44; Immersions&#44; and Embeddings,106
+	Embedded Submanifolds,109
+	The Inverse Function Theorem and Its Friends,117
+	Level Sets,125
+	Images of Embeddings and Immersions,130
+	Restricting Maps to Submanifolds,133
+	Vector Fields and Covector Fields on Submanifolds,134
+	Lie Subgroups,136
+	Problems,138
+6 Embedding and Approximation Theorems,141
+	Sets of Measure Zero in Manifolds,142
+	The Whitney Embedding Theorem,145
+	The Whitney Approximation Theorem,150
+	Problems,156
+7 Lie Group Actions,157
+	Group Actions on Manifolds,157
+	Equivariant Maps,161
+	Quotients of Manifolds by Group Actions,164
+	Covering Manifolds,169
+	Quotients of Lie Groups,172
+	Homogeneous Spaces,173
+	Problems,179
+8 Tensors,183
+	The Algebra of Tensors,184
+	Tensors and Tensor Fields on Manifolds,191
+	Symmetric Tensors,194
+	Riemannian Metrics,196
+	Problems,208
+9 Differential Forms,213
+	The Heuristics of Volume Measurement,214
+	The Algebra of Alternating Tensors,216
+	The Wedge Product,220
+	Differential Forms on Manifolds,224
+	Exterior Derivatives,226
+	Symplectic Forms,231
+	Problems,237
+10 Integration on Manifolds,241
+	Orientations,242
+	Orientations of Hypersurfaces,247
+	Integration of Differential Forms,252
+	Stokes's Theorem,260
+	Manifolds with Corners,263
+	Integration on Riemannian Manifolds,269
+	Problems,277
+11 De Rham Cohomology,283
+	The de Rham Cohomology Groups,284
+	Homotopy Invariance,286
+	Computations,289
+	The Mayer-Vietoris Theorem,297
+	Singular Homology and Cohomology,303
+	The de Rham Theorem,309
+	Problems,315
+12 Integral Curves and Flows,319
+	Integral Curves,319
+	Flows,321
+	The Fundamental Theorem on Flows,326
+	Complete Vector Fields,328
+	Proof of the O DE Theorem,329
+	Problems,337
+13 Lie Derivatives,339
+	The Lie Derivative,339
+	Lie Brackets,341
+	Commuting Vector Fields,347
+	Lie Derivatives of Tensor Fields,351
+	Applications,355
+	Problems,364
+14 Integral Manifolds and Foliations,367
+	Tangent Distributions,368
+	Integral Manifolds and Involutivity,369
+	The Frobenius Theorem,371
+	Applications,373
+	Foliations,376
+	Problems,381
+15 Lie Algebras and Lie Groups,383
+	Lie Algebras,383
+	Induced Lie Algebra Homomorphisms,390
+	One-Parameter Subgroups,393
+	The Exponential Map,397
+	The Closed Subgroup Theorem,404
+	Lie Subalgebras and Lie Subgroups,406
+	The Fundamental Correspondence,410
+	Problems,412
+Appendix: Review of Prerequisites,415
+Linear Algebra,415
+Calculus,436
+References,453
+Index,457

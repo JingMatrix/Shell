@@ -1,0 +1,118 @@
+Contents,9
+Preface to the Revised Edition,13
+Preface,15
+d=16
+1 General Measure Theory,1
+	1.1 Measures and measurable functions,1
+		1.1.1 Measures,1
+		1.1.2 Systems of sets,5
+		1.1.3 Approximation by open and compact sets,9
+		1.1.4 Measurable functions,16
+	1.2 Lusin’s and Egoroff’s Theorems,19
+	1.3 Integrals and limit theorems,24
+	1.4 Product measures, Fubini’s Theorem, Lebesgue measure,29
+	1.5 Covering theorems,35
+		1.5.1 Vitali’s Covering Theorem,35
+		1.5.2 Besicovitch’s Covering Theorem,39
+	1.6 Differentiation of Radon measures,47
+		1.6.1 Derivatives,47
+		1.6.2 Integration of derivatives; Lebesgue decomposition,50
+	1.7 Lebesgue points, approximate continuity,53
+		1.7.1 Differentiation Theorem,53
+		1.7.2 Approximate limits, approximate continuity,56
+	1.8 Riesz Representation Theorem,59
+	1.9 Weak convergence,65
+		1.9.1 Weak convergence of measures,65
+		1.9.2 Weak convergence of functions,68
+		1.9.3 Weak convergence in L1,70
+		1.9.4 Measures of oscillation,75
+	1.10 References and notes,78
+2 Hausdorff Measures,81
+	2.1 Definitions and elementary properties,81
+	2.2 Isodiametric inequality, Hn = Ln,87
+	2.3 Densities,92
+	2.4 Functions and Hausdorff measure,96
+		2.4.1 Hausdorff measure and Lipschitz mappings,96
+		2.4.2 Graphs of Lipschitz functions,97
+		2.4.3 Integrals over balls,98
+	2.5 References and notes,100
+3 Area and Coarea Formulas,101
+	3.1 Lipschitz functions, Rademacher’s Theorem,101
+		3.1.1 Lipschitz continuous functions,101
+		3.1.2 Rademacher’s Theorem,103
+	3.2 Linear maps and Jacobians,108
+		3.2.1 Linear mappings,108
+		3.2.2 Jacobians,114
+	3.3 The area formula,114
+		3.3.1 Preliminaries,114
+		3.3.2 Proof of the area formula,119
+		3.3.3 Change of variables formula,122
+		3.3.4 Applications,123
+	3.4 The coarea formula,126
+		3.4.1 Preliminaries,126
+		3.4.2 Proof of the coarea formula,134
+		3.4.3 Change of variables formula,139
+		3.4.4 Applications,140
+	3.5 References and notes,142
+4 Sobolev Functions,143
+	4.1 Definitions and elementary properties,143
+	4.2 Approximation,145
+		4.2.1 Approximation by smooth functions,145
+		4.2.2 Product and chain rules,153
+		4.2.3 W 1,∞ and Lipschitz continuous functions,155
+	4.3 Traces,156
+	4.4 Extensions,158
+	4.5 Sobolev inequalities,162
+		4.5.1 Gagliardo–Nirenberg–Sobolev inequality,162
+		4.5.2 Poincaré’s inequality on balls,164
+		4.5.3 Morrey’s inequality,167
+	4.6 Compactness,168
+	4.7 Capacity,170
+		4.7.1 Definitions and elementary properties,171
+		4.7.2 Capacity and Hausdorff dimension,179
+	4.8 Quasicontinuity, precise representatives of Sobolev functions,183
+	4.9 Differentiability on lines,187
+		4.9.1 Sobolev functions of one variable,188
+		4.9.2 Differentiability on a.e. line,189
+	4.10 References and notes,190
+5 Functions of Bounded Variation, Sets of Finite Perimeter,193
+	5.1 Definitions, Structure Theorem,193
+	5.2 Approximation and compactness,199
+		5.2.1 Lower semicontinuity,199
+		5.2.2 Approximation by smooth functions,199
+		5.2.3 Compactness,203
+	5.3 Traces,204
+	5.4 Extensions,210
+	5.5 Coarea formula for BV functions,212
+	5.6 Isoperimetric inequalities,215
+		5.6.1 Sobolev’s and Poincaré’s inequalities for BV,216
+		5.6.2 Isoperimetric inequalities,217
+		5.6.3 Hn−1 and Cap1,220
+	5.7 The reduced boundary,221
+		5.7.1 Estimates,221
+		5.7.2 Blow-up,225
+		5.7.3 Structure Theorem for sets of finite perimeter,231
+	5.8 Gauss–Green Theorem,235
+	5.9 Pointwise properties of BV functions,236
+	5.10 Essential variation on lines,244
+		5.10.1 BV functions of one variable,245
+		5.10.2 Essential variation on almost all lines,247
+	5.11 A criterion for finite perimeter,249
+	5.12 References and notes,255
+6 Differentiability, Approximation by C 1 Functions,257
+	6.1 Lp differentiability, approximate differentiability,257
+		6.1.1 L1 differentiability for BV,257
+		6.1.2 Lp∗ differentiability a.e. for W 1,p,260
+		6.1.3 Approximate differentiability,262
+	6.2 Differentiability a.e. for W 1,p (p > n),265
+	6.3 Convex functions,266
+	6.4 Second derivatives a.e. for convex functions,273
+	6.5 Whitney’s Extension Theorem,276
+	6.6 Approximation by C 1 functions,282
+		6.6.1 Approximation of Lipschitz continuous functions,283
+		6.6.2 Approximation of BV functions,283
+		6.6.3 Approximation of Sobolev functions,286
+	6.7 References and notes,288
+Bibliography,289
+Notation,293
+Index,297

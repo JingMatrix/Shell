@@ -1,0 +1,69 @@
+﻿Chapter 0 Introduction,12
+0.1 Audience Highlights Agenda,12 
+0.2 Software Installation,15
+0.3 Acknowledgments,17 
+Chapter 1 Cash Account Evolution,18
+1.1 Symbolic Solutions of ODEs,18
+1.2 Numerical Solutions of ODEs,24 
+Chapter 2 Stock Price Evolution,36
+2.1 What are Stocks?,36 
+2.2 Stock Price Modeling: Stochastic Differential Equations,37 
+2.2.1 Idea of Stochastic Differential Equations,37
+2.2.2 Normal Distribution,38
+2.2.3 Markov Random Processes,44
+2.2.4 Brownian Motion,45 
+2.2.5 Stochastic Integral,49 
+2.2.6 Stochastic Differential Equations,54 
+2.3 Ito Calculus,57 
+2.3.1 Ito Product Rule,57
+2.3.2 Ito Chain Rule,58
+2.3.2.1 Ito Theorem,58
+2.3.2.2 Monte-Carlo Simulation "Proof" of the Ito Theorem,60
+2.3.3 An Application: Solving the Simplest Stock Price SDE Model,62
+2.4 Multivariable and Symbolic Ito Calculus,67
+2.4.1 Monte-Carlo Solver for m-Dimensional SDEs,67
+2.4.2 Symbolic m-Dimensionallto Chain Rule,71
+2.4.2.1 Some Calculus and Linear Algebra,71
+2.4.2.2 Derivation of the m-Dimensional Ito Chain Rule,74
+2.4.2.3 Implementation of the m-Dimensionallto Chain Rule,76
+2.4.2.4 Ito Product Rule Revisited,79
+2.4.3 The Simplest Price Model: m-Stocks,80
+2.4.3.1 Derivation,80
+2.4.3.2 Example; Using Multinormal Distribution,82
+2.5 Relationship Between SDEs and PDEs,90
+Chapter 3 European Style Stock Options 83
+3.1 What Are Stock Options?,94
+3.2 Black-Scholes PDE and Hedging,98 
+3.2.1 Derivation of the Black-Scholes PDE,98
+3.2.2 Black-Scholes Hedging Implemented,102
+3.2.2.1 Put Hedging Implemented,102
+3.2.2.2 Call Hedging Implemented,109 
+3.2.3 Probabilistic Interpretation of the Solution of the Black-Scholes PDE,113
+3.2.3.1 Derivation,113 
+3.2.3.2 An Experiment,115
+3.3 Solving Black-Scholes PDE Symbolically,118
+3.3.1 HeatPDE,118 
+3.3.1.1 Probabilistic Derivation of the Solution of Heat PDE,118
+3.3.1.2 Solving Heat PDE: Examples of Explicit Solutions,121
+3.3.1.3 Uniqueness for Heat PDE with Exponential Growth at Infinity,123
+3.3.1.4 Monte-Carlo Simulation Solutions ofPDEs,125
+3.3.2 Reduction of Black-Scholes to Heat PDE,127
+3.3.3 Solution of Heat PDE; Back to Black-Scholes PDE,131
+3.3.4 Black-Scholes Formulas,139
+3.3.4.1 Options Volatility,139
+3.3.4.2 Put-Call Parity,143
+3.3.4.3 Sensitivity Analysis,143
+3.4 Generalized Black-Scholes Formulas: Time-Dependent Data,147
+Chapter 4 Stock Market Statistics,152
+4.1 Remarks,152
+4.2 Stock Market Data Import and Manipulation,152
+4.3 Volatility Estimates: Scalar Case,160
+4.3.1 First Method,160
+4.3.2 Second Method,162
+4.3.3 Experiments: Estimating Volatility,163
+4.3.4 Real Data: Estimating Volatility,164
+4.4 Appreciation Rate Estimates: Scalar Case,164
+4.4.1 An Estimate,164
+4.4.2 Confidence Interval,165
+4.4.3 Monte-Carlo Experiments: Estimating the Appreciation Rate,167
+4.5 Statistical Experiments: Bayesian and Non-Bayesian,168

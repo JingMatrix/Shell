@@ -1,0 +1,34 @@
+# Zathura configuration file
+# See man `man zathurarc'
+
+# use external cmd
+set sandbox none
+
+# Open document in fit-width mode by default
+set adjust-open width
+
+# zathurarc-appearance
+
+set font "monospace 15"
+
+# set recolor true
+set default-bg rgba(0,0,0,0.6)
+set recolor-lightcolor rgba(0,0,0,0)
+
+# map
+
+map c exec 'zsh -c "goldendict $(wl-paste -p)"'
+map [fullscreen] c exec 'zsh -c "goldendict $(wl-paste -p)"'
+map p exec 'zsh -c "qutebrowser \"$(wl-paste -p)\""'
+map [fullscreen] p exec 'zsh -c "qb \"$(wl-paste -p)\""'
+map m exec "/home/jing/Documents/Code/Shell/scripts/mathpix"
+
+# appearance
+
+set window-title-basename true
+set statusbar-home-tilde true
+set guioptions ""
+set window-width 1920
+set window-height 1080
+set selection-notification false
+set page-padding 0

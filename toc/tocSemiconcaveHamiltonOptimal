@@ -1,0 +1,72 @@
+Preface,7
+Contents,10
+d=12
+A Model Problem,1
+	1.1 Semiconcave functions,2
+	1.2 A problem in the calculus of variations,4
+	1.3 The Hopf formula,6
+	1.4 Hamilton–Jacobi equations,9
+	1.5 Method of characteristics,11
+	1.6 Semiconcavity of Hopf’s solution,18
+	1.7 Semiconcavity and entropy solutions,25
+
+Semiconcave Functions,29
+	2.1 Definition and basic properties,29
+	2.2 Examples,38
+	2.3 Special properties of SCL (A),41
+	2.4 A differential Harnack inequality,43
+	2.5 A generalized semiconcavity estimate,45
+
+Generalized Gradients and Semiconcavity,49
+	3.1 Generalized differentials,50
+	3.2 Directional derivatives,55
+	3.3 Superdifferential of a semiconcave function,56
+	3.4 Marginal functions,65
+	3.5 Inf-convolutions,68
+	3.6 Proximal analysis and semiconcavity,73
+
+Singularities of Semiconcave Functions,77
+	4.1 Rectifiability of the singular sets,77
+	4.2 Propagation along Lipschitz arcs,84
+	4.3 Singular sets of higher dimension,88
+	4.4 Application to the distance function,94
+
+Hamilton–Jacobi Equations,97
+	5.1 Method of characteristics,98
+	5.2 Viscosity solutions,105
+	5.3 Semiconcavity and viscosity,112
+	5.4 Propagation of singularities,121
+	5.5 Generalized characteristics,124
+	5.6 Examples,135
+
+Calculus of Variations,141
+	6.1 Existence of minimizers,142
+	6.2 Necessary conditions and regularity,147
+	6.3 The problem with one free endpoint,152
+	6.4 The value function,161
+	6.5 The singular set of u,170
+	6.6 Rectifiability of ,174
+
+Optimal Control Problems,185
+	7.1 The Mayer problem,186
+	7.2 The value function,191
+	7.3 Optimality conditions,203
+	7.4 The Bolza problem,213
+
+Control Problems with Exit Time,229
+	8.1 Optimal control problems with exit time,230
+	8.2 Lipschitz continuity and semiconcavity,237
+	8.3 Semiconvexity results in the linear case,253
+	8.4 Optimality conditions,258
+
+Appendix,273
+	A. 1 Convex sets and convex functions,273
+	A. 2 The Legendre transform,282
+	A. 3 Hausdorff measure and rectifiable sets,288
+	A. 4 Ordinary differential equations,289
+	A. 5 Set-valued analysis,292
+	A. 6 BV functions,293
+
+References,295
+
+Index,303

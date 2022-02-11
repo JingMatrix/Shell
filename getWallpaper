@@ -1,0 +1,27 @@
+#! /bin/zsh
+
+# Usage: 500wallpaper [options]
+
+# Options:
+#   -V, --version                  output the version number
+#   -f, --feature <featureName>    photo stream to be retrieved
+#   -c, --category <categoryName>  category to return photos from (case sensitive, separate multiple values with a comma)
+#   -w, --width <minWidth>         minimum width of the photo to be downloaded
+#   -H, --height <minHeight>       minimum height of the photo to be downloaded
+#   -l, --landscape                the photo must be in landscape orientation
+#   -o, --output <fileName>        destination file name without extension
+#   -h, --help                     display help for command
+
+# Features:
+#   popular, highest_rated, upcoming, editors, fresh_today, fresh_yesterday, fresh_week
+
+# Categories:
+#   Uncategorized, Abstract, Aerial, Animals, Black and White, Celebrities, City and Architecture, Commercial, Concert, Family, Fashion, Film, Fine Art, Food, Journalism, Landscapes, Macro, Nature, Night, Nude, People, Performing Arts, Sport, Still Life, Street, Transportation, Travel, Underwater, Urban Exploration, Wedding
+
+export PATH=$PATH:/home/jing/.nvm/versions/node/v16.3.0/bin
+pushd "/home/jing/Images/Papier Peint"
+typeset -a categories=("Fine Art" Abstract People "Performing Arts" Landscapes Nature)
+for category in $categories; do
+	500wallpaper -H 2048 -l -c "$category" >/dev/null
+done
+popd

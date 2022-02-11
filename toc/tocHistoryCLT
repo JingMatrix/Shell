@@ -1,0 +1,173 @@
+Preface,6
+Contents,8
+List of Figures,14
+Abbreviations and Denotations,16
+d=17
+1 Introduction,1
+	1.1 Different Versions of Central Limit Theorems,3
+	1.2 Objectives and Focus of the Present Examination,5
+	1.3 The Development of Analysis in the 19th Century,9
+	1.4 Literature on the History of the Central Limit Theorem,11
+	1.5 Terminology and Notation,12
+	1.6 The Prehistory: De Moivre’s Theorem,14
+2 The Central Limit Theorem from Laplace to Cauchy: Changes in Stochastic Objectives and in Analytical Methods,17
+	2.1 Laplace’s Central “Limit” Theorem,18
+		2.1.1 Sums of Independent Random Variables,19
+		2.1.2 Laplace’s Method of Approximating Integrals, and “Algebraic Analysis”,20
+		2.1.3 The Emergence of Characteristic Functions and the Deduction of Approximating Normal Distributions,21
+		2.1.4 The “Rigor” of Laplace’s Analysis,23
+		2.1.5 The Central Limit Theorem as a Tool of Good Sense,25
+			2.1.5.1 The Comet Problem,25
+			2.1.5.2 The Foundation of the Method of Least Squares,26
+			2.1.5.3 Benefits from Games of Chance,30
+	2.2 Poisson’s Modifications,31
+		2.2.1 Poisson’s Concept of Random Variable,31
+		2.2.2 Poisson’s Representation of the Probabilities of Sums,32
+		2.2.3 The Role of the Central Limit Theorem in Poisson’s Work,33
+			2.2.3.1 Poisson’s Version of the Central Limit Theorem,33
+			2.2.3.2 Poisson’s Law of Large Numbers,35
+		2.2.4 Poisson’s Infinitistic Approach,36
+		2.2.5 Approximation by Series Expansions,39
+	2.3 The Central Limit Theorem After Poisson,40
+		2.3.1 Toward a New Conception of Mathematics,40
+		2.3.2 Changes in the Status of Probability Theory,42
+		2.3.3 The Rigorization of Laplace’s Idea of Approximation,42
+	2.4 Dirichlet’s Proof of the Central Limit Theorem,44
+		2.4.1 Dirichlet’s Modification of the Laplacian Method of Approximation,44
+		2.4.2 The Application of the Discontinuity Factor,46
+		2.4.3 Dirichlet’s Proof,47
+			2.4.3.1 Tacit Assumptions and Proposition,48
+			2.4.3.2 Dirichlet’s Discussion of the Limit,48
+	2.5 Cauchy’s Bound for the Error of Approximation,52
+		2.5.1 The Cauchy–Bienaymé Dispute,52
+		2.5.2 Cauchy’s Exceptional Laws of Error,55
+		2.5.3 Bienaymé’s Arguments,59
+		2.5.4 Cauchy’s Version of the Central Limit Theorem,61
+		2.5.5 Cauchy’s Idea of Proof,63
+		2.5.6 The End of the Controversy,65
+		2.5.7 Conclusion: Steps Toward Modern Probability,67
+	Appendix: Original Text of Dirichlet’s Proof of the Central Limit Theorem According to Lecture Notes from 1846,69
+3 The Hypothesis of Elementary Errors,75
+	3.1 Gauss and “His” Error Law,76
+	3.2 Hagen, Bessel, and “elementäre Fehler”,79
+		3.2.1 The Rediscovery of the Hypothesis of Elementary Errors by Gotthilf Hagen,80
+		3.2.2 Bessel’s Generalization of the Hypothesis of Elementary Errors,87
+	3.3 The Reception of Hagen’s and Bessel’s Ideas,93
+		3.3.1 Normal Distributions in Statistics of Biological and Social Phenomena,93
+		3.3.2 Advancement Within Error Theory,95
+			3.3.2.1 Rectangularly Distributed Elementary Errors,96
+			3.3.2.2 Crofton’s Hypothesis,98
+			3.3.2.3 Pizzetti’s Account on the Hypothesis of Elementary Errors,102
+			3.3.2.4 Schols, and Elementary Errors in Plane and Space,104
+	3.4 Nonnormal Distributions, Series Expansions, and Modifications of the Hypothesis of Elementary Errors,107
+		3.4.1 Approximations of “Arbitrary” Probability Functions by Series in Hermite Polynomials,109
+		3.4.2 The “Natural” Role of the Normal Distribution and Its Derivatives,115
+			3.4.2.1 Hausdorff’s “Kanonische Parameter”,116
+			3.4.2.2 Charlier’s A Series,119
+			3.4.2.3 Edgeworth and “The” Law of Error,122
+		3.4.3 The Method of Translation,132
+			3.4.3.1 The Log-Normal Distribution,133
+			3.4.3.2 Wicksell’s General Model of Elementary Errors,135
+			3.4.3.3 The Further Fate of the Hypothesis of Elementary Errors,136
+	Appendix: Letter from Bessel to Jacobi, 14 August 1834,138
+4 Chebyshev’s and Markov’s Contributions,139
+	4.1 Chebyshev’s Moment Problem,141
+	4.2 Quadrature Formulae, Continued Fractions, Orthogonal Polynomials, Moments,148
+		4.2.1 The Gaussian Procedure of Quadrature,148
+		4.2.2 Generalizations of Gauss’s Quadrature Formula, Systems of Orthogonal Polynomials,152
+		4.2.3 Chebyshev’s Contributions,154
+	4.3 Moment Problems Around 1884: Markov and Stieltjes,157
+		4.3.1 Markov’s Early Work on Moments,157
+		4.3.2 Stieltjes’s Early Work on Moments,160
+	4.4 Chebyshev’s Further Work on Moments,162
+	4.5 The Stieltjes Moment Problem,167
+	4.6 Moment Theory and Central Limit Theorem,168
+		4.6.1 Chebyshev’s Probabilistic Work,168
+		4.6.2 Chebyshev’s Uncomplete Proof of the Central Limit Theorem from 1887,171
+		4.6.3 Poincaré: Moments and Hypothesis of Elementary Errors,174
+		4.6.4 Markov’s Rigorous Proof,175
+	4.7 Chebyshev’s and Markov’s Central Limit Theorem: Starting Point of a New Theory of Probability?,183
+		4.7.1 Random Variables and Limit Theorems,185
+		4.7.2 Analytic Methods and Rigor,185
+		4.7.3 The Role of the Central Limit Theorem in Chebyshev’s and Markov’s Work,187
+d=16
+5 The Way Toward Modern Probability,191
+	5.1 Russian Contributions Between the Turn of the Century and the First World War,194
+		5.1.1 Lyapunov’s Way Toward the Central Limit Theorem,194
+		5.1.2 Nekrasov’s Role in the Development of Probability Theory Around 1900,195
+		5.1.3 Lyapunov Conditions and Lyapunov Inequality,198
+		5.1.4 Sketch of Lyapunov’s Proof for the Central Limit Theorem,202
+		5.1.5 Markov’s Reaction,205
+	5.2 The Central Limit Theorem in the Twenties,208
+		5.2.1 A New Generation,208
+		5.2.2 Von Mises: Laplacian Method of Approximation, Complex and Real Adjunct,211
+		5.2.3 Pólya and Lévy: Laws of Error, Moments and Characteristic Functions,218
+			5.2.3.1 Pólya’s First Contributions,218
+			5.2.3.2 The Hypothesis of Elementary Errors as a Motivation for Lévy’s First Articles,222
+			5.2.3.3 Poincaré and the Concept of Characteristic Functions,224
+			5.2.3.4 Lévy’s Fundamental Theorems on Characteristic Functions,225
+			5.2.3.5 Pólya’s Reaction to Lévy’s First Articles,229
+		5.2.4 Lindeberg: An Entirely New Method,233
+			5.2.4.1 The Proof,234
+			5.2.4.2 Different Theorems, Different Conditions,236
+		5.2.5 Hausdorff’s Reception of Lyapunov’s, von Mises’s, and Lindeberg’s Work,238
+		5.2.6 Lévy’s Discussion of Stable Laws in His Calcul des probabilités,242
+			5.2.6.1 Stable Laws as Limit Laws,242
+			5.2.6.2 The Functional Equation of the Characteristic Function of a Stable Law,243
+			5.2.6.3 The Laws of Type L˛;ˇ,245
+			5.2.6.4 A Generalization of the Central Limit Theorem,246
+			5.2.6.5 The “Classic” Central Limit Theorem as a Special Case,247
+			5.2.6.6 More Limit Laws,249
+			5.2.6.7 Domains of Attraction of Stable Distributions,250
+		5.2.7 Bernshtein and His “lemme fondamental”,253
+			5.2.7.1 The Statement,253
+			5.2.7.2 The Proof,256
+		5.2.8 Cramér: Lyapunov Bounds and Asymptotic Behavior of “Exponential Series”,258
+			5.2.8.1 Risk Theory as a Starting Point,258
+			5.2.8.2 Cramér’s Discussion of the Asymptotics of Edgeworth and Charlier A Expansions,261
+d=15
+6 Lévy and Feller on Normal Limit Distributions around 1935,271
+	6.1 The Prehistory,271
+		6.1.1 Lévy and the Problem of Un-negligible Summands,272
+		6.1.2 Feller and the Case Which “does not belong to probability theory at all”,275
+	6.2 Lévy’s and Feller’s Results and Methods,276
+		6.2.1 Lévy’s Main Theorems,276
+		6.2.2 Lévy’s “Intuitive” Methods,279
+		6.2.3 Lévy’s Proofs,280
+			6.2.3.1 Lévy’s Unproven Lemmata on Properties of Dispersion,280
+			6.2.3.2 The “Classical Case”,281
+			6.2.3.3 The “loi des grands nombres” as a Sufficient Condition for the Central Limit Theorem,283
+			6.2.3.4 Lévy’s Decomposition Principle,284
+			6.2.3.5 The “loi des grands nombres” as a Necessary Condition in the Case of Identically Distributed Variables,286
+			6.2.3.6 The “loi des grands nombres” as a Necessary Condition in the General Case of Negligible Variables,291
+		6.2.4 Feller’s Theorems,296
+		6.2.5 Feller’s Proofs,299
+			6.2.5.1 Auxiliary Theorems,299
+			6.2.5.2 Main Theorem,300
+			6.2.5.3 Criterion,305
+			6.2.5.4 Necessity of Lindeberg Condition,306
+	6.3 A Question of Priority?,307
+		6.3.1 Lévy’s and Feller’s Results: A Comparison,308
+		6.3.2 Another Question of Priority,310
+		6.3.3 A Question of Methods and Style,312
+7 Generalizations,315
+	7.1 Lévy on Sums of Nonindependent Random Variables,315
+		7.1.1 Measure-Theoretic Background,315
+		7.1.2 Conditional Distribution and Expectation,317
+		7.1.3 Lévy’s Central Limit Theorem for Martingales,319
+	7.2 Further Limit Problems,325
+		7.2.1 Stochastic Processes with Independent Increments,326
+		7.2.2 Limit Laws of Normed Sums,329
+	7.3 Extensions of the Central Limit Theorem to Stochastic Processes and Random Elements in Metric Spaces,332
+		7.3.1 Invariance Principles and Donsker’s Theorem,332
+			7.3.1.1 Wiener Measure and Wiener Integral,333
+			7.3.1.2 Cameron and Martin,336
+			7.3.1.3 The Invariance Principle,338
+			7.3.1.4 Donsker’s General Invariance Principle,340
+		7.3.2 The Central Limit Theorem for Sums of Random Elements in Hilbert Spaces,347
+8 Conclusion: The Central Limit Theorem as a Link Between Classical and Modern Probability Theory,353
+References,363
+d=14
+Name Index,393
+d=13
+Subject Index,399

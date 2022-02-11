@@ -1,0 +1,119 @@
+PREFACE,12
+d=12
+1 INTRODUCTION,1
+2 NONLINEAR OPTIMIZATION PROBLEMS,7
+	2.1 Historical survey of nonlinear optimization,7
+	2.2 Classical nonlinear optimization problems and optimality conditions,12
+	2.3 Convex optimization,18
+	2.4 Separation theorems,23
+d=11
+3 OPTIMALITY CONDITIONS,27
+	3.1 Smooth nonlinear optimization problems,27
+	3.2 Necessary optimality conditions,29
+	3.3 Sufficient optimality conditions,34
+4 GEOMETRIC BACKGROUND OF OPTIMALITY CONDITIONS,37
+	4.1 Geometric meaning of optimality conditions,37
+	4.2 Classical differential geometric aspects,41
+5 DEDUCTION OF THE CLASSICAL OPTIMALITY CONDITIONS IN NONLINEAR OPTIMIZATION,45
+	5.1 First-order necessary conditions under equality constraints,45
+	5.2 Second-order conditions under equality constraints,48
+	5.3 Necessary and sufficient conditions under inequality constraints,51
+	5.4 A second-order sufficient condition,54
+6 GEODESIC CONVEX FUNCTIONS,61
+	6.1 Geodesic convex functions on Riemannian manifolds,63
+	6.2 First-order characterization,72
+	6.3 Second-order characterization,75
+	6.4 Optimality conditions and geodesic convexity,80
+	6.5 Geodesic convexity in nonlinear optimization,81
+	6.6 Concluding remarks,85
+7 ON THE CONNECTEDNESS OF THE SOLUTION SET TO COMPLEMENTARITY SYSTEMS,87
+	7.1 Linear complementarity systems,89
+	7.2 The case of LCS with one parameter,94
+	7.3 Nonlinear complementarity systems,96
+	7.4 Generalized nonlinear complementarity systems,101
+	7.5 Variational inequalities,102
+	7.6 Image problem,106
+	7.7 Concluding remarks,108
+8 NONLINEAR COORDINATE REPRESENTATIONS,111
+	8.1 Formulation of the problem,112
+	8.2 Nonlinear coordinate representations in Rn,114
+	8.3 Right inverses and projections,117
+	8.4 Inverse of partitioned matrices by right inverses,127
+	8.5 Nonlinear coordinate representations in constrained optimization,130
+	8.6 Nonlinear coordinate representations of Riemannian metrics,133
+	8.7 Convexification by nonlinear coordinate transformations,135
+	8.8 Image representations,135
+	8.9 Concluding remarks,139
+d=10
+9 TENSORS IN OPTIMIZATION,141
+	9.1 Tensors,142
+	9.2 Tensors in coordinate representations,145
+	9.3 Smooth unconstrained optimization problems,148
+	9.4 Improvement of the structure of global optimization problems,153
+	9.5 Smooth constrained optimization problems,157
+	9.6 Tensor approximations of smooth functions on Riemannian manifolds,160
+	9.7 Tensor field complementarity systems,162
+	9.8 Concluding remarks,165
+10 GEODESIC CONVEXITY ON R~,167
+	10.1 Geodesic convexity with respect to the affine metric,169
+	10.2 Geodesic convexity with respect to other Riemannian metrics,177
+	10.3 Geodesic convexity of separable functions,180
+d=9
+11 VARIABLE METRIC METHODS ALONG GEODESICS,185
+	11.1 General framework for variable metric methods on Riemannian submanifolds in Rn,186
+	11.2 Convergence of variable metric methods along geodesics,190
+	11.3 Rate of convergence for variable metric methods along geodesics,196
+	11.4 Variable metric methods along geodesics under inequality constraints,200
+	11.5 An optimization approach for solving smooth nonlinear complementarity systems,204
+12 POLYNOMIAL VARIABLE METRIC METHODS FOR LINEAR OPTIMIZATION,207
+	12.1 A class of polynomial variable metric algorithms for linear optimization,210
+	12.2 Riemannian metric for the affine scaling vector field,223
+	12.3 Riemannian metric for the projective scaling vector field,226
+13 SPECIAL FUNCTION CLASSES,231
+	13.1 Geodesic quasiconvex functions,231
+	13.2 Geodesic pseudoconvex functions,233
+	13.3 Difference of two geodesic convex functions,235
+	13.4 Convex transformable functions,236
+	13.5 Pseudolinear functions,239
+d=8
+14 FENCHEL'S UNSOLVED PROBLEM OF LEVEL SETS,253
+	14.1 Fenchel problem of level sets,255
+	14.2 Preference orderings,257
+	14.3 Utility functions of a preference ordering,258
+	14.4 Main results,262
+	14.5 Preliminary Lemmas and Theorems,267
+	14.6 Proof of Theorems 14.4.1, 14.4.1',269
+	14.7 Proof of Theorem 14.4.2,270
+15 ANIMPROVEMENTOFTHELAGRANG E MULTIPLIER RULE FOR SMOOTH OPTIMIZATION PROBLEMS,271
+	15.1 Lagrange multiplier rule for the case of equality constraints,272
+	15.2 Improved Lagrange multiplier rule for the case of equality constraints,274
+	15.3 Improved Lagrange multiplier rule for the case of equality
+	and inequality constraints,280
+	15.4 Some chances of application,283
+A ON THE CONNECTION BETWEEN MECHANICAL FORCE EQUILIBRIUM AND NONLINEAR OPTIMIZATION,285
+	A.1 Statement of the mechanical force equilibrium problem,286
+	A.2 Characterization of the constraints,287
+	A.3 Characterization of a force equilibrium point by the Courtivron principle,289
+	A.4 Characterization of a force equilibrium point by the principle of virtual work,290
+	A.5 Relation between the principle of virtual work and the Courtivron principle,293
+	A.6 Possible velocities in the case of time-dependent constraints,293
+	A.7 Relation between the principle of virtual work and the Courtivron principle in the case of time-dependent constraints,301
+	A.8 Equations of motions by force equilibrium,303
+B TOPOLOGY,305
+	B.1 Topological spaces,305
+	B.2 Metric spaces,312
+	B.3 Continuous mappings and homeomorphisms,315
+	B.4 Subspaces and product spaces,318
+	B.5 Compactness,321
+	B.6 Connectedness,325
+C RIEMANNIAN GEOMETRY,329
+	C.1 From the history of differential geometry,329
+	C.2 Riemannian manifolds,331
+	C.3 Geodesic convex functions,336
+	C.4 Riemannian manifolds in Euclidean spaces,338
+d=7
+REFERENCES,341
+d=6
+AUTHOR INDEX,363
+SUBJECT INDEX,367
+NOTATIONS,373

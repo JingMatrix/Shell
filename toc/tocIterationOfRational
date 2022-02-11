@@ -1,0 +1,95 @@
+Preface......4
+Contents......8
+Prerequisites......12
+CHAPTER 1 Examples......14
+	1.1. Introduction......14
+	1.2. Iteration of Mobius Transformations......16
+	1.3. Iteration of z i-» z^2......19
+	1.4. Tchebychev Polynomials......22
+	1.5. Iteration of z i-» z^2 - 1......26
+	1.6. Iteration of z i-» z^2 + c......27
+	1.7. Iteration of z i-» z + 1/z......32
+	1.8. Iteration of z i-» 2z - 1/z......34
+	1.9. Newton's Approximation......35
+	1.10. General Remarks......38
+CHAPTER 2 Rational Maps......40
+	2.1. The Extended Complex Plane......40
+	2.2. Rational Maps......43
+	2.3. The Lipschitz Condition......45
+	2.4. Conjugacy......49
+	2.5. Valency......50
+	2.6. Fixed Points......51
+	2.7. Critical Points......56
+	2.8. A Topology on the Rational Functions......58
+CHAPTER 3 The Fatou and Julia Sets......62
+	3.1. The Fatou and Julia Sets......62
+	3.2. Completely Invariant Sets......64
+	3.3. Normal Families and Equicontinuity......68
+	Appendix I. The Hyperbolic Metric......73
+CHAPTER 4 Properties of the Julia Set......78
+	4.1. Exceptional Points......78
+	4.2. Properties of the Julia Set......80
+	4.3. Rational Maps with Empty Fatou Set......86
+	Appendix II. Elliptic Functions......90
+CHAPTER 5 The Structure of the Fatou Set......93
+	5.1. The Topology of the Sphere......93
+	5.2. Completely Invariant Components of the Fatou Set......95
+	5.3. The Euler Characteristic......96
+	5.4. The Riemann-Hurwitz Formula for Covering Maps......98
+	5.5. Maps Between Components of the Fatou Set......103
+	5.6. The Number of Components of the Fatou Set......106
+	5.7. Components of the Julia Set......108
+CHAPTER 6 Periodic Points......112
+	6.1. The Classification of Periodic Points......112
+	6.2. The Existence of Periodic Points......114
+	6.3. {Super)Attracting Cycles......117
+	6.4. Repelling Cycles......122
+	6.5. Rationally Indifferent Cycles......123
+	6.6. Irrationally Indifferent Cycles in F......145
+	6.7. Irrationally Indifferent Cycles in J......155
+	6.8. The Proof of the Existence of Periodic Points......158
+	6.9. The Julia Set and Periodic Points......161
+	6.10. Local Conjugacy......163
+	Appendix III. Infinite Products......168
+	Appendix IV. The Universal Covering Surface......170
+CHAPTER 7 Forward Invariant Components......173
+	7.1. The Five Possibilities......173
+	7.2. Limit Functions......175
+	7.3. Parabolic Domains......178
+	7.4. Siegel Discs and Herman Rings......180
+	7.5. Connectivity of Invariant Components......185
+CHAPTER 8 The No Wandering Domains Theorem......189
+	8.1. The No Wandering Domains Theorem......189
+	8.2. A Preliminary Result......190
+	8.3. Conformal Structures......192
+	8.4. Quasi-conformal Conjugates of Rational Maps......196
+	8.5. Boundary Values of Conjugate Maps......197
+	8.6. The Proof of Theorem 8.1.2......199
+CHAPTER 9 Critical Points......205
+	9.1. Introductory Remarks......205
+	9.2. The Normality of Inverse Maps......206
+	9.3. Critical Points and Periodic Domains......207
+	9.4. Applications......212
+	9.5. The Fatou Set of a Polynomial......215
+	9.6. The Number of Non-Repelling Cycles......223
+	9.7. Expanding Maps......236
+	9.8. Julia Sets as Cantor Sets......240
+	9.9. Julia Sets as Jordan Curves......245
+	9.10. The Mandelbrot Set......251
+CHAPTER 10 Hausdorff Dimension......259
+	10.1. Hausdorff Dimension......259
+	10.2. Computing Dimensions......261
+	10.3. The Dimension of Julia Sets......264
+CHAPTER 11 Examples......270
+	11.1. Smooth Julia Sets......270
+	11.2. Dendrites......271
+	11.3. Components of F of Infinite Connectivity......271
+	11.4. F with Infinitely Connected and Simply Connected Components ......273
+	11.5. J with Infinitely Many Non-Degenerate Components......274
+	11.6. Fof Infinite Connectivity with Critical Points in J......275
+	11.7. A Finitely Connected Component of F......276
+	11.8. J Is a Cantor Set of Circles......279
+	11.9. The Function (z-2)^2/z^2......284
+References......286
+Index of Examples......291
+Index......292

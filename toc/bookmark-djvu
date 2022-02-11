@@ -1,0 +1,329 @@
+#!/usr/bin/env perl
+
+# License: GPLv3+
+
+use 5.010;
+use warnings;
+use strict;
+# do not use floating point arithmetic in divisions
+use integer;
+use utf8;
+use Encode qw/decode/;
+use Getopt::Long qw/:config no_ignore_case bundling/;
+use File::Temp qw/tempfile/;
+use File::Basename qw/basename/;
+if (!eval 'use YAML::XS qw/Load/; 1;') {
+    die "cannot find the YAML::XS Perl module.\n" .
+	"Try '\$ apt-get install libyaml-libyaml-perl'.\n";
+}
+
+binmode STDOUT, ':encoding(UTF-8)'; 
+binmode STDIN, ':encoding(UTF-8)';
+binmode STDERR, ':encoding(UTF-8)';
+
+my $prog_name = basename $0;
+my $bug_address = "www.github.com/amba/bookmark-djvu/issues";
+
+sub print_usage {
+    say "Usage: $prog_name [OPTIONS] DJVU [BOOKMARKS-FILE]";
+}
+
+sub print_help {
+    print_usage ();
+        say "
+update the outline of DJVU.
+The format of BOOKMARKS-FILE is described in the README.
+
+ Options:
+  -o, --output=FILE           do not modify DJVU and write the 
+                              bookmarked djvu file to FILE.
+  -s, --simple-format         use simple format (default: YAML)
+  
+ options controlling simple format:
+  -c, --allow-comments        ignore all lines starting with a hash
+                              character (#) in BOOKMARKS-FILE.
+
+ general options:
+  -h, --help                  print this help screen.
+  -V, --version               print program version.
+
+The default for BOOKMARKS-FILE is DJVU with the suffix changed to
+- '.outline' for YAML mode (default).
+- '.bm' for simple format.
+ 
+Report bugs to $bug_address";
+}
+
+sub print_version {
+    say "bookmark-djvu 0.1
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law."
+}
+
+$_ = decode ('UTF-8', $_) for @ARGV;
+
+
+my $output_filename;
+my $use_simple_format = 1;
+my $allow_comments = 0;
+
+
+my %opt_hash = (
+    "output|o=s" => \$output_filename,
+    "simple-format|s" => \$use_simple_format,
+    "allow-comments|c" => \$allow_comments,
+    "help|h" => sub {print_help (); exit},
+    "version|V" => sub {print_version (); exit},
+    );
+
+unless (GetOptions (%opt_hash) && @ARGV) {
+    print_usage ();
+    exit 1;
+}
+
+my $djvu_filename = $ARGV[0];
+if (! -f $djvu_filename) {
+    print_usage ();
+    die "error: djvu file '$djvu_filename' does not exist\n";
+}
+
+$output_filename = $djvu_filename unless $output_filename;
+
+my $bookmarks_filename;
+
+if ($ARGV[1]) {
+    $bookmarks_filename = $ARGV[1];
+}
+else {
+    my $suffix = $use_simple_format ? ".bm" : ".outline";
+    $bookmarks_filename = 
+	get_default_filename ($djvu_filename, ".djvu", $suffix);
+}
+
+
+open my $input_handle, '<', $bookmarks_filename
+    or die "cannot open $bookmarks_filename: $!\n";
+
+my $page_count = page_count ($djvu_filename);
+    
+my $djvused_outline;
+if ($use_simple_format) {
+    $djvused_outline = simple_format_to_djvused_outline ($input_handle);
+}
+else {
+    $djvused_outline = yaml_to_djvused_outline ($input_handle);
+}
+
+# run external commands
+if ($djvu_filename ne $output_filename) {
+    system_wrapper ("cp", $djvu_filename, $output_filename);
+}
+
+system_wrapper ("djvused", $output_filename, "-e",
+		"set-outline $djvused_outline", "-s");
+
+# argument: djvu filename
+# returns: page count
+sub page_count {
+    my $filename = shift;
+    
+    open my $djvused_handle, "-|", "djvused", $filename, "-e", "n"
+	or die "cannot find djvused.\n" .
+	"Try '\$ apt-get install djvulibre-bin'.\n";
+    
+    my $count = <$djvused_handle>;
+    
+    if (!close $djvused_handle) {
+	warn "djvused failed with status ", $? >> 8, ".\n";
+	exit 1;
+    }
+
+    chomp ($count);
+    return $count;
+}
+
+# returns: filename
+sub simple_format_to_djvused_outline {
+    my $input_handle = shift;
+    binmode $input_handle, ':encoding(UTF-8)';
+    (my $out_fh, my $out_filename) = tempfile (UNLINK => 1);
+    binmode $out_fh, ':encoding(UTF-8)';
+# use one tab for child indent
+    my $regexp = qr/
+       ^
+       (?<indent>(\t)*)
+       (?<title>.+?)
+       (\s|;|,)+
+       (?<page>-?[0-9]+)
+       \s*$
+    /x;
+    my $line_number = 0;
+    my $offset = 0;
+    my $indent_depth;
+    my $prev_indent_depth = -1;
+
+    print {$out_fh} "(bookmarks";
+    
+    while (my $line = <$input_handle>) {
+	chomp ($line);
+	++$line_number;
+	
+	# skip blank lines or comments
+	next if $line =~ /^\s*$/ || ($allow_comments && $line =~ /^#/);
+
+	# check for offset marker
+	if ($line =~ /^\s*d=(?<difference>-?[0-9]+)\s*$/) {
+	    $offset = $+{difference};
+	    next;
+	}
+	
+	# match line against $regexp
+	if ($line !~ $regexp) {
+	    die "error: line $line_number is broken:\n$line\n";
+	}
+	$indent_depth = length ($+{indent});
+
+	my $title = $+{title};
+	my $page = $+{page} + $offset;
+	if ($page < 1 || $page > $page_count) {
+	    warn "page number $page in line $line_number out of range ".
+		"(page count: $page_count)\n";
+	    exit 1;
+	}
+	
+	if ($indent_depth > $prev_indent_depth + 1) {
+	    die "too mutch indentation in line $line_number:\n$line\n";
+	}
+	
+	$title = djvused_escape ($title);
+	
+	# print closing parenthesis for the previous entry
+	print {$out_fh} ")"x($prev_indent_depth - $indent_depth + 1), "\n";
+	$prev_indent_depth = $indent_depth;
+	
+	# print out this outline item
+	print {$out_fh} qq{("$title" "#$page"};
+    }
+
+    if ($prev_indent_depth == -1) {
+     	warn "removing outline\n";
+    }
+    
+    # print closing parenthesis
+    print {$out_fh} ")"x($prev_indent_depth + 1), "\n", ")", "\n";
+    
+    # flush buffer
+    close $out_fh;
+    
+    return $out_filename;
+}
+
+# arg: input filedescriptor  
+# returns output filename
+sub yaml_to_djvused_outline {
+    my $input_handle = shift;
+    (my $out_fh, my $out_filename) = tempfile (UNLINK => 1);
+    binmode $out_fh, ':encoding(UTF-8)';
+    
+    my $outline = Load (do {local $/; local $_ = <$input_handle>});
+        
+    print {$out_fh} "(bookmarks";
+
+    if ($outline) {
+	array_ref_to_djvused_outline ($out_fh, $outline);
+    }
+    else {
+	warn "no input, removing outline\n";
+    }
+    
+    print {$out_fh} "\n)\n";
+    return $out_filename;
+}
+
+# used by yaml_to_djvused_outline
+# prints djvused outline recursively from array ref
+# args: output file descriptor, arrayref 
+sub array_ref_to_djvused_outline {
+    my $output_handle = shift;
+    my $outline = shift;
+    
+    unless (ref ($outline) eq "ARRAY") {
+	die "array_ref_to_djvused_outline: arg not an array ref";
+    }
+    
+    for my $hashref (@{$outline}) {
+	my $title = $hashref->{title} or die "missing title in outline hash";
+	$title = djvused_escape ($title);
+	my $page = $hashref->{page};
+	if ($page < 1 || $page > $page_count) {
+	    warn "page number $page out of range (page count: $page_count)\n";
+	    exit 1;
+	}  
+	
+	# print out this outline item
+	print {$output_handle} qq{\n("$title" "#$page"};
+	
+	if ($hashref->{kids}) {
+	    array_ref_to_djvused_outline ($output_handle, $hashref->{kids});
+	}
+
+	print {$output_handle} ")";
+    }
+}
+    
+sub djvused_escape {
+    # see djvused(1): "DJVUSED FILE FORMATS - Strings" 
+    # and perlrebackslash
+
+    my $title = shift;
+
+    if ($title =~ /\n/) {
+	die "djvused_escape: \\n in '$title'\n" .
+	    "Please report this at $bug_address\n" 
+    }
+
+    # need to escape \, ", \a, \x{08}, \t, \x{0b}, \f and \r
+
+    # \ is first, since it is contained in the replacement texts
+    $title =~ s/\\/\\\\/g;
+    
+    $title =~ s/"/\\"/g;
+    
+    $title =~ s/\a/\\a/g;
+    
+    $title =~ s/\x{08}/\\b/g;
+    
+    $title =~ s/\t/\\t/g;
+    
+    $title =~ s/\x{0b}/\\v/g;
+    
+    $title =~ s/\f/\\f/g;
+    
+    $title =~ s/\r/\\r/g;
+    
+    return $title;
+}
+
+sub system_wrapper {
+    warn "command: @_\n";
+    system (@_) == 0
+	or die "error: system failed: $?\n"
+}
+
+sub get_default_filename {
+    my $filename = shift;
+    my $from = shift;
+    my $too = shift;
+    die "get_default_filename needs arg" unless defined ($too);
+    my $result_filename;
+    
+    if ($filename =~ /\Q$from\E$/) {
+	($result_filename = $filename) =~ s/\Q$from\E/$too/;
+    }
+    else {
+	$result_filename = $filename . $too;
+    }
+
+    return $result_filename;
+}

@@ -1,0 +1,7 @@
+#! /bin/sh
+set -x
+sleep 3
+/bin/gsettings set org.gnome.desktop.input-sources xkb-options "[]"
+sleep 0.5
+/bin/gsettings set org.gnome.desktop.input-sources xkb-options "['terminate:ctrl_alt_bksp', 'compose:caps']"
+fcitx5 -r

@@ -1,0 +1,27 @@
+#!/bin/zsh
+
+pdf=$(basename -s .pdf $1)
+bkFile="$2"
+pdf_data="$pdf""_data.txt"
+EXTRACT_FILE=booky_bookmarks_extract
+
+echo "Converting $bkFile to pdftk compatible format"
+python3 pdftkformat.py <"$bkFile" >"$EXTRACT_FILE"
+
+echo "Dumping pdf meta data..."
+pdftk "$1" dump_data_utf8 output "$pdf_data"
+
+echo "Clear dumped data of any previous bookmarks"
+sed -i '/Bookmark/d' "$pdf_data"
+
+echo "Inserting your bookmarks in the data"
+sed -i "/NumberOfPages/r $EXTRACT_FILE" "$pdf_data"
+
+echo "Creating new pdf with your bookmarks..."
+pdftk "$1" update_info_utf8 "$pdf_data" output "$pdf""_new.pdf" 2>/dev/null
+
+echo "Deleting leftovers"
+rm "$EXTRACT_FILE" "$pdf_data"
+
+echo "Remove original file"
+mv "$pdf""_new.pdf" "$1"

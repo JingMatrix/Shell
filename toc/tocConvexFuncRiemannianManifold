@@ -1,0 +1,140 @@
+CONTENTS,7
+Preface,12
+d=15
+Chapter 1. Metric properties of Riemannian manifolds,1 
+	1. Riemannian metric,1 
+		Examples of Riemannian metrics,2 
+	2. Riemannian connection,4 
+	3. Differential operators,8 
+	4. Definite symmetric tensor fields of order two,13 
+	5. Geodesies and exponential map,15 
+	6. Metric structure of a Riemannian manifold,21 
+	7. Completeness of Riemannian manifolds,23 
+		Gordon completeness criterion,24 
+		Nomizu-Ozeki theorem,26 
+		Applications to Hamiltonian systems,26 
+	8. Minimum points of a real function,28 
+Chapter 2. First and second variations of the p-energy of a curve,34 
+	1. Preliminaries,35 
+	2. The p-energy and the first variation formula,36 
+	3. Second variation of the p-energy,38 
+	4. Null space of the Hessian of the p-energy,41 
+	5. Index theorem,46 
+	6. Distance from a point to a closed set,51 
+	7. Distance between two closed sets,54 
+Chapter 3. Convex functions on Riemannian manifolds,56 
+	1. Convex sets in Riemannian manifolds,57 
+	2. Convex functions on Riemannian manifolds,60 
+	3. Basic properties of convex functions,66 
+	4. Directional derivatives and subgradients,71 
+	5. Convexity of functions of class C,77 
+	6. Convexity of functions of class C,81 
+		Convexity of Rosenbrock banana function,83 
+		Examples on the sphere S,84 
+		Examples on Poincare plane,86 
+		Linear affine functions,88 
+	7. Convex programs on Riemannian manifolds,90 
+	8. Duality in convex programming,93 
+	9. Kuhn-Tucker theorem on Riemannian manifolds,95 
+	10. Quasiconvex functions on Riemannian manifolds,97 
+		Nontrivial examples of quasiconvex functions which are not convex,100 
+	11. Distance from a point to a closed totally convex set,101 
+	12. Distance between two closed totally convex sets,105 
+Chapter 4. Geometric examples of convex functions,108 
+	1. Example of Greene and Shiohama,109 
+	2. Example of Wu,110 
+	3. Examples of Bishop and O'Neill,113 
+	4. Convexity of Busemann functions,116 
+	5. Construction of Cheeger and Gromoll,121 
+	6. Preserving the completeness and the convexity,122 
+Chapter 5. Flows, convexity and energies,128 
+	1. Flows and energies on Riemannian manifolds,129 
+	2. General properties of the gradient flow,135 
+	3. Gradient flow of a convex function,137 
+	4. Diffeomorphisms imposed by a convex function,141 
+	5. Energy and flow of an irrotational vector field,146 
+	6. Energy and flow of a Killing vector field,152 
+	7. Energy and flow of a conformal vector field,157 
+		Examples of vector fields with dense orbits,164 
+	8. Energy and flow of an affine vector field,165 
+	9. Energy and flow of a projective vector field,168 
+	10. Energy and flow of a torse forming vector field,170 
+	11. Runge-Kutta approximation of the orbits,173 
+		TPascal program for Runge-Kutta approximation of the orbits,176 
+Chapter 6. Semidefinite Hessians and applications,186 
+	1. Strongly convex functions on Riemannian manifolds,187 
+	2. Convex hypersurfaces in Riemannian manifolds,192 
+	3. Convex functions on Riemannian submanifolds,199 
+		Gradient and Hessian on submanifolds,199 
+		Case of tangent bundle,204 
+		Obata theorem,206 
+		Special hypersurfaces of constant level,207 
+	4. Convex functions and harmonic maps,208 
+		Examples and applications,211 
+	5. G-connected domains,214 
+		Preliminaries,214 
+		Jonnected domains,215 
+		Examples,219 
+	6. Linear complementarity problems,220 
+	7. Conservative dynamical systems with convex potential,223 
+Chapter 7. Minimization of functions on Riemannian manifolds,226 
+	1. Special properties of the minus gradient flow,227 
+		Minus gradient flow,227 
+		Runge-Kutta approximation of a minus gradient line,232 
+		TC program for gradient lines in 3-dimensional space,234 
+		TC program for gradient lines in Poincare plane,237 
+	2. Numerical approximation of geodesies,238 
+		Approximate solution of Cauchy problem,239 
+		Case of Poincare plane,240 
+		TC program for Poincare geodesies,241 
+		Case of hypersurfaces described by Cartesian implicit equations,242 
+		TC program for spherical geodesies,244 
+		Approximate solution of boundary value problem,246 
+		TC program for geodesies by boundary conditions,249 
+	3. General descent algorithm on Riemannian manifolds,252 
+		Descent directions and criteria of stopping,252 
+		Convergence of {grad f(x)} to zero,256 
+		Convergence of {x > to a critical point,260 
+	4. Gradient methods on Riemannian manifolds,262 
+		Method of steepest descent,262 
+		Convergence of {grad f(x )} to zero,264 
+		Convergence of {x } to a critical point,265 
+		Variants of the gradient method,269 
+		Examples,272 
+		Other gradient methods,276 
+	5. Generalized Newton method on Riemannian manifolds,279 
+		Radial approximations,279 
+		First construction of the method,279 
+		Second construction of the method,281 
+		Properties of the method,282 
+	6. General descent algorithm for a constrained minimum,284 
+Appendices,287 
+	1. Riemannian convexity of functions f:R —> IR,287 
+		0. Introduction,287 
+		1. Geodesies of (IR , g),287 
+		2. Geodesies of (IR x IR , g +1),289 
+		3. Convex functions on (IR , g),291 
+	2. Descent methods on the Poincare plane,297 
+		0. Introduction,297 
+		1. Poincare plane,297 
+		2. Linear affine functions on the Poincare plane,298 
+		3. Quadratic affine functions on the Poincare plane,299 
+		4. Convex functions on the Poincare plane,300 
+			Examples of hyperbolic convex functions,301 
+		5. Descent algorithm on the Poincare plane,301 
+			TC program for descent algorithm on Poincare plane (I),303 
+			TC program for descent algorithm on Poincare plane (II),305 
+	3. Descent methods on the sphere,311 
+		1. Gradient and Hessian on the sphere,311 
+		2. Descent algorithm on the sphere,312 
+			Critical values of the normal stress,313 
+			Critical values of the shear stress,314 
+			TC program for descent method on the unit sphere,316 
+	4. Completeness and convexity on Finsler manifolds,318 
+		1. Complete Finsler manifolds,318 
+		2. Analytical criterion for completeness,323 
+		3. Warped products of complete Finsler manifolds,326 
+		4. Convex functions on Finsler manifolds,326 
+References,329 
+Bibliography,331 
+Index,341 

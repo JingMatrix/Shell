@@ -1,0 +1,150 @@
+CONTENTS,8
+Preface,6
+d=11
+Introduction,1 
+Why a variational convergence?,1 
+Parade of examples,4 
+A maieutic approach to Γ-convergence. Direct methods,15 
+1 Γ-convergence by numbers,19 
+	1.1 Some preliminaries,19 
+		1.1.1 Lower and upper limits,19 
+		1.1.2 Lower semicontinuity,21 
+	1.2 Γ-convergence,22 
+	1.3 Some examples on the real line,25 
+	1.4 The many definitions of Γ-convergence,26 
+	1.5 Convergence of minima,28 
+	1.6 Upper and lower Γ-limits,30 
+	1.7 The importance of being lower semicontinuous,32 
+		1.7.1 Lower semicontinuity of Γ-limits,32 
+		1.7.2 The lower-semicontinuous envelope. Relaxation,32 
+		1.7.3 Approximation of lower-semicontinuous functions,33 
+		1.7.4 The direct method,34 
+	1.8 More properties of Γ-limits,34 
+		1.8.1 Γ-limits of monotone sequences,35 
+		1.8.2 Compactness of Γ-convergence,35 
+		1.8.3 Γ-convergence by subsequences,36 
+	1.9 Γ-limits indexed by a continuous parameter,37 
+	1.10 Development by Γ-convergence,37 
+	1.11 Exercises,38 
+	Comments on Chapter 1,39 
+2 Integral problems,40 
+	2.1 Problems on Lebesgue spaces,40 
+		2.1.1 Weak convergences,41 
+		2.1.2 Weak-coerciveness conditions,43 
+	2.2 Weak lower semicontinuity conditions: convexity,44 
+	2.3 Relaxation and Γ-convergence in Lp spaces,47 
+	2.4 Problems on Sobolev spaces,50 
+		2.4.1 Weak convergence in Sobolev spaces,50 
+		2.4.2 Integral functional on Sobolev spaces. Coerciveness conditions,51 
+	2.5 Weak lower semicontinuity conditions,52 
+	2.6 Γ-convergence and convex analysis,54 
+	2.7 Addition of boundary data,57 
+	2.8 Some examples with degenerate growth conditions,58 
+		2.8.1 Degeneracy of lower bounds: discontinuities,58 
+		2.8.2 Degeneracy of upper bounds: functional of the sup norm,59 
+	2.9 Exercises,61 
+	Comments on Chapter 2,62 
+3 Some homogenization problems,63 
+	3.1 A direct approach,63 
+	3.2 Different homogenization formulas,66 
+	3.3 Limits of oscillating Riemannian metrics,68 
+	3.4 Homogenization of Hamilton Jacobi equations,71 
+	3.5 Exercises,74 
+	Comments on Chapter 3,75 
+4 From discrete systems to integral functionals,76 
+	4.1 Discrete functionals,77 
+	4.2 Continuous limits,78 
+		4.2.1 Nearest-neighbour interactions: a convexification principle,78 
+		4.2.2 Next-to-nearest neighbour interactions: non-convex relaxation,80 
+		4.2.3 Long-range interactions: homogenization,82 
+		4.2.4 Convergence of minimum problems,84 
+	4.3 Exercises,84 
+	Comments on Chapter 4,84 
+5 Segmentation problems,85 
+	5.1 Model problems,86 
+	5.2 The space of piecewise-constant functions,87 
+		5.2.1 Coerciveness conditions,87 
+		5.2.2 Functionals on piecewise-constant functions,88 
+	5.3 Lower semicontinuity conditions: subadditivity,88 
+	5.4 Relaxation and Γ-convergence,91 
+		5.4.1 Translation-invariant functionals,91 
+		5.4.2 Properties of subadditive functions on R,92 
+		5.4.3 Relaxation: subadditive envelopes,93 
+		5.4.4 Γ-convergence,97 
+		5.4.5 Boundary values,98 
+	5.5 Exercises,99 
+	Comments on Chapter 5,100 
+	Caccioppoli partitions,100 
+6 Phase-transition problems,102 
+	6.1 Phase transitions as segmentation problems,102 
+	6.2 Gradient theory for phase-transition problems,103 
+	6.3 Gradient theory as a development by Γ-convergence,109 
+	Comments on Chapter 6,112 
+7 Free-discontinuity problems,114 
+	7.1 Piecewise-Sobolev functions,114 
+	7.2 Some model problems,114 
+		7.2.1 Signal reconstruction: the Mumford-Shah functional,115 
+		7.2.2 Fracture mechanics: the Griffith functional,115 
+	7.3 Functional on piecewise-Sobolev functions,116 
+	7.4 Examples of existence results,117 
+	Comments on Chapter 7,119 
+	Special functions of bounded variation,120 
+8 Approximation of free-discontinuity problems,121 
+	8.1 The Ambrosio Tortorelli approximation,121 
+	8.2 Approximation by convolution problems,124 
+		8.2.1 Convolution integral functionals,125 
+		8.2.2 Limits of convolution functionals,126 
+	8.3 Finite-difference approximation,130 
+	Comments on Chapter 8,131 
+9 More homogenization problems,132 
+	9.1 Oscillations and phase transitions,132 
+	9.2 Phase accumulation,135 
+	9.3 Homogenization of free-discontinuity problems,137 
+	Comments on Chapter 9,138 
+10 Interaction between elliptic problems and partition problems,139 
+	10.1 Quantitative conditions for lower semicontinuity,139 
+	10.2 Existence without lower semicontinuity,142 
+	10.3 Relaxation by interaction,143 
+	10.4 Exercises,148 
+	Comments on Chapter 10,148 
+	Structured deformations .,149 
+11 Discrete systems and free-discontinuity problems,150 
+	11.1 Interpolation with piecewise-Sobolev functions,151 
+	11.2 Equivalent energies on piecewise-Sobolev functions,153 
+	11.3 Softening and fracture problems as limits of discrete models,154 
+	11.4 Fracture as a phase transition,156 
+	11.5 Malik Perona approximation of free-discontinuity problems,159 
+	11.6 Exercises,159 
+	Comments on Chapter 11,160 
+12 *Some comments on vectorial problems,161 
+	12.1 Lower semicontinuity conditions,162 
+		12.1.1 Quasiconvexity,163 
+		12.1.2 Convexity and poly convexity,164 
+	12.2 Homogenization and convexity conditions,165 
+		12.2.1 Instability of polyconvexity,166 
+		12.2.2 Density of isotropic quadratic forms,168 
+	Comments on Chapter 12,169 
+13 *Dirichlet problems in perforated domains,171 
+	13.1 Statement of the Γ-convergence result,172 
+	13.2 A joining lemma on varying domains,174 
+	13.3 Proof of the lim inf inequality,177 
+	13.4 Proof of the lim sup inequality,178 
+	Comments on Chapter 13,181 
+14 *Dimension-reduction problems,182 
+	14.1 Convex energies,182 
+	14.2 Non-convex vector-valued problems,185 
+	Comments on Chapter 14,186 
+15 *The 'slicing' method,187 
+	15.1 A lower inequality by the slicing method,188 
+	15.2 An upper inequality by density,191 
+	Comments on Chapter 15,193 
+16 *An introduction to the localization method of Γ-convergence,194 
+Appendices,197 
+A Some quick recalls,197 
+	A.l Convexity,197 
+	A.2 Sobolev spaces,198 
+	A.3 *Sets of finite perimeter,200 
+В Characterization of Γ-convergence for ID integral problems,203 
+List of symbols,207 
+References,209 
+Index,217 

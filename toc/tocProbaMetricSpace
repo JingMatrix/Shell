@@ -1,0 +1,70 @@
+Preface,3
+d=10
+The Borel Subsets of a Metric Space,1
+	1. General Properties of Borel Sets,1
+	2. The Isomorphism Theorem,7
+	3. The Kuratowski Theorem,15
+	4. Borel Cross Sections in Compact Metric Spaces,22
+	5. Borel Cross Sections in Locally Compact Groups,24
+Probability Measures in a Metric Space,26
+	1. Regular Measures,26
+	2. Spectrum of a Measure,27
+	3. Tight Measures,28
+	4. Perfect Measures,30
+	5. Linear Functionals and Measures,32
+	6. The Weak Topology in the Space of Measures,39
+	7. Convergence of Sample Distributions,52
+	8. Existence of Nonatomic Measures in Metric Spaces,53
+Probability Measures in a Metric Group,56
+	1. The Convolution Operation,56
+	2. Shift Compactness in *Jit(X),58
+	3. Idempotent Measures,61
+	4. Indecomposable Measures,63
+	5. The Case When X Is Abelian,70
+Probability Measures in Locally Compact Abelian Groups,73
+	1. Introduction,73
+	2. Preliminary Facts about a Group and Its Character Group,74
+	3. Measures and Their Fourier Transforms,74
+	4. Infinitely Divisible Distributions,77
+	5. General Limit Theorems for Sums of Infinitesimal Summands,82
+	6. Gaussian Distributions,97
+	7. Representation of Infinitely Divisible Distributions,102
+	8. Uniqueness of the Representation,109
+	9. Compactness Criteria,113
+	10. Representation of Convolution Semigroups,116
+	11. A Decomposition Theorem,118
+	12. Absolutely Continuous Indecomposable Distributions in A7,120
+The Kolmogorov Consistency Theorem and Conditional Probability,131
+	1. Statement of the First Problem,131
+	2. Standard Borel Spaces,132
+	3. The Consistency Theorem in the Case of Inverse Limits of Borel Spaces,137
+	4. The Extension Theorem,140
+	5. The Kolmogorov Consistency Theorem,143
+	6. Statement of the Second Problem,144
+	7. Existence of Conditional Probability,145
+	8. Regular Conditional Probability,146
+Probability Measures in a Hilbert Space,151
+	1. Introduction,151
+	2. Characteristic Functions and Compactness Criteria,151
+	3. An Estimate of the Variance,165
+	4. Infinitely Divisible Distributions,170
+	5. Compactness Criteria,182
+	6. Accompanying Laws,189
+	7. Representation of Convolution Semigroups,201
+	8. Decomposition Theorem,201
+	9. Ergodic Theorems,202
+Probability Measures on C[0, 1] and D[0, 1],211
+	1. Introduction,211
+	2. Probability Measures on C[0, 1],212
+	3. A Condition for the Realization of a Stochastic Process in "C",215
+	4. Convergence to Brownian Motion,219
+	5. Distributions of Certain Random Variables Associated with the Brownian Motion,224
+	6. The Space D[0, 1],231
+	7. Probability Measures in "D",249
+	8. Ergodic Theorems for D-Valued Random Variables,254
+	9. Applications to Statistical Tests of Hypothesis,259
+Bibliographical Notes,268
+Bibliography,270
+List of Symbols,273
+Author Index,274
+Subject Index,275

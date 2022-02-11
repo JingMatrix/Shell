@@ -1,0 +1,40 @@
+Preface 3
+d=8
+Part I—Algebraic Methods 9
+Chapter I—Finite fields 3
+	1—Generalities 3
+	2—Equations over a finite field 5
+	4—Quadratic reciprocity law 6
+	Appendix—Another proof of the quadratic reciprocity law 9
+Chapter II—p-adic fields 11
+	1—The ring Zp and the field Qp 11
+	2—p-adic equations 13
+	3—The multiplicative group of Qp 15
+Chapter III—Hilbert symbol 19
+	1—Local properties 19
+	2—Global properties 23
+Chapter IV—Quadratic forms over Qp and over Q 27
+	1—Quadratic forms 27
+	2—Quadratic forms over Qp 35
+	3—Quadratic forms over Q 41
+	Appendix—Sums of three squares 45
+Chapter V—Integral quadratic forms with discriminant ± 1 48
+	1—Preliminaries 48
+	2—Statement of results 52
+	3—Proofs 55
+Part II—Analytic Methods 59
+Chapter VI—The theorem on arithmetic progressions 61
+	1—Characters of finite abelian groups 61
+	2—Dirichlet series 64
+	3—Zeta function and L functions 68
+	4—Density and Dirichlet theorem 73
+Chapter VII—Modular forms 77
+	1—The modular group 77
+	2—Modular functions 79
+	3—The space of modular forms 84
+	4—Expansions at infinity 90
+	5—Hecke operators 98
+	6—Theta functions 106
+Bibliography 112
+Index of Definitions 114
+Index of Notations 115

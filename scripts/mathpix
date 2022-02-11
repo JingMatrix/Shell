@@ -1,0 +1,39 @@
+#!/bin/zsh
+# use mathpix api for math ocr
+# set -e
+
+gnome-screenshot -f /tmp/latex.png -a
+if [[ -f /tmp/latex.png ]]; then
+	image=$(base64 -i /tmp/latex.png | tr -d \\n)
+else
+	echo "Make sure that there is an image in CLIPBOARD"
+	exit 1
+fi
+local mathpixrc=($(cat ~/.config/mathpix))
+curl -f -X POST https://api.mathpix.com/v3/latex \
+	-H "app_id: $mathpixrc[1]" \
+	-H "app_key: $mathpixrc[2]" \
+	-H 'Content-Type: application/json' \
+	-o /tmp/mathpix.json --data @- <<Config
+{ 
+	"src": "data:image/jpeg;base64,'$image'", 
+	"ocr": ["math", "text"],
+	"skip_recrop": true,
+	"formats": [
+		"latex_simplified",
+		"latex_styled",
+		"text",
+		"text_display"
+	 ],
+	 "format_options": {
+		 "latex_styled": {"transforms": ["rm_spaces"]}
+	 }
+}
+Config
+
+if [[ $? -eq 1 ]]; then
+	notify-send "Mathpix Failed" "cURL Error"
+	exit
+fi
+jq '.text' /tmp/mathpix.json -r | wl-copy
+jq '.' /tmp/mathpix.json

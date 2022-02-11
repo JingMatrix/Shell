@@ -1,0 +1,67 @@
+d=15
+CHAPTER O-DIFFERENTIABLE MANIFOLDS,1
+	1. Introduction,1
+	2. Differentiable manifolds; tangent space,2
+	3. Immersions and embeddings; examples,11
+	4. Other examples of manifolds. Orientation,15
+	5. Vector fields; brackets. Topology of manifolds,25
+CHAPTER 1-RIEMANNIAN METRICS,35
+	1. Introduction,35
+	2. Riemannian Metrics,38
+CHAPTER 2-AFFINE CONNECTIONS; RIEMANNIAN CONNECTIONS,48
+	1. Introduction,48
+	2. Affine connections,49
+	3. Riemannian connections,53
+CHAPTER 3-GEODESICS; CONVEX NEIGHBORHOODS,60
+	1. Introduction,60
+	2. The geodesic flow,61
+	3. Minimizing properties of geodesies,67
+	4. Convex neighborhoods,75
+CHAPTER 4-CURVATURE,88
+	1. Introduction,88
+	2. Curvature,89
+	3. Sectional curvature,93
+	4. Ricci curvature and scalar curvature,97
+	5. Tensors on Riemannian manifolds,100
+CHAPTER 5-JACOBI FIELDS,110
+	1. Introduction,110
+	2. The Jacobi equation,110
+	3. Conjugate points,116
+CHAPTER 6-ISOMETRIC IMMERSIONS,124
+	1. Introduction,124
+	2. The second fundamental form,125
+	3. The fundamental equations,134
+CHAPTER 7-COMPLETE MANIFOLDS; HOPF-RINOW AND HADAMARD THEOREMS,144
+	1. Introduction,144
+	2. Complete manifolds; Hopf-Rinow Theorem,145
+	3. The Theorem of Hadamard,149
+CHAPTER 8-SPACES OF CONSTANT CURVATURE,155
+	1. Introduction,155
+	2. Theorem of Cartan on the determination of the metric by means of the curvature,156
+	3. Hyperbolic space,160
+	4. Space forms,162
+	5. Isornetries of the hyperbolic space; Theorem of Liouvffle,168
+CHAPTER 9-VARIATIONS OF ENERGY,191
+	1. Introduction,191
+	2. Formulas for the first and second variations of energy,191
+	3. The theorems of Bonnet-Myers and of Synge-Weinstein,200
+CHAPTER 10-THE RAUCH COMPARISON THEOREM,210
+	1. Introduction,210
+	2. The Theorem of Rauch,212
+	3. Applications of the Index Lemma to immersions,221
+	4. Focal points and an extension of Rauch's Theorem,227
+CHAPTER 11-THE MORSE INDEX THEOREM,242
+	1. Introduction,242
+	2. The Index Theorem,242
+CHAPTER 12-THE FUNDAMENTAL GROUP OF MANIMANIFOLDS OF NEGATIVE CURVATURE,253
+	1. Introduction,253
+	2. Existence of closed geodesies,254
+	3. Preissman's Theorem,258
+CHAPTER 13-THE SPHERE THEOREM,265
+	1. Introduction,265
+	2. The cut locus,267
+	3. The estimate of the injectivity radius,276
+	4. The Sphere Theorem,283
+	5. Some further developments,288
+References,292
+Index,297

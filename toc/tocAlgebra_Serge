@@ -1,0 +1,218 @@
+ Front Cover,1
+ d=-2
+ Title Page,4
+ Copyright Page,5
+ Foreword,6
+ Logical Prerequisites,10
+ Contents,12
+ Part 1: The Basic Objects Of Algebra,18
+      Chapter 1: Groups,20
+           Monoids,20
+           Groups,24
+           Normal Subgroups,30
+           Cyclic Groups,40
+           Operations Of A Group On A Set,42
+           Sylow Subgroups,50
+           Direct Sums And Free Abelian Groups,53
+           Finitely Generated Abelian Groups,59
+           The Dual Group,63
+           Inverse Limit And Completion,66
+           Categories And Functors,70
+           Free Groups,83
+           Exercises,92
+      Chapter 2: Rings,100
+           Rings And Homomorphisms,100
+           Commutative Rings,109
+           Polynomials And Group Rings,114
+           Localization,124
+           Principal And Factorail Rings,128
+           Exercises,131
+      Chapter 3: Modules,134
+           Basic Definitions,134
+           The Group Of Homomorphisms,139
+           Direct Products And Sums Of Modules,144
+           Free Modules,152
+           Vector Spaces,156
+           The Dualspace And Dual Module,159
+           Modules Over Principal Rings,163
+           Euler Poincare Maps,172
+           The Snake Lemma,174
+           Direct And Inverse Limits,176
+           Exercises,182
+      Chapter 4: Polynomials,190
+           Basic Properties For Polynomials In One Variable,190
+           Polynomials Over A Factorail Ring,197
+           Criteria For Irreducibility,200
+           Hilbert's Theorem,203
+           Partial Fractions,204
+           Symmetric Polynomials,207
+           Mason-stothers Theorem And The Conjecture,211
+           The Resultant,217
+           Power Series,222
+           Exercises,230
+ Part 2: Algebraic Equations,238
+      Chapter 5: Algebraic Extensions,240
+           Finite And Algebraic Extensions,240
+           Algebraic Closure,246
+           Splitting Fields And Normal Extensions,252
+           Separable Extensions,256
+           Finite Fields,261
+           Inseparable Extensions,264
+           Exercises,270
+      Chapter 6: Galois Theory,278
+           Galois Extensions,278
+           Examples And Applications,286
+           Roots Of Unity,293
+           Linear Independence Of Characters,299
+           The Norm And Trace,301
+           Cyclic Extensions,305
+           Solvable And Radical Extensions,308
+           Abelian Kummer Theory,310
+           The Equation,314
+           Galois Cohomology,319
+           Nonabelian Kummer Extensions,321
+           Algebraic Independence Of Homomorphisms,325
+           The Normal Basis Theorem,329
+           Infinite Galois Extensions,330
+           The Modular Connection,332
+           Exercises,337
+      Chapter 7: Extensions Of Rings,350
+           Integral Ring Extensions,350
+           Integral Galois Extensions,357
+           Extension Of Homomorphisms,363
+           Exercises,369
+      Chapter 8: Transcendental Extensions,372
+           Transcendence Bases,372
+           Noether Normalization Theorem,374
+           Linearly Disjoint Extensions,377
+           Separable And Regular Extensions,380
+           Derivations,386
+           Exercises,391
+      Chapter 9: Algebraic Spaces,394
+           Hilbert's Nullstellensatz,395
+           Algebraic Sets &#44; Spaces And Varieties,398
+           Projections And Elimination,405
+           Resultant Systems,419
+           Spec Of A Ring,423
+           Exercises,427
+      Chapter 10: Noetherian Rings And Modules,430
+           Basic Criteria,430
+           Associated Primes,433
+           Primary Decomposition,438
+           Nakayama's  Lemma,441
+           Filtered And Graded Modules,443
+           The Hilbert Polynomial,448
+           Indecomposable Modules,456
+           Exercises,460
+      Chapter 11: Real Fields,466
+           Ordered Fields,466
+           Real Fields,468
+           Real Zeros And Homomorphisms,474
+           Exercises,478
+      Chapter 12: Absolute Values,482
+           Definitions &#44; Dependence&#44; And Independence,482
+           Completions,485
+           Finite Extensions,493
+           Valuations,497
+           Completions And Valuations,503
+           Discret Evaluations,504
+           Zeros Of Polynomials In Complete Fields,508
+           Exercises,512
+ Part 3: Linear Algebra And Representations,518
+      Chapter 13: Matrices And Linear Maps,520
+           Matrices,520
+           The Rank Of A Matrix,523
+           Matrices And Linearmaps,524
+           Determinants,528
+           Duality,539
+           Matrices And Bilinear Forms,544
+           Sesquilinear Duality,548
+           The Simplicity Of,553
+           The Group,557
+           Exercises,562
+      Chapter 14: Representation Of One Endomorphism,570
+           Representations,570
+           Decomposition Over One Endomorphism,573
+           The Characteristic Polynomial,578
+           Exercises,584
+      Chapter 15: Structure Of Bilinear Forms,588
+           Preliminaries &#44; Orthogonal Sums,588
+           Quadratic Maps,591
+           Symmetric Forms&#44; Orthogonal Bases,592
+           Symmetric Forms Over Ordered Fields,594
+           Hermitian Forms,596
+           The Spectral Theorem ( Hermitian Case),598
+           The Spectral Theorem ( Symmetric Case),601
+           Alternating Forms,603
+           Pfaffian,605
+           Witt's Theorem,606
+           The Witt Group,611
+           Exercises,612
+      Chapter 16: The Tensor Product,618
+           Tensor Product,618
+           Basic Properties,624
+           Flat Modules,629
+           Extension Of The Base,640
+           Some Functorial Isomorphisms,642
+           Tensor Product Of Algebras,646
+           The Tensor Algebra Of A Module,649
+           Symmetric Products,652
+           Exercises,654
+      Chapter 17: Semisimplicity,658
+           Matrices And Linear Maps Over Noncommutative Rings,658
+           Conditions Defining Semisimpliclty,662
+           The Density Theorem,663
+           Semisimple Rings,668
+           Simple Rings,671
+           The Jacobson Radical &#44; Base Change &#44; And Tensor Products,674
+           Balanced Modules,677
+           Exercises,678
+      Chapter 18: Representations Of Finite Groups,680
+           Representations And Semisimpliclty,681
+           Characters,684
+           1-dimensional Representations,688
+           The Space Of Class Functions,690
+           Orthogonality Relations,694
+           Induced Characters,703
+           Induced Representations,705
+           Positive Decomposition Of The Regular Character,716
+           Supersolvable Groups,719
+           Brauer's Theorem,721
+           Field Of Definition Of A Representation,727
+           Example: Gl2 Over Afinite Field,729
+           Exercises,739
+      Chapter 19: The Alternating Product,748
+           Definition And Basic Properties,748
+           Fitting Ideals,755
+           Universal Derivations And The Derham Complex,763
+           The Clifford Algebra,766
+           Exercises,770
+ Part 4: Homological Algebra,776
+      Chapter 20: General Homology Theory,778
+           Complexes,778
+           Homology Sequence,784
+           Euler Characteristic And The Grothendieck Group,786
+           Injective Modules,799
+           Homotopies Of Morphisms Of Complexes,804
+           Derived Functors,807
+           Delta Functors,816
+           Bifunctors,823
+           Spectral Sequences,831
+           Exercises,843
+      Chapter 21: Finite Free Resolutions,852
+           Special Complexes,852
+           Finite Free Resolutions,856
+           Unimodular Polynomial Vectors,863
+           The Koszul Complex,867
+           Exercises,881
+ Appendix 1: The Transcendence Of E And \pi,884
+ Appendix 2: Some Set Theory,892
+      Denumerable Sets,892
+      Zorn's  Lemma,895
+      Cardinal Numbers,901
+      Well Orde Ring,908
+      Exercises,909
+ Bibliography,912
+ Index,920
+ Back Cover,936
+ 

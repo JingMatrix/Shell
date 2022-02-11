@@ -1,0 +1,54 @@
+#! /bin/zsh
+
+local -a portal=('wifi-gw2-ups.private.univ-tlse3.fr:8003'
+	'pftf01.in.crous-toulouse.fr:8003'
+	'pftf04.in.crous-toulouse.fr:8003'
+	'pftf02.in.crous-toulouse.fr:8003'
+	'pftf03.in.crous-toulouse.fr:8003'
+)
+local -a zone=('ssid_ups' 'lan' 'lan' 'lan' 'lan')
+function upslogin {
+	ups=($(</home/jing/.config/ups))
+	for i in $(seq $#portal); do
+		url="https://$portal[$i]/index.php?zone=$zone[$i]"
+		if ! wget -q --spider $url; then
+			continue
+		fi
+		curl -f -s $url \
+			-H "authority: $portal[$i]" \
+			-H 'cache-control: max-age=0' \
+			-H 'upgrade-insecure-requests: 1' \
+			-H "origin: https://$portal[$i]" \
+			-H 'content-type: application/x-www-form-urlencoded' \
+			-H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.15.2 Chrome/87.0.4280.144 Safari/537.36' \
+			-H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+			-H 'accept-language: en-US,en;q=0.9' \
+			-H 'dnt: 1' \
+			-H 'sec-fetch-site: same-origin' \
+			-H 'sec-fetch-mode: navigate' \
+			-H 'sec-fetch-user: ?1' \
+			-H 'sec-fetch-dest: document' \
+			--data-raw "auth_user=$ups[1]&auth_pass=$ups[2]&redirurl=&accept=Connexion+%28Authentication%29" \
+			--compressed
+		if [[ $? -eq 0 && testInternet ]]; then
+			notify-send --hint=int:transient:1 "Auto WiFi Logins Sucess"
+		else
+			notify-send --hint=int:transient:1 "Auto WiFi Logins Fail" "Unknow error caused by CROUS"
+		fi
+		exit 0
+	done
+}
+
+function testInternet {
+	wget -q --spider https://google.com
+}
+
+testInternet
+if [[ $? -ne 0 ]]; then
+	notify-send --hint=int:transient:1 "No Internet" "Now try auto login"
+	upslogin
+	# Once failed
+	notify-send --hint=int:transient:1 "Auto WiFi Logins Fail" "Open browser for login"
+	/usr/local/bin/qutebrowser https://google.com
+	exit 1
+fi

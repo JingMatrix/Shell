@@ -1,0 +1,189 @@
+d=10
+Introduction,1
+Notation,5
+1. Complex Tori,7
+	Complex Tori,7
+	Homomorphisms,9
+	Cohomology of Complex Tori,1
+	The Hodge Decomposition,15
+	Exercises and Further Results,21
+2. Line Bundles on Complex Tori,23
+	Line Bundles on Complex Tori,24
+	The Appell-Humbert Theorem,29
+	Canonical Factors,32
+	The Dual Complex Torus,34
+	The Poincare Bundle,37
+	Exercises and Further Results,41
+3. Cohomology of Line Bundles,45
+	Characteristics,46
+	Theta Functions,49
+	The Positive Semidefinite Case,54
+	The Vanishing Theorem,56
+	Cohomology of Line Bundles,61
+	The Riemann-Roch Theorem,64
+	Exercises and Further Results,66
+4. Abelian Varieties,69
+	Polarized Abelian Varieties,70
+	The Riemann Relations,73
+	The Decomposition Theorem,74
+	The Gauss Map,81
+	Projective Embeddings,84
+	Symmetric Line Bundles,88
+	Symmetric Divisors,92
+	Kummer Varieties,97
+	Morphisms into Abelian Varieties,100
+	The Pontryagin Product,102
+	Homological Versus Numerical Equivalence,105
+	Exercises and Further Results,109
+5. Endomorphisms of Abelian Varieties,113
+	The Rosati Involution,114
+	Polarizations,119
+	Norm-Endomorphisms and Symmetric Idempotents,122
+	Endomorphisms Associated to Cycles,128
+	The Endomorphism Algebra of a Simple Abelian Variety,131
+	Exercises and Further Results,140
+6. Theta and Heisenberg Groups,145
+	Theta Groups,146
+	Theta Groups under Homomorphisms,149
+	The Commutator Map,151
+	The Canonical Representation of the Theta Group,153
+	The lsogeny Theorem,156
+	Heisenberg Groups and Theta Structures,159
+	The Schrodinger Representation,164
+	The lsogeny Theorem for Finite Theta Functions,166
+	Symmetric Theta Structures,169
+	Exercises and Further Results,174
+7. Equations for Abelian Varieties,179
+	The Multiplication Formula,180
+	Surjectivity of the Multiplication Map,184
+	Projective Normality,187
+	The Ideal of an Abelian Variety in FN,190
+	Riemann's Theta Relations,196
+	Cubic Theta Relations,198
+	Exercises and Further Results,203
+8. Moduli,209
+	The Siegel Upper Half Space,210
+	The Analytic Moduli Space,213
+	Level Structures,216
+		Level Z)-Structure,217
+		Generalized Level n-Structure,218
+		Decomposition of the Lattice,219
+	The Theta Transformation Formula, Preliminary Version,220
+	Classical Theta Functions,222
+	The Theta Transformation Formula, Final Version,227
+	The Universal Family,229
+	The Action of the Symplectic Group,232
+	Orthogonal Level D-Structures,234
+	The Embedding of Ad(DH into Projective Space,235
+	Exercises and Further Results,239
+9. Moduli Spaces of Abelian Varieties with Endomorphism Structure,243
+	Abelian Varieties with Endomorphism Structure,245
+	Abelian Varieties with Real Multiplication,246
+	Some Notation,251
+	Totally Indefinite Quaternion Multiplication,254
+	Totally Definite Quaternion Multiplication,257
+	Families of Abelian Varieties with Complex Multiplication,262
+	Group Actions on Hr,s and Hm,267
+	Shimura Varieties,270
+	The Endomorphism Algebra of a General Member,274
+	Exercises and Further Results,279
+10. Abelian Surfaces,281
+	Preliminaries,282
+	The 166-Configuration of the Kummer Surface,285
+	An Equation for the Kummer Surface,290
+	Reider's Theorem,293
+	Polarizations of Type A,4,300
+	Products of Elliptic Curves,304
+	of a Principally Polarized Abelian Surface,308
+	Exercises and Further Results,310
+11. Jacobian Varieties,315
+	Definition of the Jacobian Variety,316
+	The Theta Divisor,322
+		Theta Characteristics,325
+		The Singularity Locus of 0,325
+	The Poincare Bundles for a Curve C,327
+	The Universal Property,330
+	Correspondences of Curves,333
+	Endomorphisms Associated to Curves and Divisors,335
+	Examples of Jacobians,337
+	The Criterion of Matsusaka-Ran,341
+	Trisecants of the Kummer Variety,344
+	Fay's Trisecant Identity,347
+	Albanese and Picard Varieties,353
+	Exercises and Further Results,359
+12. Prym Varieties,363
+	Abelian Subvarieties of a Principally Polarized Abelian Variety,364
+	Prym-Tyurin Varieties,368
+	Prym Varieties,372
+	Topological Construction of Prym Varieties,374
+	The Abel-Prym Map,378
+	The Theta Divisor of a Prym Variety,381
+	Recillas' Theorem,385
+	Donagi's Tetragonal Construction,388
+	Kanev's Criterion,394
+	The Schottky-Jung Relations,399
+	Exercises and Further Results,406
+13. Automorphisms,411
+	Fixed-Point Formulas,412
+	The Fixed-Point Set of a Finite Automorphism Group,413
+	Abelian Varieties of CM-Type,417
+	Abelian Surfaces with Finite Automorphism Group,421
+	Poincare's Reducibility Theorem with Automorphisms,428
+	The Group Algebra Decomposition of an Abelian Variety,431
+	Exercises and Further Results,436
+14. Vector bundles on Abelian Varieties,439
+	Some Properties of the Poincare Bundle,440
+	The Fourier Transform for WIT-Sheaves,444
+	Some Properties of the Fourier Transform,448
+	The Dual Polarization,453
+	Application: Global Generation of Vector Bundles,455
+	Picard Sheaves,459
+	The Fourier Transform of a Complex,464
+	Vector Bundles on Abelian Surfaces,469
+	Exercises and Further Results,476
+15. Further Results on Line Bundles an the Theta Divisor,479
+	Very Ample Line Bundles on General Abelian Varieties,480
+	Syzygies of Line Bundles on Abelian Varieties,484
+	Seshadri Constants,488
+	Bounds for Seshadri Constants,491
+	The Minimal Length of a Period,496
+	Seshadri Constants of Line Bundles on Abelian Surfaces,503
+	Subvarieties of Abe'"an Varieties,507
+	Singularities of the Theta Divisor,512
+	Exercises and Further Results,517
+16. Cycles on Abelian varieties,521
+	Chow Groups,522
+	Correspondences,525
+	The Fourier Transform on the Chow Ring,527
+	The Fourier Transform on the Cohomology Ring,532
+	A Decomposition of Ch(X)q,534
+	The Kiinneth Decomposition,538
+	The Bloch Filtration of Cho(X,543
+	Exercises and Further Results,546
+17. The Hodge Conjecture for General Abelian and Jacobian Varieties,549
+	Hodge Structures and Complex Structures,550
+	Symplectic Complex Structures,552
+	The Hodge Group of an Abelian Variety,554
+	The Theorem of Mattuck,559
+	The Hodge Conjecture for a General Jacobian,561
+	Exercises and Further Results,564
+A. Algebraic Varieties and Complex Analytic Spaces,567
+B. Line Bundles and Factors of Automorphy,571
+C. Some Algebraic Geometric Results,577
+	Some Properties of Q-Divisors,577
+	The Kodaira Dimension,578
+	Vanishing Theorems,579
+	Some Results from Intersection Theory,580
+	Adjoint Ideals,580
+D. Derived Categories,583
+	Definition and First Properties,583
+	Derived Functors,587
+	The Grothendieck-Riemann-Roch Theorem,589
+E. Moduli Spaces of Sheaves,591
+F. Abelian Schemes,597
+	Abelian Schemes and the Poincare Bundle,597
+	Relative Fourier Functor,599
+	The Relative Jacobian,601
+Bibliography,603
+Glossary of Notation,625
+Index,631

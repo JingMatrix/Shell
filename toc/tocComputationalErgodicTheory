@@ -1,0 +1,239 @@
+Contents,11
+d=16
+1 Prerequisites,1
+	1.1 Point Set Topology,1
+		1.1.1 Sets and functions,1
+		1.1.2 Metric spaces,2
+	1.2 Measures and Lebesgue Integration,4
+		1.2.1 Measure,4
+		1.2.2 Lebesgue integration,6
+	1.3 Nonnegative Matrices,11
+		1.3.1 Perron–Frobenius Theorem,11
+		1.3.2 Stochastic matrices,13
+	1.4 Compact Abelian Groups and Characters,14
+		1.4.1 Compact abelian groups,14
+		1.4.2 Characters,16
+		1.4.3 Fourier series,17
+		1.4.4 Endomorphisms of a torus,18
+	1.5 Continued Fractions,20
+	1.6 Statistics and Probability,21
+		1.6.1 Independent random variables,21
+		1.6.2 Change of variables formula,23
+		1.6.3 Statistical laws,23
+	1.7 Random Number Generators,25
+		1.7.1 What are random numbers?,25
+		1.7.2 How to generate random numbers,27
+		1.7.3 Random number generator in Maple,28
+	1.8 Basic Maple Commands,28
+		1.8.1 Restart, colon, semicolon, Digits,29
+		1.8.2 Set theory and logic,29
+		1.8.3 Arithmetic,31
+		1.8.4 How to plot a graph,32
+		1.8.5 Calculus: differentiation and integration,34
+		1.8.6 Fractional and integral parts of real numbers,35
+		1.8.7 Sequences and printf,36
+		1.8.8 Linear algebra,37
+		1.8.9 Fourier series,39
+		1.8.10 Continued fractions I,40
+		1.8.11 Continued fractions II,41
+		1.8.12 Statistics and probability,42
+		1.8.13 Lattice structures of linear congruential generators,44
+		1.8.14 Random number generators in Maple,44
+		1.8.15 Monte Carlo method,45
+2 Invariant Measures,47
+	2.1 Invariant Measures,47
+	2.2 Other Types of Continued Fractions,56
+	2.3 Shift Transformations,59
+	2.4 Isomorphic Transformations,60
+	2.5 Coding Map,66
+	2.6 Maple Programs,70
+		2.6.1 The logistic transformation,71
+		2.6.2 Chebyshev polynomials,73
+		2.6.3 The beta transformation,76
+		2.6.4 The baker’s transformation,78
+		2.6.5 A toral automorphism,79
+		2.6.6 Modified Hurwitz transformation,80
+		2.6.7 A typical point of the Bernoulli measure,81
+		2.6.8 A typical point of the Markov measure,82
+		2.6.9 Coding map for the logistic transformation,84
+3 The Birkhoff Ergodic Theorem,85
+	3.1 Ergodicity,85
+	3.2 The Birkhoff Ergodic Theorem,89
+	3.3 The Kronecker–Weyl Theorem,97
+	3.4 Gelfand’s Problem,99
+	3.5 Borel’s Normal Number Theorem,99
+	3.6 Continued Fractions,100
+	3.7 Approximation of Invariant Density Functions,103
+	3.8 Physically Meaningful Singular Invariant Measures,105
+	3.9 Maple Programs,112
+		3.9.1 The Gauss transformation,112
+		3.9.2 Discrete invariant measures,113
+		3.9.3 A cobweb plot,114
+		3.9.4 The Kronecker-Weyl Theorem,115
+		3.9.5 The logistic transformation,116
+		3.9.6 An unbounded invariant density and the speed ofgrowth at a singularity,118
+		3.9.7 Toral automorphisms,120
+		3.9.8 The Khinchin constant,121
+		3.9.9 An infinite invariant measure,123
+		3.9.10 Cross sections of the solenoid,125
+		3.9.11 The solenoid,126
+		3.9.12 Feigenbaum’s logistic transformations,130
+		3.9.13 The H ́enon attractor,130
+		3.9.14 Basin of attraction for the H ́enon attractor,131
+4 The Central Limit Theorem,133
+	4.1 Mixing Transformations,133
+	4.2 The Central Limit Theorem,138
+	4.3 Speed of Correlation Decay,143
+	4.4 Maple Programs,147
+		4.4.1 The Central Limit Theorem:σ>0 for the logistictransformation,147
+		4.4.2 The Central Limit Theorem: the normal distributionfor the Gauss transformation,148
+		4.4.3 Failure of the Central Limit Theorem:σ= 0 for anirrational translation mod 1,151
+		4.4.4 Correlation coefficients ofTx=2xmod 1,151
+		4.4.5 Correlation coefficients of the beta transformation,152
+		4.4.6 Correlation coefficients of an irrational translationmod 1,153
+5 More on Ergodicity,155
+	5.1 Absolutely Continuous Invariant Measures,155
+	5.2 Boundary Conditions for Invariant Measures,156
+	5.3 Kac’s Lemma on the First Return Time,159
+	5.4 Ergodicity of Markov Shift Transformations,165
+	5.5 Singular Continuous Invariant Measures,170
+	5.6 An Invertible Extension of a Transformation on an Interval,172
+	5.7 Maple Programs,173
+		5.7.1 Piecewise defined transformations,173
+		5.7.2 How to sketch the graph of the first return timetransformation,174
+		5.7.3 Kac’s lemma for the logistic transformation,175
+		5.7.4 Kac’s lemma for an irrational translation mod 1,176
+		5.7.5 Bernoulli measures on the unit interval,178
+		5.7.6 An invertible extension of the beta transformation,179
+6 Homeomorphisms of the Circle,183
+	6.1 Rotation Number,183
+	6.2 Topological Conjugacy and Invariant Measures,188
+	6.3 The Cantor Function and Rotation Number,193
+	6.4 Arnold Tongues,194
+	6.5 How to Sketch a Conjugacy Using Rotation Number,195
+	6.6 Unique Ergodicity,196
+	6.7 Poincar ́e Section of a Flow,198
+	6.8 Maple Programs,199
+		6.8.1 The rotation number of a homeomorphism of the unitcircle,199
+		6.8.2 Symmetry of invariant measures,200
+		6.8.3 Conjugacy and the invariant measure,201
+		6.8.4 The Cantor function,202
+		6.8.5 The Cantor function as a cumulative density function,202
+		6.8.6 Rotation numbers and a staircase function,204
+		6.8.7 Arnold tongues,205
+		6.8.8 How to sketch a topological conjugacy of a circlehomeomorphism I,206
+		6.8.9 How to sketch a topological conjugacy of a circlehomeomorphism II,207
+7 Mod 2 Uniform Distribution,211
+	7.1 Mod 2 Normal Numbers,211
+	7.2 Skew Product Transformations,213
+	7.3 Mod 2 Normality Conditions,218
+	7.4 Mod 2 Uniform Distribution for General Transformations,221
+	7.5 Random Walks on the Unit Circle,222
+	7.6 How to Sketch a Cobounding Function,226
+	7.7 Maple Programs,229
+		7.7.1 Failure of mod 2 normality for irrational translationsmod 1,229
+		7.7.2 Ergodic components of a nonergodic skew producttransformation arising from the beta transformation,231
+		7.7.3 Random walks by an irrational angle on the circle,232
+		7.7.4 Skew product transformation and random walks on acyclic group,233
+		7.7.5 How to plot points on the graph of a coboundingfunction,234
+		7.7.6 Fourier series of a cobounding function,235
+		7.7.7 Numerical computation of a lower bound forn||nθ||,236
+8 Entropy,237
+	8.1 Definition of Entropy,237
+	8.2 Entropy of Shift Transformations,242
+	8.3 Partitions and Coding Maps,245
+	8.4 The Shannon–McMillan–Breiman Theorem,248
+	8.5 Data Compression,252
+	8.6 Asymptotically Normal Distribution of (−logPn)/n,253
+	8.7 Maple Programs,254
+		8.7.1 Definition of entropy: the logistic transformation,254
+		8.7.2 Definition of entropy: the Markov shift,255
+		8.7.3 Cylinder sets of a nongenerating partition:Tx=2xmod 1,256
+		8.7.4 The Shannon–McMillan–Breiman Theorem: theMarkov shift,258
+		8.7.5 The Shannon–McMillan–Breiman Theorem: the betatransformation,260
+		8.7.6 The Asymptotic Equipartition Property: the Bernoullishift,261
+		8.7.7 Asymptotically normal distribution of (−logPn)/n:the Bernoulli shift,265
+9 The Lyapunov Exponent: One-Dimensional Case,269
+	9.1 The Lyapunov Exponent of Differentiable Maps,269
+	9.2 Number of Significant Digits and the Divergence Speed,278
+	9.3 Fixed Points of the Gauss Transformation,280
+	9.4 Generalized Continued Fractions,282
+	9.5 Speed of Approximation by Convergents,286
+	9.6 Random Shuffling of Cards,290
+	9.7 Maple Programs,292
+		9.7.1 The Lyapunov exponent: the Gauss transformation,292
+		9.7.2 Hn,k: a local version for the Gauss transformation,293
+		9.7.3 Hn,k: a global version for the Gauss transformation,294
+		9.7.4 The divergence speed: a local version for the Gausstransformation,294
+		9.7.5 The divergence speed: a global version for the Gausstransformation,295
+		9.7.6 Number of correct partial quotients: validity of Maplealgorithm of continued fractions,295
+		9.7.7 Speed of approximation by convergents: the Bernoullitransformation,297
+10 The Lyapunov Exponent: Multidimensional Case,299
+	10.1 Singular Values of a Matrix,299
+	10.2 Oseledec’s Multiplicative Ergodic Theorem,302
+	10.3 The Lyapunov Exponent of a Differentiable Mapping,310
+	10.4 Invariant Subspaces,315
+	10.5 The Lyapunov Exponent and Entropy,318
+	10.6 The Largest Lyapunov Exponent and the Divergence Speed,321
+	10.7 Maple Programs,323
+		10.7.1 Singular values of a matrix,323
+		10.7.2 A matrix sends a circle onto an ellipse,324
+		10.7.3 The Lyapunov exponents: a local version for the solenoid mapping,325
+		10.7.4 The Lyapunov exponent: a global version for the Hénon mapping,328
+		10.7.5 The invariant subspace E 1 of the Hénon mapping,329
+		10.7.6 The invariant subspace E 2 of the Hénon mapping,330
+		10.7.7 The divergence speed: a local version for a toral automorphism,331
+		10.7.8 The divergence speed: a global version for Hénon mapping,332
+11 Stable and Unstable Manifolds,333
+	11.1 Stable and Unstable Manifolds of Fixed Points,333
+	11.2 The Hénon Mapping,336
+	11.3 The Standard Mapping,339
+	11.4 Stable and Unstable Manifolds of Periodic Points,340
+	11.5 Maple Programs,345
+		11.5.1 A stable manifold of the Hénon mapping,345
+		11.5.2 An unstable manifold of the Hénon mapping,348
+		11.5.3 The boundary of the basin of attraction of the Hénon mapping,349
+		11.5.4 Behavior of the Hénon mapping near a saddle point,353
+		11.5.5 Hyperbolic points of the standard mapping,355
+		11.5.6 Images of a circle centered at a hyperbolic point under the standard mapping,357
+		11.5.7 Stable manifolds of the standard mapping,358
+		11.5.8 Intersection of the stable and unstable manifolds of the standard mapping,361
+12 Recurrence and Entropy,363
+	12.1 The First Return Time Formula,363
+	12.2 L p -Convergence,367
+	12.3 The Nonoverlapping First Return Time,369
+	12.4 Product of the Return Time and the Probability,376
+	12.5 Symbolic Dynamics and Topological Entropy,377
+	12.6 Maple Programs,381
+		12.6.1 The first return time R n for the Bernoulli shift,381
+		12.6.2 Averages of (log R n )/n and R n for the Bernoulli shift,382
+		12.6.3 Probability density function of (log R n )/n for the Bernoulli shift,383
+		12.6.4 Convergence speed of the average of log R n for the Bernoulli shift,385
+		12.6.5 The nonoverlapping first return time,386
+		12.6.6 Probability density function of R n P n for the Markov shift,388
+		12.6.7 Topological entropy of a topological shift space,389
+13 Recurrence and Dimension,391
+	13.1 Hausdorff Dimension,391
+	13.2 Recurrence Error,393
+	13.3 Absolutely Continuous Invariant Measures,394
+	13.4 Singular Continuous Invariant Measures,398
+	13.5 The First Return Time and the Dimension,400
+	13.6 Irrational Translations Mod 1,403
+	13.7 Maple Programs,408
+		13.7.1 The recurrence error,409
+		13.7.2 The logistic transformation,409
+		13.7.3 The Hénon mapping,411
+		13.7.4 Type of an irrational number,412
+		13.7.5 An irrational translation mod 1,414
+14 Data Compression,417
+	14.1 Coding,417
+	14.2 Entropy and Data Compression Ratio,419
+	14.3 Huffman Coding,423
+	14.4 Lempel–Ziv Coding,425
+	14.5 Arithmetic Coding,428
+	14.6 Maple Programs,429
+		14.6.1 Huffman coding,429
+		14.6.2 Lempel–Ziv coding,433
+		14.6.3 Typical intervals arising from arithmetic coding,436
+References,439
+Index,449

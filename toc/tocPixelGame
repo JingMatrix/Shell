@@ -1,0 +1,127 @@
+Front Cover,1
+Contents,6
+Preface: What the Crap Is Pixel Art?,12
+Acknowledgments,18
+d=19
+CHAPTER 1 ▪ Why Pixel Art?,1
+	1.1 PLAYERS LOVE PIXEL ART,1
+		1.1.1   Sweet Nostalgia,1
+		1.1.2   Contemporary and Relevant,2
+		1.1.3   Pixel Art Is Iconic,3
+	1.2 IT MAKES YOUR LIFE EASIER,4
+		1.2.1   Smaller File Sizes,4
+		1.2.2   Anyone Can Create Pixel Art,5
+		1.2.3   Spend Less Time Doing Boring Stuff,5
+		1.2.4   It Works Well on Very Small Screens,6
+		1.2.5   Pixel Art: It’s Better than 3D,7
+		1.2.6   All Your Friends Are Doing It and It’ll Make You Cool,8
+
+CHAPTER 2 ▪ Pixel Art: The Technology of Yesterday…Today!,9
+	2.1 WHY NOW? WHAT’S IN IT FOR YOU?,9
+	2.2 WHO THIS BOOK IS FOR,10
+		2.2.1   Artists,10
+		2.2.2   Programmers (Fire Your Artist and Do It Yourself),10
+		2.2.3   Pixel Hobbyists,11
+		2.2.4   Indie Developers,11
+	2.3 HOW TO USE THIS BOOK?,11
+
+
+CHAPTER 3 ▪ Who Am I and Why Do I Know So Much about Pixel Art?,13
+	DISCLAIMER(S),15
+
+CHAPTER 4 ▪ Software: Set Up Your Working Environment,17
+	4.1 WHAT NOT TO USE,17
+	4.2 MY SOFTWARE RECOMMENDATION,18
+	4.3 OTHER OPTIONS FOR PIXEL ART SOFTWARE,18
+	4.4 A BRIEF GLANCE AT GRAPHICSGALE,18
+
+CHAPTER 5 ▪ Making Pixel Art: Doing Lines,23
+	5.1 STRAIGHT LINES,23
+	5.2 DIAGONAL LINES,24
+	5.3 CURVED LINES,25
+		5.3.1 Avoid the Lone Wolf,25
+		5.3.2 Make Each Segment Length Progressively Longer or Shorter,25
+		5.3.3 Beware the Circle Tool,26
+		5.3.4 Make Love with the Cut and Paste Features,27
+	5.4 LINE WIDTH,27
+	5.5 ANTI-ALIASING,28
+EXERCISE 5.1: CREATING A LINE DRAWING SPRITE,29
+	Step 0: Download and Install GraphicsGale or Other Pixel Art Software,30
+	Step 1: Create a New Project,30
+	Step 2: Draw a Head and Face,31
+	Step 3: Draw the Body,35
+
+CHAPTER 6 ▪ Coloring inside the Lines,43
+	6.1 4-BIT PALETTE,43
+	6.2 FILL TOOL,44
+	6.3 CREATING GRADIENTS,47
+	6.4 PALETTE SWAPPING,51
+	6.5 PALETTE SIZE AND TIME CONSIDERATION,57
+	6.6 CHOOSING COLORS,58
+	6.7 TRANSPARENCY,64
+EXERCISE 6.1: COLORING THE SPRITE (FROM EXERCISE 5.1),66
+
+CHAPTER 7 ▪ Drawing Secrets Revealed: It’s All Smoke and Mirrors,71
+	7.1 SHADING,71
+	7.2 CAST SHADOW,74
+	7.3 SHADOW DIRECTION,76
+	7.4 ATMOSPHERIC PERSPECTIVE,77
+	7.5 LINEAR PERSPECTIVE,80
+EXERCISE 7.1: SHADING THE SPRITE (FROM EXERCISE 6.1),84
+
+CHAPTER 8 ▪ Animating Pixels: The Shock and Horror of Being Flashed by a Pixel,89
+	8.1 USING THE PROGRAM FOR ANIMATION,90
+	8.2 ONION SKINNING,91
+	8.3 PIXEL FLASHING,93
+	8.4 CORE ANIMATION CONCEPTS,95
+		8.4.1 Anticipation and Follow-Through,96
+		8.4.2 Squash and Stretch,98
+	8.5 GAME-SPECIFIC CONCERNS,102
+	8.6 SUMMARY,104
+EXERCISE 8.1: CREATE AN IDLE ANIMATION (FROM EXERCISE 7.1),104
+	Simplify the Sprite (Suggested but Optional),105
+	The Simplest Path,106
+
+CHAPTER 9 ▪ Tiled Backgrounds,109
+	9.1 TILE SIZES,110
+	9.2 SETTING UP THE TILEMAP WORK AREA,111
+	9.3 TEXTURES THAT REPEAT ON YOU,112
+	9.4 CREATE A TILE LIBRARY,118
+	9.5 DITHERING AND OTHER PATTERNS,118
+		9.5.1 How to Create Organic Dither,118
+		9.5.2 Patterned Dither,119
+EXERCISE 9.1: CREATING A TOP-DOWN TILE SET,121
+	Step 1: Create a New Project, Get a History Lesson,121
+	Step 2: Turn on Your Grid,122
+	Step 3: Prepare Your Palette,123
+	Step 4: Create Our First Tile,129
+	Step 5: Create a Grass Variation—As well as a Blend Tile,134
+	Step 6: It Isn’t Easy Being Green—Moving on to Sand,138
+	Step 7: Variation Elation for the Game’s Duration,149
+	Step 8: Rocking Out,154
+	Step 9: Water,162
+	Step 10: Put It All Together,165
+EXERCISE 9.2: CREATING A SIMPLE SIDE-VIEW TILE SET,167
+
+CHAPTER 10 ▪ You’re Doing It Wrong: Things to Avoid,207
+	10.1 BANDING AND “SUPER PIXELS”,207
+	10.2 TOO MUCH ANTI-ALIAS,209
+	10.3 POOR LINE QUALITY,210
+	10.4 WEAK PALETTE CHOICES,211
+	10.5 TOO MUCH COMPLEXITY,212
+	10.6 FLASH SHADING,213
+	10.7 NO TEXTURE,214
+
+CHAPTER 11 ▪ Interviews with Game Developers,217
+	11.1 AN INTERVIEW WITH JAMES PETRUZZI OF DISCORD GAMES,217
+	11.2 AN INTERVIEW WITH JOCHUM SKOGLUND OF CRACKSHELL,220
+	11.3 AN INTERVIEW WITH DAVE PRESTON OF HEART MACHINE,223
+
+CHAPTER 12 ▪ Resources,227
+	12.1 ONLINE RESOURCES,227
+	12.2 BOOKS,227
+	12.3 PIXEL ART SOFTWARE,228
+
+CHAPTER 13 ▪ Afterword: Some Thoughts on Why I Wrote This Book,231
+
+INDEX,,233

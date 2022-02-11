@@ -1,0 +1,42 @@
+/home/jing/.local/share/nvim/site/pack
+├── plugin
+│   ├── opt
+│   │   └── nerdtree
+│   └── start
+│       ├── registers.nvim
+│       ├── suda.vim
+│       ├── vim-commentary
+│       ├── vim-fugitive
+│       ├── vim-repeat
+│       ├── vim-rsi
+│       ├── vim-smali
+│       ├── vim-startify
+│       ├── vim-surround
+│       ├── vim-unimpaired
+│       └── vim-vinegar
+├── project
+│   ├── opt
+│   └── start
+│       ├── fzf
+│       ├── fzf.vim
+│       ├── gen_tags.vim
+│       ├── nnn.nvim
+│       ├── nvim-lspconfig
+│       ├── nvim-treesitter
+│       ├── ultisnips
+│       ├── vim-devicons
+│       ├── vim-matchup
+│       └── vim-snippets
+├── syntax
+│   ├── opt
+│   │   └── mkdx
+│   └── start
+│       ├── jsonc.vim
+│       ├── vim-markdown
+│       └── vimtex
+└── theme
+    └── start
+        ├── vim-airline
+        └── vim-airline-themes
+
+39 directories, 0 files

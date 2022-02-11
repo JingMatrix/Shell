@@ -1,0 +1,228 @@
+d=1
+Intoduction to Homotopy Theory,8
+Chapter 1. Basic Concepts,11
+	§1. Terminology and Notations,11
+		1.1. Set Theory,11
+		1.2. Logical Equivalence,11
+		1.3. Topological Spaces,12
+		1.4. Operations on Topological Spaces,12
+		1.5. Operations on Pointed Spaces,15
+	§2. Homotopy,17
+		2.1. Homotopies,17
+		2.2. Paths,17
+		2.3. Homotopy as a Path,18
+		2.4. Homotopy Equivalence,18
+		2.5. Retractions,18
+		2.6. Deformation Retractions,19
+		2.7. Relative Homotopies,20
+		2.8. k-connectedness,20
+		2.9. Borsuk Pairs,21
+		2.10. CNRS Spaces,22
+		2.11. Homotopy Properties of Topological Constructions,22
+		2.12. Natural Group Structures on Sets of Homotopy Classes,23
+	§3. Homotopy Groups,27
+		3.1. Absolute Homotopy Groups,27
+		3.2. Digression: Local Systems,29
+		3.3. Local Systems of Homotopy Groups of a Topological Space,30
+		3.4. Relative Homotopy Groups,32
+		3.5. The Homotopy Sequence of a Pair,35
+		3.6. Splitting,38
+		3.7. The Homotopy Sequence of a Triple,39
+Chapter 2. Bundle Techniques,40
+	§4. Bundles,40
+		4.1. General Definitions,40
+		4.2. Locally Trivial Bundles,41
+		4.3. Serre Bundles,43
+		4.4. Bundles of Spaces of Maps,44
+	§5. Bundles and Homotopy Groups,45
+		5.1. The Local System of Homotopy Groups of the Fibres of a Serre Bundle,45
+		5.2. The Homotopy Sequence of a Serre Bundle,46
+		5.3. Important Special Cases,47
+	§6. The Theory of Coverings,48
+		6.1. Coverings,48
+		6.2. The Group of a Covering,49
+		6.3. Hierarchies of Coverings,49
+		6.4. The Existence of Coverings,50
+		6.5. Automorphisms of a Covering,51
+		6.6. Regular Coverings,51
+		6.7. Covering Maps,52
+Chapter 3 Cellular Techniques,52
+	§7. Cellular Spaces,52
+		7.1. Basic Concepts,52
+		7.2. Gluing of Cellular Spaces from BallS,55
+		7.3. Examples of Cellular Decompositions,56
+		7.4. Topological Properties of Cellular Spaces,59
+		7.5. Cellular Constructions,60
+	§8. Simplicial Spaces,61
+		8.1. Basic Concepts,61
+		8.2. Simplicial Schemes,65
+		8.3. Simplicial Constructions,66
+		8.4. Stars, Links, Regular Neighbourhoods,69
+		8.5. Simplicial Approximation of a Continuous Map,71
+	§9. Cellular Approximation of Maps and Spaces,71
+		9.1. Cellular Approximation of a Continuous Map,71
+		9.2. Cellular k-connected Pairs,72
+		9.3. Simplicial Approximation of Cellular Spaces,73
+		9.4. Weak Homotopy Equivalence,74
+		9.5. Cellular Approximation to Topological Spaces,76
+		9.6. The Covering Homotopy Theorem,78
+Chapter 4 The Simplest Calculations ,73
+	§10. The Homotopy Groups of Spheres and Classical Manifolds,79
+		10.1. Suspension in the Homotopy Groups of Spheres,79
+		10.2. The Simplest Homotopy Groups of Spheres,80
+		10.3. The Composition Product,81
+		10.4. Homotopy Groups of Spheres,82
+		10.5. Homotopy Groups of Projective Spaces and Lens Spaces,84
+		10.6. Homotopy Groups of the Classical Groups,85
+		10.7. Homotopy Groups of Stiefel Manifolds and Spaces,86
+		10.8. Homotopy Groups of Grassmann Manifolds and Spaces,87
+	§11. Application of Cellular Techniques,88
+		11.1. Homotopy Groups of al-dimensional Cellular Space,88
+		11.2. The Effect of Attaching Balls,88
+		11.3. The Fundamental Group of a Cellular Space,90
+		11.4. Homotopy Groups of Compact Surfaces,91
+		11.5. Homotopy Groups of Bouquets,92
+		11.6. Homotopy Groups of a k-connected Cellular Pair,93
+		11.7. Spaces with Given Homotopy Groups,94
+	§12. Appendix,96
+		12.1. The Whitehead Product,96
+		12.2. The Homotopy Sequence of a Triad,98
+		12.3. Homotopy Excision, Quotient and Suspension Theorems,100
+II. Homology and Cohomology,101
+Chapter 1. Additive Theory,104
+	§1. Algebraic Preparation,104
+		1.1. Complexes and Their Homology,104
+		1.2. Maps and Homotopies,105
+		1.3. Homology sequences,106
+		1.4. The Euler characteristic and the Lefschetz number,107
+		1.5. Change of coefficients,109
+		1.6. Tensor products of complexes and the Kiinneth formula,112
+	§2. General singular homology theory,113
+		2.1. Basic definitions,113
+		2.2. The simplest calculations,116
+		2.3. Natural transformations;refinement and approximation,118
+		2.4. Excision, factorization, suspension,119
+		2.5. Addition theorems,121
+		2.6. Dependence on the coefficients,123
+	§3. Homology of cellular spaces,125
+		3.1. The cellular complex,125
+		3.2. Interrelations with the singular complex,126
+		3.3. The simplicial case,128
+		3.4. Examples of calculations,128
+		3.5. Other applications,129
+	§4. Homology and homotopy,130
+		4.1. Weak homotopy equivalence and homology,130
+		4.2. The Hurewicz theorems,130
+		4.3. The theorems of Poincare and Hopf,132
+		4.4. Whitehead's theorem,133
+		4.5. Some instructive examples,133
+	§5. Homology and fixed points,133
+		5.1. Lefschetz's theorem,133
+		5.2. Smith theory,137
+	§6. Other homology and cohomology theories,140
+		6.1. The Eilenberg-Steenrod axioms,140
+		6.2. An alternative construction ofthe Eilenberg-Steenrod homology and cohomology theory: the Aleksandrov-Cech theory,142
+		6.3. Extraordinary theories,145
+		6.4. Homology and cohomology with local coefficients,150
+		6.5. Cohomology with coefficients in a sheaf,154
+		6.6. Conclusion,158
+Chapter 2. Multiplicative theory,158
+	§7. Products,158
+		7.1. Introduction,158
+		7.2. Direct construction ofthe U-product,160
+		7.3. Application: the Hopf invariant,161
+		7.4. Other products,162
+	§8. Homology and manifolds,163
+		8.1. Introduction,163
+		8.2. The fundamental class,163
+		8.3. The Poincare isomorphisms,165
+		8.4. Intersection numbers and Poincare duality,167
+		8.5. Linking coefficients,169
+		8.6. Inverse homomorphisms,170
+		8.7. The relation with the U-product,172
+		8.8. Generalizations of the Poincare isomorphism and duality,173
+Chapter 3. Obstructions, characteristic classes and cohomology operations,177
+	§9. Obstructions,177
+		9.1. Obstructions to extending a continuous map,177
+		9.2. The relative case,178
+		9.3. Application: cohomology and maps into K (Jr, n) spaces,179
+		9.4. Another application: Hopfs theorems,180
+		9.5. Obstructions to the extension of sections,181
+	§10. Characteristic classes of vector bundles,182
+		10.1. Vector bundles,182
+		10.2. Associated bundles and characteristic classes,183
+		10.3. Characteristic classes and classifying spaces,185
+		10.4. The most important properties of Stiefel-Whitney classes,186
+		10.5. The most important properties of Euler, Chem, and Pontryagin classes,188
+		10.6. Characteristic classes in the topology of smooth manifolds,190
+	§11. Steemod squares,195
+		11.1. General theory of cohomology operations,195
+		11.2. Steemod squares and their properties,196
+		11.3. Steemod squares and Stiefel-Whitney classes,197
+		11.4. Secondary obstructions,199
+		11.5. The non-existence of spheroids with odd Hopf invariant,200
+References,201
+III. Classical Manifolds,203
+Introduction,205
+Chapter 1. Spheres ,205
+	§1. Homotopy Groups,205
+		1.1. Generalities,205
+		1.2. Tables and Related Information,209
+		1.3. The Groups 1t n +1 (sn),210
+		1.4. The Groups 1t n + 2 (S"),211
+		1.5. The Whitehead J-Homomorphism,212
+	§2. Differential Structures,213
+		2.1. Generalities,213
+		2.2. Explicit Constructions of Exotic Spheres,214
+	§3. Appendix,215
+		3.1. Structures,215
+		3.2. Vector Fields and Plane Fields,210
+		3.3. Foliations ,210
+Chapter 2. Lie Groups and Stiefel Manifolds ,210
+	§1. Lie Groups: Geometric Information,216
+		1.1. Generalities,216
+		1.2. Some Lie Groups of Low Dimension,218
+		1.3. Homotopy Groups,219
+	§2. Lie Groups: Homological Information,221
+		2.1. Real Cohomology,221
+		2.2. Cohomology Modulo "Good Primes". Integer Cohomology of U(n) and Sp(n),221
+		2.3. Modulo 2 Cohomology of Orthogonal and Spinor Groups ,216
+		2.4. Cohomology ofthe Exceptional Groups,222
+		2.5. The K-functor,223
+	§3. Stiefel Manifolds,223
+		3.1. Definitions. Geometrical and Homotopical Information,223
+		3.2. Cohomology,224
+Chapter 3. Grassmann Manifolds and Spaces,225
+	§1. Geometric Information,225
+		1.1. Definitions,225
+		1.2. General Information,226
+		1.3. Embeddings of the Manifolds G(m, n), CG(m, n), G+ (m, n) in Euclidean and Projective Spaces,227
+	§2. Homology Information,229
+		2.1. Cell  Decomposition,229
+		2.2. Homology and Cohomology: Cellular Calculations,231
+		2.3. The Cohomology Rings,235
+		2.4. The K -functor,238
+Chapter 4. Some Other Important Homogeneous Spaces,239
+	§1. Flag Manifolds,239
+		1.1. Generalities,239
+		1.2. Cell Decompositions,240
+		1.3. Homology and Cohomology,241
+		1.4. The Case of Complete Flag Manifolds,241
+		1.5. Generalizations,242
+	§2. The Manifolds U(n)jSO(n) and U(n)jO(n),243
+		2.1. Generalities,243
+		2.2. Cellular Decompositions,244
+		2.3. Cellular Computation of Homology,245
+		2.4. The Cohomology Rings,246
+	§3. The Manifolds SO(2n)jU(n) and U(2n)jSp(n),247
+Chapter 5. Some Manifolds of Low Dimension ,242
+	§1. Closed SUţfaces,248
+		1.1. The Standard Surfaces,248
+		1.2. Homotopy Properties,249
+		1.3. Automorphisms,250
+		1.4. Complex Structures,251
+	§2. Some Three-dimensional Manifolds,252
+		2.1. Lens Spaces,252
+		2.2. The Poincare Sphere,254
+	§3. Some Four-dimensional Manifolds,255
+References,251

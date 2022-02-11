@@ -1,0 +1,72 @@
+d=6
+Chapter 0. Background Material,1
+	§0.1. Sets and Maps,1
+	§0.2. Linear Algebra (under construction),7
+	§0.3. General Topology (under construction),11
+	§0.4. Shrinking Lemma,12
+	§0.5. Calculus on Euclidean coordinate spaces (underconstruction),13
+	§0.6. Topological Vector Spaces,16
+	§0.7. Differential Calculus on Banach Spaces,21
+	§0.8. Naive Functional Calculus.,43
+	§0.9. Attaching Spaces and Quotient Topology,51
+	§0.10. Problem Set,53
+Chapter 1. Chapter 1 Supplement,57
+	§1.1. Comments and Errata,57
+	§1.2. Rough Ideas I,57
+	§1.3. Pseudo-Groups and Models Spaces,64
+	§1.4. Sard’s Theorem,69
+Chapter 2. Chapter 2 Supplement,73
+	§2.1. Comments and Errata,73
+	§2.2. Time Dependent Vector Fields,73
+Chapter 5. Chapter 5 Supplement,77
+	§5.1. Comments and Errata,77
+	§5.2. Matrix Commutator Bracket,77
+	§5.3. Spinors and rotation,79
+	§5.4. Lie Algebras,81
+	§5.5. Geometry of figures in Euclidean space,94
+Chapter 6. Chapter 6 Supplement,99
+	§6.1. Comments and Errata,99
+	§6.2. sections of the Mobius band,99
+	§6.3. Etale space of a sheaf,100
+	§6.4. Discussion on G bundle structure,101
+Chapter 8. Chapter 8 Supplement,111
+	§8.1. Comments and Errata,111
+	§8.2. 2-Forms over a surface in Euclidean Space Examples.,111
+	§8.3. Pseudo-Forms,113
+Chapter 11. Chapter 11 Supplement,117
+	§11.1. Comments and Errata,117
+	§11.2. Singular Distributions,117
+Chapter 12. Chapter 12 Supplement,123
+	§12.1. Comments and Errata,123
+	§12.2. More on Actions,123
+	§12.3. Connections on a Principal bundle.,125
+	§12.4. Horizontal Lifting,130
+Chapter 13. Chapter 13 Supplement,133
+	§13.1. Alternate proof of test case,133
+Chapter 14. Complex Manifolds,135
+	§14.1. Some complex linear algebra,135
+	§14.2. Complex structure,138
+	§14.3. Complex Tangent Structures,141
+	§14.4. The holomorphic tangent map.,142
+	§14.5. Dual spaces,143
+	§14.6. The holomorphic inverse and implicit functions theorems.,144
+Chapter 15. Symplectic Geometry,147
+	§15.1. Symplectic Linear Algebra,147
+	§15.2. Canonical Form (Linear case),149
+	§15.3. Symplectic manifolds,149
+	§15.4. Complex Structure and Kähler Manifolds,151
+	§15.5. Symplectic musical isomorphisms,154
+	§15.6. Darboux’s Theorem,155
+	§15.7. Poisson Brackets and Hamiltonian vector fields,156
+	§15.8. Configuration space and Phase space,159
+	§15.9. Transfer of symplectic structure to the Tangent bundle,161
+	§15.10. Coadjoint Orbits,163
+	§15.11. The Rigid Body,164
+	§15.12. The momentum map and Hamiltonian actions,166
+Chapter 16. Poisson Geometry,169
+	§16.1. Poisson Manifolds,169
+Chapter 17. Geometries,173
+	§17.1. Group Actions, Symmetry and Invariance,179
+	§17.2. Some Klein Geometries,183
+Bibliography,205
+Index,209

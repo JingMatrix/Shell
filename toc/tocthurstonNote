@@ -1,0 +1,86 @@
+Introduction,3
+d=8
+Chapter 1.  Geometry and three-manifolds,1
+d=9
+Chapter 2.  Elliptic and hyperbolic geometry,9
+	The Poincar ́e disk model,10
+	The southern hemisphere,11
+	The upper half-space model,12
+	The projective model,13
+	The sphere of imaginary radius,16
+	Trigonometry,17
+d=10
+Chapter 3.  Geometric structures on manifolds,27
+	A hyperbolic structure on the figure-eight knot complement,29
+	A hyperbolic manifold with geodesic boundary,31
+	The Whitehead link complement,32
+	The Borromean rings complement,33
+	The developing map,34
+	Horospheres,38
+	Hyperbolic surfaces obtained from ideal triangles.403.10.  Hyperbolic manifolds obtained by gluing ideal polyhedra,42
+d=11
+Chapter 4.  Hyperbolic Dehn surgery,45
+	Ideal tetrahedra inH3,45
+	Gluing consistency conditions,48
+	Hyperbolic structure on the figure-eight knot complement,50
+	The completion of hyperbolic three-manifolds obtained from idealpolyhedra,54
+	The generalized Dehn surgery invariant,56
+	Dehn surgery on the figure-eight knot,58
+	Degeneration of hyperbolic structures.614.10.  Incompressible surfaces in the figure-eight knot complement,71
+d=12
+Chapter 5.  Flexibility and rigidity of geometric structures,85
+	Special algebraic properties of groups of isometries ofH3,92
+	The dimension of the deformation space of a hyperbolic three-manifold,96
+	Generalized Dehn surgery and hyperbolic structures,102
+	A Proof of Mostow’s Theorem,106
+	A decomposition of complete hyperbolic manifolds,112
+	Complete hyperbolic manifolds with bounded volume,116
+	Jørgensen’s Theorem,119
+d=13
+Chapter 6.  Gromov’s invariant and the volume of a hyperbolic manifold,123
+	Gromov’s invariant,123
+	Gromov’s proof of Mostow’s Theorem,129
+	Manifolds with Boundary,134
+	Ordinals,138
+	Commensurability,140
+	Some Examples,144
+d=14
+Chapter 7.  Computation of volume,157
+	The Lobachevsky functionl(θ),157
+	References,170
+d=15
+Chapter 8.  Kleinian groups,171
+	The limit set,171
+	The domain of discontinuity,174
+	Convex hyperbolic manifolds,176
+	Geometrically finite groups,180
+	The geometry of the boundary of the convex hull,185
+	Measuring laminations,189
+	Quasi-Fuchsian groups1918.8.  Uncrumpled surfaces,199
+	The structure of geodesic laminations: train tracks,204
+	Realizing laminations in three-manifolds,208
+	The structure of cusps,216
+	Harmonic functions and ergodicity,219
+d=16
+Chapter 9. Algebraic convergence,225
+	Limits of discrete groups,225
+	The ending of an end,233
+	Taming the topology of an end,240
+	Interpolating negatively curved surfaces,242
+	Strong convergence from algebraic convergence,257
+	Realizations of geodesic laminations for surface groups with extra cusps,with a digression on stereographic coordinates,261
+	Ergodicity of the geodesic flow,277
+d=17
+Chapter 11.  Deforming Kleinian manifolds by homeomorphisms of the sphereat infinity,285
+	Extensions of vector fields,285
+d=18
+Chapter 13.  Orbifolds,297
+	Some examples of quotient spaces,297
+	Basic definitions,300
+	Two-dimensional orbifolds,308
+	Fibrations,318
+	Tetrahedral orbifolds,323
+	Andreev’s theorem and generalizations,330
+	Constructing patterns of circles,337
+	A geometric compactification for the Teichm ̈uller spaces of polygonalorbifolds,346
+	A geometric compactification for the deformation spaces of certainKleinian groups.350Index,357

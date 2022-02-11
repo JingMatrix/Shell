@@ -1,0 +1,16 @@
+#!/bin/zsh
+set -e
+curl 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSc4R1WbA6fnIHQhR0nY0rVutpNehnJc9dY4x7bGp3hzb2srGg/formResponse' \
+	-H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:87.0) Gecko/20100101 Firefox/87.0' \
+	-H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' \
+	-H 'Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3' \
+	--compressed \
+	-H 'Referer: https://docs.google.com/forms/d/e/1FAIpQLSc4R1WbA6fnIHQhR0nY0rVutpNehnJc9dY4x7bGp3hzb2srGg/formResponse' \
+	-H 'Content-Type: application/x-www-form-urlencoded' \
+	-H 'Origin: https://docs.google.com' \
+	-H 'Connection: keep-alive' \
+	-H 'Upgrade-Insecure-Requests: 1' \
+	-H 'Pragma: no-cache' \
+	-H 'Cache-Control: no-cache' \
+	-H 'TE: Trailers' \
+	--data-raw 'entry.248947118=&entry.1872330204_sentinel=&fvv=1&draftResponse=%5B%5B%5Bnull%2C1682145716%2C%5B%22MA%22%5D%0D%0A%2C0%5D%0D%0A%2C%5Bnull%2C769674439%2C%5B%22Jianyu%22%5D%0D%0A%2C0%5D%0D%0A%2C%5Bnull%2C767084691%2C%5B%22jingmatrix%40gmail.com%22%5D%0D%0A%2C0%5D%0D%0A%2C%5Bnull%2C289592216%2C%5B%22766714165%22%5D%0D%0A%2C0%5D%0D%0A%2C%5Bnull%2C1642921171%2C%5B%220310021912599%22%5D%0D%0A%2C0%5D%0D%0A%2C%5Bnull%2C1405048081%2C%5B%22Non%22%5D%0D%0A%2C0%5D%0D%0A%2C%5Bnull%2C703385771%2C%5B%22UT3%22%5D%0D%0A%2C0%5D%0D%0A%2C%5Bnull%2C273460536%2C%5B%22UT3+%28samedi+17+mars%29%22%5D%0D%0A%2C0%5D%0D%0A%2C%5Bnull%2C316205243%2C%5B%22Bac+%2B+5%22%5D%0D%0A%2C0%5D%0D%0A%2C%5Bnull%2C1870356096%2C%5B%22maths%22%5D%0D%0A%2C0%5D%0D%0A%2C%5Bnull%2C1358896312%2C%5B%22Aucun%22%5D%0D%0A%2C0%5D%0D%0A%2C%5Bnull%2C2032380458%2C%5B%22Non%22%5D%0D%0A%2C0%5D%0D%0A%2C%5Bnull%2C1536563627%2C%5B%22Je+certifie+sur+l%27honneur%2C+que+la+crise+sanitaire+me+plonge+dans+une+situation+de+pr%C3%A9carit%C3%A9+et+que+j%27ai+besoin+de+cette+aide+alimentaire.%22%5D%0D%0A%2C0%5D%0D%0A%2C%5Bnull%2C1795330180%2C%5B%22OUI%22%5D%0D%0A%2C0%5D%0D%0A%2C%5Bnull%2C335832078%2C%5B%22Non%22%5D%0D%0A%2C0%5D%0D%0A%2C%5Bnull%2C1607866057%2C%5B%22%22%5D%0D%0A%2C0%5D%0D%0A%5D%0D%0A%2Cnull%2C%226753267331360678866%22%5D%0D%0A&pageHistory=0%2C1%2C2&fbzx=6753267331360678866' >/tmp/food-distriution-AGEMP.html

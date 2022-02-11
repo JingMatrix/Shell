@@ -1,0 +1,166 @@
+Preface,5
+Table of contents,8
+d=11
+Chapter 1. Max and Min,1
+	A. Penalties and Constraints,2
+	B. Epigraphs and Semicontinuity,7
+	C. Attainment of a Minimum,11
+	D. Continuity, Closure and Growth,13
+	E. Extended Arithmetic,15
+	F. Parametric Dependence,16
+	G. Moreau Envelopes,20
+	H. Epi-Addition and Epi-Multiplication,23
+	I.∗ Auxiliary Facts and Principles,28
+	Commentary,34
+Chapter 2. Convexity,38
+	A. Convex Sets and Functions,38
+	B. Level Sets and Intersections,42
+	C. Derivative Tests,45
+	D. Convexity in Operations,49
+	E. Convex Hulls,53
+	F. Closures and Continuity,57
+	G.∗ Separation,62
+	H.∗ Relative Interiors,64
+	I.∗ Piecewise Linear Functions,67
+	J.∗ Other Examples,71
+	Commentary,74
+Chapter 3. Cones and Cosmic Closure,77
+	A. Direction Points,77
+	B. Horizon Cones,80
+	C. Horizon Functions,86
+	D. Coercivity Properties,90
+	E.∗ Cones and Orderings,95
+	F.∗ Cosmic Convexity,97
+	G.∗ Positive Hulls,99
+	Commentary,105
+Chapter 4. Set Convergence,108
+	A. Inner and Outer Limits,109
+	B. Painlevé-Kuratowski Convergence,111
+	C. Pompeiu-Hausdorﬀ Distance,117
+	D. Cones and Convex Sets,118
+	E. Compactness Properties,120
+	F. Horizon Limits,122
+	G.∗ Continuity of Operations,125
+	H.∗ Quantiﬁcation of Convergence,131
+	I.∗ Hyperspace Metrics,138
+	Commentary,144
+Chapter 5. Set-Valued Mappings,148
+	A. Domains, Ranges and Inverses,149
+	B. Continuity and Semicontinuity,152
+	C. Local Boundedness,157
+	D. Total Continuity,164
+	E. Pointwise and Graphical Convergence,166
+	F. Equicontinuity of Sequences,173
+	G. Continuous and Uniform Convergence,175
+	H.∗ Metric Descriptions of Convergence,181
+	I.∗ Operations on Mappings,183
+	J.∗ Generic Continuity and Selections,187
+	Commentary,192
+Chapter 6. Variational Geometry,196
+	A. Tangent Cones,196
+	B. Normal Cones and Clarke Regularity,199
+	C. Smooth Manifolds and Convex Sets,202
+	D. Optimality and Lagrange Multipliers,205
+	E. Proximal Normals and Polarity,212
+	F. Tangent-Normal Relations,217
+	G.∗ Recession Properties,222
+	H.∗ Irregularity and Convexiﬁcation,225
+	I.∗ Other Formulas,227
+	Commentary,232
+Chapter 7. Epigraphical Limits,238
+	A. Pointwise Convergence,239
+	B. Epi-Convergence,240
+	C. Continuous and Uniform Convergence,250
+	D. Generalized Diﬀerentiability,255
+	E. Convergence in Minimization,262
+	F. Epi-Continuity of Function-Valued Mappings,269
+	G.∗ Continuity of Operations,275
+	H.∗ Total Epi-Convergence,278
+	I.∗ Epi-Distances,282
+	J.∗ Solution Estimates,286
+	Commentary,292
+Chapter 8. Subderivatives and Subgradients,298
+	A. Subderivatives of Functions,299
+	B. Subgradients of Functions,300
+	C. Convexity and Optimality,308
+	D. Regular Subderivatives,311
+	E. Support Functions and Subdiﬀerential Duality,317
+	F. Calmness,322
+	G. Graphical Diﬀerentiation of Mappings,324
+	H.∗ Proto-Diﬀerentiability and Graphical Regularity,329
+	I.∗ Proximal Subgradients,333
+	J.∗ Other Results,336
+	Commentary,343
+Chapter 9. Lipschitzian Properties,349
+	A. Single-Valued Mappings,349
+	B. Estimates of the Lipschitz Modulus,354
+	C. Subdiﬀerential Characterizations,358
+	D. Derivative Mappings and Their Norms,364
+	E. Lipschitzian Concepts for Set-Valued Mappings,368
+	F. Aubin Property and Mordukhovich Criterion,376
+	G. Metric Regularity and Openness,386
+	H.∗ Semiderivatives and Strict Graphical Derivatives,390
+	I.∗ Other Properties,399
+	J.∗ Rademacher’s Theorem and Consequences,403
+	K.∗ Molliﬁers and Extremals,408
+	Commentary,415
+Chapter 10. Subdiﬀerential Calculus,421
+	A. Optimality and Normals to Level Sets,421
+	B. Basic Chain Rule,426
+	C. Parametric Optimality,432
+	D. Rescaling,438
+	E. Piecewise Linear-Quadratic Functions,440
+	F. Amenable Sets and Functions,442
+	G. Semiderivatives and Subsmoothness,446
+	H.∗ Coderivative Calculus,452
+	I.∗ Extensions,458
+	Commentary,469
+Chapter 11. Dualization,473
+	A. Legendre-Fenchel Transform,473
+	B. Special Cases of Conjugacy,476
+	C. The Role of Diﬀerentiability,480
+	D. Piecewise Linear-Quadratic Functions,484
+	E. Polar Sets and Gauges,490
+	F. Dual Operations,493
+	G. Duality in Convergence,500
+	H. Dual Problems of Optimization,502
+	I. Lagrangian Functions,508
+	J.∗ Minimax Problems,514
+	K.∗ Augmented Lagrangians and Nonconvex Duality,518
+	L.∗ Generalized Conjugacy,525
+	Commentary,529
+Chapter 12. Monotone Mappings,533
+	A. Monotonicity Tests and Maximality,533
+	B. Minty Parameterization,537
+	C. Connections with Convex Functions,542
+	D. Graphical Convergence,551
+	E. Domains and Ranges,553
+	F.∗ Preservation of Maximality,556
+	G.∗ Monotone Variational Inequalities,559
+	H.∗ Strong Monotonicity and Strong Convexity,562
+	I.∗ Continuity and Diﬀerentiability,567
+	Commentary,575
+Chapter 13. Second-Order Theory,579
+	A. Second-Order Diﬀerentiability,579
+	B. Second Subderivatives,582
+	C. Calculus Rules,591
+	D. Convex Functions and Duality,603
+	E. Second-Order Optimality,606
+	F. Prox-Regularity,609
+	G. Subgradient Proto-Diﬀerentiability,618
+	H. Subgradient Coderivatives and Perturbation,622
+	I.∗ Further Derivative Properties,625
+	J.∗ Parabolic Subderivatives,633
+	Commentary,638
+Chapter 14. Measurability,642
+	A. Measurable Mappings and Selections,643
+	B. Preservation of Measurability,651
+	C. Limit Operations,655
+	D. Normal Integrands,660
+	E. Operations on Integrands,669
+	F. Integral Functionals,675
+	Commentary,679
+References,684
+Index of Statements,710
+Index of Notation,725
+Index of Topics,726

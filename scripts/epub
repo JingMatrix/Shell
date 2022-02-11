@@ -1,0 +1,334 @@
+#! /bin/zsh
+# epub epubee hash	download epub book from reader.obook.vip
+# epub book.epub	fix epub
+# epub dir [book.epub]	pack epub
+basedir=$(dirname $0)
+
+function htmlparser {
+	if [[ -z $epubhash ]]; then
+		fixhtml <$1
+	else
+		readerhtml="=['\"]\/books\/mobile\/|^<meta |<\/div><\/div><\/div>"
+		readercontainer='^<div class="readercontent"><div class="readercontent-inner">'
+		if grep -q $readercontainer $1; then
+			sed <$1 -n -E "/$readerhtml/d;1,/<\/head>/p;/$readercontainer/,\$p" |
+				sed -E "s#$readercontainer#<body><div>#;s#^</body>#</div></body>#" |
+				fixhtml
+		else
+			echo >&2 "No epubee reader fingerprint found"
+			fixhtml <$1
+		fi
+	fi
+}
+
+function fixhtml {
+	# read from stdin and output to stdout
+	# try to first load local config files
+	local tidy_config=$basedir/../../Web/tidy.config
+	if [[ -f $tidy_config ]]; then
+		local -a args=("-config" $tidy_config)
+	else
+		echo "No config file $tidy_config found, using default config"
+		local -a args=("--output-xhtml" "yes" "--add-meta-charset" "yes" "--add-xml-decl" "yes" "--doctype" 'html5' "--output-xhtml" "yes" "--clean" "yes" "--drop-proprietary-attributes" "yes" "--logical-emphasis" "yes" "--alt-text" "image" "--coerce-endtags" "yes" "--enclose-block-text" "yes" "--enclose-text" "yes" "--decorate-inferred-ul" "yes" "--indent" "yes" "--quiet" "yes")
+	fi
+	tidy $args |
+		sed '3s#""#"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"#'
+	# fix doctype
+}
+
+function ePub3-itizer {
+	# conver html file to xhtml
+	local epub_dir=$rootdir
+	echo "Converting to epub 3.0"
+	local htmls=$(ls $epub_dir/**/*.html) 2>/dev/null
+	[[ -z $htmls ]] || for htmlfile in $epub_dir/**/*.html; do
+		local xhtmlfile=${htmlfile:r}.xhtml
+		htmlname=$(basename $htmlfile)
+		local xhtmlname=${htmlname:r}.xhtml
+		sed -i "s/$htmlname/$xhtmlname/g" $rootdir/**/*html $opffile **/toc.ncx
+		mv $htmlfile $xhtmlfile
+	done
+
+	# python/launcher.py accepts following arguments
+	#
+	# uses the unicode_arv call to convert all command line paths to full unicode
+	# arguments:
+	#      path to Sigil's ebook_root
+	#      path to Sigil's output (temp) directory
+	#      script type ("input", "output", "edit")
+	#      path to script target file
+	#
+	#
+	# According to following in python/wrapper.py, one should make a file `sigil.cfg` in the output tmp dir
+	# if len(cfg_lst) >= 7:
+	# 		self.opfbookpath = cfg_lst.pop(0)
+	# 		self.appdir = cfg_lst.pop(0)
+	# 		self.usrsupdir = cfg_lst.pop(0)
+	# 		if not sys.platform.startswith('darwin') and not sys.platform.startswith('win'):
+	# 				self.linux_hunspell_dict_dirs = cfg_lst.pop(0).split(":")
+	# 		self.sigil_ui_lang = cfg_lst.pop(0)
+	# 		self.sigil_spellcheck_lang = cfg_lst.pop(0)
+	# 		self.epub_isDirty = (cfg_lst.pop(0) == "True")
+	# 		self.epub_filepath = cfg_lst.pop(0)
+	# 		self.colormode = cfg_lst.pop(0)
+	# 		self.colors = cfg_lst.pop(0)
+	# 		self.highdpi = cfg_lst.pop(0)
+	# 		self.uifont = cfg_lst.pop(0)
+	# 		self.selected = cfg_lst
+	#
+	#
+	# A sample sigil.cfg is given as
+	#		OEBPS/content.opf
+	#		/usr/local/lib/sigil
+	#		/home/jing/.local/share/sigil-ebook/sigil
+	#		/usr/local/share/sigil/hunspell_dictionaries/
+	#		en
+	#		en_US
+	#		False
+	#		/tmp/sample.epub
+	#		light
+	#		#efefef,#ffffff,#000000,#308cc6,#ffffff
+	#		on
+	#		Ubuntu,17,-1,5,50,0,0,0,0,0
+	#		OEBPS/Text/Section0001.xhtml
+
+	local prefix=$HOME/.local
+	local launcher="$prefix/share/sigil/plugin_launchers/python/launcher.py"
+	local sigildir="$prefix/share/sigil-ebook/sigil"
+	local plugindir="$sigildir/plugins/ePub3-itizer"
+	# check script type
+	local scripttype=$(sed -n 's/<type>\(.*\)<\/type>/\1/p' $plugindir/plugin.xml)
+	if ! [[ $scripttype=="input" || $scripttype=="output" || $scripttype=="edit" ]]; then
+		echo "Script config file $plugindir/script/plugin.xml not valid"
+	fi
+	mkdir -p /tmp/sigil/
+	echo "$opffile
+$prefix/lib/sigil
+$sigildir
+$prefix/share/sigil/hunspell_dictionaries/
+en
+en_US
+False 
+$epub_file
+light
+#efefef,#ffffff,#000000,#308cc6,#ffffff
+on
+Ubuntu,17,-1,5,50,0,0,0,0,0
+$opffile" >/tmp/sigil/sigil.cfg
+
+	# echo "Using following script command:\n $launcher $epub_dir /tmp/sigil/ $scripttype $plugindir/plugin.py"
+	python3 $launcher $epub_dir /tmp/sigil/ $scripttype $plugindir/plugin.py >/dev/null
+
+	echo Convertion finishs. Now unpack epub again.
+	rm -rf $epub_dir
+	unzip -qq $epub_file -d $epub_dir
+	cd $epub_dir
+	rm ./**/toc.ncx
+	sed -i '/toc.ncx/d; s/<spine toc="ncx">/<spine>/' $opffile
+}
+
+function parseepubee {
+	# parse files in directory $1
+	# find & parse opf
+	cd $1
+	if [[ -d $1/OEBPS && -f $1/OEBPS/content.opf ]]; then
+		opffile=OEBPS/content.opf
+	elif [[ -f $1/content.opf ]]; then
+		opffile=content.opf
+	else
+		echo >&2 "Cannot find content.opf file"
+		exit
+	fi
+	filename="$(grep -oP '<dc:title.*>\K[^<]+(?=</dc:title>)' $opffile).epub"
+	local tmp=$(sed -n 2p $opffile | grep -oP 'version="\K[23]\.0"')
+	local epubver=$tmp[0,3]
+	echo Current epub version is $epubver
+	if [[ $epubver == "2.0" ]]; then
+		# a common error in epubcheck
+		# echo -n "Convert to epub3.0?\t"
+		# sed -i -E 's# properties="[^"]+"##' $opffile
+		# another possible error caused by toc.ncx in epub2.0
+		# parse toc.ncx
+		# if [[ -f toc.ncx ]]; then
+		# 	sed -i '/ content="bookid"/d' toc.ncx
+		# fi
+		ePub3-itizer && epubver="3.0"
+	fi
+	cd $1
+	# echo "Validating content.opf file"
+	# cd $1 && epubcheck --mode opf -v $epubver $1/$opffile
+	echo -n "Modify content.opf of $filename?\t"
+	read -q && vim $opffile
+	# parse html files
+	echo "\nParsing [x]html files..."
+	if [[ -d ${1}-bak ]]; then
+		cd ${1}-bak
+	else
+		cp -r $1 ${1}-bak
+	fi
+	for html in ./**/*html; do
+		htmlparser ${1}-bak/$html >$1/$html 2>/dev/null
+	done
+	# parse css
+	if [[ ! -z $epubhash ]]; then
+		filename=/tmp/$filename
+	else
+		filename=$(dirname $epub_file)/$filename
+	fi
+}
+
+function packepub {
+	cd $1
+	if [[ -f $2 ]]; then
+		rm $2 -f
+	fi
+	zip -q -rX $2 mimetype *
+	echo -n "\nPack as $2"
+	echo -n "\nOpen sigil?\t"
+	if read -q; then
+		tmux splitw "less $1.error"
+		sigil $2 &>/dev/null
+	fi
+}
+
+function checkepub {
+	# run epubcheck over directory $1
+	# report stored as $1.json
+	# human readable report stored as $1.error
+	# problematical files stored as /tmp/errorfilelist
+	echo "\nStart epubcheck over directory $1"
+	epubcheck $1 --mode exp --save --json $1.json
+	jq '.messages | .[] | .message' $1.json -r
+	jq '.messages | .[] | .severity as $SEV | .message as $MSG | .locations | .[] | [$SEV, .path, .line, .column, $MSG] | @tsv' $1.json -r >$1.error
+	jq '.messages | .[] | .locations | .[] | .path' $1.json -r >/tmp/errorfilelist
+	# local filename="/tmp/$(jq '.publication | .title' $1.json -r).epub"
+	if [[ -f $1.epub ]]; then
+		mv $1.epub $filename
+	else
+		repairepub $1
+	fi
+
+}
+
+function repairepub {
+	# repair epub directory $1 using report from checkepub
+	# Edit with vim
+	if [[ -f /tmp/errorfilelist ]]; then
+		echo -n "Edit with vim?\t"
+		# loop when edit with vim
+		sort /tmp/errorfilelist | uniq | while read -q; do
+			[[ -f $1.json ]] || checkepub $1
+			cd $1
+			local -a filelist
+			while read -r file; do
+				if [[ -f $file ]]; then
+					filelist+=($file)
+				fi
+			done
+			echo 'setl errorformat=%WWARNING\	%f\	%l\	%c\	%m,%EERROR\	%f\	%l\	%c\	%m' >/tmp/epub.vim
+			echo "cd $1" >>/tmp/epub.vim
+			echo "cf $1.error" >>/tmp/epub.vim
+			echo "copen" >>/tmp/epub.vim
+			tmux neww "vim -S /tmp/epub.vim $filelist"
+			echo -n "\nRun epubcheck again?\t"
+			rm $1.json
+		done
+	else
+		echo "No error report at /tmp/errorfilelist found"
+	fi
+
+	# Other methods
+	if [[ -f $1.error ]]; then
+		echo -n "\nChange to html directory?\t"
+		read -q && cd $1 && tmux splitw
+		echo -n "\nPack epub directly\t"
+		if read -q; then
+			# local filename="/tmp/$(jq '.publication | .title' $1.json -r).epub"
+			packepub $1 $filename
+		fi
+	else
+		echo "No epubcheck report $1.error found"
+	fi
+}
+
+function downloadepubee {
+	# download epub by hash $1 from reader.obook.vip
+	# download is aria2c
+	# backup orginal downloaded files in /tmp/epub/$1-bak
+	local rootdir=/tmp/epub/$1
+	mkdir -p $rootdir/
+	mkdir -p $rootdir/OEBPS
+	mkdir -p $rootdir/META-INF
+	cd $rootdir/
+	echo -n 'application/epub+zip' >mimetype
+	echo -n '<?xml version="1.0" encoding="UTF-8" ?>
+<container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container">
+  <rootfiles>
+    <rootfile full-path="OEBPS/content.opf" media-type="application/oebps-package+xml"/>
+  </rootfiles>
+</container>' >META-INF/container.xml
+	cd $rootdir/OEBPS
+	local root=http://reader.obook.vip/books/mobile/${1:0:2}/$1
+	aria2c $root/content.opf
+	grep -oP 'item href="\K[^"]+' content.opf | while read -r file; do
+		dir=$(dirname $file)
+		[[ -d $dir ]] || mkdir -p $dir
+		aria2c $root/$file -d $dir
+	done
+	cp $rootdir $rootdir-bak -r
+	parseepubee $rootdir
+}
+
+function epubeeprocess {
+	# first try to find 32bit hash from $2
+	epubhash=$(grep -oP '[0-9a-f]{32}' <<<$2)
+	local rootdir=/tmp/epub/$epubhash
+	if [[ -d $rootdir-bak ]]; then
+		echo -n "Use cached download files, parser them again?\t"
+		if read -q; then
+			echo "\nStart parsing cached files"
+			parseepubee $rootdir
+		fi
+	else
+		downloadepubee $epubhash
+	fi
+	askepubcheck $rootdir
+}
+
+function askepubcheck {
+	[[ -z $rootdir ]] && rootdir=$1
+	echo -n "\nSkip epubcheck? Directly pack epub\t"
+
+	if read -q; then
+		[[ -z $epubhash ]] && filename=$epub_file
+		packepub $rootdir $filename
+	else
+		checkepub $rootdir
+	fi
+}
+
+# main routine
+[[ -z $TMUX ]] && echo "Please run in tmux" && exit
+
+if [[ -f $1 ]]; then
+	# parse given file in argument
+	if [[ ${1:e} == 'epub' ]]; then
+		echo "fix epub file $1"
+		rootdir=$(mktemp -d)
+		epub_file=$(readlink -f $1)
+		unzip -qq $1 -d $rootdir
+		parseepubee $rootdir
+		askepubcheck $rootdir
+		echo "\nremove temp dirs"
+		rm -rf ${rootdir}*
+	elif [[ ${1:e} =~ 'x?html' ]]; then
+		echo "\nparse html file $1"
+		htmlparser $1
+	fi
+elif [[ -d $1 ]]; then
+	# pack directory as epub
+	[[ -z $2 ]] && 2="/tmp/$(basename $1).epub"
+	packepub $1 $2
+elif [[ $1 == epubee ]]; then
+	epubeeprocess
+fi

@@ -1,0 +1,115 @@
+Basic Theory of Ordinary Differential Equations,4
+PREFACE,7
+CONTENTS,9
+Chapter I. Fundamental Theorems of Ordinary Differential Equations,12
+	Existence and uniqueness with the Lipschitz condition,12
+	Existence without the Lipschitz condition,19
+	Some global properties of solutions,26
+	Analytic differential equations,31
+     Exercises I,34
+Chapter II. Dependence on Data,39
+	Continuity with respect to initial data and parameters,39
+	Differentiability,43
+     Exercises II,46
+Chapter III. Nonuniqueness,52
+	Examples,52
+	The Kneser theorem,56
+	Solution curves on the boundary of R(A),60
+	Maximal and minimal solutions,63
+	A comparison theorem,69
+	Sufficient conditions for uniqueness,72
+     Exercises III,77
+Chapter IV. General Theory of Linear Systems,80
+	Some basic results concerning matrices,80
+	Homogeneous systems of linear differential equations,89
+	Homogeneous systems with constant coefficients,92
+	Systems with periodic coefficients,98
+	Linear Hamiltonian systems with periodic coefficients,101
+	Nonhomogeneous equations,107
+	Higher-order scalar equations,109
+     Exercises IV,113
+Chapter V. Singularities of the First Kind,119
+	Formal solutions of an algebraic differential equation,120
+	Convergence of formal solutions of a system of the first kind,124
+	The S-N decomposition of a matrix of infinite order,129
+	The S-N decomposition of a differential operator,131
+	A normal form of a differential operator,132
+	Calculation of the normal form of a differential operator,141
+	Classification of singularities of homogeneous linear systems,143
+     Exercises V,148
+Chapter VI. Boundary-Value Problems of Linear Differential Equations of the Second-Order,155
+	Zeros of solutions,155
+	Sturm-Liouville problems,159
+	Eigenvalue problems,164
+	Eigenfunction expansions,173
+	Jost solutions,168
+	Scattering data,183
+	Reflectionless potentials,186
+	Construction of a potential for given data,189
+	Differential equations satisfied by reflectionless potentials,192
+     VI-lO. Periodic potentials,194
+     Exercises VI,201
+Chapter VII. Asymptotic Behavior of Solutions of Linear Systems,197
+	Liapounoff's type numbers,208
+	Liapounoff's type numbers of a homogeneous linear system,199
+	Calculation of Liapounoff's type numbers of solutions,214
+	A diagonalization theorem,223
+	Systems with asymptotically constant coefficients,230
+	An application of the Floquet theorem,236
+     Exercises VII,241
+Chapter VIII. Stability,246
+	Basic definitions,246
+	A sufficient condition for asymptotic stability,252
+	Stable manifolds,254
+	Analytic structure of stable manifolds,246
+	Two-dimensional linear systems with constant coefficients,262
+	Analytic systems in ~2,266
+	Perturbations of an improper node and a saddle point,272
+	Perturbations of a proper node,277
+	Perturbation of a spiral point,281
+	Perturbation of a center,271
+     Exercises VIII,285
+Chapter IX. Autonomous Systems,290
+	Limit-invariant sets,290
+	Liapounoff's direct method,292
+	Orbital stability,294
+	The Poincare-Bendixson theorem,302
+	Indices of Jordan curves,304
+     Exercises IX,309
+CHAPTER X THE SECOND-ORDER DIFFERENTIAL,315
+	Two-point boundary-value problems,316
+	Applications of the Liapounoff functions,320
+	Existence and uniqueness of periodic orbits,324
+	Multipliers of the periodic orbit of the van der Pol equation,329
+	The van der Pol equation for a small f > 0,330
+	The van der Pol equation for a large parameter,333
+	A theorem due to M. Nagumo,338
+	A singular perturbation problem,341
+     Exercises X,345
+Chapter XI. Asymptotic Expansions,353
+	Asymptotic expansions in the sense of Poincare,353
+	Gevrey asymptotics,364
+	Flat functions in the Gevrey asymptotics,368
+	Basic properties of Gevrey asymptotic expansions,371
+	Proof of Lemma XI-2-6,374
+     Exercises XI,376
+Chapter XII. Asymptotic Expansions in a Parameter,383
+	An existence theorem,383
+	Basic estimates,385
+	Proof of Theorem XII-1-2,389
+	A block-diagonalization theorem,391
+	Gevrey asymptotic solutions in a parameter,396
+	Analytic simplification in a parameter,401
+     Exercises XII,406
+Chapter XIII. Singularities of the Second Kind,414
+	An existence theorem,414
+	Basic estimates,417
+	Proof of Theorem XIII-1-2,428
+	A block-diagonalization theorem,431
+	Cyclic vectors (A lemma of P. Deligne),435
+	The Hukuhara-'llirrittin theorem,439
+	An n-th-order linear differential equation at a singular pointof the second kind,447
+	Gevrey property of asymptotic solutions at an irregularsingular point,452
+     Exercises XIII,454
+References,464
+Index,473

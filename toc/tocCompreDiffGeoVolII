@@ -1,0 +1,99 @@
+PREFACE ,5
+Contents ,7
+d=12
+CHAPTER 1. CURVES IN THE PLANE AND IN SPACE ,1
+	Curvature of plane curves ,1
+	Convex curves ,12
+	Curvature and torsion of space curves ,24
+	The Serret-Frenet formulas ,34
+	The natural form on a Lie group ,36
+	Classification of plane curves under the group of special afline motions ,39
+	Classification of curves in R^n ,44
+CHAPTER 2. WHAT THEY KNEW ABOUT SURFACES BEFORE GAUSS ,49
+	Euler‘s Theorem ,50
+	Meusnier’s Theorem ,52
+CHAPTER 3. THE CURVATURE OF SURFACES IN SPACE ,55
+	A. HOW TO READ GAUSS ,55
+	B. GAUSS’ THEORY OF SURFACES ,112
+	The Gauss map ,112
+	Gaussian curvature ,114
+	The Weingarten map; the first and second fundamental forms ,122
+	The Theorema Egregium ,129
+	Geodesics on a surface ,134
+	The metric in geodesic polar coordinates ,136
+	The integral of the curvature over a geodesic triangle ,141
+	Addendum. The formula of Bertrand and Puiseux; Diquet’s formula ,145
+CHAPTER 4. THE CURVATURE OF HIGHER DIMENSIONAL MANIFOLDS ,149
+	A. AN INAUGURAL LECTURE ,149
+	“On the Hypotheses which lie at the Foundations of Geometry” ,151
+	B. WHAT DID RIEMANN SAY? ,163
+	The form of the metric in Riemannian normal coordinates ,166
+	C. A PRIZE ESSAY ,181
+	D. THE BIRTH OF THE RIEMANN CURVATURE TENSOR ,184
+	Necessary conditions for a metric to be flat ,184
+	The Riemann curvature tensor ,189
+	Sectional Curvature ,194
+	The Test Case; first version ,197
+	Addendum. Finsler metrics ,200
+CHAPTER 5. THE ABSOLUTE DIFFERENTIAL CALCULUS (THE RICCI CALCULUS); OR, THE DEBAUCH OF INDICES ,209
+	Covariant derivatives ,209
+	Ricci’s Lemma ,213
+	Ricci’s identifies ,214
+	The curvature tensor ,215
+	The Test Case; second version ,217
+	Classical connections ,221
+	The torsion tensor ,221
+	Geodesics ,223
+	Bianchi’s identities ,224
+CHAPTER 6. THE V OPERATOR ,227
+	Kozul connections ,227
+	Covariant derivatives ,229
+	Parallel translation ,234
+	The torsion tensor ,236
+	The Levi-Civita connection ,238
+	The curvature tensor ,239
+	The Test Case; third version ,241
+	Bianchi’s identities ,244
+	Geodesics ,246
+	The First Variation Formula ,247
+	Addendum 1. Connections with the same geodesics ,249
+	Addendum 2. Riemann’s invariant definition of the curvature tensor ,254
+CHAPTER 7. THE REPERE MOBILE (THE MOVING FRAME) ,259
+	Moving frames ,259
+	The structural equations of Euclidean space ,261
+	The structural equations of a Riemannian manifold ,267
+	The Test Case; fourth version ,268
+	Adapted frames ,270
+	The structural equations in polar coordinates ,272
+	The Test Case; fifth version ,274
+	The Test Case; sixth version ,275
+	“The curvature determines the metric” ,277
+	The 2dimensional case ,279
+	Cartan connections ,281
+	Covariant derivatives and the torsion and curvature tensors ,285
+	Bianchi’s identities ,288
+	Addendum 1. Manifolds of constant curvature ,290
+	Schur’s Theorem ,291
+	The form of the metric in normal coordinates ,295
+	Addendum 2. Conformally equivalent manifolds ,296
+	Addendum 3. E. Car'tan’s treatment of normal coordinates ,302
+CHAPTER 8. CONNECTIONS IN PRINCIPAL BUNDLES ,305
+	Principal bundles ,305
+	Lie groups acting on manifolds ,309
+	A new definition of Cartan connections ,311
+	Ehresmann connections ,315
+	Lifts ,317
+	Parallel translation and covariant derivatives ,319
+	The covariant diflerential and the curvature form ,324
+	The dual form and the torsion form ,324
+	The structural equations ,327
+	The torsion and curvature tensors ,329
+	The Test Case; seventh version ,333
+	Bianchi’s identities ,334
+Summary ,337
+	Addendum 1. The tangent bundle of F (M) ,342
+	Addendum 2. Complete connections ,344
+	Addendum 3. Connections in vector bundles ,346
+	Addendum 4. Flat connections ,349
+NOTATION INDEX ,351
+INDEX ,355

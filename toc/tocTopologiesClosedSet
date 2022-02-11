@@ -1,0 +1,53 @@
+Table of Contents,6
+Preface,8
+d=10
+Chapter 1. Preliminaries,1
+	1.1 Notation and Background Material
+	1.2 Weak Topologies,8
+	1.3 Sernicontinuous Functions,13
+	1.4 Convex Sets and the Separation Theorem,20
+	1.5 Gap and Excess,28
+Chapter 2. Weak Topologies Determined by Distance Functionals,34
+	2.1 The Wijsman Topology,34
+	2.2 Hit-and-Miss Topologies and the Wijsman Topology,43
+	2.3 UC Spaces,54
+	2.4 The Slice Topology,60
+	2.5 Complete Metrizability of the Wijsman and Slice Topologies,69
+Chapter 3. The Attouch-Wets and Hausdorff Metric Topologies,78
+	3.1 The Attouch-Wets Topology,78
+	3.2 The Hausdorff Metric topology,85
+	3.3 Varying the Metrics,92
+	3.4 Set Convergence and Strong Convergence of Linear Functionals,100
+Chapter 4. Gap and Excess Functionals and Weak Topologies,106
+	4.1 Farnilies of Gap and Excess Functionals,106
+	4.2 Presentations ofthe Attouch-Wets and HausdorffMetric Topologies,113
+	4.3 The Scalar Topology and the Linear Topology for Convex Sets,121
+	4.4 Weak Topologies deterrnined by Intimal Value Functionals,128
+Chapter 5. The Fell Topology and Kuratowski-Painleve Convergence,138
+	5.1 The Fell Topology,138
+	5.2 Kuratowski-Painleve Convergence,145
+	5.3 Epi-convergence,155
+	5.4 Mosco Convergence and the Mosco Topology,170
+	5.5 Mosco Convergence versus Wijsman Convergence,178
+Chapter 6. Multifunctions: The Rudiments,183
+	6.1 Multifunctions,184
+	6.2 Lower and Upper Sernicontinuity for Multifunctions,192
+	6.3 Outer Sernicontinuity versus Upper Sernicontinuity,199
+	6.4 KKM Maps and their Application,208
+	6.5 Measurable Multifunctions,216
+	6.6 Two Selection Theorems,228
+Chapter 7. The Attouch-Wets Topology for Convex Functions,235
+	7.1 Attouch-Wets Convergence ofEpigraphs,235
+	7.2 Continuity ofPolarity and the Attouch-Wets Topology,241
+	7.3 Regularization of Convex Functions and Attouch-Wets Convergence,250
+	7.4 The Sum Theorem,256
+	7.5 Convex Optirnization and the Attouch-Wets Topology,264
+Chapter 8. The Slice Topology for Convex Functions,270
+	8.1 Slice and Dual Slice Convergence of Convex Functions,270
+	8.2 Convex Duality and the Slice Topology,276
+	8.3 Subdifferentials of Convex Functions and the Slice Topology,287
+	8.4 Stability ofthe Geometrie Ekeland Principle,299
+Notes and References,306
+Bibliography,315
+Symbols and Notation,331
+Subject Index,335

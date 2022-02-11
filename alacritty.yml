@@ -1,0 +1,73 @@
+env:
+  EDITOR: nvim
+  NNN_BMS: a:~/Mathematics/Textbook_Archive;r:~/Mathematics/Research;c:~/Reading/Computer;g:~/Archives/Games;h:~/Reading/Hobby
+  NNN_PLUG: n:preview-note;f:fzcd;z:fzz
+  NNN_OPTS: acQu
+  FZF_DEFAULT_COMMAND: fd --type file --follow --hidden --exclude .git
+  FZF_DEFAULT_OPTS: --ansi
+  BROWSER: w3m
+  LANG: fr_FR.UTF-8
+window:
+  decorations: none
+  padding:
+    x: 13
+    y: 13
+  startup_mode: Maximized
+  opacity: 0.8
+shell:
+  program: zsh
+  args:
+    - --login
+key_bindings:
+  - key: RControl
+    action: PasteSelection
+  - key: RAlt
+    action: Paste
+  - key: 127
+    chars: "\x02"
+  - key: 13
+    mods: Alt
+    command:
+      program: "sh"
+      args: ["-c","$HOME/Documents/Code/Shell/background_opacity -inc"]
+  - key: 12
+    mods: Alt
+    command:
+      program: "sh"
+      args: ["-c","$HOME/Documents/Code/Shell/background_opacity -dec"]
+font:
+  normal:
+    family: Hack Nerd Font
+    style: regular
+  bold:
+    family: Hack Nerd Font
+    style: bold
+  italic:
+    family: Hack Nerd Font
+    style: italic
+  size: 19
+colors:
+  primary:
+    background: "#000000"
+    foreground: "#ffffff"
+  cursor:
+    text: "#F81CE5"
+    cursor: "#ffffff"
+  normal:
+    black: "#000000"
+    red: "#fe0100"
+    green: "#33ff00"
+    yellow: "#feff00"
+    blue: "#0066ff"
+    magenta: "#cc00ff"
+    cyan: "#00ffff"
+    white: "#d0d0d0"
+  bright:
+    black: "#808080"
+    red: "#fe0100"
+    green: "#33ff00"
+    yellow: "#feff00"
+    blue: "#0066ff"
+    magenta: "#cc00ff"
+    cyan: "#00ffff"
+    white: "#FFFFFF"

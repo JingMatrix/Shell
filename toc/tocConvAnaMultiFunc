@@ -1,0 +1,69 @@
+Contents,4
+d=6
+Chapter I. Convex Functions,1
+	Convex lower semi-continuous functions. Bipolar theorem,2
+	Some properties of convex sets,7
+	Inf-compactness properties,12
+	Inf imum convolution,18
+	Sub-differentiability,24
+	Some examples of mutually polar functions,29
+	Bibliography of Chapter I,35
+d=5
+Chapter II. Hausdorff Distance and Hausdorff Uniformity,37
+	The space of closed subsets of a metric space,38
+	The case of a uniform space. Hausdorff uniformity,44
+	The space of closed convex subsets of a locally convex space,46
+	Continuity of convex multi-functions,51
+	Bibliography of Chapter II,56
+Chapter III. Measurable Multi-Functions,59
+	Prerequisites,60
+	Measurable multi-functions, with values in compact subsets of a metrizable separable space,62
+	Selection theorem. Measurable multi-functions with values in complete subsets of a separable metric space,65
+	Measurable compact convex multi-functions,70
+	Projection theorem. Von Neumann-Aumann's selection theorem,72
+	Measurability in Suslin locally convex spaces,81
+	Implicit function theorem. Stability properties of measurable multi-functions,85
+	Bibliography of Chapter III,89
+Chapter IV. Topological Property of the Profile of a Measurable Multifunction with Compact Convex Values,91
+	The main theorem and its corollaries,91
+	Applications. Parametric version of Caratheodory's theorem.  Parametric version of Choquet's theorem,100
+	Characterization of the profile of a convex set of measurable selections,107
+	Extension of Ljapunov's theorem,112
+	Bibliography of Chapter IV,121
+d=4
+Chapter V. Compactness Theorems of Measurable Selections and Integral Representation Theorem,125
+	Compactness theorems in the spaces L_,(n.0L,u) and L-(n,(L,\i).,125
+	Inf-compactness theorems,131
+	Extreme points of certain convex sets of measurable functions defined by unilateral integral constraints,140
+	Compactness theorem in generalized KSthe functions spaces and its applications,142
+	Integral representation theorem of multifunctions from a KSthe space to a locally convex Suslin space,151
+	Characterization of a class of absolutely p summing operators,156
+	Closure theorem of the set of measurable selections of a measurable multi function,159
+	Bibliography of Chapter V,160
+d=3
+Chapter VI. Primitive of Multifunctions and Multivalued Differential Equations,163
+	Primitive of multifunction,163
+	Derivation of multifunction of bounded variation,167
+	Closure theorem involving the compactness property of trajectories of multivalued differential equations,170
+	Existence theorem of multivalued differential equations,174
+	Selection theorem for a separately measurable and separately absolutely continuous multifunction,187
+	Bibliography of Chapter VI,193
+Chapter VII. Convex Integrand on Locally Convex Spaces.  Applications,195
+	Preliminary results of measurability,195
+	Duality theorem of convex integral functionals for locally convex Suslin spaces,199
+	Duality theorem of convex integral functionals for non-separable reflexive Banach space,203
+	Applications of the duality theorem of convex integral functionals,215
+	Bibliography of Chapter VII,227
+d=2
+Chapter VIII. A Natural Supplement of L in the Dual of L .  Applications,231
+	Singular linear functionals on L°°. Statement of the main theorem,232
+	Representation of L_. Stonian spaces,241
+	First proof of the main theorem when E = ]R and u bounded,245
+	Second proof of the main theorem when E = ]R and u bounded,246
+	Proof of the main theorem when n is bounded,249
+	Proof of the main theorem,252
+	Polar of a convex function on l",253
+	Conditional expectation of a random vector,255
+	Conditional expectations of integrands and random sets,258
+	Bibliography of Chapter VIII,273
+Subject Index,276

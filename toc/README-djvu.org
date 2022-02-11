@@ -1,0 +1,117 @@
+* bookmark-DjVu
+=bookmark-djvu= and =bookmark-djvu-extract= are [[https://en.wikipedia.org/wiki/YAML][YAML]] -enabled wrappers around 
+[[http://djvu.sourceforge.net/index.html][DjVuLibre's]] [[http://djvu.sourceforge.net/doc/man/djvused.html][djvused]] tool. They allow simple modification and extraction
+of DjVu outlines.
+
+** Install
+
+Install the djvulibre tools and the YAML::XS Perl module:
+
+*dpkg-based (Debian, Ubuntu)*
+ : $ apt-get install djvulibre-bin libyaml-libyaml-perl
+
+*rpm-based (Fedora)*
+ : $ yum install djvulibre perl-YAML-LibYAML perl-Test-Simple
+
+
+** Usage
+Run
+  : $ ./bookmark-djvu --help
+and
+  : $ ./bookmark-djvu-extract --help
+for help.
+
+
+** Input/Output Formats
+Two formats are supported: [[https://en.wikipedia.org/wiki/YAML][YAML]] and our own =simple format=.
+
+Both have in common:
+- Encoding must be *UTF-8*.
+- Page numbering starts with 1.
+- =bookmark-djvu= will complain if a page number is out of range.
+- To remove outlines, run =bookmark-djvu= with empty input file (or /dev/null).
+
+*** YAML Format
+
+Sample outline:
+#+BEGIN_EXAMPLE
+- title: Cover
+  page: 1
+- title: Preface
+  page: 3
+- title: Chapter 1
+  page: 5
+  kids:
+    - title: Subsect 1.1
+      page: 6
+    - title: Subsect 1.2
+      page: 7
+      kids:
+        - title: SubSubsect 1.2.1
+          page: 8
+- title: Index
+  page: 9
+#+END_EXAMPLE
+
+*** Simple Format
+
+The same outline in ~simple format~:
+#+BEGIN_EXAMPLE
+Cover 1
+Preface . . . 3
+d=4
+Chapter 1 1
+
+    Subsect 1.1 ......2
+    Subsect 1.2 3
+        SubSubsect 1.2.1	4
+Index: 5
+#+END_EXAMPLE
+Note:
+- Each outline item is of the form =<INDENTATION> <TITLE> <SEPARATOR> <PAGE-NUMBER>=.
+
+- Child outline items are indented with *four spaces*.
+
+- A line of the form =d=NUMBER= will add =NUMBER= to all following page numbers until the next =d=NUMBER= marker or end of file. =NUMBER= can be negative.
+
+- =SEPARATOR= consists of dots and/or whitespace.
+
+- Lines containing only whitespace are ignored.
+
+- Note that with this format it's impossible to have trailing dots or whitespace in a title. Also it's impossible to have line feeds in titles. Use YAML format if you need this. 
+
+** Tests
+
+Run the tests with
+ : $ cd t/ && ./test
+
+Known to pass on:
+- Debian 7 and later
+- Fedora 20 and later
+- Ubuntu Vivid and later
+
+
+** Bugs
+Please report bugs at [[https://github.com/amba/bookmark-djvu/issues]].
+
+*** Known Bugs
+- bookmark-djvu-extract produces YAML with alphabetically ordered mappings, in contrast to the more sane ordering used above.
+
+** Copying
+#+BEGIN_EXAMPLE
+     This program is free software: you can redistribute it and/or modify
+     it under the terms of the GNU General Public License as published by
+     the Free Software Foundation, either version 3 of the License, or
+     (at your option) any later version.
+
+     This program is distributed in the hope that it will be useful,
+     but WITHOUT ANY WARRANTY; without even the implied warranty of
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+     GNU General Public License for more details.
+
+     You should have received a copy of the GNU General Public License
+     along with this program.  If not, see http://www.gnu.org/licenses/.
+#+END_EXAMPLE
+Copyright (C) 2015, Simon Reinhardt
+
+#+STARTUP: content
