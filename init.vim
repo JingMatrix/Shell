@@ -104,7 +104,8 @@ endif
 augroup formatter
 	autocmd!
 	autocmd FileType sh,zsh,bash setl formatprg=shfmt\ -ln\ bash\ -filename\ %
-	"% <cr> :w <esc> 2g;
+	autocmd FileType python setl formatprg=yapf
+	autocmd FileType lua setl formatprg=stylua\ -\ -
 	autocmd FileType tex,bib setl formatprg=latexindent\ -m\ -c=/tmp/
 	autocmd FileType javascript,html,vue,markdown,css,xhtml,scss,xml setl formatprg=prettier\ --stdin-filepath\ %
 	autocmd FileType json,jsonc setl formatprg=jq\ '.'

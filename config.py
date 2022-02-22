@@ -12,7 +12,8 @@ config.load_autoconfig(False)
 
 config.bind(',p', 'spawn --userscript qute-pass')
 config.bind('ce', 'config-edit')
-config.bind('<Ctrl+p>', 'config-cycle -t content.proxy socks5://localhost:9050/ none')
+config.bind('<Ctrl+p>',
+            'config-cycle -t content.proxy socks5://localhost:9050/ none')
 # config.bind('<Ctrl+r>', 'config-cycle colors.webpage.darkmode.enabled ;; restart')
 config.bind('zo', 'set-cmd-text :open file:///home/jing/')
 
@@ -22,25 +23,31 @@ c.aliases['mpv'] = 'spawn --userscript view_in_mpv'
 c.aliases['tor'] = 'set content.proxy sock5://127.0.0.1:9050/'
 c.aliases['no-proxy'] = 'set content.proxy none'
 c.aliases['readability'] = 'spawn --userscript readability-js'
-c.content.blocking.adblock.lists = ['https://easylist.to/easylist/easylist.txt',
-        'https://easylist.to/easylist/easyprivacy.txt',
-        'https://raw.githubusercontent.com/easylist/easylistchina/master/easylistchina.txt',
-        # 'https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt',
-        # 'https://www.i-dont-care-about-cookies.eu/abp/',
-        # 'https://secure.fanboy.co.nz/fanboy-cookiemonster.txt',
-        'file:///home/jing/Documents/Code/Web/adblock.txt']
-c.content.blocking.hosts.lists = ['https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts',
-        'https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt',
-        'https://raw.githubusercontent.com/x0uid/SpotifyAdBlock/master/hosts']
+c.content.blocking.adblock.lists = [
+    'https://easylist.to/easylist/easylist.txt',
+    'https://easylist.to/easylist/easyprivacy.txt',
+    'https://raw.githubusercontent.com/easylist/easylistchina/master/easylistchina.txt',
+    # 'https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt',
+    # 'https://www.i-dont-care-about-cookies.eu/abp/',
+    # 'https://secure.fanboy.co.nz/fanboy-cookiemonster.txt',
+    'file:///home/jing/Documents/Code/Web/adblock.txt'
+]
+c.content.blocking.hosts.lists = [
+    'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts',
+    'https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt',
+    'https://raw.githubusercontent.com/x0uid/SpotifyAdBlock/master/hosts'
+]
 c.content.blocking.method = 'both'
 c.content.autoplay = False
-# c.content.pdfjs = True
+c.content.pdfjs = True
 c.downloads.remove_finished = 7000
 c.downloads.prevent_mixed_content = False
 c.fileselect.handler = 'external'
-c.fileselect.single_file.command = ['alacritty','-e','nnn','-n','-p','{}']
-c.fileselect.multiple_files.command = ['alacritty','-e','nnn','-n','-p','{}']
-c.fileselect.folder.command = ['alacritty','-e','nnn','-n','-p','{}']
+c.fileselect.single_file.command = ['alacritty', '-e', 'nnn', '-n', '-p', '{}']
+c.fileselect.multiple_files.command = [
+    'alacritty', '-e', 'nnn', '-n', '-p', '{}'
+]
+c.fileselect.folder.command = ['alacritty', '-e', 'nnn', '-n', '-p', '{}']
 
 c.window.hide_decoration = True
 # c.colors.webpage.darkmode.enabled = True
@@ -57,27 +64,32 @@ c.colors.contextmenu.selected.fg = 'blue'
 c.colors.contextmenu.selected.bg = 'white'
 
 c.qt.force_platform = 'wayland'
-c.qt.args = ['widevine-path=/opt/google/chrome/WidevineCdm/_platform_specific/linux_x64/libwidevinecdm.so',
-        # Better to Give up, it is not working for flash
-        'no-sandbox',
-        'register-pepper-plugins=/usr/lib/PepperFlash/libpepflashplayer.so;application/vnd.adobe.flash-movie;application/x-shockwave-flash;application/futuresplash',
-        'ppapi-flash-version=32.0.0.137']
+c.qt.args = [
+    'widevine-path=/opt/google/chrome/WidevineCdm/_platform_specific/linux_x64/libwidevinecdm.so',
+    # Better to Give up, it is not working for flash
+    'no-sandbox',
+    'register-pepper-plugins=/usr/lib/PepperFlash/libpepflashplayer.so;application/vnd.adobe.flash-movie;application/x-shockwave-flash;application/futuresplash',
+    'ppapi-flash-version=32.0.0.137'
+]
 c.content.tls.certificate_errors = 'ask-block-thirdparty'
 c.tabs.show = 'switching'
 c.statusbar.show = 'in-mode'
 # c.url.start_pages = 'https://play.google.com/books/ebooks'
 c.url.start_pages = 'https://www.poeticous.com'
-c.url.searchengines['DEFAULT']='https://www.google.com/search?q={}'
+c.url.searchengines['DEFAULT'] = 'https://www.google.com/search?q={}'
 
-config.set('content.javascript.can_access_clipboard', True, 'https://github.com/*')
+config.set('downloads.prevent_mixed_content', True,
+           'https://scholar.google.com/scholar*')
+config.set('content.javascript.can_access_clipboard', True,
+           'https://github.com/*')
 config.set('content.javascript.enabled', False, 'https://piratebay.live/*')
-config.set('content.autoplay', True, 'https://jingmatrix.github.io/private/chat/*')
+config.set('content.autoplay', True,
+           'https://jingmatrix.github.io/private/chat/*')
 config.set('content.notifications.enabled', False)
 
-try:
-    from qutebrowser.api import message
-    config.source('pyconfig/redirectors.py')
+# try:
+#     from qutebrowser.api import message
+#     config.source('pyconfig/redirectors.py')
 
-except ImportError:
-    pass
-
+# except ImportError:
+#     pass
