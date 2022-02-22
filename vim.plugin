@@ -16,10 +16,10 @@
 │       └── vim-vinegar
 ├── project
 │   ├── opt
+│   │   └── gen_tags.vim
 │   └── start
 │       ├── fzf
 │       ├── fzf.vim
-│       ├── gen_tags.vim
 │       ├── nnn.nvim
 │       ├── nvim-lspconfig
 │       ├── nvim-treesitter

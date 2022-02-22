@@ -3,6 +3,7 @@ env:
   NNN_BMS: a:~/Mathematics/Textbook_Archive;r:~/Mathematics/Research;c:~/Reading/Computer;g:~/Archives/Games;h:~/Reading/Hobby
   NNN_PLUG: n:preview-note;f:fzcd;z:fzz
   NNN_OPTS: acQu
+  NNN_TRASH: '1'
   FZF_DEFAULT_COMMAND: fd --type file --follow --hidden --exclude .git
   FZF_DEFAULT_OPTS: --ansi
   BROWSER: w3m
