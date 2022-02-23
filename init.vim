@@ -143,7 +143,7 @@ augroup END
 augroup spellang
 	autocmd!
 	" autocmd FileType markdown setl spelllang+=cjk
-	autocmd FileType mail,markdown setl spelllang=fr
+	autocmd FileType mail,markdown setl spelllang=fr,en_us
 augroup spelllang
 
 

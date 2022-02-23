@@ -18,7 +18,7 @@
 # Categories:
 #   Uncategorized, Abstract, Aerial, Animals, Black and White, Celebrities, City and Architecture, Commercial, Concert, Family, Fashion, Film, Fine Art, Food, Journalism, Landscapes, Macro, Nature, Night, Nude, People, Performing Arts, Sport, Still Life, Street, Transportation, Travel, Underwater, Urban Exploration, Wedding
 
-export PATH=$PATH:/home/jing/.nvm/versions/node/v16.3.0/bin
+export PATH=$PATH:/home/jing/.nvm/versions/node/v17.4.0/bin
 pushd "/home/jing/Images/Papier Peint"
 typeset -a categories=("Fine Art" Abstract People "Performing Arts" Landscapes Nature)
 for category in $categories; do
