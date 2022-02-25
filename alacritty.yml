@@ -1,9 +1,9 @@
 env:
   EDITOR: nvim
   NNN_BMS: a:~/Mathematics/Textbook_Archive;r:~/Mathematics/Research;c:~/Reading/Computer;g:~/Archives/Games;h:~/Reading/Hobby
-  NNN_PLUG: n:preview-note;f:fzcd;z:fzz
+  NNN_PLUG: n:preview-note;f:fzcd;g:gsconnect
   NNN_OPTS: acQu
-  NNN_TRASH: '1'
+  NNN_TRASH: '1' 
   FZF_DEFAULT_COMMAND: fd --type file --follow --hidden --exclude .git
   FZF_DEFAULT_OPTS: --ansi
   BROWSER: w3m
@@ -14,7 +14,7 @@ window:
     x: 13
     y: 13
   startup_mode: Maximized
-  opacity: 0.8
+  opacity: 0.75
 shell:
   program: zsh
   args:

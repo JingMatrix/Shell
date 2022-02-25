@@ -64,6 +64,7 @@ local lsp_servers = {
 	"tsserver",
 	"clangd",
 	"cmake",
+	"gopls",
 	"solargraph",
 	"jdtls",
 }
