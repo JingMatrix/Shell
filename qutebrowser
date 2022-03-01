@@ -2,7 +2,6 @@
 # initial idea: Florian Bruhin (The-Compiler)
 # author: Thore Bödecker (foxxx0) Jianyu MA
 
-_url="$1"
 _proto_version=1
 _ipc_socket="${XDG_RUNTIME_DIR}/qutebrowser/ipc-$(echo -n "$USER" | md5sum | cut -d' ' -f1)"
 export PATH=$PATH:/home/jing/.nvm/versions/node/v17.4.0/bin
@@ -10,25 +9,15 @@ export NODE_PATH=/home/jing/.nvm/versions/node/v17.4.0/lib/node_modules
 export PYTHONPATH=$HOME/Documents/Project/qutebrowser
 
 LD_PRELOAD=/usr/lib/x86_64-linux-gnu/qt6/plugins/platforminputcontexts/libfcitx5platforminputcontextplugin.so
-# pushd $HOME/Documents/Project/qutebrowser/
-# branch=$(git branch --show-current)
-# if [[ $QT == "5" ]]; then
-# 	_qb_version='2.4.0'
-# 	if [[ $branch != master ]]; then
-# 		git checkout master >/dev/null
-	# fi
-	# LD_PRELOAD=/opt/Qt/5.15.2/gcc_64/plugins/platforminputcontexts/libfcitx5platforminputcontextplugin.so
-# else
-	# _qb_version='2.3.1'
-	# if [[ $branch != qt6-test ]]; then
-	# 	git checkout qt6-test >/dev/null
-	# fi
-	# LD_PRELOAD=/opt/Qt/6.2.3/gcc_64/plugins/platforminputcontexts/libfcitx5platforminputcontextplugin.so
-# fi
-# popd $HOME/Documents/Project/qutebrowser/
 
-printf '{"args": ["%s"], "target_arg": null, "version": "%s", "protocol_version": %d, "cwd": "%s"}\n' \
-	"${_url}" \
-	"${_qb_version}" \
-	"${_proto_version}" \
-	"${PWD}" | socat -lf /dev/null - UNIX-CONNECT:"${_ipc_socket}" || python3 -m qutebrowser "$@" &
+[[ $1 = -* ]] || _args=$(echo -n $@)
+
+if [[ -a ${_ipc_socket} && -n ${_args} ]]; then
+	printf '{"args": ["%s"], "target_arg": null, "version": "%s", "protocol_version": %d, "cwd": "%s"}\n' \
+		"${_args}" \
+		"${_qb_version}" \
+		"${_proto_version}" \
+		"${PWD}" | socat -lf /dev/null - UNIX-CONNECT:"${_ipc_socket}" &
+else
+	python3 -m qutebrowser $@ &
+fi

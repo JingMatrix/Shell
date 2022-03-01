@@ -65,11 +65,11 @@ c.colors.contextmenu.selected.bg = 'white'
 
 c.qt.force_platform = 'wayland'
 c.qt.args = [
-    'widevine-path=/opt/google/chrome/WidevineCdm/_platform_specific/linux_x64/libwidevinecdm.so',
+    # 'widevine-path=/opt/google/chrome/WidevineCdm/_platform_specific/linux_x64/libwidevinecdm.so',
     # Better to Give up, it is not working for flash
-    'no-sandbox',
-    'register-pepper-plugins=/home/jing/.local/lib/adobe-flashplugin/libpepflashplayer.so;application/x-shockwave-flash',
-    'ppapi-flash-version=32.0.0.137'
+    # 'no-sandbox',
+    # 'register-pepper-plugins=/home/jing/.local/lib/adobe-flashplugin/libpepflashplayer.so;application/x-shockwave-flash',
+    # 'ppapi-flash-version=32.0.0.137'
 ]
 c.content.tls.certificate_errors = 'ask-block-thirdparty'
 c.tabs.show = 'switching'
