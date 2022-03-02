@@ -1,4 +1,4 @@
-plugins+=(git nvm vi-mode pip)
+plugins+=(git nvm vi-mode pip gradle)
 # plugins+=(yarn urltools rust pass ripgrep nmap gradle)
 plugins+=(z.lua)
 plugins+=(zsh-interactive-cd)

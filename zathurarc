@@ -22,6 +22,7 @@ map [fullscreen] c exec 'zsh -c "goldendict $(wl-paste -p)"'
 map p exec 'zsh -c "qutebrowser \"$(wl-paste -p)\""'
 map [fullscreen] p exec 'zsh -c "qutebrowser \"$(wl-paste -p)\""'
 map m exec "/home/jing/Documents/Code/Shell/scripts/mathpix"
+map [fullscreen] m exec "/home/jing/Documents/Code/Shell/scripts/mathpix"
 
 # appearance
 
