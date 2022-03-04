@@ -48,6 +48,7 @@ c.fileselect.multiple_files.command = [
     'alacritty', '-e', 'nnn', '-n', '-p', '{}'
 ]
 c.fileselect.folder.command = ['alacritty', '-e', 'nnn', '-n', '-p', '{}']
+c.qt.force_platformtheme = 'qt6ct'
 
 c.window.hide_decoration = True
 # c.colors.webpage.darkmode.enabled = True
@@ -65,7 +66,7 @@ c.colors.contextmenu.selected.bg = 'white'
 
 c.qt.force_platform = 'wayland'
 c.qt.args = [
-    # 'widevine-path=/opt/google/chrome/WidevineCdm/_platform_specific/linux_x64/libwidevinecdm.so',
+    'widevine-path=/opt/google/chrome/WidevineCdm/_platform_specific/linux_x64/libwidevinecdm.so',
     # Better to Give up, it is not working for flash
     # 'no-sandbox',
     # 'register-pepper-plugins=/home/jing/.local/lib/adobe-flashplugin/libpepflashplayer.so;application/x-shockwave-flash',

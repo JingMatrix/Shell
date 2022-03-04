@@ -19,5 +19,5 @@ if [[ -a ${_ipc_socket} && -n ${_args} ]]; then
 		"${_proto_version}" \
 		"${PWD}" | socat -lf /dev/null - UNIX-CONNECT:"${_ipc_socket}" &
 else
-	python3 -m qutebrowser $@ &
+	python3 -m qutebrowser ${_args:-$@} &
 fi

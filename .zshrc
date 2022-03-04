@@ -45,7 +45,6 @@ export ANDROID_HOME=$HOME/Archives/Android
 export MANPAGER='nvim +Man!'
 export MUTTBOX="gmail"
 export GEM_HOME="$HOME/.local/gem"
-export QT_QPA_PLATFORMTHEME='gnome'
 export JDTLS_HOME=$HOME/Archive/Data/jdtls
 
 # keybinding

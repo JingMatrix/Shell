@@ -143,46 +143,48 @@ augroup spellang
 	autocmd!
 	" autocmd FileType markdown setl spelllang+=cjk
 	autocmd FileType mail,markdown setl spelllang=fr,en_us
-	augroup spelllang
+augroup END
+
+autocmd CompleteDone * pclose
 
 
-		" custom mapping
-		nnoremap <c-t> :vsplit <bar> terminal<cr>i
+" custom mapping
+nnoremap <c-t> :vsplit <bar> terminal<cr>i
 
-		" use <Shift> key to select; see https://stackoverflow.com/a/4608387/7870953
-		set mouse=a
-		set showcmd
-		set inccommand=split
-		set scrolloff=5
-		set undodir=/var/tmp/vim
-		set backupdir=/var/tmp/vim
-		set undofile
-		augroup rmundo
-			autocmd!
-			autocmd VimEnter /tmp/* set noundofile
-		augroup END
+" use <Shift> key to select; see https://stackoverflow.com/a/4608387/7870953
+set mouse=a
+set showcmd
+set inccommand=split
+set scrolloff=5
+set undodir=/var/tmp/vim
+set backupdir=/var/tmp/vim
+set undofile
+augroup rmundo
+	autocmd!
+	autocmd VimEnter /tmp/* set noundofile
+augroup END
 
-		set spelllang=en_us
-		set conceallevel=2
-		set concealcursor=nc
-		hi Conceal NONE
-		hi Comment cterm=italic ctermfg=gray
-		hi Pmenu ctermbg=NONE ctermfg=white
-		hi PmenuSel ctermfg=yellow
+set spelllang=en_us
+set conceallevel=2
+set concealcursor=nc
+hi Conceal NONE
+hi Comment cterm=italic ctermfg=gray
+hi Pmenu ctermbg=NONE ctermfg=white
+hi PmenuSel ctermfg=yellow
 
-		set hidden
-		set autowrite
-		set foldmethod=syntax
-		set fillchars=fold:\ ,
-		set modeline
-		set autochdir
+set hidden
+set autowrite
+set foldmethod=syntax
+set fillchars=fold:\ ,
+set modeline
+set autochdir
 
-		" completion
-		set omnifunc=syntaxcomplete#Complete
+" completion
+set omnifunc=syntaxcomplete#Complete
 
-		let g:vimsyn_noerror=1
-		if system('whoami') =~ 'jing'
-			" lua config file
-			" file locate $HOME/.config/nvim/lua/vim-init.lua
-			lua require('vim-init')
-		endif
+let g:vimsyn_noerror=1
+if system('whoami') =~ 'jing'
+	" lua config file
+	" file locate $HOME/.config/nvim/lua/vim-init.lua
+	lua require('vim-init')
+endif
