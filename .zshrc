@@ -46,6 +46,7 @@ export MANPAGER='nvim +Man!'
 export MUTTBOX="gmail"
 export GEM_HOME="$HOME/.local/gem"
 export JDTLS_HOME=$HOME/Archive/Data/jdtls
+export KALDI_ROOT=$HOME/Documents/Project/kaldi
 
 # keybinding
 function keep-buffer {

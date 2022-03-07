@@ -175,6 +175,7 @@ hi PmenuSel ctermfg=yellow
 set hidden
 set autowrite
 set foldmethod=syntax
+set foldexpr=nvim_treesitter#foldexpr()
 set fillchars=fold:\ ,
 set modeline
 set autochdir

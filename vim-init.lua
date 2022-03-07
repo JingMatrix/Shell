@@ -13,7 +13,21 @@ vim.api.nvim_set_keymap("n", "<leader>np", "<cmd>NnnPicker<CR>", opts)
 
 -- tree-sitter
 --
-require("nvim-treesitter.configs").setup({ highlight = { enable = true } })
+require("nvim-treesitter.configs").setup({
+	highlight = { enable = true },
+	indent = {
+		enable = true,
+	},
+	incremental_selection = {
+		enable = true,
+		keymaps = {
+			init_selection = "gnn",
+			node_incremental = "grn",
+			scope_incremental = "grc",
+			node_decremental = "grm",
+		},
+	},
+})
 
 -- nnn
 --
@@ -84,7 +98,6 @@ require("lspconfig").sumneko_lua.setup({
 		},
 	},
 })
-
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true

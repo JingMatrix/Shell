@@ -1,9 +1,0 @@
-#! /bin/zsh
-for bin in wine wine64 wine64-preloader wineboot winebuild winecfg wineconsole winecpp winedbg winedump winefile wineg++ winegcc winemaker winemine winepath wine-preloader wineserver; do
-	sudo update-alternatives --remove $bin /opt/wine-stable/bin/$bin
-	sudo update-alternatives --remove $bin /opt/wine-devel/bin/$bin
-	sudo update-alternatives --remove $bin /opt/wine-staging/bin/$bin
-	sudo update-alternatives --install /bin/$bin $bin /opt/wine-stable/bin/$bin 30
-	sudo update-alternatives --install /bin/$bin $bin /opt/wine-devel/bin/$bin 20
-	sudo update-alternatives --install /bin/$bin $bin /opt/wine-staging/bin/$bin 10
-done
