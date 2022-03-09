@@ -79,20 +79,8 @@ let g:vim_markdown_folding_level=4
 let g:vim_markdown_toc_autofit=1
 let g:vim_markdown_strikethrough=1
 
-" fzf-vim
-" Mapping selecting mappings
-nmap <leader><tab> <plug>(fzf-maps-n)
-xmap <leader><tab> <plug>(fzf-maps-x)
-omap <leader><tab> <plug>(fzf-maps-o)
-
-
-" Insert mode completion
-imap <c-x><c-k> <plug>(fzf-complete-word)
-imap <c-x><c-f> <plug>(fzf-complete-path)
-imap <c-x><c-l> <plug>(fzf-complete-line)
-
 " sudo edit
-" let g:suda_smart_edit=1
+let g:suda_smart_edit=1
 
 " Add system path if not presented
 if stridx($PATH, 'node')==-1
@@ -185,6 +173,17 @@ set omnifunc=syntaxcomplete#Complete
 
 let g:vimsyn_noerror=1
 if system('whoami') =~ 'jing'
+	" fzf-vim
+	" Mapping selecting mappings
+	nmap <leader><tab> <plug>(fzf-maps-n)
+	xmap <leader><tab> <plug>(fzf-maps-x)
+	omap <leader><tab> <plug>(fzf-maps-o)
+
+
+	" Insert mode completion
+	imap <c-x><c-k> <plug>(fzf-complete-word)
+	imap <c-x><c-f> <plug>(fzf-complete-path)
+	imap <c-x><c-l> <plug>(fzf-complete-line)
 	" lua config file
 	" file locate $HOME/.config/nvim/lua/vim-init.lua
 	lua require('vim-init')
