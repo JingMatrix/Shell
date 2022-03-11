@@ -51,6 +51,7 @@ c.fileselect.folder.command = ['alacritty', '-e', 'nnn', '-n', '-p', '{}']
 c.qt.force_platformtheme = 'qt6ct'
 
 c.window.hide_decoration = True
+c.window.transparent = True
 # c.colors.webpage.darkmode.enabled = True
 c.fonts.default_size = '12pt'
 c.fonts.web.family.standard = 'Manjari'

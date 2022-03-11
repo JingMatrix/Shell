@@ -1,10 +1,19 @@
 #! /bin/python3
 
-import os,json,re,sys
+import os
+import json
+import re
+import sys
+
+if len(sys.argv) == 1:
+    # refresh login
+    from aligo import Aligo
+    Aligo()
+    sys.exit()
 
 file_id = re.findall('[0-9a-f]{40}', sys.argv[1])[0]
 match_id = re.match(r"https://www.aliyundrive.com/s/([^/]+)/folder", sys.argv[1])
-if match_id :
+if match_id:
     share_id = match_id.group(1)
     list_file = True
     download_path = '/home/jing/Archives/Data/Ebooks/Aliyun/' + file_id + '.json'
@@ -32,8 +41,8 @@ f.close()
 if list_file and os.path.exists(download_path):
     print('file data exits in the directory /home/jing/Archives/Data/Ebooks/Aliyun/')
     exit()
-else: 
-    from aligo import *
+else:
+    from aligo import Aligo
     from dataclasses import asdict
 
     ali = Aligo()
@@ -56,12 +65,11 @@ else:
             share_id=share_id,
             share_token=share_token.share_token,
             file_id=file_id
-            ).download_url
+        ).download_url
         if download_path == '':
-            download_path ='/tmp/' + ali.get_share_file(
-            share_id=share_id,
-            share_token=share_token.share_token,
-            file_id=file_id
+            download_path = '/tmp/' + ali.get_share_file(
+                share_id=share_id,
+                share_token=share_token.share_token,
+                file_id=file_id
             ).name
         ali.download_file(download_path, download_url)
-
