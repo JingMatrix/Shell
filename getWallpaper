@@ -20,7 +20,7 @@
 
 export PATH=$PATH:/home/jing/.nvm/versions/node/v17.4.0/bin
 pushd "/home/jing/Images/Papier Peint"
-typeset -a categories=("Fine Art" Abstract People "Performing Arts" Landscapes Nature)
+typeset -a categories=("Fine Art" Abstract "Performing Arts" Landscapes Nature)
 for category in $categories; do
 	500wallpaper -H 2048 -l -c "$category" >/dev/null
 done

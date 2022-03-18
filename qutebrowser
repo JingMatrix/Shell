@@ -7,6 +7,7 @@ _ipc_socket="${XDG_RUNTIME_DIR}/qutebrowser/ipc-$(echo -n "$USER" | md5sum | cut
 export PATH=$PATH:/home/jing/.nvm/versions/node/v17.4.0/bin
 export NODE_PATH=/home/jing/.nvm/versions/node/v17.4.0/lib/node_modules
 export PYTHONPATH=$HOME/Documents/Project/qutebrowser
+export MPV_COMMAND=/bin/mpv
 
 LD_PRELOAD=/usr/lib/x86_64-linux-gnu/qt6/plugins/platforminputcontexts/libfcitx5platforminputcontextplugin.so
 
