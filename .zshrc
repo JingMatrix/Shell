@@ -36,6 +36,7 @@ alias gcl="git clone --recursive --shallow-submodules --depth 1"
 # alias john="/home/jing/Documents/Project/john/run/john"
 alias lc=colorls
 alias l="colorls -al"
+alias icat="kitty +kitten icat"
 alias qb=qutebrowser
 alias pip=pip3
 alias msfconsole="TERM=xterm-256color msfconsole"
@@ -65,6 +66,11 @@ bindkey "^F" run-help
 bindkey "^K" keep-buffer
 bindkey "^H" backward-kill-word
 bindkey "^B^B" start_tmux
+
+# nnn config
+
+
+[[ -z $ALACRITTY_WAYLAND ]] || export WAYLAND_DISPLAY=$ALACRITTY_WAYLAND
 
 # zsh-highlight
 

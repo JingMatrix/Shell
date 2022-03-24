@@ -9,12 +9,12 @@ env:
   BROWSER: w3m
   LANG: fr_FR.UTF-8
 window:
-  decorations: none
+  decorations: Full
   padding:
     x: 13
     y: 13
   startup_mode: Maximized
-  opacity: 0.75
+  opacity: 0.7
 shell:
   program: zsh
   args:
@@ -22,8 +22,10 @@ shell:
 key_bindings:
   - key: RControl
     action: PasteSelection
+    mods: Control
   - key: RAlt
     action: Paste
+    mods: Alt
   - key: 127
     chars: "\x02"
   - key: 13

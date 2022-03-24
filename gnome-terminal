@@ -1,11 +1,12 @@
 #!/bin/bash
 
 # https://unix.stackexchange.com/questions/333661/how-to-specify-which-terminal-is-used-by-gtk-launch/642886#642886
-echo A dirty workaround to replace gnome-terminal by alacritty
-
+new_terminal=kitty
+echo A dirty workaround to replace gnome-terminal by $new_terminal
 [ x"$1" = x"--" ] || {
 	echo There is no gnome-terminal intalled
-	echo Please consider alacritty instead
+	echo Please consider $new_terminal instead
+	/usr/bin/gnome-terminal "$@"
 	exit 0
 }
 
@@ -13,7 +14,9 @@ shift
 
 TITLE="$(basename "$1")"
 if [ -n "$TITLE" ]; then
-	/usr/local/bin/alacritty -t "$TITLE" -e "$@"
+	# /usr/local/bin/alacritty -t "$TITLE" -e "$@"
+	kitty -T "$TITLE" $@
 else
-	/usr/local/bin/alacritty -e "$@"
+	# /usr/local/bin/alacritty -e "$@"
+	kitty $@
 fi
