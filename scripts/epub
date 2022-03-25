@@ -186,7 +186,11 @@ function packepub {
 	echo -n "\nPack as $2"
 	echo -n "\nOpen sigil?\t"
 	if read -q; then
-		tmux splitw "less $1.error"
+		if [[ -z $TMUX ]]; then
+			kitty @ launch --keep-focus "less $1.error"
+		else
+			tmux splitw "less $1.error"
+		fi
 		sigil $2 &>/dev/null
 	fi
 }
@@ -229,7 +233,11 @@ function repairepub {
 			echo "cd $1" >>/tmp/epub.vim
 			echo "cf $1.error" >>/tmp/epub.vim
 			echo "copen" >>/tmp/epub.vim
-			tmux neww "vim -S /tmp/epub.vim $filelist"
+			if [[ -z $TMUX ]]; then
+				kitty @ launch --type=tab --keep-focus "vim -S /tmp/epub.vim $filelist"
+			else
+				tmux neww "vim -S /tmp/epub.vim $filelist"
+			fi
 			echo -n "\nRun epubcheck again?\t"
 			rm $1.json
 		done
@@ -240,7 +248,14 @@ function repairepub {
 	# Other methods
 	if [[ -f $1.error ]]; then
 		echo -n "\nChange to html directory?\t"
-		read -q && cd $1 && tmux splitw
+		if read -q; then
+			cd $1
+			if [[ -z $TMUX ]]; then
+				kitty @ launch
+			else
+				tmux splitw
+			fi
+		fi
 		echo -n "\nPack epub directly\t"
 		if read -q; then
 			# local filename="/tmp/$(jq '.publication | .title' $1.json -r).epub"
@@ -308,7 +323,7 @@ function askepubcheck {
 }
 
 # main routine
-[[ -z $TMUX ]] && echo "Please run in tmux" && exit
+[[ -z $TMUX || -z $KITTY_LISTEN_ON ]] && echo "Please run in tmux or kitty" && exit
 
 if [[ -f $1 ]]; then
 	# parse given file in argument

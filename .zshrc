@@ -35,7 +35,8 @@ compdef _ocr ocr
 alias gcl="git clone --recursive --shallow-submodules --depth 1"
 # alias john="/home/jing/Documents/Project/john/run/john"
 alias lc=colorls
-alias l="colorls -al"
+alias ls="ls --color --hyperlink=auto"
+alias l="colorls -al --hyperlink"
 alias icat="kitty +kitten icat"
 alias qb=qutebrowser
 alias pip=pip3
@@ -48,6 +49,7 @@ export MUTTBOX="gmail"
 export GEM_HOME="$HOME/.local/gem"
 export JDTLS_HOME=$HOME/Archive/Data/jdtls
 export KALDI_ROOT=$HOME/Documents/Project/kaldi
+export PAGER=''
 
 # keybinding
 function keep-buffer {
@@ -66,9 +68,6 @@ bindkey "^F" run-help
 bindkey "^K" keep-buffer
 bindkey "^H" backward-kill-word
 bindkey "^B^B" start_tmux
-
-# nnn config
-
 
 [[ -z $ALACRITTY_WAYLAND ]] || export WAYLAND_DISPLAY=$ALACRITTY_WAYLAND
 

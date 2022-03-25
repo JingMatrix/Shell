@@ -1,22 +1,28 @@
 #!/bin/bash
 
 # https://unix.stackexchange.com/questions/333661/how-to-specify-which-terminal-is-used-by-gtk-launch/642886#642886
-new_terminal=kitty
-echo A dirty workaround to replace gnome-terminal by $new_terminal
+terminal=$(readlink /etc/alternatives/x-terminal-emulator)
+terminal_name=$(basename $terminal)
+
+echo A dirty workaround to replace gnome-terminal by $terminal_name
 [ x"$1" = x"--" ] || {
-	echo There is no gnome-terminal intalled
-	echo Please consider $new_terminal instead
+	echo Please consider $terminal_name instead
 	/usr/bin/gnome-terminal "$@"
 	exit 0
 }
 
 shift
-
 TITLE="$(basename "$1")"
 if [ -n "$TITLE" ]; then
-	# /usr/local/bin/alacritty -t "$TITLE" -e "$@"
-	kitty -T "$TITLE" $@
+	if [ $terminal_name == 'alacritty' ]; then
+		$terminal -t "$TITLE" -e "$@"
+	elif [ $terminal_name == 'kitty' ]; then
+		$terminal -T "$TITLE" $@
+	fi
 else
-	# /usr/local/bin/alacritty -e "$@"
-	kitty $@
+	if [ $terminal_name == 'alacritty' ]; then
+		$terminal -e "$@"
+	elif [ $terminal_name == 'kitty' ]; then
+		$terminal $@
+	fi
 fi

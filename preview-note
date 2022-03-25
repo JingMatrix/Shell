@@ -21,4 +21,4 @@ if [ "$PREVIEW_MODE" ]; then
 	exit 0
 fi
 
-tmux split-window -e "NNN_FIFO=$NNN_FIFO" -e "PREVIEW_MODE=1" -dh "$0" "$1"
+kitty @ launch --keep-focus --env "NNN_FIFO=$NNN_FIFO" --env "PREVIEW_MODE=1" "$0" "$1"
