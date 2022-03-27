@@ -1,7 +1,8 @@
 plugins+=(git nvm vi-mode pip gradle)
 # plugins+=(yarn urltools rust pass ripgrep nmap gradle)
 plugins+=(z.lua)
-plugins+=(zsh-interactive-cd)
+plugins+=(zsh-interactive-cd) 
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
 
 function ocr {
@@ -49,7 +50,7 @@ export MUTTBOX="gmail"
 export GEM_HOME="$HOME/.local/gem"
 export JDTLS_HOME=$HOME/Archive/Data/jdtls
 export KALDI_ROOT=$HOME/Documents/Project/kaldi
-export PAGER=''
+export PAGER="less -P?n -R"
 
 # keybinding
 function keep-buffer {

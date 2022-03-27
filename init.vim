@@ -10,7 +10,7 @@ let g:vimtex_compiler_latexmk={'build_dir' : '/var/tmp/latex',
 let g:vimtex_fold_enabled=1
 let g:vimtex_fold_manual=1
 let g:vimtex_view_method='zathura'
-let g:vimtex_view_zathura_options='--mode=fullscreen'
+" let g:vimtex_view_zathura_options='--mode=fullscreen'
 let g:vimtex_quickfix_method='pplatex'
 let g:matchup_override_vimtex=1
 let g:vimtex_quickfix_open_on_warning=0
@@ -40,6 +40,7 @@ let g:startify_bookmarks=[
 			\{'c': '$HOME/Documents/Code/Shell'},
 			\{'z': '$HOME/Documents/Code/Shell/.zshrc'},
 			\{'k': '$HOME/Documents/Code/Shell/kitty.conf'},
+			\{'s': '$HOME/.config/sway/config'},
 			\{'v': '$HOME/.config/nvim/init.vim'},
 			\{'a': '$HOME/.config/alacritty/alacritty.yml'},
 			\]

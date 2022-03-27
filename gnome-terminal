@@ -5,6 +5,7 @@ terminal=$(readlink /etc/alternatives/x-terminal-emulator)
 terminal_name=$(basename $terminal)
 
 echo A dirty workaround to replace gnome-terminal by $terminal_name
+echo $@
 [ x"$1" = x"--" ] || {
 	echo Please consider $terminal_name instead
 	/usr/bin/gnome-terminal "$@"
@@ -17,12 +18,12 @@ if [ -n "$TITLE" ]; then
 	if [ $terminal_name == 'alacritty' ]; then
 		$terminal -t "$TITLE" -e "$@"
 	elif [ $terminal_name == 'kitty' ]; then
-		$terminal -T "$TITLE" $@
+		$terminal -T "$TITLE" "$@"
 	fi
 else
 	if [ $terminal_name == 'alacritty' ]; then
 		$terminal -e "$@"
 	elif [ $terminal_name == 'kitty' ]; then
-		$terminal $@
+		$terminal "$@"
 	fi
 fi

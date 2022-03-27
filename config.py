@@ -12,6 +12,8 @@ config.load_autoconfig(False)
 
 config.bind(',p', 'spawn --userscript qute-pass')
 config.bind('ce', 'config-edit')
+# config.bind('o', 'spawn --userscript qutedmenu open')
+# config.bind('O', 'spawn --userscript qutedmenu tab')
 config.bind('<Ctrl+p>',
             'config-cycle -t content.proxy socks5://localhost:9050/ none')
 # config.bind('<Ctrl+r>', 'config-cycle colors.webpage.darkmode.enabled ;; restart')
@@ -43,12 +45,11 @@ c.content.pdfjs = True
 c.downloads.remove_finished = 7000
 c.downloads.prevent_mixed_content = False
 c.fileselect.handler = 'external'
-c.fileselect.single_file.command = ['alacritty', '-e', 'nnn', '-n', '-p', '{}']
+c.fileselect.single_file.command = ['kitty', 'nnn', '-n', '-p', '{}']
 c.fileselect.multiple_files.command = [
-    'alacritty', '-e', 'nnn', '-n', '-p', '{}'
+    'kitty', 'nnn', '-n', '-p', '{}'
 ]
-c.fileselect.folder.command = ['alacritty', '-e', 'nnn', '-n', '-p', '{}']
-c.qt.force_platformtheme = 'qt6ct'
+c.fileselect.folder.command = ['kitty', 'nnn', '-n', '-p', '{}']
 
 c.window.hide_decoration = True
 c.window.transparent = True

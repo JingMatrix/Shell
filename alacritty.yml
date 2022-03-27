@@ -43,7 +43,7 @@ font:
   italic:
     family: Hack Nerd Font
     style: italic
-  size: 19
+  size: 9
 colors:
   primary:
     background: "#000000"
