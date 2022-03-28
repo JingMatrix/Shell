@@ -1,0 +1,3 @@
+#! /bin/sh
+export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"
+/home/jing/.local/bin/gcalcli remind
