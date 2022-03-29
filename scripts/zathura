@@ -1,0 +1,5 @@
+#! /bin/zsh
+
+[[ -n $NVIM_LISTEN_ADDRESS ]] && export GDK_BACKEND=x11
+/bin/zathura "$@" &
+exit

@@ -33,3 +33,4 @@ set window-width 1920
 set window-height 1080
 set selection-notification false
 set page-padding 0
+set scroll-step 150
