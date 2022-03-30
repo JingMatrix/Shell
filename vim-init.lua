@@ -16,7 +16,7 @@ vim.api.nvim_set_keymap("n", "<leader>np", "<cmd>NnnPicker<CR>", opts)
 require("nvim-treesitter.configs").setup({
 	highlight = {
 		enable = true,
-		disable = { "latex", "vim" },
+		disable = { "latex", "vim", "markdown" },
 	},
 	indent = {
 		enable = true,

@@ -80,6 +80,8 @@ let g:vim_markdown_follow_anchor=1
 let g:vim_markdown_folding_level=4
 let g:vim_markdown_toc_autofit=1
 let g:vim_markdown_strikethrough=1
+let g:vim_markdown_math=1
+let g:vim_markdown_conceal=1
 
 " sudo edit
 let g:suda_smart_edit=1

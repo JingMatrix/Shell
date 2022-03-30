@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/zsh
 
 gsconnect=/home/jing/.local/share/gnome-shell/extensions/gsconnect@andyholmes.github.io/service/daemon.js
-$gsconnect -d d65acf426995dbc2 --share-text=$(wl-paste)
+$gsconnect -d d65acf426995dbc2 --share-text="$(wl-paste)"

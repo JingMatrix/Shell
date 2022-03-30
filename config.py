@@ -89,6 +89,8 @@ config.set('content.javascript.enabled', False, 'https://piratebay.live/*')
 config.set('content.autoplay', True,
            'https://jingmatrix.github.io/private/chat/*')
 config.set('content.notifications.enabled', False)
+config.set('content.notifications.enabled', True, 'https://calendar.google.com/*')
+config.set('content.register_protocol_handler', True, 'https://calendar.google.com?cid=%25s')
 
 # try:
 #     from qutebrowser.api import message
