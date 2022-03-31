@@ -9,7 +9,7 @@ export NODE_PATH=/home/jing/.nvm/versions/node/v17.4.0/lib/node_modules
 export PYTHONPATH=$HOME/Documents/Project/qutebrowser
 export MPV_COMMAND=/bin/mpv
 
-LD_PRELOAD=/usr/lib/x86_64-linux-gnu/qt6/plugins/platforminputcontexts/libfcitx5platforminputcontextplugin.so
+# LD_PRELOAD=/usr/lib/x86_64-linux-gnu/qt6/plugins/platforminputcontexts/libfcitx5platforminputcontextplugin.so
 
 [[ $1 = -* ]] || search_text=$(echo -n $@)
 
@@ -22,5 +22,5 @@ if [[ -e ${_ipc_socket} && -n ${_args} ]]; then
 elif [[ -z ${search_text} && -n $@ ]]; then
 	python3 -m qutebrowser $@
 else
-	nohup python3 -m qutebrowser ${search_text} 2>/dev/null &
+	nohup python3 -m qutebrowser ${search_text} 1>/dev/null 2>&1 &
 fi

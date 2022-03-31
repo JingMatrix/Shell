@@ -5,6 +5,8 @@ member="SetText"
 dbus_interface="org.gnome.Shell.Extensions.GSConnect.Clipboard"
 
 dbus-monitor "path='$dbus_path', member=$member, interface='$dbus_interface'" | while read -r line; do
-text=$(grep -Po "^string \"\K[^:].*(?=\")" -- <<<$line)
-	[[ -z $text ]] || wl-copy $text
+	text=$(grep -Po "^string \"\K[^:].*(?=\")" -- <<<$line)
+	if [[ -n $text && $(wl-paste) != $test ]]; then
+		wl-copy $text
+	fi
 done
