@@ -171,6 +171,7 @@ set foldexpr=nvim_treesitter#foldexpr()
 set fillchars=fold:\ ,
 set modeline
 set autochdir
+set tabstop=4
 
 " completion
 set omnifunc=syntaxcomplete#Complete
