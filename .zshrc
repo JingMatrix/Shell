@@ -42,7 +42,6 @@ alias icat="kitty +kitten icat"
 alias qb=qutebrowser
 alias pip=pip3
 alias msfconsole="TERM=xterm-256color msfconsole"
-alias gsconnect=/home/jing/.local/share/gnome-shell/extensions/gsconnect@andyholmes.github.io/service/daemon.js
 
 export ANDROID_HOME=$HOME/Archives/Android
 export MANPAGER='nvim +Man!'

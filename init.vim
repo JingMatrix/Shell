@@ -84,7 +84,7 @@ let g:vim_markdown_math=1
 let g:vim_markdown_conceal=1
 
 " sudo edit
-let g:suda_smart_edit=1
+let g:suda_smart_edit=0
 
 " Add system path if not presented
 if stridx($PATH, 'node')==-1
@@ -142,6 +142,9 @@ autocmd CompleteDone * pclose
 
 " custom mapping
 nnoremap <c-t> :vsplit <bar> terminal<cr>i
+nnoremap <X1Mouse> <C-O>
+nnoremap <X2Mouse> <C-I>
+nnoremap <F5> :UndotreeToggle<CR>
 
 " use <Shift> key to select; see https://stackoverflow.com/a/4608387/7870953
 set mouse=a

@@ -5,6 +5,7 @@
 │   └── start
 │       ├── registers.nvim
 │       ├── suda.vim
+│       ├── undotree
 │       ├── vala.vim
 │       ├── vim-commentary
 │       ├── vim-fugitive
@@ -40,4 +41,4 @@
         ├── vim-airline
         └── vim-airline-themes
 
-40 directories, 0 files
+41 directories, 0 files

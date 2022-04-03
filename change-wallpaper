@@ -3,12 +3,14 @@
 # export DISPLAY=:0
 # export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 
-if [[ -z "$SWAYSOCK" ]]; then
-  export SWAYSOCK=/run/user/$(id -u)/sway-ipc.$(id -u).$(pgrep -x sway).sock
-fi
 folder="$HOME/Images/Papier Peint"
 pic=$(ls "$folder"/* | shuf -n1)
 # gsettings set org.gnome.desktop.background picture-uri "file://$pic"
 # gsettings set org.gnome.desktop.background picture-uri-dark "file://$pic"
 
-swaymsg output '*' background "$pic" fill
+if [[ -z "$SWAYSOCK" ]]; then
+	export SWAYSOCK=/run/user/$(id -u)/sway-ipc.$(id -u).$(pgrep -x sway).sock
+	swaymsg output 'eDP-1' background "$pic" fill
+else
+	swaymsg output '*' background "$pic" fill
+fi
