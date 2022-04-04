@@ -2,11 +2,11 @@
 # use mathpix api for math ocr
 # set -e
 
-gnome-screenshot -f /tmp/latex.png -a
+grim -g "$(slurp -d)" /tmp/latex.png
 if [[ -f /tmp/latex.png ]]; then
 	image=$(base64 -i /tmp/latex.png | tr -d \\n)
 else
-	echo "Make sure that there is an image in CLIPBOARD"
+	notify-send "Take a screenshot" "No image indicated for mathpix"
 	exit 1
 fi
 local mathpixrc=($(cat ~/.config/mathpix))
