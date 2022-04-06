@@ -22,7 +22,8 @@ for d in ~/.local/share/nvim/site/pack/*/*/*/ ~/.oh-my-zsh/custom/{plugin,theme}
 	(
 		cd "$d"
 		if [[ -d .git ]]; then
-			echo "\t\tEnter directory $d"
+			printf "\t\tEnter directory \e]8;;file://$PWD\e\\$PWD\e]8;;\e\\"
+			printf "\n"
 			git pull --rebase
 		fi
 	)
