@@ -1,4 +1,4 @@
-# !/bin/zsh
+#! /bin/zsh
 
 host_ip="10.245.5.73"
 if [[ "$(hostname -I)" != "$host_ip " ]]; then
@@ -9,7 +9,8 @@ fi
 if swaymsg -t get_outputs | grep '"name": "HEADLESS-1"'; then
 	echo "Output HEADLESS-1 exists"
 else
-	swaymsg -t create_output
+	notify-send "No headless ouput" "Creating a new one"
+	swaymsg create_output
 fi
 
 if pgrep wayvnc; then

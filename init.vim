@@ -11,7 +11,7 @@ let g:vimtex_fold_enabled=1
 let g:vimtex_fold_manual=1
 let g:vimtex_view_method='zathura'
 " let g:vimtex_view_zathura_options='--mode=fullscreen'
-let g:vimtex_quickfix_method='pplatex'
+let g:vimtex_log_ignore=['Viewer cannot find Zathura window ID!']
 let g:matchup_override_vimtex=1
 let g:vimtex_quickfix_open_on_warning=0
 let g:vimtex_syntax_custom_cmds=[
@@ -24,9 +24,9 @@ let g:vimtex_fold_types={'comments' : {'enabled' : 1}}
 augroup math_edit
 	autocmd!
 	" Fix latex log jump for project files
-	autocmd FileType tex nmap <localleader>ll :exe 'lcd' b:vimtex.root <bar> VimtexCompile <cr>
+	autocmd FileType tex nmap <localleader>ll :VimtexCompile <cr>
 	autocmd FileType tex nmap <buffer> <F9> :setl spell <bar> silent! w <bar> compiler vlty <bar> make <bar> :cw <cr><esc>
-	autocmd FileType tex setl dictionary+=../.dict | setl iskeyword+=- | setl complete=.,t,k | setl keywordprg=texdoc | setl noautochdir
+	autocmd FileType tex setl dictionary+=../.dict | setl iskeyword+=- | setl complete=.,t,k | setl keywordprg=texdoc
 	autocmd FileType tex nmap <localleader>ld <Plug>(vimtex-doc-package)
 augroup end
 

@@ -19,9 +19,14 @@ devices = gsconnect.GetManagedObjects()
 for dev in devices:
     devinfo = devices[dev]['org.gnome.Shell.Extensions.GSConnect.Device']
     if devinfo['Connected']:
-        types.append(devinfo['Type'])
-        waybar['text'] += icons[devinfo['IconName']] + ' '
-        waybar['tooltip'] += devinfo['Name'] + '\n'
+        if devinfo['Paired']:
+            types.append(devinfo['Type'])
+            waybar['text'] += icons[devinfo['IconName']] + ' '
+            waybar['tooltip'] += devinfo['Name'] + '\n'
+        if not devinfo['Paired']:
+            types.append(devinfo['Type'])
+            waybar['text'] += ' ' + ' '
+            waybar['tooltip'] += devinfo['Name'] + '\n'
 
 waybar['types'] = '+'.join(types)
 for key in waybar:
