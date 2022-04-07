@@ -24,3 +24,5 @@ elif [[ -z ${search_text} && -n $@ ]]; then
 else
 	nohup python3 -m qutebrowser ${search_text} 1>/dev/null 2>&1 &
 fi
+
+swaymsg workspace qb

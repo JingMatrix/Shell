@@ -1,3 +1,26 @@
 #! /bin/zsh
 
+# for nnn, to detach previewer by default
 nohup /bin/zathura "$@" >/dev/null 2>&1 &
+
+if [[ -n $NVIM_LISTEN_ADDRESS && -n $SWAYSOCK ]]; then
+	typeset -a _args=($@)
+	title="${_args[-1]:t}"
+	if [[ -z "$(swaymsg -p -t get_workspaces | grep " $title")" ]]; then
+		[[ -z "$(swaymsg -p -t get_outputs | grep HDMI-A-2)" ]] &&
+			[[ -z "$(swaymsg -p -t get_outputs | grep HEADLESS-1)" ]] && exit
+		# a bit of for Zathura window to appear
+		sleep 0.3
+		swaymsg "[app_id=org.pwmt.zathura title=$title]" \
+			fullscreen disable, move workspace " $title"
+		if [[ -n "$(swaymsg -p -t get_outputs | grep HDMI-A-2)" ]]; then
+			swaymsg workspace " $title"
+			swaymsg move workspace output "eDP-1"
+			wtype s
+		elif [[ -n "$(swaymsg -p -t get_outputs | grep HEADLESS-1)" ]]; then
+			swaymsg workspace " $title"
+			swaymsg move workspace output "HEADLESS-1"
+			wtype s
+		fi
+	fi
+fi

@@ -4,7 +4,16 @@
 # export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 
 folder="$HOME/Images/Papier Peint"
-pic=$(ls "$folder"/* | shuf -n1)
+selection=/home/jing/.config/nnn/.selection
+if [[ -f $selection ]]; then
+	xargs -0 -L 1 <$selection | while read file; do
+		if [[ "${file:h}" == "$folder" && ${file:e} == "jpeg" ]]; then
+			pic=$file
+			# break
+		fi
+	done
+fi
+[[ -z $pic ]] && pic=$(ls "$folder"/*.jpeg | shuf -n1)
 # gsettings set org.gnome.desktop.background picture-uri "file://$pic"
 # gsettings set org.gnome.desktop.background picture-uri-dark "file://$pic"
 
