@@ -3,6 +3,7 @@
 │   ├── opt
 │   │   └── nerdtree
 │   └── start
+│       ├── conjure
 │       ├── registers.nvim
 │       ├── suda.vim
 │       ├── undotree
@@ -33,12 +34,14 @@
 │   ├── opt
 │   │   └── mkdx
 │   └── start
+│       ├── aniseed
 │       ├── jsonc.vim
 │       ├── vim-markdown
+│       ├── vim-racket
 │       └── vimtex
 └── theme
     └── start
         ├── vim-airline
         └── vim-airline-themes
 
-41 directories, 0 files
+44 directories, 0 files

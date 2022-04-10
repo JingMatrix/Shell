@@ -1,5 +1,6 @@
 " vimtex
 let g:vimtex_compiler_method='latexmk'
+let g:vimtex_quickfix_method='pplatex'
 let g:vimtex_compiler_latexmk={'build_dir' : '/var/tmp/latex',
 			\'options' : [
 				\'-verbose',
@@ -10,10 +11,10 @@ let g:vimtex_compiler_latexmk={'build_dir' : '/var/tmp/latex',
 let g:vimtex_fold_enabled=1
 let g:vimtex_fold_manual=1
 let g:vimtex_view_method='zathura'
-" let g:vimtex_view_zathura_options='--mode=fullscreen'
 let g:vimtex_log_ignore=['Viewer cannot find Zathura window ID!']
 let g:matchup_override_vimtex=1
 let g:vimtex_quickfix_open_on_warning=0
+let g:vimtex_quickfix_ignore_filters=['(Package hyperref) Token not']
 let g:vimtex_syntax_custom_cmds=[
 			\{'name': 'YYCleverefInput', 'argspell': 0}
 			\]
@@ -24,10 +25,11 @@ let g:vimtex_fold_types={'comments' : {'enabled' : 1}}
 augroup math_edit
 	autocmd!
 	" Fix latex log jump for project files
-	autocmd FileType tex nmap <localleader>ll :VimtexCompile <cr>
 	autocmd FileType tex nmap <buffer> <F9> :setl spell <bar> silent! w <bar> compiler vlty <bar> make <bar> :cw <cr><esc>
 	autocmd FileType tex setl dictionary+=../.dict | setl iskeyword+=- | setl complete=.,t,k | setl keywordprg=texdoc
 	autocmd FileType tex nmap <localleader>ld <Plug>(vimtex-doc-package)
+	" Specify extra behaviour after reverse goto
+	au User VimtexEventViewReverse normal! zMzvzz
 augroup end
 
 " startify
@@ -81,7 +83,10 @@ let g:vim_markdown_folding_level=4
 let g:vim_markdown_toc_autofit=1
 let g:vim_markdown_strikethrough=1
 let g:vim_markdown_math=1
-let g:vim_markdown_conceal=1
+augroup markdown_workaround
+	autocmd!
+	autocmd FileType checkhealth let g:vim_markdown_math=0
+augroup END
 
 " sudo edit
 let g:suda_smart_edit=0
@@ -175,6 +180,7 @@ set fillchars=fold:\ ,
 set modeline
 set autochdir
 set tabstop=4
+set shiftwidth=0
 
 " completion
 set omnifunc=syntaxcomplete#Complete

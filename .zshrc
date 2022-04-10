@@ -42,6 +42,7 @@ alias icat="kitty +kitten icat"
 alias qb=qutebrowser
 alias pip=pip3
 alias msfconsole="TERM=xterm-256color msfconsole"
+unalias gradle
 
 export ANDROID_HOME=$HOME/Archives/Android
 export MANPAGER='nvim +Man!'

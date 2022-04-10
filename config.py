@@ -40,6 +40,7 @@ c.content.blocking.hosts.lists = [
     'https://raw.githubusercontent.com/x0uid/SpotifyAdBlock/master/hosts'
 ]
 c.content.blocking.method = 'both'
+c.content.geolocation = False
 c.content.autoplay = False
 c.content.pdfjs = True
 c.downloads.remove_finished = 7000

@@ -39,6 +39,7 @@ require("nnn").setup()
 -- vim-lspconfig
 --
 
+local lspconfig = require("lspconfig")
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 
@@ -78,20 +79,23 @@ local lsp_servers = {
 	"pylsp",
 	"vuels",
 	"vimls",
+	-- "kotlin_language_server",
 	"tsserver",
+	"racket_langserver",
 	"clangd",
 	"cmake",
 	"gopls",
 	"solargraph",
+	-- Java language server, consider nvim-jdtls when needed
 	"jdtls",
 }
 for _, lsp in pairs(lsp_servers) do
-	require("lspconfig")[lsp].setup({
+	lspconfig[lsp].setup({
 		on_attach = on_attach,
 	})
 end
 
-require("lspconfig").sumneko_lua.setup({
+lspconfig.sumneko_lua.setup({
 	on_attach = on_attach,
 	settings = {
 		Lua = {
@@ -106,7 +110,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 for _, lsp in pairs({ "html", "cssls" }) do
-	require("lspconfig")[lsp].setup({
+	lspconfig[lsp].setup({
 		capabilities = capabilities,
 		on_attach = on_attach,
 	})
