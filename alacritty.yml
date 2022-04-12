@@ -17,10 +17,10 @@ shell:
 key_bindings:
   - key: RControl
     action: PasteSelection
-    mods: Control
+    # mods: Control
   - key: RAlt
     action: Paste
-    mods: Alt
+    # mods: Alt
   - key: 127
     chars: "\x02"
   - key: 13

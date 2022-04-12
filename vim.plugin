@@ -36,6 +36,7 @@
 │   └── start
 │       ├── aniseed
 │       ├── jsonc.vim
+│       ├── scribble.vim
 │       ├── vim-markdown
 │       ├── vim-racket
 │       └── vimtex
@@ -44,4 +45,4 @@
         ├── vim-airline
         └── vim-airline-themes
 
-44 directories, 0 files
+45 directories, 0 files

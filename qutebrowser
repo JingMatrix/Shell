@@ -19,10 +19,11 @@ if [[ -e ${_ipc_socket} && -n ${_args} ]]; then
 		"${_qb_version}" \
 		"${_proto_version}" \
 		"${PWD}" | socat -lf /dev/null - UNIX-CONNECT:"${_ipc_socket}" &
+	swaymsg workspace qb
 elif [[ -z ${search_text} && -n $@ ]]; then
 	python3 -m qutebrowser $@
 else
 	nohup python3 -m qutebrowser ${search_text} 1>/dev/null 2>&1 &
+	swaymsg workspace qb
 fi
 
-swaymsg workspace qb
