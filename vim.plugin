@@ -16,7 +16,8 @@
 │       ├── vim-startify
 │       ├── vim-surround
 │       ├── vim-unimpaired
-│       └── vim-vinegar
+│       ├── vim-vinegar
+│       └── zeavim.vim
 ├── project
 │   ├── opt
 │   │   └── gen_tags.vim
@@ -45,4 +46,4 @@
         ├── vim-airline
         └── vim-airline-themes
 
-45 directories, 0 files
+46 directories, 0 files

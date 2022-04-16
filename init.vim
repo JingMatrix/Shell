@@ -14,7 +14,7 @@ let g:vimtex_view_method='zathura'
 let g:vimtex_log_ignore=['Viewer cannot find Zathura window ID!']
 let g:matchup_override_vimtex=1
 let g:vimtex_quickfix_open_on_warning=0
-let g:vimtex_quickfix_ignore_filters=['(Package hyperref) Token not']
+let g:vimtex_quickfix_ignore_filters=['(Package hyperref) Token not', 'Fandol']
 let g:vimtex_syntax_custom_cmds=[
 			\{'name': 'YYCleverefInput', 'argspell': 0}
 			\]

@@ -85,6 +85,7 @@ local lsp_servers = {
 	"clangd",
 	"cmake",
 	"gopls",
+	"rust_analyzer",
 	"solargraph",
 	-- Java language server, consider nvim-jdtls when needed
 	"jdtls",

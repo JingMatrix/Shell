@@ -323,7 +323,7 @@ function askepubcheck {
 }
 
 # main routine
-[[ -z $TMUX || -z $KITTY_LISTEN_ON ]] && echo "Please run in tmux or kitty" && exit
+[[ -z $TMUX && -z $KITTY_LISTEN_ON ]] && echo "Please run in tmux or kitty" && exit
 
 if [[ -f $1 ]]; then
 	# parse given file in argument

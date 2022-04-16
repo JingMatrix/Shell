@@ -1,5 +1,6 @@
 #! /bin/zsh
 
+export GDK_BACKEND=wayland
 # for nnn, to detach previewer by default
 nohup /bin/zathura "$@" >/dev/null 2>&1 &
 
@@ -16,11 +17,11 @@ if [[ -n $NVIM_LISTEN_ADDRESS && -n $SWAYSOCK ]]; then
 		if [[ -n "$(swaymsg -p -t get_outputs | grep HDMI-A-2)" ]]; then
 			swaymsg workspace " $title"
 			swaymsg move workspace output "eDP-1"
-			wtype s
+			sleep 0.3 && wtype s
 		elif [[ -n "$(swaymsg -p -t get_outputs | grep HEADLESS-1)" ]]; then
 			swaymsg workspace " $title"
 			swaymsg move workspace output "HEADLESS-1"
-			wtype s
+			sleep 0.3 && wtype s
 		fi
 	fi
 fi
