@@ -1,7 +1,7 @@
 plugins+=(git nvm vi-mode pip gradle)
 # plugins+=(yarn urltools rust pass ripgrep nmap gradle)
 plugins+=(z.lua)
-plugins+=(zsh-interactive-cd) 
+plugins+=(zsh-interactive-cd)
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
 
@@ -35,9 +35,13 @@ compdef _ocr ocr
 # alias sd="TERM=xterm ddgr -n 5"
 alias gcl="git clone --recursive --shallow-submodules --depth 1"
 # alias john="/home/jing/Documents/Project/john/run/john"
-alias lc=colorls
-alias ls="ls --color --hyperlink=auto"
-alias l="colorls -al --hyperlink"
+if [[ $TERM == xterm-kitty ]]; then
+	alias ls="ls --color --hyperlink=auto"
+	alias l="colorls -al --hyperlink"
+else
+	alias ls="ls --color"
+	alias l="colorls -al"
+fi
 alias icat="kitty +kitten icat"
 alias qb=qutebrowser
 alias pip=pip3

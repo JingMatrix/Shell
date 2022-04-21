@@ -1,0 +1,207 @@
+CONTENTS, 9
+d=14
+Chapter 1 Introduction, 1
+Chapter 2 Mathematical Induction, 9
+	2.1 Introduction, 9
+	2.2 Three Simple Examples, 11
+	2.3 Counting Regions in the Plane, 13
+	2.4 A Simple Coloring Problem, 14
+	2.5 A More Complicated Summation Problem, 15
+	2.6 A Simple Inequality, 16
+	2.7 Euler's Formula, 17
+	2.8 A Problem in Graph Theory, 18
+	2.9 Gray Codes, 20
+	2.10 Finding Edge-Disjoint Paths in a Graph, 23
+	2.11 Arithmetic versus Geometric Mean Theorem, 24
+	2.12 Loop Invariants: Converting a Decimal Number to Binary, 26
+	2.13 Common Errors, 28
+	2.14 Summary, 29
+		Bibliographic Notes and Further Reading, 30
+		Exercises, 31
+Chapter 3 Analysis of Algorithms, 37
+	3.1 Introduction, 37
+	3.2 The 0 Notation, 39
+	3.3 Time and Space Complexity, 42
+	3.4 Summations, 43
+	3.5 Recurrence Relations, 46
+		3.5.1 Intelligent Guesses, 47
+		3.5.2 Divide and Conquer Relations, 50
+		3.5.3 Recurrence Relations with Full History, 51
+	3.6 Useful Facts, 53
+	3.7 Summary, 55
+		Bibliographic Notes and Further Reading, 55
+		Exercises, 56
+Chapter 4 Data Structures, 61
+	4.1 Introduction, 61
+	4.2 Elementary Data Structures, 62
+		4.2.1 Elements, 62
+		4.2.2 Arrays, 63
+		4.2.3 Records, 63
+		4.2.4 Linked Lists, 64
+	4.3 Trees, 66
+		4.3.1 Representation of Trees, 67
+		4.3.2 Heaps, 68
+		4.3.3 Binary Search Trees, 71
+		4.3.4 AVL Trees, 75
+	4.4  Hashing, 78
+	4.5  The Union-Find Problem, 80
+	4.6  Graphs, 83
+	4.7  Summary, 84
+		Bibliographic Notes and Further Reading, 85
+		Exercises, 86
+Chapter 5 Design of Algorithms by Induction, 91
+	5.1 Introduction, 91
+	5.2 Evaluating Polynomials, 92
+	5.3 Maximal Induced Subgraph, 95
+	5.4 Finding One-to-One Mappings, 96
+	5.5 The Celebrity Problem, 98
+	5.6 A Divide-and-Conquer Algorithm: The Skyline Problem, 102
+	5.7 Computing Balance Factors in Binary Trees, 104
+	5.8 Finding the Maximum Consecutive Subsequence, 106
+	5.9 Strengthening the Induction Hypothesis, 107
+	5.10 Dynamic Programming: The Knapsack Problem, 108
+	5.11 Common Errors, 111
+	5.12 Summary, 112
+		Bibliographic Notes and Further Reading, 113
+		Exercises, 114
+Chapter 6 Algorithms Involving Sequences and Sets, 119
+	6.1 Introduction, 119
+	6.2 Binary Search and Variations, 120
+	6.3 Interpolation Search, 125
+	6.4 Sorting, 127
+		6.4.1 Bucket Sort and Radix Sort, 127
+		6.4.2 Insertion Sort and Selection Sort, 130
+		6.4.3 Mergesort, 130
+		6.4.4 Quicksort, 131
+		6.4.5 Heapsort, 137
+		6.4.6 A Lower Bound for Sorting, 141
+	6.5 Order Statistics, 143
+		6.5.1 Maximum and Minimum Elements, 143
+		6.5.2 Finding the fcth-Smallest Element, 144
+	6.6 Data Compression, 145
+	6.7 String Matching, 148
+	6.8 Sequence Comparisons, 155
+	6.9 Probabilistic Algorithms, 158
+		6.9.1 Random Numbers, 160
+		6.9.2 A Coloring Problem, 161
+		6.9.3 A Technique for Transforming Probabilistic Algorithms into Deterministic Algorithms, 161
+	6.10 Finding a Majority, 164
+	6.11 Three Problems Exhibiting Interesting Proof Techniques, 167
+		6.11.1 Longest Increasing Subsequence, 167
+		6.11.2 Finding the Two Largest Elements in a Set, 169
+		6.11.3 Computing the Mode of a Multiset, 171
+	6.12 Summary, 173
+		Bibliographic Notes and Further Reading, 173
+		Exercises, 175
+Chapter 7 Graph Algorithms, 185
+	7.1 Introduction, 185
+	7.2 Eulerian Graphs, 187
+	7.3 Graph Traversal, 189
+		7.3.1 Depth-First Search, 190
+		7.3.2 Breadth-First Search, 198
+	7.4 Topological Sorting, 199
+	7.5 Single-Source Shortest Paths, 201
+	7.6 Minimum-Cost Spanning Trees, 208
+	7.7 All Shortest Paths, 212
+	7.8 Transitive Closure, 214
+	7.9 Decompositions of Graphs, 217
+		7.9.1 Biconnected Components, 217
+		7.9.2 Strongly Connected Components, 226
+		7.9.3 Examples of the Use of Graph Decomposition, 230
+	7.10 Matching, 234
+		7.10.1 Perfect Matching in Very Dense Graphs, 234 
+		7.10.2 Bipartite Matching, 235
+	7.11 Network Flows, 238
+	7.12 Hamiltonian Tours, 243
+		7.12.1 Reversed Induction, 244
+		7.12.2 Finding Hamiltonian Cycles in Very Dense Graphs, 244
+	7.13 Summary, 246
+		Bibliographic Notes and Further Reading, 247
+		Exercises, 248
+Chapter 8 Geometric Algorithms, 265
+	8.1 Introduction, 265
+	8.2 Determining Whether a Point Is Inside a Polygon, 266
+	8.3 Constructing Simple Polygons, 270
+	8.4 Convex Hulls, 273
+		8.4.1 A Straightforward Approach, 273
+		8.4.2 Gift Wrapping, 274
+		8.4.3 Graham's Scan, 275
+	8.5 Closest Pair, 278
+	8.6 Intersections of Horizontal and Vertical Line Segments, 281
+	8.7 Summary, 285
+		Bibliographic Notes and Further Reading, 286
+		Exercises, 287
+Chapter 9 Algebraic and Numeric Algorithms, 293
+	9.1 Introduction, 293
+	9.2 Exponentiation, 294
+	9.3 Euclid's Algorithm, 297
+	9.4 Polynomial Multiplication, 298
+	9.5 Matrix Multiplication, 301
+		9.5.1 Winograd's Algorithm, 301
+		9.5.2 Strassen's Algorithm, 301
+		9.5.3 Boolean Matrices, 304
+	9.6 The Fast Fourier Transform, 309
+	9.7 Summary, 316
+		Bibliographic Notes and Further Reading, 316
+		Exercises, 317
+Chapter 10 Reductions, 321
+	10.1 Introduction, 321
+	10.2 Examples of Reductions, 323
+		10.2.1 A Simple String-Matching Problem, 323
+		10.2.2 Systems of Distinct Representatives, 323
+		10.2.3 A Reduction Involving Sequence Comparisons, 324
+		10.2.4 Finding a Triangle in Undirected Graphs, 325
+	10.3 Reductions Involving Linear Programming, 327
+		10.3.1 Introduction and Definitions, 327
+		10.3.2 Examples of Reductions to Linear Programming, 329
+                          
+	10.4 Reductions for Lower Bounds, 331
+		10.4.1 A Lower Bound for Finding Simple Polygons, 331
+		10.4.2 Simple Reductions Involving Matrices, 333
+	10.5 Common Errors, 334
+	10.6 Summary, 336
+		Bibliographic Notes and Further Reading, 336
+		Exercises, 337
+Chapter 11 NP-Completeness, 341
+	11.1 Introduction, 341
+	11.2 Polynomial-Time Reductions, 342
+	11.3 Nondeterminism and Cook's Theorem, 344
+	11.4 Examples of NP-Completeness Proofs, 347
+		11.4.1 Vertex Cover, 348
+		11.4.2 Dominating Set, 348
+		11.4.3 3SAT, 350
+		11.4.4 Clique, 351
+		11.4.5 3-Coloring, 352
+		11.4.6 General Observations, 355
+		11.4.7 More NP-Complete Problems, 356
+	11.5 Techniques For Dealing with NP-Complete Problems, 357
+		11.5.1 Backtracking and Branch-and-Bound, 358
+		11.5.2 Approximation Algorithms with Guaranteed Performance, 363
+	11.6 Summary, 368
+		Bibliographic Notes and Further Reading, 368
+		Exercises, 370
+Chapter 12 Parallel Algorithms, 375
+	12.1 Introduction, 375
+	12.2 Models of Parallel Computation, 376
+	12.3 Algorithms for Shared-Memory Machines, 378
+		12.3.1 Parallel Addition, 379
+		12.3.2 Maximum-Finding Algorithms, 380
+		12.3.3 The Parallel-Prefix Problem, 382
+		12.3.4 Finding Ranks in Linked Lists, 385
+		12.3.5 The Euler's Tour Technique, 387
+	12.4 Algorithms for Interconnection Networks, 389
+		12.4.1 Sorting on an Array, 390
+		12.4.2 Sorting Networks, 393
+		12.4.3 Finding the fcth-Smallest Element on a Tree, 396
+		12.4.4 Matrix Multiplication on the Mesh, 398
+		12.4.5 Routing in a Hypercube, 401
+	12.5 Systolic Computation, 404
+		12.5.1 Matrix-Vector Multiplication, 404
+		12.5.2 The Convolution Problem, 405
+		12.5.3 Sequence Comparisons, 407
+	12.6 Summary, 409
+		Bibliographic Notes and Further Reading, 409
+		Exercises, 411
+Sketches of Solutions to Selected Exercises, 417
+References, 445
+Index, 465
