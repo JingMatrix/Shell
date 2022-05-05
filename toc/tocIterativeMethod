@@ -1,0 +1,86 @@
+Contents,8
+Preface,12
+How to Get the Software,14
+d=15
+CHAPTER 1. Basic Concepts and Stationary Iterative Methods,3
+	1.1 Review and notation,3
+	1.2 The Banach Lemma and approximate inverses,5
+	1.3 The spectral radius,7
+	1.4 Matrix splittings and classical stationary iterative methods,7
+	1.5 Exercises on stationary iterative methods,10
+CHAPTER 2. Conjugate Gradient Iteration,11
+	2.1 Krylov methods and the minimization property,11
+	2.2 Consequences of the minimization property,13
+	2.3 Termination of the iteration,15
+	2.4 Implementation,19
+	2.5 Preconditioning,22
+	2.6 CGNR and CGNE,25
+	2.7 Examples for preconditioned conjugate iteration,26
+	2.8 Exercises on conjugate gradient,30
+CHAPTER 3. GMRES Iteration,33
+	3.1 The minimization property and its consequences,33
+	3.2 Termination,35
+	3.3 Preconditioning,36
+	3.4 GMRES implementation: Basic ideas,37
+	3.5 Implementation: Givens rotations,43
+	3.6 Other methods for nonsymmetric systems,46
+		3.6.1 Bi-CG,47
+		3.6.2 CGS,48
+		3.6.3 Bi-CGSTAB,50
+		3.6.4 TFQMR,51
+	3.7 Examples for GMRES iteration,54
+	3.8 Examples for CGNR, Bi-CGSTAB, and TFQMR iteration,55
+	3.9 Exercises on GMRES,60
+CHAPTER 4. Basic Concepts and Fixed-Point Iteration,65
+	4.1 Types of convergence,65
+	4.2 Fixed-point iteration,66
+	4.3 The standard assumptions,68
+CHAPTER 5. Newton's Method,71
+	5.1 Local convergence of Newton's method,71
+	5.2 Termination of the iteration,72
+	5.3 Implementation of Newton's method,73
+	5.4 Errors in the function and derivative,75
+		5.4.1 The chord method,76
+		5.4.2 Approximate inversion of F',77
+		5.4.3 The Shamanskii method,78
+		5.4.4 Difference approximation to F',79
+		5.4.5 The secant method,82
+	5.5 The Kantorovich Theorem,83
+	5.6 Examples for Newton's method,86
+	5.7 Exercises on Newton's method,91
+CHAPTER 6. Inexact Newton Methods,95
+	6.1 The basic estimates,95
+		6.1.1 Direct analysis,95
+		6.1.2 Weighted norm analysis,97
+		6.1.3 Errors in the function,100
+	6.2 Newton-iterative methods,100
+		6.2.1 Newton GMRES,101
+		6.2.2 Other Newton-iterative methods,104
+	6.3 Newton-GMRES implementation,104
+	6.4 Examples for Newton-GMRES,106
+		6.4.1 Chandrasekhar H-equation,107
+		6.4.2 Convection-diffusion equation,108
+	6.5 Exercises on inexact Newton methods,110
+CHAPTER 7. Broyden's method,113
+	7.1 The Dennis-More condition,114
+	7.2 Convergence analysis,116
+		7.2.1 Linear problems,118
+		7.2.2 Nonlinear problems,120
+	7.3 Implementation of Broyden's method,123
+	7.4 Examples for Broyden's method,127
+		7.4.1 Linear problems,127
+		7.4.2 Nonlinear problems,128
+	7.5 Exercises on Broyden's method,132
+CHAPTER 8. Global Convergence,135
+	8.1 Single equations,135
+	8.2 Analysis of the Armijo rule,138
+	8.3 Implementation of the Armijo rule,141
+		8.3.1 Polynomial line searches,142
+		8.3.2 Broyden's method,144
+	8.4 Examples for Newton-Armijo,146
+		8.4.1 Inverse tangent function,146
+		8.4.2 Convection-diffusion equation,146
+		8.4.3 Broyden-Armijo,148
+	8.5 Exercises on global convergence,151
+Bibliography,153
+Index,163
