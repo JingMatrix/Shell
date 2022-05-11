@@ -1,0 +1,22 @@
+
+Introduction,6
+	Papers described in this manuscript,9
+	Other Papers,9
+Contents,8
+d=9
+Chapter 1. Background,1
+	1. Optimal Mass Transport,1
+	2. Alexandrov spaces,4
+Chapter 2. Regularity of Alexandrov space with curvature bounded below,9
+	1. First order structure and optimal mass transport,9
+	2. Second order differential structure: DC Calculus,11
+Chapter 3. Prescription of Gauss curvature,19
+	1. Alexandrov’s proof,21
+	2. A variational approach,23
+	3. A relativistic detour,26
+	4. A hyperbolic analogue,30
+Chapter 4. Wasserstein space over CAT (0) space,35
+	1. Wasserstein space over Euclidean space,35
+	2. Wasserstein space over a CAT (0) space,36
+
+Bibliography,41

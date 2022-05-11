@@ -1,7 +1,8 @@
+d=-4
 Contents,8
 Preface,12
 How to Get the Software,14
-d=15
+d=8
 CHAPTER 1. Basic Concepts and Stationary Iterative Methods,3
 	1.1 Review and notation,3
 	1.2 The Banach Lemma and approximate inverses,5
@@ -31,6 +32,7 @@ CHAPTER 3. GMRES Iteration,33
 	3.7 Examples for GMRES iteration,54
 	3.8 Examples for CGNR, Bi-CGSTAB, and TFQMR iteration,55
 	3.9 Exercises on GMRES,60
+d=6
 CHAPTER 4. Basic Concepts and Fixed-Point Iteration,65
 	4.1 Types of convergence,65
 	4.2 Fixed-point iteration,66
