@@ -84,8 +84,6 @@ c.url.searchengines['DEFAULT'] = 'https://www.google.com/search?q={}'
 
 config.set('downloads.prevent_mixed_content', True,
            'https://scholar.google.com/scholar*')
-config.set('content.javascript.can_access_clipboard', True,
-           'https://github.com/*')
 config.set('content.javascript.enabled', False, 'https://piratebay.live/*')
 config.set('content.autoplay', True,
            'https://jingmatrix.github.io/private/chat/*')

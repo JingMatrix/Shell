@@ -5,7 +5,7 @@ export GDK_BACKEND=wayland
 # for nnn, to detach previewer by default
 nohup /bin/zathura "$@" >/dev/null 2>&1 &
 
-if [[ -n $NVIM_LISTEN_ADDRESS && -n $SWAYSOCK ]]; then
+if [[ -n $VIMRUNTIME && -n $SWAYSOCK ]]; then
 	typeset -a _args=($@)
 	title="${_args[-1]:t}"
 	if [[ -z "$(swaymsg -p -t get_workspaces | grep " $title")" ]]; then
