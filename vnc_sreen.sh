@@ -1,6 +1,6 @@
 #! /bin/zsh
 
-host_ip="10.245.5.73"
+host_ip="10.245.5.70"
 if [[ "$(hostname -I)" != "$host_ip " ]]; then
 	notify-send "Not start vnc" "Current network is not ready for safe vnc"
 	exit

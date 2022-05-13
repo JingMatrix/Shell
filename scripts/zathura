@@ -1,18 +1,20 @@
 #! /bin/zsh
 
+# exec 2> $HOME/log
 pushd $HOME
 export GDK_BACKEND=wayland
 # for nnn, to detach previewer by default
 nohup /bin/zathura "$@" >/dev/null 2>&1 &
 
+# set -x
 if [[ -n $VIMRUNTIME && -n $SWAYSOCK ]]; then
 	typeset -a _args=($@)
 	title="${_args[-1]:t}"
 	if [[ -z "$(swaymsg -p -t get_workspaces | grep " $title")" ]]; then
 		[[ -z "$(swaymsg -p -t get_outputs | grep HDMI-A-2)" ]] &&
 			[[ -z "$(swaymsg -p -t get_outputs | grep HEADLESS-1)" ]] && exit
-		# a bit of for Zathura window to appear
-		sleep 0.3
+		# wait a bit of for Zathura window to appear
+		sleep 0.4
 		swaymsg "[app_id=org.pwmt.zathura title=$title]" \
 			fullscreen disable, move workspace " $title"
 		if [[ -n "$(swaymsg -p -t get_outputs | grep HDMI-A-2)" ]]; then
