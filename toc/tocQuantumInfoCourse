@@ -31,17 +31,17 @@ Chapter 4. Classical information theory,57
 	§4.4. Transmission over noisy channels,66
 Chapter 5. Quantum information,73
 	§5.1. Reformulation of quantum mechanics and first consequences,73
-	§5.2. Distances in the classical and quantum settings,80
-	§5.3. The quantum noiseless channel theorem,82
-	§5.4. Properties of von Neumann entropy,87
-	§5.5. Conditional von Neumann entropy and strong subadditivity,92
-	§5.6. Entanglement and LOCC,97
-Chapter 6. Representation theory and Quantum information,107
-	§6.1. Representation theory,108
-	§6.2. Schur-Weyl duality and ϵ-typical subspaces,115
-	§6.3. The quantum marginal problem,118
-	§6.4. Tripartite States,123
-	§6.5. Appendix: proof that Kronm,n,k is finitely generated and convex,127
-Hints and Answers to Selected Exercises,131
+	§5.2. Distances in the classical and quantum settings,81
+	§5.3. The quantum noiseless channel theorem,83
+	§5.4. Properties of von Neumann entropy,89
+	§5.5. Conditional von Neumann entropy and strong subadditivity,93
+	§5.6. Entanglement and LOCC,99
+Chapter 6. Representation theory and Quantum information,109
+	§6.1. Representation theory,110
+	§6.2. Schur-Weyl duality and ϵ-typical subspaces,117
+	§6.3. The quantum marginal problem,120
+	§6.4. Tripartite States,125
+	§6.5. Appendix: proof that Kronm,n,k is finitely generated and convex,129
+Hints and Answers to Selected Exercises,133
 Bibliography,137
 Index,141
