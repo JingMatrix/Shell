@@ -21,15 +21,14 @@ let g:vimtex_syntax_custom_cmds=[
 let g:vimtex_syntax_nospell_comments=1
 let g:vimtex_grammar_vlty={'lt_command': 'languagetool'}
 let g:vimtex_indent_bib_enabled=0
+let g:vimtex_doc_handlers = ['vimtex#doc#handlers#texdoc']
 let g:vimtex_fold_types={'comments' : {'enabled' : 1}}
 augroup math_edit
 	autocmd!
-	" Fix latex log jump for project files
 	autocmd FileType tex nmap <buffer> <F9> :setl spell <bar> silent! w <bar> compiler vlty <bar> make <bar> :cw <cr><esc>
-	autocmd FileType tex setl dictionary+=../.dict | setl iskeyword+=- | setl complete=.,t,k | setl keywordprg=texdoc
-	autocmd FileType tex nmap <localleader>ld <Plug>(vimtex-doc-package)
+	autocmd FileType tex setl dictionary+=../.dict | setl iskeyword+=- | setl complete=.,t,k
 	" Specify extra behaviour after reverse goto
-	au User VimtexEventViewReverse normal! zMzvzz
+	autocmd User VimtexEventViewReverse normal! zMzvzz
 augroup end
 
 " startify
@@ -93,7 +92,7 @@ let g:suda_smart_edit=0
 
 " Add system path if not presented
 if stridx($PATH, 'node')==-1
-	let $PATH .=':/home/jing/.nvm/versions/node/v17.4.0/bin'
+	let $PATH .=':/home/jing/.nvm/versions/node/v18.1.0/bin'
 endif
 
 " formater
