@@ -1,0 +1,76 @@
+TABLE DES MATIERES,6
+Introduction,12
+d=13
+I. Les théorèmes de Hahn-Banach. Introduction à la théorie des fonctions convexes conjuguées,1 
+	I.1. Forme analytique du théorème de Hahn-Banach : prolongement des formes linéaires,1 
+	I.2. Formes géométriques du théorème de Hahn-Banach : séparation des ensembles convexes,4 
+	I.3. Introduction à la théorie des fonctions convexes conjuguées,8 
+	Commentaires,13 
+II. Les théorèmes de Banach-Steinhaus et du graphe fermé. Relations d'orthogonalité. Opérateurs non-bornés. Notion d'adjoint. Caractérisation des opérateurs surjectifs,15 
+	II.1. Rappel du lemme de Baire,15 
+	II.2. Le théorème de Banach-Steinhaus,16 
+	II.3. Théorème de l'application ouverte et théorème du graphe fermé,18 
+	II.4. Supplémentaire topologique. Opérateurs inversibles à droite (resp. à gauche),21 
+	II.5. Relations d'orthogonalité,23 
+	II.6. Introduction aux opérateurs linéaires non-bornés. Définition de l'adjoint.,26 
+	II.7. Caractérisation des opérateurs à image fermée. Opérateurs surjectifs. Opérateurs bornés,29 
+	Commentaires,32 
+III. Topologies faibles. Espaces réflexifs. Espaces séparables. Espaces uniformément convexes,33 
+	III.1. Rappel sur la topologie la moins fine rendant continues une famille d'applications,33 
+	III.2. Définition et propriétés élémentaires de la topologie faible a(E, E')..,35 
+	III.3. Topologie faible, ensembles convexes et opérateurs linéaires,38 
+	III.4. La topologie faible* a(E\ E),39 
+	III.5. Espaces réflexifs,43 
+	III.6. Espaces séparables,47 
+	III.7. Espaces uniformément convexes,51 
+	Commentaires,52 
+IV. Les espaces Lp,54 
+	IV.1. Quelques résultats d'intégration qu'il faut absolument connaître,54 
+	IV.2. Définition et propriétés élémentaires des espaces L^p,55 
+	IV.3. Réflexivité. Séparabilité. Dual de L^p,59 
+	IV.4. Convolution et régularisation,66 
+	IV.5. Critère de compacité forte dans L^p,72 
+	Commentaires,75 
+V. Les espaces de Hilbert,78 
+	V.1. Définitions. Propriétés élémentaires. Projection sur un convexe fermé.,78 
+	V.2. Dual d'un espace de Hilbert,81 
+	V.3. Théorèmes de Stampacchia et Lax-Milgram,82 
+	V.4. Somme Hilbertienne. Base Hilbertienne,85 
+	Commentaires,87 
+VI. Opérateurs compacts. Décomposition spectrale des opérateurs autoadjoints compacts,89 
+	VI.1. Définition. Propriétés élémentaires. Adjoint,89 
+	VI.2. La théorie de Riesz-Fredholm,91 
+	VI.3. Spectre d'un opérateur compact,94 
+	VI.4. Décomposition spectrale des opérateurs autoadjoints compacts,96 
+	Commentaires,98 
+VII. Le théorème de Hille-Yosida,101 
+	VII.1. Définition et propriétés élémentaires des opérateurs maximaux monotones,101 
+	VII.2. Résolution du problème d'évolution du / dt Au = 0, u(0) = u_0; existence et unicité,104 
+	VII.3. Régularité,110 
+	VII.4. Le cas autoadjoint,112 
+	Commentaires,116 
+VIII. Espaces de Sobolev et formulation variationnelle de problèmes aux limites en dimension un,119 
+	VIII.1. Motivation,119 
+	VIII.2. L'espace de Sobolev Wlp(I),120 
+	VIII.3. L'espace Wj'p(I),132 
+	VIII.4. Quelques exemples de problèmes aux limites,135 
+	VIII.5. Principe du maximum,143 
+	VIII.6. Fonctions propres et décomposition spectrale,145 
+	Commentaires,146 
+IX. — Espaces de Sobolev et formulation variationnelle de problèmes aux limites en dimension N,149 
+	IX.1. Définition et propriétés élémentaires des espaces de Sobolev Wlp(Q),149 
+	IX.2. Opérateurs de prolongement,159 
+	IX.3. Inégalités de Sobolev,162 
+	IX.4. L'espace Wi'p(Q),171 
+	IX.5. Formulation variationnelle de quelques problèmes aux limites elliptiques,175 
+	IX.6. Régularité des solutions faibles,181 
+	IX.7. Principe du maximum,189 
+	IX.8. Fonctions propres et décomposition spectrale,192 
+	Commentaires,193 
+X. Problèmes d'évolution : l'équation de la chaleur et l'équation des ondes,204 
+	X.1. L'équation de la chaleur : existence, unicité et régularité,204 
+	X.2. Principe du maximum,211 
+	X.3. L'équation des ondes,213 
+	Commentaires,218 
+Références bibliographiques,225 
+Index,229 
