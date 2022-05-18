@@ -1,0 +1,154 @@
+Contents,7
+Preface,12
+d=13
+Minimax Theorems and Their Proofs,1
+	1. Introduction,1
+	2. The First Minimax Theorem,2
+	3. Infinite Dimensional Bilinear Results,2
+	4. Minimax Theorems When X and Y Are More General Convex Sets,2
+	5. Minimax Theorems for Separately Semicontinuous Functions,4
+	6. Topological Minimax Theorems,5
+	7. Quantitative Minimax Theorems,8
+	8. Mixed Minimax Theorems,12
+	9. Unifying Metaminimax Theorems,13
+	10. Connections with Weak Compactness,15
+	11. Minimax Inequalities for Two or More Functions,17
+	12. Coincidence Theorems,19
+	References,19
+
+d=12
+A Survey on Minimax Trees and Associated Algorithms,25
+	1. Introduction,25
+	2. Minimax Trees and the Theory Behind Them,26
+	3. Sequential Minimax Game Tree Algorithms,31
+	4. Parallel Minimax Tree Algorithms,42
+	5. Open Problems and Conclusion,51
+	References,52
+
+An Iterative Method for the Minimax Problem,55
+	1. Introduction,55
+	2. An ELQP Problem as a Subproblem,56
+	3. Local and Superlinear Convergence,60
+	References,66
+
+d=11
+A Dual and Interior Point Approach to Solve Convex Min-Max Problems,69
+	1. Introduction,69
+	2. The Scaling Supergradient Method,70
+	3. Convergence Analysis,73
+	4. Concluding Remarks,77
+	References,77
+
+Determining the Performance Ratio of Algorithm MULTIFIT for Scheduling,79
+	1. Introduction,79
+	2. Δ > 56 δ,81
+	3. 15/4 δ<= Δ <= 5 δ,83
+	4. 5/2 δ<= Δ <= 15/4 δ,84
+	5. Δ < 2.56 δ,87
+	References,96
+
+A Study of On-Line Scheduling Two-Stage Shops,97
+	1. Introduction,97
+	2. Definitions and Preliminaries,98
+	3. A Lower Bound for 0211Cm~,99
+	4. An Algorithm for 0211Cmax,100
+	5. A Best Algorithm for 021pmtniCmax,103
+	6. On Flow and Job Shops,105
+	7. Discussions,106
+	References,106
+d=10
+Maxmin Formulation of the Apportionments of Seats to a Parliament,109
+	1. Introduction,109
+	2. Concepts and models,110
+	3. Illustrative examples,115
+	4. Discussion,117
+	References,118
+
+On Shortest It-Edge Connected Steiner Networks with Rectilinear Distance,119
+	1. Introduction,119
+	2. Technical Preliminaries,120
+	3. Main Results,122
+	References,127
+d=9
+Mutually Repellant Sampling,129
+	1. Introduction,129
+	2. Mutually Repellant Sampling,131
+	3. Max-Min Distance Sampling,132
+	4. Max-Min-Selection Distance Sampling,134
+	5. Max-Average Distance Sampling,136
+	6. Lower Bounds,137
+	7. Applications and Open Questions,139
+	References,140
+
+Geometry and Local Optimality Conditions for Bilevel Programs with Quadratic Strictly Convex Lower Levels,141
+	1. Introduction,141
+	2. Problem Statement and (jeometry,142
+	3. Computing the Convex Cones,146
+	4. Number of Convex Cones,147
+	5. Stationary Points and Local Minima,148
+	6. Conclusions and Future Work,150
+	References,150
+
+d=8
+The Spherical One-Center Problem,153
+	1. Introduction,153
+	2. Main Result,154
+	3. Conclusions,156
+	References,156
+
+On Min-max Optimization of a Collection of Classical Discrete Optimization Problems,157
+	1. Introduction,157
+	2. The Min-max Spanning Tree Problem,159
+	3. The Min-max Resource Allocation Problem,162
+	4. The Min-max Production Control Problem,167
+	5. Summary and Extensions,169
+	References,170
+d=7
+Heilbronn Problem for Six Points in a Planar Convex Body,173
+	1. Introduction,173
+	2. Prerequisites,175
+	3. Proof of the Main Theorem,179
+	References,188
+
+
+Heilbronn Problem for Seven Points in a Planar Convex Body,191
+	1. Introduction,191
+	2. Propositions and Proofs for Easier Cases,192
+	3. Configurations with Stability,195
+	4. Computing the Smallest Triangle,203
+	5. Open Problems,217
+	References,218
+
+On the Complexity of Min-Max Optimization Problems and Their Approximation,219
+	1. Introduction,219
+	2. Definition,221
+	3. IIf-Completeness Results,223
+	4. Approximation Problems and Their Hardness,231
+	5. Nonapproximability Results,233
+	6. Conclusion and Open Questions,238
+	References,239
+d=6
+A Competitive Algorithm for the Counterfeit Coin Problem,241
+	1. Introduction,241
+	2. Some Lower Bounds of M(n : d),242
+	3. A Competitive Algorithm,244
+	4. Analysis of Competitiveness,247
+	5. Conclusion,249
+	References,250
+
+A Minimax αβ Relaxation for Global Optimization,251
+	1. Introduction,251
+	2. Problem Model,252
+	3. Relaxation Approach,253
+	4. A General af3 Relaxation Algorithm,254
+	5. A Minimax af3 Relaxation Algorithm for COP,258
+	6. Experimental Results,263
+	References,268
+d=6
+Minimax Problems in Combinatorial Optimization,269
+	1. Introduction,269
+	2. Algorithmic Problems,270
+	3. Geometric Problems,274
+	4. Graph Problems,281
+	5. Management Problems,287
+	6. Miscellaneous,291

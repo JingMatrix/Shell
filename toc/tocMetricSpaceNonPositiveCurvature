@@ -1,0 +1,254 @@
+Introduction,4
+Table of Contents,12
+d=19
+Part I. Geodesic Metric Spaces,1
+	1. Basic Concepts,2
+		Metric Spaces,2
+		Geodesics,4
+		Angles,8
+		The Length of a Curve,12
+	2. The Model Spaces M_κ^n,15
+		Euclidean n-Space E^n,15
+		The n-Sphere S^n,16
+		Hyperbolic n-Space H^n,18
+		The Model Spaces M_κ^n,23
+		Alexandrov’s Lemma,24
+		The Isometry Groups Isom(M_κ^n),26
+		Approximate Midpoints,30
+	3. Length Spaces,32
+		Length Metrics,32
+		The Hopf-Rinow Theorem,35
+		Riemannian Manifolds as Metric Spaces,39
+		Length Metrics on Covering Spaces,42
+		Manifolds of Constant Curvature,45
+	4. Normed Spaces,47
+		Hilbert Spaces,47
+		Isometries of Normed Spaces,51
+		l^p Spaces,53
+	5. Some Basic Constructions,56
+		Products,56
+		κ-Cones,59
+		Spherical Joins,63
+		Quotient Metrics and Gluing,64
+		Limits of Metric Spaces,70
+		Ultralimits and Asymptotic Cones,77
+	6. More on the Geometry of M_κ^n,81
+		The Klein Model for H^n,81
+		The Möbius Group,84
+		The Poincaré Ball Model for H^n,86
+		The Poincaré Half-Space Model for H^n,90
+		Isometries of H2,91
+		M_κ^n as a Riemannian Manifold,92
+	7. Mκ -Polyhedral Complexes,97
+		Metric Simplicial Complexes,97
+		Geometric Links and Cone Neighbourhoods,102
+		The Existence of Geodesics,105
+		The Main Argument,108
+		Cubical Complexes,111
+		Mκ -Polyhedral Complexes,112
+		Barycentric Subdivision,115
+		More on the Geometry of Geodesics,118
+		Alternative Hypotheses,122
+		Appendix: Metrizing Abstract Simplicial Complexes,123
+	8. Group Actions and Quasi-Isometries,131
+		Group Actions on Metric Spaces,131
+		Presenting Groups of Homeomorphisms,134
+		Quasi-Isometries,138
+		Some Invariants of Quasi-Isometry,142
+		The Ends of a Space,144
+		Growth and Rigidity,148
+		Quasi-Isometries of the Model Spaces,150
+		Approximation by Metric Graphs,152
+		Appendix: Combinatorial 2-Complexes,153
+Part II. CAT(κ) Spaces,157
+	1. Definitions and Characterizations of CAT(κ) Spaces,158
+		The CAT(κ) Inequality,158
+		Characterizations of CAT(κ) Spaces,161
+		CAT(κ) Implies CAT(κ) if κ ≤ κ,165
+		Simple Examples of CAT(κ) Spaces,167
+		Historical Remarks,168
+		Appendix: The Curvature of Riemannian Manifolds,169
+	2. Convexity and Its Consequences,175
+		Convexity of the Metric,175
+		Convex Subspaces and Projection,176
+		The Centre of a Bounded Set,178
+		Flat Subspaces,180
+	3. Angles, Limits, Cones and Joins,184
+		Angles in CAT(κ) Spaces,184
+		4-Point Limits of CAT(κ) Spaces,186
+		Cones and Spherical Joins,188
+		The Space of Directions,190
+	4. The Cartan-Hadamard Theorem,193
+		Local-to-Global,193
+		An Exponential Map,196
+		Alexandrov’s Patchwork,199
+		Local Isometries and π1 -Injectivity,200
+		Injectivity Radius and Systole,202
+	5. Mκ -Polyhedral Complexes of Bounded Curvature,205
+		Characterizations of Curvature ≤ κ,206
+		Extending Geodesics,207
+		Flag Complexes,210
+		Constructions with Cubical Complexes,212
+		Two-Dimensional Complexes,215
+		Subcomplexes and Subgroups in Dimension 2,216
+		Knot and Link Groups,220
+		From Group Presentations to Negatively Curved 2-Complexes,224
+	6. Isometries of CAT(0) Spaces,228
+		Individual Isometries,228
+		On the General Structure of Groups of Isometries,233
+		Clifford Translations and the Euclidean de Rham Factor,235
+		The Group of Isometries of a Compact Metric Space of Non-Positive Curvature,237
+		A Splitting Theorem,239
+	7. The Flat Torus Theorem,244
+		The Flat Torus Theorem,244
+		Cocompact Actions and the Solvable Subgroup Theorem,247
+		Proper Actions That Are Not Cocompact,250
+		Actions That Are Not Proper,254
+		Some Applications to Topology,254
+	8. The Boundary at Infinity of a CAT(0) Space,260
+		Asymptotic Rays and the Boundary ∂X,260
+		The Cone Topology on X = X ∪ ∂X,263
+		Horofunctions and Busemann Functions,267
+		Characterizations of Horofunctions,271
+		Parabolic Isometries,274
+	9. The Tits Metric and Visibility Spaces,277
+		Angles in X,278
+		The Angular Metric,279
+		The Boundary (∂X, ∠) is a CAT(1) Space,285
+		The Tits Metric,289
+		How the Tits Metric Determines Splittings,291
+		Visibility Spaces,294
+	10. Symmetric Spaces,299
+		Real, Complex and Quaternionic Hyperbolic n-Spaces,300
+		The Curvature of KH^n,304
+		The Curvature of Distinguished Subspaces of KH^n,306
+		The Group of Isometries of KH^n,307
+		The Boundary at Infinity and Horospheres in KH^n,309
+		Horocyclic Coordinates and Parabolic Subgroups for KH^n,311
+		The Symmetric Space P(n, R),314
+		P(n, R) as a Riemannian Manifold,314
+		The Exponential Map exp: M(n, R) → GL(n, R),316
+		P(n, R) is a CAT(0) Space,318
+		Flats, Regular Geodesics and Weyl Chambers,320
+		The Iwasawa Decomposition of GL(n, R),323
+		The Irreducible Symmetric space P(n, R)1,324
+		Reductive Subgroups of GL(n, R),327
+		Semi-Simple Isometries,331
+		Parabolic Subgroups and Horospherical Decompositions of P(n, R),332
+		The Tits Boundary of P(n, R)_1 is a Spherical Building,337
+		∂_T P(n, R) in the Language of Flags and Frames,340
+		Appendix: Spherical and Euclidean Buildings,342
+	11. Gluing Constructions,347
+		Gluing CAT(κ) Spaces Along Convex Subspaces,347
+		Gluing Using Local Isometries,350
+		Equivariant Gluing,355
+		Gluing Along Subspaces that are not Locally Convex,359
+		Truncated Hyperbolic Spaces,362
+	12. Simple Complexes of Groups,367
+		Stratified Spaces,368
+		Group Actions with a Strict Fundamental Domain,372
+		Simple Complexes of Groups: Definition and Examples,375
+		The Basic Construction,381
+		Local Development and Curvature,387
+		Constructions Using Coxeter Groups,391
+Part III. Aspects of the Geometry of Group Actions,397
+	H. δ-Hyperbolic Spaces,398
+		1. Hyperbolic Metric Spaces,399
+			The Slim Triangles Condition,399
+			Quasi-Geodesics in Hyperbolic Spaces,400
+			k-Local Geodesics,405
+			Reformulations of the Hyperbolicity Condition,407
+		2. Area and Isoperimetric Inequalities,414
+			A Coarse Notion of Area,414
+			The Linear Isoperimetric Inequality and Hyperbolicity,417
+			Sub-Quadratic Implies Linear,422
+			More Refined Notions of Area,425
+		3. The Gromov Boundary of a δ-Hyperbolic Space,427
+			The Boundary ∂X as a Set of Rays,427
+			The Topology on X ∪ ∂X,429
+			Metrizing ∂X,432
+	Γ. Non-Positive Curvature and Group Theory,438
+		1. Isometries of CAT(0) Spaces,439
+			A Summary of What We Already Know,439
+			Decision Problems for Groups of Isometries,440
+			The Word Problem,442
+			The Conjugacy Problem,445
+		2. Hyperbolic Groups and Their Algorithmic Properties,448
+			Hyperbolic Groups,448
+			Dehn’s Algorithm,449
+			The Conjugacy Problem,451
+			Cone Types and Growth,455
+		3. Further Properties of Hyperbolic Groups,459
+			Finite Subgroups,459
+			Quasiconvexity and Centralizers,460
+			Translation Lengths,464
+			Free Subgroups,467
+			The Rips Complex,468
+		4. Semihyperbolic Groups,471
+			Definitions,471
+			Basic Properties of Semihyperbolic Groups,473
+			Subgroups of Semihyperbolic Groups,475
+		5. Subgroups of Cocompact Groups of Isometries,481
+			Finiteness Properties,481
+			The Word, Conjugacy and Membership Problems,487
+			Isomorphism Problems,491
+			Distinguishing Among Non-Positively Curved
+			Manifolds,494
+		6. Amalgamating Groups of Isometries,496
+			Amalgamated Free Products and HNN Extensions,497
+			Amalgamating Along Abelian Subgroups,500
+			Amalgamating Along Free Subgroups,503
+			Subgroup Distortion and the Dehn Functions of Doubles,506
+		7. Finite-Sheeted Coverings and Residual Finiteness,511
+			Residual Finiteness,511
+			Groups Without Finite Quotients,514
+	C. Complexes of Groups,519
+		1. Small Categories Without Loops (Scwols),520
+			Scwols and Their Geometric Realizations,521
+			The Fundamental Group and Coverings,526
+			Group Actions on Scwols,528
+			The Local Structure of Scwols,531
+		2. Complexes of Groups,534
+			Basic Definitions,535
+			Developability,538
+			The Basic Construction,542
+		3. The Fundamental Group of a Complex of Groups,546
+			The Universal Group FG(Y),546
+			The Fundamental Group π1 (G(Y), σ0),548
+			A Presentation of π1 (G(Y), σ0),549
+			The Universal Covering of a Developable Complex of Groups,553
+		4. Local Developments of a Complex of Groups,555
+			The Local Structure of the Geometric Realization,555
+			The Geometric Realization of the Local Development,557
+			Local Development and Curvature,562
+			The Local Development as a Scwol,564
+		5. Coverings of Complexes of Groups Definitions,566
+			The Fibres of a Covering,568
+			The Monodromy,572
+			A Appendix: Fundamental Groups and Coverings of Small Categories,573
+			Basic Definitions,574
+			The Fundamental Group,576
+			Covering of a Category,579
+			The Relationship with Coverings of Complexes of Groups,583
+	G. Groupoids of local isometries,584
+		1. Orbifolds,585
+			Basic Definitions,585
+			Coverings of Orbifolds,589
+			Orbifolds with Geometric Structures,591
+		2. Étale Groupoids, Homomorphisms and Equivalences,594
+			Étale Groupoids,594
+			Equivalences and Developability,597
+			Groupoids of Local Isometries,601
+			Statement of the Main Theorem,603
+		3. The Fundamental Group and Coverings of Étale Groupoids,604
+			Equivalence and Homotopy of G-Paths,604
+			The Fundamental Group π_1((G, X), x_0),607
+			Coverings,609
+		4. Proof of the Main Theorem,613
+			Outline of the Proof,613
+			G-Geodesics,614
+			The Space X̂ of G-Geodesics Issuing from a Base Point,616
+			The Space X̃ = X̂/G,617
+			The Covering p : X̃ → X,618
+References,620
+Index,637
