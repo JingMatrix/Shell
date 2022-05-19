@@ -1,0 +1,286 @@
+#!/usr/bin/env perl
+
+# LICENSE: GPLv3+
+
+use 5.010;
+use warnings;
+use strict;
+use utf8;
+use Getopt::Long qw/:config no_ignore_case bundling/;
+use File::Basename qw/basename/;
+use Encode qw/decode/;
+if (!eval 'use YAML::XS qw/Dump/; 1;') {
+    die "cannot find the YAML::XS Perl module.\n" .
+	"Try '\$ apt-get install libyaml-libyaml-perl'.\n";
+}
+
+binmode STDOUT, ':encoding(UTF-8)'; 
+binmode STDIN, ':encoding(UTF-8)';
+binmode STDERR, ':encoding(UTF-8)';
+
+my $prog_name = basename $0;
+my $bug_address = "www.github.com/amba/bookmark-djvu/issues";
+
+sub print_usage {
+    say "Usage: $prog_name [OPTIONS] DJVU [-o BOOKMARKS_FILE]";
+}
+
+sub print_help {
+    print_usage ();
+    say "
+extract the outline of DJVU.
+The format of the generated BOOKMARKS-FILE is described in the README.
+
+ Options:
+  -o, --output=FILE           write bookmarks to FILE 
+  -s, --simple-format         dump outline in simple format (default: simple)
+  -h, --help                  print this help screen
+  -V, --version               print program version
+
+The default for BOOKMARKS-FILE is DJVU-FILENAME with the suffix changed to
+- '.outline' for YAML mode. 
+- '.bm' for simple format (default).
+
+Report bugs to $bug_address";
+}
+
+sub print_version {
+    say "bookmark-djvu 0.1
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law."
+}
+
+$_ = decode ('UTF-8', $_) for @ARGV;
+
+my $output_filename;
+my $use_simple_format = 1;
+
+my %opt_hash = (
+    "output|o=s" => \$output_filename,
+    "simple-format|s" => \$use_simple_format,
+    "help|h" => sub {print_help (); exit 0},
+    "version|V" => sub {print_version (); exit 0},
+    );
+unless (GetOptions (%opt_hash) && @ARGV) {
+    print_usage ();
+    exit 1;
+}
+
+my $djvu_filename = $ARGV[0];
+if (! -f $djvu_filename) {
+    print_usage ();
+    die "error: djvu file '$djvu_filename' does not exist\n";
+}
+
+if (!$output_filename) {
+    my $suffix = $use_simple_format ? ".bm" : ".outline";
+    $output_filename =
+	get_default_filename ($djvu_filename, ".djvu", $suffix);
+    if (-e $output_filename) {
+	die  "won't overwrite existing file '$output_filename'. " .
+	    "Use the '-o FILE' option!";
+    }
+}
+
+open my $output_handle, ">", $output_filename
+    or die "cannot open file '$output_filename': $!";
+
+# start extracting bookmarks with djvused in a pipe
+open my $djvused_handle, "-|", ("djvused", $djvu_filename, "-u", "-e",
+    "print-outline") or die "cannot find djvused.\n" .
+    "Try '\$ apt-get install djvulibre-bin'.\n";
+
+binmode $djvused_handle, ':encoding(UTF-8)';
+
+
+my $outline_items = parse_djvused_output ($djvused_handle);
+
+unless (@{$outline_items}) {
+    warn "no outline found\n";
+    exit 1;
+}
+
+
+close $djvused_handle 
+    or die "djvused failed with exit status ", $? >> 8, "\n";
+
+if ($use_simple_format) {
+    dump_to_simple_format ($output_handle, $outline_items);
+}
+else {
+    dump_to_yaml ($output_handle, $outline_items);
+}
+
+
+# arg: open file descriptor to djvused
+# returns: arrayref of hashrefs, each describing level, title and page of an
+# outline item.
+sub parse_djvused_output {
+    my $djvused_handle = shift;
+    my $level = 0;
+    my $line = <$djvused_handle>;
+
+    if (!$line or $line !~ /^\(bookmarks$/) {
+	warn "no bookmarks found\n";
+	return [];
+    }
+    my $outline_items = [];
+    while ($line = <$djvused_handle>) {
+	chomp $line;
+	$line =~ /^\s*\("(?<title>.+)"$/
+	    or die "line '$line' in djvused output does not match.
+Please report to $bug_address\n";
+	
+	my $title = djvused_unescape ($+{title});
+	
+	$line = <$djvused_handle>;
+
+	$line =~ /\s*"#(?<page>[0-9]+)"(?<close>(\s*\))*)\s*$/
+	    or die "line '$line' in djvused output does not match.
+Please report to $bug_address\n";
+	push @$outline_items, {level => $level, title => $title,
+			       page => $+{page}};
+	$level -= ($+{close} =~ tr/\)//) - 1;
+    }
+    
+    return $outline_items;
+}
+
+sub dump_to_simple_format {
+    my $out_handle = shift;
+    my $outline_items = shift;
+    binmode $out_handle, ':encoding(UTF-8)';
+    for my $outline (@$outline_items) {
+	print {$out_handle} "\t"x($outline->{level}),
+	prepare_title ($outline->{title}),
+	, ",$outline->{page}\n";
+    }
+}
+
+
+sub prepare_title {
+    my $title = shift;
+    
+    if ($title =~ /\n/) {
+	    warn "WARNING: removing newline in title '$title'.\n";
+	    $title =~ s/\n/ /g;
+    }
+
+    if ($title =~ /(\.|\s)+$/) {
+	warn "WARNING: removing trailing dots and/or whitespace " .
+	    "in title '$title'.\n";
+	$title =~ s/(\.|\s)+$//;
+    }
+
+    return $title;
+}
+
+
+sub dump_to_yaml {
+    my $out_handle = shift;
+    my $input_array = shift;
+    (my $array, undef) = get_recursive_array ($input_array, 0);
+    print {$out_handle}  Dump ($array);
+}
+
+# recursively convert flat array into nested data structure
+# args: input array ref, index to start
+# returns: output array ref, following index
+sub get_recursive_array {
+    my ($input_array, $index) = @_;
+    
+    my $last = $#{$input_array};
+    my $base_level = $input_array->[$index]{level};
+    my $result_array = [];
+    
+    while ($index <= $last) {
+	my $node = $input_array->[$index];
+	my $current_level = $node->{level};
+	
+	last if $current_level < $base_level;
+
+	my $outline_item = {title => $node->{title}, page => $node->{page}};
+
+	my $next_index = $index + 1;
+	my $next_level = $input_array->[$next_index]{level};
+	
+	if ($next_index <= $last && $next_level > $base_level) {
+	    ($outline_item->{kids}, $index) =
+		get_recursive_array ($input_array, $next_index);
+	}
+	else {
+	    ++$index;
+	}
+	
+	push @{$result_array}, $outline_item;
+    }
+
+    return ($result_array, $index);
+}
+
+  
+sub djvused_unescape {
+    # see in '$ man djvused': "DJVUSED FILE FORMATS - Strings" 
+    # and perlrebackslash
+    my $string = shift;
+
+    $string =~ s/\\([0-7]{3}|.)/expand_escape_sequence ($1)/ge;
+    
+    return $string;
+}
+
+sub expand_escape_sequence {
+    my ($string) = @_;
+    
+    if ($string eq "\\" || $string eq '"') {
+	return $string;
+    }
+    elsif (length ($string) == 3) {
+        # octal escape sequence
+        return pack 'U', oct ($string);
+    }
+    elsif ($string eq "a") {
+	return "\a";
+    }
+    elsif ($string eq "b") {
+	return "\b";
+    }
+    elsif ($string eq "t") {
+	return "\t";
+    }
+    elsif ($string eq "n") {
+	return "\n";
+    }
+    elsif ($string eq "v") {
+	return "\x{0b}";
+    }
+    elsif ($string eq "f") {
+	return "\f";
+    }
+    elsif ($string eq "r") {
+	return "\r";
+    }
+    else {
+ 	die "unknown escape sequence '\\$string' in '$string'
+ please report to $bug_address";
+    }
+}
+
+sub get_default_filename {
+    my $filename = shift;
+    my $from = shift;
+    my $too = shift;
+    die "get_default_filename needs arg" unless defined ($too);
+    my $result_filename;
+    
+    if ($filename =~ /\Q$from\E$/) {
+	($result_filename = $filename) =~ s/\Q$from\E/$too/;
+    }
+    else {
+	$result_filename = $filename . $too;
+    }
+
+    return $result_filename;
+}
+

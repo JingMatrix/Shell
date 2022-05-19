@@ -37,7 +37,7 @@ The format of BOOKMARKS-FILE is described in the README.
  Options:
   -o, --output=FILE           do not modify DJVU and write the 
                               bookmarked djvu file to FILE.
-  -s, --simple-format         use simple format (default: YAML)
+  -s, --simple-format         use simple format (default: simple)
   
  options controlling simple format:
   -c, --allow-comments        ignore all lines starting with a hash
@@ -48,8 +48,8 @@ The format of BOOKMARKS-FILE is described in the README.
   -V, --version               print program version.
 
 The default for BOOKMARKS-FILE is DJVU with the suffix changed to
-- '.outline' for YAML mode (default).
-- '.bm' for simple format.
+- '.outline' for YAML mode.
+- '.bm' for simple format (default).
  
 Report bugs to $bug_address";
 }

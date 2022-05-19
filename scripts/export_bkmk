@@ -1,0 +1,11 @@
+#! /bin/zsh
+
+extension=${1:e}
+cmd="echo"
+if [[ $extension == "pdf" ]]; then
+	cmd=/home/jing/Documents/Code/Shell/toc/pdf_bookmark.py
+	$cmd -p $1 $2
+elif [[ $extension == "djvu" ]]; then
+	cmd=/home/jing/Documents/Code/Shell/toc/bookmark-djvu-extract
+	$cmd $1 -o $2
+fi
