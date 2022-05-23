@@ -1,0 +1,237 @@
+Preface,11
+d=1
+Contents,12
+Introduction,18
+CHAPTER ONE Grassmann algebra,25
+	1.1. Tensor products,25
+	1.2. Graded algebras,28
+	1.3. The exterior algebra of a vectors pace,30
+	1.4. Alternating forms and duality,33
+	1.5. Interior multiplications,38
+	1.6. Simple m-vectors,40
+	1.7. Inner products,44
+	1.8. Mass and comass,55
+	1.9. The symmetric algebra of a vectors pace,58
+	1.10. Symmetric forms and polynomial functions,60
+CHAPTER TWO General measure theory,67
+	2.1. Measures and measurable sets,68
+		2.1.1. Numerical summation,68
+		2.1.2.-3. Measurable sets,70
+		2.1.4.-5. Measure hulls,73
+		2.1.6. Ulam numbers,75
+	2.2. Borel and Suslin sets,76
+		2.2.1. Borel families,76
+		2.2.2.-3. Approximation by closed subsets,77
+		2.2.4. Nonmeasurable sets,79
+		2.2.5. Radon measures,79
+		2.2.6. The space of sequences of positive integers,80
+		2.2.7.-9. Lipschitzian maps,80
+		2.2.10.-13. Suslin sets,82
+		2.2.14.-15. Borel and Baire functions,87
+		2.2.16. Separability of supports,88
+		2.2.17. Images of Radon measures,89
+	2.3. Measurable functions,89
+		2.3.1.-2. Basic properties,89
+		2.3.3.-7. Approximation theorems,93
+		2.3.8.-10. Spaces of measurable functions,95
+	2.4. Lebesgue integration,97
+		2.4.1.-5. Basic properties,97
+		2.4.6.-9. Limit theorems,101
+		2.4.10.-11. Integrals over subsets,102
+		2.4.12.-17. Lebesgue spaces,103
+		2.4.18. Compositions and image measures,107
+		2.4.19. Jensen&apos;s inequality,108
+	2.5. Linear functionals,108
+		2.5.1. Lattices of functions,108
+		2.5.2.-6. Daniell integrals,109
+		2.5.7.-12. Linear functionals on Lebesgue spaces,115
+		2.5.13.-15. Riesz&apos;s representation theorem,123
+		2.5.16. Curve length,126
+		2.5.17.-18. Riemann-Stieltjes integration,127
+		2.5.19. Spaces of Daniell integrals,130
+		2.5.20. Decomposition of Daniell integrals,131
+	2.6. Product measures,131
+		2.6.1.-4. Fubini&apos;s theorem,131
+		2.6.5. Lebesgue measure,136
+		2.6.6. Infinite cartesian products,137
+		2.6.7. Integration by parts,138
+	2.7. Invariant measures,138
+		2.7.1.-3. Definitions,138
+		2.7.4.-13. Existence and uniqueness of invariant integrals,140
+		2.7.14.-15.Covariant measures are Radon measures,148
+		2.7.16. Examples,150
+		2.7.17. Nonmeasurable sets,158
+		2.7.18. Ll continuity of group actions,158
+	2.8. Covering theorems,158
+		2.8.1.-3. Adequate families,158
+		2.8.4.-8. Coverings with enlargement,160
+		2.8.9.-15. Centered ball coverings,162
+		2.8.16.-20. Vitali relations,168
+	2.9. Derivates,169
+		2.9.1.-5. Existence of derivates,169
+		2.9.6.-10. Indefinite integrals,172
+		2.9.11.-13. Density and approximate continuity,175
+		2.9.14.-18. Additional results on derivation using centered balls,176
+		2.9.19.-25. Derivatives of curves with finite length,180
+	2.10. Caratheodory&apos;s construction,186
+		2.10.1. The general construction,186
+		2.10.2.-6. The measures of H^m, S^m, T^m, G^m, C^m, I_t^m, Q_t^m,188
+		2.10.7. Relation to Riemann-Stieltjes integration,191
+		2.10.8.-11. Partitions and multiplicity integrals,192
+		2.10.12.-14. Curve length,193
+		2.10.15.-16. Integralgeometric measures,195
+		2.10.17.-19. Densities,196
+		2.10.20. Remarks on approximating measures,198
+		2.10.21. Spaces of Lipschitzian functions and closed subsets,199
+		2.10.22.-23. Approximating measures of increasing sequences,201
+		2.10.24. Direct construction of the upper integral,203
+		2.10.25.-27. Integrals of measures of counterimages,205
+		2.10.28.-29. Sets of Cantor type,208
+		2.10.30.-31. Steiner symmetrization,212
+		2.10.32.-42. Inequalities between basic measures,213
+		2.10.43.-44. Lipschitzian extension of functions,218
+		2.10.45.-46. Cartesian products,219
+		2.10.47.-48. Subsets of finite Hausdorff measure,221
+CHAPTER THREE Rectifmbility,224
+	3.1. Differentials and tangents,226
+		3.1.1.-10. Differentiation and approximate differentiation,226
+		3.1.11. Higher differentials,235
+		3.1.12.-13. Partitions of unity,240
+		3.1.14.-17. Differentiable extension of functions,242
+		3.1.18. Factorization of maps near generic points,246
+		3.1.19.-20. Submanifolds of Euclidean space,248
+		3.1.21. Tangent vectors,250
+		3.1.22. Relative differentiation,252
+		3.1.23. Locaillattening of a submanifold,253
+		3.1.24. Analytic functions,254
+	3.2. Area and coarea of Lipschitzian maps,258
+		3.2.1. lacobians,258
+		3.2.2.-7. Area of maps of Euclidean spaces,259
+		3.2.8.-12. Co area of maps of Euclidean spaces,264
+		3.2.13. Applications; Euler&apos;s function r,267
+		3.2.14.-15. Rectifiable sets,268
+		3.2.16.-19. Approximate tangent vectors and differentials,269
+		3.2.20.-22. Area and coarea of maps of rectifiable sets,273
+		3.2.23.-24. Cartesian products,277
+		3.2.25.-26. Equality of measures of rectifiable sets,278
+		3.2.27. Areas of projections of rectifiable sets,279
+		3.2.28. Examples,280
+		3.2.29. Rectifiable sets and manifolds of class 1,284
+		3.2.30.-33. Further results on coarea,285
+		3.2.34.-40. Steiner&apos;s formula and Minkowski content,288
+		3.2.41.-44. Brunn-Minkowski theorem,294
+		3.2.45. Relations between the measures f2~ •,296
+		3.2.46. Hausdorff measures in Riemannian manifolds,297
+		3.2.47.-49. Integralgeometry on spheres,299
+	3.3. Structure theory,304
+		3.3.1.-4. Tangential properties of arbitrary Suslin sets,304
+		3.3.5.-18. Rectifiability and projections,309
+		3.3.19.-21. Examples of unrectifiable sets,319
+		3.3.22. Rectifiability and density,326
+	3.4. Some properties of highly differentiable functions,327
+		3.4.1.-4. Measures ofJ{x: dim im DJ(x)~v},327
+		3.4.5.-12. Analytic varieties,335
+CHAPTER FOUR Homological integration theory,358
+	4.1. Differential forms and currents,360
+		4.1.1. Distributions,360
+		4.1.2.-4. Regularization,363
+		4.1.5. Distributions representable by integration,366
+		4.1.6. Differential forms and m-vectorfields,368
+		4.1.7. Currents,372
+		4.1.8. Cartesian products,377
+		4.1.9.-10. Homotopies,380
+		4.1.11. Joins, oriented simplexes,381
+		4.1.12.-19. Flat chains,384
+		4.1.20.-21. Relation to integralgeometry measure,395
+		4.1.22.-23. Polyhedral chains and flat approximation,396
+		4.1.24.-28. Rectifiable currents,397
+		4.1.29. Lipschitz neighborhood retracts,403
+		4.1.30. Transformation formula,404
+		4.1.31. Oriented submanifolds,406
+		4.1.32. Projective maps and polyhedral chains,409
+		4.1.33. Duality formulae,411
+		4.1.34. Lie product of vectorfields,411
+	4.2. Deformations and compactness,412
+		4.2.1. Slicing normal currents by real valued functions,412
+		4.2.2. Maps with singularities,413
+		4.2.3.-6. Cubical subdivisions,415
+		4.2.7.-9. Deformation theorem,421
+		4.2.10. Isoperimetric inequality,425
+		4.2.11.-14. Flat chains and integralgeometric measure,425
+		4.2.15.-16. Closure theorem,428
+		4.2.17.-18. Compactness theorem,431
+		4.2.19.-24. Approximation by polyhedral chains,432
+		4.2.25. Indecomposable integral currents,437
+		4.2.26. Flat chains modulo v,440
+		4.2.27. Locally rectifiable currents,449
+		4.2.28.-29. Analytic chains,450
+	4.3. Slicing,452
+		4.3.1.-8. Slicing flat chains by maps into R&quot;,452
+		4.3.9.-12. Homotopies, continuity of slices,462
+		4.3.13. Slicing by maps into manifolds,468
+		4.3.14. Oriented cones,469
+		4.3.15. Oriented cylinders,472
+		4.3.16.-19. Oriented tangent cones,472
+		4.3.20. Intersections of flat chains,477
+	4.4. Homology groups,480
+		4.4.1. Homology theory with coefficient group Z,480
+		4.4.2.-3. Isoperimetric inequalities,483
+		4.4.4. Compactness properties of homology classes,487
+		4.4.5.-6. Homology theories with coefficient groups Rand Zv,489
+		4.4.7. Two simple examples,490
+		4.4.8. Homotopy groups of cycle groups,491
+		4.4.9. Cohomology groups,491
+	4.5. Normal currents of dimension n in R&quot;,491
+		4.5.1.-4. Sets with locally finite perimeter,491
+		4.5.5. Exterior normals,494
+		4.5.6. Gauss-Green theorem,495
+		4.5.7.-10. Functions corresponding to locally normal currents,497
+		4.5.11.-12. Densities and locally finite perimeter,523
+		4.5.13.-17. Examples and applications,526
+CHAPTER FIVE Applications to the calculus of variations,530
+	5.1. Integrands and minimizing currents,532
+		5.1.1. Parametric integrands and integrals,532
+		5.1.2. Ellipticity of parametric integrands,534
+		5.1.3. Convexity, parametric Legendre condition,535
+		5.1.4. Diffeomorphic invariance of ellipticity,536
+		5.1.5. Lowersemicontinuity of the integral,536
+		5.1.6. Minimizing currents,538
+		5.1.7.-8. Isotopic deformations, variations,541
+		5.1.9. Nonparametric integrands,544
+		5.1.10. Nonparametric Legendre condition,546
+		5.1.11. Euler-Lagrange formulae,547
+	5.2. Regularity of solutions of certain differential equations,549
+		5.2.1.-2. L2 and Holder conditions,549
+		5.2.3. Strongly elliptic systems,551
+		5.2.4. Sobolev&apos;s inequality,554
+		5.2.5.-6. Generalized harmonic functions,555
+		5.2.7.-10. Convolutions with essentially homogeneous functions,558
+		5.2.11.-13. Elementary solutions,564
+		5.2.14. Hölder estimate for linear systems,569
+		5.2.15.-18. Nonparametric variational problems,571
+		5.2.19. Maxima of real valued solutions,577
+		5.2.20. One dimensional variational problems,581
+	5.3. Excess and smoothness,582
+		5.3.1.-6. Estimates involving excess,582
+		5.3.7. A limiting process,598
+		5.3.8.-13. The decrease of excess,602
+		5.3.14.-17. Regularity of minimizing currents,623
+		5.3.18.-19. Minimizing currents of dimension m in R^m+1,630
+		5.3.20. Minimizing currents of dimension 1 in Rn,634
+		5.3.21. Minimizing flat chains modulo v,636
+	5.4. Further results on area minimizing currents,636
+		5.4.1. Terminology,636
+		5.4.2. Weak convergence of variation measures,637
+		5.4.3.-5. Density ratios and tangent cones,638
+		5.4.6.-7. Regularity of area minimizing currents,645
+		5.4.8.-9. Cartesian products,648
+		5.4.10.-14. Study of cones by differential geometry,649
+		5.4.15.-16. Currents of dimension m in R^m+1,661
+		5.4.17. Lack of uniqueness and symmetry,664
+		5.4.18. Nonparametric surfaces, Bernstein&apos;s theorem,666
+		5.4.19. Holomorphic varieties,668
+		5.4.20. Boundary regularity,671
+Bibliography,672
+Glossary of some standard notations,686
+List of basic notations defined in the text,687
+Index,689
