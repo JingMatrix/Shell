@@ -41,6 +41,7 @@ c.content.blocking.hosts.lists = [
 ]
 c.content.blocking.method = 'both'
 c.content.geolocation = False
+c.content.local_content_can_access_remote_urls = True
 c.content.autoplay = False
 c.content.pdfjs = True
 c.downloads.remove_finished = 7000

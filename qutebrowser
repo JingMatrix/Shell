@@ -4,8 +4,8 @@
 
 _proto_version=1
 _ipc_socket="${XDG_RUNTIME_DIR}/qutebrowser/ipc-$(echo -n "$USER" | md5sum | cut -d' ' -f1)"
-export PATH=$PATH:/home/jing/.nvm/versions/node/v17.4.0/bin
-export NODE_PATH=/home/jing/.nvm/versions/node/v17.4.0/lib/node_modules
+export PATH=$PATH:/home/jing/.nvm/versions/node/v18.1.0/bin
+export NODE_PATH=/home/jing/.nvm/versions/node/v18.1.0/lib/node_modules
 export PYTHONPATH=$HOME/Documents/Project/qutebrowser
 export MPV_COMMAND=/bin/mpv
 export SWAYSOCK=/run/user/$(id -u)/sway-ipc.$(id -u).$(pgrep -x sway).sock
