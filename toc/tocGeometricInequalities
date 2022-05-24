@@ -1,0 +1,231 @@
+Table of Contents,8
+Chapter 1. Two-Dimensional Surfaces,14
+	1. Domains on the Plane,14
+		1.1. The Isoperimetric Property of the Circle,14
+		1.2. Historical Remarks,14
+		1.3. The Bonnesen Inequality and its Analogues,16
+		1.4. Examples of Problems with Other Constraints,17
+		1.5. Affine Isoperimetry,19
+	2. Domains on Surfaces,20
+		2.1. Object of Study and Notations,20
+		2.2. Isoperimetric Inequalities on Surfaces,24
+		2.3. Inequalities for Non-simply Connected Domains,27
+		2.4. Area of Strips Along the Boundary,29
+		2.5. Radius of the Incircle,32
+	3. The Main Proofs to §2,33
+		3.1. Approximation by k-Polyhedra,34
+		3.2. Equidistants of the Boundary of a Polyhedron,34
+		3.3. Proof of the Isoperimetric Inequality,37
+		3.4. Comparison Lemma,38
+		3.5. Proofs for 2.4 and 2.3,40
+	4. Additions to § 2,43
+		4.1. Sharpenings of Area Estimates of Strips,43
+		4.2. Proofs to 2.5,45
+		4.3. Equality Cases,46
+		4.4. Inequalities when the Combination of w_t and F is Bounded,51
+		4.5. Curves in Domains,52
+	5. Closed Surfaces,54
+		5.1. The Object of Study,54
+		5.2. Inner Diameter,55
+		5.3. Shortest Loops and Area Estimates from Below,56
+		5.4. Minimal Area in 1R 2,61
+	6. Gaussian Curvature of Immersed Surfaces,61
+		6.1. External Characteristics of Surfaces,61
+		6.2. Smooth Closed Surfaces in 1R 3,62
+		6.3. Smooth Surfaces with Boundary,65
+		6.4. Unboundedness Conditions for Surfaces in 1R 3,66
+		6.5. Surfaces in IR&quot; and CO-Maps,68
+		6.6. Historical Remarks,71
+	7. Mean Curvature and Minimal Surfaces,71
+		7.1. The Isoperimetric Inequality Involving Total Mean Curvature,71
+		7.2. Finding the Exact Constants,72
+		7.3. Isoperimetry on Surfaces with Small Mean Curvature,73
+		7.4. Estimates of the Area from Below,75
+		7.5. The Size of Surfaces in Space,77
+		7.6. Historical Remarks,79
+Chapter 2. The Brunn-Minkowski Inequality and the Classical Isoperimetric Inequality,81
+	8. The Brunn-Minkowski Inequality in Euclidean Space,81
+		8.1. Inequalities for Compact Sets,81
+		8.2. Sharper Version and Equality Cases,84
+		8.3. Inequalities for Arbitrary Sets,87
+		8.4. Inequalities in Other Spaces which are Additive Groups,88
+		8.5. Inequalities for Families,89
+		8.6. Historical Remarks,89
+	9. The Brunn-Minkowski Inequality on the Sphere and in Lobachevsky Space,90
+		9.1. Inequalities for Compact Sets,90
+		9.2. Symmetrizations,90
+		9.3. Symmetrization of Neighbourhoods,91
+		9.4. Multiple Symmetrizations,93
+		9.5. Proofs for 9.1,95
+		9.6. Arbitrary Sets,95
+		9.7. Historical Remarks,96
+	10. The Classical Isoperimetric Inequality,96
+		10.1. Isoperimetric Property of the Euclidean Ball,96
+		10.2. Isoperimetric Property of the Ball in Spherical and Lobachevsky Spaces,99
+		10.3. Isoperimetric Inequalities in Finite-Dimensional Normed Spaces,101
+		10.4. Historical Remarks,103
+		10.5. Convex Hulls of Curves in IR&quot;,103
+	11. Addendum. Some Elementary Inequalities,104
+		11.1. Jung&apos;s Ball and Other Covering Bodies,104
+		11.2. Volume Estimates in Terms of Diameter or Width,106
+		11.3. Volumes of Sets and their Projections,107
+		11.4. Tetrahedra in Lobachevsky Space,108
+Chapter 3. Isoperimetric Inequalities for Various Definitions of Area,110
+	12. On Various Notions of Area,110
+		12.1. Area of Piecewise Smooth rn-Dimensional Surfaces,110
+		12.2. Why Other Notions of Areas are Needed,111
+	13. Measures,112
+		13.1. Caratheodory Measures,112
+		13.2. Hausdorff Measures,113
+		13.3. Eilenberg&apos;s Inequality,114
+		13.4. Coarea Formula,116
+	14. Sets of Finite Perimeter,119
+		14.1. Perimeter According to Caccoppoli and De Giorgi,119
+		14.2. Perimeter and Minkowski Content,119
+		14.3. Volume and Perimeter,121
+		14.4. The Equality Case in the Classical Isoperimetric Inequality,121
+		14.5. Perimeter from the Functional Point of View,124
+		14.6. Perimeter and Hausdorff Measure,125
+		14.7. Perimeter and the Function Space BV,125
+	15. Currents and Varifolds,127
+		15.1. Area of Smooth Maps,127
+		15.2. Integration over Immersed Manifolds,128
+		15.3. General Notions of Current and Varifold,129
+		15.4. The Simplest Isoperimetric Inequality for n-Dimensional Currents,133
+	16. Lebesgue Area and Some Other Notions of Area,133
+		16.1. Lebesgue Area,133
+		16.2. Isoperimetric Inequality for Lebesgue Area,134
+		16.3. Lebesgue Area and Currents,136
+		16.4. Favard Measures,137
+		16.5. Integral-Geometrical Areas,138
+	17. Generalization of the Isoperimetric Inequality to Other Codimensions,139
+		17.1. Spanning Surfaces for Cyc1es,139
+		17.2. Existence of Isoperimetric Spanning Surfaces,141
+	18. Relative Isoperimetric Inequalities,144
+		18.1. The Dido Problem,144
+		18.2. The Relative Isoperimetric Inequality Constant as a Domain Characteristic,145
+		18.3. Isoperimetric Inequalities and Embedding Theorems,145
+		18.4. Embedding Theorems for Currents,148
+Chapter 4. Mixed V olumes,149
+	19. Definitions, Properties, Examples,149
+		19.1. Mixed Volumes,149
+		19.2. Properties of Mixed Volumes,150
+		19.3. Cross-Sectional Measures,151
+		19.4. Projections,154
+	20. The Alexandrov-Fenchel Inequality and its Particular Cases,156
+		20.1. The Main Inequality and Some Consequences,156
+		20.2. Inequalities of the Isoperimetric Type,157
+		20.3. About Proofs of the Alexandrov-Fenchel Inequality,158
+		20.4. Generalizations of the Brunn-Minkowski Theorem,159
+		20.5. Equality Cases,160
+		20.6. More General Inequalities,160
+	21. Analogues of the Bonnesen Inequality,161
+		21.1. Diskant Inequalities,161
+		21.2. Conditions of Translational Content,164
+		21.3. Parallel Sections,164
+		21.4. Inequalities Involving Total Mean Curvature,165
+	22. Comparison of Projections and Sections,165
+		22.1. Pythagoras Inequality,165
+		22.2. Bodies with Centre,166
+	23. Bodies of Special Form,167
+		23.1. Volume Estimates for Difference Bodies,167
+		23.2. Inequalities for Bodies of Rotation,168
+	24. Dual Inequalities,169
+		24.1. Polar Correspondence,169
+		24.2. An Example of the Application of the Hölder Inequality,170
+		24.3. Dual Mixed Volumes,171
+		24.4. Lutwak Inequalities,172
+		24.5. Inequalities for Polar Bodies,173
+		24.6. Firey Sums and Related Inclusions and Inequalities,174
+		24.7. Multilinearity and Inequalities,176
+	25. Addendum 1. Analogues of Mixed Volumes,177
+		25.1. The Mixed Volume of Continuous Functions on the Sphere,178
+		25.2. Mixed Surface Functions,179
+		25.3. Curvature Functions,180
+		25.4. Mixed Discriminants. Permanents,182
+		25.5. Vector Analogues of Mixed Volumes,183
+		25.6. Generalizations of the Steiner Decomposition,184
+		25.7. Centres of Gravity of Curvatures,186
+		25.8. Mixed Volume as a Distribution,188
+		25.9. Infinite-Dimensional Case,189
+	26. Addendum 2. Mixed Volumes for Non-Convex Sets,190
+		26.1. The Hadwiger Convexity Ring,190
+		26.2. Arbitrary Sets,191
+		26.3. Sets with Boundaries of Bounded Concavity,192
+		26.4. Groemer&apos;s Linear Space,192
+	27. Addendum 3. Algebra and Mixed Volumes (A. G. Khovanskii),195
+		27.1. Outline of the Algebraic Proof of the Alexandrov-Fenchel Inequality,195
+		27.2. Hyperbolic Quadratic Forms,196
+		27.3. Remarks on the Theorem Concerning the Number of Roots,198
+		27.4. Monomials, Monomial Curves, Laurent Polynomials and Their Newton Polyhedra,200
+		27.5. Interseetion of Curves and Hypersurfaees,202
+		27.6. Riemann Surfaces (Compaetification of Aigebraie Curves),204
+		27.7. Statements of the Theorems and Their Sequenee of Proof,205
+		27.8. Deduetion of the Theorem on the Number of Roots from the Curve Theorem,208
+		27.9. The Curve Theorem,210
+		27.10. General (Typieal) Systems of Aigebraie Equations,214
+		27.11. Curves on Aigebraie Surfaees,216
+		27.12. Torie Compaetifieation of Spaces,217
+		27.13. Aigebraie Proof of the Alexandrov-Fenchel Inequality,218
+Chapter 5. Immersions in R^m,221
+	28. Inequalities Involving Mean Curvature,221
+		28.1. Mean Curvature,221
+		28.2. First Variation of Area. Radial Variation and its Applications,222
+		28.3. Covering Lemma,225
+		28.4. Isoperimetric Inequalities Involving Mean Curvature,225
+		28.5. Embedding Theorems Involving Mean Curvature,229
+		28.6. The First Variation of the Mass of Currents and Varifolds,230
+	29. Estimates of Integrals of Symmetrie Functions of Principal Curvatures for Immersed Closed Manifolds,231
+		29.1. The Chern-Lashof Theorem,231
+		29.2. Tights,233
+		29.3. Symmetrie Funetions of Principal Curvatures,233
+		29.4. Immersed Manifolds with Non-Negative Scalar Curvature,235
+		29.5. Specifications for Low Dimensions,237
+	30. Influenee of Intrinsie Metries on Immersion Properties,238
+		30.1. Statement of the Problems,238
+		30.2. Submanifolds of Small Codimension and Bounded Sectional Curvatures,240
+		30.3. Hypersurfaees,243
+		30.4. Maximallnscribed Ball,244
+Chapter 6. Riemannian Manifolds,245
+	31. Principal Notions,245
+		31.1. Notations,245
+		31.2. The Second Fundamental Form,245
+		31.3. Jaeobi Fields,246
+		31.4. Second Variation of Length and the Index Form,248
+		31.5. Cut Locus. Injectivity Radius,249
+	32. Comparison Theorems for Jacobi Fields,249
+		32.1. Minimal Property of Jacobi Fields,249
+		32.2. Main Lemma,250
+		32.3. The Rauch Theorem,253
+	33. Comparison Theorems for Jacobians,254
+		33.1. Jacobians of Exponential Maps,254
+		33.2. Exponential Maps with Respect to Submanifolds,255
+		33.3. Jacobians of Exponential Maps with Respect to Submanifolds,257
+	34. Volume Estimates from Above,260
+		34.1. Volume of the Neighbourhood of a Submanifold,260
+		34.2. Linear Isoperimetric Inequalities in Spaces of Negative Curvature,264
+		34.3. Spherical Isoperimetric Inequality,267
+	35. Volume Estimates from Below,269
+		35.1. Volume of Domains with Starlike Boundary,269
+		35.2. Comparison of Supporting Functions,271
+		35.3. Volume of Domains and Curvature of the Boundary,277
+	36. Inequalities Involving Mean Curvature,278
+		36.1. The First Variation of Area,278
+		36.2. Radial Variation,280
+		36.3. Mean Curvature of Domains with Starlike Boundary,282
+		36.4. Equidistants and Mean Curvature,286
+		36.5. The Isoperimetric Inequality Involving Mean Curvature,287
+	37. The Volume of Closed Manifolds with Negative Curvature,290
+		37.1. Volume Estimatefrom Below,290
+		37.2. Properties of the Fundamental Group,292
+		37.3. The Margulis Lemma and the Proof of the Volume Estimate,294
+		37.4. Proof of Lemma 37.3.2,295
+		37.5. Estimates to 37.4,301
+		37.6. Other Inequalities,306
+	38. Volume Estimates from Below not Containing Curvatures. Brief Review,307
+		38.1. The Volume of the Topological Cube,307
+		38.2. Volumes of Cycles and Manifold Volume,310
+		38.3. Volume and Injectivity Radius,312
+Bibliography,313
+Author Index,334
+Subject Index,339
