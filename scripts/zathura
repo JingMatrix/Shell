@@ -1,7 +1,6 @@
 #! /bin/zsh
 
 # exec 2> $HOME/log
-pushd $HOME
 export GDK_BACKEND=wayland
 # for nnn, to detach previewer by default
 nohup /bin/zathura "$@" >/dev/null 2>&1 &
@@ -28,4 +27,3 @@ if [[ -n $VIMRUNTIME && -n $SWAYSOCK ]]; then
 		fi
 	fi
 fi
-popd

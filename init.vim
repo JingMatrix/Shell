@@ -125,7 +125,7 @@ nmap yoz :call ToggleChineseInput()<cr>
 augroup toggles
 	autocmd!
 	" autocmd BufRead /tmp/tmp*.txt,*otes/*.md normal yoz
-	autocmd BufRead /tmp/tmp*.txt normal yoz
+	" autocmd BufRead /tmp/tmp*.txt normal yoz
 augroup END
 
 " writing dairy

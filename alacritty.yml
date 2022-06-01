@@ -1,4 +1,12 @@
 env:
+  NNN_BMS: a:~/Mathematics/Textbook_Archive;r:~/Mathematics/Research;c:~/Reading/Computer;g:~/Archives/Games;h:~/Reading/Hobby;v:/run/user/1000/gvfs
+  NNN_PLUG: n:preview-note;f:fzcd;g:gsconnect;p:preview-tui
+  NNN_OPTS: acQu
+  NNN_TRASH: '1'
+  FZF_DEFAULT_COMMAND: fd --type file --follow --hidden --exclude .git
+  FZF_DEFAULT_OPTS: --ansi
+  EDITOR: nvim
+  GDK_BACKEND: x11
   FZF_DEFAULT_COMMAND: fd --type file --follow --hidden --exclude .git
   FZF_DEFAULT_OPTS: --ansi
   TERMINAL: alacritty
@@ -9,7 +17,7 @@ window:
     x: 13
     y: 13
   startup_mode: Maximized
-  opacity: 0.7
+  opacity: 0.85
 shell:
   program: zsh
   args:
@@ -33,6 +41,13 @@ key_bindings:
     command:
       program: "sh"
       args: ["-c","$HOME/Documents/Code/Shell/background_opacity -dec"]
+cursor:
+  style:
+    shape: Beam
+    blinking: Always
+  vi_mode_style:
+    shape: Block
+    blinking: On
 font:
   normal:
     family: Hack Nerd Font

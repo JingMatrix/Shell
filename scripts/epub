@@ -130,7 +130,7 @@ $opffile" >/tmp/sigil/sigil.cfg
 function parseepubee {
 	# parse files in directory $1
 	# find & parse opf
-	cd $1
+	pushd $1
 	if [[ -d $1/OEBPS && -f $1/OEBPS/content.opf ]]; then
 		opffile=OEBPS/content.opf
 	elif [[ -f $1/content.opf ]]; then
@@ -154,7 +154,6 @@ function parseepubee {
 		# fi
 		ePub3-itizer && epubver="3.0"
 	fi
-	cd $1
 	# echo "Validating content.opf file"
 	# cd $1 && epubcheck --mode opf -v $epubver $1/$opffile
 	echo -n "Modify content.opf of $filename?\t"
@@ -175,10 +174,11 @@ function parseepubee {
 	else
 		filename=$(dirname $epub_file)/$filename
 	fi
+	popd
 }
 
 function packepub {
-	cd $1
+	pushd $1
 	if [[ -f $2 ]]; then
 		rm $2 -f
 	fi
@@ -187,12 +187,13 @@ function packepub {
 	echo -n "\nOpen sigil?\t"
 	if read -q; then
 		if [[ -z $TMUX ]]; then
-			kitty @ launch --keep-focus "less $1.error"
+			kitty @ launch --cwd=current --keep-focus "less $1.error"
 		else
 			tmux splitw "less $1.error"
 		fi
 		sigil $2 &>/dev/null
 	fi
+	popd
 }
 
 function checkepub {
@@ -234,7 +235,7 @@ function repairepub {
 			echo "cf $1.error" >>/tmp/epub.vim
 			echo "copen" >>/tmp/epub.vim
 			if [[ -z $TMUX ]]; then
-				kitty @ launch --type=tab --keep-focus "vim -S /tmp/epub.vim $filelist"
+				kitty @ launch --cwd=current --type=tab --keep-focus vim -S /tmp/epub.vim $filelist
 			else
 				tmux neww "vim -S /tmp/epub.vim $filelist"
 			fi
@@ -251,7 +252,7 @@ function repairepub {
 		if read -q; then
 			cd $1
 			if [[ -z $TMUX ]]; then
-				kitty @ launch
+				kitty @ launch --cwd=current
 			else
 				tmux splitw
 			fi
