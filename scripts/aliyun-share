@@ -6,70 +6,75 @@ import re
 import sys
 
 if len(sys.argv) == 1:
-    # refresh login
-    from aligo import Aligo
-    Aligo()
+    # refresh login token
+    from aligo import Auth
+    Auth(name='aligo')._refresh_token()
     sys.exit()
 
 file_id = re.findall('[0-9a-f]{40}', sys.argv[1])[0]
-match_id = re.match(r"https://www.aliyundrive.com/s/([^/]+)/folder", sys.argv[1])
+match_id = re.match(r"https://www.aliyundrive.com/s/([^/]+)/folder",
+                    sys.argv[1])
+
+share_file_list_data_file = '/home/jing/Archives/Data/Ebooks/Aliyun/'
+share_id_data_file = '/tmp/share_id'
+download_dir = '/tmp'
+
 if match_id:
     share_id = match_id.group(1)
     list_file = True
-    download_path = '/home/jing/Archives/Data/Ebooks/Aliyun/' + file_id + '.json'
 else:
     share_id = ''
     list_file = False
-    download_path = ''
 
+download_path = ''
 if len(sys.argv) > 2:
     download_path = os.path.expanduser(sys.argv[2])
 
 if share_id == '':
-    if os.path.exists('/tmp/share_id'):
-        print('Reading share id from /tmp/share_id')
-        f = open('/tmp/share_id', 'r')
-        share_id = f.read()
+    if os.path.exists(share_id_data_file):
+        print('Reading share id from ' + share_id_data_file)
+        f = open(share_id_data_file, 'r')
+        share_id = f.read().strip()
         f.close()
     else:
         print('No way to determinate share_id, exiting...')
         exit()
 
-f = open('/tmp/share_id', 'w')
+f = open(share_id_data_file, 'w')
 f.write(share_id)
 f.close()
 if list_file and os.path.exists(download_path):
-    print('file data exits in the directory /home/jing/Archives/Data/Ebooks/Aliyun/')
+    print(
+        'file list data exits in the directory' + share_file_list_data_file
+    )
     exit()
 else:
     from aligo import Aligo
     from dataclasses import asdict
 
-    ali = Aligo()
+    ali = Aligo(use_aria2=True)
     ali.get_share_info(share_id)
     share_token = ali.get_share_token(share_id)
     if list_file:
-        file_list = ali.get_share_file_list(
-            share_id=share_id,
-            share_token=share_token.share_token,
-            parent_file_id=file_id
-        )
-        f = open(download_path, 'w', encoding='utf8')
+        file_list = ali.get_share_file_list(share_id=share_id,
+                                            share_token=share_token,
+                                            parent_file_id=file_id)
+        f = open(share_file_list_data_file + file_id + '.json', 'w', encoding='utf8')
         f.write('[' + ',\n'.join([
-            json.dumps(asdict(file), indent=4, ensure_ascii=False).encode('utf8').decode()
-            for file in file_list]) + ']')
+            json.dumps(asdict(file), indent=4, ensure_ascii=False).encode(
+                'utf8').decode() for file in file_list
+        ]) + ']')
         f.close()
-        print('file data saved to the directory /home/jing/Archives/Data/Ebooks/Aliyun/')
+        print(
+            'file list data saved to the directory ' + share_file_list_data_file
+        )
     else:
         download_url = ali.get_share_link_download_url(
-            share_id=share_id,
-            share_token=share_token.share_token,
-            file_id=file_id
-        ).download_url
+            share_id=share_id, share_token=share_token,
+            file_id=file_id).download_url
         if download_path == '':
-            download_path = '/tmp/' + ali.get_share_file(
+            download_path = download_dir + '/' + ali.get_share_file(
                 share_id=share_id,
                 share_token=share_token.share_token,
-                file_id=file_id
-            ).name
-        ali.download_file(download_path, download_url)
+                file_id=file_id).name
+        ali.download_file(file_path=download_path, url=download_url)
