@@ -124,7 +124,7 @@ endfunction
 nmap yoz :call ToggleChineseInput()<cr>
 augroup toggles
 	autocmd!
-	" autocmd BufRead /tmp/tmp*.txt,*otes/*.md normal yoz
+	" autocmd BufRead *otes/*.md normal yoz
 	" autocmd BufRead /tmp/tmp*.txt normal yoz
 augroup END
 
@@ -186,18 +186,6 @@ set omnifunc=syntaxcomplete#Complete
 
 let g:vimsyn_noerror=1
 if system('whoami') =~ 'jing'
-	" fzf-vim
-	" Mapping selecting mappings
-	nmap <leader><tab> <plug>(fzf-maps-n)
-	xmap <leader><tab> <plug>(fzf-maps-x)
-	omap <leader><tab> <plug>(fzf-maps-o)
-
-
-	" Insert mode completion
-	imap <c-x><c-k> <plug>(fzf-complete-word)
-	imap <c-x><c-f> <plug>(fzf-complete-path)
-	imap <c-x><c-l> <plug>(fzf-complete-line)
-	" lua config file
 	" file locate $HOME/.config/nvim/lua/vim-init.lua
 	lua require('vim-init')
 endif

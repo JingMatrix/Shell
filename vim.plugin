@@ -4,6 +4,7 @@
 │   │   └── nerdtree
 │   └── start
 │       ├── conjure
+│       ├── plenary.nvim
 │       ├── registers.nvim
 │       ├── suda.vim
 │       ├── undotree
@@ -23,6 +24,7 @@
 │   │   └── gen_tags.vim
 │   └── start
 │       ├── fzf
+│       ├── fzf-lua
 │       ├── fzf.vim
 │       ├── nnn.nvim
 │       ├── nvim-lspconfig
@@ -46,4 +48,4 @@
         ├── vim-airline
         └── vim-airline-themes
 
-46 directories, 0 files
+48 directories, 0 files

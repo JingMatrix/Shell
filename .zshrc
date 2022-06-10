@@ -46,7 +46,7 @@ alias icat="kitty +kitten icat"
 alias qb=qutebrowser
 alias pip=pip3
 alias msfconsole="TERM=xterm-256color msfconsole"
-alias luamake=/home/jing/Documents/Project/lua-language-server/3rd/luamake/luamake
+alias luamake=$HOME/Documents/Project/lua-language-server/3rd/luamake/luamake
 unalias gradle
 
 export ANDROID_HOME=$HOME/Archives/Android
@@ -83,8 +83,9 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor line)
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[cursor]=bold
 
-source /home/jing/Documents/Project/nnn/misc/quitcd/quitcd.bash_zsh
+source $HOME/Documents/Project/nnn/misc/quitcd/quitcd.bash_zsh
 
+source $HOME/.local/google-cloud-sdk/completion.zsh.inc
 if [[ $TERM == linux ]]; then
 	export TERM=fbterm
 fi
