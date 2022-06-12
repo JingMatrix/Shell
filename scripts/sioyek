@@ -1,0 +1,28 @@
+#! /bin/zsh
+
+# exec 2> $HOME/log
+# for nnn, to detach previewer by default
+nohup /bin/sioyek "$@" >/dev/null 2>&1 &
+
+# set -x
+if [[ -n $VIMRUNTIME && -n $SWAYSOCK ]]; then
+	typeset -a _args=($@)
+	title="${_args[-1]:t}"
+	if [[ -z "$(swaymsg -p -t get_workspaces | grep " $title")" ]]; then
+		[[ -z "$(swaymsg -p -t get_outputs | grep HDMI-A-2)" ]] &&
+			[[ -z "$(swaymsg -p -t get_outputs | grep HEADLESS-1)" ]] && exit
+		# wait a bit of for Sioyek window to appear
+		sleep 0.4
+		swaymsg "[app_id=sioyek title=$title]" \
+			fullscreen disable, move workspace " $title"
+		if [[ -n "$(swaymsg -p -t get_outputs | grep HDMI-A-2)" ]]; then
+			swaymsg workspace " $title"
+			swaymsg move workspace output "eDP-1"
+			sleep 0.3 && wtype s
+		elif [[ -n "$(swaymsg -p -t get_outputs | grep HEADLESS-1)" ]]; then
+			swaymsg workspace " $title"
+			swaymsg move workspace output "HEADLESS-1"
+			sleep 0.3 && wtype s
+		fi
+	fi
+fi

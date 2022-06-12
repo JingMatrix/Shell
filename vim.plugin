@@ -4,6 +4,8 @@
 │   │   └── nerdtree
 │   └── start
 │       ├── conjure
+│       ├── nvim-dap
+│       ├── one-small-step-for-vimkind
 │       ├── plenary.nvim
 │       ├── registers.nvim
 │       ├── suda.vim
@@ -27,6 +29,7 @@
 │       ├── fzf-lua
 │       ├── fzf.vim
 │       ├── nnn.nvim
+│       ├── nvim-dap-ui
 │       ├── nvim-lspconfig
 │       ├── nvim-treesitter
 │       ├── ultisnips
@@ -39,6 +42,8 @@
 │   └── start
 │       ├── aniseed
 │       ├── jsonc.vim
+│       ├── nvim-dap-python
+│       ├── nvim-jdtls
 │       ├── scribble.vim
 │       ├── vim-markdown
 │       ├── vim-racket
@@ -48,4 +53,4 @@
         ├── vim-airline
         └── vim-airline-themes
 
-48 directories, 0 files
+53 directories, 0 files

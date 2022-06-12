@@ -15,14 +15,14 @@ config.bind('ce', 'config-edit')
 # config.bind('o', 'spawn --userscript qutedmenu open')
 # config.bind('O', 'spawn --userscript qutedmenu tab')
 config.bind('<Ctrl+p>',
-            'config-cycle -t content.proxy socks5://localhost:9050/ none')
+            'config-cycle -t content.proxy socks://localhost:9050/ none')
 # config.bind('<Ctrl+r>', 'config-cycle colors.webpage.darkmode.enabled ;; restart')
 config.bind('zo', 'set-cmd-text :open file:///home/jing/')
 
 c.zoom.default = '150%'
 c.aliases['mpv'] = 'spawn --userscript view_in_mpv'
 # c.aliases['burp'] = 'set content.proxy http://127.0.0.1:8080/'
-c.aliases['tor'] = 'set content.proxy sock5://127.0.0.1:9050/'
+c.aliases['tor'] = 'set content.proxy sock://127.0.0.1:9050/'
 c.aliases['no-proxy'] = 'set content.proxy none'
 c.aliases['readability'] = 'spawn --userscript readability-js'
 c.content.blocking.adblock.lists = [
