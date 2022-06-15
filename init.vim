@@ -132,7 +132,7 @@ augroup END
 augroup notable
 	autocmd!
 	autocmd BufWritePre *otes/*.md 1,7s/\v^modified:\ "\zs.*\ze"$/\=system('date -Is | head -c -1')
-	autocmd BufWritePost  *otes/*.md normal ``
+	autocmd BufWritePost  *otes/*.md normal ``zz
 augroup END
 
 augroup spellang
@@ -180,6 +180,7 @@ set modeline
 set autochdir
 set tabstop=4
 set shiftwidth=0
+set commentstring=#\ %s
 
 " completion
 set omnifunc=syntaxcomplete#Complete

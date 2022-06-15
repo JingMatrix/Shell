@@ -10,12 +10,10 @@
 │       ├── registers.nvim
 │       ├── suda.vim
 │       ├── undotree
-│       ├── vala.vim
 │       ├── vim-commentary
+│       ├── vim-dadbod
 │       ├── vim-fugitive
-│       ├── vim-repeat
 │       ├── vim-rsi
-│       ├── vim-smali
 │       ├── vim-startify
 │       ├── vim-surround
 │       ├── vim-unimpaired
@@ -53,4 +51,4 @@
         ├── vim-airline
         └── vim-airline-themes
 
-53 directories, 0 files
+51 directories, 0 files

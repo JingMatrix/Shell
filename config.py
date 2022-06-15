@@ -91,6 +91,11 @@ config.set('content.autoplay', True,
 config.set('content.notifications.enabled', False)
 # config.set('content.notifications.enabled', True, 'https://calendar.google.com/*')
 config.set('content.register_protocol_handler', True, 'https://calendar.google.com?cid=%25s')
+config.set('content.javascript.clipboard', 'access', 'https://github.com/*')
+config.set('content.javascript.clipboard', 'access', 'https://*.stackexchange.com/questions/*')
+config.set('content.javascript.clipboard', 'access', 'https://stackoverflow.com/questions/*')
+config.set('content.javascript.clipboard', 'access', 'https://mathoverflow.net/questions/*')
+
 
 # try:
 #     from qutebrowser.api import message
