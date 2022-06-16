@@ -1,0 +1,19 @@
+#! /bin/zsh
+
+if [[ -n $1 ]]; then
+	file=${1:a}
+else
+	local folder=$(shuf -n 1 -e $HOME/Reading/*)
+	local file=$(shuf -n 1 -e $folder/*)
+fi
+case ${file:e} in
+"pdf")
+	page=$(pdfinfo $file 2>/dev/null | awk '/^Pages:/ {print $2}' )
+	;;
+"djvu")
+	page=$(djvused $file -e 'n')
+	;;
+esac
+page=$(shuf -i 1-$page -n 1)
+echo "We shall read ${file:t:r}."
+zathura -P $page $file
