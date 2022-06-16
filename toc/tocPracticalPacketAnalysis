@@ -1,0 +1,259 @@
+Brief Contents ,9
+Contents in Detail,11
+Acknowledgments,17
+Introduction,19
+	Why This Book?,20
+	Concepts and Approach,20
+	How to Use This Book,22
+	About the Sample Capture Files,22
+	The Rural Technology Fund,23
+	Contacting Me,23
+Chapter 1: Packet Analysis and ,25
+	Packet Analysis and Packet Sniffers,26
+		Evaluating a Packet Sniffer,26
+		How Packet Sniffers Work,27
+	How Computers Communicate,28
+		Protocols,28
+		The Seven-Layer OSI Model ,29
+		Network Hardware,34
+	Traffic Classifications,39
+		Broadcast Traffic,39
+		Multicast Traffic,40
+		Unicast Traffic,40
+	Final Thoughts,40
+Chapter 2: Tapping into the Wire,41
+	Living Promiscuously,42
+	Sniffing Around Hubs,43
+	Sniffing in a Switched Environment,44
+		Port Mirroring,45
+		Hubbing Out,47
+		Using a Tap,48
+		ARP Cache Poisoning,51
+	Sniffing in a Routed Environment,55
+	Sniffer Placement in Practice,57
+Chapter 3: Introduction to Wireshark,61
+	A Brief History of Wireshark,61
+	The Benefits of Wireshark,62
+	Installing Wireshark,63
+		Installing on Windows Systems,63
+		Installing on Linux Systems,65
+		Installing on OS X Systems,67
+	Wireshark Fundamentals,68
+		Your First Packet Capture,68
+		Wireshark’s Main Window,69
+		Wireshark Preferences,70
+		Packet Color Coding,72
+	Configuration Files,74
+	Configuration Profiles,74
+Chapter 4: Working with Captured Packets,77
+	Working with Capture Files,77
+		Saving and Exporting Capture Files,78
+		Merging Capture Files,79
+	Working with Packets,80
+		Finding Packets,80
+		Marking Packets,81
+		Printing Packets,82
+	Setting Time Display Formats and References,82
+		Time Display Formats,83
+		Packet Time Referencing,84
+		Time Shifting,84
+	Setting Capture Options,85
+		Input Tab,85
+		Output Tab,86
+		Options Tab,87
+	Using Filters,89
+		Capture Filters,89
+		Display Filters,95
+		Saving Filters,98
+		Adding Display Filters to a Toolbar,99
+Chapter 5: Advanced Wireshark Features,101
+	Endpoints and Network Conversations,102
+		Viewing Endpoint Statistics,102
+		Viewing Network Conversations,103
+		Identifying Top Talkers with Endpoints and Conversations,104
+	Protocol Hierarchy Statistics,107
+	Name Resolution,108
+		Enabling Name Resolution,108
+		Potential Drawbacks to Name Resolution,110
+		Using a Custom hosts File,110
+		Manually Initiated Name Resolution,112
+	Protocol Dissection,112
+		Changing the Dissector,112
+		Viewing Dissector Source Code,114
+	Following Streams,115
+		Following SSL Streams,116
+	Packet Lengths,117
+	Graphing,119
+		Viewing IO Graphs,119
+		Round-Trip Time Graphing,122
+		Flow Graphing,123
+	Expert Information,123
+Chapter 6: Packet Analysis on the Command Line,127
+	Installing TShark,128
+	Installing tcpdump,129
+	Capturing and Saving Packets,130
+	Manipulating Output,133
+	Name Resolution,135
+	Applying Filters ,137
+	Time Display Formats in TShark,138
+	Summary Statistics in TShark,139
+	Comparing TShark and tcpdump,142
+Chapter 7: Network Layer Protocols,143
+	Address Resolution Protocol (ARP),144
+		ARP Packet Structure,145
+		Packet 1: ARP Request,146
+		Packet 2: ARP Response,147
+		Gratuitous ARP,148
+	Internet Protocol,149
+		Internet Protocol Version 4 (IPv4),149
+		Internet Protocol version 6 (IPv6),157
+	Internet Control Message Protocol,168
+		ICMP Packet Structure,168
+		ICMP Types and Messages,168
+		Echo Requests and Responses,169
+		traceroute,171
+		ICMP version 6 (ICMPv6),174
+Chapter 8: Transport Layer Protocols,175
+	Transmission Control Protocol (TCP),175
+		TCP Packet Structure,176
+		TCP Ports,176
+		The TCP Three-Way Handshake,179
+		TCP Teardown,182
+		TCP Resets,183
+	User Datagram Protocol (UDP),184
+		UDP Packet Structure,185
+Chapter 9: Common Upper-Layer Protocols,187
+	Dynamic Host Configuration Protocol (DHCP),187
+		The DHCP Packet Structure,188
+		The DHCP Initialization Process,189
+		DHCP In-Lease Renewal,194
+		DHCP Options and Message Types,194
+		DHCPv6,195
+	Domain Name System (DNS),197
+		The DNS Packet Structure,197
+		A Simple DNS Query,198
+		DNS Question Types,200
+		DNS Recursion,201
+		DNS Zone Transfers,205
+	Hypertext Transfer Protocol (HTTP),207
+		Browsing with HTTP,207
+		Posting Data with HTTP,210
+	Simple Mail Transfer Protocol (SMTP),211
+		Sending and Receiving Email,212
+		Tracking an Email Message,213
+		Sending Attachments via SMTP,220
+	Final Thoughts,222
+Chapter 10: Basic Real-World Scenarios,223
+	Missing Web Content,224
+		Tapping into the Wire,224
+		Analysis,225
+		Lessons Learned,228
+	Unresponsive Weather Service,229
+		Tapping into the Wire,230
+		Analysis,230
+		Lessons Learned,233
+	No Internet Access,234
+		Gateway Configuration Problems,234
+		Unwanted Redirection,237
+		Upstream Problems,240
+	Inconsistent Printer,243
+		Tapping into the Wire,243
+		Analysis,243
+		Lessons Learned,246
+	No Branch Office Connectivity,246
+		Tapping into the Wire,247
+		Analysis,247
+		Lessons Learned,250
+	Software Data Corruption,250
+		Tapping into the Wire,250
+		Analysis,251
+		Lessons Learned,254
+	Final Thoughts,254
+Chapter 11: Fighting a Slow Network,255
+	TCP Error-Recovery Features,256
+		TCP Retransmissions,256
+		TCP Duplicate Acknowledgments and Fast Retransmissions,259
+	TCP Flow Control,264
+		Adjusting the Window Size,265
+		Halting Data Flow with a Zero Window Notification,266
+		The TCP Sliding Window in Practice,267
+	Learning from TCP Error-Control and Flow-Control Packets,271
+	Locating the Source of High Latency,272
+		Normal Communications,272
+		Slow Communications: Wire Latency,272
+		Slow Communications: Client Latency,273
+		Slow Communications: Server Latency,274
+		Latency Locating Framework,275
+	Network Baselining,275
+		Site Baseline,276
+		Host Baseline,277
+		Application Baseline,278
+		Additional Notes on Baselines,279
+	Final Thoughts,279
+Chapter 12: Packet Analysis for Security,281
+	Reconnaissance,282
+		SYN Scan,282
+		Operating System Fingerprinting,287
+	Traffic Manipulation,290
+		ARP Cache Poisoning,291
+		Session Hijacking,295
+	Malware,299
+		Operation Aurora,299
+		Remote-Access Trojan,305
+	Exploit Kit and Ransomware,312
+	Final Thoughts,318
+Chapter 13: Wireless Packet Analysis,319
+	Physical Considerations,320
+		Sniffing One Channel at a Time,320
+		Wireless Signal Interference,321
+		Detecting and Analyzing Signal Interference,321
+	Wireless Card Modes,322
+	Sniffing Wirelessly in Windows,324
+		Configuring AirPcap,324
+		Capturing Traffic with AirPcap,326
+	Sniffing Wirelessly in Linux,327
+	802.11 Packet Structure,328
+	Adding Wireless-Specific Columns to the Packet List Pane,329
+	Wireless-Specific Filters,331
+		Filtering Traffic for a Specific BSS ID,331
+		Filtering Specific Wireless Packet Types,331
+		Filtering a Specific Frequency,332
+	Saving a Wireless Profile,333
+	Wireless Security,333
+		Successful WEP Authentication,333
+		Failed WEP Authentication,335
+		Successful WPA Authentication,336
+		Failed WPA Authentication,338
+	Final Thoughts,339
+Appendix A: Further Reading,341
+	Packet Analysis Tools,341
+		CloudShark ,341
+		WireEdit,342
+		Cain &amp; Abel,343
+		Scapy,343
+		TraceWrangler,343
+		Tcpreplay,343
+		NetworkMiner,343
+		CapTipper,344
+		ngrep,345
+		libpcap,345
+		Npcap,345
+		hping,345
+		Python,345
+	Packet Analysis Resources,345
+		Wireshark’s Home Page,346
+		Practical Packet Analysis Online Course,346
+		SANS’s Security Intrusion Detection In-Depth Course,346
+		Chris Sanders’s Blog ,346
+		Brad Duncan’s Malware Traffic Analysis ,346
+		IANA’s Website ,347
+		W. Richard Stevens’s TCP/IP Illustrated Series,347
+		The TCP/IP Guide,347
+Appendix B: Navigating Packets,349
+	Packet Representation,350
+	Using Packet Diagrams,352
+	Navigating a Mystery Packet,354
+	Final Thoughts,356
+Index,357
+Blank Page,2
+Blank Page,371

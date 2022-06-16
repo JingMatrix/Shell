@@ -1,0 +1,57 @@
+Contents,5
+Preface,7
+d=8
+Chapter 1: Introduction to the real line R and some of its subsets,1 
+	§ 1.1. The real number system,1 
+	§ 1.2. Irrational and transcendental numbers,3 
+	§ 1.3. The numbers e and it,10 
+	§ 1.4. The Cantor ternary set,18 
+	Exercises,24 
+Chapter 2: Functions: Pathological, peculiar and extraordinary,25 
+	§ 2.1. Some pathological functions,25 
+	§ 2.2. The Cantor function,29 
+	§ 2.3. The length of the Cantor function,33 
+	§ 2.4. Some more curious functions,37 
+	§ 2.5. Algebraic functions,50 
+	Exercises,51 
+Chapter 3 Famous everywhere continuous, nowhere differentiable functions: van der Waerden's and others,56
+	§ 3.1. van der Waerden's function,56 
+	§ 3.2. Some more properties of van der Waerden's function,61 
+	§ 3.3. A geometric example,71 
+	§ 3.4. An analytic example,76 
+Chapter 4: Functions: Continuous, periodic, locally recurrent and others,78 
+	§ 4.1. The intermediate value property,78 
+	§ 4.2. Boundedness and attainment of bounds,81 
+	§ 4.3. Locally recurrent functions,84 
+	§ 4.4. Periodic functions,86 
+	§ 4.5. Horizontal Chords,96 
+	§ 4.6. Continuous functions and integration,100 
+	§ 4.7. Continuous functions and their graphs,104 
+	§ 4.8. Convex functions,107 
+Chapter 5: The derivative and higher derivatives,111 
+	§ 5.1. Continuity of the first derivative,111
+	§ 5.2. The tangent and the first derivative,113 
+	§ 5.3. Implications of the first derivative being equal to zero,116 
+	§ 5.4. Rolle's theorem and the first mean value theorem,121 
+	§ 5.5. Points of inflexion,126 
+	§ 5.6. Geometric interpretation of the second and the third derivatives,133 
+	§ 5.7. Taylor's theorem and L'Hospital's rule,138 
+	Exercises,151 
+Chapter 6: Sequences, Harmonic Series, Alternating Series and related results,155 
+	§ 6.1. Sequences and series of real numbers,155 
+	§ 6.2. The series ⅀ 1/n and Euler's constant 7,159 
+	§ 6.3. Some number theoretic aspects of the harmonic series,172 
+	§ 6.4. The restricted harmonic series,179 
+	§ 6.5. Rearrangements of the alternating series ⅀(-1)^n/n,181
+Chapter 7: The infinite exponential xx and related results,195 
+	§ 7.1. The equation xy = yx and the parameterization,195 
+	§ 7.2. The infinite exponential,204 
+	§ 7.3. Applications and examples,220 
+Appendix I,226 
+	§ A.1. Stirling's formula and the trapezoidal rule,226 
+	§ A.2. Schwarz differentiability .':,234 
+	§ A.3. Cauchy's functional equation f(x + y) = f(x) + f(y),244 
+Appendix II,248 
+Hints and solutions to expertises,248 
+Bibliography,281 
+Index,289 
