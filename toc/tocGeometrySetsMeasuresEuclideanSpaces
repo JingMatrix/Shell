@@ -1,0 +1,161 @@
+Contents,5
+Acknowledgements,9
+Basic notation,10
+d=10
+Introduction,1 
+1. General measure theory,7 
+	Some basic notation,7 
+	Measures,8 
+	Integrals,13 
+	Image measures,15 
+	Weak convergence,18 
+	Approximate identities,19 
+	Exercises,22 
+2. Covering and differentiation,23 
+	A 5r-covering theorem,23 
+	Vitali's covering theorem for the Lebesgue measure,26 
+	Besicovitch's covering theorem,28 
+	Vitali's covering theorem for Radon measures,34 
+	Differentiation of measures,35 
+	Hardy-Littlewood maximal function,40 
+	Measures in infinite dimensional spaces,42 
+	Exercises,43 
+3. Invariant measures,44 
+	Haar measure,44 
+	Uniformly distributed measures,45 
+	The orthogonal group,46 
+	The Grassmannian of ra-planes,48 
+	The isometry group,52 
+	The affine subspaces,53 
+	Exercises,53 
+4. Hausdorff measures and dimension,54 
+	Caratheodory's construction,54 
+	Hausdorff measures,55 
+	Hausdorff dimension,58 
+	Generalized Hausdorff measures,59 
+	Cantor sets,60 
+	Self-similar and related sets,65 
+	Limit sets of Mobius groups,69 
+	Dynamical systems and Julia sets,71 
+	Harmonic measure,72 
+	Exercises,73 
+5. Other measures and dimensions,75 
+	Spherical measures,75 
+	Net measures,76 
+	Minkowski dimensions,76 
+	Packing dimensions and measures,81 
+	Integralgeometric measures,86 
+	Exercises,88 
+6. Density theorems for Hausdorff and packing measures,89 
+	Density estimates for Hausdorff measures,89 
+	A density theorem for spherical measures,92 
+	Densities of Radon measures,94 
+	Density theorems for packing measures,95 
+	Remarks related to densities,98 
+	Exercises,99 
+7. Lipschitz maps,100 
+	Extension of Lipschitz maps,100 
+	Differentiability of Lipschitz maps,100 
+	A Sard-type theorem,103 
+	Hausdorff measures of level sets,104 
+	The lower density of Lipschitz images,105 
+	Remarks on Lipschitz maps,106 
+	Exercises,107 
+8. Energies, capacities and subsets of finite measure,109 
+	Energies,109 
+	Capacities and Hausdorff measures,110 
+	Frostman's lemma in Rn,112 
+	Dimensions of product sets,115 
+	Weighted Hausdorff measures,117 
+	Prostman's lemma in compact metric spaces,120 
+	Existence of subsets with finite Hausdorff measure,121 
+	Exercises,124 
+9. Orthogonal projections,126 
+	Lipschitz maps and capacities,126 
+	Orthogonal projections, capacities and Hausdorff dimension,127 
+	Self-similar sets with overlap,134 
+	Brownian motion,136 
+	Exercises,138 
+10. Intersections with planes,139 
+	Slicing measures with planes,139 
+	Plane sections, capacities and Hausdorff measures,142 
+	Exercises,145 
+11* Local structure of s-dimensional sets and measures,146 
+	Distribution of measures with finite energy,146 
+	Conical densities,152 
+	Porosity and Hausdorff dimension,156 
+	Exercises,158 
+12. The Fourier transform and its applications,159 
+	Basic formulas,159 
+	The Fourier transform and energies,162 
+	Distance sets,165 
+	Borel subrings of R,166 
+	Fourier dimension and Salem sets,168 
+	Exercises,169 
+13. Intersections of general sets,171 
+	Intersection measures and energies,171 
+	Hausdorff dimension and capacities of intersections,177 
+	Examples and remarks,180 
+	Exercises,182 
+14· Tangent measures and densities,184 
+	Definitions and examples,184 
+	Preliminary results on tangent measures,186 
+	Densities and tangent measures,189 
+	s-uniform measures,191 
+	Marstrand's theorem,192 
+	A metric on measures,194 
+	Tangent measures to tangent measures are tangent measures,196 
+	Proof of Theorem 11.11,198 
+	Remarks,200 
+	Exercises,200 
+15. Rectifiable sets and approximate tangent planes,202 
+	Two examples,202 
+	ra-rectifiable sets,203 
+	Linear approximation properties,205 
+	Rectifiability and measures in cones,208 
+	Approximate tangent planes,212 
+	Remarks on rectifiability,214 
+	Uniform rectifiability,215 
+	Exercises,218 
+16. Rectifiability, weak linear approximation and tangent measures,220 
+	A lemma on projections of purely unrectifiable sets,220 
+	Weak linear approximation, densities and projections,222 
+	Rectifiability and tangent measures,228 
+	Exercises,230 
+17. Rectifiability and densities,231 
+	Structure of m-uniform measures,231 
+	Rectifiability and density one,240 
+	Preiss's theorem,241 
+	Rectifiability and packing measures,247 
+	Remarks,247 
+	Exercises,249 
+18. Rectifiability and orthogonal projections,250 
+	Besicovitch-Federer projection theorem,250 
+	Remarks on projections,258 
+	Besicovitch sets,260 
+	Exercises,264 
+19. Rectifiability and analytic capacity in the complex plane,265 
+	Analytic capacity and removable sets,265 
+	Analytic capacity, Riesz capacity and Hausdorff measures,267 
+	Cauchy transforms of complex measures,269 
+	Cauchy transforms and tangent measures,273 
+	Analytic capacity and rectifiability,275 
+	Various remarks,276 
+	Exercises,279 
+20. Rectifiability and singular integrals,281 
+	Basic singular integrals,281 
+	Symmetric measures,283 
+	Existence of principal values and tangent measures,284 
+	Symmetric measures with density bounds,285 
+	Existence of principal values implies rectifiability,288 
+	Z^-boundedness and weak (1,1) inequalities,289 
+	A duality method for weak (1,1),292 
+	A smoothing of singular integral operators,295 
+	Kolmogorov's inequality,298 
+	Cotlar's inequality,299 
+	A weak (1,1) inequality for complex measures,301 
+	Rectifiability implies existence of principal values,301 
+	Exercises,304 
+References,305 
+List of notation,334 
+Index of terminology,337 

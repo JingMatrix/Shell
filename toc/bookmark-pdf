@@ -6,7 +6,7 @@ pdf_data="$pdf""_data.txt"
 EXTRACT_FILE=booky_bookmarks_extract
 
 echo "Converting $bkFile to pdftk compatible format"
-python3 pdftkformat.py <"$bkFile" >"$EXTRACT_FILE"
+python3 $(dirname $0)/pdftkformat.py <"$bkFile" >"$EXTRACT_FILE"
 
 echo "Dumping pdf meta data..."
 pdftk "$1" dump_data_utf8 output "$pdf_data"
