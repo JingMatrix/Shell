@@ -22,7 +22,7 @@ config.bind('zo', 'set-cmd-text :open file:///home/jing/')
 c.zoom.default = '150%'
 c.aliases['mpv'] = 'spawn --userscript view_in_mpv'
 # c.aliases['burp'] = 'set content.proxy http://127.0.0.1:8080/'
-c.aliases['tor'] = 'set content.proxy sock://127.0.0.1:9050/'
+c.aliases['tor'] = 'set content.proxy socks://127.0.0.1:9050/'
 c.aliases['no-proxy'] = 'set content.proxy none'
 c.aliases['readability'] = 'spawn --userscript readability-js'
 c.content.blocking.adblock.lists = [
@@ -88,6 +88,8 @@ config.set('downloads.prevent_mixed_content', True,
 config.set('content.javascript.enabled', False, 'https://piratebay.live/*')
 config.set('content.autoplay', True,
            'https://jingmatrix.github.io/private/chat/*')
+config.set('content.autoplay', True,
+           'https://www.facebook.com/*')
 config.set('content.notifications.enabled', False)
 # config.set('content.notifications.enabled', True, 'https://calendar.google.com/*')
 config.set('content.register_protocol_handler', True, 'https://calendar.google.com?cid=%25s')

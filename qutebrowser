@@ -13,7 +13,7 @@ export SWAYSOCK=/run/user/$(id -u)/sway-ipc.$(id -u).$(pgrep -x sway).sock
 # When no flag is passed at the start, treat all arguements together
 # as a search string.
 
-[[ $1 = -* ]] || search_text=$(echo -n $@)
+[[ $1 = -* ]] || search_text=$(echo -n $@ | tr '\n' ' ')
 
 # Check if a qutebrowser window is present
 _qb_window=$(swaymsg -r -t get_tree | grep '  "app_id": "org.qutebrowser.qutebrowser",$')

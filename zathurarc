@@ -23,6 +23,8 @@ map p exec 'zsh -c "qutebrowser \"$(wl-paste -p)\""'
 map [fullscreen] p exec 'zsh -c "qutebrowser \"$(wl-paste -p)\""'
 map m exec "/home/jing/Documents/Code/Shell/scripts/mathpix"
 map [fullscreen] m exec "/home/jing/Documents/Code/Shell/scripts/mathpix"
+map <C-s> exec 'sioyek "$FILE"'
+map [fullscreen] <C-s> exec 'sioyek "$FILE"'
 
 # appearance
 

@@ -44,9 +44,7 @@ f = open(share_id_data_file, 'w')
 f.write(share_id)
 f.close()
 if list_file and os.path.exists(download_path):
-    print(
-        'file list data exits in the directory' + share_file_list_data_file
-    )
+    print('file list data exits in the directory' + share_file_list_data_file)
     exit()
 else:
     from aligo import Aligo
@@ -59,15 +57,16 @@ else:
         file_list = ali.get_share_file_list(share_id=share_id,
                                             share_token=share_token,
                                             parent_file_id=file_id)
-        f = open(share_file_list_data_file + file_id + '.json', 'w', encoding='utf8')
+        f = open(share_file_list_data_file + file_id + '.json',
+                 'w',
+                 encoding='utf8')
         f.write('[' + ',\n'.join([
             json.dumps(asdict(file), indent=4, ensure_ascii=False).encode(
                 'utf8').decode() for file in file_list
         ]) + ']')
         f.close()
-        print(
-            'file list data saved to the directory ' + share_file_list_data_file
-        )
+        print('file list data saved to the directory ' +
+              share_file_list_data_file)
     else:
         download_url = ali.get_share_link_download_url(
             share_id=share_id, share_token=share_token,

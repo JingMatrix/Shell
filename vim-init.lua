@@ -206,22 +206,25 @@ dap.adapters.nlua = function(callback, config)
 	callback({ type = "server", host = config.host, port = config.port })
 end
 
+require("dap-python").setup("/usr/bin/python3")
+
 require("dapui").setup({
-	sidebar = {
+	{
 		elements = {
-			"repl",
-			"watches",
+			"scopes",
 			"breakpoints",
 			"stacks",
+			"watches",
 		},
 		size = 40,
 		position = "left",
 	},
-	tray = {
-		elements = { "scopes" },
+	{
+		elements = {
+			"repl",
+			"console",
+		},
 		size = 10,
 		position = "bottom",
 	},
 })
-
-require('dap-python').setup('/usr/bin/python3')

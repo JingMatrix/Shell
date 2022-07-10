@@ -36,14 +36,14 @@
 │       └── vim-snippets
 ├── syntax
 │   ├── opt
-│   │   └── mkdx
+│   │   └── vim-markdown
 │   └── start
 │       ├── aniseed
 │       ├── jsonc.vim
+│       ├── mkdx
 │       ├── nvim-dap-python
 │       ├── nvim-jdtls
 │       ├── scribble.vim
-│       ├── vim-markdown
 │       ├── vim-racket
 │       └── vimtex
 └── theme

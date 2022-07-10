@@ -184,10 +184,10 @@ function packepub {
 	fi
 	zip -q -rX $2 mimetype *
 	echo -n "\nPack as $2"
-	echo -n "\nOpen sigil?\t"
+	echo -n "\nOpen Sigil?\t"
 	if read -q; then
 		if [[ -z $TMUX ]]; then
-			kitty @ launch --cwd=current --keep-focus "less $1.error"
+			kitty @ launch --cwd=current --keep-focus less $1.error
 		else
 			tmux splitw "less $1.error"
 		fi
@@ -230,7 +230,7 @@ function repairepub {
 					filelist+=($file)
 				fi
 			done
-			echo 'setl errorformat=%WWARNING\	%f\	%l\	%c\	%m,%EERROR\	%f\	%l\	%c\	%m' >/tmp/epub.vim
+			echo 'setl errorformat=%WWARNING\	%f\	%l\	%c\	%m,%EERROR\	%f\	%l\	%c\	%m,%EFATAL\	%f\	%l\	%c\	%m' >/tmp/epub.vim
 			echo "cd $1" >>/tmp/epub.vim
 			echo "cf $1.error" >>/tmp/epub.vim
 			echo "copen" >>/tmp/epub.vim
