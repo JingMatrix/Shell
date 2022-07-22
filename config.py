@@ -99,9 +99,7 @@ config.set('content.javascript.clipboard', 'access', 'https://stackoverflow.com/
 config.set('content.javascript.clipboard', 'access', 'https://mathoverflow.net/questions/*')
 
 
-# try:
-#     from qutebrowser.api import message
-#     config.source('pyconfig/redirectors.py')
-
-# except ImportError:
-#     pass
+try:
+    config.source('pyconfig/redirectors.py')
+except ImportError:
+    pass
