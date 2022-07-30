@@ -1,0 +1,93 @@
+Preface,6
+	Brief user’s guide,7
+	Acknowledgments,7
+Contents,9
+Chapter 1 The Hahn–Banach Theorems. Introduction to the Theory of Conjugate Convex Functions,12
+	1.1 The Analytic Form of the Hahn–Banach Theorem: Extension of Linear Functionals,12
+	1.2 The Geometric Forms of the Hahn–Banach Theorem: Separation of Convex Sets,15
+	1.3 The Bidual . Orthogonality Relations,19
+	1.4 A Quick Introduction to the Theory of Conjugate Convex Functions,21
+	Comments on Chapter 1 	Exercises for Chapter 1,30
+Chapter 2 The Uniform Boundedness Principle and the Closed Graph Theorem,41
+	2.1 The Baire Category Theorem,41
+	2.2 The Uniform Boundedness Principle,42
+	2.3 The Open Mapping Theorem and the Closed Graph Theorem,44
+	2.4 Complementary Subspaces. Right and Left Invertibility of Linear Operators,47
+	Examples,48
+	2.5 Orthogonality Revisited,50
+	2.6 An Introduction to Unbounded Linear Operators. Definition of the Adjoint,53
+	2.7 A Characterization of Operators with Closed Range. A Characterization of Surjective Operators,56
+	Comments on Chapter 2 	Exercises for Chapter 2,59
+Chapter 3 Weak Topologies. Reflexive Spaces. Separable Spaces. Uniform Convexity,65
+	3.1 The Coarsest Topology for Which a Collection of Maps Becomes Continuous,65
+	3.2 Definition and Elementary Properties of theWeak Topologyσ(E,E*),67
+	3.3 Weak Topology, Convex Sets, and Linear Operators,70
+	3.4 TheWeak * Topology σ(E*,E),72
+	3.5 Reflexive Spaces,77
+	3.6 Separable Spaces,82
+	3.7 Uniformly Convex Spaces,86
+	Comments on Chapter 3 	Exercises for Chapter 3,89
+Chapter 4 Lp Spaces,98
+	4.1 Some Results about Integration That Everyone Must Know,99
+	4.2 Definition and Elementary Properties of Lp Spaces,100
+	4.3 Reflexivity. Separability. Dual of Lp ,104
+	4.4 Convolution and regularization,113
+	Mollifiers,117
+	4.5 Criterion for Strong Compactness in Lp ,120
+	Comments on Chapter 4 	Exercises for Chapter 4,127
+Chapter 5 Hilbert Spaces,140
+	5.1 Definitions and Elementary Properties. Projection onto a Closed Convex Set,140
+	5.2 The Dual Space of a Hilbert Space,144
+	5.3 The Theorems of Stampacchia and Lax–Milgram,147
+	5.4 Hilbert Sums. Orthonormal Bases,150
+	Comments on Chapter 5 	Exercises for Chapter 5,155
+Chapter 6 Compact Operators. Spectral Decomposition of Self-Adjoint Compact Operators,166
+	6.1 Definitions. Elementary Properties. Adjoint,166
+	6.2 The Riesz–Fredholm Theory,168
+	6.3 The Spectrum of a Compact Operator,171
+	6.4 Spectral Decomposition of Self-Adjoint Compact Operators,174
+	Comments on Chapter 6 	Exercises for Chapter 6,179
+Chapter 7 The Hille–Yosida Theorem,189
+	7.1 Definition and Elementary Properties of Maximal Monotone Operators,189
+	7.2 Solution of the Evolution Problem du,192
+	7.3 Regularity,199
+	7.4 The Self-Adjoint Case,201
+	Comments on Chapter 7,205
+Chapter 8 Sobolev Spaces and the Variational Formulation of Boundary Value Problems in One Dimension,208
+	8.1 Motivation,208
+	8.2 The Sobolev Space W1,p(I ),209
+	The Sobolev Spaces Wm,p,223
+	8.3 The Space W,224
+	The Dual Space of W,226
+	8.4 Some Examples of Boundary Value Problems,227
+	Steps C and D. Regularity of weak solutions. Recovery of classical solutions,228
+	8.5 The Maximum Principle,236
+	8.6 Eigenfunctions and Spectral Decomposition,238
+	Comments on Chapter 8 	Exercises for Chapter 8,242
+Chapter 9 Sobolev Spaces and the Variational Formulation of Elliptic Boundary Value Problems in N Dimensions,269
+	9.1 Definition and Elementary Properties of the Sobolev Spaces,269
+	The spaces Wm,p(),277
+	9.2 Extension Operators,278
+	9.3 Sobolev Inequalities,284
+	9.4 The Space W,293
+	9.5 Variational Formulation of Some Boundary Value Problems,297
+	9.6 Regularity ofWeak Solutions,304
+	9.7 The Maximum Principle,313
+	9.8 Eigenfunctions and Spectral Decomposition,317
+	Comments on Chapter 9,318
+Chapter 10 Evolution Problems: The Heat Equation and the Wave Equation,330
+	10.1 The Heat Equation: Existence, Uniqueness, and Regularity,330
+	10.2 The Maximum Principle,338
+	10.3 TheWave Equation,340
+	Comments on Chapter 10,345
+Chapter 11 Miscellaneous Complements,353
+	11.1 Finite-Dimensional and Finite-Codimensional Spaces,353
+	11.2 Quotient Spaces,357
+	11.3 Some Classical Spaces of Sequences,361
+	11.4 Banach Spaces over C: What Is Similar and What IsDifferent?,365
+Solutions of Some Exercises,375
+Problems,439
+Partial Solutions of the Problems,525
+Notation,587
+References,589
+Index,599

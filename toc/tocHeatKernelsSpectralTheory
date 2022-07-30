@@ -1,0 +1,48 @@
+Contents,5
+Preface,7
+d=10
+1 Introductory concepts,1
+	1.1 Some classical analysis,1
+	1.2 Quadratic forms,6
+	1.3 The Beurling-Deny conditions,12
+	1.4 Symmetric Markov semigroups,21
+	1.5 An inequality of Hardy,25
+	1.6 Compactness and spectrum,35
+	1.7 Some Sobolev inequalities,40
+	1.8 Definition of Schrodinger operators,48
+	1.9 The asymptotic eigenvalue distribution,52
+	Notes,55
+2 Logarithmic Sobolev inequalities,59
+	2.1 Contractivity properties,59
+	2.2 The fundamental inequalities,63
+	2.3 Examples and applications,71
+	2.4 Ultracontractivity, Sobolev and Nash inequalities,75
+	Notes,80
+3 Gaussian bounds on heat kernels,82
+	3.1 Introduction,82
+	3.2 The upper bound,83
+	3.3 The lower bound,91
+	3.4 Functions of an elliptic operator,99
+	Notes,105
+4 Boundary behaviour,107
+	4.1 Introduction,107
+	4.2 Transference to weighted L2 spaces,109
+	4.3 The harmonic oscillator,113
+	4.4 Rosen's lemma,117
+	4.5 Schrodinger operators,119
+	4.6 Elliptic operators on bounded regions,125
+	4.7 Singular elliptic operators,131
+	4.8 Potentials with local singularities,138
+	Notes,144
+5 Riemannian manifolds,146
+	5.1 Fundamental properties of manifolds,146
+	5.2 Regularity properties of the heat equation,149
+	5.3 The parabolic Harnack inequality,157
+	5.4 Potential theory,164
+	5.5 Upper bound on the heat kernel,167
+	5.6 Lower bounds on the heat kernel,173
+	5.7 Hyperbolic space,176
+	Notes,183
+References,187
+Notation index,195
+Index,196

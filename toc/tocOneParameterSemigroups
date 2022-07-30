@@ -1,0 +1,150 @@
+Preface,7
+Prelude,16
+Contents,12
+d=20
+I. Linear Dynamical Systems,1
+	1. Cauchy’s Functional Equation,2
+	2. Finite-Dimensional Systems: Matrix Semigroups,6
+	3. Uniformly Continuous Operator Semigroups,14
+	4. More Semigroups,24
+		a. Multiplication Semigroups on C0 (Ω),24
+		b. Multiplication Semigroups on Lp (Ω, µ),30
+		c. Translation Semigroups,33
+	5. Strongly Continuous Semigroups,36
+		a. Basic Properties,37
+		b. Standard Constructions,42
+	Notes,46
+II. Semigroups, Generators, and Resolvents,47
+	1. Generators of Semigroups and Their Resolvents,48
+	2. Examples Revisited,59
+		a. Standard Constructions,59
+		b. Standard Examples,65
+	3. Hille–Yosida Generation Theorems,70
+		a. Generation of Groups and Semigroups,71
+		b. Dissipative Operators and Contraction Semigroups,82
+		c. More Examples,89
+	4. Special Classes of Semigroups,96
+		a. Analytic Semigroups,96
+		b. Diﬀerentiable Semigroups,109
+		c. Eventually Norm-Continuous Semigroups,112
+		d. Eventually Compact Semigroups,117
+		e. Examples,120
+	5. Interpolation and Extrapolation Spaces for Semigroups,123
+             Simon Brendle
+		a. Sobolev Towers,124
+		b. Favard and Abstract Hölder Spaces,129
+		c. Fractional Powers,137
+	6. Well-Posedness for Evolution Equations,145
+	Notes,154
+III. Perturbation and Approximation of Semigroups,157
+	1. Bounded Perturbations,157
+	2. Perturbations of Contractive and Analytic Semigroups,169
+	3. More Perturbations,182
+		a. The Perturbation Theorem of Desch–Schappacher,182
+		b. Comparison of Semigroups,192
+		c. The Perturbation Theorem of Miyadera–Voigt,195
+		d. Additive Versus Multiplicative Perturbations,201
+	4. Trotter–Kato Approximation Theorems,205
+		a. A Technical Tool: Pseudoresolvents,206
+		b. The Approximation Theorems,209
+		c. Examples,214
+	5. Approximation Formulas,219
+		a. Chernoﬀ Product Formula,219
+		b. Inversion Formulas,231
+	Notes,236
+IV. Spectral Theory for Semigroups and Generators,238
+	1. Spectral Theory for Closed Operators,239
+	2. Spectrum of Semigroups and Generators,250
+		a. Basic Theory,250
+		b. Spectrum of Induced Semigroups,259
+		c. Spectrum of Periodic Semigroups,266
+	3. Spectral Mapping Theorems,270
+		a. Examples and Counterexamples,270
+		b. Spectral Mapping Theorems for Semigroups,275
+		c. Weak Spectral Mapping Theorem for Bounded Groups,283
+	4. Spectral Theory and Perturbation,289
+	Notes,293
+V. Asymptotics of Semigroups,295
+	1. Stability and Hyperbolicity for Semigroups,296
+		a. Stability Concepts,296
+		b. Characterization of Uniform Exponential Stability,299
+		c. Hyperbolic Decompositions,305
+	2. Compact Semigroups,308
+		a. General Semigroups,308
+		b. Weakly Compact Semigroups,312
+		c. Strongly Compact Semigroups,317
+	3. Eventually Compact and Quasi-compact Semigroups,329
+	4. Mean Ergodic Semigroups,337
+	Notes,345
+VI. Semigroups Everywhere,347
+	1. Semigroups for Population Equations,348
+		a. Semigroup Method for the Cell Equation,349
+		b. Intermezzo on Positive Semigroups,353
+		c. Asymptotics for the Cell Equation,358
+	Notes,361
+	2. Semigroups for the Transport Equation,361
+		a. Solution Semigroup for the Reactor Problem,361
+		b. Spectral and Asymptotic Behavior,364
+	Notes,367
+	3. Semigroups for Second-Order Cauchy Problems,367
+		a. The State Space X = X1B × X,369
+		b. The State Space X = X × X,372
+		c. The State Space X = X1C × X,374
+	Notes,382
+	4. Semigroups for Ordinary Diﬀerential Operators,383
+		a. Nondegenerate Operators on R and R+,384
+		b. Nondegenerate Operators on Bounded Intervals,388
+		c. Degenerate Operators,390
+		d. Analyticity of Degenerate Semigroups,400
+	Notes,403
+	5. Semigroups for Partial Diﬀerential Operators,404
+		a. Notation and Preliminary Results,405
+		b. Elliptic Diﬀerential Operators with Constant Coeﬃcients,408
+		c. Elliptic Diﬀerential Operators with Variable Coeﬃcients,411
+	Notes,419
+	6. Semigroups for Delay Diﬀerential Equations,419
+		a. Well-Posedness of Abstract Delay Diﬀerential Equations,420
+		b. Regularity and Asymptotics,424
+		c. Positivity for Delay Diﬀerential Equations,428
+	Notes,435
+	7. Semigroups for Volterra Equations,435
+		a. Mild and Classical Solutions,436
+		b. Optimal Regularity,442
+		c. Integro-Diﬀerential Equations,447
+	Notes,452
+	8. Semigroups for Control Theory,452
+		a. Controllability,456
+		b. Observability,466
+		c. Stabilizability and Detectability,468
+		d. Transfer Functions and Stability,473
+	Notes,476
+	9. Semigroups for Nonautonomous Cauchy Problems,477
+		a. Cauchy Problems and Evolution Families,477
+		b. Evolution Semigroups,481
+		c. Perturbation Theory,487
+		d. Hyperbolic Evolution Families in the Parabolic Case,492
+	Notes,496
+VII. A Brief History of the Exponential Function,497
+	1. A Bird’s-Eye View,497
+	2. The Functional Equation,500
+	3. The Diﬀerential Equation,502
+	4. The Birth of Semigroup Theory,506
+Appendix,509
+	A. A Reminder of Some Functional Analysis,509
+	B. A Reminder of Some Operator Theory,515
+	C. Vector-Valued Integration,522
+		a. The Bochner Integral,522
+		b. The Fourier Transform,526
+		c. The Laplace Transform,530
+Epilogue,531
+	Determinism: Scenes from the Interplay Between Metaphysics and Mathematics,531
+	1. The Mathematical Structure,533
+	2. Are Relativity, Quantum Mechanics, and Chaos Deterministic?,536
+	3. Determinism in Mathematical Science from Newton to Einstein,538
+	4. Developments in the Concept of Object from Leibniz to Kant,546
+	5. Back to Some Roots of Our Problem: Motion in History,549
+	6. Bibliography and Further Reading,553
+References,555
+List of Symbols and Abbreviations,577
+Index,580
+

@@ -1,0 +1,70 @@
+Abstract,3
+Contents,5
+
+1 What makes the Laplacian special?,7
+	1.1 Almost daily life problems,7
+	1.2 Why not another operator?,9
+	1.3 You need to solve ∆ϕ = λϕ !,9
+	1.4 A hard problem: understanding the eigenvalues,10
+	1.4.1 Direct problems,10
+	1.4.2 Inverse problem: Can you hear the shape of a drum?,12
+	1.5 An extremely hard problem: understanding the eigenfunctions,13
+
+2 Laplacian in Euclidean spaces,19
+	2.1 Interval,20
+	2.2 Rectangle,23
+	2.3 Disc,26
+	2.4 Harmonic functions,28
+
+3 A very brief review of differential and Riemannian geometry,35
+	3.1 Differentiable Manifolds,35
+	3.2 Differential forms,38
+	3.3 Riemannian Geometry,39
+
+4 The Laplacian on a Riemannian manifold,41
+	4.1 Definition,41
+	4.2 Examples,44
+	4.3 The Laplacian under conformal deformations (Exercise),45
+	4.4 The Laplacian commutes with isometries,46
+	4.5 The Laplacian and Riemannian coverings,46
+	4.6 The Laplacian on product manifolds,47
+	4.7 Green’s theorem,48
+6                                                                               CONTENTS
+
+
+5 Examples on manifolds,51
+	5.1 Circle,51
+	5.2 Torus,51
+	5.3 Rectangular prisms,53
+	5.4 Sphere,54
+	5.5 Klein Bottle (Exercise),60
+	5.6 Projective space (Exercise),60
+
+6 Heat Operator,61
+	6.1 Sobolev Spaces,61
+	6.2 Heat propagator,64
+	6.3 Basis of eigenfunctions on compact manifolds,67
+	6.4 Fundamental solution in Rn,70
+	6.5 Existence of the fundamental solution on compact manifolds,72
+	6.6 Fundamental solution in Riemannian coverings,78
+
+7 Eigenvalues,83
+	7.1 Self-adjoint extension of the Laplacian,83
+	7.2 Characterization,86
+	7.3 Domain monotonicity,88
+	7.4 Simple lower bound for λk,90
+	7.5 First eigenvalue: Faber Krahn inequality,91
+	7.6 Continuity of eigenvalues,93
+	7.7 Multiplicity of eigenvalues,96
+	7.8 High energy eigenvalue asymptotics,96
+	7.9 Isospectral manifolds,99
+
+8 Eigenfunctions,101
+	8.1 Local properties of Eigenfunctions,102
+	8.1.1 Gradient estimates,104
+	8.1.2 Positive mass on subsets of M,105
+	8.2 Global properties of eigenfunctions,105
+	8.2.1 L∞ -norms,105
+	8.2.2 Lp -norms,107
+	8.3 Zeros of eigenfunctions,108
+	8.4 Random wave conjecture,113

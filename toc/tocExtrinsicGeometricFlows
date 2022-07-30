@@ -1,0 +1,194 @@
+Contents,6
+d=6
+Preface,8
+d=1
+A Guide for the Reader,15
+	The heat equation (Chapter 1),15
+	Curve shortening flow (Chapters 2–4),15
+	Mean curvature flow (Chapters 5–14),16
+	Gauß curvature flows (Chapters 15–17),19
+	Fully nonlinear curvature flows (Chapters 18–20),20
+	Acknowledgments,20
+Suggested Course Outlines,23
+Notation and Symbols,25
+d=29
+Chapter 1. The Heat Equation,1
+	§1.1. Introduction,1
+	§1.2. Gradient flow,3
+	§1.3. Invariance properties,3
+	§1.4. The maximum principle,8
+	§1.5. Well-posedness,12
+	§1.6. Asymptotic behavior,14
+	§1.7. The Bernstein method,17
+	§1.8. The Harnack inequality,17
+	§1.9. Further monotonicity formulae,19
+	§1.10. Sharp gradient estimates,21
+	§1.11. Notes and commentary,29
+	§1.12. Exercises,33
+Chapter 2. Introduction to Curve Shortening,37
+	§2.1. Basic geometric theory of planar curves,38
+	§2.2. Curve shortening flow,42
+	§2.3. Graphs of functions,45
+	§2.4. The support function,48
+	§2.5. Short-time existence,50
+	§2.6. Smoothing,51
+	§2.7. Global existence,54
+	§2.8. Notes and commentary,59
+	§2.9. Exercises,59
+Chapter 3. The Gage–Hamilton–Grayson Theorem,63
+	§3.1. The avoidance principle,64
+	§3.2. Preserving embeddedness,66
+	§3.3. Huisken’s distance comparison estimate,68
+	§3.4. A curvature bound by distance comparison,74
+	§3.5. Grayson’s theorem,82
+	§3.6. Singularities of immersed solutions,88
+	§3.7. Notes and commentary,90
+	§3.8. Exercises,92
+Chapter 4. Self-Similar and Ancient Solutions,95
+	§4.1. Invariance properties,95
+	§4.2. Self-similar solutions,96
+	§4.3. Monotonicity formulae,102
+	§4.4. Ancient solutions,110
+	§4.5. Classiﬁcation of convex ancient solutions on S 1,116
+	§4.6. Notes and commentary,122
+	§4.7. Exercises,123
+Chapter 5. Hypersurfaces in Euclidean Space,125
+	§5.1. Parametrized hypersurfaces,125
+	§5.2. Alternative representations of hypersurfaces,143
+	§5.3. Dynamical properties,152
+	§5.4. Curvature flows,164
+	§5.5. Notes and commentary,169
+	§5.6. Exercises,169
+Chapter 6. Introduction to Mean Curvature Flow,173
+	§6.1. The mean curvature flow,173
+	§6.2. Invariance properties and self-similar solutions,176
+	§6.3. Evolution equations,179
+	§6.4. Short-time existence,184
+	§6.5. The maximum principle,189
+	§6.6. The avoidance principle,192
+	§6.7. Preserving embeddedness,196
+	§6.8. Long-time existence,197
+	§6.9. Weak solutions,206
+	§6.10. Notes and commentary,215
+	§6.11. Exercises,219
+Chapter 7. Mean Curvature Flow of Entire Graphs,223
+	§7.1. Introduction,223
+	§7.2. Preliminary calculations,224
+	§7.3. The Dirichlet problem,227
+	§7.4. A priori height and gradient estimates,228
+	§7.5. Local a priori estimates for the curvature,232
+	§7.6. Proof of Theorem 7.1,238
+	§7.7. Convergence to self-similarly expanding solutions,239
+	§7.8. Self-similarly shrinking entire graphs,240
+	§7.9. Notes and commentary,240
+	§7.10. Exercises,241
+Chapter 8. Huisken’s Theorem,243
+	§8.1. Pinching is preserved,244
+	§8.2. Pinching improves: The roundness estimate,246
+	§8.3. A gradient estimate for the curvature,256
+	§8.4. Huisken’s theorem,259
+	§8.5. Regularity of the arrival time,266
+	§8.6. Huisken’s theorem via width pinching,267
+	§8.7. Notes and commentary,274
+	§8.8. Exercises,278
+Chapter 9. Mean Convex Mean Curvature Flow,281
+	§9.1. Singularity formation,281
+	§9.2. Preserving pinching conditions,284
+	§9.3. Pinching improves: Convexity and cylindrical estimates,294
+	§9.4. A natural class of initial data,301
+	§9.5. A gradient estimate for the curvature,303
+	§9.6. Notes and commentary,308
+	§9.7. Exercises,309
+Chapter 10. Monotonicity Formulae,311
+	§10.1. Huisken’s monotonicity formula,311
+	§10.2. Hamilton’s Harnack estimate,319
+	§10.3. Notes and commentary,338
+	§10.4. Exercises,342
+Chapter 11. Singularity Analysis,345
+	§11.1. Local uniform convergence of mean curvature flows,345
+	§11.2. Neck detection,354
+	§11.3. The Brakke–White regularity theorem,363
+	§11.4. Huisken’s theorem revisited,366
+	§11.5. The structure of singularities,371
+	§11.6. Notes and commentary,389
+	§11.7. Exercises,394
+Chapter 12. Noncollapsing,395
+	§12.1. The inscribed and exscribed curvatures,395
+	§12.2. Differential inequalities for the inscribed and exscribed curvatures,402
+	§12.3. The Gage–Hamilton and Huisken theorems via noncollapsing,412
+	§12.4. The Haslhofer–Kleiner curvature estimate,415
+	§12.5. Notes and commentary,421
+	§12.6. Exercises,422
+Chapter 13. Self-Similar Solutions,425
+	§13.1. Shrinkers — an introduction,425
+	§13.2. The Gaußian area functional,426
+	§13.3. Mean convex shrinkers,431
+	§13.4. Compact embedded self-shrinking surfaces,443
+	§13.5. Translators — an introduction,452
+	§13.6. The Dirichlet problem for graphical translators,454
+	§13.7. Cylindrical translators,455
+	§13.8. Rotational translators,456
+	§13.9. The convexity estimates of Spruck, Sun, and Xiao,462
+	§13.10. Asymptotics,468
+	§13.11. X.-J. Wang’s dichotomy,469
+	§13.12. Rigidity of the bowl soliton,470
+	§13.13. Flying wings,477
+	§13.14. Bowloids,490
+	§13.15. Notes and commentary,492
+	§13.16. Exercises,499
+Chapter 14. Ancient Solutions,503
+	§14.1. Rigidity of the shrinking sphere,504
+	§14.2. A convexity estimate,509
+	§14.3. A gradient estimate for the curvature,511
+	§14.4. Asymptotics,513
+	§14.5. X.-J. Wang’s dichotomy,516
+	§14.6. Ancient solutions to curve shortening flow revisited,525
+	§14.7. Ancient ovaloids,531
+	§14.8. Ancient pancakes,533
+	§14.9. Notes and commentary,536
+	§14.10. Exercises,540
+Chapter 15. Gauß Curvature Flows,543
+	§15.1. Invariance properties and self-similar solutions,545
+	§15.2. Basic evolution equations,546
+	§15.3. Chou’s long-time existence theorem,548
+	§15.4. Differential Harnack estimates,558
+	§15.5. Firey’s conjecture,560
+	§15.6. Variational structure and entropy formulae,570
+	§15.7. Notes and commentary,578
+	§15.8. Exercises,578
+Chapter 16. The Affine Normal Flow,581
+	§16.1. Affine invariance,582
+	§16.2. Affine-renormalized solutions,586
+	§16.3. Convergence and the limit flow,590
+	§16.4. Self-similarly shrinking solutions are ellipsoids,590
+	§16.5. Convergence without affine corrections,593
+	§16.6. Notes and commentary,601
+	§16.7. Exercises,602
+Chapter 17. Flows by Superaffine Powers of the Gauß Curvature,607
+	§17.1. Bounds on diameter, speed, and inradius,607
+	§17.2. Convergence to a shrinking self-similar solution,613
+	§17.3. Shrinking self-similar solutions are round,618
+	§17.4. Notes and commentary,633
+	§17.5. Exercises,635
+Chapter 18. Fully Nonlinear Curvature Flows,639
+	§18.1. Introduction,639
+	§18.2. Symmetric functions and their differentiability properties,641
+	§18.3. Examples,650
+	§18.4. Short-time existence,655
+	§18.5. The avoidance principle,658
+	§18.6. Differential Harnack estimates,660
+	§18.7. Entropy estimates,664
+	§18.8. Alexandrov reﬂection,670
+	§18.9. Notes and commentary,682
+	§18.10. Exercises,683
+Chapter 19. Flows of Mean Curvature Type,687
+	§19.1. Convex hypersurfaces contract to round points,687
+	§19.2. Evolving nonconvex hypersurfaces,698
+	§19.3. Notes and commentary,708
+	§19.4. Exercises,709
+Chapter 20. Flows of Inverse-Mean Curvature Type,711
+	§20.1. Convex hypersurfaces expand to round inﬁnity,711
+	§20.2. Notes and commentary,723
+	§20.3. Exercises,724
+Bibliography,727
+Index,753

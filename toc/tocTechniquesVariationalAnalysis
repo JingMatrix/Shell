@@ -1,0 +1,58 @@
+Contents,9
+
+
+
+d=10
+1 Introduction,1
+	1.1 Introduction,1
+	1.2 Notation,2
+	1.3 Exercises,4
+
+2 Variational Principles,5
+	2.1 Ekeland Variational Principles,5
+	2.2 Geometric Forms of the Variational Principle,10
+	2.3 Applications to Fixed Point Theorems,15
+	2.4 Finite Dimensional Variational Principles,19
+	2.5 Borwein–Preiss Variational Principles,30
+
+3 Variational Techniques in Subdiﬀerential Theory,37
+	3.1 The Fréchet Subdiﬀerential and Normal Cone,39
+	3.2 Nonlocal Sum Rule and Viscosity Solutions,47
+	3.3 Local Sum Rules and Constrained Minimization,54
+	3.4 Mean Value Theorems and Applications,78
+	3.5 Chain Rules and Lyapunov Functions,87
+	3.6 Multidirectional MVI and Solvability,95
+	3.7 Extremal Principles,103
+d=9
+4 Variational Techniques in Convex Analysis,111
+	4.1 Convex Functions and Sets,111
+	4.2 Subdiﬀerential,117
+	4.3 Sandwich Theorems and Calculus,127
+	4.4 Fenchel Conjugate,134
+	4.5 Convex Feasibility Problems,140
+	4.6 Duality Inequalities for Sandwiched Functions,150
+	4.7 Entropy Maximization,157
+d=8
+5 Variational Techniques and Multifunctions,165
+	5.1 Multifunctions,165
+	5.2 Subdiﬀerentials as Multifunctions,188
+	5.3 Distance Functions,214
+	5.4 Coderivatives of Multifunctions,220
+	5.5 Implicit Multifunction Theorems,229
+d=7
+6 Variational Principles in Nonlinear Functional Analysis,243
+	6.1 Subdiﬀerential and Asplund Spaces,243
+	6.2 Nonconvex Separation Theorems,259
+	6.3 Stegall Variational Principles,266
+	6.4 Mountain Pass Theorem,274
+	6.5 One-Perturbation Variational Principles,280
+
+d=6
+7 Variational Techniques in the Presence of Symmetry,291
+	7.1 Nonsmooth Functions on Smooth Manifolds,291
+	7.2 Manifolds of Matrices and Spectral Functions,299
+	7.3 Convex Spectral Functions,316
+
+References,339
+
+Index,353

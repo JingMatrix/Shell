@@ -1,0 +1,158 @@
+Contents,6
+d=10
+Chapter 1 Riemannian Geometry,1
+	§1. Introduction to Differential Geometry,1 
+		1.1 Tangent Space,2 
+		1.2 Connection,3 
+		1.3 Curvature,3 
+	§2. Riemannian Manifold,4 
+		2.1 Metric Space,5 
+		2.2 Riemannian Connection,6 
+		2.3 Sectional Curvature. Ricci Tensor. Scalar Curvature,6 
+		2.4 Parallel Displacement. Geodesic,8 
+	§3. Exponential Mapping,9 
+	§4. The Hopf-Rinow Theorem,13 
+	§5. Second Variation of the Length Integral,15 
+		5.1 Existence of Tubular Neighborhoods,15 
+		5.2 Second Variation of the Length Integral,15 
+		5.3 Myers'Theorem,16 
+	§6. Jacobi Field,17 
+	§7. The Index Inequality,18 
+	§8. Estimates on the Components of the Metric Tensor,20 
+	§9. Integration over Riemannian Manifolds,23 
+	§10. Manifold with Boundary,25 
+		10.1. Stokes* Formula,26 
+	§11. Harmonic Forms,26 
+		11.1. Oriented Volume Element,26 
+		11.2. Laplacian,27 
+		11.3. Hodge Decomposition Theorem,29 
+		11.4. Spectrum,31 
+Chapter 2 Sobolev Spaces,32
+	§1. First Definitions,32 
+	§2. Density Problems,33 
+	§3. Sobolev Imbedding Theorem,35 
+	§4. Sobolev's Proof,37 
+	§5. Proof by Gagliardo and Nirenberg,38 
+	§6. New Proof,39 
+	§7. Sobolev Imbedding Theorem for Riemannian Manifolds,44 
+	§8. Optimal Inequalities,50 
+	§9. Sobolev's Theorem for Compact Riemannian Manifolds with Boundary,50 
+	§10. The Kondrakov Theorem,53 
+	§11. Kondrakov's Theorem for Riemannian Manifuius,55 
+	§12. Examples,56 
+	§13. Improvement of the Best Constants,57 
+	§14. The Case of the Sphere,61 
+	§15. The Exceptional Case of the Sobolev Imbedding Theorem,63 
+	§16. Moser's Results,65 
+	§17. The Case of the Riemannian Manifolds,67 
+	§18. Problems of Traces,69 
+Chapter 3 Background Material,70
+	§1. Differential Calculus,70 
+		1.1. The Mean Value Theorem,71 
+		1.2. Inverse Function Theorem,72 
+		1.3. Cauchy's Theorem,72 
+	§2. Four Basic Theorems of Functional Analysis,73 
+		2.1. Hahn-Banach Theorem,73 
+		2.2. Open Mapping Theorem,73 
+		2.3 The Banach-Steinhaus Theorem,73 
+		2.4. Ascoli's Theorem,74 
+	§3. Weak Convergence. Compact Operators,74 
+		3.1. Banach's Theorem,74 
+		3.2. The Leray-Schauder Theorem,74 
+		3.3. The Fredholm Theorem,75 
+	§4. The Lebesgue Integral,75 
+		4.1. Dominated Convergence Theorem,76 
+		4.2. Fatou's Theorem,77 
+		4.3. The Second Lebesgue Theorem,77 
+		4.4. Rademacher's Theorem,77 
+		4.5. Fubini's Theorem,78 
+	§5. The Lp Spaces,78 
+		5.1. Regularization,80 
+		5.2. Radon's Theorem,81 
+	§6. Elliptic Differential Operators,83 
+		6.1. Weak Solution,84 
+		6.2. Regularity Theorems,85 
+		6.3. The Schauder Interior Estimates,88 
+	§7. Inequalities,88 
+		7.1. Holder's Inequality,88 
+		7.2. Clarkson's Inequalities,89 
+		7.3. Convolution Product,89 
+		7.4. The Calderon-Zygmund Inequality,90 
+		7.5. Korn-Lichtenstein Theorem,90 
+		7.6. Interpolation Inequalities,93 
+	§6. Maximum Principle,96 
+		8.1. Hopf's Maximum Principle,96 
+		8.2. Uniqueness Theorem,96 
+		8.3. Maximum Principle for Nonlinear Elliptic Operator of Order Two,97 
+		8.4. Generalized Maximum Principle,98 
+	§9. Best Constants,99 
+		9.1. Application to Sobolev Spaces,100 
+Chapter 4 Green's Function for Riemannian Manifolds,101
+	§1. Linear Elliptic Equations,101 
+		1.1. First Nonzero Eigenvalue A of A,101 
+		1.2. Existence Theorem for the Equation A<p =/,104 
+	§2. Green's Function of the Laplacian,106 
+		2.1. Parametrix,106 
+		2.2. Green's Formula,107 
+		2.3. Green's Function for Compact Manifolds,108 
+		2.4. Green's Function for Compact Manifolds with Boundary,112 
+Chapter 5 The Methods,115
+	§1. Yamabe's Equation,115 
+		1.1. Yamabe's Method,115 
+	§2. Berger's Problem,119 
+		2.1. The Positive Case,121 
+	§3. Nirenberg's Problem,122 
+		3.1. A Nonlinear Theorem of Fredholm,122 
+		3.2. Open Questions,124 
+Chapter 6 The Scalar Curvature,125
+	§1. The Yamabe Problem,125 
+		1.1. Yamabe's Functional,126 
+		1.2. Yamabe's Theorem,126 
+	§2. The Positive Case,129 
+		2.1. Geometrical Applications,132 
+		2.2. Open Questions,134 
+	§3. Other Problems,135 
+		3.1. Topological Meaning of the Scalar Curvature,135 
+		3.2. Kazdan and Warner's Problem,136 
+Chapter 7 Complex Monge-Ampere Equation on Compact Kahler Manifolds,139
+	§1. Kahler Manifolds,139 
+		1.1 First Chern Class,140 
+		1.2. Change of Kahler Metrics. Admissible Functions,141 
+	§2. Calabi's Conjecture,142 
+	§3. Einstein-Kahler Metrics,143 
+	§4. Complex Monge-Ampere Equation,144 
+		4.1. About Regularity,144 
+		4.2. About Uniqueness,144 
+	§5. Theorem of Existence (the Negative Case),145 
+	§6. Existence of Kahler-Einstein Metric,146 
+	§7. Theorem of Existence (the Null Case),147 
+	§8. Proof of Calabi's Conjecture,150 
+	§9. The Positive Case,150 
+	§10. A Priori Estimate for A<p,150 
+	§11. A Priori Estimate for the Third Derivatives of Mixed Type,153 
+	§12. The Method of Lower and Upper Solutions,154 
+Chapter 8 Monge-Ampere Equations,157
+	§1. Monge-Ampere Equations on Bounded Domains of R^n,157 
+		1.1. The Fundamental Hypothesis,157 
+		1.2. Extra Hypothesis,158 
+		1.3. Theorem of Existence,159 
+	§2. The Estimates,160 
+		2.1. The First Estimates,160 
+		2.2. C2«Estimate,161 
+		2.3. C3-Estimate,164 
+	§3. The Radon Measure Jt(<p),169 
+	§4. The Functional J(q>),174 
+		4.1. Properties of J(<p),174 
+	§5. Variational Problem,179 
+	§6. The Complex Monge-Ampere Equation,182 
+		6.1. Bedford's and Taylor's Results,182 
+		6.2. The Measure 9OT(<p),183 
+		6.3. The Functional 3(<p),183 
+		6.4. Some Properties of 3(<p),183 
+	§7. The Case of Radially Symmetric Functions,184 
+		7.1. Variational Problem,185 
+		7.2. An Open Problem,186 
+	§8. A New Method,186 
+Bibliography,189 
+Subject Index,199 
+Notation,203 

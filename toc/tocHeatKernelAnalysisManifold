@@ -1,0 +1,144 @@
+Contents,8
+
+Preface,12
+d=19
+Chapter 1. Laplace operator and the heat equation in Rn,1
+	1.1. Historical background,1
+	1.2. The Green formula,2
+	1.3. The heat equation,4
+	Notes,13
+
+Chapter 2. Function spaces in Rn,15
+	2.1. Spaces C k and Lp,15
+	2.2. Convolution and partition of unity,17
+	2.3. Approximation of integrable functions by smooth ones,20
+	2.4. Distributions,23
+	2.5. Approximation of distributions by smooth functions,28
+	2.6. Weak derivatives and Sobolev spaces,34
+	2.7. Heat semigroup in Rn,40
+	Notes,47
+
+Chapter 3. Laplace operator on a Riemannian manifold,49
+	3.1. Smooth manifolds,49
+	3.2. Tangent vectors,53
+	3.3. Riemannian metric,56
+	3.4. Riemannian measure,59
+	3.5. Divergence theorem,64
+	3.6. Laplace operator and weighted manifolds,67
+	3.7. Submanifolds,70
+	3.8. Product manifolds,72
+	3.9. Polar coordinates in Rn , Sn , Hn,74
+	3.10. Model manifolds,80
+	3.11. Length of paths and the geodesic distance,85
+	3.12. Smooth mappings and isometries,91
+	Notes,95
+
+Chapter 4. Laplace operator and heat equation in L2 (M ),97
+	4.1. Distributions and Sobolev spaces,97
+	4.2. Dirichlet Laplace operator and resolvent,103
+	4.3. Heat semigroup and L2 -Cauchy problem,112
+	Notes,122
+
+Chapter 5. Weak maximum principle and related topics,123
+	5.1. Chain rule in W01,123
+	5.2. Chain rule in W 1,127
+	5.3. Markovian properties of resolvent and the heat semigroup,130
+	5.4. Weak maximum principle,135
+	5.5. Resolvent and the heat semigroup in subsets,143
+	Notes,149
+
+Chapter 6. Regularity theory in Rn,151
+	6.1. Embedding theorems,151
+	6.2. Two technical lemmas,159
+	6.3. Local elliptic regularity,162
+	6.4. Local parabolic regularity,170
+	Notes,181
+
+Chapter 7. The heat kernel on a manifold,183
+	7.1. Local regularity issues,183
+	7.2. Smoothness of the semigroup solutions,190
+	7.3. The heat kernel,198
+	7.4. Extension of the heat semigroup,201
+	7.5. Smoothness of the heat kernel in t, x, y,208
+	7.6. Notes,215
+
+Chapter 8. Positive solutions,217
+	8.1. The minimality of the heat semigroup,217
+	8.2. Extension of resolvent,219
+	8.3. Strong maximum/minimum principle,222
+	8.4. Stochastic completeness,231
+	Notes,241
+
+Chapter 9. Heat kernel as a fundamental solution,243
+	9.1. Fundamental solutions,243
+	9.2. Some examples,248
+	9.3. Eternal solutions,259
+	Notes,263
+
+Chapter 10. Spectral properties,265
+	10.1. Spectra of operators in Hilbert spaces,265
+	10.2. Bottom of the spectrum,271
+	10.3. The bottom eigenfunction,275
+	10.4. The heat kernel in relatively compact regions,277
+	10.5. Minimax principle,284
+	10.6. Discrete spectrum and compact embedding theorem,287
+	10.7. Positivity of λ1,291
+	10.8. Long time asymptotic of log pt,292
+	Notes,293
+Chapter 11. Distance function and completeness,295
+	11.1. The notion of completeness,295
+	11.2. Lipschitz functions,296
+	11.3. Essential self-adjointness,301
+	11.4. Stochastic completeness and the volume growth,303
+	11.5. Parabolic manifolds,313
+	11.6. Spectrum and the distance function,317
+	Notes,319
+Chapter 12. Gaussian estimates in the integrated form,321
+	12.1. The integrated maximum principle,321
+	12.2. The Davies-Gaﬀney inequality,324
+	12.3. Upper bounds of higher eigenvalues,327
+	12.4. Semigroup solutions with a harmonic initial function,331
+	12.5. Takeda’s inequality,333
+	Notes,339
+Chapter 13. Green function and Green operator,341
+	13.1. The Green operator,341
+	13.2. Superaveraging functions,348
+	13.3. Local Harnack inequality,351
+	13.4. Convergence of sequences of α-harmonic functions,355
+	13.5. The positive spectrum,357
+	13.6. Green function as a fundamental solution,359
+	Notes,362
+Chapter 14. Ultracontractive estimates and eigenvalues,365
+	14.1. Ultracontractivity and heat kernel bounds,365
+	14.2. Faber-Krahn inequalities,367
+	14.3. The Nash inequality,368
+	14.4. The function classes L and Γ,371
+	14.5. Faber-Krahn implies ultracontractivity,380
+	14.6. Ultracontractivity implies a Faber-Krahn inequality,381
+	14.7. Lower bounds of higher eigenvalues,384
+	14.8. Faber-Krahn inequality on direct products,386
+	Notes,388
+Chapter 15. Pointwise Gaussian estimates I,391
+	15.1. L2 -mean value inequality,391
+	15.2. Faber-Krahn inequality in balls,397
+	15.3. The weighted L2 -norm of heat kernel,399
+	15.4. Faber-Krahn inequality in unions of balls,402
+	15.5. Oﬀ-diagonal upper bounds,404
+	15.6. Relative Faber-Krahn inequality and Li-Yau upper bounds,409
+	Notes,414
+Chapter 16. Pointwise Gaussian estimates II,417
+	16.1. The weighted L2 -norm of Pt f,417
+	16.2. Gaussian upper bounds of the heat kernel,422
+	16.3. On-diagonal lower bounds,424
+	16.4. Epilogue: alternative ways of constructing the heat kernel,428
+	Notes and further references,429
+Appendix A. Reference material,431
+	A.1. Hilbert spaces,431
+	A.2. Weak topology,432
+	A.3. Compact operators,434
+	A.4. Measure theory and integration,434
+	A.5. Self-adjoint operators,444
+	A.6. Gamma function,455
+Bibliography,457
+Some notation,475
+Index,477

@@ -1,0 +1,156 @@
+FOREWORD,3
+PREFACE,4
+CONTENTS,6
+d=10
+Volume I Lectures on the Calculus of Variations,1
+	Preamble GENERALITIES AND TYPICAL PROBLEMS,2 
+		1. Introduction,2 
+		2. The Place of the Calculus of Variations in Relation to the Rest of Mathematics and to Space Science,3 
+		3. Statement of the Simplest Problem and Some Cognate Matters,4 
+		4. Extremals in Some Classical Problems,7 
+		5. Solutions of the Preceding Problems (a), (b), (c),9 
+		6. The Euler-Lagrange Lemma and Schwartz Distributions,16 
+		7. Alternative Forms of the Lemma,18 
+		8. Proof of the Main Form of the Lemma,19 
+		9. First Variation, Euler Equation, Transversality,21 
+		10. Perron's Paradox,22 
+	Chapter I THE METHOD OF GEODESIC COVERINGS,24 
+		11. Introduction,24 
+		12. The Variational Algorithm of Huygens,25 
+		13. A Link with Elementary Convexity,27 
+		14. Reappearance of the Euler Equation,30 
+		15. The Theorem of Malus,32 
+		16. Sufficient Conditions for Independence of the Hilbert Integral,34 
+		17. Invariance Properties and an Envelope Theorem,35 
+		18. General Comments and the Applications to Plane Problems,38 
+		19. Background on Fix-Points and on Existence Theorems for  Differential Equations and Implicit Functions,40 
+	Chapter II DUALITY AND LOCAL EMBEDDING,46 
+		20. Introduction,46 
+		21. The Legendre Transformation,46 
+		22. The Hamiltonian and its Properties,47 
+		23. Cauchy Characteristics,49 
+		24. Duality and the Standard Hamiltonian in the Parametric Case,50 
+		25. Other Admissible Parametric Hamiltonians,53 
+		26. Local Passage from Parametric to Nonparametric Case,55 
+		27. The Embedding of Small Extremals in Small Tubes,56 
+		28. Local Existence Theory for Nonparametric Variational Problems and for Ordinary Second Order Differential Equations,58 
+		29. Local Parametric Existence Theory for the Elliptic Case,64 
+	Chapter III EMBEDDING IN THE LARGE,70 
+		30. Introduction,70 
+		31. First and Second Variations and Transversality,71 
+		32. The Second Variation Fallacy,73 
+		33. The Secondary Hamiltonian,74 
+		34. Geometrical Interpretation of Exactness,76 
+		35. Distinguished Families,78 
+		36. Canonical Embeddings and Focal Points,81 
+		37. The Jacobi Theory of Conjugate Points,83 
+		38. The Index of Stability of an Extremal,88 
+		39. The Second Stage of the Morse Theory,92 
+	Chapter IV HAMILTONIANS IN THE LARGE, CONVEXITY, INEQUALITIES AND FUNCTIONAL ANALYSIS,94 
+		40. Introduction,94 
+		41. Center of Gravity and Dispersal Zone,95 
+		42. Convexity and the Hahn-Banach Theorem,98 
+		43. The Conceptual Heritage of Georg Cantor,101 
+		44. Duality of Convex Figures,105 
+		45. Duality of Convex Functions,108 
+		46. Hamiltonians in the Large and Reformulated Variational Theory,110 
+		47. Remarks on Classical Inequalities,112 
+		48. The Dual Unit Ball of a Functional Space,113 
+		49. The Riesz Representation,118 
+	Chapter V EXISTENCE THEORY AND ITS CONSEQUENCES,122 
+		50. Introduction,122 
+		51. The Hilbert Construction and Some of its Consequences in the Standard Parametric Case,123 
+		52. The Parametric Theory of Conjugate Points and the Parametric Jacobi Condition,128 
+		53. The Tonelli-Caratheodory Unicity Theorem,133 
+		54. Absolute and Homotopic Minima on В··i-Compact Domains and Manifolds,143 
+		55. Toward an Automatic Existence Theory,147 
+		56. First Stage of an Abstract Approach: Semicontinuity in а В··i-Compact Set ..-,151 
+		57, 58, 59,154 
+	Chapter VI GENERALIZED CURVES AND FLOWS,155 
+		60. Introduction,155 
+		61. Intuitive Background,156 
+		62. A Question of Semantics,160 
+		63. Parametric Curves in the Calculus of Variations,161 
+		64. Admissible Curves as Elements of a Dual Space,163 
+		65. A Human Analogy Л,65 
+		66. Generalized Curves and Flows, and Their Boundaries,166 
+		67. Parametric Representation of Generalized Curves,171 
+		68. Existence of a Minimum Л,78 
+		69. The Nature of the Generalized Solutions,179 
+	Appendix I SOME FURTHER BASIC NOTIONS OF CONVEXITY AND INTEGRATION,184 
+		70. Introduction,184 
+		71. Separation Theorem for a Convex Cone in &0(A),184 
+		72. The Lemma of the Insufficient Radius,185 
+		73. The Dual Separation Theorem,187 
+		74. A Localization Lemma for а В··i-Compact Set,188 
+		75. Riesz Measures,189 
+		76. Euclidean Approximation to a Banach Vector Function,190 
+		77. An Elementary Norm Estimate,190 
+		78. Vector Integration,191 
+		79. Closure of a Convex Hull,192 
+	Appendix II THE VARIATIONAL SIGNIFICANCE AND STRUCTURE OF GENERALIZED FLOWS,194 
+		80. Introduction,194 
+		81. Polygonal Flows,195 
+		82. The Basis of Modern Duality in the Calculus of Variations,197 
+		83. The Variational Convexity Principle in its Elementary Form,197 
+		84. A First Extension,198 
+		85. The Enlargement Principle and the First Closure Theorem for Generalized Flows,199 
+		86. The Extension to Consistent Flows and Boundaries,200 
+		87. Preliminary Information on Mixtures and on the Lagrange Representation,202 
+		88. Further Comments on Measures, Mixtures, and Consistent Flows,204 
+		89. The Lagrange Representation of a Consistent Flow,209 
+Volume II Optimal Control Theory,213
+	Preamble THE NATURE OF CONTROL PROBLEMS,214 
+		1. Introduction,214 
+		2. The Multiplier Rule,215 
+		3. Optimal Control and the Lagrange Problem,217 
+		4. The Sad Facts of Life,218 
+		5. A First Revision of the Euler Equation and of the Multiplier Rule,220 
+		6. The Weierstrass Condition, Transversality, Hamiltonians and a Strong Revised Euler Recipe,222 
+		7. The Classical Constrained Hamiltonians,224 
+		8. Controls and the Maximum Principle,228 
+		9. The Maximum Principle and Its Special Cases as Definitions,231 
+		10. Solutions of Two Elementary Time-Optimal Problems,233 
+	Chapter I NAIVE OPTIMAL CONTROL THEORY,243 
+		11. Introduction,243 
+		12. Discrete Time and Programming,244 
+		13. Some Basic Remarks on Linear Differential Equations,247 
+		14. Suspected Solutions of the Simplest Time-Optimal Problems,250 
+		15. Unicity and Optimality,251 
+		16. Two Dimensional Problems: Switching Times and Basic  Constructions,253 
+		17. Discussion of Case (a),256 
+		18. Discussion of Case (bx),257 
+		19. Discussion of Case (b2),259 
+	Chapter II THE APPLICATION OF STANDARD VARIATIONAL METHODS TO OPTIMAL CONTROL,261 
+		20. Introduction,261 
+		21. Trajectories and Lines of Flight,263 
+		22. The Synchronization Condition and the Notions of Standard Projection and Descriptive Map,266 
+		23. The Notion of a Spray of Flights,267 
+		24. The Hilbert Independence Integral,269 
+		25. Preliminary Lemmas,272 
+		26. The Theorem of Malus,274 
+		27. Chains of Flights,275 
+		28. Piecing Together Fragments of Curves,276 
+		29. The Fundamental Theorem and Its Consequences,279 
+	Chapter III GENERALIZED OPTIMAL CONTROL,282 
+		30. Introduction,282 
+		31. The Preproblem,285 
+		32. More Semantics,287 
+		33. Conventional and Chattering Controls in Differential Equations,289 
+		34. The Halfway Principle and the Filippov Lemma,292 
+		35. Unicity and a Key Lemma for Approximations,297 
+		36. Control Measures,300 
+		37. A Proper Setting for Optimal Control Problems,304 
+		38. Hilbert's Principle of Minimum •,307 
+		39. Pontrjagin's Maximum Principle,308 
+		39A. The Perturbation,312 
+		39B* Reduction to a Separation Theorem,316 
+		39C. An Equivalent Form of the Separation,318 
+		39D. Proof of the Maximum Principle,319 
+		39E. Epilogue,321 
+d=7
+REFERENCES,325
+d=6
+ADDITIONAL REFERENCES,327
+d=3
+INDEX,333 

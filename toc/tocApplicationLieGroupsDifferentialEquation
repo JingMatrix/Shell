@@ -1,0 +1,195 @@
+Preface to First Edition,5
+Preface to Second Edition,7 
+Acknowledgments,9 
+Table of Contents,11
+Introduction,17 
+Notes to the Reader,25 
+d=28
+CHAPTER 1 Introduction to Lie Groups,1 
+	1.1. Manifolds,2 
+		Change of Coordinates,6 
+		Maps Between Manifolds,7 
+		The Maximal Rank Condition,7 
+		Submanifolds,8 
+		Regular Submanifolds,11 
+		Implicit Submanifolds,11 
+		Curves and Connectedness,12 
+	1.2. Lie Groups,13 
+		Lie Subgroups,17 
+		Local Lie Groups,18 
+		Local Transformation Groups,20 
+		Orbits,22 
+	1.3. Vector Fields,24 
+		Flows,27 
+		Action on Functions,30 
+		Differentials,32 
+		Lie Brackets,33 
+		Tangent Spaces and Vectors Fields on Submanifolds,37 
+		Frobenius' Theorem,38 
+	1.4. Lie Algebras,42 
+		One-Parameter Subgroups,44 
+		Subalgebras,46 
+		The Exponential Map,48 
+		Lie Algebras of Local Lie Groups,48 
+		Structure Constants,50 
+		Commutator Tables,50 
+		Infmitesimal Group Actions,51 
+	1.5. Differential Forms,53 
+		PuU-Back and Change of Coordinates,56 
+		Interior Products,56 
+		The Differential,57 
+		The de Rham Complex,58 
+		Lie Derivatives,60 
+		Homotopy Operators,63 
+		Integration and Stokes' Theorem,65 
+		Notes,67 
+		Exercises,69 
+CHAPTER 2 Symmetry Groups of Differential Equations,75 
+	2.1. Symmetries of Algebraic Equations,76 
+		Invariant Subsets,76 
+		Invariant Functions,77 
+		Infinitesimal Invariance,79 
+		Local Invariance,83 
+		Invariants and Functional Dependence,84 
+		Methods for Constructing Invariants,87 
+	2.2. Groups and Differential Equations,90 
+	2.3. Prolongation,94 
+		Systems of Differential Equations,96 
+		Prolongation of Group Actions,98 
+		Invariance of Differential Equations,100 
+		Prolongation of Vector Fields,101 
+		Infinitesimal Invariance,103 
+		The Prolongation Formula,105 
+		Total Derivatives,108 
+		The General Prolongation Formula,110 
+		Properties of Prolonged Vector Fields,115 
+		Characteristics of Symmetries,115 
+	2.4. Calculation of Symmetry Groups,116 
+	2.5. Integration of Ordinary Differential Equations,130 
+		First Order Equations,131 
+		Higher Order Equations,137 
+		Differential Invariants,139 
+		Multi-parameter Symmetry Groups,145 
+		Solvable Groups,151 
+		Systems of Ordinary Differential Equations,154 
+	2.6. Nondegeneracy Conditions for Differential Equations,157 
+		Local Solvability,157 
+		Invariance Criteria,161 
+		The Cauchy-Kovalevskaya Theorem,162 
+		Characteristics,163 
+		Normal Systems,166 
+		Prolongation of Differential Equations,166 
+		Notes,172 
+		Exercises,176 
+CHAPTER 3 Group-Invariant Solutions,183 
+	3.1. Construction of Group-Invariant Solutions,185 
+	3.2. Examples of Group-Invariant Solutions,190 
+	3.3. Classification of Group-Invariant Solutions,199 
+		The Adjoint Representation,199 
+		Classification of Subgroups and Subalgebras,203 
+		Classification of Group-Invariant Solutions,207 
+	3.4. Quotient Manifolds,209 
+		Dimensional Analysis,214 
+	3.5. Group-Invariant Prolongations and Reduction,217 
+		Extended Jet Bundles,218 
+		Differential Equations,222 
+		Group Actions,223 
+		The Invariant Jet Space,224 
+		Connection with the Quotient Manifold,225 
+		The Reduced Equation,227 
+		Local Coordinates,228 
+		Notes,235 
+		Exercises,238 
+CHAPTER 4 Symmetry Groups and Conservation Laws,242 
+	4.1. The Calculus of Variations,243 
+		The Variational Derivative,244 
+		Null Lagrangians and Divergences,247 
+		Invariance of the Euler Operator,249 
+	4.2. Variational Symmetries,252 
+		Infinitesimal Criterion of Invariance,253 
+		Symmetries of the Euler-Lagrange Equations,255 
+		Reduction of Order,257 
+	4.3. Conservation Laws,261 
+		Trivial Conservation Laws,264 
+		Characteristics of Conservation Laws,266 
+	4.4. Noether's Theorem,272 
+		Divergence Symmetries,278 
+		Notes,281 
+		Exercises,283 
+CHAPTER 5 Generalized Symmetries,286 
+	5.1. Generalized Symmetries of Differential Equations,288 
+		Differential Functions,288 
+		Generalized Vector Fields,289 
+		Evolutionary Vector Fields,291 
+		Equivalence and Trivial Symmetries,292 
+		Computation of Generalized Symmetries,293 
+		Group Transformations,297 
+		Symmetries and Prolongations,300 
+		The Lie Bracket,301 
+		Evolution Equations,303 
+	5.2. Recursion Operators, Master Symmetries and Formal Symmetries,304 
+		Frechet Derivatives,307 
+		Lie Derivatives of Differential Operators,308 
+		Criteria for Recursion Operators,310 
+		The Korteweg-de Vries Equation,312 
+		Master Symmetries,315 
+		Pseudo-differential Operators,318 
+		Formal Symmetries,322 
+	5.3. Generalized Symmetries and Conservation Laws,328 
+		Adjoints of Differential Operators,328 
+		Characteristics of Conservation Laws,330 
+		Variational Symmetries,331 
+		Group Transformations,333 
+		Noether's Theorem,334 
+		Self-adjoint Linear Systems,336 
+		Action of Symmetries on Conservation Laws,341 
+		Abnormal Systems and Noether's Second Theorem,342 
+		Formal Symmetries and Conservation Laws,346 
+	5.4. The Variational Complex,350 
+		The D-Complex,351 
+		Vertical Forms,353 
+		Total Derivatives of Vertical Forms,355 
+		Functional and Functional Forms,356 
+		The Variational Differential,361 
+		Higher Euler Operators,365 
+		The Total Homotopy Operator,368 
+		Notes,374 
+		Exercises,379 
+CHAPTER 6 Finite-Dimensional Hamiltonian Systems,389 
+	6.1. Poisson Brackets,390 
+		Hamiltonian Vector Fields,392 
+		The Structure Functions,393 
+		The Lie-Poisson Structure,396 
+	6.2. Symplectic Structures and Foliations,398 
+		The Correspondence Between One-Forms and Vector Fields,398 
+		Rank of a Poisson Structure,399 
+		Symplectic Manifolds,400 
+		Maps Between Poisson Manifolds,401 
+		Poisson Submanifolds,402 
+		Darboux' Theorem,404 
+		The Co-adjoint Representation,406 
+	6.3. Symmetries, First Integrals and Reduction of Order,408 
+		First Integrals,408 
+		Hamiltonian Symmetry Groups,409 
+		Reduction of Order in Hamiltonian Systems,412 
+		Reduction Using Multi-parameter Groups,416 
+		Hamiltonian Transformation Groups,418 
+		The Momentum Map,420 
+		Notes,427 
+		Exercises,428 
+CHAPTER 7 Hamiltonian Methods for Evolution Equations,433 
+	7.1. Poisson Brackets,434 
+		The Jacobi Identity,436 
+		Functional Multi-vectors,439 
+	7.2. Symmetries and Conservation Laws,446 
+		Distinguished Functional,446 
+		Lie Brackets,446 
+		Conservation Laws,447 
+	7.3. Bi-Hamiltonian Systems,452 
+		Recursion Operators,458 
+		Notes,461 
+		Exercises,463 
+References,467 
+Symbol Index,489 
+Author Index,497 
+Subject Index,501 

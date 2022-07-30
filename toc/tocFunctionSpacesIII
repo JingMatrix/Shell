@@ -1,0 +1,190 @@
+Contents,4
+List of Figures,9
+Preface,10
+d=11
+1 How to Measure Smoothness,1
+	1.1 Introduction,1
+	1.2 Concrete spaces,2
+	1.3 The Fourier-analytical approach,4
+	1.4 Local means,9
+	1.5 Atoms,12
+		1.5.1 Smooth atoms,12
+		1.5.2 Non-smooth atoms,15
+		1.5.3 A technical modification,18
+	1.6 Quarks,19
+	1.7 Wavelet bases,26
+		1.7.1 Multiresolution analysis,26
+		1.7.2 Haar wavelets,28
+		1.7.3 Smooth wavelets,30
+	1.8 Wavelet frames,35
+	1.9 Envelopes,39
+		1.9.1 Sharp embeddings,40
+		1.9.2 The critical case,45
+		1.9.3 The super-critical case,48
+		1.9.4 The sub-critical case,51
+		1.9.5 Some generalisations and further references,52
+	1.10 Compactness in quasi-Banach spaces,55
+	1.11 Function spaces on domains,58
+		1.11.1 General domains: definitions, embeddings,58
+		1.11.2 General domains: entropy numbers,60
+		1.11.3 General domains: atoms,61
+		1.11.4 Lipschitz domains: definitions,63
+		1.11.5 Lipschitz domains: extension,64
+		1.11.6 Lipschitz domains: subspaces,66
+		1.11.7 Lipschitz domains: approximation numbers,67
+		1.11.8 Lipschitz domains: interpolation,69
+		1.11.9 Characterisations by diﬀerences,72
+		1.11.10 Lipschitz domains: Sobolev, Hölder-Zygmund spaces,76
+		1.11.11 General domains: sharp embeddings and envelopes,77
+	1.12 Fractal measures,78
+		1.12.1 An introduction to the non-smooth,78
+		1.12.2 Radon measures,80
+		1.12.3 The μ-property,81
+	1.13 Fractal operators,85
+		1.13.1 The classical theory,85
+		1.13.2 The fractal theory,87
+		1.14 Fractal characteristics of measures,92
+	1.15 Isotropic measures,95
+		1.15.1 Some notation and basic assertions,95
+		1.15.2 Traces and fractal operators,97
+	1.16 Weyl measures,99
+	1.17 Spaces on fractals and on quasi-metric spaces,101
+		1.17.1 Fractal characteristics, revisited,101
+		1.17.2 Traces and trace spaces,103
+		1.17.3 Quarkonial representations,109
+		1.17.4 Quasi-metric spaces,112
+		1.17.5 Spaces on quasi-metric spaces,115
+		1.17.6 Function spaces on d-spaces,119
+	1.18 Fractal characteristics of distributions,121
+	1.19 A black sheep becomes the king,122
+d=10
+2 Atoms and Pointwise Multipliers,127
+	2.1 Notation, definitions and basic assertions,127
+		2.1.1 An introductory remark,127
+		2.1.2 Basic notation,127
+		2.1.3 Spaces on Euclidean n-space,128
+		2.1.4 Smooth atoms,130
+	2.2 Non-smooth atomic decompositions,131
+	2.3 Pointwise multipliers and self-similar spaces,136
+		2.3.1 Definitions and preliminaries,136
+		2.3.2 Uniform and self-similar spaces,137
+		2.3.3 Pointwise multipliers,140
+		2.3.4 Comments and complements,144
+3 Wavelets
+	3.1 Wavelet isomorphisms and wavelet bases,147
+		3.1.1 Definitions,147
+		3.1.2 Some preparations,149
+		3.1.3 The main assertion,153
+		3.1.4 Two applications,157
+		3.1.5 Further wavelet isomorphisms,159
+	3.2 Wavelet frames,161
+		3.2.1 Preliminaries and definitions,161
+		3.2.2 Subatomic decompositions,164
+		3.2.3 Wavelet frames for distributions,170
+		3.2.4 Wavelet frames for functions,174
+		3.2.5 Local smoothness theory,180
+	3.3 Complements,186
+		3.3.1 Gausslets,186
+		3.3.2 Positivity,190
+4 Spaces on Domains, Wavelets, Sampling Numbers,193
+	4.1 Spaces on Lipschitz domains,193
+		4.1.1 Introduction,193
+		4.1.2 Definitions,194
+		4.1.3 Further spaces, some embeddings,195
+		4.1.4 Intrinsic characterisations,198
+	4.2 Wavelet para-bases,203
+		4.2.1 Wavelets in Euclidean n-space, revisited,203
+		4.2.2 Scaling properties,205
+		4.2.3 Refined localisation,207
+		4.2.4 Wavelets in domains: positive smoothness,209
+		4.2.5 Wavelets in domains: general smoothness,214
+	4.3 Sampling numbers,218
+		4.3.1 Definitions,218
+		4.3.2 Basic properties,220
+		4.3.3 Main assertions,222
+	4.4 Complements,228
+		4.4.1 Relations to other numbers,228
+		4.4.2 Embedding constants,231
+d=9
+5 Anisotropic Function Spaces,235
+	5.1 Definitions and basic properties,235
+		5.1.1 Introduction,235
+		5.1.2 Definitions,237
+		5.1.3 Concrete spaces,239
+		5.1.4 New developments,243
+		5.1.5 Atoms,244
+		5.1.6 Local means,247
+		5.1.7 A comment on dual pairings,248
+	5.2  Wavelets,249
+		5.2.1 Anisotropic multiresolution analysis,249
+		5.2.2 Main assertions,252
+	5.3  The transference method,256
+		5.3.1 The method,256
+		5.3.2 Embeddings,258
+		5.3.3 Entropy numbers,258
+		5.3.4 Besov characteristics,260
+d=8
+6 Weighted Function Spaces,263
+	6.1 Definitions and basic properties,263
+		6.1.1 Introduction,263
+		6.1.2 Definitions,263
+		6.1.3 Basic properties,265
+		6.1.4 Special cases,267
+	6.2 Wavelets,268
+	6.3 A digression: Sequence spaces,273
+		6.3.1 Basic spaces,273
+		6.3.2 Modifications,276
+	6.4 Entropy numbers,279
+		6.4.1 The main case,279
+		6.4.2 The limiting case,284
+	6.5 Complements,286
+		6.5.1 The transference method,286
+		6.5.2 Radial spaces,287
+d=7
+7 Fractal Analysis,297
+	7.1 Measures,297
+		7.1.1 Definitions, basic properties,297
+		7.1.2 Potentials and Fourier transforms,300
+		7.1.3 Traces: general measures,303
+		7.1.4 Traces: isotropic measures,307
+	7.2 Characteristics,313
+		7.2.1 Characteristics of measures,313
+		7.2.2 A digression: Adapted local means,319
+		7.2.3 Characteristics of distributions,322
+	7.3 Operators,332
+		7.3.1 Potentials and the regularity of measures,332
+		7.3.2 Elliptic operators: general measures,339
+		7.3.3 Elliptic operators: isotropic measures,342
+		7.3.4 Weyl measures,344
+8 Function Spaces on Quasi-metric Spaces,345
+	8.1 Spaces on d-sets,345
+		8.1.1 Introduction,345
+		8.1.2 Quarkonial characterisations,346
+		8.1.3 Atomic characterisations,350
+	8.2 Quasi-metric spaces,357
+		8.2.1 d-spaces,357
+		8.2.2 Snowﬂaked transforms,359
+	8.3 Spaces on d-spaces,363
+		8.3.1 Frames,363
+		8.3.2 Spaces of positive smoothness,365
+		8.3.3 Spaces of arbitrary smoothness,367
+		8.3.4 Spaces of restricted smoothness,368
+	8.4 Applications,371
+		8.4.1 Entropy numbers,371
+		8.4.2 Riesz potentials,372
+		8.4.3 Anisotropic spaces,374
+9 Function Spaces on Sets,377
+	9.1 Introduction and reproducing formula,377
+		9.1.1 Introduction,377
+		9.1.2 Reproducing formula,377
+	9.2 Spaces on Euclidean n-space,381
+		9.2.1 Definitions and basic assertions,381
+		9.2.2 Properties,386
+	9.3 Spaces on sets,390
+		9.3.1 Preliminaries and sequence spaces,390
+		9.3.2 Function spaces,394
+References,397
+Notational Agreements,417
+d=6
+Symbols,419
+Index,423

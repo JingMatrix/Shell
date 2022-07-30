@@ -1,0 +1,49 @@
+Preface,6
+Contents,22
+d=24
+1 Historical Background,1 
+2 The Lebesgue Measure, Convolution,9 
+3 Smoothing by Convolution,15 
+4 Truncation; Radon Measures; Distributions,17 
+5 Sobolev Spaces; Multiplication by Smooth Functions,21 
+6 Density of Tensor Products; Consequences,27 
+7 Extending the Notion of Support,33 
+8 Sobolev's Embedding Theorem, 1 < p < N,37 
+9 Sobolev's Embedding Theorem, N < p < oo,43 
+10 Poincare's Inequality,49 
+11 The Equivalence Lemma; Compact Embeddings,53 
+12 Regularity of the Boundary; Consequences,59 
+13 Traces on the Boundary,65 
+14 Green's Formula,69 
+15 The Fourier Transform,73 
+16 Traces of HS(RN),81 
+17 Proving that a Point is too Small,85 
+18 Compact Embeddings,89 
+19 Lax—Milgram Lemma,93 
+20 The Space H(div; f2),99 
+21 Background on Interpolation; the Complex Method,103 
+22 Real Interpolation; K-Method,109 
+23 Interpolation of L2 Spaces with Weights,115 
+24 Real Interpolation; J-Method,119 
+25 Interpolation Inequalities, the Spaces (E0, ^1)0,1,123 
+26 The Lions—Peetre Reiteration Theorem,127 
+27 Maximal Functions,131 
+28 Bilinear and Nonlinear Interpolation,137 
+29 Obtaining Lp by Interpolation, with the Exact Norm,141 
+30 My Approach to Sobolev's Embedding Theorem,145 
+31 My Generalization of Sobolev's Embedding Theorem,149 
+32 Sobolev's Embedding Theorem for Besov Spaces,155 
+33 The Lions-Magenes Space H^2(f2),159 
+34 Defining Sobolev Spaces and Besov Spaces for Q,163 
+35 Characterization of Wa>p(RN),165 
+36 Characterization of WS*(Q),169 
+37 Variants with BV Spaces,173 
+38 Replacing BV by Interpolation Spaces,177 
+39 Shocks for Quasi-Linear Hyperbolic Systems,183 
+40 Interpolation Spaces as Trace Spaces,191 
+41 Duality and Compactness for Interpolation Spaces,195 
+42 Miscellaneous Questions,199 
+43 Biographical Information,205 
+44 Abbreviations and Mathematical Notation,209 
+References,213 
+Index,215 
