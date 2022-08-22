@@ -1,0 +1,73 @@
+TABLE OF CONTENTS,2
+d=3
+PREFACE,1
+CHAPTER I. MANIFOLDS AND LIE GROUPS,4
+	1. Differentiable manifolds,4
+	2. Submersions and immersions,11
+	3. Vector fields and flows,16
+	4. Lie groups,30
+	5. Lie subgroups and homogeneous spaces,41
+CHAPTER II. DIFFERENTIAL FORMS,49
+	6. Vector bundles,49
+	7. Differential forms,61
+	8. Derivations on the algebra of differential forms and the Frölicher-Nijenhuis bracket,67
+CHAPTER III. BUNDLES AND CONNECTIONS,76
+	9. General fiber bundles and connections,76
+	10. Principal fiber bundles and G-bundles,86
+	11. Principal and induced connections,99
+CHAPTER IV. JETS AND NATURAL BUNDLES,116
+	12. Jets,117
+	13. Jet groups,128
+	14. Natural bundles and operators,138
+	15. Prolongations of principal fiber bundles,149
+	16. Canonical differential forms,154
+	17. Connections and the absolute differentiation,158
+CHAPTER V. FINITE ORDER THEOREMS,168
+	18. Bundle functors and natural operators,169
+	19. Peetre-like theorems,176
+	20. The regularity of bundle functors,185
+	21. Actions of jet groups,192
+	22. The order of bundle functors,202
+	23. The order of natural operators,205
+CHAPTER VI. METHODS FOR FINDING NATURAL OPERATORS,212
+	24. Polynomial GL(V )-equivariant maps,213
+	25. Natural operators on linear connections, the exterior differential,220
+	26. The tensor evaluation theorem,223
+	27. Generalized invariant tensors,230
+	28. The orbit reduction,233
+	29. The method of differential equations,245
+CHAPTER VII. FURTHER APPLICATIONS,249
+	30. The Frölicher-Nijenhuis bracket,250
+	31. Two problems on general connections,255
+	32. Jet functors,259
+	33. Topics from Riemannian geometry,265
+	34. Multilinear natural operators,280
+CHAPTER VIII. PRODUCT PRESERVING FUNCTORS,296
+	35. Weil algebras and Weil functors,297
+	36. Product preserving functors,308
+	37. Examples and applications,318
+CHAPTER IX. BUNDLE FUNCTORS ON MANIFOLDS,329
+	38. The point property,329
+	39. The flow-natural transformation,336
+	40. Natural transformations,341
+	41. Star bundle functors,345
+CHAPTER X. PROLONGATION OF VECTOR FIELDS AND CONNECTIONS,350
+	42. Prolongations of vector fields to Weil bundles,351
+	43. The case of the second order tangent vectors,357
+	44. Induced vector fields on jet bundles,360
+	45. Prolongations of connections to F Y → M,363
+	46. The cases F Y → F M and F Y → Y,369
+CHAPTER XI. GENERAL THEORY OF LIE DERIVATIVES,376
+	47. The general geometric approach,376
+	48. Commuting with natural operators,381
+	49. Lie derivatives of morphisms of fibered manifolds,387
+	50. The general bracket formula,390
+CHAPTER XII. GAUGE NATURAL BUNDLES AND OPERATORS,394
+	51. Gauge natural bundles,394
+	52. The Utiyama theorem,399
+	53. Base extending gauge natural operators,405
+	54. Induced linear connections on the total space of vector and principal bundles,409
+References,417
+List of symbols,428
+Author index,429
+Index,431
