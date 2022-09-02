@@ -1,0 +1,12 @@
+#! /bin/python3
+
+from os import system
+
+system('grim -g "$(slurp -d)" /tmp/latex.png')
+
+from PIL import Image
+from pix2tex.cli import LatexOCR
+
+img = Image.open("/tmp/latex.png")
+model = LatexOCR()
+system("wl-copy '" + model(img) + "'")
