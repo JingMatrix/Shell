@@ -1,0 +1,18 @@
+#! /bin/zsh
+
+if [[ -n $(iwgetid | grep -q 'ESSID:"Wifirst Blaise Pascal"') ]]; then
+	current_time=$(date +%s%3N)
+
+	error_code=$(curl -s -D - 'https://wireless.wifirst.net:8090/goform/HtmlLoginRequest' \
+		--data "username=PAY/$current_time@wifirst.net" \
+		--data "password=$current_time" \
+		--data "success_url=https://www.google.fr" \
+		--data "error_url=https://portal-front.wifirst.net" \
+		--compressed | grep -o -P 'code=\K\d')
+
+	if [[ -n $error_code ]]; then
+		notify-send "Wifi fails with code $error_code" "Change your mac address"
+	fi
+else
+	alacritty -e nmtui
+fi
