@@ -13,7 +13,7 @@ if ! [[ -n $startdate ]]; then
 	startdate=$(date -I)
 fi
 enddate=$(date -d ${startdate}' '${1:-"2days"} -I)
-follow_courses="27"
+follow_courses="25"
 # course=(
 # 	"Holomorphic dynamics in dimension one : some advanced topics. (F. Berteloot and P.Roesch)"
 # 	"Topics in Differential Complex Geometry (E. Legendre)"
@@ -22,18 +22,31 @@ follow_courses="27"
 # 	"Learning. (J. M. Loubes, B. Laurent-Bonneau)"
 # "Lévy Processes (L. Huang)"
 # )
+# course=(
+# 	"Complex analytic and differential geometry (V. Guedj)"
+# 	"Hyperbolic manifolds (J.-P. Otal)"
+# 	"Introduction to algebraic geometry (T. Dedieu)"
+# 	"Elliptic PDEs and evolution problems (J. Fehrenbach et J. Royer)"
+# 	"Convex Analysis / Optimisation and applications. (C. Dossal et P. Maréchal)"
+# 	"Discretization of PDEs: \033[1;36m
+# \t\t\tAnalysis and discretization of transport equations.(F. Boyer)
+# \t\t\tConvergence of probability measures, functional limit theorems and applications. (R. Chhaibi)\033[0m"
+	# "Convergence of probability measures, functional limit theorems and applications. (R. Chhaibi)"
+	# "Stochastic calculus. (P. Maillard)"
+	# "Asymptotic statistics and modeling. (P. Berthet)"
+# )
 course=(
 	"Complex analytic and differential geometry (V. Guedj)"
 	"Hyperbolic manifolds (J.-P. Otal)"
-	"Introduction to algebraic geometry (T. Dedieu)"
-	"Elliptic PDEs and evolution problems (J. Fehrenbach et J. Royer)"
-	"Convex Analysis / Optimisation and applications. (C. Dossal et P. Maréchal)"
-	"Discretization of PDEs: \033[1;36m
-\t\t\tAnalysis and discretization of transport equations.(F. Boyer)
-\t\t\tConvergence of probability measures, functional limit theorems and applications. (R. Chhaibi)\033[0m"
-	"Convergence of probability measures, functional limit theorems and applications. (R. Chhaibi)"
-	"Stochastic calculus. (P. Maillard)"
-	"Asymptotic statistics and modeling. (P. Berthet)"
+	"Introduction to differential and algebraic topology (T. Fiedler)"
+	"Spectral theory (J. Royer)"
+	"Elliptic PDEs and Calculus of Variations (R. Ignat)"
+	"An introduction to the theoretical and numerical analysis of nonlinear conservation laws (F. Boyer)"
+	"Convergence of probability measures, infinite dimensional limit theorems and optimal transport. (R. Chhaibi)"
+	"Stochastic calculus. (L. Coutin)"
+	"Asymptotic statistics and modeling. (P. Neuvial, F. Gamboa)"
+	"Approximation of PDEs (G. Haine, D. Matignon, S. Pernet, M. Salaün)"
+	"Advanced statistical methods (X. Gendre, F. Simatos)"
 )
 typeset -A zoomlink
 zoomlink=(
@@ -62,7 +75,7 @@ echo "\rCourse from $startdate to $enddate"
 echo -n '\033[1;37m'
 echo "DATE\tTIME\tInformation\n"
 echo -n '\033[0m'
-curl -s 'https://edt.univ-tlse3.fr/calendar2/Home/GetCalendarData' --data-raw "start=$startdate&end=$enddate&resType=103&calView=month&federationIds%5B%5D=IMAR9CMA&federationIds%5B%5D=IMARACMA&colourScheme=3" >/tmp/cour.json | jq -r 'sort_by(.start) | .[] | [.start, .description, .eventCategory, .end] | @tsv' |
+curl -s 'https://edt.univ-tlse3.fr/calendar2/Home/GetCalendarData' --data-raw "start=$startdate&end=$enddate&resType=103&calView=month&federationIds%5B%5D=28318&colourScheme=3" >/tmp/cour.json | jq -r 'sort_by(.start) | .[] | [.start, .description, .eventCategory, .end] | @tsv' |
 	while IFS=$'\t' read -r starttime description eventCategory endtime; do
 		if [[ $eventCategory = "CONGES" ]]; then
 			continue
@@ -76,7 +89,7 @@ curl -s 'https://edt.univ-tlse3.fr/calendar2/Home/GetCalendarData' --data-raw "s
 		else
 			echo -n '\033[1;33m'
 		fi
-		course_num=$(<<<$description | sed 's/.*Course \([0-9]\).*/\1/p' -n)
+		course_num=$(<<<$description | sed 's/.*Ri-basic course \([0-9]\).*/\1/p' -n)
 		if [[ -n $course_num ]]; then
 			# limit to only courses you follow
 			if echo $follow_courses | grep -q $course_num; then
