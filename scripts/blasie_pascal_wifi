@@ -1,20 +1,19 @@
-#! /bin/zsh
+#! /bin/sh
 
-if [[ -n $(iwgetid | grep 'ESSID:"Wifirst Blaise Pascal"') ]]; then
-
-	local current_time=$(date +%s%3N)
+if [ "$(iwgetid | grep 'ESSID:"Wifirst Blaise Pascal"')" ]; then
+	current_time=$(date +%s%3N)
 	error_code=$(curl -s -D - 'https://wireless.wifirst.net:8090/goform/HtmlLoginRequest' \
 		--data "username=PAY/$current_time@wifirst.net" \
 		--data "password=$current_time" \
 		--data "success_url=https://www.google.fr" \
 		--data "error_url=https://portal-front.wifirst.net" \
 		--compressed | grep -o -P 'code=\K\d')
-	if [[ -n $error_code ]]; then
+	if [ $error_code ]; then
 		notify-send "Wifi fails with code $error_code" "Attempt to change the mac address"
 		sudo /sbin/ifconfig wlp1s0 down
 		sudo /bin/macchanger -r wlp1s0
 		sudo /sbin/ifconfig wlp1s0 up
+	else
+		at -M -f /home/jing/Documents/Code/Shell/scripts/blasie_pascal_wifi now + 10 minute
 	fi
-else
-	alacritty -e nmtui
 fi

@@ -52,7 +52,6 @@ unalias gradle
 export ANDROID_HOME=$HOME/Archives/Android
 export MANPAGER='nvim +Man!'
 export MUTTBOX="gmail"
-export GEM_HOME="$HOME/.local/gem"
 export JDTLS_HOME=$HOME/Archives/Data/jdtls
 export KALDI_ROOT=$HOME/Documents/Project/kaldi
 export PAGER="less -P?n -R"
