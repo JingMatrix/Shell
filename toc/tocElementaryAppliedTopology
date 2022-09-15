@@ -1,0 +1,152 @@
+Contents,4
+Preface,8
+d=4
+1 Manifolds,9
+	1.1 Manifolds,10
+	1.2 Configuration spaces of linkages,11
+	1.3 Derivatives,13
+	1.4 Vector fields,14
+	1.5 Braids and robot motion planning,15
+	1.6 Transversality,17
+	1.7 Signals of opportunity,20
+	1.8 Stratified spaces,22
+
+2 Complexes,25
+	2.1 Simplicial and cell complexes,26
+	2.2 Vietoris-Rips complexes and point clouds,28
+	2.3 Witness complexes and landmarks,29
+	2.4 Flag complexes and networks,29
+	2.5 Cech complexes and random samplings,30
+	2.6 Nerves and neurons,31
+	2.7 Phylogenetic trees and links,32
+	2.8 Strategy complexes and uncertainty,34
+	2.9 Decision tasks and consensus,35
+	2.10 Discretized graph configuration spaces,37
+	2.11 State complexes and reconfiguration,39
+
+3 Euler Characteristic,43
+	3.1 Counting,44
+	3.2 Curvature,45
+	3.3 Nonvanishing vector fields,46
+	3.4 Fixed point index,47
+	3.5 Tame topology,48
+	3.6 Euler calculus,50
+	3.7 Target enumeration,51
+	3.8 A Fubini Theorem,52
+
+
+
+
+	3.9 Euler integral transforms,54
+	3.10 Intrinsic volumes,56
+	3.11 Gaussianrandom fields,58
+
+Homology,61
+	4.1 Simplicial and cellular homology,62
+	4.2 Homology examples,64
+	4.3 Coefficients,65
+	4.4 Singular homology,68
+	4.5 Reduced homology,69
+	4.6 Cech homology,70
+	4.7 Relative homology,70
+	4.8 Localhomology,72
+	4.9 Homology of arelation,72
+	4.10 Functoriality,74
+	4.11 Inverse kinematics,76
+	4.12 Winding number and degree,77
+	4.13 Fixed points and prices,79
+
+Sequences,83
+	5. Homotopy invariance,84
+	5.2 Exact sequences,85
+	5.3 Pairs and Mayer-Vietoris,87
+	5.4 Equivalence of homology theories,89
+	5.5 Cellular homology, redux,90
+	5.6 Coverage in sensor networks,92
+	5.7 Degree and computation,94
+	5.8 Borsuk-Ulam theorems,97
+	5.9 Euler characteristic,98
+	5.10 Lefschetz index,99
+	5.11 Nash equilibria,100
+	5.12 The gameofHex,102
+	5.13 Barcodes and persistent homology,104
+	5.14 Thespace of naturalimages,106
+	5.15 Zigzag persistence,108
+
+6 Cohomology,111
+	6.1 Duals,112
+	6.2 Cochain complexes,113
+	6.3 Cohomology,115
+	6.4 Poincaré duality,117
+	6.5 Alexander duality,118
+	6.6 Helly’s Theorem,119
+	6.7 Numerical Euler integration,120
+	6.8 Forms and Calculus,121
+
+
+
+	6.9 De Rham cohomology,124
+	6.10 Cup products,125
+	6.11 Currents,126
+	6.12 Laplacians and Hodge Theory,129
+	6.13 Circular coordinates in datasets,131
+
+7 Morse Theory,135
+	7.1 Critical points 2,136
+	7.2 Excursion sets and persistence,137
+	7.3 Morse homology,138
+	7.4 Definable Euler integration,140
+	7.5 Stratified Morse theory,141
+	7.6 Conley index 2,143
+	7.7 Lefschetz index, redux,147
+	7.8 Discrete Morse theory,149
+	7.9 LS category,151
+	7.10 Unimodal decomposition in statistics,153
+
+8 Homotopy,157
+	8.1 Group fundamentals,158
+	8.2 Covering spaceS,160
+	8.3 Knot theory,163
+	8.4 Higher homotopy groups,166
+	8.5 Biaxial nematic liquid crystals,168
+	8.6 Homology and homotopy,169
+	8.7 Topological social choice,170
+	8.8 Bundles,171
+	8.9 Topological complexity of path planning,173
+	8.10 FibrationS,175
+	8.11 Homotopy type theory,176
+
+9 Sheaves,179
+	9.1 Cellular sheaves,180
+	9.2 Examples of cellularsheaves,181
+	9.3 Cellular sheaf cohomology,184
+	9.4 Flow sheaves and obstructions,186
+	9.5 Information flows and network coding,188
+	9.6 From cellular to topological,189
+	9.7 Operations on sheaves,193
+	9.8 Sampling and reconstruction,195
+	9.9 Euler integration, redux,197
+	9.10 Cosheaves,198
+	9.11 Bézier curves and splines,200
+	9.12 Barcodes, redux,202
+
+
+
+
+10 Categorification,207
+	10.1 Categories,208
+	10.2 Morphisms,211
+	10.3 Functors,213
+	10.4 Clustering functors,215
+	10.5 Natural transformations,217
+	10.6 Interleaving and stability in persistence,219
+	10.7 Limits,220
+	10.8 Colimits,223
+	10.9 Sheaves, redux,224
+	10.10 The genius of categorification,226
+	10.11 “Bring out number”,229
+
+A Background,237
+	A.1 On point-set topology,238
+	A.2 On linear and abstract algebra,239
+Bibliography,245
