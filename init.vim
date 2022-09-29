@@ -102,7 +102,7 @@ augroup formatter
 	autocmd FileType python setl formatprg=yapf
 	autocmd FileType lua setl formatprg=stylua\ -\ -
 	autocmd FileType tex,bib setl formatprg=latexindent\ -m\ -c=/tmp/
-	autocmd FileType javascript,html,vue,markdown,css,xhtml,scss,xml setl formatprg=prettier\ --stdin-filepath\ %
+	autocmd FileType javascript,typescript,html,vue,markdown,css,xhtml,scss,xml setl formatexpr= | let &l:formatprg = 'prettier --stdin-filepath ' . expand('%:p') " . ' --parser '.expand(&filetype)
 	autocmd FileType json,jsonc setl formatprg=jq\ '.'
 augroup END
 
@@ -140,6 +140,9 @@ augroup spellang
 	" autocmd FileType markdown setl spelllang+=cjk
 	autocmd FileType mail,markdown setl spelllang=fr,en_us
 augroup END
+
+" comments
+set commentstring=#\ %s
 
 autocmd CompleteDone * pclose
 
@@ -180,7 +183,6 @@ set modeline
 set autochdir
 set tabstop=4
 set shiftwidth=0
-set commentstring=#\ %s
 
 " completion
 set omnifunc=syntaxcomplete#Complete

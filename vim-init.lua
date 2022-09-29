@@ -115,7 +115,6 @@ local lsp_servers = {
 	"jedi_language_server",
 	-- "pyright",
 	"pylsp",
-	"vuels",
 	"vimls",
 	-- "kotlin_language_server",
 	"tsserver",
@@ -123,6 +122,7 @@ local lsp_servers = {
 	"clangd",
 	"cmake",
 	"gopls",
+	"tailwindcss",
 	"rust_analyzer",
 	"solargraph",
 	-- Java language server, consider nvim-jdtls when needed
@@ -145,16 +145,28 @@ lspconfig.sumneko_lua.setup({
 	},
 })
 
+lspconfig.volar.setup({
+	on_attach = lsp_on_attach,
+	init_options = {
+		typescript = {
+			serverPath = "/home/jing/.nvm/versions/node/v18.1.0/lib/node_modules/typescript/lib/tsserverlibrary.js",
+		},
+	},
+})
+
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-for _, lsp in pairs({ "html", "cssls" }) do
-	lspconfig[lsp].setup({
-		capabilities = capabilities,
-		on_attach = lsp_on_attach,
-	})
-end
+lspconfig.cssls.setup({
+	autostart = false,
+	capabilities = capabilities,
+	on_attach = lsp_on_attach,
+})
 
+lspconfig.html.setup({
+	capabilities = capabilities,
+	on_attach = lsp_on_attach,
+})
 -- Debug Adapter
 --
 

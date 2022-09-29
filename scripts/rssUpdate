@@ -1,0 +1,5 @@
+#! /bin/zsh
+#
+pushd /home/jing/Documents/Project/RSSHub
+timeout 600 /home/jing/.nvm/versions/node/v18.1.0/bin/pnpm start &
+sleep 5 && newsboat -x reload
