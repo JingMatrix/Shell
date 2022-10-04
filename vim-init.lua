@@ -122,6 +122,7 @@ local lsp_servers = {
 	"clangd",
 	"cmake",
 	"gopls",
+	"marksman",
 	"tailwindcss",
 	"rust_analyzer",
 	"solargraph",
@@ -133,6 +134,34 @@ for _, lsp in pairs(lsp_servers) do
 		on_attach = lsp_on_attach,
 	})
 end
+
+local function readFiles(files)
+    local dict = {}
+    for _,file in ipairs(files) do
+        local f = io.open(file, "r")
+        for l in f:lines() do
+            table.insert(dict, l)
+        end
+    end
+    return dict
+end
+
+lspconfig.ltex.setup({
+	on_attach = lsp_on_attach,
+	filetypes = { "tex", "markdown", "mail" },
+	settings = {
+		ltex = {
+			language = "auto",
+			additionalRules = {
+				motherTongue = "zh-CN",
+			},
+			dictionary = {
+				fr = readFiles({ "/home/jing/.config/nvim/spell/fr.utf-8.add" }),
+				["en-US"] = readFiles({ "/home/jing/.config/nvim/spell/en.utf-8.add", "/home/jing/.config/nvim/spell/fr.utf-8.add" }),
+			},
+		},
+	},
+})
 
 lspconfig.sumneko_lua.setup({
 	on_attach = lsp_on_attach,
