@@ -1,0 +1,76 @@
+Preface,5 
+TABLE OF CONTENTS,6
+About this book,9 
+d=10
+Introduction,1 
+Chapter 1. The basic classical notions,11 
+	1A. Perfect Polish spaces,11 
+	IB. The Borel pointclasses of finite order,17 
+	IC. Computing with relations; closure properties,24 
+	ID. Parametrization and hierarchy theorems,35 
+	IE. The projective sets,39 
+	IF. Countable operations and the transfinite Borel pointclasses,44 
+	1G. Borel functions and isomorphisms,49 
+	1H. Historical and other remarks,61 
+Chapter 2. x-Suslin and A-Borel,65 
+	2A. The Cantor-Bendixson theorem,66 
+	2B. x-Suslin sets,68 
+	2C. Trees and the perfect set theorem,76 
+	2D. Wellfounded trees,82 
+	2E. The Suslin theorem,86 
+	2F. Inductive analysis of projections of trees,93 
+	2G. The Kunen-Martin theorem,99 
+	2H. Category and measure,105 
+	21. Historical remarks,113 
+Chapter 3. Basic notions of the effective theory,116 
+	3A. Recursive functions on the integers,118 
+	3B. Recursive presentations,128 
+	3C. Semirecursive pointsets,135 
+	3D. Recursive and Γ-recursive functions,146 
+	3E. The Kleene pointclasses,156 
+	3F. Universal sets for the Kleene pointclasses,166 
+	3G. Partial functions and the substitution property,174 
+	3H. Codings, uniformity and good parametrizations,180 
+	31. Historical remarks,188 
+Chapter 4. Structure theory for pointclasses,190 
+	4A. The basic representation theorem for Π^1_1 sets,190 
+	4B. The prewellordering property,200 
+	4C. Spector pointclasses,207 
+	4D. The parametrization theorem for Δ ∩ X,217 
+	4E. The uniformization theorem for Π^1_1, Σ1_2,227 
+	4F. Additional results about Π^1_1,243 
+	4G. Historical remarks,268 
+Chapter 5. The constructible universe,274 
+	5A. Descriptive set theory in L,275 
+	5B. Independence results obtained by the method of forcing,283 
+	5C. Historical remarks,285 
+Chapter 6. The playful universe,286 
+	6A. Infinite games of perfect information,287 
+	6B. The first periodicity theorem,302 
+	6C. The second periodicity theorem; uniformization,310 
+	6D. The game quantifier D,322 
+	6E. The third periodicity theorem; definable winning strategies,334 
+	6F. The determinacy of Borel sets,357 
+	6G. Measurable cardinals,364 
+	6H. Historical remarks,378 
+Chapter 7. The recursion theorem,381 
+	7A. Recursion in a 2*-pointclass,381 
+	7B. The Suslin-Kleene theorem,388 
+	7C. Inductive definability,403 
+	7D. The completely playful universe,421 
+	7E. Historical remarks,443 
+	7F. Appendix; a list of results which depend on the axiom of choice,445 
+Chapter 8. Metamathematics,448 
+	8A. Structures and languages,451 
+	8B. Elementary definability,464 
+	8C. Definability in the universe of sets,472 
+	8D. Godel's model of constructible sets,486 
+	8E. Absoluteness,498 
+	8F. The basic facts about L,514 
+	8G. Regularity results and inner models,534 
+	8H. On the theory of indiscernibles,574 
+	81. Some remarks about strong hypotheses,604 
+	8J. Historical remarks,611 
+References and Index to References,613 
+Subject Index,623 
+Index of Symbols,636 

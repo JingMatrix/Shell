@@ -1,0 +1,74 @@
+Contents,3
+Preface to the first edition,5 
+Preface to the revised edition,6 
+d=6
+Introduction,1
+	1.1 Algebra of sets. Functions,1 
+	1.2 Cardinal numbers,3 
+	1.3 Order relations. Ordinal numbers,4 
+	1.4 The axiom of choice,8 
+	1.5 Real numbers,10 
+Chapter 1: Topological spaces,11
+	1.1 Topological spaces. Open and closed sets. Bases. Closure and interior of a set,11 
+	1.2 Methods of generating topologies,20 
+	1.3 Boundary of a set and derived set. Dense and nowhere dense sets. Borel sets,24 
+	1.4 Continuous mappings. Closed and open mappings. Homeomorphisms,27 
+	1.5 Axioms of separation,36 
+	1.6 Convergence in topological spaces: Nets and filters. Sequential and Frechet spaces,49 
+	1.7 Problems,56 
+Chapter 2: Operations on topological spaces,65
+	2.1 Subspaces,65 
+	2.2 Sums,74 
+	2.3 Cartesian products,77 
+	2.4 Quotient spaces and quotient mappings,90 
+	2.5 Limits of inverse systems,98 
+	2.6 Function spaces I: The topology of uniform convergence on Rx and the topology of pointwise convergence,105 
+	2.7 Problems,112 
+Chapter 3: Compact spaces,122
+	3.1 Compact spaces,123 
+	3.2 Operations on compact spaces,136 
+	3.3 Locally compact spaces and A;-spaces,148 
+	3.4 Function spaces II: The compact-open topology,156 
+	3.5 Compactifications,166 
+	3.6 The Cech-Stone compactification and the Wallman extension,172 
+	3.7 Perfect mappings,182 
+	3.8 Lindelof spaces,192 
+	3.9 Cech-coniplete spaces,196 
+	3.10 Countably compact spaces, pseudocompact spaces and sequentially compact spaces,202 
+	3.11 Realcompact spaces,214 
+	3.12 Problems,220 
+Chapter 4: Metric and metrizable spaces,247
+	4.1 Metric and metrizable spaces,248 
+	4.2 Operations on metrizable spaces,258 
+	4.3 Totally bounded and complete metric spaces. Compactness in metric spaces,266 
+	4.4 Metrization theorems I,280 
+	4.5 Problems,288 
+Chapter 5: Paracompact spaces,299
+	5.1 Paracompact spaces,299 
+	5.2 Countably paracompact spaces,316 
+	5.3 Weakly and strongly paracompact spaces,322 
+	5.4 Metrization theorems II,329 
+	5.5 Problems,337 
+Chapter 6: Connected spaces,351
+	6.1 Connected spaces,352 
+	6.2 Various kinds of disconnectedness,360 
+	6.3 Problems,372 
+Chapter 7: Dimension of topological spaces,382
+	7.1 Definitions and basic properties of dimensions ind, Ind, and dim,383 
+	7.2 Further properties of the dimension dim,394 
+	7.3 Dimension of metrizable spaces,402 
+	7.4 Problems,418 
+Chapter 8: Uniform spaces and proximity spaces,425
+	8.1 Uniformities and uniform spaces,426 
+	8.2 Operations on uniform spaces,438 
+	8.3 Totally bounded and complete uniform spaces. Compactness in uniform spaces,444 
+	8.4 Proximities and proximity spaces,451 
+	8.5 Problems,460 
+Bibliography,469 
+Tables,508
+	Relations between main classes of topological spaces,508 
+	Invariants of operations,509 
+	Invariants and inverse invariants of mappings,510 
+List of special symbols,511 
+Author index,514 
+Subject index,520 

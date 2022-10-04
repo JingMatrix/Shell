@@ -1,0 +1,91 @@
+Preface,4
+Contents,6
+d=7
+Part 1. K-analytic Sets by C. A. Rogers and J. E. Jayne,1
+	1 History of the theory of analytic sets,2 
+		1.1 Pre-history' Lebesgue,2 
+		1.2 Pre-history: Alexandrov and Hausdorff,4 
+		1.3 Souslin and Lusin,5 
+		1.4 Development, the first twenty years,6 
+		1.5 Development, topological spaces,8 
+		1.6 Development, recursive function theory,9 
+	2 Stability,9 
+		2.1 Summary of notation and definitions,9 
+		2.2 Discussion of the definitions,11 
+		2.3 Stability of the Souslin operation,12 
+		2.4 Polish spaces,17 
+		2.5 Stability of K-analytic sets,23 
+		2.6 Projection and representations as projections,30 
+		2.7 The Lindelof property of K-analytic sets,36 
+		2.8 Equivalence of the definitions of K-analytic sets,37 
+		2.9 Measurable sets and sets with the Baire property,41 
+		2.10 The Souslin graph theory,47 
+		2.11 Banach spaces that are K-analytic in their weak topology,50 
+	3 The first separation theory and approximation from within,53 
+		3.1 Introduction,53 
+		3.2 Notation and definitions,54 
+		3.3 The first separation theorem,55 
+		3.4 Novikov's approximation theorem,58 
+		3.5 Approximation from within,62 
+		3.6 K-Lusin sets,68 
+		3.7 Convex Borel sets,70 
+	4 Universal sets,74 
+		4.1 Introduction,74 
+		4.2 The construction of universal sets,75 
+		4.3 The existence of Borel sets in each class and of analytic sets that are not Borel sets,79 
+		4.4 Some counter-examples,82 
+		4.5 Analytic sets that are not Borel and the generalized universal property,85 
+		4.6 Continuous functions that are not differentiable,91 
+	5 K-Lusin spaces (and K-analytic spaces continued),95 
+		5.1 Basic structure,95 
+		5.2 Properness,100 
+		5.3 k-spaces,103 
+		5.4 Compact perfect subsets,105 
+		5.5 Analytic and Lusin spaces,109 
+		5.6 Metrizability,119 
+		5.7 Disjoint countable unions,120 
+		5.8 Disjoint Souslin operation,127 
+		5.9 Continuous images of K-Lusin spaces,144 
+		5.10 Compact convex sets,160 
+	6 Baire functions and isomorphisms,163 
+		6.1 Baire functions,163 
+		6.2 Baire isomorphisms,165 
+		6.3 First-level Baire isomorphisms 166  
+		6.4 First-level Baire functions,174 
+	References,175 
+Part 2. Un Cours Sur Les Ensembles Analytiques by C. Dellacherie,183
+	Preface,184
+	1. Capacites et ensembles analytiques,186
+	2. Quelques theoremes de section et de selection,211
+	3. Temps d'arret et ensembles analytiques,235
+	4. Derivations et applications,261
+	Appendice: Théorie générale des capacites,293
+	Commentaires,306
+	Bibliographie,310
+	Notations,313
+	Index terminologique,315
+Part 3. Analytic Spaces and Their Application by F. Topsød and J. Hoffmann-Jdrgensen,317
+	1. Souslin schemes and standard models,317
+	2. Automatic continuity,337
+	Appendix: Measures on topological spaces,390
+	References,398
+d=5
+Part 4. Infinite Games and Effective Descriptive Set Theory by D. A. Martin and A. S. Kechris,403
+	1. Introduction,404 
+	2. Open games and their uses,411 
+	3. Borel games,416 
+	4. Analytic games,422 
+	5. How many analytic, non-Borel sets are there?,426 
+	6. Introduction to effective descriptive set theory,431 
+	7. Basic prewellordering theory,445 
+	8. Uniformization and basis theorems,455 
+	9. Π_1^1 equivalence relations,463 
+	References,469 
+
+Part 5. Analytic Sets in Non-separable Metric Spaces by A. H. Stone,471
+Problems,481 
+Author Index,493 
+Subject Index,496 
+
+
+
