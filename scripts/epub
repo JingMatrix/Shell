@@ -1,4 +1,6 @@
 #! /bin/zsh
+
+# Usage:
 # epub epubee hash	download epub book from reader.obook.vip
 # epub book.epub	fix epub
 # epub dir [book.epub]	pack epub
@@ -24,13 +26,8 @@ function htmlparser {
 function fixhtml {
 	# read from stdin and output to stdout
 	# try to first load local config files
-	local tidy_config=$basedir/../../Web/tidy.config
-	if [[ -f $tidy_config ]]; then
-		local -a args=("-config" $tidy_config)
-	else
-		echo "No config file $tidy_config found, using default config"
-		local -a args=("--output-xhtml" "yes" "--add-meta-charset" "yes" "--add-xml-decl" "yes" "--doctype" 'html5' "--output-xhtml" "yes" "--clean" "yes" "--drop-proprietary-attributes" "yes" "--logical-emphasis" "yes" "--alt-text" "image" "--coerce-endtags" "yes" "--enclose-block-text" "yes" "--enclose-text" "yes" "--decorate-inferred-ul" "yes" "--indent" "yes" "--quiet" "yes")
-	fi
+	echo "No config file $tidy_config found, using default config"
+	local -a args=("--output-xhtml" "yes" "--add-meta-charset" "yes" "--add-xml-decl" "yes" "--doctype" 'html5' "--output-xhtml" "yes" "--clean" "yes" "--drop-proprietary-attributes" "yes" "--logical-emphasis" "yes" "--alt-text" "image" "--coerce-endtags" "yes" "--enclose-block-text" "yes" "--enclose-text" "yes" "--decorate-inferred-ul" "yes" "--indent" "yes" "--quiet" "yes")
 	tidy $args |
 		sed '3s#""#"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"#'
 	# fix doctype
@@ -95,7 +92,7 @@ function ePub3-itizer {
 	local prefix=$HOME/.local
 	local launcher="$prefix/share/sigil/plugin_launchers/python/launcher.py"
 	local sigildir="$prefix/share/sigil-ebook/sigil"
-	local plugindir="$sigildir/plugins/ePub3-itizer"
+	local plugindir="$basedir/../ePub3-itizer"
 	# check script type
 	local scripttype=$(sed -n 's/<type>\(.*\)<\/type>/\1/p' $plugindir/plugin.xml)
 	if ! [[ $scripttype=="input" || $scripttype=="output" || $scripttype=="edit" ]]; then
@@ -103,18 +100,18 @@ function ePub3-itizer {
 	fi
 	mkdir -p /tmp/sigil/
 	echo "$opffile
-$prefix/lib/sigil
-$sigildir
-$prefix/share/sigil/hunspell_dictionaries/
-en
-en_US
-False 
-$epub_file
-light
-#efefef,#ffffff,#000000,#308cc6,#ffffff
-on
-Ubuntu,17,-1,5,50,0,0,0,0,0
-$opffile" >/tmp/sigil/sigil.cfg
+	$prefix/lib/sigil
+	$sigildir
+	$prefix/share/sigil/hunspell_dictionaries/
+	en
+	en_US
+	False
+	$epub_file
+	light
+	#efefef,#ffffff,#000000,#308cc6,#ffffff
+	on
+	Ubuntu,17,-1,5,50,0,0,0,0,0
+	$opffile" >/tmp/sigil/sigil.cfg
 
 	# echo "Using following script command:\n $launcher $epub_dir /tmp/sigil/ $scripttype $plugindir/plugin.py"
 	python3 $launcher $epub_dir /tmp/sigil/ $scripttype $plugindir/plugin.py >/dev/null
@@ -278,11 +275,11 @@ function downloadepubee {
 	cd $rootdir/
 	echo -n 'application/epub+zip' >mimetype
 	echo -n '<?xml version="1.0" encoding="UTF-8" ?>
-<container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container">
-  <rootfiles>
-    <rootfile full-path="OEBPS/content.opf" media-type="application/oebps-package+xml"/>
-  </rootfiles>
-</container>' >META-INF/container.xml
+	<container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container">
+	<rootfiles>
+	<rootfile full-path="OEBPS/content.opf" media-type="application/oebps-package+xml"/>
+	</rootfiles>
+	</container>' >META-INF/container.xml
 	cd $rootdir/OEBPS
 	local root=http://reader.obook.vip/books/mobile/${1:0:2}/$1
 	aria2c $root/content.opf

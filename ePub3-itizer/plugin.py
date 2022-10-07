@@ -26,16 +26,16 @@ from epub_utils import epub_zip_up_book_contents
 
 PY2 = sys.version_info[0] == 2
 
-if PY2:
-    import Tkinter as tkinter
-    import ttk as tkinter_ttk
-    import Tkconstants as tkinter_constants
-    import tkFileDialog as tkinter_filedialog
-else:
-    import tkinter
-    import tkinter.ttk as tkinter_ttk
-    import tkinter.constants as tkinter_constants
-    import tkinter.filedialog as tkinter_filedialog
+# if PY2:
+#     import Tkinter as tkinter
+#     import ttk as tkinter_ttk
+#     import Tkconstants as tkinter_constants
+#     import tkFileDialog as tkinter_filedialog
+# else:
+#     import tkinter
+#     import tkinter.ttk as tkinter_ttk
+#     import tkinter.constants as tkinter_constants
+#     import tkinter.filedialog as tkinter_filedialog
 
 _guide_epubtype_map = {
      'acknowledgements'   : 'acknowledgments',
@@ -161,7 +161,7 @@ def run(bk):
         if filepath != "":
             basepath = os.path.dirname(filepath)
             basename = os.path.basename(filepath)
-            basename = os.path.splitext(basename)[0] + ".epub"
+            # basename = os.path.splitext(basename)[0] + "_epub3.epub"
     manifest_properties= {}
     spine_properties = {}
     mo_properties = {}
@@ -314,7 +314,7 @@ def run(bk):
     if basename == "":
         if doctitle is None or doctitle == "":
             doc = "filename"
-        basename = cleanup_file_name(doctitle) + ".epub"
+        basename = cleanup_file_name(doctitle) + "_epub3.epub"
     # localRoot = tkinter.Tk()
     # localRoot.withdraw()
  
@@ -341,8 +341,10 @@ def run(bk):
     #     defaultextension=".epub"
     #     )
     # localRoot.destroy()
+
+    fpath = filepath
+
     # localRoot.quit()
-    fpath = os.path.join(basepath, basename)
     if not fpath:
         shutil.rmtree(temp_dir)
         print("ePub3-itizer plugin cancelled by user")
