@@ -2,9 +2,10 @@
 
 extension=${1:e}
 cmd="echo"
+script_dir=${0:A:h}/../toc
 if [[ $extension == "pdf" ]]; then
-	cmd=/home/jing/Documents/Code/Shell/toc/bookmark-pdf
+	cmd=$script_dir/bookmark-pdf
 elif [[ $extension == "djvu" ]]; then
-	cmd=/home/jing/Documents/Code/Shell/toc/bookmark-djvu
+	cmd=$script_dir/bookmark-djvu
 fi
 $cmd $@

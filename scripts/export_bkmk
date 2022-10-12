@@ -2,10 +2,11 @@
 
 extension=${1:e}
 cmd="echo"
+script_dir=${0:A:h}/../toc
 if [[ $extension == "pdf" ]]; then
-	cmd=/home/jing/Documents/Code/Shell/toc/pdf_bookmark.py
+	cmd=$script_dir/pdf_bookmark.py
 	$cmd -p $1 > $2
 elif [[ $extension == "djvu" ]]; then
-	cmd=/home/jing/Documents/Code/Shell/toc/bookmark-djvu-extract
+	cmd=$script_dir/bookmark-djvu-extract
 	$cmd $1 -o $2
 fi
