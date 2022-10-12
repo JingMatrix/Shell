@@ -1,0 +1,34 @@
+Table of contents,6
+Introduction,8
+d=10
+Chapter 1: Geometric preliminaries,1 
+	1.1 A brief introduction to Riemannian geometry,1 
+	1.2 Estimates on the components of the metric tensor,3 
+	1.3 From local analysis to global analysis,6 
+d=11
+Chapter 2: Sobolev spaces,10 
+	2.1 First definitions,10 
+	2.2 Density problems,12
+d=12
+Chapter 3: Sobolev embeddings,17 
+	3.1 Preliminary results,17 
+	3.2 The Sobolev embedding theorem for Rn,21 
+	3.3 Sobolev embeddings for compact manifolds,23 
+	3.4 Sobolev embeddings and convergence of manifolds,27 
+	3.5 Sobolev embeddings for complete manifolds,29 
+	3.6 Disturbed inequalities for complete manifolds,41 
+	3.7 R^n-type inequalities for complete manifolds,48 
+d=13
+Chapter 4: The best constants problems,58 
+	4.1 Program B,59 
+	4.2 Program A,60 
+	4.3 Proof of theorem 4.12,75 
+	4.4 Program A - Various results and open questions,79 
+	4.5 Improvement of the best constants,86 
+Chapter 5: Sobolev spaces in the presence of symmetries,90 
+	5.1 Embeddings in higher LP spaces,90 
+	5.2 Improvement of the best constants,95 
+	5.3 Compactness and symmetries,100 
+References,106 
+Notation index,114 
+Subject index,116 

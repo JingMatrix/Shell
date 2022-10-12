@@ -1,0 +1,87 @@
+Preface,6 
+Preface to the second edition,8
+Translator's preface to the second edition,12
+Contents,14
+d=17
+Part I NEWTONIAN MECHANICS,1
+	Chapter 1 Experimental facts,3 
+		1. The principles of relativity and determinacy,3 
+		2. The galilean group and Newton's equations,4 
+		3. Examples of mechanical systems,11 
+	Chapter 2 Investigation of the equations of motion,15 
+		4. Systems with one degree of freedom,15 
+		5. Systems with two degrees of freedom,22 
+		6. Conservative force fields,28 
+		7. Angular momentum,30 
+		8. Investigation of motion in a central field,33 
+		9. The motion of a point in three-space,42 
+		10. Motions of a system of η points,44 
+		11. The method of similarity,50 
+Part II LAGRANGIAN MECHANICS,53 
+	Chapter 3 Variational principles,55 
+		12. Calculus of variations,55 
+		13. Lagrange's equations,59 
+		14. Legendre transformations,61 
+		15. Hamilton's equations,65 
+		16. Liouville's theorem,68 
+	Chapter 4 Lagrangian mechanics on manifolds,75 
+		17. Holonomic constraints,75 
+		18. Differentiable manifolds,77 
+		19. Lagrangian dynamical systems,83 
+		20. E. Noether's theorem,88 
+		21. D'Alembert's principle,91 
+	Chapter 5 Oscillations,98 
+		22. Linearization,98 
+		23. Small oscillations,103 
+		24. Behavior of characteristic frequencies,110 
+		25. Parametric resonance,113 
+	Chapter 6 Rigid bodies,123 
+		26. Motion in a moving coordinate system,123 
+		27. Inertial forces and the Coriolis force,129 
+		28. Rigid bodies,133 
+		29. Eulefs equations. Poinsofs description of the motion,142 
+		30. Lagrange's top,148 
+		31. Sleeping tops and fast tops,154 
+Part III HAMILTONIAN MECHANICS,161 
+	Chapter 7 Differential forms,163 
+		32. Exterior forms,163 
+		33. Exterior multiplication,170 
+		34. Differential forms,174 
+		35. Integration of differential forms,181 
+		36. Exterior differentiation,188 
+	Chapter 8 Symplectic manifolds,201 
+		37. Symplectic structures on manifolds,201 
+		38. Hamiltonian phase flows and their integral invariants,204 
+		39. The Lie algebra of vector fields,208 
+		40. The Lie algebra of hamiltonian functions,214 
+		41. Symplectic geometry,219 
+		42. Parametric resonance in systems with many degrees of freedom,225 
+		43. A symplectic atlas,229 
+	Chapter 9 Canonical formalism,233 
+		44. The integral invariant of Poincare-Cartan,233 
+		45. Applications of the integral invariant of Poincare-Cartan,240 
+		46. Huygens' principle,248 
+		47. The Hamilton-Jacobi method for integrating Hamilton's canonical equations,258 
+		48. Generating functions,266 
+	Chapter 10 Introduction to perturbation theory,271 
+		49. Integrable systems,271 
+		50. Action-angle variables,279 
+		51. Averaging,285 
+		52. Averaging of perturbations,291 
+Appendix 1 Riemannian curvature,301 
+Appendix 2 Geodesies of left-invariant metrics on Lie groups and the hydrodynamics of ideal fluids,318 
+Appendix 3 Symplectic structures on algebraic manifolds,343 
+Appendix 4 Contact structures,349 
+Appendix 5 Dynamical systems with symmetries,371 
+Appendix 6 Normal forms of quadratic hamiltonians,381 
+Appendix 7 Normal forms of hamiltonian systems near stationary points and closed trajectories,385 
+Appendix 8 Theory of perturbations of conditionally periodic motion, and Kolmogorov's theorem,399 
+Appendix 9 Poincare's geometric theorem, its generalizations and applications,416 
+Appendix 10 Multiplicities of characteristic frequencies, and ellipsoids depending on parameters,425 
+Appendix 11 Short wave asymptotics,438 
+Appendix 12 Lagrangian singularities,446 
+Appendix 13 The Korteweg-de Vries equation,453 
+Appendix 14 Poisson structures,456 
+Appendix 15 On elliptic coordinates,469 
+Appendix 16 Singularities of ray systems,480 
+Index,511 

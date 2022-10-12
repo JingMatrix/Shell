@@ -1,0 +1,111 @@
+Preface,6
+Contents,12
+d=14
+1 What Is Curvature?,1
+	The Euclidean Plane,1
+	Surfaces in Space,4
+	Curvature in Higher Dimensions,7
+2 Riemannian Metrics,9
+	Definitions,9
+	Methods for Constructing Riemannian Metrics,15
+	Basic Constructions on Riemannian Manifolds,25
+	Lengths and Distances,33
+	Pseudo-Riemannian Metrics,40
+	Other Generalizations of Riemannian Metrics,46
+	Problems,47
+3 Model Riemannian Manifolds,55
+	Symmetries of Riemannian Manifolds,55
+	Euclidean Spaces,57
+	Spheres,58
+	Hyperbolic Spaces,62
+	Invariant Metrics on Lie Groups,67
+	Other Homogeneous Riemannian Manifolds,72
+	Model Pseudo-Riemannian Manifolds,79
+	Problems,80
+d=13
+4 Connections,85
+	The Problem of Differentiating Vector Fields,85
+	Connections,88
+	Covariant Derivatives of Tensor Fields,95
+	Vector and Tensor Fields Along Curves,100
+	Geodesics,103
+	Parallel Transport,105
+	Pullback Connections,110
+	Problems,111
+d=12
+5 The Levi-Civita Connection,115
+	The Tangential Connection Revisited,115
+	Connections on Abstract Riemannian Manifolds,117
+	The Exponential Map,126
+	Normal Neighborhoods and Normal Coordinates,131
+	Tubular Neighborhoods and Fermi Coordinates,133
+	Geodesics of the Model Spaces,136
+	Euclidean and Non-Euclidean Geometries,142
+	Problems,145
+6 Geodesics and Distance,151
+	Geodesics and Minimizing Curves,151
+	Uniformly Normal Neighborhoods,163
+	Completeness,166
+	Distance Functions,174
+	Semigeodesic Coordinates,181
+	Problems,185
+d=11
+7 Curvature,193
+	Local Invariants,193
+	The Curvature Tensor,196
+	Flat Manifolds,199
+	Symmetries of the Curvature Tensor,202
+	The Ricci Identities,205
+	Ricci and Scalar Curvatures,207
+	The Weyl Tensor,212
+	Curvatures of Conformally Related Metrics,216
+	Problems,222
+8 Riemannian Submanifolds,225
+	The Second Fundamental Form,225
+	Hypersurfaces,234
+	Hypersurfaces in Euclidean Space,244
+	Sectional Curvatures,250
+	Problems,255
+9 The Gauss–Bonnet Theorem,263
+	Some Plane Geometry,263
+	The Gauss–Bonnet Formula,271
+	The Gauss–Bonnet Theorem,276
+	Problems,281
+10 Jacobi Fields,283
+	The Jacobi Equation,284
+	Basic Computations with Jacobi Fields,287
+	Conjugate Points,297
+	The Second Variation Formula,300
+	Cut Points,307
+	Problems,313
+d=10
+11 Comparison Theory,319
+	Jacobi Fields, Hessians, and Riccati Equations,320
+	Comparisons Based on Sectional Curvature,327
+	Comparisons Based on Ricci Curvature,336
+	Problems,342
+12 Curvature and Topology,345
+	Manifolds of Constant Curvature,345
+	Manifolds of Nonpositive Curvature,352
+	Manifolds of Positive Curvature,361
+	Problems,368
+Appendix A: Review of Smooth Manifolds,371
+	Topological Preliminaries,371
+	Smooth Manifolds and Smooth Maps,374
+	Tangent Vectors,376
+	Submanifolds,378
+	Vector Bundles,382
+	The Tangent Bundle and Vector Fields,384
+	Smooth Covering Maps,388
+Appendix B: Review of Tensors,391
+	Tensors on a Vector Space,391
+	Tensor Bundles and Tensor Fields,396
+	Differential Forms and Integration,400
+	Densities,405
+Appendix C: Review of Lie Groups,407
+	Definitions and Properties,407
+	The Lie Algebra of a Lie Group,408
+	Group Actions on Manifolds,411
+References,415
+Notation Index,419
+Subject Index,423

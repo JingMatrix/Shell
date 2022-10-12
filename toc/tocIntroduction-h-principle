@@ -1,0 +1,126 @@
+Contents,5
+Preface,11
+d=14
+Intrigue,1
+Part 1. Holonomic Approximation,5
+	Chapter 1. Jets and Holonomy,7
+		§1.1. Maps and sections,7
+		§1.2. Coordinate definition of jets. The space J^r(R^n , R^q),8
+		§1.3. Invariant definition of jets,9
+		§1.4. The space X^(1),10
+		§1.5. Holonomic sections of the jet space X^(r),11
+		§1.6. Geometric representation of sections V → X^(r),11
+		§1.7. Holonomic splitting,12
+	Chapter 2. Thom Transversality Theorem,13
+		§2.1. Generic Properties and Transversality,13
+		§2.2. Stratified sets and polyhedra,14
+		§2.3. Thom Transversality Theorem,15
+	Chapter 3. Holonomic Approximation,19
+		§3.1. Main theorem,19
+		§3.2. Holonomic approximation over a cube,21
+		§3.3. Fiberwise holonomic sections,22
+		§3.4. Inductive Lemma,22
+		§3.5. Proof of the Inductive Lemma,26
+		§3.6. Holonomic approximation over a cube,31
+		§3.7. Parametric case,32
+	Chapter 4. Applications,33
+		§4.1. Functions without critical points,33
+		§4.2. Smale’s sphere eversion,34
+		§4.3. Open manifolds,35
+		§4.4. Approximate integration of tangential homotopies,37
+		§4.5. Directed embeddings of open manifolds,39
+		§4.6. Directed embeddings of closed manifolds,41
+		§4.7. Approximation of differential forms by closed forms,42
+Part 2. Differential Relations and Gromov’s h-Principle,45
+	Chapter 5. Differential Relations,47
+		§5.1. What is a differential relation?,47
+		§5.2. Open and closed differential relations,49
+		§5.3. Formal and genuine solutions of a differential relation,50
+		§5.4. Extension problem,50
+		§5.5. Approximate solutions to systems of differential equations,51
+	Chapter 6. Homotopy Principle,53
+		§6.1. Philosophy of the h-principle,53
+		§6.2. Different flavors of the h-principle,56
+	Chapter 7. Open Diff V -Invariant Differential Relations,59
+		§7.1. Diff V -invariant differential relations,59
+		§7.2. Local h-principle for open Diff V -invariant relations,60
+	Chapter 8. Applications to Closed Manifolds,63
+		§8.1. Microextension trick,63
+		§8.2. Smale-Hirsch h-principle,63
+		§8.3. Sections transversal to distribution,65
+Part 3. Homotopy Principle in Symplectic Geometry,67
+	Chapter 9. Symplectic and Contact Basics,69
+		§9.1. Linear symplectic and complex geometries,69
+		§9.2. Symplectic and complex manifolds,74
+		§9.3. Symplectic stability,79
+		§9.4. Contact manifolds,82
+		§9.5. Contact stability,87
+		§9.6. Lagrangian and Legendrian submanifolds,89
+		§9.7. Hamiltonian and contact vector fields,91
+	Chapter 10. Symplectic and Contact Structures on Open Manifolds,93
+		§10.1. Classification problem for symplectic and contact structures,93
+		§10.2. Symplectic structures on open manifolds,94
+		§10.3. Contact structures on open manifolds,96
+		§10.4. Two-forms of maximal rank on odd-dimensional manifolds,97
+	Chapter 11. Symplectic and Contact Structures on Closed Manifolds,99
+		§11.1. Symplectic structures on closed manifolds,99
+		§11.2. Contact structures on closed manifolds,101
+	Chapter 12. Embeddings into Symplectic and Contact Manifolds,105
+		§12.1. Isosymplectic embeddings,105
+		§12.2. Equidimensional isosymplectic immersions,112
+		§12.3. Isocontact embeddings,115
+		§12.4. Subcritical isotropic embeddings,122
+	Chapter 13. Microflexibility and Holonomic R-approximation,123
+		§13.1. Local integrability,123
+		§13.2. Homotopy extension property for formal solutions,125
+		§13.3. Microflexibility,125
+		§13.4. Theorem on holonomic R-approximation,127
+		§13.5. Local h-principle for microflexible Diff V -invariant relations,128
+	Chapter 14. First Applications of Microflexibility,129
+		§14.1. Subcritical isotropic immersions,129
+		§14.2. Maps transversal to a contact structure,130
+	Chapter 15. Microflexible A-invariant Differential Relations,133
+		§15.1. A-invariant differential relations,133
+		§15.2. Local h-principle for microflexible A-invariant relations,134
+	Chapter 16. Further Applications to Symplectic Geometry,137
+		§16.1. Legendrian and isocontact immersions,137
+		§16.2. Generalized isocontact immersions,138
+		§16.3. Lagrangian immersions,140
+		§16.4. Isosymplectic immersions,141
+		§16.5. Generalized isosymplectic immersions,143
+Part 4. Convex Integration,145
+	Chapter 17. One-Dimensional Convex Integration,147
+		§17.1. Example,147
+		§17.2. Convex hulls and ampleness,148
+		§17.3. Main lemma,149
+		§17.4. Proof of the main lemma,150
+		§17.5. Parametric version of the main lemma,155
+		§17.6. Proof of the parametric version of the main lemma,155
+	Chapter 18. Homotopy Principle for Ample Differential Relations,159
+		§18.1. Ampleness in coordinate directions,159
+		§18.2. Iterated convex integration,160
+		§18.3. Principal subspaces and ample differential relations in X (1),162
+		§18.4. Convex integration of ample differential relations,163
+	Chapter 19. Directed Immersions and Embeddings,165
+		§19.1. Criterion of ampleness for directed immersions,165
+		§19.2. Directed immersions into almost symplectic manifolds,166
+		§19.3. Directed immersions into almost complex manifolds,167
+		§19.4. Directed embeddings,168
+	Chapter 20. First Order Linear Differential Operators,171
+		§20.1. Formal inverse of a linear differential operator,171
+		§20.2. Homotopy principle for D-sections,172
+		§20.3. Non-vanishing D-sections,173
+		§20.4. Systems of linearly independent D-sections,174
+		§20.5. Two-forms of maximal rank on odd-dimensional manifolds,177
+		§20.6. One-forms of maximal rank on even-dimensional manifolds,178
+	Chapter 21. Nash-Kuiper Theorem,181
+		§21.1. Isometric immersions and short immersions,181
+		§21.2. Nash-Kuiper theorem,182
+		§21.3. Decomposition of a metric into a sum of primitive metrics,183
+		§21.4. Approximation theorem,183
+		§21.5. One-dimensional approximation theorem,185
+		§21.6. Adding a primitive metric,186
+		§21.7. End of the proof of the approximation theorem,188
+		§21.8. Proof of the Nash-Kuiper theorem,188
+Bibliography,191
+Index,195

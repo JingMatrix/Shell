@@ -1,0 +1,78 @@
+d=-3
+Title,4
+Copyright,5
+Contents,8
+Preface,10
+Chapter 0. Background Material,14
+	Topology,14
+	Tensors,16
+	Differential Calculus,20
+	Exercises and Problems,26
+Chapter 1. Differentiable Manifolds,32
+	Basic Definitions,32
+	Partition of Unity,38
+	Differentiable Mappings,40
+	Submanifolds,42
+	The Whitney Theorem,43
+	The Sard Theorem,47
+	Exercises and Problems,51
+	Solutions to Exercises,53
+Chapter 2. Tangent Space,56
+	Tangent Vector,57
+	Linear Tangent Mapping,59
+	Vector Bundles,61
+	The Bracket [X,Y],62
+	Exterior Differential,65
+	Orientable Manifolds,68
+	Manifolds with Boundary,71
+	Exercises and Problems,73
+	Solutions to Exercises and Problems,79
+Chapter 3. Integration of Vector Fields and Differential Forms,90
+	Integration of Vector Fields,90
+	Lie Derivative,92
+	The Frobenius Theorem,94
+	Integrability Criteria,98
+	Exercises and Problems,100
+	Solutions to Exercises and Problems,106
+Chapter 4. Linear Connections,112
+	First Definitions,112
+	Christoffel Symbols,113
+	Torsion and Curvature,114
+	Parallel Transport. Geodesics,116
+	Covariant Derivative,118
+	Exercises and Problems,120
+	Solutions to Exercises,121
+Chapter 5. Riemannian Manifolds,124
+	Some Definitions,124
+	Riemannian Connection,127
+	Exponential Mapping,130
+	Some Operators on Differential Forms,134
+	Spectrum of a Manifold,138
+	Exercises and Problems,141
+	Solutions to Exercises and Problems,158
+Chapter 6. The Yamabe Problem: An Introduction to Research,182
+Bibliography,190
+Subject Index,192
+	A,192
+	B,192
+	C,192
+	D,192
+	E,193
+	F,193
+	G,193
+	H,193
+	I,193
+	J,193
+	K,193
+	L,193
+	M,193
+	N,194
+	O,194
+	P,194
+	R,194
+	S,194
+	T,194
+	V,194
+	W,194
+	Y,194
+Notation,196
