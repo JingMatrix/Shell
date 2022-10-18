@@ -1,0 +1,7 @@
+#! /bin/zsh
+
+free_api=($(cat ~/.config/freemobile))
+curl -G 'https://smsapi.free-mobile.fr/sendmsg'\
+	--data user=$free_api[1]\
+	--data pass=$free_api[2]\
+	--data-urlencode msg=${1:=$(wl-paste)}
