@@ -90,11 +90,6 @@ augroup END
 " sudo edit
 let g:suda_smart_edit=0
 
-" Add system path if not presented
-if stridx($PATH, 'node')==-1
-	let $PATH .=':/home/jing/.nvm/versions/node/v18.1.0/bin'
-endif
-
 " formater
 augroup formatter
 	autocmd!
@@ -154,13 +149,7 @@ set mouse=a
 set showcmd
 set inccommand=split
 set scrolloff=5
-set undodir=/var/tmp/vim
-set backupdir=/var/tmp/vim
 set undofile
-augroup rmundo
-	autocmd!
-	autocmd VimEnter /tmp/* set noundofile
-augroup END
 
 set spelllang=en_us
 set conceallevel=2
@@ -185,6 +174,18 @@ set omnifunc=syntaxcomplete#Complete
 
 let g:vimsyn_noerror=1
 if system('whoami') =~ 'jing'
-	" file locate $HOME/.config/nvim/lua/vim-init.lua
+	" file location $HOME/.config/nvim/lua/vim-init.lua
 	lua require('vim-init')
+
+	set undodir=/var/tmp/vim
+	set backupdir=/var/tmp/vim
+	augroup rmundo
+		autocmd!
+		autocmd VimEnter /tmp/* set noundofile
+	augroup END
+
+	" Add system path if not presented
+	if stridx($PATH, 'node')==-1
+		let $PATH .=':/home/jing/.nvm/versions/node/v18.1.0/bin'
+	endif
 endif
