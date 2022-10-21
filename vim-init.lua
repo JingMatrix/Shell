@@ -49,7 +49,9 @@ local lspconfig = require("lspconfig")
 ---@diagnostic disable-next-line: unused-local
 local lsp_on_attach = function(client, bufnr)
 	-- Enable completion triggered by <c-x><c-o>
-	vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
+	if vim.bo.filetype ~= 'tex' then
+		vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
+	end
 
 	-- Mappings.
 	-- See `:help vim.lsp.*` for documentation on any of the below functions
@@ -116,7 +118,7 @@ local lsp_servers = {
 	-- "pyright",
 	"pylsp",
 	"vimls",
-	-- "kotlin_language_server",
+	"kotlin_language_server",
 	"tsserver",
 	"racket_langserver",
 	"clangd",
@@ -134,34 +136,6 @@ for _, lsp in pairs(lsp_servers) do
 		on_attach = lsp_on_attach,
 	})
 end
-
-local function readFiles(files)
-    local dict = {}
-    for _,file in ipairs(files) do
-        local f = io.open(file, "r")
-        for l in f:lines() do
-            table.insert(dict, l)
-        end
-    end
-    return dict
-end
-
-lspconfig.ltex.setup({
-	on_attach = lsp_on_attach,
-	filetypes = { "tex", "markdown", "mail" },
-	settings = {
-		ltex = {
-			language = "auto",
-			additionalRules = {
-				motherTongue = "zh-CN",
-			},
-			dictionary = {
-				fr = readFiles({ "/home/jing/.config/nvim/spell/fr.utf-8.add" }),
-				["en-US"] = readFiles({ "/home/jing/.config/nvim/spell/en.utf-8.add", "/home/jing/.config/nvim/spell/fr.utf-8.add" }),
-			},
-		},
-	},
-})
 
 lspconfig.sumneko_lua.setup({
 	on_attach = lsp_on_attach,
@@ -196,13 +170,14 @@ lspconfig.html.setup({
 	capabilities = capabilities,
 	on_attach = lsp_on_attach,
 })
+
 -- Debug Adapter
 --
 
 local dap = require("dap")
 dap.adapters.lldb = {
 	type = "executable",
-	command = "/usr/bin/lldb-vscode-14", -- adjust as needed, must be absolute path
+	command = "/usr/bin/lldb-vscode-15", -- adjust as needed, must be absolute path
 	name = "lldb",
 }
 
@@ -268,4 +243,96 @@ require("dapui").setup({
 		size = 10,
 		position = "bottom",
 	},
+})
+
+-- ltex config
+--
+local ltex_languages = {
+	"auto",
+	"ar",
+	"ast-ES",
+	"be-BY",
+	"br-FR",
+	"ca-ES",
+	"ca-ES-valencia",
+	"da-DK",
+	"de",
+	"de-AT",
+	"de-CH",
+	"de-DE",
+	"de-DE-x-simple-language",
+	"el-GR",
+	"en",
+	"en-AU",
+	"en-CA",
+	"en-GB",
+	"en-NZ",
+	"en-US",
+	"en-ZA",
+	"eo",
+	"es",
+	"es-AR",
+	"fa",
+	"fr",
+	"ga-IE",
+	"gl-ES",
+	"it",
+	"ja-JP",
+	"km-KH",
+	"nl",
+	"nl-BE",
+	"pl-PL",
+	"pt",
+	"pt-AO",
+	"pt-BR",
+	"pt-MZ",
+	"pt-PT",
+	"ro-RO",
+	"ru-RU",
+	"sk-SK",
+	"sl-SI",
+	"sv",
+	"ta-IN",
+	"tl-PH",
+	"uk-UA",
+	"zh-CN",
+}
+
+local ltex_settings = {
+	ltex = {
+		enabled = { "markdown", "tex", "mail", "gitcommit" },
+		additionalRules = {
+			motherTongue = "zh-CN",
+		},
+	}
+}
+
+lspconfig.ltex.setup({
+	settings = ltex_settings,
+	filetypes = { "markdown", "tex", "mail", "gitcommit" },
+	single_file_support = true,
+	on_attach = function(client, bufnr)
+		-- local ft = vim.bo.filetype
+		-- if ft == "mail" then
+			-- ltex_settings.ltex.language = fr
+		-- end
+		lsp_on_attach(client, bufnr)
+		require("ltex_extra").setup({
+			load_langs = { "en-US", "fr", "zh-CN" },
+			init_check = true,
+			path = vim.fn.stdpath("config") .. "/spell/ltex",
+		})
+		vim.api.nvim_create_user_command("LtexSwitchLang", function(args)
+			local splited_args = vim.split(args.args, " ", { trimemtpy = true })
+			ltex_settings.ltex.language = splited_args[1]
+			client.notify("workspace/didChangeConfiguration", { setings = ltex_settings })
+		end, {
+			nargs = 1,
+			complete = function(ArgLead, _, _)
+				return vim.tbl_filter(function(el)
+					return el:find(ArgLead, 1, true)
+				end, ltex_languages)
+			end,
+		})
+	end,
 })

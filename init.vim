@@ -13,6 +13,7 @@ let g:vimtex_fold_manual=1
 let g:vimtex_view_method='zathura'
 let g:vimtex_log_ignore=['Viewer cannot find Zathura window ID!']
 let g:matchup_override_vimtex=1
+let g:vimtex_complete_close_braces=1
 let g:vimtex_quickfix_open_on_warning=0
 let g:vimtex_quickfix_ignore_filters=['(Package hyperref) Token not', 'Fandol']
 let g:vimtex_syntax_custom_cmds=[
@@ -121,23 +122,19 @@ function ToggleChineseInput()
 	endif
 endfunction
 nmap yoz :call ToggleChineseInput()<cr>
-augroup toggles
-	autocmd!
-	" autocmd BufRead *otes/*.md normal yoz
-	" autocmd BufRead /tmp/tmp*.txt normal yoz
-augroup END
 
-" writing dairy
-augroup notable
+augroup writing
 	autocmd!
+	" writing dairy
 	autocmd BufWritePre *otes/*.md 1,7s/\v^modified:\ "\zs.*\ze"$/\=system('date -Is | head -c -1')
 	autocmd BufWritePost  *otes/*.md normal ``zz
+	autocmd FileType mail,markdown setl spelllang=fr,en_us
 augroup END
 
-augroup spellang
+augroup commentstring
 	autocmd!
-	" autocmd FileType markdown setl spelllang+=cjk
-	autocmd FileType mail,markdown setl spelllang=fr,en_us
+	autocmd FileType mail setl commentstring=>\ %s
+	autocmd FileType kotlin setl commentstring=//\ %s
 augroup END
 
 " comments
@@ -175,7 +172,7 @@ hi PmenuSel ctermfg=yellow
 
 set hidden
 set autowrite
-set foldmethod=syntax
+set foldmethod=indent
 set foldexpr=nvim_treesitter#foldexpr()
 set fillchars=fold:\ ,
 set modeline
