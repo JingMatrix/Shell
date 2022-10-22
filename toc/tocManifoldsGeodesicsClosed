@@ -1,0 +1,98 @@
+Table of Contents,7
+d=9
+Chapter 0. Introduction,1 
+	A. Motivation and History,1 
+	B. Organization and Contents,4 
+	C. What is New in this Book?,10 
+	D. What are the Main Problems Today?,11 
+Chapter i. Basic Facts about the Geodesic Flow,13 
+	A. Summary,13 
+	B. Generalities on Vector Bundles,14 
+	C. The Cotangent Bundle,17 
+	D. The Double Tangent Bundle,18 
+	E. Riemannian Metrics,21 
+	F. Calculus of Variations,22 
+	G. The Geodesic Flow,28 
+	H. Connectors,32 
+	I. Covariant Derivatives,37 
+	J. Jacobi Fields,42 
+	K. Riemannian Geometry of the Tangent Bundle,46 
+	L. Formulas for the First and Second Variations of the Length of Curves,48 
+	M. Canonical Measures of Riemannian Manifolds,51 
+Chapter 2. The Manifold of Geodesies,53 
+	A. Summary,53 
+	B. The Manifold of Geodesies,53 
+	C. The Manifold of Geodesies as a Symplectic Manifold,58 
+	D. The Manifold of Geodesies as a Riemannian Manifold,61 
+Chapter 3. Compact Symmetric Spaces of Rank one From a Geometric Point of View,71 
+	A. Introduction,71 
+	B. The Projective Spaces as Base Spaces of the Hopf Fibrations,72 
+	C. The Projective Spaces as Symmetric Spaces,75 
+	D. The Hereditary Properties of Projective Spaces,78 
+	E. The Geodesies of Projective Spaces,81 
+	F. The Topology of Projective Spaces,83 
+	G. The Cayley Projective Plane,86 
+Chapter 4. Some Examples of C- and P-Manifolds: Zoll and Tannery Surfaces,94 
+	A. Introduction,94 
+	B. Characterization of P-Metrics of Revolution on S2,95 
+	C. Tannery Surfaces and Zoll Surfaces Isometrically Embedded in (1R? can),105 
+	D. Geodesies on Zoll Surfaces of Revolution,114 
+	E. Higher Dimensional Analogues of Zoll metrics on S2,119 
+	F. On Conformal Deformations of P-Manifolds: A. Weinstein's Result,121 
+	G. The Radon Transform on (S2, can),123 
+	H. V.Guillemin's Proof of Funk's Claim,126 
+Chapter 5. Blaschke Manifolds and Blaschke's Conjecture,129 
+	A. Summary,129 
+	B. Metric Properties of a Riemannian Manifold,130 
+	C. The Allamigeon-Warner Theorem,132 
+	D. Pointed Blaschke Manifolds and Blaschke Manifolds,135 
+	E. Some Properties of Blaschke Manifolds,141 
+	F. Blaschke's Conjecture,143 
+	G. The Kahler Case,149 
+	H. An Infinitesimal Blaschke Conjecture,151 
+Chapter 6. Harmonic Manifolds,154 
+	A. Introduction,154 
+	B. Various Definitions, Equivalences,156 
+	C. Infinitesimally Harmonic Manifolds, Curvature Conditions,160 
+	D. Implications of Curvature Conditions,163 
+	E. Harmonic Manifolds of Dimension 4,166 
+	F. Globally Harmonic Manifolds: Allamigeon's Theorem,170 
+	G. Strongly Harmonic Manifolds,172 
+Chapter 7. On the Topology of SC- and ?-Manifolds,179 
+	A. Introduction,179 
+	B. Definitions *,180 
+	C. Examples and Counter-Examples,184 
+	D. Bott-Samelson Theorem (C-Manifolds),186 
+	E. P-Manifolds,192 
+	F. Homogeneous SC-Manifolds,194 
+	G. Questions,198 
+	H. Historical Note,200 
+Chapter 8. The Spectrum of P-Manifolds,201 
+	A. Summary,201 
+	B. Introduction,201 
+	C. Wave Front Sets and Sobolev Spaces,203 
+	D. Harmonic Analysis on Riemannian Manifolds,206 
+	E. Propagation of Singularities,208 
+	F. Proof of the Theorem 8.9 (J. Duistermaat and V. Guillemin),209 
+	G. A.Weinstein's result,210 
+	H. On the First Eigenvalue λι=μ*,211 
+Appendix A. Foliations by Geodesic Circles. By D. B. A. Epstein,214 
+	I. A. W.Wadsley's Theorem,214 
+	II. Foliations With All Leaves Compact,221 
+Appendix B. Sturm-Liouville Equations all of whose Solutions are Periodic after F. Neuman. By Jean Pierre Bourguignon,225 
+	I. Summary,225 
+	II. Periodic Geodesies and the Sturm-Liouville Equation,225 
+	III. Sturm-Liouville Equations all of whose Solutions are Periodic,227 
+	IV. Back to Geometry with Some Examples and Remarks,230 
+Appendix C. Examples of Pointed Blaschke Manifolds. By Lionel Berard Bergery,231 
+	I. Introduction,231 
+	II. A. Weinstein's Construction,231 
+	III. Some Applications,234 
+Appendix D. Blaschke's Conjecture for Spheres. By Marcel Berger,236 
+	I. Results,236 
+	II. Some Lemmas,237 
+	III. Proof of Theorem D.4,241 
+Appendix E. An Inequality Arising in Geometry. By Jerry L. Kazdan,243 
+Bibliography,247 
+Notation Index,255 
+Subject Index,259 
