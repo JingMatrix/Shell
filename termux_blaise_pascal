@@ -1,6 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/sh
 
-if ping -c 1 wireless.wifirst.net 1>/dev/null; then
+ifconfig 2>/dev/null | grep 'inet 10' 1>/dev/null && ping -c 1 wireless.wifirst.net 2>/dev/null 1>/dev/null
+if [ $? -eq '0' ]; then
 	path_to_current_script=/data/data/com.termux/files/home/.shortcuts/blaise_pascal
 	atq -q n | cut -f 1 | xargs atrm
 
@@ -24,7 +25,7 @@ if ping -c 1 wireless.wifirst.net 1>/dev/null; then
 		termux-toast "Login failed, reset MAC address"
 		su shell -c cmd wifi forget-network $(sudo cmd wifi status | grep -o -P 'Net ID: \K\d+')
 		sudo cmd wifi connect-network 'Wifirst Blaise Pascal' open -r non_persistent
-		sleep 9
+		sleep 8
 		login_wifirst
 	fi
 	at -q n -M -f $path_to_current_script now + 10 minute
