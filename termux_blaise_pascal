@@ -17,14 +17,14 @@ if ping -c 1 wireless.wifirst.net 1>/dev/null; then
 			--data "success_url=https://www.google.fr" \
 			--data "error_url=https://portal-front.wifirst.net" \
 			--compressed | grep -o -P 'code=\K\d')
-		return ${error_code:=1}
+		return ${error_code:=0}
 	}
 
 	if ! login_wifirst; then
 		termux-toast "Login failed, reset MAC address"
 		su shell -c cmd wifi forget-network $(sudo cmd wifi status | grep -o -P 'Net ID: \K\d+')
 		sudo cmd wifi connect-network 'Wifirst Blaise Pascal' open -r non_persistent
-		sleep 8
+		sleep 9
 		login_wifirst
 	fi
 	at -q n -M -f $path_to_current_script now + 10 minute
