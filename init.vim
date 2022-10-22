@@ -1,8 +1,7 @@
 " vimtex
 let g:vimtex_compiler_method='latexmk'
 let g:vimtex_quickfix_method='pplatex'
-let g:vimtex_compiler_latexmk={'build_dir' : '/var/tmp/latex',
-			\'options' : [
+let g:vimtex_compiler_latexmk={'options' : [
 				\'-verbose',
 				\'-bibtex',
 				\'-synctex=1',
