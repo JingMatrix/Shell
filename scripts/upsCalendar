@@ -75,7 +75,7 @@ echo "\rCourse from $startdate to $enddate"
 echo -n '\033[1;37m'
 echo "DATE\tTIME\tInformation\n"
 echo -n '\033[0m'
-curl -s 'https://edt.univ-tlse3.fr/calendar2/Home/GetCalendarData' --data-raw "start=$startdate&end=$enddate&resType=103&calView=month&federationIds%5B%5D=28318&colourScheme=3" >/tmp/cour.json | jq -r 'sort_by(.start) | .[] | [.start, .description, .eventCategory, .end] | @tsv' |
+curl -s 'https://edt.univ-tlse3.fr/calendar2/Home/GetCalendarData' --data-raw "start=$startdate&end=$enddate&resType=103&calView=month&federationIds%5B%5D=28318&colourScheme=3" > $PREFIX/tmp/cour.json | jq -r 'sort_by(.start) | .[] | [.start, .description, .eventCategory, .end] | @tsv' |
 	while IFS=$'\t' read -r starttime description eventCategory endtime; do
 		if [[ $eventCategory = "CONGES" ]]; then
 			continue
