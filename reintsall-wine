@@ -6,10 +6,10 @@ regs=$(mktemp -d)
 cp $HOME/.wine/*.reg $regs
 rm -rf $HOME/.wine
 wine wineboot
-cp $regs/*.reg $HOME/.wine
+# cp $regs/*.reg $HOME/.wine
 rm -rf $HOME/.wine/dosdevices/z:
 ln -sf $HOME/Archives/Games/'GOG Games' $HOME/.wine/drive_c
 rm -rf $HOME/.wine/drive_c/users/$USER
 cp -r $usrfile/$USER $HOME/.wine/drive_c/users
 rm -rf $usrfile $regs
-winetricks d3dx11_43 d3dcompiler_43 d3dcompiler_47 d3dx9_43
+# winetricks d3dx11_43 d3dcompiler_43 d3dcompiler_47 d3dx9_43

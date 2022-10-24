@@ -300,7 +300,7 @@ local ltex_languages = {
 
 local ltex_settings = {
 	ltex = {
-		enabled = { "markdown", "tex", "mail", "gitcommit" },
+		enabled = { "markdown", "latex", "mail", "gitcommit" },
 		additionalRules = {
 			motherTongue = "zh-CN",
 		},

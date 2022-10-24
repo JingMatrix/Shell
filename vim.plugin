@@ -27,6 +27,7 @@
 │       ├── fzf
 │       ├── fzf-lua
 │       ├── fzf.vim
+│       ├── ltex_extra.nvim
 │       ├── nnn.nvim
 │       ├── nvim-dap-ui
 │       ├── nvim-lspconfig
@@ -52,4 +53,4 @@
         ├── vim-airline
         └── vim-airline-themes
 
-52 directories, 0 files
+53 directories, 0 files
