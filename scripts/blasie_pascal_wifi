@@ -1,5 +1,6 @@
 #! /bin/sh
 
+set -x
 # Please change this variable accordingly.
 path_to_current_script="$HOME/Documents/Code/Shell/scripts/blasie_pascal_wifi"
 
@@ -19,14 +20,14 @@ if [ "$(iwgetid | grep 'ESSID:"Wifirst Blaise Pascal"')" ]; then
 
 	# First logout from possible old sessions
 
-	/bin/curl -s 'https://wireless.wifirst.net:8090/goform/HtmlLogout' \
+	/bin/curl -s 'https://wireless.wifirst.net/goform/HtmlLogout' \
 		--data "error_url=https://www.google.fr" \
 		--data "success_url=https://portal-front.wifirst.net"
 
 	# Generate random account
 
 	current_time=$(date +%s%3N)
-	error_code=$(curl -s -D - 'https://wireless.wifirst.net:8090/goform/HtmlLoginRequest' \
+	error_code=$(curl -s -D - 'https://wireless.wifirst.net/goform/HtmlLoginRequest' \
 		--data "username=PAY/$current_time@wifirst.net" \
 		--data "password=$current_time" \
 		--data "success_url=https://www.google.fr" \

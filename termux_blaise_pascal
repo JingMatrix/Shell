@@ -1,18 +1,18 @@
 #!/data/data/com.termux/files/usr/bin/sh
 
 ifconfig 2>/dev/null | grep 'inet 10' 1>/dev/null && ping -c 1 wireless.wifirst.net 2>/dev/null 1>/dev/null
-if [ $? -eq '0' ]; then
+if [ $? -eq 0 ]; then
 	path_to_current_script=/data/data/com.termux/files/home/.shortcuts/blaise_pascal
 	atq -q n | cut -f 1 | xargs atrm
 
-	curl -s 'https://wireless.wifirst.net:8090/goform/HtmlLogout' \
+	curl -s 'https://wireless.wifirst.net/goform/HtmlLogout' \
 		--data "error_url=https://www.google.fr" \
 		--data "success_url=https://portal-front.wifirst.net"
 
 	# Generate random account
 	login_wifirst() {
 		current_time=$(date +%s%3N)
-		error_code=$(curl -s -D - 'https://wireless.wifirst.net:8090/goform/HtmlLoginRequest' \
+		error_code=$(curl -s -D - 'https://wireless.wifirst.net/goform/HtmlLoginRequest' \
 			--data "username=PAY/$current_time@wifirst.net" \
 			--data "password=$current_time" \
 			--data "success_url=https://www.google.fr" \
@@ -33,5 +33,5 @@ if [ $? -eq '0' ]; then
 	termux-wake-lock &
 else
 	termux-toast "Not connected to Wifirst Blaise Pascal"
-	termux-wake-unlock &
+	termux-wake-unlock && logout
 fi
