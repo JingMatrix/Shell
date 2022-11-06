@@ -1,0 +1,14 @@
+#! zsh
+
+if [[ $USER != 'jing' ]]; then
+	mkdir -p $HOME/storage/pictures/500px
+	pushd $HOME/storage/pictures/500px
+else 
+	mkdir -p $HOME/Images/500px
+	pushd $HOME/Images/500px
+fi
+
+photoID=$(grep -Po '\d+(?=/)' <<< $1)
+photoData=$(curl "https://api.500px.com/v1/photos/$photoID?image_size[]=4096")
+curl $(jq -r '.photo.image_url[0]' <<< $photoData) > "$(grep -Po '\d+/\K\S+' <<< $1).$(jq -r '.photo.image_format' <<< $photoData)"
+popd
