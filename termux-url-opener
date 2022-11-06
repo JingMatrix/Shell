@@ -1,0 +1,6 @@
+#! /data/data/com.termux/files/usr/bin/zsh
+
+if grep '500px.com' <<< $1; then
+	$HOME/.local/bin/500px $1
+	exit
+fi
