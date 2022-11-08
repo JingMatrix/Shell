@@ -1,9 +1,29 @@
 #! /bin/python3
 
+# Requirements:
+# 1. [aligo](https://github.com/foyoux/aligo), which is available on pypi.org
+# 2. [aria2c](https://aria2.github.io), optional dependency for downloading
+# 2. An (aliyun)[https://www.aliyundrive.com/] account
+
+# Usage Example:
+# 1. Generate share link index data in the foler $share_file_list_directory
+# > python3 ./aliyun-share https://www.aliyundrive.com/s/wnfVTd1u92T/folder/619010166fe8c7b3e00f4acd813c9ed47b5fbddc
+# 2. Find desired file_id in the index file `619010166fe8c7b3e00f4acd813c9ed47b5fbddc.json`,
+#   for example, we choose the file `[黎曼几何].Jost.Riemannian.Geometry.and.Geome.pdf` with file_id 619010164dbe4eab5e3f4c5db1611344350e0f2a
+# > python3 ./aliyun-share 619010164dbe4eab5e3f4c5db1611344350e0f2a
+
+# Config:
+# Modify the variables $share_file_list_directory, $share_id_data_file and $download_dir.
+
+
 import os
 import json
 import re
 import sys
+
+share_file_list_directory = '$HOME/Archives/Data/Ebooks/Aliyun/'
+share_id_data_file = '/tmp/share_id'
+download_dir = '/tmp'
 
 if len(sys.argv) == 1:
     # refresh login token
@@ -13,10 +33,6 @@ if len(sys.argv) == 1:
 
 match_share_id = re.match(r"https://www.aliyundrive.com/s/([^/]+)(/folder)?",
                     sys.argv[1])
-
-share_file_list_directory = '/home/jing/Archives/Data/Ebooks/Aliyun/'
-share_id_data_file = '/tmp/share_id'
-download_dir = '/tmp'
 
 if match_share_id:
     share_id = match_share_id.group(1)
