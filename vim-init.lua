@@ -114,9 +114,9 @@ end
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
 local lsp_servers = {
-	"jedi_language_server",
+	-- "jedi_language_server",
 	-- "pyright",
-	-- "pylsp",
+	"pylsp",
 	"vimls",
 	"kotlin_language_server",
 	"tsserver",
