@@ -119,7 +119,6 @@ local lsp_servers = {
 	"pylsp",
 	"vimls",
 	"kotlin_language_server",
-	"tsserver",
 	"racket_langserver",
 	"clangd",
 	"cmake",
@@ -136,6 +135,16 @@ for _, lsp in pairs(lsp_servers) do
 		on_attach = lsp_on_attach,
 	})
 end
+
+lspconfig.denols.setup ({
+  on_attach = lsp_on_attach,
+  root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc", "deno.lock"),
+})
+
+lspconfig.tsserver.setup ({
+  on_attach = lsp_on_attach,
+  root_dir = lspconfig.util.root_pattern("package.json", "tsconfig.json", "jsconfig.json")
+})
 
 lspconfig.sumneko_lua.setup({
 	on_attach = lsp_on_attach,
@@ -171,6 +180,9 @@ lspconfig.html.setup({
 	on_attach = lsp_on_attach,
 })
 
+vim.g.markdown_fenced_languages = {
+  "ts=typescript"
+}
 -- Debug Adapter
 --
 
