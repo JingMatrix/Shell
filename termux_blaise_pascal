@@ -40,6 +40,15 @@ if [ $? -eq 0 ]; then
 	fi
 	at -q n -M -f $path_to_current_script now + 10 minute
 
+	if [ -e $PREFIX/var/lib/zerotier-one/zerotier-one.pid ]; then
+		kill -s 0 $(cat $PREFIX/var/lib/zerotier-one/zerotier-one.pid)
+		if [ $? -ne 0 ]; then
+			sudo zerotier-one &
+		fi
+	else
+		sudo zerotier-one &
+	fi
+
 	termux-wake-lock &
 else
 	termux-toast "Not connected to Wifirst Blaise Pascal"
