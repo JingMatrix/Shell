@@ -3,4 +3,8 @@
 if grep '500px.com' <<< $1; then
 	$HOME/.local/bin/500px $1
 	exit
+elif grep -E '^http' <<< $1; then
+	xdg-open  $1
+else
+	xdg-open "https://www.google.com/search?q=$1"
 fi
