@@ -1,0 +1,17 @@
+#!/data/data/com.termux/files/usr/bin/sh
+
+sudo settings put global http_proxy localhost:8080
+trap 'sudo settings put global http_proxy :0; pkill tor ; pkill i2pd' INT
+# cd $PREFIX/tmp
+if ! pgrep tor; then
+	tor --runasdaemon 1 >/dev/null
+fi
+if ! pgrep i2pd; then
+	i2pd --daemon
+fi
+# echo '(?:.+\.)onion' >tor
+# echo '(?:.+\.)i2p' >i2p
+# pproxy -v \
+# 	-r socks5://localhost:9050\?tor \
+# 	-r http://localhost:4444\?i2p \
+$HOME/go/bin/clash
