@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/sh
 
-ifconfig 2>/dev/null | grep 'inet 10' 1>/dev/null && ping -c 1 wireless.wifirst.net 2>/dev/null 1>/dev/null
+ifconfig 2>/dev/null | grep 'inet 10.188' 1>/dev/null && ping -c 1 wireless.wifirst.net 2>/dev/null 1>/dev/null
 if [ $? -eq 0 ]; then
 
 	if [ -e $PREFIX/var/run/atd.pid ]; then
@@ -43,9 +43,17 @@ if [ $? -eq 0 ]; then
 	if [ -e $PREFIX/var/lib/zerotier-one/zerotier-one.pid ]; then
 		kill -s 0 $(cat $PREFIX/var/lib/zerotier-one/zerotier-one.pid)
 		if [ $? -ne 0 ]; then
+			sudo ip rule | grep 'lookup main' 1>/dev/null
+			if [ $? -ne 0 ]; then
+				sudo ip rule add from all table main
+			fi
 			sudo zerotier-one &
 		fi
 	else
+		sudo ip rule | grep 'lookup main' 1>/dev/null
+		if [ $? -ne 0 ]; then
+			sudo ip rule add from all table main
+		fi
 		sudo zerotier-one &
 	fi
 
