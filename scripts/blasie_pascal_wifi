@@ -1,6 +1,5 @@
 #! /bin/sh
 
-set -x
 # Please change this variable accordingly.
 path_to_current_script="$HOME/Documents/Code/Shell/scripts/blasie_pascal_wifi"
 
@@ -19,6 +18,12 @@ path_to_current_script="$HOME/Documents/Code/Shell/scripts/blasie_pascal_wifi"
 if [ "$(iwgetid | grep 'ESSID:"Wifirst Blaise Pascal"')" ]; then
 
 	# First logout from possible old sessions
+	time_remaining=$(/bin/curl -s 'https://wireless.wifirst.net/captive-portal/api' -H "Content-Type: application/captive+json" | grep -oP '"seconds-remaining": \K\d+')
+	if [ $time_remaining -gt 10 ]; then
+		/bin/atq -q n | /bin/cut -f 1 | /bin/xargs /bin/atrm
+		/bin/at -q n -M -f $path_to_current_script now + $(expr $time_remaining / 60) minutes
+		exit
+	fi
 
 	/bin/curl -s 'https://wireless.wifirst.net/goform/HtmlLogout' \
 		--data "error_url=https://www.google.fr" \
@@ -44,6 +49,6 @@ if [ "$(iwgetid | grep 'ESSID:"Wifirst Blaise Pascal"')" ]; then
 		# remove possible duplicated at jobs
 		/bin/atq -q n | /bin/cut -f 1 | /bin/xargs /bin/atrm
 		# setup new job in 10 minutes
-		/bin/at -q n -M -f $path_to_current_script now + 10 minute
+		/bin/at -q n -M -f $path_to_current_script now + 10 minutes
 	fi
 fi
