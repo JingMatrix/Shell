@@ -15,6 +15,12 @@ if [ $? -eq 0 ]; then
 	path_to_current_script=/data/data/com.termux/files/home/.shortcuts/blaise_pascal
 	atq -q n | cut -f 1 | xargs atrm
 
+	time_remaining=$(curl -s 'https://wireless.wifirst.net/captive-portal/api' -H "Content-Type: application/captive+json" | grep -oP '"seconds-remaining": \K\d+')
+	if [ $time_remaining -gt 10 ]; then
+		at -q n -M -f $path_to_current_script now + $(expr $time_remaining / 60) minutes
+		exit
+	fi
+
 	curl -s 'https://wireless.wifirst.net/goform/HtmlLogout' \
 		--data "error_url=https://www.google.fr" \
 		--data "success_url=https://portal-front.wifirst.net"
@@ -32,9 +38,11 @@ if [ $? -eq 0 ]; then
 	}
 
 	if ! login_wifirst; then
+		sudo macchanger -r $(ifconfig 2>/dev/null | grep -o 'wlan[0-9]')
+		# su shell -c cmd wifi forget-network $(sudo cmd wifi status | grep -o -P 'Net ID: \K\d+')
+		# sudo cmd wifi connect-network 'Wifirst Blaise Pascal' open -r non_persistent
+		sudo cmd wifi connect-network 'Wifirst Blaise Pascal' open
 		termux-toast "Login failed, reset MAC address"
-		su shell -c cmd wifi forget-network $(sudo cmd wifi status | grep -o -P 'Net ID: \K\d+')
-		sudo cmd wifi connect-network 'Wifirst Blaise Pascal' open -r non_persistent
 		sleep 8
 		login_wifirst
 	fi

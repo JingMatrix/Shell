@@ -15,10 +15,10 @@ path_to_current_script="$HOME/Documents/Code/Shell/scripts/blasie_pascal_wifi"
 # 	su $USER $path_to_current_script
 # fi
 
-if [ "$(iwgetid | grep 'ESSID:"Wifirst Blaise Pascal"')" ]; then
+if [ "$(/sbin/iwgetid | grep 'ESSID:"Wifirst Blaise Pascal"')" ]; then
 
 	# First logout from possible old sessions
-	time_remaining=$(/bin/curl -s 'https://wireless.wifirst.net/captive-portal/api' -H "Content-Type: application/captive+json" | grep -oP '"seconds-remaining": \K\d+')
+	time_remaining=$(/bin/curl -s 'https://wireless.wifirst.net/captive-portal/api' -H "Content-Type: application/captive+json" | /bin/grep -oP '"seconds-remaining": \K\d+')
 	if [ $time_remaining -gt 10 ]; then
 		/bin/atq -q n | /bin/cut -f 1 | /bin/xargs /bin/atrm
 		/bin/at -q n -M -f $path_to_current_script now + $(expr $time_remaining / 60) minutes
@@ -32,12 +32,12 @@ if [ "$(iwgetid | grep 'ESSID:"Wifirst Blaise Pascal"')" ]; then
 	# Generate random account
 
 	current_time=$(date +%s%3N)
-	error_code=$(curl -s -D - 'https://wireless.wifirst.net/goform/HtmlLoginRequest' \
+	error_code=$(/bin/curl -s -D - 'https://wireless.wifirst.net/goform/HtmlLoginRequest' \
 		--data "username=PAY/$current_time@wifirst.net" \
 		--data "password=$current_time" \
 		--data "success_url=https://www.google.fr" \
 		--data "error_url=https://portal-front.wifirst.net" \
-		--compressed | grep -o -P 'code=\K\d')
+		--compressed | /bin/grep -o -P 'code=\K\d')
 	if [ $error_code ]; then
 		# notify-send "Wifi fails with code $error_code" "Attempt to change the mac address"
 
