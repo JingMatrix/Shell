@@ -2,7 +2,6 @@
 
 # Please change this variable accordingly.
 path_to_current_script="$HOME/Documents/Code/Shell/scripts/blasie_pascal_wifi"
-
 # To start the login process automatically once you are connected to the Wi-Fi,
 # put the following commands into a script located at the directory /etc/NetworkManager/dispatcher.d/.
 # Replace $USER and $path_to_current_script by correct values in current system.
@@ -19,7 +18,7 @@ if [ "$(/sbin/iwgetid | grep 'ESSID:"Wifirst Blaise Pascal"')" ]; then
 
 	# First logout from possible old sessions
 	time_remaining=$(/bin/curl -s 'https://wireless.wifirst.net/captive-portal/api' -H "Content-Type: application/captive+json" | /bin/grep -oP '"seconds-remaining": \K\d+')
-	if [ $time_remaining -gt 10 ]; then
+	if [ ${time_remaining:-0} -gt 10 ]; then
 		/bin/atq -q n | /bin/cut -f 1 | /bin/xargs /bin/atrm
 		/bin/at -q n -M -f $path_to_current_script now + $(expr $time_remaining / 60) minutes
 		exit
@@ -38,7 +37,7 @@ if [ "$(/sbin/iwgetid | grep 'ESSID:"Wifirst Blaise Pascal"')" ]; then
 		--data "success_url=https://www.google.fr" \
 		--data "error_url=https://portal-front.wifirst.net" \
 		--compressed | /bin/grep -o -P 'code=\K\d')
-	if [ $error_code ]; then
+	if [ ${error_code:-0} -eq 2 ]; then
 		# notify-send "Wifi fails with code $error_code" "Attempt to change the mac address"
 
 		sudo /sbin/ifconfig wlp1s0 down

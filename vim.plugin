@@ -45,6 +45,7 @@
 │       ├── nvim-dap-python
 │       ├── nvim-jdtls
 │       ├── scribble.vim
+│       ├── vim-go
 │       ├── vim-markdown
 │       ├── vim-racket
 │       └── vimtex
@@ -53,4 +54,4 @@
         ├── vim-airline
         └── vim-airline-themes
 
-53 directories, 0 files
+54 directories, 0 files
