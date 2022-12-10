@@ -1,8 +1,11 @@
-plugins+=(git nvm vi-mode pip gradle)
+export ZSH="$HOME/.oh-my-zsh"
+plugins=(git nvm vi-mode pip gradle)
 # plugins+=(yarn urltools rust pass ripgrep nmap gradle)
 plugins+=(z.lua)
 plugins+=(zsh-interactive-cd)
+plugins+=(zsh-syntax-highlighting zsh-completions)
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+ZSH_THEME=${ZSH_THEME:-random}
 source $ZSH/oh-my-zsh.sh
 
 function ocr {
@@ -31,10 +34,7 @@ function _ocr {
 
 compdef _ocr ocr
 
-# alias sg="TERM=xterm googler -n 5"
-# alias sd="TERM=xterm ddgr -n 5"
 alias gcl="git clone --recursive --shallow-submodules --depth 1"
-# alias john="/home/jing/Documents/Project/john/run/john"
 if [[ $TERM == xterm-kitty ]]; then
 	alias ls="ls --color --hyperlink=auto"
 	alias l="colorls -al --hyperlink"
@@ -42,23 +42,18 @@ else
 	alias ls="ls --color"
 	alias l="colorls -al"
 fi
-alias icat="kitty +kitten icat"
-alias qb=qutebrowser
-alias pip=pip3
-alias msfconsole="TERM=xterm-256color msfconsole"
-alias luamake=$HOME/Documents/Project/lua-language-server/3rd/luamake/luamake
-unalias gradle
 
-export ANDROID_HOME=$HOME/Archives/Android
 export MANPAGER='nvim +Man!'
 export MUTTBOX="gmail"
-export JDTLS_HOME=$HOME/Archives/Data/jdtls
-export KALDI_ROOT=$HOME/Documents/Project/kaldi
 export PAGER="less -P?n -R"
 
 # keybinding
 function keep-buffer {
-	wl-copy -p $BUFFER
+	if [[ $USER == jing ]]; then
+		wl-copy -p $BUFFER
+	else
+		termux-clipboard-set $BUFFER
+	fi
 	BUFFER=''
 }
 function start_tmux {
@@ -74,17 +69,40 @@ bindkey "^K" keep-buffer
 bindkey "^H" backward-kill-word
 bindkey "^B^B" start_tmux
 
-[[ -z $ALACRITTY_WAYLAND ]] || export WAYLAND_DISPLAY=$ALACRITTY_WAYLAND
-
 # zsh-highlight
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor line)
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[cursor]=bold
 
-source $HOME/Documents/Project/nnn/misc/quitcd/quitcd.bash_zsh
+if [[ $USER == jing ]]; then
+	export ANDROID_HOME=$HOME/Archives/Android
+	export JDTLS_HOME=$HOME/Archives/Data/jdtls
+	export KALDI_ROOT=$HOME/Documents/Project/kaldi
+	export PATH="$PATH:/opt/gradle/gradle-7.6/bin"
+	alias icat="kitty +kitten icat"
+	alias qb=qutebrowser
+	alias pip=pip3
+	alias msfconsole="TERM=xterm-256color msfconsole"
+	alias luamake=$HOME/Documents/Project/lua-language-server/3rd/luamake/luamake
+	unalias gradle
+	source $HOME/Documents/Project/nnn/misc/quitcd/quitcd.bash_zsh
+	source $HOME/.local/google-cloud-sdk/completion.zsh.inc
 
-source $HOME/.local/google-cloud-sdk/completion.zsh.inc
+	[[ -z $ALACRITTY_WAYLAND ]] || export WAYLAND_DISPLAY=$ALACRITTY_WAYLAND
+
+else
+	export PATH=$PREFIX/bin:$PREFIX/sbin:$HOME/.local/bin
+	export PATH=$PATH:/product/bin:/apex/com.android.runtime/bin:/apex/com.android.art/bin:/system_ext/bin:/system/bin:/system/xbin:/odm/bin:/vendor/bin:/vendor/xbin
+	export PYSDL2_DLL_PATH=$PREFIX/lib
+fi
+
 if [[ $TERM == linux ]]; then
 	export TERM=fbterm
 fi
+
+export GEM_HOME="$HOME/.local/gem"
+export GOPATH="$HOME/.local/go"
+export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$GEM_HOME/bin"
+export PATH="$PATH:$GOPATH/bin"

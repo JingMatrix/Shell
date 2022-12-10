@@ -67,8 +67,8 @@ if [ $? -eq 0 ]; then
 		sudo zerotier-one &
 	fi
 
-	termux-wake-lock &
+	# termux-wake-lock &
 else
 	termux-toast "Not connected to Wifirst Blaise Pascal"
-	termux-wake-unlock
+	# termux-wake-unlock
 fi
