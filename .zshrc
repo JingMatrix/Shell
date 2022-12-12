@@ -95,14 +95,14 @@ else
 	export PATH=$PREFIX/bin:$PREFIX/sbin:$HOME/.local/bin
 	export PATH=$PATH:/product/bin:/apex/com.android.runtime/bin:/apex/com.android.art/bin:/system_ext/bin:/system/bin:/system/xbin:/odm/bin:/vendor/bin:/vendor/xbin
 	export PYSDL2_DLL_PATH=$PREFIX/lib
+	export GEM_HOME="$HOME/.local/gem"
+	export GOPATH="$HOME/.local/go"
+	export PATH="$PATH:$HOME/.cargo/bin"
+	export PATH="$PATH:$GEM_HOME/bin"
+	export PATH="$PATH:$GOPATH/bin"
 fi
 
 if [[ $TERM == linux ]]; then
 	export TERM=fbterm
 fi
 
-export GEM_HOME="$HOME/.local/gem"
-export GOPATH="$HOME/.local/go"
-export PATH="$PATH:$HOME/.cargo/bin"
-export PATH="$PATH:$GEM_HOME/bin"
-export PATH="$PATH:$GOPATH/bin"

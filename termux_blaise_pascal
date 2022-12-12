@@ -39,10 +39,10 @@ if [ $? -eq 0 ]; then
 	}
 
 	if ! login_wifirst; then
-		sudo macchanger -r $(ifconfig 2>/dev/null | grep -o 'wlan[0-9]')
-		# su shell -c cmd wifi forget-network $(sudo cmd wifi status | grep -o -P 'Net ID: \K\d+')
-		# sudo cmd wifi connect-network 'Wifirst Blaise Pascal' open -r non_persistent
-		sudo cmd wifi connect-network 'Wifirst Blaise Pascal' open
+		# sudo macchanger -r $(ifconfig 2>/dev/null | grep -o 'wlan[0-9]')
+		# sudo cmd wifi connect-network 'Wifirst Blaise Pascal' open
+		su shell -c cmd wifi forget-network $(sudo cmd wifi status | grep -o -P 'Net ID: \K\d+')
+		sudo cmd wifi connect-network 'Wifirst Blaise Pascal' open -r non_persistent
 		termux-toast "Login failed, reset MAC address"
 		sleep 8
 		login_wifirst
