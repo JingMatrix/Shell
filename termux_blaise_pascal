@@ -49,17 +49,9 @@ if [ $? -eq 0 ]; then
 	fi
 	at -q n -M -f $path_to_current_script now + 10 minute
 
-	if [ -e $PREFIX/var/lib/zerotier-one/zerotier-one.pid ]; then
-		# Ping my own zerotier-one ip for testing
-		ping -c 1 192.168.196.35 2>/dev/null 1>/dev/null
-		if [ $? -ne 0 ]; then
-			sudo ip rule | grep 'lookup main' 1>/dev/null
-			if [ $? -ne 0 ]; then
-				sudo ip rule add from all table main
-			fi
-			sudo zerotier-one &
-		fi
-	else
+	# Ping my own zerotier-one ip for testing
+	ping -c 1 192.168.196.35 2>/dev/null 1>/dev/null
+	if [ $? -ne 0 ]; then
 		sudo ip rule | grep 'lookup main' 1>/dev/null
 		if [ $? -ne 0 ]; then
 			sudo ip rule add from all table main
