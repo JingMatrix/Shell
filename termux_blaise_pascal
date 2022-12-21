@@ -1,24 +1,36 @@
 #!/data/data/com.termux/files/usr/bin/sh
 
+start_zerotier() {
+	# Ping my own zerotier-one ip for testing
+	ping -c 1 192.168.196.35 2>/dev/null 1>/dev/null
+	if [ $? -ne 0 ]; then
+		sudo ip rule | grep 'lookup main' 1>/dev/null
+		if [ $? -ne 0 ]; then
+			sudo ip rule add from all table main
+		fi
+		sudo zerotier-one &
+	fi
+}
+
+start_atd() {
+	pkill --signal 0 atd
+	if [ $? -ne 0 ]; then
+		atd
+	fi
+}
+
 # wifi=$(su -c cmd wifi status | grep -oP 'Wifi is connected to "\K[^"]+')
 ifconfig 2>/dev/null | grep 'inet 10.188' 1>/dev/null && ping -c 1 wireless.wifirst.net 2>/dev/null 1>/dev/null
 if [ $? -eq 0 ]; then
-
-	if [ -e $PREFIX/var/run/atd.pid ]; then
-		kill -s 0 $(cat $PREFIX/var/run/atd.pid)
-		if [ $? -ne 0 ]; then
-			atd
-		fi
-	else
-		atd
-	fi
+	start_atd
 
 	path_to_current_script=/data/data/com.termux/files/home/.shortcuts/blaise_pascal
-	atq -q n | cut -f 1 | xargs atrm
+	atq -q n | cut -f 1 | xargs atrm 2>/dev/null
 
 	time_remaining=$(curl -s 'https://wireless.wifirst.net/captive-portal/api' -H "Content-Type: application/captive+json" | grep -oP '"seconds-remaining": \K\d+')
 	if [ ${time_remaining:-0} -gt 10 ]; then
 		at -q n -M -f $path_to_current_script now + $(expr $time_remaining / 60) minutes
+		start_zerotier
 		exit
 	fi
 
@@ -48,17 +60,7 @@ if [ $? -eq 0 ]; then
 		login_wifirst
 	fi
 	at -q n -M -f $path_to_current_script now + 10 minute
-
-	# Ping my own zerotier-one ip for testing
-	ping -c 1 192.168.196.35 2>/dev/null 1>/dev/null
-	if [ $? -ne 0 ]; then
-		sudo ip rule | grep 'lookup main' 1>/dev/null
-		if [ $? -ne 0 ]; then
-			sudo ip rule add from all table main
-		fi
-		sudo zerotier-one &
-	fi
-
+	start_zerotier
 	# termux-wake-lock &
 else
 	termux-toast "Not connected to Wifirst Blaise Pascal"
