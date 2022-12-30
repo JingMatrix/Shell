@@ -22,10 +22,17 @@ start_atd() {
 # wifi=$(su -c cmd wifi status | grep -oP 'Wifi is connected to "\K[^"]+')
 ifconfig 2>/dev/null | grep 'inet 10.188' 1>/dev/null && ping -c 1 wireless.wifirst.net 2>/dev/null 1>/dev/null
 if [ $? -eq 0 ]; then
-	start_atd
-
 	path_to_current_script=/data/data/com.termux/files/home/.shortcuts/blaise_pascal
-	atq -q n | cut -f 1 | xargs atrm 2>/dev/null
+	queue=$(atq -q n)
+	if [ $? -ne 0 ]; then
+		rm -rf $PREFIX/var/spool/atd/*
+	fi
+
+	if [ ! -z "$queue" ]; then
+		atq -q n | cut -f 1 | xargs atrm
+	fi
+
+	start_atd
 
 	time_remaining=$(curl -s 'https://wireless.wifirst.net/captive-portal/api' -H "Content-Type: application/captive+json" | grep -oP '"seconds-remaining": \K\d+')
 	if [ ${time_remaining:-0} -gt 10 ]; then
@@ -53,9 +60,9 @@ if [ $? -eq 0 ]; then
 	if ! login_wifirst; then
 		# sudo macchanger -r $(ifconfig 2>/dev/null | grep -o 'wlan[0-9]')
 		# sudo cmd wifi connect-network 'Wifirst Blaise Pascal' open
+		termux-toast "Login failed, reset MAC address"
 		su shell -c cmd wifi forget-network $(sudo cmd wifi status | grep -o -P 'Net ID: \K\d+')
 		sudo cmd wifi connect-network 'Wifirst Blaise Pascal' open -r non_persistent
-		termux-toast "Login failed, reset MAC address"
 		sleep 8
 		login_wifirst
 	fi

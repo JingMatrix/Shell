@@ -14,4 +14,4 @@ fi
 # pproxy -v \
 # 	-r socks5://localhost:9050\?tor \
 # 	-r http://localhost:4444\?i2p \
-$HOME/go/bin/clash
+$HOME/.local/go/bin/clash
