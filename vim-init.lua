@@ -118,7 +118,6 @@ local lsp_servers = {
 	-- "pyright",
 	"pylsp",
 	"vimls",
-	"kotlin_language_server",
 	"racket_langserver",
 	"clangd",
 	"cmake",
@@ -135,6 +134,12 @@ for _, lsp in pairs(lsp_servers) do
 		on_attach = lsp_on_attach,
 	})
 end
+
+lspconfig.kotlin_language_server.setup ({
+  autostart = false,
+  on_attach = lsp_on_attach,
+  settings = { kotlin = { compiler = { jvm = { target = "11" } } } }
+})
 
 lspconfig.denols.setup ({
   on_attach = lsp_on_attach,
