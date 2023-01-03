@@ -1,4 +1,5 @@
 #!/bin/zsh
+
 # dependency:
 # curl to download data
 # jq (https://stedolan.github.io/jq/) to parse json data
@@ -8,12 +9,20 @@
 # ./upsCalendar.sh "1week"
 # optional you can set startdate manually as environment variable
 # set zoom=1 to open zoon link possibly
+
 set -e
 if ! [[ -n $startdate ]]; then
 	startdate=$(date -I)
 fi
 enddate=$(date -d ${startdate}' '${1:-"2days"} -I)
-follow_courses="25"
+
+# No more student, I am teaching now
+# follow_courses="25"
+
+teaching=1
+federationIds="KMAXPP03"
+resType=100
+
 # course=(
 # 	"Holomorphic dynamics in dimension one : some advanced topics. (F. Berteloot and P.Roesch)"
 # 	"Topics in Differential Complex Geometry (E. Legendre)"
@@ -31,37 +40,38 @@ follow_courses="25"
 # 	"Discretization of PDEs: \033[1;36m
 # \t\t\tAnalysis and discretization of transport equations.(F. Boyer)
 # \t\t\tConvergence of probability measures, functional limit theorems and applications. (R. Chhaibi)\033[0m"
-	# "Convergence of probability measures, functional limit theorems and applications. (R. Chhaibi)"
-	# "Stochastic calculus. (P. Maillard)"
-	# "Asymptotic statistics and modeling. (P. Berthet)"
+# "Convergence of probability measures, functional limit theorems and applications. (R. Chhaibi)"
+# "Stochastic calculus. (P. Maillard)"
+# "Asymptotic statistics and modeling. (P. Berthet)"
 # )
-course=(
-	"Complex analytic and differential geometry (V. Guedj)"
-	"Hyperbolic manifolds (J.-P. Otal)"
-	"Introduction to differential and algebraic topology (T. Fiedler)"
-	"Spectral theory (J. Royer)"
-	"Elliptic PDEs and Calculus of Variations (R. Ignat)"
-	"An introduction to the theoretical and numerical analysis of nonlinear conservation laws (F. Boyer)"
-	"Convergence of probability measures, infinite dimensional limit theorems and optimal transport. (R. Chhaibi)"
-	"Stochastic calculus. (L. Coutin)"
-	"Asymptotic statistics and modeling. (P. Neuvial, F. Gamboa)"
-	"Approximation of PDEs (G. Haine, D. Matignon, S. Pernet, M. Salaün)"
-	"Advanced statistical methods (X. Gendre, F. Simatos)"
-)
-typeset -A zoomlink
-zoomlink=(
-	# DON'T change the order, it is hard-coded order
-	# Complex Geometry Tuesday
-	[2mar.]="zoommtg://univ-tlse3-fr.zoom.us/join?action=join&confno=89280020232&pwd=VFlhdFhyUTZZVFdOUnU2UzloTWVldz09"
-	# Complex Geometry Friday
-	[2ven.]="zoommtg://univ-tlse3-fr.zoom.us/join?action=join&confno=81369608657&pwd=R1oxUSsxRWY5d3QvNXpWYmlvZ0VKUT09"
-	# Reading seminar
-	[1seminar]="zoommtg://univ-tlse3-fr.zoom.us/join?action=join&confno=81923444202&pwd=d2lRVU9nYy9jNTM1dUE3VEJpSTJOZz09"
-	# Holomorphic dynamics
-	[1]="zoommtg://univ-tlse3-fr.zoom.us/join?action=join&confno=81730318623&pwd=TDdEaTlNSUNvNXBjSlRUZmVaREJ3UT09"
-	# Learning
-	[5]="zoommtg://zoom.us/join?action=join&confno=94751387445&pwd=aTFkTVcyeUxCcktRSTZwSDlEVTcxdz09"
-)
+# course=(
+# 	"Complex analytic and differential geometry (V. Guedj)"
+# 	"Hyperbolic manifolds (J.-P. Otal)"
+# 	"Introduction to differential and algebraic topology (T. Fiedler)"
+# 	"Spectral theory (J. Royer)"
+# 	"Elliptic PDEs and Calculus of Variations (R. Ignat)"
+# 	"An introduction to the theoretical and numerical analysis of nonlinear conservation laws (F. Boyer)"
+# 	"Convergence of probability measures, infinite dimensional limit theorems and optimal transport. (R. Chhaibi)"
+# 	"Stochastic calculus. (L. Coutin)"
+# 	"Asymptotic statistics and modeling. (P. Neuvial, F. Gamboa)"
+# 	"Approximation of PDEs (G. Haine, D. Matignon, S. Pernet, M. Salaün)"
+# 	"Advanced statistical methods (X. Gendre, F. Simatos)"
+# )
+# typeset -A zoomlink
+# zoomlink=(
+# 	# DON'T change the order, it is hard-coded order
+# 	# Complex Geometry Tuesday
+# 	[2mar.]="zoommtg://univ-tlse3-fr.zoom.us/join?action=join&confno=89280020232&pwd=VFlhdFhyUTZZVFdOUnU2UzloTWVldz09"
+# 	# Complex Geometry Friday
+# 	[2ven.]="zoommtg://univ-tlse3-fr.zoom.us/join?action=join&confno=81369608657&pwd=R1oxUSsxRWY5d3QvNXpWYmlvZ0VKUT09"
+# 	# Reading seminar
+# 	[1seminar]="zoommtg://univ-tlse3-fr.zoom.us/join?action=join&confno=81923444202&pwd=d2lRVU9nYy9jNTM1dUE3VEJpSTJOZz09"
+# 	# Holomorphic dynamics
+# 	[1]="zoommtg://univ-tlse3-fr.zoom.us/join?action=join&confno=81730318623&pwd=TDdEaTlNSUNvNXBjSlRUZmVaREJ3UT09"
+# 	# Learning
+# 	[5]="zoommtg://zoom.us/join?action=join&confno=94751387445&pwd=aTFkTVcyeUxCcktRSTZwSDlEVTcxdz09"
+# )
+
 # No more need zoom, our course is offline now.
 #
 # if [[ -z $zoom ]]; then
@@ -70,12 +80,14 @@ zoomlink=(
 # 		zoom=1
 # 	fi
 # fi
+
 echo -n '\033[1;33m'
-echo "\rCourse from $startdate to $enddate"
+echo "\rTeaching from $startdate to $enddate"
 echo -n '\033[1;37m'
-echo "DATE\tTIME\tInformation\n"
+# Show teaching type
+echo "TYPE\tDATE\tTIME\tInformation\n"
 echo -n '\033[0m'
-curl -s 'https://edt.univ-tlse3.fr/calendar2/Home/GetCalendarData' --data-raw "start=$startdate&end=$enddate&resType=103&calView=month&federationIds%5B%5D=28318&colourScheme=3" > $PREFIX/tmp/cour.json | jq -r 'sort_by(.start) | .[] | [.start, .description, .eventCategory, .end] | @tsv' |
+curl -s 'https://edt.univ-tlse3.fr/calendar2/Home/GetCalendarData' --data-raw "start=$startdate&end=$enddate&resType=$resType&calView=month&federationIds%5B%5D=$federationIds&colourScheme=3" >$PREFIX/tmp/cour.json | jq -r 'sort_by(.start) | .[] | [.start, .description, .eventCategory, .end] | @tsv' |
 	while IFS=$'\t' read -r starttime description eventCategory endtime; do
 		if [[ $eventCategory = "CONGES" ]]; then
 			continue
@@ -89,6 +101,20 @@ curl -s 'https://edt.univ-tlse3.fr/calendar2/Home/GetCalendarData' --data-raw "s
 		else
 			echo -n '\033[1;33m'
 		fi
+
+		if [[ $teaching == 1 ]]; then
+			place=$(echo -n ${description} | head -1)
+			echo -n '\033[1;32m'
+			echo -n "$eventCategory\t"
+			echo -n '\033[0m'
+			echo -n $(date -d $starttime +"%a\t%H:%M\t")
+			echo -n '\033[1;35m'
+			echo -n ${place::-1}
+			echo '\033[0m'
+			# I am teaching now, should all course
+			continue
+		fi
+
 		course_num=$(<<<$description | sed 's/.*Ri-basic course \([0-9]\).*/\1/p' -n)
 		if [[ -n $course_num ]]; then
 			# limit to only courses you follow
