@@ -171,20 +171,21 @@ set shiftwidth=0
 " completion
 set omnifunc=syntaxcomplete#Complete
 
+" file location $HOME/.config/nvim/lua/vim-init.lua
+lua require('vim-init')
+
 let g:vimsyn_noerror=1
-if system('whoami') =~ 'jing'
-	" file location $HOME/.config/nvim/lua/vim-init.lua
-	lua require('vim-init')
 
-	set undodir=/var/tmp/vim
-	set backupdir=/var/tmp/vim
-	augroup rmundo
-		autocmd!
-		autocmd VimEnter /tmp/* set noundofile
-	augroup END
+let $tmpdir=$PREFIX.'/var/tmp/vim'
+set undodir=$tmpdir
+set backupdir=$tmpdir
 
-	" Add system path if not presented
-	if stridx($PATH, 'node')==-1
-		let $PATH .=':/home/jing/.nvm/versions/node/v18.1.0/bin'
-	endif
+augroup rmundo
+	autocmd!
+	autocmd VimEnter */tmp/* set noundofile
+augroup END
+
+" Add system path if not presented
+if stridx($PATH, 'node') == -1
+	let $PATH .=':'.$HOME.'/.nvm/versions/node/v18.1.0/bin'
 endif

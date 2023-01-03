@@ -35,6 +35,10 @@ require("nvim-treesitter.configs").setup({
 	},
 })
 
+-- registers
+--
+require("registers").setup()
+
 -- nnn
 --
 require("nnn").setup()
