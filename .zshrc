@@ -1,5 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
-plugins=(git nvm vi-mode pip gradle)
+plugins=(git vi-mode pip gradle)
 # plugins+=(yarn urltools rust pass ripgrep nmap gradle)
 plugins+=(z.lua)
 plugins+=(zsh-interactive-cd)
@@ -100,9 +100,10 @@ else
 	export PATH="$PATH:$HOME/.cargo/bin"
 	export PATH="$PATH:$GEM_HOME/bin"
 	export PATH="$PATH:$GOPATH/bin"
+	export PNPM_HOME="$HOME/.local/share/pnpm"
+	export PATH="$PNPM_HOME:$PATH"
 fi
 
 if [[ $TERM == linux ]]; then
 	export TERM=fbterm
 fi
-

@@ -184,8 +184,3 @@ augroup rmundo
 	autocmd!
 	autocmd VimEnter */tmp/* set noundofile
 augroup END
-
-" Add system path if not presented
-if stridx($PATH, 'node') == -1
-	let $PATH .=':'.$HOME.'/.nvm/versions/node/v18.1.0/bin'
-endif

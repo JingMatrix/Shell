@@ -166,7 +166,7 @@ lspconfig.volar.setup({
 	filetypes = { "vue" },
 	init_options = {
 		typescript = {
-			tsdk = "/home/jing/.nvm/versions/node/v18.1.0/lib/node_modules/typescript/lib",
+			tsdk = os.getenv("HOME") .. "/.local/share/pnpm/global/5/node_modules/typescript/lib",
 		},
 	},
 })
