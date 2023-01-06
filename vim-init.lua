@@ -4,15 +4,15 @@
 local opts = { noremap = true, silent = true }
 
 -- fzf-vim
-vim.api.nvim_set_keymap("n", "<leader><tab>", "<plug>(fzf-maps-n)", opts)
-vim.api.nvim_set_keymap("x", "<leader><tab>", "<plug>(fzf-maps-x)", opts)
-vim.api.nvim_set_keymap("o", "<leader><tab>", "<plug>(fzf-maps-o)", opts)
-vim.api.nvim_set_keymap("i", "<c-x><c-k>", "<plug>(fzf-complete-word)", opts)
-vim.api.nvim_set_keymap("i", "<c-x><c-f>", "<plug>(fzf-complete-path)", opts)
-vim.api.nvim_set_keymap("i", "<c-x><c-l>", "<plug>(fzf-complete-line)", opts)
+vim.keymap.set("n", "<leader><tab>", "<plug>(fzf-maps-n)", opts)
+vim.keymap.set("x", "<leader><tab>", "<plug>(fzf-maps-x)", opts)
+vim.keymap.set("o", "<leader><tab>", "<plug>(fzf-maps-o)", opts)
+vim.keymap.set("i", "<c-x><c-k>", "<plug>(fzf-complete-word)", opts)
+vim.keymap.set("i", "<c-x><c-f>", "<plug>(fzf-complete-path)", opts)
+vim.keymap.set("i", "<c-x><c-l>", "<plug>(fzf-complete-line)", opts)
 
-vim.api.nvim_set_keymap("n", "<leader>ne", "<cmd>NnnExplorer<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>np", "<cmd>NnnPicker<CR>", opts)
+vim.keymap.set("n", "<leader>ne", "<cmd>NnnExplorer<CR>", opts)
+vim.keymap.set("n", "<leader>np", "<cmd>NnnPicker<CR>", opts)
 
 -- tree-sitter
 --
@@ -53,66 +53,61 @@ local lspconfig = require("lspconfig")
 ---@diagnostic disable-next-line: unused-local
 local lsp_on_attach = function(client, bufnr)
 	-- Enable completion triggered by <c-x><c-o>
-	if vim.bo.filetype ~= 'tex' then
+	if vim.bo.filetype ~= "tex" then
 		vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
 	end
 
+	local bufopts = { noremap = true, silent = true, buffer = bufnr }
 	-- Mappings.
 	-- See `:help vim.lsp.*` for documentation on any of the below functions
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<C-k>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<space>wa", "<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>", opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<space>wr", "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>", opts)
-	vim.api.nvim_buf_set_keymap(
-		bufnr,
-		"n",
-		"<space>wl",
-		"<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>",
-		opts
-	)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<space>D", "<cmd>lua vim.lsp.buf.type_definition()<CR>", opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<space>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<space>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<space>f", "<cmd>lua vim.lsp.buf.format { async = true }<CR>", opts)
+	vim.keymap.set("n", "gD", vim.lsp.buf.declaration, bufopts)
+	vim.keymap.set("n", "gd", vim.lsp.buf.definition, bufopts)
+	vim.keymap.set("n", "K", vim.lsp.buf.hover, bufopts)
+	vim.keymap.set("n", "gi", vim.lsp.buf.implementation, bufopts)
+	vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, bufopts)
+	vim.keymap.set("n", "<space>wa", vim.lsp.buf.add_workspace_folder, bufopts)
+	vim.keymap.set("n", "<space>wr", vim.lsp.buf.remove_workspace_folder, bufopts)
+	vim.keymap.set("n", "<space>wl", function()
+		print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
+	end, bufopts)
+	vim.keymap.set("n", "<space>D", vim.lsp.buf.type_definition, bufopts)
+	vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, bufopts)
+	vim.keymap.set("n", "<space>ca", vim.lsp.buf.code_action, bufopts)
+	vim.keymap.set("n", "gr", vim.lsp.buf.references, bufopts)
+	vim.keymap.set("n", "<space>f", function()
+		vim.lsp.buf.format({ async = true })
+	end, bufopts)
 
 	-- See `:help vim.diagnostic.*` for documentation on any of the below functions
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<space>e", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "[d", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "]d", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<space>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
+	vim.keymap.set("n", "<space>e", vim.diagnostic.open_float, bufopts)
+	vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, bufopts)
+	vim.keymap.set("n", "]d", vim.diagnostic.goto_next, bufopts)
+	vim.keymap.set("n", "<space>q", vim.diagnostic.setloclist, bufopts)
 
 	-- debug using nvim-dap
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>dc", '<cmd>lua require("dap").continue()<CR>', opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>dj", '<cmd>lua require("dap").down()<CR>', opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>dk", '<cmd>lua require("dap").up()<CR>', opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>drc", '<cmd>lua require("dap").run_to_cursor()<CR>', opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>dsv", '<cmd>lua require("dap").step_over()<CR>', opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>dsi", '<cmd>lua require("dap").step_into()<CR>', opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>dso", '<cmd>lua require("dap").step_out()<CR>', opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader><enter>", '<cmd>lua require("dap").toggle_breakpoint()<CR>', opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader><space>", '<cmd>lua require("dapui").eval()<CR>', opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "v", "<leader><space>", '<cmd>lua require("dapui").eval()<CR>', opts)
-	vim.api.nvim_buf_set_keymap(
-		bufnr,
-		"n",
-		"<leader>dsbr",
-		'<cmd>lua require("dap").set_breakpoint(vim.fn.input("Breakpoint condition: "))<CR>',
-		opts
-	)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>dro", '<cmd>lua require("dap").repl.open()<CR>', opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>drl", '<cmd>lua require("dap").repl.run_last()<CR>', opts)
+	vim.keymap.set("n", "<leader>dc", require("dap").continue, bufopts)
+	vim.keymap.set("n", "<leader>dj", require("dap").down, bufopts)
+	vim.keymap.set("n", "<leader>dk", require("dap").up, bufopts)
+	vim.keymap.set("n", "<leader>drc", require("dap").run_to_cursor, bufopts)
+	vim.keymap.set("n", "<leader>dsv", require("dap").step_over, bufopts)
+	vim.keymap.set("n", "<leader>dsi", require("dap").step_into, bufopts)
+	vim.keymap.set("n", "<leader>dso", require("dap").step_out, bufopts)
+	vim.keymap.set("n", "<leader><enter>", require("dap").toggle_breakpoint, bufopts)
+	vim.keymap.set("n", "<leader>dsbr", function()
+		require("dap").set_breakpoint(vim.fn.input("Breakpoint condition: "))
+	end, bufopts)
+	vim.keymap.set("n", "<leader>dro", require("dap").repl.open, bufopts)
+	vim.keymap.set("n", "<leader>drl", require("dap").run_last, bufopts)
 
-	vim.api.nvim_set_keymap("n", "<leader>dg", '<cmd>lua require("dapui").toggle()<CR>', opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>df", '<cmd>lua require("dapui").float_element()<CR>', opts)
+	vim.keymap.set("n", "<leader><space>", require("dapui").eval, bufopts)
+	vim.keymap.set("v", "<leader><space>", require("dapui").eval, bufopts)
+	vim.keymap.set("n", "<leader>dg", require("dapui").toggle, bufopts)
+	vim.keymap.set("n", "<leader>df", require("dapui").float_element, bufopts)
 
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>fb", '<cmd>lua require("fzf-lua").dap_breakpoints()<CR>', opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>fc", '<cmd>lua require("fzf-lua").dap_commands()<CR>', opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>fv", '<cmd>lua require("fzf-lua").dap_variables()<CR>', opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>ff", '<cmd>lua require("fzf-lua").dap_frames()<CR>', opts)
+	vim.keymap.set("n", "<leader>fb", require("fzf-lua").dap_breakpoints, bufopts)
+	vim.keymap.set("n", "<leader>fc", require("fzf-lua").dap_commands, bufopts)
+	vim.keymap.set("n", "<leader>fv", require("fzf-lua").dap_variables, bufopts)
+	vim.keymap.set("n", "<leader>ff", require("fzf-lua").dap_frames, bufopts)
 end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
@@ -139,20 +134,20 @@ for _, lsp in pairs(lsp_servers) do
 	})
 end
 
-lspconfig.kotlin_language_server.setup ({
-  autostart = false,
-  on_attach = lsp_on_attach,
-  settings = { kotlin = { compiler = { jvm = { target = "11" } } } }
+lspconfig.kotlin_language_server.setup({
+	autostart = false,
+	on_attach = lsp_on_attach,
+	settings = { kotlin = { compiler = { jvm = { target = "11" } } } },
 })
 
-lspconfig.denols.setup ({
-  on_attach = lsp_on_attach,
-  root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc", "deno.lock"),
+lspconfig.denols.setup({
+	on_attach = lsp_on_attach,
+	root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc", "deno.lock"),
 })
 
-lspconfig.tsserver.setup ({
-  on_attach = lsp_on_attach,
-  root_dir = lspconfig.util.root_pattern("package.json", "tsconfig.json", "jsconfig.json")
+lspconfig.tsserver.setup({
+	on_attach = lsp_on_attach,
+	root_dir = lspconfig.util.root_pattern("package.json", "tsconfig.json", "jsconfig.json"),
 })
 
 lspconfig.sumneko_lua.setup({
@@ -168,9 +163,10 @@ lspconfig.sumneko_lua.setup({
 
 lspconfig.volar.setup({
 	on_attach = lsp_on_attach,
+	filetypes = { "vue" },
 	init_options = {
 		typescript = {
-			serverPath = "/home/jing/.nvm/versions/node/v18.1.0/lib/node_modules/typescript/lib/tsserverlibrary.js",
+			tsdk = "/home/jing/.nvm/versions/node/v18.1.0/lib/node_modules/typescript/lib",
 		},
 	},
 })
@@ -190,8 +186,9 @@ lspconfig.html.setup({
 })
 
 vim.g.markdown_fenced_languages = {
-  "ts=typescript"
+	"ts=typescript",
 }
+
 -- Debug Adapter
 --
 
@@ -201,7 +198,6 @@ dap.adapters.lldb = {
 	command = "/usr/bin/lldb-vscode-15", -- adjust as needed, must be absolute path
 	name = "lldb",
 }
-
 dap.configurations.lua = {
 	{
 		type = "nlua",
@@ -238,7 +234,6 @@ dap.configurations.cpp = {
 
 dap.configurations.c = dap.configurations.cpp
 dap.configurations.rust = dap.configurations.cpp
-
 dap.adapters.nlua = function(callback, config)
 	callback({ type = "server", host = config.host, port = config.port })
 end
@@ -326,7 +321,7 @@ local ltex_settings = {
 		additionalRules = {
 			motherTongue = "zh-CN",
 		},
-	}
+	},
 }
 
 lspconfig.ltex.setup({
@@ -336,7 +331,7 @@ lspconfig.ltex.setup({
 	on_attach = function(client, bufnr)
 		-- local ft = vim.bo.filetype
 		-- if ft == "mail" then
-			-- ltex_settings.ltex.language = fr
+		-- ltex_settings.ltex.language = fr
 		-- end
 		lsp_on_attach(client, bufnr)
 		require("ltex_extra").setup({
