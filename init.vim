@@ -34,22 +34,26 @@ augroup end
 " startify
 let g:startify_change_to_dir=1
 let g:startify_change_to_vcs_root=1
-let g:startify_skiplist=['doc/.*\.txt$', '.*/tmp/*', 'Notes/notes/.*\.md$', 'Code/Shell/.*']
 let g:startify_files_number=5
-let g:startify_bookmarks=[
-			\{'n': '$HOME/Notes'},
-			\{'c': '$HOME/Documents/Code/Shell'},
-			\{'z': '$HOME/Documents/Code/Shell/.zshrc'},
-			\{'k': '$HOME/Documents/Code/Shell/kitty.conf'},
-			\{'s': '$HOME/.config/sway/config'},
-			\{'v': '$HOME/.config/nvim/init.vim'},
-			\{'a': '$HOME/.config/alacritty/alacritty.yml'},
-			\]
-let g:startify_lists=[
-			\{ 'type': 'sessions',  'header': ['   Sessions']       },
-			\{ 'type': 'bookmarks', 'header': ['   Bookmarks']      },
-			\{ 'type': 'files',	'header': ['   MRU'] },
-			\]
+
+if system("whoami") =~ "jing"
+	let g:startify_skiplist=['doc/.*\.txt$', '.*/tmp/*', 'Notes/notes/.*\.md$', 'Code/Shell/.*']
+	let g:startify_bookmarks=[
+				\{'n': '$HOME/Notes'},
+				\{'c': '$HOME/Documents/Code/Shell'},
+				\{'z': '$HOME/Documents/Code/Shell/.zshrc'},
+				\{'k': '$HOME/Documents/Code/Shell/kitty.conf'},
+				\{'s': '$HOME/.config/sway/config'},
+				\{'v': '$HOME/.config/nvim/init.vim'},
+				\{'a': '$HOME/.config/alacritty/alacritty.yml'},
+				\]
+	let g:startify_lists=[
+				\{ 'type': 'sessions',  'header': ['   Sessions']       },
+				\{ 'type': 'bookmarks', 'header': ['   Bookmarks']      },
+				\{ 'type': 'files',	'header': ['   MRU'] },
+				\]
+endif
+
 let g:startify_custom_header_quotes=[
 			\['Where is your improvement in five years?'],
 			\['Do you feel sorry about yourself?'],
