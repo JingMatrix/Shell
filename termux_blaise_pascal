@@ -67,8 +67,8 @@ if [ $? -eq 0 ]; then
 		login_wifirst
 	fi
 	at -q n -M -f $path_to_current_script now + 10 minute
-	start_zerotier
 else
 	termux-toast "Not connected to Wifirst Blaise Pascal"
-	start_zerotier
 fi
+
+start_zerotier
