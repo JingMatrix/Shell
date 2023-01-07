@@ -1,0 +1,54 @@
+#! zsh
+
+set -e
+apt update && apt upgrade
+apt install git tsu nodejs lua53 python3 apt-file nnn
+apt-file update
+pip3 install neovim
+
+git config --global user.email "jingmatrix@gmail.com"
+git config --global user.name "JingMatrix"
+
+pushd $ZSH/custom/plugins/
+[[ -e "z.lua" ]] || git clone --depth 1 https://github.com/skywind3000/z.lua
+[[ -e "zsh-syntax-highlighting" ]] || git clone --depth 1 https://github.com/zsh-users/zsh-syntax-highlighting
+[[ -e "zsh-completions" ]] || git clone --depth 1 https://github.com/zsh-users/zsh-completions
+popd
+
+mkdir -p $HOME/.local/bin
+
+ln -sf $HOME/Code/Shell/.zshrc $HOME
+ln -sf $HOME/Code/Shell/termux_blaise_pascal $HOME/.local/bin/blaise_pascal
+ln -sf $HOME/Code/Shell/termux_proxy $HOME/.local/bin/proxy
+ln -sf $HOME/Code/Shell/script/upsCalendar $HOME/.local/bin/
+
+mkdir -p $HOME/.config/nvim
+ln -sf $HOME/Code/Shell/init.vim $HOME/.config/nvim
+mkdir -p $HOME/.config/nvim/lua
+ln -sf $HOME/Code/Shell/vim-init.lua $HOME/.config/nvim/lua
+
+mkdir -p $HOME/bin
+ln -sf $HOME/Code/Shell/termux-url-opener $HOME/bin
+ln -sf $PREFIX/bin/nvim $HOME/bin/termux-file-editor
+
+mkdir -p $HOME/.local/go $HOME/.local/gem
+
+apt install golang ruby tor i2pd
+go install github.com/Dreamacro/clash@latest
+gem install colorls
+
+mkdir -p $HOME/.shortcuts
+echo "sh $HOME/Code/Shell/termux_blaise_pascal" > $HOME/.shortcuts/Wifi_Config
+echo "sh $HOME/Code/Shell/termux_proxy" > $HOME/.shortcuts/Local_Proxy
+mkdir -p $HOME/.config/clash
+ln -sf $HOME/Code/Shell/clash.yaml $HOME/.config/clash/config.yaml
+
+mkdir -p $HOME/Project
+pushd $HOME/Project
+[[ -e $HOME/Project/ZeroTierOne ]] || git clone --depth 1 https://github.com/JingMatrix/ZeroTierOne -b termux-build
+popd
+apt install cmake rust nlohmann-json binutils
+pushd $HOME/Project/ZeroTierOne
+make -j 2
+make install
+popd

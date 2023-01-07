@@ -102,6 +102,7 @@ else
 	export PATH="$PATH:$GOPATH/bin"
 	export PNPM_HOME="$HOME/.local/share/pnpm"
 	export PATH="$PNPM_HOME:$PATH"
+	alias vim=nvim
 fi
 
 if [[ $TERM == linux ]]; then
