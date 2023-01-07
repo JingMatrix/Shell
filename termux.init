@@ -2,7 +2,7 @@
 
 set -e
 apt update && apt upgrade
-apt install git tsu nodejs lua53 python3 apt-file nnn
+apt install git tsu nodejs lua53 python3 apt-file
 apt-file update
 pip3 install neovim
 
@@ -52,3 +52,19 @@ pushd $HOME/Project/ZeroTierOne
 make -j 2
 make install
 popd
+
+go install mvdan.cc/sh/v3/cmd/shfmt@latest
+apt install ripgrep ninja
+[[ -e $HOME/Project/lua-language-server ]] || git clone --recursive --shallow-submodules --depth 1 https://github.com/sumneko/lua-language-server
+pushd $HOME/Project/lua-language-server
+cd 3rd/luamake
+sed -i 's#-Wno-maybe-uninitialized##' **/*.ninja
+./compile/install.sh
+cd ../..
+sed -i 's#-Wno-maybe-uninitialized##' **/common.lua
+./3rd/luamake/luamake
+ln -sf $PWD/bin/lua-language-server $HOME/.local/bin
+popd
+
+apt install fzf nnn yarn
+yarn global add vim-language-server
