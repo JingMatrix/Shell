@@ -67,4 +67,5 @@ ln -sf $PWD/bin/lua-language-server $HOME/.local/bin
 popd
 
 apt install fzf nnn yarn
-yarn global add vim-language-server
+yarn global add vim-language-server neovim
+gem install neovim
