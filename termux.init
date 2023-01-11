@@ -2,25 +2,28 @@
 
 set -e
 apt update && apt upgrade
-apt install git tsu nodejs lua53 python3 apt-file
+apt install git tsu nodejs lua53 python3 apt-file curl wget
 apt-file update
 pip3 install neovim
 
 git config --global user.email "jingmatrix@gmail.com"
 git config --global user.name "JingMatrix"
 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 pushd $ZSH/custom/plugins/
 [[ -e "z.lua" ]] || git clone --depth 1 https://github.com/skywind3000/z.lua
 [[ -e "zsh-syntax-highlighting" ]] || git clone --depth 1 https://github.com/zsh-users/zsh-syntax-highlighting
 [[ -e "zsh-completions" ]] || git clone --depth 1 https://github.com/zsh-users/zsh-completions
 popd
 
+# Be sure to restore .ssh dir first
 mkdir -p $HOME/.local/bin
-
+[[ -e $HOME/Code ]] || git clone --recursive --shallow-submodules --depth 1 git@plmlab.math.cnrs.fr:jianyu.ma/Code.git
 ln -sf $HOME/Code/Shell/.zshrc $HOME
 ln -sf $HOME/Code/Shell/termux_blaise_pascal $HOME/.local/bin/blaise_pascal
 ln -sf $HOME/Code/Shell/termux_proxy $HOME/.local/bin/proxy
 ln -sf $HOME/Code/Shell/script/upsCalendar $HOME/.local/bin/
+ln -sf $HOME/Code/Shell/scripts/misàjour $HOME/.local/bin/
 
 mkdir -p $HOME/.config/nvim
 ln -sf $HOME/Code/Shell/init.vim $HOME/.config/nvim
@@ -69,3 +72,7 @@ popd
 apt install fzf nnn yarn
 yarn global add vim-language-server neovim
 gem install neovim
+
+# Be sure to copy the file `rclone config file` first
+apt install rclone
+rclone sync drive:Reading $HOME/storage/shared/Documents/Reading && rclone sync drive:Mathematics $HOME/storage/shared/Documents/Mathematics
