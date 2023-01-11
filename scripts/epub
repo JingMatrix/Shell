@@ -26,7 +26,6 @@ function htmlparser {
 function fixhtml {
 	# read from stdin and output to stdout
 	# try to first load local config files
-	echo "No config file $tidy_config found, using default config"
 	local -a args=("--output-xhtml" "yes" "--add-meta-charset" "yes" "--add-xml-decl" "yes" "--doctype" 'html5' "--output-xhtml" "yes" "--clean" "yes" "--drop-proprietary-attributes" "yes" "--logical-emphasis" "yes" "--alt-text" "image" "--coerce-endtags" "yes" "--enclose-block-text" "yes" "--enclose-text" "yes" "--decorate-inferred-ul" "yes" "--indent" "yes" "--quiet" "yes")
 	tidy $args |
 		sed '3s#""#"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"#'
