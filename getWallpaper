@@ -18,8 +18,8 @@
 # Categories:
 #   Uncategorized, Abstract, Aerial, Animals, Black and White, Celebrities, City and Architecture, Commercial, Concert, Family, Fashion, Film, Fine Art, Food, Journalism, Landscapes, Macro, Nature, Night, Nude, People, Performing Arts, Sport, Still Life, Street, Transportation, Travel, Underwater, Urban Exploration, Wedding
 
-export PATH=$PATH:/home/jing/.nvm/versions/node/v18.1.0/bin
-pushd "/home/jing/Images/Papier Peint"
+export PATH=$PATH:$HOME/.local/share/pnpm
+pushd "$HOME/Images/Papier Peint"
 typeset -a categories=("Fine Art" Abstract "Performing Arts" Landscapes Nature)
 for category in $categories; do
 	500wallpaper -H 2048 -l -c "$category" >/dev/null
