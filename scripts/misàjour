@@ -1,24 +1,33 @@
 #! /bin/zsh
 
-# update plugin install state
-BASEDIR=$(dirname "$0")
-echo "Updating plugin installed state"
-tree -L 3 ~/.local/share/nvim/site/pack >$BASEDIR/../vim.plugin
-tree -L 1 ~/.local/share/gnome-shell/extensions >$BASEDIR/../gnome.plugin
+if [[ $USER == "jing" ]]; then
+	# update plugin install state
+	BASEDIR=$(dirname "$0")
+	echo "Updating plugin installed state"
+	tree -L 3 $HOME/.local/share/nvim/site/pack >$BASEDIR/../vim.plugin
+	tree -L 1 $HOME/.local/share/gnome-shell/extensions >$BASEDIR/../gnome.plugin
+fi
 
-# clean invalid files item in zathura history
-echo "Remove invalid zathura history"
-zathura_history=$HOME/.local/share/zathura/history
-sed -n -E "s/^\[(.*)\]$/\1/p" $zathura_history | while read file; do
-	if ! [[ -e $file ]]; then
-		sed -i "s#\[$file\]#TOREMOVE#" $zathura_history
-	fi
-done
-sed -i "/TOREMOVE/,/^$/d" $zathura_history
+if [[ -e /bin/zathura ]]; then
+	# clean invalid files item in zathura history
+	echo "Remove invalid zathura history"
+	zathura_history=$HOME/.local/share/zathura/history
+	sed -n -E "s/^\[(.*)\]$/\1/p" $zathura_history | while read file; do
+		if ! [[ -e $file ]]; then
+			sed -i "s#\[$file\]#TOREMOVE#" $zathura_history
+		fi
+	done
+	sed -i "/TOREMOVE/,/^$/d" $zathura_history
+fi
 
 # pull updates from remote repos
 echo "Updating local git repository"
-for d in ~/.local/share/nvim/site/pack/*/*/*/ ~/.oh-my-zsh/custom/{plugin,theme}s/*/ ~/Documents/Project/*/; do
+
+local project_dir=$HOME/Documents/Project
+[[ -d $project_dir ]] || project_dir=$HOME/Project
+[[ -d $project_dir ]] || exit
+
+for d in $HOME/.local/share/nvim/site/pack/*/*/*/ $ZSH/custom/{plugin,theme}s/* $project_dir/*/; do
 	(
 		cd "$d"
 		if [[ -d .git ]]; then
