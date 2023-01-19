@@ -28,7 +28,7 @@ local project_dir=$HOME/Documents/Project
 [[ -d $project_dir ]] || exit
 
 for d in $HOME/.local/share/nvim/site/pack/*/*/*/ $ZSH/custom/{plugin,theme}s/* $project_dir/*/; do
-	(
+	[[ -d $d ]] && (
 		cd "$d"
 		if [[ -d .git ]]; then
 			printf "\t\tEnter directory \e]8;;file://$PWD\e\\$PWD\e]8;;\e\\"
