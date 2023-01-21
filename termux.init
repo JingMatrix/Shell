@@ -2,9 +2,8 @@
 
 set -e
 apt update && apt upgrade
-apt install git tsu nodejs lua53 python3 apt-file curl wget
+apt install git tsu nodejs lua53 python3 apt-file curl wget python3-pip jq nvim
 apt-file update
-pip3 install neovim
 
 git config --global user.email "jingmatrix@gmail.com"
 git config --global user.name "JingMatrix"
@@ -22,7 +21,7 @@ mkdir -p $HOME/.local/bin
 ln -sf $HOME/Code/Shell/.zshrc $HOME
 ln -sf $HOME/Code/Shell/termux_blaise_pascal $HOME/.local/bin/blaise_pascal
 ln -sf $HOME/Code/Shell/termux_proxy $HOME/.local/bin/proxy
-ln -sf $HOME/Code/Shell/script/upsCalendar $HOME/.local/bin/
+ln -sf $HOME/Code/Shell/scripts/upsCalendar $HOME/.local/bin/
 ln -sf $HOME/Code/Shell/scripts/misàjour $HOME/.local/bin/
 
 mkdir -p $HOME/.config/nvim
