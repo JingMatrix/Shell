@@ -62,13 +62,6 @@ c.fonts.web.family.standard = 'Manjari'
 c.fonts.web.size.default = 17
 c.input.insert_mode.auto_load = True
 
-c.colors.contextmenu.disabled.fg = 'grey'
-c.colors.contextmenu.disabled.bg = 'white'
-c.colors.contextmenu.menu.fg = 'black'
-c.colors.contextmenu.menu.bg = 'white'
-c.colors.contextmenu.selected.fg = 'blue'
-c.colors.contextmenu.selected.bg = 'white'
-
 c.qt.force_platform = 'wayland'
 c.qt.args = [
     'widevine-path=/opt/google/chrome/WidevineCdm/_platform_specific/linux_x64/libwidevinecdm.so',

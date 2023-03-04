@@ -19,7 +19,8 @@ function ocr {
 		wl-paste
 	else
 		echo "No images on disk, please take a new screenshot"
-		gnome-screenshot -f /tmp/clip.png -a
+		grim -g "$(slurp -d)" /tmp/clip.png
+		ocr $1
 	fi
 }
 
