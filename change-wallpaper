@@ -3,7 +3,7 @@
 # export DISPLAY=:0
 # export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 
-folder="$HOME/Images/Papier Peint"
+folder="$HOME/Images/Wallpapers"
 selection=/home/jing/.config/nnn/.selection
 if [[ -f $selection ]]; then
 	xargs -0 -L 1 <$selection | while read file; do
