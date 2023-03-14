@@ -39,9 +39,6 @@ apt install golang ruby tor i2pd
 go install github.com/Dreamacro/clash@latest
 gem install colorls
 
-mkdir -p $HOME/.shortcuts
-echo "sh $HOME/Code/Shell/termux_blaise_pascal" > $HOME/.shortcuts/Wifi_Config
-echo "sh $HOME/Code/Shell/termux_proxy" > $HOME/.shortcuts/Local_Proxy
 mkdir -p $HOME/.config/clash
 ln -sf $HOME/Code/Shell/clash.yaml $HOME/.config/clash/config.yaml
 
@@ -56,18 +53,7 @@ make install
 popd
 
 go install mvdan.cc/sh/v3/cmd/shfmt@latest
-apt install ripgrep ninja
-[[ -e $HOME/Project/lua-language-server ]] || git clone --recursive --shallow-submodules --depth 1 https://github.com/sumneko/lua-language-server
-pushd $HOME/Project/lua-language-server
-cd 3rd/luamake
-sed -i 's#-Wno-maybe-uninitialized##' **/*.ninja
-./compile/install.sh
-cd ../..
-sed -i 's#-Wno-maybe-uninitialized##' **/common.lua
-./3rd/luamake/luamake
-ln -sf $PWD/bin/lua-language-server $HOME/.local/bin
-popd
-
+apt install ripgrep ninja lua-language-server
 apt install fzf nnn yarn
 yarn global add vim-language-server neovim
 gem install neovim
