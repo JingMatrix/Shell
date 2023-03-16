@@ -60,7 +60,7 @@ if [ $? -eq 0 ]; then
 	if ! login_wifirst; then
 		# sudo macchanger -r $(ifconfig 2>/dev/null | grep -o 'wlan[0-9]')
 		# sudo cmd wifi connect-network 'Wifirst Blaise Pascal' open
-		termux-toast "Login failed, reset MAC address"
+		echo "Login failed, reset MAC address"
 		su shell -c cmd wifi forget-network $(sudo cmd wifi status | grep -o -P 'Net ID: \K\d+')
 		sudo cmd wifi connect-network 'Wifirst Blaise Pascal' open -r non_persistent
 		sleep 8
@@ -68,7 +68,9 @@ if [ $? -eq 0 ]; then
 	fi
 	at -q n -M -f $path_to_current_script now + 10 minute
 else
-	termux-toast "Not connected to Wifirst Blaise Pascal"
+	echo "Not connected to Wifirst Blaise Pascal"
 fi
 
 start_zerotier
+
+# vim: ft=zsh
