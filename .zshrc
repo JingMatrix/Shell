@@ -39,6 +39,7 @@ alias gcl="git clone --recursive --shallow-submodules --depth 1"
 if [[ $TERM == xterm-kitty ]]; then
 	alias ls="ls --color --hyperlink=auto"
 	alias l="colorls -al --hyperlink"
+	alias rg="kitty +kitten hyperlinked_grep"
 else
 	alias ls="ls --color"
 	alias l="colorls -al"
