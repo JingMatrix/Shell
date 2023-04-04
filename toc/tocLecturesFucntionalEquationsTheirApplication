@@ -1,0 +1,134 @@
+Contents,11
+Foreword to the German Edition,3
+Foreword to the English Edition,9
+d=18
+Introduction,1
+	0.1 Definition and Examples,1 
+	0.2 History,5 
+PART I Equations for Functions of a Single Variable,13
+	1 Equations Which Can Be Solved by Simple Substitutions,15
+		1.1 Equations of the Form/[G(x, y)] = F[f(x), y],15 
+			1.1.1 Two Trivial Examples,15 
+			1.1.2 A Method of Solution for Equations of the Form f(x + y) = F[f(x), y],17 
+			1.1.3 Continuity and Monotonicity,19 
+			1.1.4 Uniqueness,20 
+			1.1.5 Method of Solution for f[G(x,y)] = F[f(x), y],21 
+		1.2 Methods of Solving Similar Types of Equations,21 
+			1.2.1 The Type of Equation,21 
+			1.2.2 The More General Case,22 
+			1.2.3 The Case in Which/(y) Does Not Appear in the Equation,24 
+			1.2.4 Additional Examples,25 
+		1.3 An Application: Scalar Product and Vector Product,27 
+			1.3.1 Statement of the Problem,27 
+			1.3.2 Preliminaries,28 
+			1.3.3 Reduction to a Functional Equation and Completion of the Proof . .,29 
+	2. Solution of Equations by Determining the Values of the Unknown Function on a Dense Set,31
+		2.1 Cauchy's Equations and Jensen's Equation,31 
+			2.1.1 Cauchy's Basic Equation f(x -+- y) = f(x) -+- f(y),31 
+			2.1.2 The Three Remaining Cauchy Equations,37 
+			2.1.3 Jensen's Equation,43 
+			2.1.4 Jensen's Equation and Cauchy's Equations for an Interval and for Higher Ranks,44 
+		2.2 Equations of the Type/(x + y) = F[f(x),f(y)], Related Equations, and Generalizations,49 
+			2.2.1 Method of Solution for Equations of the Type f(x + y) = F[f(x),f(y)],49 
+			2.2.2 Existence,53 
+			2.2.3 Uniqueness. Solutions on an Interval Which Have a Measurable Majorant on a Set of Positive Measure,57 
+			2.2.4 Functions with an Addition Theorem of Polynomial, Rational, or Algebraic Type. Special Equations of the Type f[G(x, y)] = F[f(x),f(y)],59 
+			2.2.5 Equations of the Type f(x + y) = F[f(x - y), f(x), f(y), x, y] ....,63 
+			2.2.6 Equations of the Form/(ax + by + c) = Af{x) + Bf{y) + С ...,66 
+			2.2.7 Equations of the Type f(ax + by + c) = F[f(x), f(y)],72 
+			2.2.8 Additional Examples,79 
+		2.3 Some Applications (Euclidean and Non-Euclidean Geometry, Mechanics, Business Mathematics, Probability Theory),83 
+			2.3.1 Arc Length of Oricycles, Angle of Parallelity in Non-Euclidean Geometry,83 
+			2.3.2 Applications in Classical Geometry,85 
+			2.3.3 Applications in Physics. Force Fields in Which Centers of Gravity Can Be Defined,94 
+			2.3.4 The Interest Formula,105 
+			2.3.5 Two Characteristic Properties of the Gaussian Normal Distribution .,106 
+			2.3.6 Composed Poisson Distribution,111
+		2.4 D'Alembert's Functional Equation and Its Application,117 
+			2.4.1 The Functional Equation f(x + y) + f(x ~ y) = 2f(x)f(y),117 
+			2.4.2 Application to the Problem of the Parallelogram of Forces,120 
+			2.4.3 Application to Non-Euclidean Mechanics and Geometry,125 
+			2.4.4 Generalization of the Method of Solution to Equations of the Form f(x+y) =F[f(x -y)J(x),f(y),x,y],128 
+		2.5 Additional Functional Equations with One Function of One Variable ...,129 
+			2.5.1 Functional Equations of Polynomials,129 
+			2.5.2 Additional Functional Equations for Trigonometric and Related Functions,135 
+	3. Equations with Several Unknown Functions,141
+		3.1 Pexider's and Related Equations,141 
+			3.1.1 Direct Generalizations of the Four Cauchy Equations,141 
+			3.1.2 A Method of Solution for Equations of Type f[F(x, y)] = <P[g[G(x, y)], h[H(x, y)]]. Uniqueness of the Representation f-\g(x) + h(y)),145 
+			3.1.3 Related Functional Equations and Applications to Quasilinear Functions and in Information Theory,148 
+			3.1.4 The Functional Equation SLjA(.v)^(y) -0,160 
+		3.2 Functional Equations for the Trigonometric Functions and Related Equations,165 
+			3.2.1 Wilson's First Generalization of d'Alembert's Functional Equation .,165 
+			3.2.2 Wilson's Second Generalization of d'Alembert's Functional Equation .,171 
+			3.2.3 The Addition and Subtraction Theorems of Trigonometric Functions,176 
+			3.2.4 Additional Equations and Systems of Equations,181 
+	4. Reduction to Differential and Integral Equations, General Methods,183
+		4.1 Integral Transformations and Reduction to Integral Equations,183 
+			4.1.1 Reduction to Trivial Functional Equations by Means of Integral Transformations,183 
+			4.1.2 Reduction to Integral Equations,185 
+		4.2 Reduction to Differential Equations. Some General Methods,186 
+			4.2.1 Formal Considerations,186 
+			4.2.2 Deduction of Differentiability from Integrability,190 
+			4.2.3 General Theorems,193 
+			4.2.4 Reduction of Functional Equations with Several Unknown Functions to Differential Equations,196 
+			4.2.5 A General Method for Solving a Type of Functional Equation Containing Several Unknown Functions,201 
+PART II Equations for Functions of Several Variables,211
+	5. Simple Equations,213
+		5.1 Generalizations of Cauchy's and Similar Equations and Their Applications,213 
+			5.1.1 The Cauchy-Abel Functional Equations for Functions of Several Variables and for Functions of Complex Variables,213 
+			5.1.2 Sincov's Functional Equation and Its Applications. The Cyclic Functional Equation,223 
+		5.2 The Equations of Homogeneous Functions and Related Equations,229 
+			5.2.1 Euler's Functional Equation for Homogeneous Functions,229 
+			5.2.2 Additional Related Equations. Almost Homogeneous Functions,231 
+		5.3 The Equations of the Weighted Mean,234 
+			5.3.1 Characterization of the Arithmetic Mean,234 
+			5.3.2 Characteristic Properties of the Quasilinear Weighted Mean,240 
+	6. Composite Equations,245
+		6.1 The Translation Equation,245 
+			6.1.1 The Equation and Introductory Remarks Concerning Its Solution . .,245 
+			6.1.2 Solution for Arbitrary Real Values of и,246 
+			6.1.3 Solutions for a Semi-infinite м-Interval,248 
+			6.1.4 Applications and a Generalization,251 
+		6.2 The Associativity Equation,253 
+			6.2.1 The Equation and Its Solution for Groups,253 
+			6.2.2 Solution in the Case of Semigroups,254 
+			6.2.3 Solution in the Case of Semineighborhoods of Identity. Related Equations,267 
+		6.3 The Transitivity Equation,273 
+			6.3.1 General Algebraic Considerations,273 
+			6.3.2 Solution in the Field of Real Numbers,276 
+		6.4 The Bisymmetry Equation,278 
+			6.4.1 The Equation and Its Symmetric Reflexive Solutions,278 
+			6.4.2 Reflexive Solutions without Assumption of Symmetry,284 
+			6.4.3 The General Continuous and Reducible Solution,287 
+		6.5 The Autodistributivity Equations,293 
+			6.5.1 The Autodistributivity Equations. Solution for the Symmetric Case .,293 
+			6.5.2 Determination of the Continuous, Reducible Operations That Are Autodistributive on Both Sides on Intervals of Real Numbers,294 
+			6.5.3 A Problem,299 
+	7. Equations with Several Unknown Functions of Several Variables. Reduction to Partial Differential Equations,301
+		7.1 Equations with Several Unknown Functions That Are Solvable by Elementary Methods,301 
+			7.1.1 General Pexider-Sincov Equations with Several Unknown Functions of Several Variables,301 
+			7.1.2 Generalized Homogeneous Functions,304 
+			7.1.3 Special Cases of the Generalized Equations of Associativity, Transitivity, Bisymmetry, and Distributivity That Can Be Solved by Elementary Methods,310 
+			7.1.4 An Application to the Foundations of Probability Theory,319 
+		7.2 Reduction to Partial Differential Equations and Functional Differential Equations,324 
+			7.2.1 Euler's Differential Equation of Homogeneous Functions. Related Equations and Generalizations,324 
+			7.2.2 The Generalized Associativity Equation,327 
+			7.2.3 The Generalized Bisymmetry Equation,330 
+			7.2.4 The Generalized Distributivity Equation and Special Cases,332 
+	8. Vector and Matrix Equations,347
+		8.1 Cauchy-Pexider-Sincov Equations,347 
+			8.1.1 Cauchy-Pexider Vector Functional Equations,347 
+			8.1.2 Some Simple Matrix Functional Equations,349 
+			8.1.3 Generalizations of Sincov's Functional Equation,353 
+			8.1.4 Application to the Determination of Inhomogeneous Transition Probabilities,359 
+		8.2 Associativity, Transformation, and Distributivity Equations,364 
+			8.2.1 The Transformation Equation,364 
+			8.2.2 The Translation Equation,366 
+			8.2.3 The Associativity Equation,370 
+			8.2.4 The Generalized Distributivity Equation,372 
+			8.2.5 Vector Operations, Which Are Automorphic with Respect to Certain Transformations,376 
+Concluding Remarks. Some Unsolved Problems,379 
+Bibliography,383 
+Author Index,497 
+Subject Index,509 
