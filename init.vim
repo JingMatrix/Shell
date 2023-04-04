@@ -26,7 +26,6 @@ let g:vimtex_doc_handlers = ['vimtex#doc#handlers#texdoc']
 let g:vimtex_fold_types={'comments' : {'enabled' : 1}}
 augroup math_edit
 	autocmd!
-	autocmd FileType tex nmap <buffer> <F9> :setl spell <bar> silent! w <bar> compiler vlty <bar> make <bar> :cw <cr><esc>
 	autocmd FileType tex setl dictionary+=../.dict | setl iskeyword+=- | setl complete=.,t,k
 	" Specify extra behaviour after reverse goto
 	autocmd User VimtexEventViewReverse normal! zMzvzz
