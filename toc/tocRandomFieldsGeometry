@@ -1,0 +1,162 @@
+Preface,6
+Contents,13
+d=15
+Part I Gaussian Processes,7
+	1 Gaussian Fields,7
+		1.1 Random Fields,7
+		1.2 Gaussian Variables and Fields,8
+		1.3 Boundedness and Continuity,11
+		1.4 Examples,20
+			1.4.1 Fields on RN,20
+			1.4.2 Differentiability on RN,22
+			1.4.3 The Brownian Family of Processes,24
+			1.4.4 Generalized Fields,30
+			1.4.5 Set-Indexed Processes,36
+			1.4.6 Non-Gaussian Processes,40
+		1.5 Majorizing Measures,41
+	2 Gaussian Inequalities,49
+		2.1 Borell–TIS Inequality,49
+		2.2 Comparison Inequalities,57
+	3 Orthogonal Expansions,65
+		3.1 The General Theory,66
+		3.2 The Karhunen–Loève Expansion,70
+	4 Excursion Probabilities,75
+		4.1 Entropy Bounds,76
+		4.2 Processes with a Unique Point of Maximal Variance,86
+		4.3 Examples,89
+		4.4 Extensions,93
+		4.5 The Double-Sum Method,95
+		4.6 Local Maxima and Excursion Probabilities,96
+d=14
+	5 Stationary Fields,101
+		5.1 Basic Stationarity,101
+		5.2 Stochastic Integration,103
+		5.3 Moving Averages,105
+		5.4 Spectral Representations on RN,109
+		5.5 Spectral Moments,112
+		5.6 Constant Variance,114
+		5.7 Isotropy,115
+		5.8 Stationarity over Groups,119
+d=12
+Part II Geometry,127
+	6 Integral Geometry,127
+		6.1 Basic Integral Geometry,127
+		6.2 Excursion Sets Again,134
+		6.3 Intrinsic Volumes,141
+d=11
+	7 Differential Geometry,149
+		7.1 Manifolds,149
+		7.2 Tensor Calculus,154
+		7.3 Riemannian Manifolds,160
+		7.4 Integration on Manifolds,166
+		7.5 Curvature,171
+		7.6 Intrinsic Volumes for Riemannian Manifolds,175
+		7.7 A Euclidean Example,176
+d=10
+	8 Piecewise Smooth Manifolds,183
+		8.1 Whitney Stratiﬁed Spaces,184
+		8.2 Locally Convex Spaces,188
+		8.3 Cone Spaces,190
+d=9
+	9 Critical Point Theory,193
+		9.1 Critical Points,193
+		9.2 The Normal Morse Index,195
+			9.2.1 The Index,195
+			9.2.2 Generalized Tangent Spaces and Tame Manifolds,196
+			9.2.3 Regular Stratiﬁed Manifolds,198
+			9.2.4 The Index on Intersections of Sets,198
+		9.3 Morse’s Theorem for Stratiﬁed Spaces,206
+			9.3.1 Morse Functions,206
+			9.3.2 Morse’s Theorem,207
+		9.4 The Euclidean Case,210
+	10 Volume of Tubes,213
+		10.1 The Volume-of-Tubes Problem,215
+		10.2 Volume of Tubes and Gaussian Processes,216
+		10.3 Local Geometry of Tube(M, ρ),219
+			10.3.1 Basic Structure of Tubes,220
+			10.3.2 Stratifying the Tube,222
+		10.4 Computing the Volume of a Tube,223
+			10.4.1 First Steps,223
+			10.4.2 An Intermediate Computation,224
+			10.4.3 Subsets of Rl,225
+			10.4.4 Subsets of Spheres,230
+		10.5 Weyl’s Tube Formula,231
+		10.6 Volume of Tubes and Gaussian Processes, Continued,242
+		10.7 Intrinsic Volumes for Whitney Stratiﬁed Spaces,244
+			10.7.1 Alternative Representation of the Curvature Measures,249
+		10.8 Breakdown of Weyl’s Tube Formula,249
+		10.9 Generalized Lipschitz–Killing Curvature Measures,250
+			10.9.1 The Generalized Curvature Measures,251
+			10.9.2 Surface Measure on the Boundary of a Tube,252
+			10.9.3 Series Expansions for the Gaussian Measure of Tubes,254
+d=7
+Part III The Geometry of Random Fields,263
+	11 Random Fields on Euclidean Spaces,263
+		11.1 Rice’s Formula,263
+		11.2 An Expectation Metatheorem,266
+		11.3 Suitable Regularity and Morse Functions,280
+		11.4 An Alternate Proof of the Metatheorem,283
+		11.5 Higher Moments,284
+		11.6 Preliminary Gaussian Computations,286
+		11.7 The Mean Euler Characteristic,289
+		11.8 Mean Intrinsic Volumes,298
+		11.9 On the Importance of Stationarity,299
+d=6
+	12 Random Fields on Manifolds,301
+		12.1 The Metatheorem on Manifolds,301
+		12.2 Riemannian Structure Induced by Gaussian Fields,305
+			12.2.1 Connections and Curvatures,306
+			12.2.2 Some Covariances,308
+			12.2.3 Gaussian Fields on RN,310
+		12.3 Another Gaussian Computation,312
+		12.4 The Mean Euler Characteristic,315
+			12.4.1 Manifolds without Boundary,315
+			12.4.2 Manifolds with Boundary,317
+		12.5 Examples,323
+		12.6 Chern–Gauss–Bonnet Theorem,327
+	13 Mean Intrinsic Volumes,331
+		13.1 Crofton’s Formula,332
+		13.2 Mean Intrinsic Volumes: The Isotropic Case,333
+		13.3 A Gaussian Crofton Formula,334
+		13.4 Mean Intrinsic Volumes: The General Case,342
+		13.5 Two Gaussian Lemmas,343
+	14 Excursion Probabilities for Smooth Fields,349
+		14.1 On Global Suprema,351
+			14.1.1 A First Representation,352
+			14.1.2 The Problem with the First Representation,354
+			14.1.3 A Second Representation,354
+			14.1.4 Random Fields,360
+			14.1.5 Suprema and Euler Characteristics,362
+		14.2 Some Fine Tuning,365
+		14.3 Gaussian Fields with Constant Variance,368
+		14.4 Examples,372
+			14.4.1 Stationary Processes on [0, T ],372
+			14.4.2 Isotropic Fields with Monotone Covariance,374
+			14.4.3 A Geometric Approach,376
+			14.4.4 The Cosine Field,382
+	15 Non-Gaussian Geometry,387
+		15.1 A Plan of Action,389
+		15.2 A Representation for Mean Intrinsic Volumes,391
+		15.3 Proof of the Representation,392
+		15.4 Poincaré’s Limit,398
+		15.5 Kinematic Fundamental Formulas,400
+			15.5.1 The KFF on Rn,401
+			15.5.2 The KFF on Sλ (Rn ),402
+		15.6 A Model Process on the l-Sphere,402
+			15.6.1 The Process,403
+			15.6.2 Mean Curvatures for the Model Process,404
+		15.7 The Canonical Gaussian Field on the l-Sphere,410
+			15.7.1 Mean Curvatures for Excursion Sets,411
+			15.7.2 Implications for More General Fields,415
+		15.8 Warped Products of Riemannian Manifolds,416
+			15.8.1 Warped Products,417
+			15.8.2 A Second Fundamental Form,419
+		15.9 Non-Gaussian Mean Intrinsic Volumes,421
+		15.10 Examples,425
+			15.10.1 The Gaussian Case,426
+			15.10.2 The χ 2 Case,427
+			15.10.3 The F Case,430
+d=5
+References,435
+Notation Index,443
+Subject Index,445
