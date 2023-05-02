@@ -81,7 +81,7 @@ if [[ $USER == jing ]]; then
 	export ANDROID_HOME=$HOME/Archives/Android
 	export JDTLS_HOME=$HOME/Archives/Data/jdtls
 	export KALDI_ROOT=$HOME/Documents/Project/kaldi
-	export PATH="$PATH:/opt/gradle/gradle-8.0.2/bin"
+	export PATH="$PATH:/opt/gradle/gradle-8.1.1/bin"
 	alias icat="kitty +kitten icat"
 	alias qb=qutebrowser
 	alias pip=pip3

@@ -50,8 +50,9 @@
 │       ├── vim-racket
 │       └── vimtex
 └── theme
+    ├── opt
     └── start
         ├── vim-airline
         └── vim-airline-themes
 
-54 directories, 0 files
+55 directories, 0 files
