@@ -88,7 +88,7 @@ if [[ $USER == jing ]]; then
 	alias msfconsole="TERM=xterm-256color msfconsole"
 	alias luamake=$HOME/Documents/Project/lua-language-server/3rd/luamake/luamake
 	unalias gradle
-	source $HOME/Documents/Project/nnn/misc/quitcd/quitcd.bash_zsh
+	source $HOME/Documents/Project/nnn/misc/quitcd/quitcd.bash_sh_zsh
 	source $HOME/.local/google-cloud-sdk/completion.zsh.inc
 
 	[[ -z $ALACRITTY_WAYLAND ]] || export WAYLAND_DISPLAY=$ALACRITTY_WAYLAND

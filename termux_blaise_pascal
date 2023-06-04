@@ -22,7 +22,7 @@ start_atd() {
 # wifi=$(su -c cmd wifi status | grep -oP 'Wifi is connected to "\K[^"]+')
 ifconfig 2>/dev/null | grep 'inet 10.188' 1>/dev/null && ping -c 1 wireless.wifirst.net 2>/dev/null 1>/dev/null
 if [ $? -eq 0 ]; then
-	path_to_current_script=/data/data/com.termux/files/home/.shortcuts/Wifi_Config
+	path_to_current_script=$HOME/.local/bin/blaise_pascal
 	queue=$(atq -q n)
 	if [ $? -ne 0 ]; then
 		rm -rf $PREFIX/var/spool/atd/*
@@ -37,7 +37,7 @@ if [ $? -eq 0 ]; then
 	time_remaining=$(curl -s 'https://wireless.wifirst.net/captive-portal/api' -H "Content-Type: application/captive+json" | grep -oP '"seconds-remaining": \K\d+')
 	if [ ${time_remaining:-0} -gt 10 ]; then
 		at -q n -M -f $path_to_current_script now + $(expr $time_remaining / 60) minutes
-		start_zerotier
+		command -v sudo 2>/dev/null 1>/dev/null && start_zerotier
 		exit
 	fi
 
@@ -58,19 +58,21 @@ if [ $? -eq 0 ]; then
 	}
 
 	if ! login_wifirst; then
-		# sudo macchanger -r $(ifconfig 2>/dev/null | grep -o 'wlan[0-9]')
-		# sudo cmd wifi connect-network 'Wifirst Blaise Pascal' open
-		echo "Login failed, reset MAC address"
-		su shell -c cmd wifi forget-network $(sudo cmd wifi status | grep -o -P 'Net ID: \K\d+')
-		sudo cmd wifi connect-network 'Wifirst Blaise Pascal' open -r non_persistent
-		sleep 8
-		login_wifirst
+		if command -v sudo 2>/dev/null 1>/dev/null; then
+			echo "Login failed, resetting MAC address"
+			su shell -c cmd wifi forget-network $(sudo cmd wifi status | grep -o -P 'Net ID: \K\d+')
+			sudo cmd wifi connect-network 'Wifirst Blaise Pascal' open -r non_persistent
+			sleep 8
+			login_wifirst
+		else
+			echo "Please try to change MAC address from settings"
+		fi
 	fi
 	at -q n -M -f $path_to_current_script now + 10 minute
 else
 	echo "Not connected to Wifirst Blaise Pascal"
 fi
 
-start_zerotier
+command -v sudo 2>/dev/null 1>/dev/null && start_zerotier
 
 # vim: ft=zsh

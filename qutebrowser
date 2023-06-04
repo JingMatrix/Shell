@@ -8,6 +8,7 @@ export NODE_PATH=/home/jing/.local/share/pnpm/global/5/node_modules
 export PYTHONPATH=$HOME/Documents/Project/qutebrowser
 export MPV_COMMAND=/bin/mpv
 export SWAYSOCK=/run/user/$(id -u)/sway-ipc.$(id -u).$(pgrep -x sway).sock
+export QUTE_QT_WRAPPER=PyQt6
 
 # When no flag is passed at the start, treat all arguements together
 # as a search string.
