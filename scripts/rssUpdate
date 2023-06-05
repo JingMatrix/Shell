@@ -1,5 +1,7 @@
 #! /bin/zsh
 #
+export ALLOW_USER_SUPPLY_UNSAFE_DOMAIN="true"
 pushd /home/jing/Documents/Project/RSSHub
-timeout 600 /home/jing/.nvm/versions/node/v18.1.0/bin/pnpm start &
+timeout 600 /home/jing/.local/share/pnpm/pnpm start &
 sleep 5 && newsboat -x reload
+popd
