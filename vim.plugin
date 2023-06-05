@@ -1,25 +1,20 @@
 /home/jing/.local/share/nvim/site/pack
 ├── plugin
-│   ├── opt
-│   │   └── nerdtree
 │   └── start
-│       ├── conjure
 │       ├── nvim-dap
-│       ├── nvim-ts-context-commentstring
-│       ├── one-small-step-for-vimkind
 │       ├── plenary.nvim
 │       ├── registers.nvim
 │       ├── suda.vim
+│       ├── ultisnips
 │       ├── undotree
 │       ├── vim-commentary
-│       ├── vim-dadbod
 │       ├── vim-fugitive
+│       ├── vim-matchup
 │       ├── vim-rsi
-│       ├── vim-startify
+│       ├── vim-snippets
 │       ├── vim-surround
 │       ├── vim-unimpaired
-│       ├── vim-vinegar
-│       └── zeavim.vim
+│       └── vim-vinegar
 ├── project
 │   ├── opt
 │   │   └── gen_tags.vim
@@ -29,22 +24,21 @@
 │       ├── fzf.vim
 │       ├── ltex_extra.nvim
 │       ├── nnn.nvim
+│       ├── nvim-dap-python
 │       ├── nvim-dap-ui
 │       ├── nvim-lspconfig
 │       ├── nvim-treesitter
-│       ├── ultisnips
-│       ├── vim-devicons
-│       ├── vim-matchup
-│       └── vim-snippets
+│       └── zeavim.vim
 ├── syntax
-│   ├── opt
-│   │   └── mkdx
 │   └── start
 │       ├── aniseed
+│       ├── conjure
 │       ├── jsonc.vim
-│       ├── nvim-dap-python
 │       ├── nvim-jdtls
+│       ├── nvim-ts-context-commentstring
+│       ├── one-small-step-for-vimkind
 │       ├── scribble.vim
+│       ├── vim-dadbod
 │       ├── vim-go
 │       ├── vim-markdown
 │       ├── vim-racket
@@ -53,6 +47,8 @@
     ├── opt
     └── start
         ├── vim-airline
-        └── vim-airline-themes
+        ├── vim-airline-themes
+        ├── vim-devicons
+        └── vim-startify
 
-55 directories, 0 files
+51 directories, 0 files

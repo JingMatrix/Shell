@@ -2,12 +2,12 @@
 let g:vimtex_compiler_method='latexmk'
 let g:vimtex_quickfix_method='pplatex'
 let g:vimtex_compiler_latexmk={'options' : [
-				\'-verbose',
-				\'-bibtex',
-				\'-synctex=1',
-				\'-interaction=nonstopmode'],
-				\'build_dir': $PREFIX . '/var/tmp/latex'
-				\}
+			\'-verbose',
+			\'-bibtex',
+			\'-synctex=1',
+			\'-interaction=nonstopmode'],
+			\'build_dir': $PREFIX . '/var/tmp/latex'
+			\}
 let g:vimtex_fold_enabled=1
 let g:vimtex_fold_manual=1
 let g:vimtex_view_method='zathura'
@@ -36,8 +36,13 @@ let g:startify_change_to_dir=1
 let g:startify_change_to_vcs_root=1
 let g:startify_files_number=5
 
+let g:startify_skiplist=['doc/.*\.txt$', '.*/tmp/*', 'Notes/notes/.*\.md$', 'Code/Shell/.*']
+let g:startify_lists=[
+			\{ 'type': 'sessions',  'header': ['   Sessions']       },
+			\{ 'type': 'bookmarks', 'header': ['   Bookmarks']      },
+			\{ 'type': 'files',	'header': ['   MRU'] },
+			\]
 if system("whoami") =~ "jing"
-	let g:startify_skiplist=['doc/.*\.txt$', '.*/tmp/*', 'Notes/notes/.*\.md$', 'Code/Shell/.*']
 	let g:startify_bookmarks=[
 				\{'n': '$HOME/Notes'},
 				\{'c': '$HOME/Documents/Code/Shell'},
@@ -47,10 +52,11 @@ if system("whoami") =~ "jing"
 				\{'v': '$HOME/.config/nvim/init.vim'},
 				\{'a': '$HOME/.config/alacritty/alacritty.yml'},
 				\]
-	let g:startify_lists=[
-				\{ 'type': 'sessions',  'header': ['   Sessions']       },
-				\{ 'type': 'bookmarks', 'header': ['   Bookmarks']      },
-				\{ 'type': 'files',	'header': ['   MRU'] },
+else
+	let g:startify_bookmarks=[
+				\{'n': '$HOME/Notes/notes'},
+				\{'v': '$HOME/init/init.vim'},
+				\{'s': '$HOME/init'}
 				\]
 endif
 
@@ -142,10 +148,17 @@ autocmd CompleteDone * pclose
 
 
 " custom mapping
-nnoremap <c-t> :vsplit <bar> terminal<cr>i
-nnoremap <X1Mouse> <C-O>
-nnoremap <X2Mouse> <C-I>
-nnoremap <F5> :UndotreeToggle<CR>
+if system("whoami") =~ "jing"
+	nnoremap <C-T> :vsplit <bar> terminal<cr>i
+	nnoremap <X1Mouse> <C-O>
+	nnoremap <X2Mouse> <C-I>
+	nnoremap <F5> :UndotreeToggle<CR>
+else
+	nnoremap <C-X> :qa!<CR>
+	nnoremap <C-S> :wa!<CR>
+	nnoremap <C-Z> :ZZ<CR>
+	nnoremap <C-N> :e 
+endif
 
 " use <Shift> key to select; see https://stackoverflow.com/a/4608387/7870953
 set mouse=a
@@ -175,8 +188,10 @@ set shiftwidth=0
 " completion
 set omnifunc=syntaxcomplete#Complete
 
-" file location $HOME/.config/nvim/lua/vim-init.lua
-lua require('vim-init')
+if system("whoami") =~ "jing"
+	" file location $HOME/.config/nvim/lua/vim-init.lua
+	lua require('vim-init')
+endif
 
 let g:vimsyn_noerror=1
 

@@ -2,18 +2,21 @@
 
 set -e
 if [[ $USER == "jing" ]]; then
-	adb push scripts /sdcard/Download/init
+	adb shell rm -rf /sdcard/Download/init
+	adb shell mkdir /sdcard/Download/init
+	adb push scripts/misàjour /sdcard/Download/init
+	adb push scripts/upsCalendar /sdcard/Download/init
 	adb push termux_blaise_pascal /sdcard/Download/init
 	adb push termux_proxy /sdcard/Download/init
 	adb push init.vim /sdcard/Download/init
-	adb push vim-init.lua /sdcard/Download/init
+	adb push markdown.snippets /sdcard/Download/init
 	adb push termux-url-opener /sdcard/Download/init
 	adb push termux.init /sdcard/Download/init
 	adb push clash.yaml /sdcard/Download/init
 	adb push .zshrc /sdcard/Download/init
 	adb push $HOME/.ssh/id_rsa.pub /sdcard/Download/init
 	adb push $HOME/.config/rclone/rclone.conf /sdcard/Download/
-	[[ -e /tmp/nvim.zip ]] || 7z a /tmp/nvim.zip $HOME/.local/share/nvim/site/pack
+	[[ -e /tmp/nvim.zip ]] || 7z a -xr'!.*' /tmp/nvim.zip $HOME/.local/share/nvim/site/pack/theme $HOME/.local/share/nvim/site/pack/plugin
 	adb push /tmp/nvim.zip /sdcard/Download/init
 	adb shell am start -n com.termux/.HomeActivity
 	sleep 1
@@ -33,14 +36,19 @@ fi
 [[ -e $HOME/init ]] && rm -rf init
 [[ -e storage/downloads/init ]] && mv storage/downloads/init $HOME
 chmod +x $HOME/init/*
+chmod -x $HOME/init/*.*
+rm -rf $HOME/.local/share/nvim/
+mkdir -p $HOME/.local/share/nvim/site/pack
+command -v unzip && unzip $HOME/init/nvim.zip -d $HOME/.local/share/nvim/site/pack
+rm -rf $HOME/init/nvim.zip
 [[ -e $HOME/.config/rclone/rclone.conf ]] && rm storage/downloads/rclone.conf && exit
+
 apt update && yes | apt upgrade && apt update
 apt install -y git tsu nodejs lua53 python apt-file curl wget jq neovim zsh openssh at
 apt-file update
 cat $HOME/init/id_rsa.pub >$HOME/.ssh/authorized_keys
 sshd
-mkdir -p $HOME/.local/share/nvim/site
-unzip $HOME/init/nvim.zip -d $HOME/.local/share/nvim/site
+[[ -e $HOME/init/nvim.zip ]] && unzip $HOME/init/nvim.zip -d $HOME/.local/share/nvim/site/pack
 
 git config --global user.email "jingmatrix@gmail.com"
 git config --global user.name "JingMatrix"
@@ -59,11 +67,11 @@ ln -sf $HOME/init/termux_blaise_pascal $HOME/.local/bin/blaise_pascal
 ln -sf $HOME/init/termux_proxy $HOME/.local/bin/proxy
 ln -sf $HOME/init/upsCalendar $HOME/.local/bin/
 ln -sf $HOME/init/misàjour $HOME/.local/bin/
+mkdir -p $HOME/.config/nvim/UltiSnips
+ln -sf $HOME/init/markdown.snippets $HOME/.config/nvim/UltiSnips
 
 mkdir -p $HOME/.config/nvim
 ln -sf $HOME/init/init.vim $HOME/.config/nvim
-mkdir -p $HOME/.config/nvim/lua
-ln -sf $HOME/init/vim-init.lua $HOME/.config/nvim/lua
 
 mkdir -p $HOME/bin
 ln -sf $HOME/init/termux-url-opener $HOME/bin
@@ -96,6 +104,7 @@ gem install neovim
 pip install neovim
 
 apt install -y newsboat syncthing
+mkdir -p $HOME/Notes/.stfolder
 
 apt install -y rclone
 mkdir -p $HOME/.config/rclone

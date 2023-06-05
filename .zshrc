@@ -96,15 +96,13 @@ if [[ $USER == jing ]]; then
 else
 	export PATH=$PREFIX/bin:$PREFIX/sbin:$HOME/.local/bin
 	export PATH=$PATH:/product/bin:/apex/com.android.runtime/bin:/apex/com.android.art/bin:/system_ext/bin:/system/bin:/system/xbin:/odm/bin:/vendor/bin:/vendor/xbin
-	export PYSDL2_DLL_PATH=$PREFIX/lib
 	export GEM_HOME="$HOME/.local/gem"
 	export GOPATH="$HOME/.local/go"
 	export PATH="$PATH:$HOME/.cargo/bin"
 	export PATH="$PATH:$GEM_HOME/bin"
 	export PATH="$PATH:$GOPATH/bin"
-	export PNPM_HOME="$HOME/.local/share/pnpm"
-	export PATH="$PNPM_HOME:$PATH"
 	alias vim=nvim
+	export BROWSER=termux-open-url
 fi
 
 if [[ $TERM == linux ]]; then
