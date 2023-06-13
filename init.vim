@@ -6,7 +6,7 @@ let g:vimtex_compiler_latexmk={'options' : [
 			\'-bibtex',
 			\'-synctex=1',
 			\'-interaction=nonstopmode'],
-			\'build_dir': $PREFIX . '/var/tmp/latex'
+			\'out_dir': $PREFIX . '/var/tmp/latex'
 			\}
 let g:vimtex_fold_enabled=1
 let g:vimtex_fold_manual=1
