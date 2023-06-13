@@ -39,10 +39,10 @@ if [ "$(/sbin/iwgetid | grep 'ESSID:"Wifirst Blaise Pascal"')" ]; then
 		--compressed | /bin/grep -o -P 'code=\K\d')
 	if [ ${error_code:-0} -eq 2 ]; then
 		# notify-send "Wifi fails with code $error_code" "Attempt to change the mac address"
-
-		sudo /sbin/ifconfig wlp1s0 down
-		sudo /bin/macchanger -r wlp1s0
-		sudo /sbin/ifconfig wlp1s0 up
+		dev=$(/bin/ip link | /bin/grep -o -P 'wl[^:]+')
+		sudo ip link set $dev down
+		sudo /bin/macchanger -r $dev
+		sudo ip link set $dev up
 		# Network dispatcher would run this script again
 	else
 		# remove possible duplicated at jobs
