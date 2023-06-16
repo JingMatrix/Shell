@@ -1,3 +1,7 @@
+if system("hostnamectl hostname") =~ "imt.xyz"
+	call system("swaymsg input 1:1:AT_Translated_Set_2_keyboard xkb_switch_layout 0")
+endif
+
 " vimtex
 let g:vimtex_compiler_method='latexmk'
 let g:vimtex_quickfix_method='pplatex'
@@ -24,10 +28,6 @@ let g:vimtex_grammar_vlty={'lt_command': 'languagetool'}
 let g:vimtex_indent_bib_enabled=0
 let g:vimtex_doc_handlers = ['vimtex#doc#handlers#texdoc']
 let g:vimtex_fold_types={'comments' : {'enabled' : 1}}
-if system("hostnamectl hostname") =~ "imt.xyz"
-	let g:vimtex_mappings_prefix='ù'
-	call system("swaymsg input 1:1:AT_Translated_Set_2_keyboard xkb_switch_layout 0")
-endif
 augroup math_edit
 	autocmd!
 	autocmd FileType tex setl dictionary+=../.dict | setl iskeyword+=- | setl complete=.,t,k
