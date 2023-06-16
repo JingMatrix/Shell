@@ -11,7 +11,7 @@ gsconnect = proxy_gsconnect[
 
 waybar = {'text': "", 'tooltip': "", "class": "GSdevices", "types": ""}
 
-icons = {'smartphone-symbolic': "", "tablet-symbolic": "欄",
+icons = {'smartphone-symbolic': "󰄜", "tablet-symbolic": "",
          'tv-symbolic': "", 'computer-symbolic': ""}
 
 types = []
