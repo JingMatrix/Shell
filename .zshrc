@@ -33,6 +33,33 @@ function _ocr {
 	_describe ocr ocr_langs
 }
 
+function qb {
+	[[ $1 = -* ]] || search_text=$(echo -n $@ | tr '\n' ' ')
+	_ipc_socket="${XDG_RUNTIME_DIR}/qutebrowser/ipc-$(echo -n "$USER" | md5sum | cut -d' ' -f1)"
+	_proto_version=1
+	_qb_version=unkonwn
+	_qb_window=$(swaymsg -r -t get_tree | grep '  "app_id": "org.qutebrowser.qutebrowser",$')
+
+	if [[ -n ${_qb_window} && -e ${_ipc_socket} && -n ${search_text} ]]; then
+		# An instance is runing and we want to do a search
+		# We use socat and write log to /dev/null
+		printf '{"args": ["%s"], "target_arg": null, "version": "%s", "protocol_version": %d, "cwd": "%s"}\n' \
+			"${search_text}" \
+			"${_qb_version}" \
+			"${_proto_version}" \
+			"${PWD}" | socat -lf /dev/null - UNIX-CONNECT:"${_ipc_socket}"
+		swaymsg workspace qb
+	elif [[ -z ${search_text} && -n $@ ]]; then
+		# Not doing a search, this is possible for debugging uses.
+		# We must start a new instance and exit.
+		qutebrowser $@
+		exit
+	else
+		nohup qutebrowser ${search_text} 1>/dev/null 2>&1 &
+		disown
+	fi
+}
+
 compdef _ocr ocr
 
 alias gcl="git clone --recursive --shallow-submodules --depth 1"
@@ -83,13 +110,16 @@ if [[ $USER == jing ]]; then
 	export KALDI_ROOT=$HOME/Documents/Project/kaldi
 	export PATH="$PATH:/opt/gradle/gradle-8.1.1/bin"
 	alias icat="kitty +kitten icat"
-	alias qb=qutebrowser
-	alias pip=pip3
+	pyenv=$HOME/.local/python/bin/pip3
+	if	[[ -e $pyenv ]]; then
+		alias pip=$pyenv
+		alias pyenv=$HOME/.local/python/bin/python3
+	else
+		alias pip=pip3
+	fi
 	alias msfconsole="TERM=xterm-256color msfconsole"
 	alias luamake=$HOME/Documents/Project/lua-language-server/3rd/luamake/luamake
 	unalias gradle
-	source $HOME/Documents/Project/nnn/misc/quitcd/quitcd.bash_sh_zsh
-	source $HOME/.local/google-cloud-sdk/completion.zsh.inc
 
 	[[ -z $ALACRITTY_WAYLAND ]] || export WAYLAND_DISPLAY=$ALACRITTY_WAYLAND
 

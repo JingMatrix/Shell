@@ -1,41 +1,7 @@
 #!/bin/zsh
-# initial idea: Florian Bruhin (The-Compiler)
-# author: Thore Bödecker (foxxx0) Jianyu MA
-
-_proto_version=1
-_ipc_socket="${XDG_RUNTIME_DIR}/qutebrowser/ipc-$(echo -n "$USER" | md5sum | cut -d' ' -f1)"
 export NODE_PATH=/home/jing/.local/share/pnpm/global/5/node_modules
 export PYTHONPATH=$HOME/Documents/Project/qutebrowser
 export MPV_COMMAND=/bin/mpv
 export SWAYSOCK=/run/user/$(id -u)/sway-ipc.$(id -u).$(pgrep -x sway).sock
 export QUTE_QT_WRAPPER=PyQt6
-
-# When no flag is passed at the start, treat all arguements together
-# as a search string.
-
-[[ $1 = -* ]] || search_text=$(echo -n $@ | tr '\n' ' ')
-
-# Check if a qutebrowser window is present
-_qb_window=$(swaymsg -r -t get_tree | grep '  "app_id": "org.qutebrowser.qutebrowser",$')
-
-if [[ -z ${search_text} && -n $@ ]]; then
-	# Not doing a search, this is possible for debugging uses.
-	# We must start a new instance and exit.
-	python3 -m qutebrowser $@
-	exit
-elif [[ -n ${_qb_window} && -e ${_ipc_socket} ]]; then
-	# An instance is runing and we want to do a search
-	# We use socat and write log to /dev/null
-	[[ -n ${search_text} ]] && \
-	printf '{"args": ["%s"], "target_arg": null, "version": "%s", "protocol_version": %d, "cwd": "%s"}\n' \
-		"${search_text}" \
-		"${_qb_version}" \
-		"${_proto_version}" \
-		"${PWD}" | socat -lf /dev/null - UNIX-CONNECT:"${_ipc_socket}" &
-elif [[ -z $_qb_window ]]; then
-	# The first startup of qutebrowser
-	nohup python3 -m qutebrowser ${search_text} 1>/dev/null 2>&1 &
-fi
-
-# Always switch to the workspace for qutebrowser
-swaymsg workspace qb
+nohup python3 -m qutebrowser $@ 1>/dev/null 2>&1 &
