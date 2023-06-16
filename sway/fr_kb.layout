@@ -3,7 +3,7 @@
 // Refer to file /usr/share/X11/xkb/symbols/fr
 
 default partial alphanumeric_keys
-xkb_symbols "custom" {
+xkb_symbols "vim" {
 
     include "fr(basic)"
     name[Group1]="French (Number row switched)";
@@ -27,4 +27,6 @@ xkb_symbols "custom" {
     key <AD12>	{ [bracketright, braceright,          dollar,       sterling ] };
     key <BKSL>	{ [    asterisk,   quotedbl,     aapostrophe,             mu ] };
     key <AC11>	{ [   backslash,    percent, dead_circumflex,         ugrave ] };
+    key <AB08>	{ [      period,  semicolon,           U2022,       multiply ] }; // •
+    key <AB10>	{ [      exclam,     dollar,      numbersign,        section ] };
 };
