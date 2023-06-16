@@ -35,12 +35,12 @@ key_bindings:
     mods: Alt
     command:
       program: "sh"
-      args: ["-c","$HOME/Documents/Code/Shell/background_opacity -inc"]
+      args: ["-c","$HOME/Documents/Code/Shell/terminal/background_opacity -inc"]
   - key: 12
     mods: Alt
     command:
       program: "sh"
-      args: ["-c","$HOME/Documents/Code/Shell/background_opacity -dec"]
+      args: ["-c","$HOME/Documents/Code/Shell/terminal/background_opacity -dec"]
 cursor:
   style:
     shape: Beam

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Str=$(grep -i '^  opacity' /home/jing/Documents/Code/Shell/alacritty.yml)
+Str=$(grep -i '^  opacity' /home/jing/Documents/Code/Shell/terminal/alacritty.yml)
 echo "$Str" # debug
 Str=${Str:11:5}
 echo "$Str" # debug
@@ -28,4 +28,4 @@ esac
 
 echo $num # debug
 
-sed -i "s/^  opacity:.*/  opacity: $num/" /home/jing/Documents/Code/Shell/alacritty.yml
+sed -i "s/^  opacity:.*/  opacity: $num/" /home/jing/Documents/Code/Shell/terminal/alacritty.yml

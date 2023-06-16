@@ -6,13 +6,13 @@ if [[ $USER == "jing" ]]; then
 	adb shell mkdir /sdcard/Download/init
 	adb push scripts/misàjour /sdcard/Download/init
 	adb push scripts/upsCalendar /sdcard/Download/init
-	adb push termux_blaise_pascal /sdcard/Download/init
-	adb push termux_proxy /sdcard/Download/init
-	adb push init.vim /sdcard/Download/init
-	adb push markdown.snippets /sdcard/Download/init
-	adb push termux-url-opener /sdcard/Download/init
-	adb push termux.init /sdcard/Download/init
-	adb push clash.yaml /sdcard/Download/init
+	adb push terminal/termux_blaise_pascal /sdcard/Download/init
+	adb push terminal/termux_proxy /sdcard/Download/init
+	adb push nvim/init.vim /sdcard/Download/init
+	adb push nvim/markdown.snippets /sdcard/Download/init
+	adb push terminal/termux-url-opener /sdcard/Download/init
+	adb push terminal/termux.init /sdcard/Download/init
+	adb push config/clash.yaml /sdcard/Download/init
 	adb push .zshrc /sdcard/Download/init
 	adb push $HOME/.ssh/id_rsa.pub /sdcard/Download/init
 	adb push $HOME/.config/rclone/rclone.conf /sdcard/Download/

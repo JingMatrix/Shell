@@ -4,8 +4,7 @@ if [[ $USER == "jing" ]]; then
 	# update plugin install state
 	BASEDIR=$(dirname "$0")
 	echo "Updating plugin installed state"
-	tree -L 3 $HOME/.local/share/nvim/site/pack >$BASEDIR/../vim.plugin
-	tree -L 1 $HOME/.local/share/gnome-shell/extensions >$BASEDIR/../gnome.plugin
+	tree -L 3 $HOME/.local/share/nvim/site/pack >$BASEDIR/../nvim/vim.plugin
 fi
 
 if [[ -e /bin/zathura ]]; then

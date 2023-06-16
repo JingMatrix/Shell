@@ -1,0 +1,27 @@
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+
+# aliyun login refresh
+# 0 */8 * * * $HOME/Documents/Code/Shell/scripts/aliyun-share >/dev/null 2>&1
+
+# sync math docs
+0 */6 * * * $HOME/Documents/Code/Shell/drive-sync
+
+# desktop wallpaper
+*/1 * * * * $HOME/Documents/Code/Shell/sway/change-wallpaper >/dev/null 2>&1
+40 16 * * * $HOME/Documents/Code/Shell/sway/getWallpaper
+
+# google agenda
+# */10 * * * * $HOME/Documents/Code/Shell/archives/reminder >/dev/null 2>&1
+
+# rss-tg bot
+20 */4 * * * timeout 600 $HOME/.local/python/bin/python3 -m rsstt 2>/dev/null
+
+# newsboat
+# 0 */4 * * * $HOME/Documents/Code/Shell/scripts/rssUpdate >/dev/null 2>&1
+
+# wikiquote rss
+# 0 */10 * * * $HOME/Documents/Code/Shell/archives/wikiquote_rss.py
+
+

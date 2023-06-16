@@ -7,7 +7,6 @@ plugins+=(zsh-syntax-highlighting zsh-completions)
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 ZSH_THEME=${ZSH_THEME:-random}
 source $ZSH/oh-my-zsh.sh
-
 function ocr {
 	if [[ $(wl-paste --list-types | head -1) =~ ^image ]]; then
 		wl-paste -t image/png >/tmp/clip.png
