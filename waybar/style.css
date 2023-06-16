@@ -3,6 +3,11 @@
     font-size: 14px;
 }
 
+#custom-gsconnect.GSdevices {
+    margin: 0 5px;
+	font-size: 18px;
+}
+
 window#waybar {
     background-color: rgba(43, 48, 59, 0.5);
     border-bottom: 3px solid rgba(100, 114, 125, 0.5);
@@ -15,6 +20,15 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
 window#waybar.termite {
     background-color: #3F3F3F;
 }
@@ -24,21 +38,28 @@ window#waybar.chromium {
     border: none;
 }
 
-#workspaces button {
-    padding: 0 5px;
-    background-color: transparent;
-    color: #ffffff;
+button {
     /* Use box-shadow instead of border so the text isn't offset */
     box-shadow: inset 0 -3px transparent;
-    /* Avoid rounded borders under each workspace name */
+    /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
 #workspaces button:hover {
     background: rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 -3px #ffffff;
 }
 
 #workspaces button.focused {
@@ -64,10 +85,12 @@ window#waybar.chromium {
 #backlight,
 #network,
 #pulseaudio,
+#wireplumber,
 #custom-media,
 #tray,
 #mode,
 #idle_inhibitor,
+#scratchpad,
 #mpd {
     padding: 0 10px;
     color: #ffffff;
@@ -158,6 +181,15 @@ label:focus {
     color: #2a5c45;
 }
 
+#wireplumber {
+    background-color: #fff0f5;
+    color: #000000;
+}
+
+#wireplumber.muted {
+    background-color: #f53c3c;
+}
+
 #custom-media {
     background-color: #66cc99;
     color: #2a5c45;
@@ -243,7 +275,10 @@ label:focus {
     background: rgba(0, 0, 0, 0.2);
 }
 
-#custom-gsconnect.GSdevices {
-    margin: 0 5px;
-	font-size: 18px;
+#scratchpad {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad.empty {
+	background-color: transparent;
 }

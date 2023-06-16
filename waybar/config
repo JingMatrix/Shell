@@ -20,6 +20,16 @@
     "modules-right": ["custom/gsconnect", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "sway/language", "tray"],
 
     // Modules configuration
+    "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+        "activated": "",
+        "deactivated": ""
+      }
+    },
+    "tray": {
+      "spacing": 10
+    },
     "sway/window": {
       "on-click" : "swaync-client -t"
     },
@@ -95,25 +105,25 @@
       "on-click": "pavucontrol",
       "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
       "on-click-middle": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+  },
+  "custom/media": {
+    "format": "{icon} {}",
+    "return-type": "json",
+    "max-length": 50,
+    "format-icons": {
+      "spotify": " ",
+      "GSConnect": "󰄡 ",
+      "qutebrowser": " ",
+      "default": " "
     },
-    "custom/media": {
-      "format": "{icon} {}",
-      "return-type": "json",
-      "max-length": 50,
-      "format-icons": {
-        "spotify": " ",
-        "GSConnect": "󰄡 ",
-        "qutebrowser": " ",
-        "default": " "
-      },
-      "escape": true,
-      "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources folder
-      "on-click": "playerctl previous",
-      "on-click-middle": "playerctl play-pause",
-      "on-click-right": "playerctl next",
-      "on-scroll-up": "playerctl volume 0.1+",
-      "on-scroll-down": "playerctl volume 0.1-"
-    }
+    "escape": true,
+    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources folder
+    "on-click": "playerctl previous",
+    "on-click-middle": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-scroll-up": "playerctl volume 0.1+",
+    "on-scroll-down": "playerctl volume 0.1-"
+  }
   }
 ]
 
