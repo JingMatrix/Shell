@@ -1,0 +1,24 @@
+// Keyboard layouts for France
+// to be saved as file ~/.xkb/symbols/fr
+
+default partial alphanumeric_keys
+xkb_symbols "num" {
+
+    include "fr(basic)"
+
+    name[Group1]="French (Number row switched)";
+
+    key <AE01>	{ [         1,  ampersand,  onesuperior,   exclamdown ]	};
+    key <AE02>	{ [         2,     eacute,   asciitilde,    oneeighth ]	};
+    key <AE03>	{ [         3,   quotedbl,   numbersign,     sterling ]	};
+    key <AE04>	{ [         4, apostrophe,    braceleft,       dollar ]	};
+    key <AE05>	{ [         5,  parenleft,  bracketleft, threeeighths ]	};
+    key <AE06>	{ [         6,      minus,          bar,  fiveeighths ]	};
+    key <AE07>	{ [         7,     egrave,        grave, seveneighths ]	};
+    key <AE08>	{ [         8, underscore,    backslash,    trademark ]	};
+    key <AE09>	{ [         9,   ccedilla,  asciicircum,    plusminus ]	};
+    key <AE10>	{ [         0,     agrave,           at,       degree ]	};
+    key <AE11>	{ [    degree, parenright, bracketright, questiondown ]	};
+    key <AE12>	{ [      plus,      equal,   braceright,  dead_ogonek ]	};
+
+};

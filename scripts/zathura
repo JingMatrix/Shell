@@ -10,13 +10,13 @@ if [[ -n $VIMRUNTIME && -n $SWAYSOCK ]]; then
 	typeset -a _args=($@)
 	title="${_args[-1]:t}"
 	if [[ -z "$(swaymsg -p -t get_workspaces | grep " $title")" ]]; then
-		[[ -z "$(swaymsg -p -t get_outputs | grep HDMI-A-2)" ]] &&
+		[[ -z "$(swaymsg -p -t get_outputs | grep HDMI-A)" ]] &&
 			[[ -z "$(swaymsg -p -t get_outputs | grep HEADLESS-1)" ]] && exit
 		# wait a bit of for Zathura window to appear
 		sleep 0.4
 		swaymsg "[app_id=org.pwmt.zathura title=$title]" \
 			fullscreen disable, move workspace " $title"
-		if [[ -n "$(swaymsg -p -t get_outputs | grep HDMI-A-2)" ]]; then
+		if [[ -n "$(swaymsg -p -t get_outputs | grep HDMI-A)" ]]; then
 			swaymsg workspace " $title"
 			swaymsg move workspace output "eDP-1"
 			sleep 0.3 && wtype s
