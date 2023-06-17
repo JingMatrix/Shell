@@ -51,7 +51,7 @@ elif ! cmp $basedir/config/wifi_login /etc/NetworkManager/dispatcher.d/wifi_logi
 fi
 
 mkdir -p $HOME/.config/zathura
-ln -sf $basedir/config/zathurac $HOME/.config/zathura
+ln -sf $basedir/config/zathurarc $HOME/.config/zathura
 
 # Config sway
 mkdir -p $HOME/.config/sway
