@@ -20,6 +20,10 @@ ln -sf $basedir/terminal/alacritty.yml $HOME/.config/alacritty
 mkdir -p $HOME/.config/clash
 ln -sf $basedir/config/clash.yaml $HOME/.config/clash
 
+mkdir -p $HOME/.config/fcitx5
+ln -sf $basedir/config/fcitx5.conf $HOME/.config/fcitx5/config
+ln -sf $basedir/config/fcitx5.profile $HOME/.config/fcitx5/profile
+
 sudo cp $basedir/config/ly /etc/pam.d
 
 if [[ -d $HOME/Documents/Project/qutebrowser ]]; then
