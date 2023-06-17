@@ -27,6 +27,7 @@ xkb_symbols "vim" {
     key <AD12>	{ [bracketright, braceright,          dollar,       sterling ] };
     key <BKSL>	{ [    asterisk,   quotedbl,     aapostrophe,             mu ] };
     key <AC11>	{ [   backslash,    percent, dead_circumflex,         ugrave ] };
-    key <AB08>	{ [      period,  semicolon,             bar,          U2022 ] }; // •
+    key <AB08>	{ [      period,  semicolon,           U2022,       multiply ] }; // •
+    key <AB09>	{ [       colon,      slash,             bar,       division ] };
     key <AB10>	{ [      exclam,     dollar,      numbersign,        section ] };
 };
