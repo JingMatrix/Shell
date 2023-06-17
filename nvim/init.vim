@@ -1,6 +1,6 @@
 if system("hostnamectl hostname") =~ "imt.xyz"
 	call system("swaymsg input 1:1:AT_Translated_Set_2_keyboard xkb_switch_layout 0")
-	autocmd VimLeave * :silent exec "!swaymsg input 1:1:AT_Translated_Set_2_keyboard xkb_switch_layout 1"
+	autocmd VimLeavePre * :silent exec "!swaymsg input 1:1:AT_Translated_Set_2_keyboard xkb_switch_layout 1"
 endif
 
 " vimtex
