@@ -54,8 +54,7 @@ function qb {
 		qutebrowser $@
 		exit
 	else
-		nohup qutebrowser ${search_text} 1>/dev/null 2>&1 &
-		disown
+		(nohup qutebrowser ${search_text} 1>/dev/null 2>&1 &)
 	fi
 }
 
