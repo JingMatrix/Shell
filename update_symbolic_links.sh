@@ -35,6 +35,16 @@ elif ! cmp $basedir/config/ly /etc/pam.d/ly; then
 	sudo cp $basedir/config/ly /etc/pam.d
 fi
 
+ln -f $basedir/config/mimeapps.list
+if [[ ! -f $HOME/.config/mimeapps.list ]]; then
+	echo "Install mimeapps.list"
+	ln -f $basedir/config/mimeapps.list $HOME/.config/mimeapps.list
+	ln -sf $HOME/.config/mimeapps.list $HOME/.local/share/applications/mimeapps.list
+elif ! cmp $basedir/config/mimeapps.list $HOME/.config/mimeapps.list; then
+	echo "Update mimeapps locally"
+	cp $HOME/.config/mimeapps.list $basedir/config/mimeapps.list
+fi
+
 if [[ -d $HOME/Documents/Project/qutebrowser ]]; then
 	mkdir -p $HOME/.local/bin
 	ln -sf $basedir/archives/qutebrowser $HOME/.local/bin
