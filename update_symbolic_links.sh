@@ -10,6 +10,7 @@ ln -sf $basedir/nvim/vim-init.lua $HOME/.config/nvim/lua
 mkdir -p $HOME/.config/nvim/UltiSnips
 ln -sf $basedir/nvim/markdown.snippets $HOME/.config/nvim/UltiSnips
 
+ln -sf $basedir/.zprofile $HOME
 mkdir -p $HOME/.config/kitty
 ln -sf $basedir/terminal/kitty.conf $HOME/.config/kitty/
 mkdir -p $HOME/.config/alacritty
