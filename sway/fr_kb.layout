@@ -8,7 +8,7 @@ xkb_symbols "vim" {
     include "fr(basic)"
     name[Group1]="French (Number row switched)";
 
-    key <TLDE>	{ [     grave, asciitilde,  twosuperior,      notsign ]	};
+    key <TLDE>	{ [     grave, asciitilde,  asciicircum,  twosuperior ]	};
     key <AE01>	{ [         1,  ampersand,  onesuperior,   exclamdown ]	};
     key <AE02>	{ [         2,     eacute,   asciitilde,    oneeighth ]	};
     key <AE03>	{ [         3,   quotedbl,   numbersign,     sterling ]	};
