@@ -1,0 +1,23 @@
+MainWindow #searchPane #translateLine,
+MainWindow #menubar,
+MainWindow #navToolbar,
+MainWindow #searchPane #wordList,
+MainWindow #translateLine,
+ScanPopup #translateLine,
+MainWindow #wordList,
+MainWindow #dictsPane #dictsList,
+MainWindow #historyPane #historyPaneTitleBar #historyLabel,
+MainWindow #historyPane #historyPaneTitleBar #historyCountLabel,
+MainWindow #favoritesPane #favoritesPaneTitleBar #favoritesLabel,
+MainWindow #dictsPane #dictsPaneTitleBar QLabel,
+MainWindow #searchPane #translateLine,
+MainWindow #searchPane #wordList,
+MainWindow #historyPane #historyList,
+MainWindow #favoritesPane #favoritesTree,
+MainWindow #navToolbar GroupComboBox,
+ScanPopup GroupComboBox,
+MainWindow #historyPane #historyList {
+  background: #201f1f;
+  color: #d4d2cf;
+  font-size: 15px;
+}

@@ -1,0 +1,13 @@
+body,
+html,
+.gdarticle,
+.grambox .expl,
+.grambox .compareword,
+.collobox .section,
+.thesbox .section {
+	background: lightgrey;
+}
+
+.gddictname {
+  margin: -16px;
+}

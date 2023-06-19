@@ -35,6 +35,10 @@ elif ! cmp $basedir/config/ly /etc/pam.d/ly; then
 	sudo cp $basedir/config/ly /etc/pam.d
 fi
 
+mkdir -p $HOME/.goldendict/styles
+ln -sf $basedir/config/goldendict.xml $HOME/.goldendict/config
+ln -sf $basedir/config/goldendict_Darktheme $HOME/.goldendict/styles/Darktheme
+
 if [[ ! -f $HOME/.config/mimeapps.list ]]; then
 	echo "Install mimeapps.list"
 	cp $basedir/config/mimeapps.list $HOME/.config/mimeapps.list

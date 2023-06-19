@@ -1,0 +1,308 @@
+<config>
+ <paths>
+  <path recursive="1">/usr/share/goldendict-wordnet</path>
+  <path recursive="1">/home/jing/Archives/Dictionary</path>
+ </paths>
+ <sounddirs/>
+ <dictionaryOrder name="" id="0">
+  <dictionary name="林语堂当代汉英词典-繁简索引">c0916f55626df0725af73d27a40690f1</dictionary>
+  <dictionary name="现代汉英综合大辞典">20cc516fb5b7f9b70680e75cb6702279</dictionary>
+  <dictionary name="Oxford Advanced Learner's Dictionary 9th edition">24a7c4ce070dcf5b1f1c46bcd19fd809</dictionary>
+  <dictionary name="英汉大词典（第2版）">f9064bf7c2658e4de2fe23e7081969f2</dictionary>
+  <dictionary name="韦氏高阶英汉双解词典">1a3a84bbb788771398818d17f31d5878</dictionary>
+  <dictionary name="UrbanDictionary">1f8cc5dc5e4a49b50f312b491ff3f2d3</dictionary>
+  <dictionary name="牛津同义词词词典">fc6d7e7f4f9e01b6c42ab340aca26bfa</dictionary>
+  <dictionary name="计算机英汉双解词典">00c5ac9245110b465869dab3b836d43c</dictionary>
+  <dictionary name="Collins English-French French-English Dictionary">66bd030abde77e7f01ceed9872549569</dictionary>
+  <dictionary name="Larousse Chambers French-English-French">3d4c951699523adcf162073ec5edbb4d</dictionary>
+  <dictionary name="Le Robert Dixel">5bcd5737a6c4bb74b658a297d75db698</dictionary>
+  <dictionary name="GrandRobert">7f8e1d5ef992e33ef02f7cf2a701d4a5</dictionary>
+  <dictionary name="Larousse">a6313fd46a1764b57167e4e594091d11</dictionary>
+  <dictionary name="Le Petit Robert 2003">fc98313a25a5b880b333ed447623d20d</dictionary>
+  <dictionary name="XMLittré">4e21ba0d44aaa5acd33b02ffa699e240</dictionary>
+  <dictionary name="法兰西学院法语词典">65b4d650cc29f3b9d9e1d54f8ed043df</dictionary>
+  <dictionary name="lawt100403">f2ae3943b967f54dbd92cdb7aaf153f4</dictionary>
+  <dictionary name="拉丁语英语">91dc5dbd9e732ee6ac05061d7cb498e6</dictionary>
+  <dictionary name="Charlton T. Lewis, Charles Short. A Latin Dictionary">f63bd3abdf77754cedf0b8a51216ac29</dictionary>
+  <dictionary name="Legal Latin">781f78ed4f5655653b785dd9cf45ddb5</dictionary>
+  <dictionary name="Anglais (US) Morphologie">e7b5207f04948e6f27855d5703f2515d</dictionary>
+  <dictionary name="Français Morphologie">d4283c8076c9c5c2cf6d034d8c3369c5</dictionary>
+  <dictionary name="English Wikipedia">ae6f89aac7151829681b85f035d54e48</dictionary>
+  <dictionary name="French Wikipedia">a8a66331a1242ca2aeb0b4aed361c41d</dictionary>
+  <dictionary name="Chinese Wikipedia">f3b4ec8531e52ddf5b10d21e4577a7a2</dictionary>
+  <dictionary name="LAROUSSE DICTIONNAIRE FRANÇAIS-CHINOIS, 2019">187ee560a77d57103cbf5419b938e000</dictionary>
+  <dictionary name="WordNet 3.0 (En-En)">26e2e9425b256c950dd9d6d63c54e044</dictionary>
+  <dictionary name="Trans audio en">3a6fd76160a31955134f82e6ab4ecf9a</dictionary>
+  <dictionary name="Trans fr:zh-CN">b9b5d699c7a6c156d9b73e1562277b93</dictionary>
+  <dictionary name="Trans audio fr">1f821892b86d2b1cfecc3940fd159168</dictionary>
+  <dictionary name="Trans zh-CN:fr">f390c2f051a66fcfbb83e42a548a9d4b</dictionary>
+  <dictionary name="Trans zh-CN:en">c982f47d60e135750df52e720391f999</dictionary>
+  <dictionary name="Trans en:zh-CN">4ea7884ffca65b6fe97c74ffc5739264</dictionary>
+  <dictionary name="Le Grand Dictionnaire des Synonymes et Contraires, 2004">6a042eda9e31be3824975f21518f1fde</dictionary>
+  <dictionary name="Larousse Compact English-Spanish">fae15865a7e71e79609ce6f9d615da3b</dictionary>
+  <dictionary name="Larousse Compact Spanish-English">25cba269e4320fe078f2c7da96e5ff48</dictionary>
+  <dictionary name="现代西汉汉西词典">e0048bc761941c7e919ac83cccfaf27d</dictionary>
+  <dictionary name="SCCS.mdx">69ab913f1e6dcb4d52f9bb3600fec949</dictionary>
+  <dictionary name="Collins Spanish to English Dictionary">0f9a5b78891dc87ea486ec5d35179dfb</dictionary>
+  <dictionary name="Oxford Spanish - English Dictionary">580755dec248ad01cb130e7bae8b74e9</dictionary>
+  <dictionary name="Spanish Wikipedia">a0af617e85d9f7ac0439297e2db12f7b</dictionary>
+  <dictionary name="Trans audio es">bc51823fd5521dc4a0de67838024e268</dictionary>
+  <dictionary name="Trans zh-CN:es">275bcfd949e669a144c5e15008cd4d44</dictionary>
+  <dictionary name="Trans es:zh-CN">e32240087d5b25ba60b3ab995b010216</dictionary>
+  <mutedDictionaries/>
+ </dictionaryOrder>
+ <inactiveDictionaries name="" id="0">
+  <mutedDictionaries/>
+ </inactiveDictionaries>
+ <groups nextId="11">
+  <group name="En local" id="6">
+   <dictionary name="Oxford Advanced Learner's Dictionary 9th edition">24a7c4ce070dcf5b1f1c46bcd19fd809</dictionary>
+   <dictionary name="Trans audio en">3a6fd76160a31955134f82e6ab4ecf9a</dictionary>
+   <dictionary name="Larousse Chambers French-English-French">3d4c951699523adcf162073ec5edbb4d</dictionary>
+   <dictionary name="英汉大词典（第2版）">f9064bf7c2658e4de2fe23e7081969f2</dictionary>
+   <dictionary name="韦氏高阶英汉双解词典">1a3a84bbb788771398818d17f31d5878</dictionary>
+   <dictionary name="WordNet 3.0 (En-En)">26e2e9425b256c950dd9d6d63c54e044</dictionary>
+   <dictionary name="现代汉英综合大辞典">20cc516fb5b7f9b70680e75cb6702279</dictionary>
+   <dictionary name="UrbanDictionary">1f8cc5dc5e4a49b50f312b491ff3f2d3</dictionary>
+   <dictionary name="牛津同义词词词典">fc6d7e7f4f9e01b6c42ab340aca26bfa</dictionary>
+   <dictionary name="计算机英汉双解词典">00c5ac9245110b465869dab3b836d43c</dictionary>
+   <dictionary name="Anglais (US) Morphologie">e7b5207f04948e6f27855d5703f2515d</dictionary>
+   <dictionary name="林语堂当代汉英词典-繁简索引">c0916f55626df0725af73d27a40690f1</dictionary>
+   <dictionary name="Trans zh-CN:en">c982f47d60e135750df52e720391f999</dictionary>
+   <dictionary name="Trans en:zh-CN">4ea7884ffca65b6fe97c74ffc5739264</dictionary>
+   <mutedDictionaries/>
+  </group>
+  <group name="Fr local" id="7">
+   <dictionary name="Trans audio fr">1f821892b86d2b1cfecc3940fd159168</dictionary>
+   <dictionary name="Trans fr:zh-CN">b9b5d699c7a6c156d9b73e1562277b93</dictionary>
+   <dictionary name="LAROUSSE DICTIONNAIRE FRANÇAIS-CHINOIS, 2019">187ee560a77d57103cbf5419b938e000</dictionary>
+   <dictionary name="Collins English-French French-English Dictionary">66bd030abde77e7f01ceed9872549569</dictionary>
+   <dictionary name="Larousse Chambers French-English-French">3d4c951699523adcf162073ec5edbb4d</dictionary>
+   <dictionary name="Le Grand Dictionnaire des Synonymes et Contraires, 2004">6a042eda9e31be3824975f21518f1fde</dictionary>
+   <dictionary name="Le Robert Dixel">5bcd5737a6c4bb74b658a297d75db698</dictionary>
+   <dictionary name="GrandRobert">7f8e1d5ef992e33ef02f7cf2a701d4a5</dictionary>
+   <dictionary name="Larousse">a6313fd46a1764b57167e4e594091d11</dictionary>
+   <dictionary name="Le Petit Robert 2003">fc98313a25a5b880b333ed447623d20d</dictionary>
+   <dictionary name="XMLittré">4e21ba0d44aaa5acd33b02ffa699e240</dictionary>
+   <dictionary name="法兰西学院法语词典">65b4d650cc29f3b9d9e1d54f8ed043df</dictionary>
+   <dictionary name="Français Morphologie">d4283c8076c9c5c2cf6d034d8c3369c5</dictionary>
+   <dictionary name="Trans zh-CN:fr">f390c2f051a66fcfbb83e42a548a9d4b</dictionary>
+   <mutedDictionaries/>
+  </group>
+  <group name="Es local" id="10">
+   <dictionary name="Trans audio es">bc51823fd5521dc4a0de67838024e268</dictionary>
+   <dictionary name="Trans es:zh-CN">e32240087d5b25ba60b3ab995b010216</dictionary>
+   <dictionary name="Trans zh-CN:es">275bcfd949e669a144c5e15008cd4d44</dictionary>
+   <dictionary name="Larousse Compact English-Spanish">fae15865a7e71e79609ce6f9d615da3b</dictionary>
+   <dictionary name="Larousse Compact Spanish-English">25cba269e4320fe078f2c7da96e5ff48</dictionary>
+   <dictionary name="现代西汉汉西词典">e0048bc761941c7e919ac83cccfaf27d</dictionary>
+   <dictionary name="SCCS.mdx">69ab913f1e6dcb4d52f9bb3600fec949</dictionary>
+   <dictionary name="Oxford Spanish - English Dictionary">580755dec248ad01cb130e7bae8b74e9</dictionary>
+   <dictionary name="Collins Spanish to English Dictionary">0f9a5b78891dc87ea486ec5d35179dfb</dictionary>
+   <mutedDictionaries/>
+  </group>
+  <group name="Latin local" id="8">
+   <dictionary name="Anglais (US) Morphologie">e7b5207f04948e6f27855d5703f2515d</dictionary>
+   <dictionary name="Français Morphologie">d4283c8076c9c5c2cf6d034d8c3369c5</dictionary>
+   <dictionary name="lawt100403">f2ae3943b967f54dbd92cdb7aaf153f4</dictionary>
+   <dictionary name="拉丁语英语">91dc5dbd9e732ee6ac05061d7cb498e6</dictionary>
+   <dictionary name="Charlton T. Lewis, Charles Short. A Latin Dictionary">f63bd3abdf77754cedf0b8a51216ac29</dictionary>
+   <dictionary name="Legal Latin">781f78ed4f5655653b785dd9cf45ddb5</dictionary>
+   <mutedDictionaries/>
+  </group>
+  <group shortcut="Shift+O" name="Online" id="9">
+   <dictionary name="Anglais (US) Morphologie">e7b5207f04948e6f27855d5703f2515d</dictionary>
+   <dictionary name="Français Morphologie">d4283c8076c9c5c2cf6d034d8c3369c5</dictionary>
+   <dictionary name="English Wikipedia">ae6f89aac7151829681b85f035d54e48</dictionary>
+   <dictionary name="French Wikipedia">a8a66331a1242ca2aeb0b4aed361c41d</dictionary>
+   <dictionary name="Chinese Wikipedia">f3b4ec8531e52ddf5b10d21e4577a7a2</dictionary>
+   <dictionary name="Spanish Wikipedia">a0af617e85d9f7ac0439297e2db12f7b</dictionary>
+   <mutedDictionaries/>
+  </group>
+ </groups>
+ <hunspell dictionariesPath="/home/jing/Archives/Dictionary/Morphologies">
+  <enabled>en_US</enabled>
+  <enabled>fr_FR</enabled>
+ </hunspell>
+ <transliteration>
+  <enableRussianTransliteration>0</enableRussianTransliteration>
+  <enableGermanTransliteration>0</enableGermanTransliteration>
+  <enableGreekTransliteration>0</enableGreekTransliteration>
+  <enableBelarusianTransliteration>0</enableBelarusianTransliteration>
+  <chinese>
+   <enable>0</enable>
+   <enableSCToTWConversion>1</enableSCToTWConversion>
+   <enableSCToHKConversion>1</enableSCToHKConversion>
+   <enableTCToSCConversion>1</enableTCToSCConversion>
+  </chinese>
+  <romaji>
+   <enable>0</enable>
+   <enableHepburn>1</enableHepburn>
+   <enableNihonShiki>0</enableNihonShiki>
+   <enableKunreiShiki>0</enableKunreiShiki>
+   <enableHiragana>1</enableHiragana>
+   <enableKatakana>1</enableKatakana>
+  </romaji>
+ </transliteration>
+ <forvo>
+  <enable>0</enable>
+  <apiKey></apiKey>
+  <languageCodes></languageCodes>
+ </forvo>
+ <mediawikis>
+  <mediawiki url="https://en.wikipedia.org/w" enabled="1" icon="" name="English Wikipedia" id="ae6f89aac7151829681b85f035d54e48"/>
+  <mediawiki url="https://en.wiktionary.org/w" enabled="0" icon="" name="English Wiktionary" id="affcf9678e7bfe701c9b071f97eccba3"/>
+  <mediawiki url="https://ru.wikipedia.org/w" enabled="0" icon="" name="Russian Wikipedia" id="8e0c1c2b6821dab8bdba8eb869ca7176"/>
+  <mediawiki url="https://ru.wiktionary.org/w" enabled="0" icon="" name="Russian Wiktionary" id="b09947600ae3902654f8ad4567ae8567"/>
+  <mediawiki url="https://fr.wikipedia.org/w" enabled="1" icon="" name="French Wikipedia" id="a8a66331a1242ca2aeb0b4aed361c41d"/>
+  <mediawiki url="https://de.wiktionary.org/w" enabled="0" icon="" name="German Wiktionary" id="21c64bca5ec10ba17ff19f3066bc962a"/>
+  <mediawiki url="https://pt.wikipedia.org/w" enabled="0" icon="" name="Portuguese Wikipedia" id="96957cb2ad73a20c7a1d561fc83c253a"/>
+  <mediawiki url="https://pt.wiktionary.org/w" enabled="0" icon="" name="Portuguese Wiktionary" id="ed4c3929196afdd93cc08b9a903aad6a"/>
+  <mediawiki url="https://zh.wikipedia.org/w" enabled="1" icon="" name="Chinese Wikipedia" id="f3b4ec8531e52ddf5b10d21e4577a7a2"/>
+  <mediawiki url="https://el.wiktionary.org/w" enabled="0" icon="" name="Greek Wiktionary" id="5d45232075d06e002dea72fe3e137da1"/>
+  <mediawiki url="https://es.wikipedia.org/w" enabled="1" icon="" name="Spanish Wikipedia" id="a0af617e85d9f7ac0439297e2db12f7b"/>
+ </mediawikis>
+ <websites>
+  <website url="https://www.google.com/search?q=define:%GDWORD%&amp;hl=en" enabled="0" icon="" inside_iframe="1" name="Google En-En (Oxford)" id="b88cb2898e634c6638df618528284c2d"/>
+  <website url="https://www.urbandictionary.com/define.php?term=%GDWORD%" enabled="0" icon="" inside_iframe="1" name="Urban Dictionary" id="f376365a0de651fd7505e7e5e683aa45"/>
+  <website url="https://multitran.ru/c/m.exe?CL=1&amp;l1=1&amp;s=%GD1251%" enabled="0" icon="" inside_iframe="1" name="Multitran (En)" id="324ca0306187df7511b26d3847f4b07c"/>
+  <website url="http://lingvopro.abbyyonline.com/en/Search/en-ru/%GDWORD%" enabled="0" icon="" inside_iframe="1" name="Lingvo (En-Ru)" id="924db471b105299c82892067c0f10787"/>
+  <website url="http://michaelis.uol.com.br/moderno/ingles/index.php?lingua=portugues-ingles&amp;palavra=%GDISO1%" enabled="0" icon="" inside_iframe="1" name="Michaelis (Pt-En)" id="087a6d65615fb047f4c80eef0a9465db"/>
+ </websites>
+ <dictservers/>
+ <programs>
+  <program enabled="0" icon="" commandLine="zsh -c &quot;mpv https://translate.google.com.vn/translate_tts\?ie\=UTF-8\&amp;q\=%GDWORD%\&amp;tl\=en\&amp;client\=tw-ob&quot;" type="0" name="Online Pronounce" id="87dcdf913802e93309993416f5fefd41"/>
+  <program enabled="1" icon="" commandLine="trans -speak -no-translate -s en %GDWORD%" type="0" name="Trans audio en" id="3a6fd76160a31955134f82e6ab4ecf9a"/>
+  <program enabled="1" icon="" commandLine="trans fr:zh-CN -no-ansi -show-languages no -show-translation-phonetics no -show-prompt-message no -d %GDWORD%" type="1" name="Trans fr:zh-CN" id="b9b5d699c7a6c156d9b73e1562277b93"/>
+  <program enabled="1" icon="" commandLine="trans -speak -no-translate -s fr %GDWORD%" type="0" name="Trans audio fr" id="1f821892b86d2b1cfecc3940fd159168"/>
+  <program enabled="1" icon="" commandLine="trans -t fr -no-ansi -show-languages no -show-translation-phonetics no -show-prompt-message no -d %GDWORD%" type="1" name="Trans zh-CN:fr" id="f390c2f051a66fcfbb83e42a548a9d4b"/>
+  <program enabled="1" icon="" commandLine="trans -t en -no-ansi -show-languages no -show-translation-phonetics no -show-prompt-message no -d %GDWORD%" type="1" name="Trans zh-CN:en" id="c982f47d60e135750df52e720391f999"/>
+  <program enabled="1" icon="" commandLine="trans en:zh-CN -no-ansi -show-languages no -show-translation-phonetics no -show-prompt-message no -d %GDWORD%" type="1" name="Trans en:zh-CN" id="4ea7884ffca65b6fe97c74ffc5739264"/>
+  <program enabled="1" icon="" commandLine="trans -speak -no-translate -s es %GDWORD%" type="0" name="Trans audio es" id="bc51823fd5521dc4a0de67838024e268"/>
+  <program enabled="1" icon="" commandLine="trans -t es -no-ansi -show-languages no -show-translation-phonetics no -show-prompt-message no -d %GDWORD%" type="1" name="Trans zh-CN:es" id="275bcfd949e669a144c5e15008cd4d44"/>
+  <program enabled="1" icon="" commandLine="trans es:zh-CN -no-ansi -show-languages no -show-translation-phonetics no -show-prompt-message no -d %GDWORD%" type="1" name="Trans es:zh-CN" id="e32240087d5b25ba60b3ab995b010216"/>
+ </programs>
+ <voiceEngines/>
+ <mutedDictionaries/>
+ <popupMutedDictionaries/>
+ <preferences>
+  <interfaceLanguage>fr_FR</interfaceLanguage>
+  <helpLanguage></helpLanguage>
+  <displayStyle>modern</displayStyle>
+  <newTabsOpenAfterCurrentOne>0</newTabsOpenAfterCurrentOne>
+  <newTabsOpenInBackground>0</newTabsOpenInBackground>
+  <hideSingleTab>1</hideSingleTab>
+  <mruTabOrder>1</mruTabOrder>
+  <hideMenubar>0</hideMenubar>
+  <enableTrayIcon>1</enableTrayIcon>
+  <startToTray>1</startToTray>
+  <closeToTray>1</closeToTray>
+  <autoStart>1</autoStart>
+  <doubleClickTranslates>1</doubleClickTranslates>
+  <selectWordBySingleClick>1</selectWordBySingleClick>
+  <escKeyHidesMainWindow>1</escKeyHidesMainWindow>
+  <zoomFactor>2.2</zoomFactor>
+  <helpZoomFactor>1.4</helpZoomFactor>
+  <wordsZoomLevel>0</wordsZoomLevel>
+  <enableMainWindowHotkey>0</enableMainWindowHotkey>
+  <mainWindowHotkey>Shift+F1</mainWindowHotkey>
+  <enableClipboardHotkey>0</enableClipboardHotkey>
+  <clipboardHotkey>Ctrl+C, Ctrl+C</clipboardHotkey>
+  <enableScanPopup>0</enableScanPopup>
+  <startWithScanPopupOn>0</startWithScanPopupOn>
+  <enableScanPopupModifiers>0</enableScanPopupModifiers>
+  <scanPopupModifiers>1</scanPopupModifiers>
+  <scanPopupAltMode>0</scanPopupAltMode>
+  <scanPopupAltModeSecs>1</scanPopupAltModeSecs>
+  <ignoreOwnClipboardChanges>1</ignoreOwnClipboardChanges>
+  <scanToMainWindow>0</scanToMainWindow>
+  <ignoreDiacritics>1</ignoreDiacritics>
+  <showScanFlag>0</showScanFlag>
+  <scanPopupUseUIAutomation>1</scanPopupUseUIAutomation>
+  <scanPopupUseIAccessibleEx>1</scanPopupUseIAccessibleEx>
+  <scanPopupUseGDMessage>1</scanPopupUseGDMessage>
+  <scanPopupUnpinnedWindowFlags>1</scanPopupUnpinnedWindowFlags>
+  <scanPopupUnpinnedBypassWMHint>0</scanPopupUnpinnedBypassWMHint>
+  <pronounceOnLoadMain>1</pronounceOnLoadMain>
+  <pronounceOnLoadPopup>1</pronounceOnLoadPopup>
+  <useInternalPlayer>0</useInternalPlayer>
+  <internalPlayerBackend>FFmpeg+libao</internalPlayerBackend>
+  <audioPlaybackProgram>mpv</audioPlaybackProgram>
+  <alwaysOnTop>0</alwaysOnTop>
+  <searchInDock>0</searchInDock>
+  <historyStoreInterval>0</historyStoreInterval>
+  <favoritesStoreInterval>0</favoritesStoreInterval>
+  <confirmFavoritesDeletion>1</confirmFavoritesDeletion>
+  <proxyserver enabled="0" useSystemProxy="0">
+   <type>0</type>
+   <host></host>
+   <port>3128</port>
+   <user></user>
+   <password></password>
+   <systemProxyUser></systemProxyUser>
+   <systemProxyPassword></systemProxyPassword>
+  </proxyserver>
+  <checkForNewReleases>0</checkForNewReleases>
+  <disallowContentFromOtherSites>0</disallowContentFromOtherSites>
+  <enableWebPlugins>0</enableWebPlugins>
+  <hideGoldenDictHeader>0</hideGoldenDictHeader>
+  <maxNetworkCacheSize>50</maxNetworkCacheSize>
+  <clearNetworkCacheOnExit>1</clearNetworkCacheOnExit>
+  <maxStringsInHistory>500</maxStringsInHistory>
+  <storeHistory>1</storeHistory>
+  <alwaysExpandOptionalParts>0</alwaysExpandOptionalParts>
+  <addonStyle>Darktheme</addonStyle>
+  <collapseBigArticles>0</collapseBigArticles>
+  <articleSizeLimit>2000</articleSizeLimit>
+  <limitInputPhraseLength>0</limitInputPhraseLength>
+  <inputPhraseLengthLimit>1000</inputPhraseLengthLimit>
+  <maxDictionaryRefsInContextMenu>20</maxDictionaryRefsInContextMenu>
+  <trackClipboardChanges>0</trackClipboardChanges>
+  <synonymSearchEnabled>1</synonymSearchEnabled>
+  <fullTextSearch>
+   <searchMode>0</searchMode>
+   <matchCase>0</matchCase>
+   <maxArticlesPerDictionary>100</maxArticlesPerDictionary>
+   <maxDistanceBetweenWords>2</maxDistanceBetweenWords>
+   <useMaxArticlesPerDictionary>0</useMaxArticlesPerDictionary>
+   <useMaxDistanceBetweenWords>1</useMaxDistanceBetweenWords>
+   <dialogGeometry>AdnQywADAAAAAANqAAAEhgAABVUAAAbWAAADagAABIYAAAVVAAAG1gAAAAAAAAAAB4AAAANqAAAEhgAABVUAAAbW</dialogGeometry>
+   <disabledTypes></disabledTypes>
+   <enabled>1</enabled>
+   <ignoreWordsOrder>0</ignoreWordsOrder>
+   <ignoreDiacritics>0</ignoreDiacritics>
+   <maxDictionarySize>0</maxDictionarySize>
+  </fullTextSearch>
+ </preferences>
+ <lastMainGroupId>6</lastMainGroupId>
+ <lastPopupGroupId>6</lastPopupGroupId>
+ <popupWindowState>AAAA/wAAAAH9AAAAAAAAAzAAAAJTAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAQAAAAEAAAAaAGQAaQBjAHQAaQBvAG4AYQByAHkAQgBhAHICAAAAAP////8AAAAAAAAAAA==</popupWindowState>
+ <popupWindowGeometry>AdnQywADAAAAAAI7AAABpAAABWoAAAP2AAACOwAAAaQAAAVqAAAD9gAAAAAAAAAAB4AAAAI7AAABpAAABWoAAAP2</popupWindowGeometry>
+ <pinPopupWindow>0</pinPopupWindow>
+ <popupWindowAlwaysOnTop>0</popupWindowAlwaysOnTop>
+ <mainWindowState>AAAA/wAAAAH9AAAAAgAAAAAAAAEyAAAEGvwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAAAAAABBoAAACOAP///wAAAAEAAADXAAAD1vwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAAAAAEQAAAPWAAAAaAD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAAAAAEQAAAPWAAAAaAD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUAAAAB0gAAAkgAAABoAP///wAAA8AAAARQAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgAAAAI0/////wAAAAAAAAAA</mainWindowState>
+ <mainWindowGeometry>AdnQywADAAAAAAPAAAAAHgAAB38AAASvAAADwAAAAB4AAAd/AAAErwAAAAACAAAAB4AAAAPAAAAAHgAAB38AAASv</mainWindowGeometry>
+ <helpWindowGeometry>AdnQywADAAAAAAJFAAAESAAABnkAAAcUAAACRQAABEgAAAZ5AAAHFAAAAAAAAAAAB4AAAAJFAAAESAAABnkAAAcU</helpWindowGeometry>
+ <helpSplitterState>AAAA/wAAAAEAAAACAAABBAAABAAB/////wEAAAABAA==</helpSplitterState>
+ <dictInfoGeometry></dictInfoGeometry>
+ <inspectorGeometry>AdnQywADAAAAAAAAAAAAAAAAB38AAAQ3AAAEGwAAAMoAAAXcAAAB9QAAAAACAAAAB4AAAAAAAAAAJAAAB38AAAQ3</inspectorGeometry>
+ <dictionariesDialogGeometry>AdnQywADAAAAAAEjAAABXQAABlwAAANwAAABIwAAAV0AAAZcAAADcAAAAAAAAAAAB4AAAAEjAAABXQAABlwAAANw</dictionariesDialogGeometry>
+ <printPreviewDialogGeometry></printPreviewDialogGeometry>
+ <timeForNewReleaseCheck>2020-09-13T00:16:06</timeForNewReleaseCheck>
+ <skippedRelease></skippedRelease>
+ <showingDictBarNames>0</showingDictBarNames>
+ <usingSmallIconsInToolbars>0</usingSmallIconsInToolbars>
+ <resourceSavePath>/home/jing/Images</resourceSavePath>
+ <articleSavePath>/home/jing/Téléchargements</articleSavePath>
+ <editDictionaryCommandLine></editDictionaryCommandLine>
+ <maxPictureWidth>0</maxPictureWidth>
+ <maxHeadwordSize>256</maxHeadwordSize>
+ <maxHeadwordsToExpand>0</maxHeadwordsToExpand>
+ <headwordsDialog>
+  <searchMode>0</searchMode>
+  <matchCase>0</matchCase>
+  <autoApply>0</autoApply>
+  <headwordsExportPath></headwordsExportPath>
+  <headwordsDialogGeometry></headwordsDialogGeometry>
+ </headwordsDialog>
+</config>
