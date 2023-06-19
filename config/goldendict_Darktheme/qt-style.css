@@ -1,23 +1,20 @@
-MainWindow #searchPane #translateLine,
-MainWindow #menubar,
-MainWindow #navToolbar,
-MainWindow #searchPane #wordList,
-MainWindow #translateLine,
-ScanPopup #translateLine,
-MainWindow #wordList,
-MainWindow #dictsPane #dictsList,
-MainWindow #historyPane #historyPaneTitleBar #historyLabel,
-MainWindow #historyPane #historyPaneTitleBar #historyCountLabel,
-MainWindow #favoritesPane #favoritesPaneTitleBar #favoritesLabel,
-MainWindow #dictsPane #dictsPaneTitleBar QLabel,
-MainWindow #searchPane #translateLine,
-MainWindow #searchPane #wordList,
+MainWindow #menubar {
+  background: black;
+  color: white;
+  font-size: 16px;
+}
+
+QListView,
+MainWindow #navToolbar #translateLine,
 MainWindow #historyPane #historyList,
-MainWindow #favoritesPane #favoritesTree,
+MainWindow #favoritesPane #favoritesTree {
+  background: lightgray;
+  font-size: 16px;
+}
+
 MainWindow #navToolbar GroupComboBox,
-ScanPopup GroupComboBox,
-MainWindow #historyPane #historyList {
-  background: #201f1f;
-  color: #d4d2cf;
-  font-size: 15px;
+MainWindow #navToolbar GroupComboBox QComboBoxListView,
+MainWindow #navToolbar {
+  background: darkgray;
+  font-size: 16px;
 }
