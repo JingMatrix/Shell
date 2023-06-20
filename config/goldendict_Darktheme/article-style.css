@@ -9,5 +9,6 @@ html,
 }
 
 .gddictname {
-  margin: -16px;
+  font-size: 10px;
+  margin-top: -6px;
 }

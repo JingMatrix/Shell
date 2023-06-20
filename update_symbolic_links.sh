@@ -16,6 +16,14 @@ ln -sf $basedir/terminal/kitty.conf $HOME/.config/kitty/
 mkdir -p $HOME/.config/alacritty
 ln -sf $basedir/terminal/alacritty.yml $HOME/.config/alacritty
 
+mkdir -p $HOME/.local/bin
+ln -sf $basedir/terminal/gnome-terminal $HOME/.local/bin
+if [[ ! -f /etc/alternatives/x-terminal-emulator ]]; then
+	echo "Set kitty as defult terminal"
+	sudo mkdir -p /etc/alternatives
+	sudo ln -sf /usr/bin/kitty /etc/alternatives/x-terminal-emulator
+fi
+
 # The config dir
 mkdir -p $HOME/.config/clash
 ln -sf $basedir/config/clash.yaml $HOME/.config/clash
@@ -37,6 +45,7 @@ fi
 
 mkdir -p $HOME/.goldendict/styles
 ln -sf $basedir/config/goldendict.xml $HOME/.goldendict/config
+rm -rf $HOME/.goldendict/styles/Darktheme
 ln -sf $basedir/config/goldendict_Darktheme $HOME/.goldendict/styles/Darktheme
 
 if [[ ! -f $HOME/.config/mimeapps.list ]]; then

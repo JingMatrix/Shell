@@ -4,8 +4,8 @@ plugins=(git vi-mode pip gradle)
 plugins+=(z.lua)
 plugins+=(zsh-interactive-cd)
 plugins+=(zsh-syntax-highlighting zsh-completions)
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
-ZSH_THEME=${ZSH_THEME:-random}
+# fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+# ZSH_THEME=${ZSH_THEME:-random}
 source $ZSH/oh-my-zsh.sh
 function ocr {
 	if [[ $(wl-paste --list-types | head -1) =~ ^image ]]; then
@@ -64,7 +64,9 @@ alias gcl="git clone --recursive --shallow-submodules --depth 1"
 if [[ $TERM == xterm-kitty ]]; then
 	alias ls="ls --color --hyperlink=auto"
 	alias l="colorls -al --hyperlink"
-	alias rg="kitty +kitten hyperlinked_grep"
+	function rg {
+		kitty +kitten hyperlinked_grep $@
+	}
 else
 	alias ls="ls --color"
 	alias l="colorls -al"
@@ -102,16 +104,17 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor line)
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[cursor]=bold
 
+[[ -f /usr/share/fzf/key-bindings.zsh ]] && source /usr/share/fzf/key-bindings.zsh
+
 if [[ $USER == jing ]]; then
-	export ANDROID_HOME=$HOME/Archives/Android
 	export JDTLS_HOME=$HOME/Archives/Data/jdtls
 	export KALDI_ROOT=$HOME/Documents/Project/kaldi
-	export PATH="$PATH:/opt/gradle/gradle-8.1.1/bin"
 	alias icat="kitty +kitten icat"
 	pyenv=$HOME/.local/python/bin/pip3
 	if	[[ -e $pyenv ]]; then
 		alias pip=$pyenv
 		alias pyenv=$HOME/.local/python/bin/python3
+		export PATH="$PATH:$HOME/.local/python/bin/"
 	else
 		alias pip=pip3
 	fi

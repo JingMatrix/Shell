@@ -52,7 +52,7 @@ if system("whoami") =~ "jing"
 				\{'n': '$HOME/Notes'},
 				\{'c': '$HOME/Documents/Code/Shell'},
 				\{'z': '$HOME/Documents/Code/Shell/.zshrc'},
-				\{'k': '$HOME/Documents/Code/Shell/kitty.conf'},
+				\{'k': '$HOME/.config/kitty/kitty.conf'},
 				\{'s': '$HOME/.config/sway/config'},
 				\{'v': '$HOME/.config/nvim/init.vim'},
 				\{'a': '$HOME/.config/alacritty/alacritty.yml'},
