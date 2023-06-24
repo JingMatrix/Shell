@@ -11,7 +11,7 @@ if [[ $USER == "jing" ]]; then
 	adb push nvim/init.vim /sdcard/Download/init
 	adb push nvim/markdown.snippets /sdcard/Download/init
 	adb push terminal/termux-url-opener /sdcard/Download/init
-	adb push terminal/termux.init /sdcard/Download/init
+	adb push termux_init.sh /sdcard/Download/init
 	adb push config/clash.yaml /sdcard/Download/init
 	adb push .zshrc /sdcard/Download/init
 	adb push $HOME/.ssh/id_rsa.pub /sdcard/Download/init
@@ -28,7 +28,7 @@ if [[ $USER == "jing" ]]; then
 	sleep 2
 	adb shell input text 'bash'
 	adb shell input keyevent SPACE
-	adb shell input text 'storage/downloads/init/termux.init'
+	adb shell input text 'storage/downloads/init/termux_init.sh'
 	adb shell input keyevent ENTER
 	exit
 fi
