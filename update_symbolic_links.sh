@@ -31,6 +31,7 @@ ln -sf $basedir/config/clash.yaml $HOME/.config/clash
 mkdir -p $HOME/.config/fcitx5/conf
 ln -sf $basedir/config/fcitx5.conf $HOME/.config/fcitx5/config
 ln -sf $basedir/config/fcitx5_classicui.conf $HOME/.config/fcitx5/conf/classicui.conf
+ln -sf $basedir/config/fcitx5_pinyin.conf $HOME/.config/fcitx5/conf/pinyin.conf
 # Profile is always rewritten by fcitx5, it seems we must need a GUI to configure it.
 # This config is thus not reliable.
 cp $basedir/config/fcitx5.profile $HOME/.config/fcitx5/profile

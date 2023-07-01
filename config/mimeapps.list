@@ -5,6 +5,7 @@ x-scheme-handler/https=org.qutebrowser.qutebrowser.desktop
 inode/directory=nnn.desktop
 image/jpeg=kitty-open.desktop
 image/png=kitty-open.desktop
+application/json=nvim.desktop
 
 [Added Associations]
 x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
