@@ -135,9 +135,8 @@ for _, lsp in pairs(lsp_servers) do
 end
 
 lspconfig.kotlin_language_server.setup({
-	autostart = false,
 	on_attach = lsp_on_attach,
-	settings = { kotlin = { compiler = { jvm = { target = "11" } } } },
+	settings = { kotlin = { compiler = { jvm = { target = "20" } } } },
 })
 
 lspconfig.denols.setup({
