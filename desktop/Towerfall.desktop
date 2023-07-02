@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Towerfall - Ascension
+Exec=wine TowerFall.exe
+Type=Application
+StartupNotify=true
+Path='/home/jing/.wine/dosdevices/c:/GOG Games/Towerfall - Ascension/'
+Icon=353D_goggame-1430924174.0
+StartupWMClass=towerfall.exe
