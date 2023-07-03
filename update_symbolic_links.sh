@@ -24,6 +24,10 @@ if [[ ! -f /etc/alternatives/x-terminal-emulator ]]; then
 	sudo ln -sf /usr/bin/kitty /etc/alternatives/x-terminal-emulator
 fi
 
+# The desktop dir
+mkdir -p $HOME/.local/share/applications
+cp $basedir/desktop/* $HOME/.local/share/applications
+
 # The config dir
 mkdir -p $HOME/.config/clash
 ln -sf $basedir/config/clash.yaml $HOME/.config/clash

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=DREDGE
+Exec=wine DREDGE.exe
+Type=Application
+StartupNotify=true
+Path='/home/jing/.wine/drive_c/users/jing/DREDGE.v1.1.0-GoldBerg/'

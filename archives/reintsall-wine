@@ -7,7 +7,7 @@ cp -r $HOME/.wine/drive_c/users/$USER $usrfile
 rm -rf $HOME/.wine
 wine wineboot
 # cp $regs/*.reg $HOME/.wine
-# rm -rf $HOME/.wine/dosdevices/z:
+rm -rf $HOME/.wine/dosdevices/z:
 # For system-wise mono installation, one shouldn't remove z:
 ln -sf $HOME/Archives/Games/GOG $HOME/.wine/drive_c/'GOG Games'
 rm -rf $HOME/.wine/drive_c/users/$USER

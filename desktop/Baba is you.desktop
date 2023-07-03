@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Baba is you
+Exec=wine Baba\ Is\ You.exe
+Type=Application
+StartupNotify=true
+Path='/home/jing/.wine/drive_c/users/jing/Baba.Is.You.v477c'
