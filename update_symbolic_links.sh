@@ -55,11 +55,11 @@ ln -sf $basedir/config/goldendict_Darktheme $HOME/.goldendict/styles/Darktheme
 
 if [[ ! -f $HOME/.config/mimeapps.list ]]; then
 	echo "Install mimeapps.list"
-	cp $basedir/config/mimeapps.list $HOME/.config/mimeapps.list
+	cp $basedir/desktop/mimeapps.list $HOME/.config/mimeapps.list
 	ln -sf $HOME/.config/mimeapps.list $HOME/.local/share/applications/mimeapps.list
-elif ! cmp $basedir/config/mimeapps.list $HOME/.config/mimeapps.list; then
+elif ! cmp $basedir/desktop/mimeapps.list $HOME/.config/mimeapps.list; then
 	echo "Update mimeapps locally"
-	cp $HOME/.config/mimeapps.list $basedir/config/mimeapps.list
+	cp $HOME/.config/mimeapps.list $basedir/desktop/mimeapps.list
 fi
 
 if [[ -d $HOME/Documents/Project/qutebrowser ]]; then

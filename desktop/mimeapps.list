@@ -2,7 +2,6 @@
 application/pdf=org.pwmt.zathura-pdf-poppler.desktop
 x-scheme-handler/http=org.qutebrowser.qutebrowser.desktop
 x-scheme-handler/https=org.qutebrowser.qutebrowser.desktop
-x-scheme-handler/magnet=transmission-qt.desktop
 inode/directory=nnn.desktop
 image/jpeg=kitty-open.desktop
 image/png=kitty-open.desktop
