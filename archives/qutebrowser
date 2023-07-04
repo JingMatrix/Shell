@@ -1,4 +1,7 @@
-#!/bin/zsh
+#! /bin/zsh
+
+# Script helper to use the git version of qutebrowser
+
 export NODE_PATH=/home/jing/.local/share/pnpm/global/5/node_modules
 export PYTHONPATH=$HOME/Documents/Project/qutebrowser
 export MPV_COMMAND=/bin/mpv

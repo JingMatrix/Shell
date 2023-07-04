@@ -1,5 +1,7 @@
 #! /bin/zsh
-#
+
+# Update RSSHub for newsboat subscriptions
+
 export ALLOW_USER_SUPPLY_UNSAFE_DOMAIN="true"
 pushd $HOME/Documents/Project/RSSHub
 timeout 600 $HOME/.local/share/pnpm/pnpm start &

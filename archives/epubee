@@ -1,7 +1,12 @@
 #!zsh
+
 # dependency
-#  - ./scripts/epubee-download
-#
+#  - ../scripts/epub
+
+# Search and download books from epubee.
+# This is deprecated since the epubee websites are shut down.
+
+
 set -e
 curl -s -X POST 'http://www.ferebook.com/keys/get_ebook_list_search.asmx/getSearchList' \
 	-H 'Accept: application/json, text/javascript, */*; q=0.01' \

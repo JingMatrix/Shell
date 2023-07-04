@@ -1,5 +1,8 @@
 #! zsh
 
+# Set up Termux environment on Android phones
+# Run it from the desktop to transfer config files
+
 set -e
 if [[ $USER == "jing" ]]; then
 	adb shell rm -rf /sdcard/Download/init

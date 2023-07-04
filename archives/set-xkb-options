@@ -1,4 +1,7 @@
 #! /bin/sh
+
+# Set xkb-options manually
+
 set -x
 sleep 3
 /bin/gsettings set org.gnome.desktop.input-sources xkb-options "[]"

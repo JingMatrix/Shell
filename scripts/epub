@@ -91,7 +91,7 @@ function ePub3-itizer {
 	local prefix=$HOME/.local
 	local launcher="$prefix/share/sigil/plugin_launchers/python/launcher.py"
 	local sigildir="$prefix/share/sigil-ebook/sigil"
-	local plugindir="$basedir/../ePub3-itizer"
+	local plugindir="$basedir/../archives/ePub3-itizer"
 	# check script type
 	local scripttype=$(sed -n 's/<type>\(.*\)<\/type>/\1/p' $plugindir/plugin.xml)
 	if ! [[ $scripttype=="input" || $scripttype=="output" || $scripttype=="edit" ]]; then

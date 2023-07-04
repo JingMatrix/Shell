@@ -1,6 +1,6 @@
-#!/bin/zsh
-# use mathpix api for math ocr
-# set -e
+#! /bin/zsh
+
+# Use mathpix api to OCR math docs
 
 grim -g "$(slurp -d)" /tmp/latex.png
 if [[ -f /tmp/latex.png ]]; then

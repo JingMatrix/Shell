@@ -2,6 +2,7 @@
 
 # exec 2> $HOME/log
 # for nnn, to detach previewer by default
+
 nohup /bin/sioyek "$@" >/dev/null 2>&1 &
 
 # set -x

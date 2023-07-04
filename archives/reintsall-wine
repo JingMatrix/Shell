@@ -1,5 +1,7 @@
 #! /bin/zsh
 
+# Reset the default wine prefix
+
 usrfile=$(mktemp -d)
 cp -r $HOME/.wine/drive_c/users/$USER $usrfile
 # regs=$(mktemp -d)

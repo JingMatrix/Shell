@@ -1,3 +1,6 @@
 #! /bin/sh
+
+# Wrapper to run gcalcli in crontab enviroment
+
 export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"
 $HOME/.local/bin/gcalcli remind

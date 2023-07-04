@@ -1,4 +1,7 @@
-#!/usr/bin/env sh
+#! /bin/sh
+
+# An nnn plugin to preview markdown notes
+
 preview_file() {
 	bat --style=plain --paging=never --decorations=always --color=always "$1" 2>/dev/null
 }
