@@ -1,0 +1,21 @@
+#! python
+
+import g4f
+import subprocess
+
+# streamed completion
+response = g4f.ChatCompletion.create(
+    model=g4f.Model.gpt_35_turbo,
+    provider=g4f.Provider.DeepAi,
+    messages=[{
+        "role":
+        "user",
+        "content":
+        "Proofread the following paragraphs with LaTex codes to make it\
+        more reader friendly, and reply me only with your results." +
+        subprocess.getoutput("wl-paste")
+    }],
+    stream=True)
+
+for message in response:
+    print(message, end='')
