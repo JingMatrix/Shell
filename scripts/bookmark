@@ -1,0 +1,33 @@
+#! /bin/zsh
+
+# Util to export and import bookmarks of DJVU / PDF files
+
+if [[ -z $1 ]]; then
+	echo "To use this script, run it with 'bookmark export / import docfile tocfile'"
+	exit
+fi
+
+extension=${2:e}
+cmd="echo"
+script_dir=${0:A:h}/../bookmark
+
+case $1 in
+"import")
+	if [[ $extension == "pdf" ]]; then
+		cmd=$script_dir/pdf_bookmark.py
+		$cmd -p $2 >$3
+	elif [[ $extension == "djvu" ]]; then
+		cmd=$script_dir/bookmark-djvu-extract
+		$cmd $2 -o $3
+	fi
+	;;
+"export")
+	if [[ $extension == "pdf" ]]; then
+		cmd=$script_dir/bookmark-pdf
+	elif [[ $extension == "djvu" ]]; then
+		cmd=$script_dir/bookmark-djvu
+	fi
+	shift
+	$cmd $@
+	;;
+esac
