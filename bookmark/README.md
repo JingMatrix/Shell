@@ -1,10 +1,10 @@
 # Add bookmarks/outlines to PDF and DJVU
 
-## Write a file named `toc***` containing outline
+## Write a file named `toc/***` containing outline
 
 First principle: *Don't do it until necessary*.
 
-Therefore basic strategy should be, by order doing the following:
+Therefore, the basic strategy should be considering the following things in order:
 
 1. Try to find an ebook version with outline embedded firstly.
 2. Find a well formarted outline. Either 
@@ -13,7 +13,7 @@ Therefore basic strategy should be, by order doing the following:
 	- you find them on online book websites which usually contains outlines in the item introduction part.
 3. Use `pdfgrep` for example: 
 ```sh
-pdfgrep --page-range=7-449 -n -P '\n\K(§|Chapter)' ~/Mathematics/Geometry\ and\ Topology/Complex\ Geometry/Complex\ Analytic\ and\ Differential\ Geometry.pdf > tocDemaillyCADG
+pdfgrep --page-range=7-449 -n -P '\n\K(§|Chapter)' ~/Mathematics/Geometry\ and\ Topology/Complex\ Geometry/Complex\ Analytic\ and\ Differential\ Geometry.pdf > toc/DemaillyCADG
 ```
 4. Perform OCR manually, painful and not effcient.
 

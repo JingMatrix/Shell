@@ -2,7 +2,8 @@
 
 extension=${1:e}
 cmd="echo"
-script_dir=${0:A:h}/../toc
+script_dir=${0:A:h}/../bookmark
+
 if [[ $extension == "pdf" ]]; then
 	cmd=$script_dir/pdf_bookmark.py
 	$cmd -p $1 > $2
