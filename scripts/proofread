@@ -11,8 +11,8 @@ response = g4f.ChatCompletion.create(
         "role":
         "user",
         "content":
-        "Proofread the following paragraphs with LaTex codes to make it\
-        more reader friendly, and reply me only with your results." +
+        "Proofread the following paragraphs containing LaTex codes to make it\
+        more reader friendly, and show me only your results." +
         subprocess.getoutput("wl-paste")
     }],
     stream=True)
