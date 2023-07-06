@@ -1,0 +1,23 @@
+#! /bin/zsh
+
+tmp=$(mktemp -d)
+
+echo "Get terms from Measure Theory"
+pdftotext -nopgbrk -raw -f 1087 ~/Mathematics/Textbook_Archive/Measure\ Theory_Bogachev.pdf $tmp/measure_theory.index
+
+echo "Get terms from Riemannian Geometry"
+pdftotext -nopgbrk -raw -f 508 ~/Mathematics/Textbook_Archive/Riemannian\ geometry_Petersen.pdf $tmp/riemannian_geometry.index
+
+echo "Get terms from Optimal Transport"
+pdftotext -nopgbrk -raw -f 989 -l 992 ~/Mathematics/Textbook_Archive/Optimal\ transport,\ old\ and\ new.pdf $tmp/optimal_transport.index
+
+echo "Get terms from Topology"
+djvutxt --page=260-264 ~/Mathematics/Geometry\ and\ Topology/Algebraic\ Topology/Topology\ II.djvu >$tmp/topology.index
+
+echo "Put all terms together"
+sed -i -E -f ${0:A:h}/PDF-index.sed $tmp/*.index
+mkdir -p $HOME/.config/nvim/spell
+spellfile="$HOME/.config/nvim/spell/math.utf-8.add"
+sort -f -u $tmp/*.index > $spellfile
+sed -i -E '/^.{0,4}$/d' $spellfile
+rm $tmp -rf
