@@ -48,6 +48,7 @@ rm -rf $HOME/init/nvim.zip
 
 apt update && yes | apt upgrade && apt update
 apt install -y git tsu nodejs lua53 python apt-file curl wget jq neovim zsh openssh at
+chsh -s zsh
 apt-file update
 cat $HOME/init/id_rsa.pub >$HOME/.ssh/authorized_keys
 sshd
