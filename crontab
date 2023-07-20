@@ -16,7 +16,7 @@
 # */10 * * * * $HOME/Documents/Code/Shell/archives/reminder >/dev/null 2>&1
 
 # rss-tg bot
-20 */4 * * * timeout 600 $HOME/.local/python/bin/python3 -m rsstt 2>/dev/null
+20 */4 * * * rm $HOME/.rsstt/bot.session && timeout 600 $HOME/.local/python/bin/python3 -m rsstt 2>/dev/null
 
 # newsboat
 # 0 */4 * * * $HOME/Documents/Code/Shell/scripts/rssUpdate >/dev/null 2>&1
