@@ -1,0 +1,116 @@
+CONTENTS,357
+PREFACE,9
+d=12
+CHAPTER I. The integral in an abstract space,1
+	1. Introduction,1
+	2. Terminology and notation,4
+	3. Abstract space X,6
+	4. Additive classes of sets,7
+	5. Additive functions of a set,8
+	6. The variations of an additive function,10
+	7. Measurable functions,12
+	8. Elementary operations on measurable functions,14
+	9. Measure,16
+	10. Integral,19
+	11. Fundamental properties of the integral,21
+	12. Integration of sequences of functions,26
+	13. Absolutely continuous additive functions of a set,30
+	14. The Lebesgue decomposition of an additive function,32
+	15. Change of measure,36
+CHAPTER II. Carathéodory measure,39
+	1. Preliminary remarks,39
+	2. Metrical space,39
+	3. Continuous and semi-continuous functions,42
+	4. Carathéodory measure,43
+	5. The operation (A),47
+	6. Regular sets,50
+	7. Borel sets,51
+	8. Length of a set,53
+	1 9. Complete space,54
+CHAPTER III. Functions of bounded variation and the Lebesgue-Stieltjes integral,56
+	1. Euclidean spaces,56
+	2. Intervals and figures,57
+	3. Functions of an interval,59
+	4. Functions of an interval that are additive arid of bounded variation,61
+	5. Lebesgue-Stieltjes integral. Lebesgue integral and measure,64
+	6. Measure defined by a non -negative additive function of an interval,67
+	7. Theorems of Lusin and Vitali-Caratheodory,72
+	8. Theorem of Fubini,76
+	9. Fubini's theorem in abstract spaces,82
+	10. Geometrical definition of the Lebesgue-Stieltjes integral,88
+	11. Translations of sets,90
+	12. Absolutely continuous functions of an interval,93
+	13. Functions of a real variable,96
+	14. Integration by parts,102
+CHAPTER IV. Derivation of additive functions of a set and of an interval,105
+	1. Introduction,105
+	2. Derivates of functions of a set and of an interval,106
+	3. Vitali's Covering Theorem,109
+	4. Theorems on rneasurability of derivates,112
+	5. Lebesgue's Theorem,114
+	6. Derivation of the indefinite integral,117
+	7. The Lebesgue decomposition,118
+	8. Rectifiable curves,121
+	9. De la Valise Poussin's theorem,126
+	10. Points of density for a set,128
+	11. Ward's theorems on derivation of additive functions of an interval,133
+	12. A theorem of Hardy-Littlewood,142
+	13. Strong derivation of the indefinite integral,147
+	14. Symmetrical derivates,149
+	15. Derivation in abstract spaces,152
+	16. Torus space,157
+CHAPTER V. Area of a surface z = F(x,y),163
+	1. Preliminary remarks,163
+	2. Area of a surface,164
+	3. The BurkOl integral,165
+	4. Bounded variation and absolute continuity for functions of two variables,169
+	5. The expressions of de Geocze,171
+	6. Integrals of the expressions of de Geocze,174
+	7. Rad6's Theorem,177
+	8. Tonelli's Theorem,181
+CHAPTER VI. Major and minor functions,186
+	1. Introduction,186
+	2. Derivation with respect to normal sequences of nets,188
+	3. Major and minor functions,190
+	4. Derivation with respect to binary sequences of nets,191
+	6. Applications to functions of a complex variable,195
+	6. The Perron integral,201
+	7. Derivates of functions of a real variable,203
+	8. The Perron-Stieltjes integral,207
+CHAPTER VII. Functions of generalized bounded variation,213
+	1. Introduction,213
+	2. A theorem of Lusin,215
+	3. Approximate limits and derivatives,218
+	4. Functions VB and VBG,221
+	5. Functions AC and ACG,223
+	6. Lusin's condition (N),224
+	7. Functions VB* and VBG*,228
+	8. Functions AC* and ACG*,231
+	9. Definitions of Denjoy-Lusin,233
+	10. Criteria for the classes of functions VBG*, ACG*, VBG and ACG,234
+CHAPTER VIII. Denjoy integrals,241
+	1. Descriptive definition of the Denjoy integrals,241
+	2. Integration by parts,244
+	3. Theorem of Hake-Alexandroff-Looman,247
+	4. General notion of integral,254
+	5. Constructive definition of the Denjoy integrals,256
+CHAPTER IX. Derivates of functions of one or two reai variables,260
+	1. Some elementary theorems,260
+	2. Contingent of a set,262
+	3. Fundamental theorems on the contingents of plane seta,264
+	4. Denjoy'a theorems,269
+	5. Relative derivates,272
+	6. The Banach conditions (T_1) and (T_2),277
+	7. Three theorems of Banach,282
+	8. Superpositions of absolutely continuous functions,286
+	9. The condition (D),290
+	10. A theorem of Denjoy-Khintchine on approximate derivates,295
+	II. Approximate partial derivates of functions of two variables,297
+	12. Total and approximate differentials,300
+	13. Fundamental theorems on the contingent of a set in space,304
+	14. Extreme differentials,309
+NOTE I by S. BANACH. On Haar's measure,314
+NOTE II by S. BANACH. The Lebesgue integral in abstract spaces,320
+BIBLIOGRAPHY,331
+GENERAL INDEX,341
+NOTATIONS,344

@@ -1,0 +1,57 @@
+Contents,13
+d=13
+Chapter 1 Introduction and Preview,2
+	1.1 Examples in NonsmoothAnalysis and Optimization,2
+	1.2 Generalized Gradients,9
+	1.3 Three Paradigms for DynamicOptimization,13
+	1.4 The Theory of Optimal Control and the Calculus ofVariations,18
+Chapter 2 GTeneralized Gradients,25
+	2.1 Definition and Basic Properties,25
+	2.2 Relation to Derivatives and Subderivatives,30
+	2.3 Basic Calculus,38
+	2.4 Associated Geometric Concepts,50
+	2.5 The Case in WhichX is Finite-Dimensional,62
+	2.6 Generalized Jacobians,69
+	2.7 Generalized Gradients of Integral Functionals,75
+	2.8 Pointwise Maxima,85
+	2.9 Extended Calculus,95
+Chapter 3 Differential Inclusions,111
+	3.1 Multifunctions and Trajectories,111
+	3.2 A Control Problem,120
+	3.3 A Problem in Resource Economics,131
+	3.4 Endpoint Constraints and Perturbation,142
+	3.5 Normality and Controllability,147
+	3.6 Problems with Free Time,151
+	3.7 Sufficient Conditions: the Hamilton-Jacobi Equation,155
+Chapter 4 The Calculus ofVariations,165
+	4.1 The Generalized Problem of Bolza,165
+	4.2 Necessary Conditions,168
+	4.3 Sufficient Conditions,177
+	4.4 Finite Lagrangians,180
+	4.5 The MultiplierRule for Inequality Constraints,187
+	4.6 Multiple Integrals,197
+Chapter 5 Optimal Control,200
+	5.1 Controllability,200
+	5.2 The MaximumPrinciple,210
+	5.3 Example: Linear Regulator with Diode,213
+	5.4 Sufficient Conditions and Existence,219
+	5.5 The Relaxed Control Problem,222
+Chapter 6 Mathematical Programming,227
+	6.1 The Lagrange Multipler Rule,227
+	6.2 AnAlternate MutiplierRule,231
+	6.3 Constraint Qualifications and Sensitivity,234
+	6.4 Calmness,238
+	6.5 The Value Function,241
+	6.6 Solvability and Surjectivity,248
+Chapter 7 Topics in Analysis,252
+	7.1 Inverse and Implicit Functions,252
+	7.2 Aumann's Theorem,256
+	7.3 Sets Whichare Lipschitz Epigraphs,260
+	7.4 Dependence on Initial Values,262
+	7.5 Ekeland's Theorem,265
+	7.6 Directional Contractions and Fixed Points,268
+	7.7 Hamiltonian Trajectories and Boundary-Value Problem,270
+	7.8 Closed Trajectories of Prescribed Period,270
+Comments,284
+References,291
+Index,305
