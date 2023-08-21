@@ -5,7 +5,7 @@ import subprocess
 
 # streamed completion
 response = g4f.ChatCompletion.create(
-    model=g4f.Model.gpt_35_turbo,
+    model=g4f.models.gpt_35_turbo,
     provider=g4f.Provider.DeepAi,
     messages=[{
         "role":
