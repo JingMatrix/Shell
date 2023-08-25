@@ -1,5 +1,9 @@
 #! /bin/zsh
 
+if [[ -d $HOME/.local/python/bin ]]; then
+	export PATH="$PATH:$HOME/.local/python/bin/"
+	export PYTHONPATH="$PYTHONPATH:$HOME/.local/python/lib/python3.11/site-packages/"
+fi
 # exec 2> $HOME/log
 export GDK_BACKEND=wayland
 # for nnn, to detach previewer by default
