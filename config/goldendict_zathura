@@ -1,0 +1,4 @@
+#! /bin/zsh
+
+text=$(wl-paste -p | tr -d '\n')
+goldendict "$text"

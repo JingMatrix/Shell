@@ -17,8 +17,8 @@ set recolor-lightcolor rgba(0,0,0,0)
 
 # map
 
-map c exec 'zsh -c "goldendict $(wl-paste -p)"'
-map [fullscreen] c exec 'zsh -c "goldendict $(wl-paste -p)"'
+map c exec "/home/jing/Documents/Code/Shell/config/goldendict_zathura"
+map [fullscreen] c exec "/home/jing/Documents/Code/Shell/config/goldendict_zathura"
 map p exec 'zsh -c "qutebrowser \"$(wl-paste -p)\""'
 map [fullscreen] p exec 'zsh -c "qutebrowser \"$(wl-paste -p)\""'
 map m exec "/home/jing/Documents/Code/Shell/scripts/latex_ocr"
