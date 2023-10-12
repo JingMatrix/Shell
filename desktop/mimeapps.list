@@ -6,7 +6,15 @@ inode/directory=nnn.desktop
 image/jpeg=kitty-open.desktop
 image/png=kitty-open.desktop
 application/json=nvim.desktop
+application/epub+zip=sigil.desktop;
+image/vnd.djvu=rg.pwmt.zathura-djvu.desktop;
 
 [Added Associations]
 x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
 x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;
+
+[Removed Associations]
+image/vnd.djvu=calibre-ebook-viewer.desktop;
+application/epub+zip=calibre-ebook-viewer.desktop;
+application/epub+zip=calibre-ebook-edit.desktop;
+text/html=calibre-ebook-edit.desktop;
