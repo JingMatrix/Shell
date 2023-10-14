@@ -14,7 +14,11 @@ function ocr {
 		echo "No images in clipboard, try images on disk"
 	fi
 	if [[ -f /tmp/clip.png ]]; then
-		tesseract /tmp/clip.png - -l $1 quiet | head -n -1 | wl-copy
+		if [[ $1 == "num" ]]; then
+			tesseract /tmp/clip.png - -l eng --psm 6 quiet | head -n -1 | wl-copy
+		else
+			tesseract /tmp/clip.png - -l $1 quiet | head -n -1 | wl-copy
+		fi
 		wl-paste
 	else
 		echo "No images on disk, please take a new screenshot"
@@ -28,7 +32,8 @@ function _ocr {
 	ocr_langs=('chi_sim:Simplified Chinese'
 		'chi_tra:Traditional Chinese'
 		'eng:English'
-		'fra:French')
+		'fra:French'
+		'num:Number')
 	_describe ocr ocr_langs
 }
 
@@ -111,7 +116,7 @@ if [[ $USER == jing ]]; then
 	export KALDI_ROOT=$HOME/Documents/Project/kaldi
 	alias icat="kitty +kitten icat"
 	pyenv=$HOME/.local/python/bin/pip3
-	if	[[ -e $pyenv ]]; then
+	if [[ -e $pyenv ]]; then
 		alias pip=$pyenv
 		alias pyenv=$HOME/.local/python/bin/python3
 		export PATH="$PATH:$HOME/.local/python/bin/"
