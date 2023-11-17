@@ -1,0 +1,20 @@
+Preface,7
+I. Classical-Type Limit Theorems for Sums of Independent Random Variables,9
+d=8
+	Introduction,2
+	Chapter 1. The Central Limit Theorem and Its Generalizations,2
+		§1.1. Theorems of Lyapunov, Lindeberg and Feller,2
+		§1.2. The Esseen and Berry-Esseen Inequalities,4
+		§1.3. Generalizations of Esseen's Inequality,5
+		§1.4. Asymptotic Expansions in the Central Limit Theorem,7
+		§1.5. Nonuniform Estimates,8
+		§1.6. Convergence Rates: Necessary and Sufficient Conditions,9
+	Chapter 2. Laws of Large Numbers,10
+		§2.1. The Weak Law of Large Numbers,10
+		§2.2. The Strong Law of Large Numbers,11
+		§2.3. Approximation of Sums of Independent Random Variables by Sums of Normally Distributed Independent Random Variables,15
+	Chapter 3. The Law of the Iterated Logarithm,16
+		§3.1. The Kolmogorov Theorem. The Hartman-Wintner Theorem,17
+		§3.2. Connection between the Law of the Iterated Logarithm and the Central Limit Theorem,18
+		§3.3. The Generalized Law of the Iterated Logarithm,19
+	References,21

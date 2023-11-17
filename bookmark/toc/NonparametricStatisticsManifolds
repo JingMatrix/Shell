@@ -1,0 +1,268 @@
+Contents,5
+Foreword,13
+Preface,15
+d=24
+I Nonparametric Statistics on Manifolds,1
+	1 Data on Manifolds,3
+		1.1 Directional and Axial Data,3
+		1.2 Similarity Shape Data and Size and Shape Data,4
+		1.3 Digital Camera Images,11
+		1.4 Stereo Imaging Data of the Eye Fundus,15
+		1.5 CT Scan Data,16
+		1.6 DTI Data,19
+		1.7 Data Tables,21
+
+	2 Basic Nonparametric Multivariate Inference,45
+		2.1 Basic Probability Theory,46
+		2.2 Integration on Euclidean Spaces,48
+		2.3 Random Vectors,51
+		2.4 Sampling Distributions of Estimators,54
+		2.5 Consistency and Asymptotic Distributions,56
+			2.5.1 Consistency of Sample Moments,57
+		2.6 The Multivariate Normal Distribution,59
+		2.7 Convergence in Distribution,60
+			2.7.1 Convergence in Distribution (Weak Convergence),60
+		2.8 Limit Theorems,63
+			2.8.1 The Central Limit Theorem,63
+			2.8.2 Basic Large Sample Theory,64
+		2.9 Elementary Inference,67
+			2.9.1 Simultaneous Confidence Intervals for µ,68
+		2.10 Comparison of Two Mean Vectors,68
+		2.11 Principal Components Analysis (P.C.A.),69
+		2.12 Multidimensional Scaling,70
+			2.13 Nonparametric Bootstrap and Edgeworth Expansion,71
+			2.13.1 Edgeworth Expansions for Statistics,71
+			2.13.2 Bootstrap and the Empirical Edgeworth Expansion,74
+			2.14 Nonparametric Function Estimation,76
+			2.15 Data Analysis on Hilbert Spaces,82
+			2.15.1 Random Elements in Hilbert Spaces,83
+			2.15.2 Why Studentization Breaks Down in a Hilbert Space,84
+			2.15.3 The One-Sample Problem in a Hilbert Space,86
+			2.15.4 The Multi-Sample Problem in a Hilbert Space,90
+			2.16 Exercises,92
+
+	3 Geometry and Topology of Manifolds,95
+		3.1 Manifolds, Submanifolds, Embeddings, Lie Groups,96
+			3.1.1 Manifolds and Their Tangent Bundles,98
+			3.1.2 Embeddings of Manifolds in Euclidean Spaces,101
+			3.1.3 Lie Groups and Their Lie Algebras,103
+			3.1.4 Hilbert Manifolds,108
+		3.2 Riemannian Structures, Curvature, Geodesics,108
+		3.3 The Laplace–Beltrami Operator,122
+			3.3.1 Harmonic Analysis on Homogeneous Spaces,125
+			3.3.2 Harmonics on Semi-Simple Lie Groups,127
+		3.4 Topology of Manifolds,128
+			3.4.1 Background on Algebraic Topology,128
+			3.4.2 Homology,129
+			3.4.3 Differential Topology,135
+		3.5 Manifolds in Statistics,138
+			3.5.1 Spaces of Directions, Axial Spaces and Spaces of Frames,139
+			3.5.2 G-Shape Spaces,140
+			3.5.3 Kendall Shape Spaces,140
+			3.5.4 Planar Size-and-Shape Manifolds,142
+			3.5.5 Size-and-Shape Manifolds in Higher Dimensions,142
+			3.5.6 Size-and-Reflection Shape Manifolds in Higher Dimensions,143
+			3.5.7 Linear Shape Spaces and Affine Shape Spaces as Grassmannians,143
+			3.5.8 Projective Shape Spaces,146
+		3.6 Exercises,149
+
+	4 Consistency of Fréchet Moments on Manifolds,157
+		4.1 Introduction,157
+		4.2 Fréchet Means and Cartan Means,158
+			4.2.1 Consistency of Fréchet Sample Means,163
+		4.3 Exercises,172
+	5 Nonparametric Distributions for Fréchet Sample Means,177
+		5.1 Introduction,177
+		5.2 Fréchet Total Sample Variance-nonparametrics,179
+		5.3 Elementary CLT for Extrinsic Means,184
+		5.4 CLT and Bootstrap for Fréchet Means,185
+		5.5 The CLT for Extrinsic Sample Means and Confidence Regions
+			for the Extrinsic Mean,192
+		5.6 Exercises,199
+
+	6 Inference for Two Samples on Manifolds,201
+		6.1 Introduction,201
+		6.2 Two-Sample Test for Total Extrinsic Variances,202
+		6.3 Bhattacharya’s Two-Sample Test for Means,203
+		6.4 Test for Mean Change in Matched Pairs on Lie Groups,205
+		6.5 Two-Sample Test for Simply Transitive Group Actions,207
+		6.6 Nonparametric Bootstrap for Two-Sample Tests,210
+		6.7 Exercises,212
+
+	7 Function Estimation on Manifolds,215
+		7.1 Introduction,215
+		7.2 Statistical Inverse Estimation,216
+			7.2.1 Applications and Examples,220
+		7.3 Proofs of Main Results,222
+			7.3.1 Upper Bounds,222
+			7.3.2 Lower Bounds,224
+			7.3.2.1 Polynomial Ill-Posedness,224
+			7.3.2.2 Exponential Ill-Posedness,226
+		7.4 Kernel Density Estimation,226
+
+
+II Asymptotic Theory and Nonparametric Bootstrap on Special Manifolds,233
+	8 Statistics on Homogeneous Hadamard Manifolds,235
+		8.1 Introduction,235
+		8.2 Considerations for Two-Sample Tests,236
+		8.3 Intrinsic Means on Hadamard Manifolds,239
+		8.4 Two-Sample Tests for Intrinsic Means,243
+
+	9 Analysis on Stiefel Manifolds,247
+		9.1 Stiefel Manifolds,247
+		9.2 Special Orthogonal Groups,249
+		9.3 Intrinsic Analysis on Spheres,249
+	10 Asymptotic Distributions on Projective Spaces,253
+		10.1 Total Variance of Projective Shape Asymptotics,253
+		10.2 Asymptotic Distributions of VW-Means,257
+		10.3 Asymptotic Distributions of VW-Means of k-ads,259
+		10.4 Estimation and Testing for the Projective Shape,263
+		10.5 Two-Sample Tests for Mean Projective Shapes,268
+			10.5.1 Lie Group Structure of 3D Projective Shapes,269
+			10.5.2 Nonparametric Bootstrap Tests for VW Mean 3D Projective Shape Change,270
+
+	11 Nonparametric Statistics on Hilbert Manifolds,273
+		11.1 Introduction,273
+		11.2 Hilbert Manifolds,274
+		11.3 Extrinsic Analysis of Means on Hilbert Manifolds,275
+		11.4 A One-Sample Test of the Neighborhood Hypothesis,278
+
+	12 Analysis on Spaces of Congruences of k-ads,281
+		12.1 Introduction,281
+		12.2 Equivariant Embeddings of SΣ_2^k and RSΣ_{m,0}^k,282
+		12.3 Extrinsic Means and Their Estimators,284
+			12.3.1 Mean Planar Shape and Mean Planar Size-and-Shape,284
+			12.3.2 Extrinsic Mean Size-and-Reflection-Shapes,286
+		12.4 Asymptotic Distribution of Extrinsic Sample Mean,287
+		12.5 Mean Size-and-Shape of Protein Binding Sites,291
+
+	13 Similarity Shape Analysis,295
+		13.1 Introduction,295
+		13.2 Equivariant Embeddings of Σ2k and RΣm,0 k,297
+		13.3 Extrinsic Mean Planar Shapes and Their Estimators,299
+			13.3.1 Mean Planar Direct Similarity Shape,299
+			13.3.2 Extrinsic Mean Reflection Shapes,300
+		13.4 Asymptotic Distribution of Mean Shapes,302
+			13.4.1 Asymptotic Distributions of Veronese–Whitney Sample Mean Direct Similarity Planar Shapes,302
+			13.4.2 Asymptotic Distributions of Schoenberg Sample Mean Reflection Shapes,307
+		13.5 A Data Driven Example,312
+
+	14 Statistics on Grassmannians,315
+		14.1 Equivariant Embeddings of Grassmann Manifolds,315
+		14.2 Dimitric Mean on a Grassmannian,316
+		14.3 Extrinsic Sample Covariance on a Grassmannian,318
+III Applications in Object Data Analysis on Manifolds,325
+	15 DTI Data Analysis,327
+		15.1 Introduction,327
+		15.2 Tests for Equality of Generalized Frobenius Means,328
+		15.3 Application to Diffusion Tensor Imaging Data,330
+
+	16 Application of Directional Data Analysis,339
+		16.1 Introduction,339
+		16.2 The Pluto Controversy,339
+		16.3 The Solar Nebula Theory,341
+		16.4 Distributions for the Mean Direction,341
+		16.5 Implementation of the Nonparametric Approach,343
+
+	17 Direct Similarity Shape Analysis in Medical Imaging,347
+		17.1 Introduction,347
+		17.2 University School X-ray Data Analysis,347
+		17.3 LEGS Data Analysis,349
+
+	18 Similarity Shape Analysis of Planar Contours,357
+		18.1 Introduction,358
+		18.2 Similarity Shape Space of Planar Contours,359
+		18.3 The Extrinsic Mean Direct Similarity Shape,361
+		18.4 Asymptotic Distribution of the Sample Mean,363
+		18.5 The Neighborhood Hypothesis Test for Mean Shape,366
+		18.6 Application of the One-Sample Test,367
+		18.7 Bootstrap Confidence Regions for the Sample Mean,369
+		18.8 Approximation of Planar Contours,371
+			18.8.1 Random Selection of Sampling Times,372
+			18.8.2 Considerations for Samples of Contours,377
+			18.8.3 Approximation of the Sample Mean Shape,378
+		18.9 Application to Einstein’s Corpus Callosum,379
+
+	19 Estimating Mean Skull Size and Shape from CT Scans,383
+		19.1 Introduction,383
+		19.2 CT Scans,384
+		19.3 Bone Surface Segmentation,384
+		19.4 Skull Reconstruction,386
+		19.5 Landmark-Based Size-and-Shape Analysis,386
+
+	20 Affine Shape and Linear Shape Applications,391
+		20.1 Introduction,391
+		20.2 The Affine Shape Space in Computer Vision,393
+		20.3 Extrinsic Means of Affine Shapes,394
+		20.4 Analysis of Gel Electrophoresis (2DGE),396
+			20.4.1 2D Gel Electrophoresis (2DGE),397
+			20.4.2 The Laboratory Process,398
+			20.4.3 Matching Landmarks on 2D-Gel Electrophoresis Image Data Using the Dimitric Distance on the Grassmannian,400
+			20.4.4 Results,402
+
+	21 Projective Shape Analysis of Planar Contours,403
+		21.1 Introduction,403
+		21.2 Hilbert Space Representations of Projective Shapes,403
+		21.3 The One-Sample Problem for Mean Projective Shapes,406
+			21.3.1 Image Processing and Shape Registration Using the Projective Frame,406
+			21.3.2 Hypothesis Testing,407
+
+	22 3D Projective Shape Analysis of Camera Images,411
+		22.1 Introduction,411
+		22.2 Test for Coplanarity,413
+		22.3 Projective Geometry for Pinhole Camera Imaging,415
+			22.3.1 Essential and Fundamental Matrices,417
+			22.3.2 Reconstruction of a 3D Scene from Two of its 2D Images,418
+			22.3.3 Estimation of the Fundamental Matrix,419
+		22.4 3D Reconstruction and Projective Shape,419
+		22.5 Applications,421
+			22.5.1 Estimation of the Mean 3D Projective Shape of a Polyhedral Surface from its Images,421
+			22.5.2 Face Identification Example,427
+
+	23 Two-Sample Tests for Mean Projective Shapes,433
+		23.1 Projective Shape Analysis Examples in 1D and 2D,433
+		23.2 Test for VW Means of 3D Projective Shapes,437
+			23.2.1 Two-Sample Tests for VW Mean 3D Projective Shapes from Stereo Images - Matched Pairs,437
+			23.2.2 Example 2 - Two-Sample Test for Means of Independent Pairs,439
+
+	24 Mean Glaucomatous Shape Change Detection,441
+		24.1 Introduction,441
+		24.2 Glaucoma and LEGS Stereo Eye Fundus Data,443
+		24.3 Shape-based Glaucoma Index,444
+		24.4 Reconstruction of 3D Eye Fundus Configurations,447
+	25 Application of Density Estimation on Manifolds,449
+		25.1 Introduction,449
+		25.2 Pelletier Density Estimators on Homogeneous Spaces,450
+		25.3 Density Estimation on Symmetric Spaces,451
+		25.4 An Example of Projective Shape Density Estimation,452
+
+
+IV Additional Topics,455
+	26 Persistent Homology,457
+		26.1 Introduction,457
+			26.1.1 Persistent Topology,459
+			26.1.2 Bottleneck Distance,460
+			26.1.3 Connection to Statistics,461
+		26.2 Nonparametric Regression on Manifolds,461
+			26.2.1 Asymptotic Equidistance on Manifolds,462
+			26.2.2 An Estimator,463
+		26.3 Main Results,464
+		26.4 Discussion,465
+		26.5 Proofs,466
+			26.5.1 Upper Bound,466
+			26.5.2 The Lower Bound,470
+
+	27 Further Directions in Statistics on Manifolds,473
+		27.1 Introduction,473
+		27.2 Additional Topics,474
+			27.2.1 Principal Component Analysis,474
+			27.2.2 Spatial Statistics,475
+			27.2.3 Shape Analysis of Surfaces,475
+			27.2.4 Statistics on Stratified Spaces,475
+		27.3 Computational Issues,476
+			27.3.1 Directional Data,478
+			27.3.2 Congruences of k-ads in 3D,480
+			27.3.3 Direct Similarity Shapes of Planar Contours,482
+		27.4 Summary,484
+Bibliography,485
+Index,509
