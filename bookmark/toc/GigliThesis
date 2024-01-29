@@ -1,0 +1,36 @@
+Introduction,7
+d=20
+Chapter 1. Preliminary results,1
+	1. Transport of measures,1
+	2. Tightness, 2-boundedness and 2-uniform integrability,2
+	3. Dudley’s lemma,6
+	4. On the solution of the optimal transport problem,7
+Chapter 2. The distance W and its geometry,11
+	1. The distance W,11
+	2. Interpolation and geodesics,14
+	3. The curvature of (P2(Rd),W),17
+	4. The weak topology of P2(X),20
+	5. Convergence of maps,22
+Chapter 3. The regular tangent space,29
+	1. Continuity equations and AC curves,29
+	2. The regular tangent space,35
+Chapter 4. The geometric tangent space,41
+	1. An introduction to Tanµ(P2(Rd)),41
+	2. Directional derivative of W2(·, ν),46
+	3. Tangent cone for PC spaces,48
+	4. On the inclusion Tanµ(P2(Rd)) → Tanµ(P2(Rd)),51
+	5. Operations on P2(R2d)µ,54
+	6. The projection onto Tanµ (P2(Rd)),61
+Chapter 5. Geodesically convex sets,73
+	1. Halfspaces,74
+	2. Strongly geodesically convex sets,75
+	3. Geodesically convex subsets of P2(Rd),76
+	4. Subdifferentials and differentiability properties of W2,82
+Chapter 6. An approach to second order analysis,89
+	1. The case of a manifold embedded in Rd,89
+	2. On the angle between tangent spaces in P2(Rd),93
+	3. Regular curves,98
+	4. Parallel transport,106
+	5. Covariant derivative and curvature operator,118
+	6. A distance on the tangent bundle,122
+Bibliography,137

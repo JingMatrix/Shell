@@ -1,0 +1,49 @@
+Contents,2
+Samenvatting,6
+d=9
+1 Introduction,1
+	1.1 Gradient flows, maximal monotone operators and product formulas in Hilbert spaces,1
+		1.1.1 Gradient flows,1
+		1.1.2 Maximal monotone operators,6
+		1.1.3 Trotter-Kato product formulas,8
+	1.2 The Monge-Kantorovich problem and the Wasserstein distances on spaces of probability measures,10
+		1.2.1 The Monge problem,10
+		1.2.2 The Kantorovich problem,12
+		1.2.3 Wasserstein distances,13
+	1.3 Gradient flows in metric spaces,14
+	1.4 Research topics studied in this thesis,20
+2 Approximation for convex functionals on non-positively curved spaces and the Trotter-Kato product formula,29
+	2.1 Introduction,30
+	2.2 Preliminaries,32
+	2.3 Construction of approximation semigroups and some convergence theorems,46
+	2.4 The Trotter product formula,61
+	2.5 Examples,71
+3 Wasserstein-2 analysis of the non-symmetric Fokker-Planck equation and the Trotter-Kato Product Formula,73
+	3.1 Introduction,74
+	3.2 Preliminaries,77
+	3.3 Construction of the semigroup on (P2, W2)–The Trotter-Kato product formula,84
+	3.4 Absolute continuity of paths and the regularising effect,93
+	3.5 Some remarks about the invariant measure—the symmetric versus the non-symmetric case,103
+4 Maximal Monotone operators in generalised sense on the Wasserstein space P2 (Rd),109
+	4.1 Introduction,109
+	4.2 Maximal monotone operators on Hilbert spaces,112
+	4.3 Ambrosio-Gigli-Savaré Fréchet subdifferential of geodesically convex functionals on P2 (Rd),116
+	4.4 Maximal λ-Monotone Operators in generalized sense, associated Cauchy problems and the Resolvents on (P2(R2), W2),123
+	4.5 AGS Subdifferentials of regular λ-convex functionals in generalized sense as λ-MMGR operators,132
+	4.6 Convex subsets of (P2(Rd), W2) in geodesic and in generalized sense,140
+	4.7 Resolvents,146
+	4.8 The abstract Cauchy problem and the construction of the semigroup,155
+		4.8.1 Uniqueness and the semi-contraction property of the solutions156
+		4.8.2 The exponential formula - Part 1,158
+		4.8.3 The exponential formula - Part 2,162
+	4.9 Towards an application,172
+5 Invariant measures for locally Lipschitz stochastic delay equations,175
+	5.1 Introduction,175
+	5.2 Preliminaries,177
+	5.3 Variation-of-constants formula,179
+	5.4 The equation and the segment process,186
+	5.5 Tightness of segments,191
+	5.6 A stability theorem,195
+	5.7 Markov and eventual Feller property and existence of invariant measure,201
+Bibliography,207
+Curriculum vitae,215

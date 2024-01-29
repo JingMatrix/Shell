@@ -1,0 +1,50 @@
+d=2
+Contents,1
+Introduction,3
+d=8
+1 The Laplacian on a Riemannian Manifold,1 
+	1.1 Basic Examples,2 
+		1.1.1 The Laplacian on S^ and R,3 
+		1.1.2 Heat Flow on 5^ and R,5 
+	1.2 The Laplacian on a Riemannian Manifold,10 
+		1.2.1 Riemannian Metrics,10 
+		1.2.2 L^2 Spaces of Functions and Forms,14 
+		1.2.3 The Laplacian on Functions,17 
+	1.3 Hocige Theory for Functions and Forms,22 
+		1.3.1 Analytic Preliminaries,22 
+		1.3.2 The Heat Equation Proof of the Hodge Theorem for Functions,27 
+		1.3.3 The Hodge Theorem for Differential Forms,33 
+		1.3.4 Regularity Results,35 
+	1.4 De Rham Cohomology,39 
+	1.5 The Kernel of the Laplacian on Forms,46
+2 Elements of Differential Geometry,52 
+	2.1 Curvature,52 
+	2.2 The Levi-Civita Connection and Bochner Formula,63 
+		2.2.1 The Levi-Civita Connection,63 
+		2.2.2 Weitzenbock Formulas and Garding's Inequality,67 
+	2.3 Geodesies,77 
+	2.4 The Laplacian in Exponential Coordinates,83
+3 The Construction of the Heat Kernel,88 
+	3.1 Preliminary Results for the Heat Kernel,88 
+	3.2 Construction of the Heat Kernel,90 
+		3.2.1 Construction of the Parametrix,90 
+		3.2.2 The Htat Kernel for Functions,94 
+	3.3 The Asymptotici of the Heat Kernel,99 
+	3.4 Positivity of the Heat Kernel,106 
+4 The Heat Equation Approach to the Atiyah-Singer Index Theorem,109 
+	4.1 The Chern-Gauss-Bonnet Theorem,109 
+		4.1.1 The Heat Equation Approach,110 
+		4.1.2 Proof of the Chern-Gauss-Bonnet Theorem,114 
+	4.2 The Hirzebruch Signature Theorem and the Atiyah-Singer Index Theorem,126 
+		4.2.1 A Survey of Characteristic Forms,126 
+		4.2.2 The Hirzebruch Signature Theorem,132 
+		4.2.3 The Atiyah-Singer Index Theorem,137 
+5 Zeta Functions of Laplacians,142 
+	5.1 The Zeta Function of a Laplacian,142 
+	5.2 Isospectral Manifolds,149 
+	5.3 Reidemeister Torsion and Analytic Torsion,151 
+		5.3.1 Reidemeister Torsion,151 
+		5.3.2 Analytic Torsion,152 
+		5.3.3 The Families Index Theorem and Analytic Torsion,161 
+Bibliography,165 
+Index,170 

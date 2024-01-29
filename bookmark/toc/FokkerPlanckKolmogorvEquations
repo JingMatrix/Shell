@@ -1,0 +1,133 @@
+Contents,6
+Preface,10
+d=13
+Chapter 1. Stationary Fokker–Planck–Kolmogorov Equations,1
+	1.1. Background material,1
+	1.2. Elliptic equations,7
+	1.3. Diﬀusion processes,11
+	1.4. Basic problems,17
+	1.5. Existence of densities,23
+	1.6. Local properties of densities,29
+	1.7. Regularity of solutions to divergence type equations,35
+	1.8. Complements, comments, and exercises,43
+		(i) Fractional Sobolev classes,43
+		(ii) Increasing Sobolev regularity of solutions,47
+		(iii) Renormalized solutions,48
+		(iv) Generalizations of the maximum principle of A.D. Aleksandrov and k-Hessians,49
+		Comments,50
+		Exercises,53
+Chapter 2. Existence of Solutions,55
+	2.1. The maximum principle and the Dirichlet problem,55
+	2.2. Positive solutions of divergence type equations,60
+	2.3. Lyapunov functions and a priori estimates,62
+	2.4. Construction of solutions to stationary Fokker–Planck–Kolmogorov equations,67
+	2.5. Complements, comments, and exercises,70
+		(i) Solvability of equations with potentials,70
+		(ii) Solvability of equations on manifolds,71
+		(iii) The absence of integrable solutions,73
+		(iv) Nonlinear equations,74
+		Comments,78
+		Exercises,79
+Chapter 3. Global Properties of Densities,81
+	3.1. Square integrability of logarithmic gradients,81
+	3.2. Global Sobolev regularity,89
+	3.3. Upper estimates for densities,97
+	3.4. Harnack’s inequality and lower estimates for densities,99
+	3.5. Positivity of densities,107
+	3.6. Justiﬁcation of the results on positivity,114
+	3.7. Complements, comments, and exercises,119
+		(i) Estimates of solutions on manifolds,119
+		(ii) More on Harnack’s inequality,119
+		(iii) The John–Nirenberg lemma,120
+		(iv) Diﬀerentiability of solutions with respect to a parameter,122
+		Comments,127
+		Exercises,128
+Chapter 4. Uniqueness Problems,131
+	4.1. Uniqueness conditions,131
+	4.2. Cases of nonuniqueness,140
+	4.3. Integrable solutions,150
+	4.4. Equations with a potential,158
+	4.5. Complements, comments and exercises,160
+		(i) Equations on manifolds,160
+		(ii) Uniqueness of solutions of the Dirichlet problem for equations with low order terms,161
+		(iii) Weighted Sobolev classes,163
+		(iv) Bounds on the total variation and Kantorovich distances between solutions,169
+		Comments,173
+		Exercises,174
+Chapter 5. Associated Semigroups,177
+	5.1. Generalities on semigroups,177
+	5.2. Associated semigroups,184
+	5.3. Invariance and m-dissipativity,194
+	5.4. Invariance and uniqueness,202
+	5.5. Examples of uniqueness,205
+	5.6. Complements, comments, and exercises,208
+		(i) Essential self-adjointness of Dirichlet operators,208
+		(ii) Markov and Feller semigroups,210
+		(iii) Invariant measures of Markov semigroups,214
+		(iv) Existence of invariant measures,219
+		(v) Compactness of semigroups,222
+		(vi) Estimates of diﬀusion semigroups,228
+		(vii) Gradient estimates in the case of dissipative drifts,229
+		Comments,234
+		Exercises,236
+Chapter 6. Parabolic Fokker–Planck–Kolmogorov Equations,241
+	6.1. Basic problems,241
+	6.2. Background material,245
+	6.3. Existence of densities,251
+	6.4. Local regularity,254
+	6.5. Local estimates,262
+	6.6. Existence of solutions to the Cauchy problem,265
+	6.7. Complements, comments, and exercises,272
+		(i) Gradient ﬂows,272
+		(ii) Solvability of degenerate Fokker–Planck–Kolmogorov equations,275
+		(iii) Nonlinear parabolic equations for measures,278
+		Comments,283
+		Exercises,285
+Chapter 7. Global Parabolic Regularity and Upper Bounds,287
+	7.1. A priori estimates with Lyapunov functions,287
+	7.2. Global upper bounds,294
+	7.3. Upper bounds for solutions to the Cauchy problem,298
+	7.4. Square integrability of logarithmic gradients,306
+	7.5. Complements, comments, and exercises,311
+		(i) The Nash–Aronson estimates,311
+		(ii) A generalization of Nash–Aronson type estimates,312
+		Comments,313
+		Exercises,314
+Chapter 8. Parabolic Harnack Inequalities and Lower Bounds,315
+	8.1. Parabolic Harnack inequalities,315
+	8.2. Lower bounds for densities,318
+	8.3. Positivity of densities,321
+	8.4. Proof of the key lemma,329
+	8.5. Complements, comments, and exercises,333
+		(i) Trudinger’s version of Moser’s lemma,333
+		Comments,334
+		Exercises,335
+Chapter 9. Uniqueness of Solutions to Fokker–Planck–Kolmogorov Equations,337
+	9.1. Setting of the problem,337
+	9.2. Examples of nonuniqueness,342
+	9.3. The case of a diﬀusion matrix of class V M O,344
+	9.4. The case of a Lipschitzian diﬀusion matrix,350
+	9.5. Proof of the main lemma,357
+	9.6. Uniqueness of integrable solutions,367
+	9.7. Proofs of auxiliary lemmas,370
+	9.8. Complements, comments, and exercises,373
+		(i) Uniqueness for degenerate equations in the class of absolutely continuous measures,373
+		(ii) Probabilistic methods of proving uniqueness,377
+		(iii) Uniqueness for degenerate equations in the class of all measures,380
+		(iv) Uniqueness for the continuity equation,382
+		(v) Estimates in the total variation and Kantorovich metrics,387
+		(vi) Mean ﬁeld games,397
+		Comments,399
+		Exercises,401
+Chapter 10. The Inﬁnite-Dimensional Case,403
+	10.1. Equations in inﬁnite-dimensional spaces,403
+	10.2. Properties of solutions,413
+	10.3. Existence in the elliptic case,416
+	10.4. Solvability of the Cauchy problem,422
+	10.5. Complements, comments, and exercises,426
+		(i) Uniqueness in the inﬁnite-dimensional case,426
+		(ii) Inﬁnite-dimensional nonlinear equations for measures,430
+		Comments,433
+		Exercises,435
+Bibliography,437
+Subject Index,477
