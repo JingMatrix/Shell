@@ -24,4 +24,5 @@
 # wikiquote rss
 # 0 */10 * * * $HOME/Documents/Code/Shell/archives/wikiquote_rss.py
 
-
+# update IMT personal pages
+20 15 * * * rclone sync --size-only $HOME/Documents/Project/blog/content/.vitepress/dist imt-perso:public_html
