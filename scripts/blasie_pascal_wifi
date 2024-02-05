@@ -13,8 +13,10 @@ path_to_current_script="$HOME/Documents/Code/Shell/scripts/blasie_pascal_wifi"
 # 	[ $CONNECTION_ID = "Wifirst Blaise Pascal" ]; then
 # 	su $USER $path_to_current_script
 # fi
+#
 
-if [ "$(/sbin/iwgetid | grep 'ESSID:"Wifirst Blaise Pascal"')" ]; then
+ip addr 2>/dev/null | grep 'inet 10.188' 1>/dev/null && ping -c 1 wireless.wifirst.net 2>/dev/null 1>/dev/null
+if [ $? -eq 0 ]; then
 
 	# First logout from possible old sessions
 	time_remaining=$(/bin/curl -s 'https://wireless.wifirst.net/captive-portal/api' -H "Content-Type: application/captive+json" | /bin/grep -oP '"seconds-remaining": \K\d+')
