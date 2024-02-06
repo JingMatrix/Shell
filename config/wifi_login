@@ -30,8 +30,8 @@ if [[ $1 = wl* && $2 == 'dhcp4-change' ]]; then
 		local -a portals=('wifi-gw2-ups.private.univ-tlse3.fr:8003')
 		local zone='ssid_ups'
 		upslogin
-	elif [[ $CONNECTION_ID == "Wifirst Blaise Pascal" ]]; then
-		su jing /home/jing/Documents/Code/Shell/scripts/blasie_pascal_wifi
+	elif [[ $CONNECTION_ID =~ "Wifirst" ]]; then
+		su jing /home/jing/Documents/Code/Shell/scripts/wifirst
 	# elif
 	# 	[[ $CONNECTION_ID == 'Here is MA' ]]
 	# then

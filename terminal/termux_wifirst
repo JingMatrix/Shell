@@ -22,7 +22,7 @@ start_atd() {
 # wifi=$(su -c cmd wifi status | grep -oP 'Wifi is connected to "\K[^"]+')
 ifconfig 2>/dev/null | grep 'inet 10.188' 1>/dev/null && ping -c 1 wireless.wifirst.net 2>/dev/null 1>/dev/null
 if [ $? -eq 0 ]; then
-	path_to_current_script=$HOME/.local/bin/blaise_pascal
+	path_to_current_script=$HOME/.local/bin/wifirst
 	queue=$(atq -q n)
 	if [ $? -ne 0 ]; then
 		rm -rf $PREFIX/var/spool/atd/*
@@ -60,8 +60,10 @@ if [ $? -eq 0 ]; then
 	if ! login_wifirst; then
 		if command -v sudo 2>/dev/null 1>/dev/null; then
 			echo "Login failed, resetting MAC address"
-			su shell -c cmd wifi forget-network $(sudo cmd wifi status | grep -o -P 'Net ID: \K\d+')
-			sudo cmd wifi connect-network 'Wifirst Blaise Pascal' open -r non_persistent
+			wifi=$(sudo cmd wifi status)
+			current_ssid=$(echo $wifi | grep -o -P 'SSID: "\K.*(?=",)')
+			su shell -c cmd wifi forget-network $(echo $wifi | grep -o -P 'Net ID: \K\d+')
+			sudo cmd wifi connect-network "$current_ssid" open -r non_persistent
 			sleep 8
 			login_wifirst
 		else
@@ -70,7 +72,7 @@ if [ $? -eq 0 ]; then
 	fi
 	at -q n -M -f $path_to_current_script now + 10 minute
 else
-	echo "Not connected to Wifirst Blaise Pascal"
+	echo "Not connected to Wifirst"
 fi
 
 command -v sudo 2>/dev/null 1>/dev/null && start_zerotier

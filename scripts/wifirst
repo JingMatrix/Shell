@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Please change this variable accordingly.
-path_to_current_script="$HOME/Documents/Code/Shell/scripts/blasie_pascal_wifi"
+path_to_current_script="$HOME/Documents/Code/Shell/scripts/wifirst"
 # To start the login process automatically once you are connected to the Wi-Fi,
 # put the following commands into a script located at the directory /etc/NetworkManager/dispatcher.d/.
 # Replace $USER and $path_to_current_script by correct values in current system.
@@ -15,7 +15,7 @@ path_to_current_script="$HOME/Documents/Code/Shell/scripts/blasie_pascal_wifi"
 # fi
 #
 
-ip addr 2>/dev/null | grep 'inet 10.188' 1>/dev/null && ping -c 1 wireless.wifirst.net 2>/dev/null 1>/dev/null
+/bin/ip addr 2>/dev/null | grep 'inet 10.188' 1>/dev/null && ping -c 1 wireless.wifirst.net 2>/dev/null 1>/dev/null
 if [ $? -eq 0 ]; then
 
 	# First logout from possible old sessions

@@ -8,8 +8,7 @@ if [[ $USER == "jing" ]]; then
 	adb shell rm -rf /sdcard/Download/init
 	adb shell mkdir /sdcard/Download/init
 	adb push scripts/misàjour /sdcard/Download/init
-	adb push scripts/upsCalendar /sdcard/Download/init
-	adb push terminal/termux_blaise_pascal /sdcard/Download/init
+	adb push terminal/termux_wifirst /sdcard/Download/init
 	adb push terminal/termux_proxy /sdcard/Download/init
 	adb push nvim/init.vim /sdcard/Download/init
 	adb push nvim/markdown.snippets /sdcard/Download/init
@@ -67,9 +66,8 @@ popd
 
 mkdir -p $HOME/.local/bin
 ln -sf $HOME/init/.zshrc $HOME
-ln -sf $HOME/init/termux_blaise_pascal $HOME/.local/bin/blaise_pascal
+ln -sf $HOME/init/termux_wifirst $HOME/.local/bin/wifirst
 ln -sf $HOME/init/termux_proxy $HOME/.local/bin/proxy
-ln -sf $HOME/init/upsCalendar $HOME/.local/bin/
 ln -sf $HOME/init/misàjour $HOME/.local/bin/
 mkdir -p $HOME/.config/nvim/UltiSnips
 ln -sf $HOME/init/markdown.snippets $HOME/.config/nvim/UltiSnips
