@@ -1,0 +1,147 @@
+Contents,6
+d=6
+Introduction,4
+	1. Overview of Perelman’s argument,5
+d=1
+	2. Background material from Riemannian geometry,16
+	3. Background material from Ricci flow,19
+	4. Perelman’s advances,25
+	5. The standard solution and the surgery process,31
+	6. Extending Ricci flows with surgery,34
+	7. Finite-time extinction,37
+	8. Acknowledgements,40
+	9. List of related papers,42
+d=43
+Part 1. Background from Riemannian Geometry and Ricci flow,1
+	Chapter 1. Preliminaries from Riemannian geometry,3
+		1. Riemannian metrics and the Levi-Civita connection,3
+		2. Curvature of a Riemannian manifold,5
+		3. Geodesics and the exponential map,10
+		4. Computations in Gaussian normal coordinates,16
+		5. Basic curvature comparison results,18
+		6. Local volume and the injectivity radius,19
+	Chapter 2. Manifolds of non-negative curvature,21
+		1. Busemann functions,21
+		2. Comparison results in non-negative curvature,23
+		3. The soul theorem,24
+		4. Ends of a manifold,27
+		5. The splitting theorem,28
+		6. ǫ-necks,30
+		7. Forward difference quotients,33
+	Chapter 3. Basics of Ricci flow,35
+		1. The definition of Ricci flow,35
+		2. Some exact solutions to the Ricci flow,36
+		3. Local existence and uniqueness,39
+		4. Evolution of curvatures,41
+		5. Curvature evolution in an evolving orthonormal frame,42
+		6. Variation of distance under Ricci flow,45
+		7. Shi’s derivative estimates,50
+		8. Generalized Ricci flows,59
+	Chapter 4. The maximum principle,63
+		1. Maximum principle for scalar curvature,63
+		2. The maximum principle for tensors,65
+		3. Applications of the maximum principle,67
+		4. The strong maximum principle for curvature,69
+		5. Pinching toward positive curvature,75
+	Chapter 5. Convergence results for Ricci flow,83
+		1. Geometric convergence of Riemannian manifolds,83
+		2. Geometric convergence of Ricci flows,90
+		3. Gromov-Hausdorff convergence,92
+		4. Blow-up limits,99
+		5. Splitting limits at infinity,100
+Part 2. Perelman’s length function and its applications,103
+	Chapter 6. A comparison geometry approach to the Ricci flow,105
+		1. L-length and L-geodesics,105
+		2. The L-exponential map and its first-order properties,112
+		3. Minimizing L-geodesics and the injectivity domain,116
+		4. Second-order differential inequalities for L^τ and L^τ_x,119
+		5. Reduced length,129
+		6. Local Lipschitz estimates for lx,133
+		7. Reduced volume,140
+	Chapter 7. Complete Ricci flows of bounded curvature,149
+		1. The functions Lx and lx,149
+		2. A bound for min lxτ,152
+		3. Reduced volume,164
+	Chapter 8. Non-collapsed results,169
+		1. A non-collapsing result for generalized Ricci flows,169
+		2. Application to compact Ricci flows,176
+	Chapter 9. κ-non-collapsed ancient solutions,179
+		1. Preliminaries,179
+		2. The asymptotic gradient shrinking soliton for κ-solutions,183
+		3. Splitting results at infinity,203
+		4. Classification of gradient shrinking solitons,206
+		5. Universal κ,220
+		6. Asymptotic volume,221
+		7. Compactness of the space of 3-dimensional κ-solutions,225
+		8. Qualitative description of κ-solutions,230
+	Chapter 10. Bounded curvature at bounded distance,245
+		1. Pinching toward positive: the definitions,245
+		2. The statement of the theorem,245
+		3. The incomplete geometric limit,247
+		4. Cone limits near the end E for rescalings of U∞,255
+		5. Comparison of the two types of limits,263
+		6. The final contradiction,265
+	Chapter 11. Geometric limits of generalized Ricci flows,267
+		1. A smooth blow-up limit defined for a small time,267
+		2. Long-time blow-up limits,271
+		3. Incomplete smooth limits at singular times,279
+		4. Existence of strong δ-necks sufficiently deep in a 2ǫ-horn,287
+	Chapter 12. The standard solution,293
+		1. The initial metric,293
+		2. Standard Ricci flows: The statement,295
+		3. Existence of a standard flow,296
+		4. Completeness, positive curvature, and asymptotic behavior,297
+		5. Standard solutions are rotationally symmetric,300
+		6. Uniqueness,306
+		7. Solution of the harmonic map flow,308
+		8. Completion of the proof of uniqueness,322
+		9. Some corollaries,325
+Part 3. Ricci flow with surgery,329
+	Chapter 13. Surgery on a δ-neck,331
+		1. Notation and the statement of the result,331
+		2. Preliminary computations,334
+		3. The proof of Theorem 13.2,339
+		4. Other properties of the result of surgery,341
+	Chapter 14. Ricci Flow with surgery: the definition,343
+		1. Surgery space-time,343
+		2. The generalized Ricci flow equation,348
+	Chapter 15. Controlled Ricci flows with surgery,353
+		1. Gluing together evolving necks,353
+		2. Topological consequences of Assumptions (1) – (7),356
+		3. Further conditions on surgery,359
+		4. The process of surgery,361
+		5. Statements about the existence of Ricci flow with surgery,362
+		6. Outline of the proof of Theorem 15.9,365
+	Chapter 16. Proof of non-collapsing,367
+		1. The statement of the non-collapsing result,367
+		2. The proof of non-collapsing when R(x) = r^−2 with r ≤ ri+1,368
+		3. Minimizing L-geodesics exist when R(x) ≤ r^{-2}_{i+1}: the statement,368
+		4. Evolution of neighborhoods of surgery caps,369
+		5. A length estimate,375
+		6. Completion of the proof of Proposition 16.1,391
+	Chapter 17. Completion of the proof of Theorem 15.9,395
+		1. Proof of the strong canonical neighborhood assumption,395
+		2. Surgery times don’t accumulate,408
+Part 4. Completion of the proof of the Poincaré Conjecture,413
+	Chapter 18. Finite-time extinction,415
+		1. The result,415
+		2. Disappearance of components with non-trivial π2,420
+		3. Components with non-trivial π3,429
+		4. First steps in the proof of Proposition 18.18,432
+	Chapter 19. Completion of the Proof of Proposition 18.24,437
+		1. Curve-shrinking,437
+		2. Basic estimates for curve-shrinking,441
+		3. Ramp solutions in M × S 1,445
+		4. Approximating the original family Γ,449
+		5. The case of a single c ∈ S 2,453
+		6. The completion of the proof of Proposition 18.24,461
+		7. Proof of Lemma 19.31: annuli of small area,464
+		8. Proof of the first inequality in Lemma 19.24,481
+Appendix. 3-manifolds covered by canonical neighborhoods,497
+	1. Shortening curves,497
+	2. The geometry of an ǫ-neck,497
+	3. Overlapping ǫ-necks,502
+	4. Regions covered by ǫ-necks and (C, ǫ)-caps,504
+	5. Subsets of the union of cores of (C, ǫ)-caps and ǫ-necks,508
+Bibliography,515
+Index,519

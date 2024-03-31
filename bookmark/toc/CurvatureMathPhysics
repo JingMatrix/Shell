@@ -1,0 +1,330 @@
+Contents,9
+0.1 Introduction,2 
+1 Gauss's theorema egregium,19 
+	1.1 Volume of a thickened hypersurface,20 
+	1.2 Defining some of our terms,21 
+	1.3 The Gauss map and the Weingarten map,26 
+	1.4 Proof of the volume formula,30 
+	1.5 Gauss's theorema egregium,33 
+		1.5.1 First proof, using inertial coordinates,36 
+		1.5.2 Second proof. The Brioschi formula,39 
+	1.6 Back to the area formula,41 
+		1.6.1 An alternative expression for the surface "area",41 
+		1.6.2 The mean curvature and minimal surfaces,42 
+		1.6.3 Minimal hypersurfaces,43 
+	1.7 Problem set - Surfaces of revolution,46 
+2 Rules of calculus,51 
+	2.1 Superalgebras,51 
+	2.2 Differential forms,52 
+		2.2.1 Linear differential forms,52 
+		2.2.2 Ω(Μ), the algebra of exterior differential forms,52 
+	2.3 The d operator,53 
+	2.4 Even and odd derivations of a superalgebra,53 
+	2.5 Pullback,55 
+	2.6 Chain rule,55 
+	2.7 Lie derivative,55 
+	2.8 Weil's formula,56 
+	2.9 Integration,58 
+	2.10 Stokes theorem,58 
+	2.11 Lie derivatives of vector fields,59 
+	2.12 Jacobi's identity,60 
+	2.13 Forms as multilinear functions on vector fields,61 
+	2.14 Problems,62 
+		2.14.1 Matrix valued differential forms,62 
+		2.14.2 Actions of Lie groups on themselves,63 
+		2.14.3 The Maurer-Cartan form,64 
+		2.14.4 The Maurer-Cartan equation(s),64 
+		2.14.5 Restriction to a subgroup of Gl(n),65 
+		2.14.6 Interlude, the Haar integral,65 
+		2.14.7 Frames,68 
+		2.14.8 Euclidean frames,69 
+		2.14.9 Frames adapted to a submanifold,70 
+		2.14.10 Curves and surfaces - their structure equations,71 
+		2.14.11 The sphere as an example,71 
+		2.14.12 Ribbons,73 
+		2.14.13 The induced metric and the Weingarten map determine a surface up to a Euclidean motion,74 
+		2.14.14 Back to ribbons,75 
+		2.14.15 Developing a ribbon,76 
+		2.14.16 The general Maurer-Cartan equations,77 
+		2.14.17 Back to curves in R3,78 
+		2.14.18 Summary in more logical order, starting from Weil's  formula,81 
+3 Connections on the tangent bundle,85 
+	3.1 Definition of a linear connection on the tangent bundle,85 
+	3.2 Christoffel symbols,86 
+	3.3 Parallel transport,86 
+	3.4 Parallel vector fields along a curve,88 
+	3.5 Geodesies,89 
+		3.5.1 Making a linear change of parameter,90 
+	3.6 Torsion,90 
+	3.7 Curvature,91 
+		3.7.1 R is a tensor,91 
+		3.7.2 The first Bianchi identity,92 
+	3.8 Tensors and tensor analysis,93 
+		3.8.1 Multilinear functions and tensors of type (r,s),93 
+		3.8.2 Tensor multiplication,95 
+		3.8.3 Why a tensor over V(M) is a "field" of tensors over TPM,95 
+		3.8.4 Tensor notation,97 
+		3.8.5 Contraction,98 
+		3.8.6 Tensor derivations,99 
+		3.8.7 A connection as a tensor derivation, со variant differential,101 
+		3.8.8 Covariant differential vs. exterior derivative,102 
+	3.9 Variations and the Jacobi equations,104 
+		3.9.1 Two parameter maps,104 
+		3.9.2 Variations of a curve,105 
+		3.9.3 Geodesic variations and the Jacobi equations,106 
+		3.9.4 Conjugate points,107 
+	3.10 The exponential map,107 
+		3.10.1 The differential of the exponential map at 0 is the identity,108 
+		3.10.2 Normal neighborhoods,108 
+		3.10.3 Normal coordinates,108 
+		3.10.4 The exponential map and the Jacobi equation,109 
+		3.10.5 Polar maps,111
+	3.11 Locally symmetric connections,112 
+	3.12 Normal neighborhoods and convex open sets,112 
+4 Levi-Civita's theorem,117 
+	4.1 Isometric connections,117 
+	4.2 Levi-Civita's theorem,118 
+	4.3 The Christoffel symbols of the Levi-Civita connection,120 
+	4.4 Geodesies in orthogonal coordinates,121 
+	4.5 The hereditary character of the Levi-Civita connection,122 
+	4.6 Back to the isometric condition Vg = 0,123 
+	4.7 Problems: Geodesies in the Schwarzschild exterior,123 
+		4.7.1 The Schwarzschild solution,124 
+		4.7.2 Massive particles,125 
+		4.7.3 Orbit Types,126 
+		4.7.4 Perihelion advance,128 
+		4.7.5 Massless particles,131 
+		4.7.6 Kerr-Schild form,132 
+		4.7.7 A brief biography of Schwarzschild culled from wikipedeia and St. Andrews,133 
+	4.8 Curvature identities,135 
+	4.9 Sectional curvature,136 
+		4.9.1 Degenerate and non-degenerate planes,136 
+		4.9.2 Definition of the sectional curvature,137 
+		4.9.3 The sectional curvature determines the Riemann  curvature tensor,137 
+		4.9.4 Constant curvature spaces,138 
+	4.10 Ricci curvature,139 
+	4.11 Locally symmetric semi-Riemannian manifolds,140 
+		4.11.1 Why the word "symmetric" in locally symmetric?,143 
+	4.12 Curvature of the induced metric of a submanifold,143 
+		4.12.1 The case of a hypersurface,145 
+	4.13 The de Sitter universe and its relatives,145 
+		4.13.1 The Einstein field equations with cosmological constant Λ,148 
+		4.13.2 Cosmological considerations,148 
+5 Вi-invariant metrics on a Lie group,151 
+	5.1 The Lie algebra of a Lie group,151 
+	5.2 The general Maurer-Cartan form,153 
+	5.3 Left invariant and bi-invariant metrics,155 
+	5.4 Geodesies are cosets of one parameter subgroups,156 
+	5.5 The Riemann curvature of a bi-invariant metric,157 
+	5.6 Sectional curvatures,157 
+	5.7 The Ricci curvature and the Killing form,157 
+	5.8 Bi-invariant forms from representations,158 
+	5.9 The Weinberg angle,160 
+6 Cart an calculations,161 
+	6.1 Frame fields and coframe fields,161 
+		6.1.1 The tautological tensor,162 
+	6.2 Connection and curvature forms in a frame field,162 
+		6.2.1 Connection forms,162 
+		6.2.2 Cartan's first structural equation,163 
+		6.2.3 Symmetry properties of ω,163 
+		6.2.4 Curvature forms in a frame field,164 
+		6.2.5 Cartan's second structural equation,165 
+		6.2.6 Both structural equations in compact form,165 
+	6.3 Cartan's lemma and Levi-Civita's theorem,165 
+		6.3.1 Cartan's lemma in exterior algebra,166 
+		6.3.2 Using Cartan's lemma to prove Levi-Civita's theorem,166 
+	6.4 Examples of Cartan style computations,167 
+		6.4.1 Polar coordinates in two dimensions,167 
+		6.4.2 Hyperbolic geometry,168 
+		6.4.3 The Schwarzschild metric,170 
+	6.5 The second Bianchi identity,172 
+	6.6 A theorem of F. Schur,173 
+	6.7 Friedmann Robertson Walker metrics,173 
+		6.7.1 The expanding universe and the big bang,176 
+	6.8 The rotating black hole,178 
+		6.8.1 Killing fields and Noether's theorem,178 
+		6.8.2 The definition of the Kerr metric and some of its elementary properties,179 
+		6.8.3 Checking that we do have a semi-Riemannian metric,180 
+		6.8.4 The domains and the signature,182 
+		6.8.5 An orthonormal frame field and its coframe field,184 
+		6.8.6 The connection forms,186 
+		6.8.7 The curvature,187 
+7 Gauss's lemma,189 
+	7.1 Geodesies locally minimize arc length in a Riemannian manifold,189 
+	7.2 Gauss's lemma,190 
+	7.3 Short enough geodesies give an absolute minimum for arc length,192 
+8 Variational formulas,193 
+	8.1 Jacobi fields in semi-Riemannian geometry,193 
+		8.1.1 Tangential Jacobi fields,193 
+		8.1.2 Perpendicular Jacobi fields,193 
+		8.1.3 Decomposition of a Jacobi field into its tangential and perpendicular components,194 
+	8.2 Variations of arc length,195 
+		8.2.1 The first variation,195 
+	8.3 Geodesies are stationary for arc length,196 
+		8.3.1 Piecewise smooth variations,196 
+	8.4 The second variation,197 
+		8.4.1 Synge's formula for the second variation,197 
+	8.5 Conjugate points and the Morse index,199 
+		8.5.1 Non-positive sectional curvature means no conjugate points,200 
+	8.6 Synge's theorem,201 
+	8.7 Cartan on the existence of closed geodesies,202 
+9 The Hopf-Rinow theorem,205 
+	9.1 Riemannian distance,205 
+		9.1.1 Some history,207 
+		9.1.2 Minimizing curves,207 
+	9.2 Completeness and the Hopf-Rinow theorem,207 
+		9.2.1 The key proposition - de Rham's proof,207 
+		9.2.2 Geodesically complete manifolds,209 
+		9.2.3 The Hopf-Rinow theorem,210 
+	9.3 Hadamard's theorem,212 
+	9.4 Locally isometric coverings,212 
+	9.5 Symmetric spaces,214 
+10 Curvature, distance, and volume,217 
+	10.1 Sectional curvature and distance, locally,217 
+	10.2 Myer's theorem,222 
+		10.2.1 Back to the Ricci tensor,223 
+		10.2.2 Myer's theorem,225 
+	10.3 Length variation of a Jacobi vector field,225 
+		10.3.1 Riemann's formula for the metric in a normal neighborhood,226 
+	10.4 The Ricci tensor and volume growth,228 
+11 Review of special relativity,231 
+	11.1 Two dimensional Lorentz transformations,231 
+		11.1.1 Two dimensional Minkowski spaces,231 
+		11.1.2 Addition law for velocities,233 
+		11.1.3 Hyperbolic angle aka "rapidity",234 
+		11.1.4 Proper time,235 
+		11.1.5 Time dilation,235 
+		11.1.6 The Lorentz-Fitzgerald contraction,236 
+		11.1.7 The reverse triangle inequality,236 
+		11.1.8 Physical significance of the Minkowski distance,237 
+		11.1.9 Energy-momentum,238 
+		11.1.10 Psychological units,239 
+		11.1.11 The Galilean limit,241 
+	11.2 Minkowski space,241 
+		11.2.1 The Compton effect,242 
+		11.2.2 Natural Units,247 
+12 The star operator and electromagnet ism,249 
+	12.1 Definition of the star operator,249 
+		12.1.1 The induced scalar product on exterior powers,249 
+	12.2 Does * : AkV —» An~kV determine the metric?,252 
+	12.3 The star operator on forms,254 
+		12.3.1 Some equations of mathematical physics,254 
+	12.4 Electromagnetism,258 
+		12.4.1 Two non-relativistic regimes,258 
+		12.4.2 Maxwell's equations,262 
+		12.4.3 Natural units and Maxwell's equations,263 
+		12.4.4 The Maxwell equations with a source term,264 
+	12.5 The London equations,265 
+		12.5.1 The London equations in relativistic form,267 
+		12.5.2 Comparing Maxwell and London,269 
+13 Preliminaries to the Einstein equations,271 
+	13.1 Preliminaries to the preliminaries,271 
+		13.1.1 Densities and n-forms,271 
+		13.1.2 Densities of arbitrary order,273 
+		13.1.3 Pullback of a density under a diffeomorphism,273 
+		13.1.4 The Lie derivative of a density,273 
+		13.1.5 The divergence of a vector field relative to a density,274 
+	13.2 Divergence on a semi-Riemannian manifold,275 
+	13.3 The Lie derivative of a semi-Riemannian metric,278 
+	13.4 The divergence of a symmetric tensor field,278 
+		13.4.1 The meaning of the condition div Τ = 0,279 
+		13.4.2 Generalizing the condition of the vanishing of the covari- ant divergence,281 
+	13.5 Analyzing the condition £(Lvg) = 0,281 
+		13.5.1 What does condition (13.16) say for a tensor field  concentrated along a curve?,283 
+	13.6 Three different characterizations of a geodesic,285 
+	13.7 The space of connections as an affine space,286 
+	13.8 The Levi-Civita map and its derivative,287 
+		13.8.1 The Riemann curvature and the Ricci tensor as a maps,287 
+	13.9 An important integral identity,288 
+14 Die Grundlagen der Physik,291 
+	14.1 The structure of physical laws,291 
+		14.1.1 The Legendre transformation,291 
+		14.1.2 Inverting the Legendre transformation as the "source equation" of physics,292 
+	14.2 The Newtonian example,292 
+	14.3 The passive equations,294 
+	14.4 The Hubert "function",295 
+	14.5 Harmonic maps as solutions to a passive equation,299 
+	14.6 Schrodinger's equation as a passive equation,302 
+15 The Probenius theorem,303 
+	15.1 The Frobenius theorem,304 
+		15.1.1 Differential systems,304 
+		15.1.2 Foliations, submersions, and fibrations,305 
+		15.1.3 The vector fields of a differential system, the Frobenius theorem,306 
+		15.1.4 Connected and maximal leaves of an integrable system,308 
+	15.2 Maps into a Lie group,309 
+		15.2.1 Applying the above to the diagonal,310 
+		15.2.2 The induced metric and the Weingarten map determine a hypersurface up to a Euclidean motion,310 
+	15.3 Another application of Frobenius: to reduction,311 
+	15.4 A dual formulation of Frobenius' theorem,312 
+	15.5 Horizontal and basic forms of a fibration,313 
+	15.6 Reduction of a closed form,314 
+16 Connections on principal bundles,315 
+	16.1 Connection and curvature forms in a frame field,315 
+	16.2 Change of frame field,316 
+	16.3 The bundle of frames,318 
+		16.3.1 The form ΰ,320 
+		16.3.2 The form ΰ in terms of a frame field,320 
+		16.3.3 The definition of ω,321 
+	16.4 Connection forms in a frame field as a pull-backs,321 
+	16.5 Submersions, fibrations, and connections,324 
+		16.5.1 Submersions,324 
+		16.5.2 Fibrations,327 
+		16.5.3 Projection onto the vertical,329 
+		16.5.4 Frobenius, generalized curvature, and local triviality,330 
+	16.6 Principal bundles and invariant connections,331 
+		16.6.1 Principal bundles,331 
+		16.6.2 Connections on principal bundles,334 
+		16.6.3 Associated bundles,335 
+		16.6.4 Sections of associated bundles,336 
+		16.6.5 Associated vector bundles,337 
+		16.6.6 Exterior products of vector valued forms,340 
+	16.7 Covariant differentials and derivatives,341 
+		16.7.1 The horizontal projection of forms,341 
+		16.7.2 The covariant differential of forms on Ρ,342 
+		16.7.3 A formula for the covariant differential of basic forms,343 
+17 Reduction of principal bundles,347 
+	17.1 A brief history of gauge theories,347 
+	17.2 Cartan's approach to connections,348 
+		17.2.1 Cartan connections,351 
+	17.3 Symmetry breaking and "mass acquisition",352 
+		17.3.1 The Automorphism group and the Gauge group of a  principal bundle,353 
+		17.3.2 Mass acquisition - the Higgs mechanism,356 
+	17.4 The Higgs mechanism in the standard model,357 
+		17.4.1 Problems of translation between mathematicians and and physicists,357 
+		17.4.2 The Higgs mechanism in the standard model,360 
+18 Super connect ions,365 
+	18.1 Superbundles,366 
+		18.1.1 Superspaces and superalgebras,366 
+		18.1.2 The tensor product of two superalgebras,366 
+		18.1.3 Lie superalgebras,367 
+		18.1.4 The endomorphism algebra of a superspace,367 
+		18.1.5 Superbundles,368 
+		18.1.6 The endomorphism bundle of a superbundle,368 
+		18.1.7 The centralizer of multiplication by differential forms,368 
+		18.1.8 Bundles of Lie superalgebras,369 
+	18.2 Superconnections,369 
+		18.2.1 Extending superconnections to the bundle of endomor- phisms,370 
+		18.2.2 Supercurvature,370 
+		18.2.3 The tensor product of two superconnections,371
+		18.2.4 The exterior components of a superconnection,371 
+		18.2.5 A local computation,372 
+	18.3 Superconnections and principal bundles,372 
+		18.3.1 Recalling some definitions,372 
+		18.3.2 Generalizing the above to superconnections,374 
+	18.4 Clifford Bundles and Clifford superconnections,375 
+19 Semi-Riemannian submersions,377 
+	19.1 Submersions,378 
+	19.2 The fundamental tensors of a submersion,380 
+		19.2.1 The tensor Τ,380 
+		19.2.2 The tensor A,381 
+		19.2.3 Covariant derivatives of Τ and A,382 
+		19.2.4 The fundamental tensors for a warped product,384 
+	19.3 Curvature,385 
+		19.3.1 Curvature for warped products,390 
+		19.3.2 Sectional curvature,393 
+	19.4 Reductive homogeneous spaces,394 
+		19.4.1 Homogeneous spaces,394 
+		19.4.2 Normal symmetric spaces,394 
+		19.4.3 Orthogonal groups,396 
+		19.4.4 Dual Grassmannians,397 
+	19.5 Schwarzschild as a warped product,399 
