@@ -7,18 +7,6 @@ if [[ $USER == "jing" ]]; then
 	tree -L 3 $HOME/.local/share/nvim/site/pack >$BASEDIR/../nvim/vim.plugin
 fi
 
-if [[ -e /bin/zathura ]]; then
-	# clean invalid files item in zathura history
-	echo "Remove invalid zathura history"
-	zathura_history=$HOME/.local/share/zathura/history
-	sed -n -E "s/^\[(.*)\]$/\1/p" $zathura_history | while read file; do
-		if ! [[ -e $file ]]; then
-			sed -i "s#\[$file\]#TOREMOVE#" $zathura_history
-		fi
-	done
-	sed -i "/TOREMOVE/,/^$/d" $zathura_history
-fi
-
 # pull updates from remote repos
 echo "Updating local git repository"
 
