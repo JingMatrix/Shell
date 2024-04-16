@@ -1,0 +1,127 @@
+Table of Contents,8
+d=11
+Introduction,1
+1. Local Inversion,13
+	1.1 Introduction,13
+	1.2 A Preliminary Statement,14
+	1.3 Partial Derivatives. Strictly Differentiable Functions,17
+	1.4 The Local Inversion Theorem: General Statement,19
+	1.5 Functions of Class C^r,20
+	1.6 The Local Inversion Theorem for C^r maps,24
+	1.7 Curvilinear Coordinates,26
+	1.8 Generalizations of the Local Inversion Theorem,29
+2. Submanifolds,31
+	2.1 Introduction,31
+	2.2 Definitions of Submanifolds,32
+	2.3 First Examples,36
+	2.4 Tangent Spaces of a Submanifold,40
+	2.5 Transversality: Intersections,43
+	2.6 Transversality: Inverse Images,45
+	2.7 The Implicit Function Theorem,47
+	2.8 Diffeomorphisms of Submanifolds,50
+	2.9 Parametrizations, Immersions and Embeddings,52
+	2.10 Proper Maps; Proper Embeddings,55
+	2.11 From Submanifolds to Manifolds,58
+	2.12 Some History,60
+3. Transversality Theorems,63
+	3.1 Introduction,63
+	3.2 Countability Properties in Topology,65
+	3.3 Negligible Subsets,69
+	3.4 The Complement of the Image of a Submanifold,70
+	3.5 Sard's Theorem,74
+	3.6 Critical Points, Submersions and the Geometrical Form of Sard's Theorem,75
+	3.7 The Transversality Theorem: Weak Form,78
+	3.8 Jet Spaces,81
+	3.9 The Thom Transversality Theorem,83
+	3.10 Some History,86
+4. Classification of Differentiable Functions,87
+	4.1 Introduction,87
+	4.2 Taylor Formulae Without Remainder,88
+	4.3 The Problem of Classification of Maps,90
+	4.4 Critical Points: the Hessian Form,93
+	4.5 The Morse Lemma,96
+	4.6 Bifurcations of Critical Points,98
+	4.7 Apparent Contour of a Surface in R 33,100
+	4.8 Maps from R 22 into R 22,104
+	4.9 Envelopes of Plane Curves,108
+	4.10 Caustics,109
+	4.11 Genericity and Stability,111
+5. Catastrophe Theory,115
+	5.1 Introduction,115
+	5.2 The Language of Germs,117
+	5.3 r-sufficient Jets; r-determined Germs,119
+	5.4 The Jacobian Ideal,120
+	5.5 The Theorem on Sufficiency of Jets,123
+	5.6 Deformations of a Singularity,126
+	5.7 The Principles of Catastrophe Theory,130
+	5.8 Catastrophes of Cusp Type,133
+	5.9 A Cusp Example,135
+	5.10 Liquid-Vapour Equilibrium,138
+	5.11 The Elementary Catastrophes,140
+	5.12 Catastrophes and Controversies,143
+6. Vector Fields,147
+	6.1 Introduction,147
+	6.2 Examples of Vector Fields (Rn Case),149
+	6.3 First Integrals,151
+	6.4 Vector Fields on Submanifolds,155
+	6.5 The Uniqueness Theorem and Maximal Integral Curves,157
+	6.6 Vector Fields and Line Fields. Elimination of the Time,159
+	6.7 One-parameter Groups of Diffeomorphisms,161
+	6.8 The Existence Theorem (Local Case),164
+	6.9 The Existence Theorem (Global Case),168
+	6.10 The Integral Flow of a Vector Field,170
+	6.11 The Main Features of a Phase Portrait,172
+	6.12 Discrete Flows and Continuous Flows,175
+7. Linear Vector Fields,179
+	7.1 Introduction,179
+	7.2 The Spectrum of an Endomorphism,181
+	7.3 Space Decomposition Corresponding to Partition of the Spectrum,185
+	7.4 Norm and Eigenvalues,188
+	7.5 Contracting, Expanding and Hyperbolic Endomorphisms,191
+	7.6 The Exponential of an Endomorphism,193
+	7.7 One-parameter Groups of Linear Transformations,196
+	7.8 The Image of the Exponential,200
+	7.9 Contracting, Expanding and Hyperbolic Exponential Flows,203
+	7.10 Topological Classification of Linear Vector Fields,206
+	7.11 Topological Classification of Automorphisms,211
+	7.12 Classification of Linear Flows in Dimension 2,213
+8. Singular Points of Vector Fields,219
+	8.1 Introduction,219
+	8.2 The Classification Problem,220
+	8.3 Linearization of a Vector Field in the Neighbourhood of a Singular Point,223
+	8.4 Difficulties with Linearization,226
+	8.5 Singularities with Attracting Linearization,228
+	8.6 Lyapunov Theory,230
+	8.7 The Theorems of Grobman and Hartman,233
+	8.8 Stable and Unstable Manifolds of a Hyperbolic Singularity,234
+	8.9 Differentable Linearization: Statement of the Problem,238
+	8.10 Differentiable Linearization: Resonances,239
+	8.11 Differentiable Linearization: the Theorems of Sternberg and Hartman,242
+	8.12 Linearization in Dimension 2,243
+	8.13 Some Historical Landmarks,247
+9. Closed Orbits - Structural Stability,249
+	9.1 Introduction,249
+	9.2 The Poincare Map,250
+	9.3 Characteristic Multipliers of a Closed Orbit,252
+	9.4 Attracting Closed Orbits,254
+	9.5 Classification of Closed Orbits and Classification of Diffeomorphisms,256
+	9.6 Hyperbolic Closed Orbits,258
+	9.7 Local Structural Stability,260
+	9.8 The Kupka-Smale Theorem,264
+	9.9 Morse-Smale Fields,266
+	9.10 Structural Stability Through the Ages,268
+10. Bifurcations of Phase Portraits,269
+	10.1 Introduction,269
+	10.2 What Do We Mean by Bifurcation?,270
+	10.3 The Centre Manifold Theorem,273
+	10.4 The Saddle-Node Bifureation,275
+	10.5 The Hopf Bifureation,277
+	10.6 Local Bifureations of a Closed Orbit,280
+	10.7 Saddle-node Bifureation for a Closed Orbit,282
+	10.8 Period-doubling Bifureation,282
+	10.9 Hopf Bifureation for a Closed Orbit,284
+	10.10 An Example of a Codimension 2 Bifureation,287
+	10.11 An Example of Non-Ioeal Bifurcation Bifureation,289
+References,293
+Index,295
+Notation,303
