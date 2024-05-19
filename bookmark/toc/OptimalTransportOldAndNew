@@ -1,0 +1,235 @@
+Preface,7
+Contents,13
+Conventions,17
+Introduction,23
+	1 Couplings and changes of variables,27
+		Some famous couplings,29
+		Gluing,33
+		Change of variables formula,34
+		Conservation of mass formula,36
+		Diffusion formula,37
+		Appendix: Moser’s coupling,38
+		Bibliographical notes,39
+	2 Three examples of coupling techniques,43
+		Convergence of the Langevin process,43
+		Euclidean isoperimetry,45
+		Caffarelli’s log-concave perturbation theorem,47
+		Bibliographical notes,48
+	3 The founding fathers of optimal transport,51
+		Bibliographical notes,56
+Part I Qualitative description of optimal transport,61
+	4 Basic properties,65
+		Existence,65
+		Restriction property,67
+		Convexity properties,69
+		Description of optimal plans,70
+		Bibliographical notes,71
+	5 Cyclical monotonicity and Kantorovich duality,73
+		Definitions and heuristics,73
+		Kantorovich duality,79
+		Restriction property,97
+		Application: Stability,99
+		Application: Dual formulation of transport inequalities,102
+		Application: Solvability of the Monge problem,106
+		Bibliographical notes,107
+	6 The Wasserstein distances,115
+		Convergence in Wasserstein sense,118
+		Control by total variation,125
+		Topological properties of the Wasserstein space,126
+		Bibliographical notes,128
+	7 Displacement interpolation,135
+		Deterministic interpolation via action-minimizing curves,136
+		Abstract Lagrangian action,143
+		Interpolation of random variables,147
+		Displacement interpolation between intermediate times and restriction,160
+		Interpolation of prices,165
+		Appendix: Paths in metric structures,170
+		Bibliographical notes,179
+	8 The Monge–Mather shortening principle,185
+		Quadratic cost function,185
+		General statement and applications to optimal transport,187
+		Proof of Mather’s estimates,193
+		Complement: Ruling out focalization by shortening,201
+		Introduction to Mather’s theory,204
+		Possible extensions of Mather’s estimates,214
+		Appendix: Lipschitz estimates for power cost functions,217
+		Bibliographical notes,220
+	9 Solution of the Monge problem I: Global approach,227
+		Bibliographical notes,233
+	10 Solution of the Monge problem II: Local approach,237
+		A heuristic argument,237
+		Difierentiability and approximate difierentiability,239
+		Regularity in a nonsmooth world,242
+		Semiconvexity and semiconcavity,250
+		Assumptions on the cost function,255
+		Differentiability of c-convex functions,260
+		Applications to the Monge problem,265
+		Removing the conditions at infinity,268
+		Removing the assumption of finite cost,271
+		First Appendix: A little bit of geometric measure theory,279
+		Second Appendix: Nonsmooth implicit function theorem,282
+		Third Appendix: Curvature and the Hessian of the squared distance,286
+		Bibliographical notes,289
+	11 The Jacobian equation,295
+		Bibliographical notes,300
+	12 Smoothness,303
+		Caffarelli’s counterexample,305
+		Loeper’s counterexample,307
+		Smoothness and Assumption (C),310
+		Regular cost functions,313
+		The Ma–Trudinger–Wang condition,320
+		Differential formulation of c-convexity,335
+		Control of the gradient via c-convexity,337
+		Smoothness results,339
+		Appendix: Strong twist condition for squared distance, and rectifiability of cut locus,344
+		Bibliographical notes,345
+	13 Qualitative picture,355
+		Recap,355
+		Standard approximation procedure,359
+		Equations of displacement interpolation,361
+		Quadratic cost function,363
+		The structure of P2(M),365
+		Bibliographical notes,370
+Part II Optimal transport and Riemannian geometry,375
+	14 Ricci curvature,379
+		Preliminary: second-order difierentiation,382
+		The Jacobian determinant of the exponential map,386
+		Taking out the direction of motion,392
+		Positivity of the Jacobian,394
+		Bochner’s formula,394
+		Analytic and geometric consequences of Ricci curvature bounds,398
+		Change of reference measure and effective dimension,401
+		Generalized Bochner formula and Γ2 formalism,405
+		Curvature-dimension bounds,407
+		From differential to integral curvature-dimension bounds,410
+		Distortion coefficients,415
+		First Appendix: Second difierentiability of convex functions,423
+		Second Appendix: Very elementary comparison arguments,431
+		Third Appendix: Jacobi fields forever,434
+		Bibliographical notes,440
+	15 Otto calculus,443
+		Bibliographical notes,452
+	16 Displacement convexity I,457
+		Reminders on convexity: difierential and integral conditions,458
+		Displacement convexity,462
+		Displacement convexity from curvature-dimension bounds,464
+		A fluid mechanics feeling for Ricci curvature,467
+		Bibliographical notes,468
+	17 Displacement convexity II,471
+		Displacement convexity classes,471
+		Domain of the functionals,482
+		Displacement convexity from curvature bounds, revisited,485
+		Ricci curvature bounds from distorted displacement convexity,498
+		Bibliographical notes,509
+	18 Volume control,515
+		Distorted Brunn–Minkowski inequality,517
+		Bishop–Gromov inequality,520
+		Doubling property,523
+		Dimension-free bounds,524
+		Bibliographical notes,525
+	19 Density control and local regularity,527
+		Pointwise estimates on the interpolant density,529
+		Democratic condition,536
+		Local Poincaré inequality,538
+		Back to Brunn–Minkowski and Prékopa–Leindler inequalities,541
+		Bibliographical notes,544
+	20 Infinitesimal displacement convexity,547
+		Time-derivative of the energy,547
+		HWI inequalities,551
+		Bibliographical notes,564
+	21 Isoperimetric-type inequalities,567
+		Logarithmic Sobolev inequalities,567
+		Sobolev inequalities,570
+		Isoperimetric inequalities,576
+		Poincaré inequalities,577
+		Bibliographical notes,580
+	22 Concentration inequalities,589
+		Optimal transport and concentration,590
+		Gaussian concentration and T1 inequality,596
+		Talagrand inequalities from Ricci curvature bounds,605
+		Relation with log Sobolev and Poincaré inequalities,606
+		Talagrand inequalities and Gaussian concentration,612
+		Poincaré inequalities and quadratic-linear transport cost,615
+		Dimension-dependent inequalities,627
+		Recap,631
+		Appendix: Properties of the Hamilton–Jacobi semigroup,632
+		Bibliographical notes,640
+	23 Gradient flows I,651
+		Gradient flows in Wasserstein space,652
+		Reformulations of gradient flows,653
+		Gradient flows in metric spaces,656
+		Derivative of the Wasserstein distance,658
+		Subdifferential of energy functionals,671
+		Diffusion equations as gradient flows,694
+		Stability,697
+		General theory and time-discretization,698
+		Appendix: A lemma about doubling variables,700
+		Bibliographical notes,703
+	24 Gradient flows II: Qualitative properties,715
+		Calculation rules,716
+		Large-time behavior,721
+		Short-time behavior,727
+		Bibliographical notes,731
+	25 Gradient flows III: Functional inequalities,741
+		Logarithmic Sobolev inequalities revisited,743
+		Sobolev inequalities revisited,744
+		From log Sobolev to Talagrand, revisited,745
+		Appendix: Comparison of proofs,747
+		Bibliographical notes,749
+Part III Synthetic treatment of Ricci curvature,753
+	26 Analytic and synthetic points of view,757
+		Bibliographical notes,761
+	27 Convergence of metric-measure spaces,765
+		Hausdorff topology,765
+		The Gromov–Hausdorff distance,767
+		Representation by semi-distances,769
+		Representation by approximate isometries,771
+		The Gromov–Hausdorff space,773
+		Gromov–Hausdorff topology and nets,776
+		Noncompact spaces,777
+		Functional analysis on Gromov–Hausdorff converging sequences,780
+		Functional analysis on Gromov–Hausdorff converging sequences,780
+		Adding the measure,782
+		Convergence and doubling property,786
+		Measured Gromov–Hausdorff topology,789
+		Bibliographical notes,791
+	28 Stability of optimal transport,795
+		Optimal transport in a nonsmooth setting,795
+		Kinetic energy and speed,796
+		Convergence of the Wasserstein space,799
+		Compactness of dynamical transference plans and related objects,801
+		Noncompact spaces,812
+		Bibliographical notes,814
+	29 Weak Ricci curvature bounds I: Definition and Stability,817
+		Integral functionals of singular measures,820
+		Synthetic definition of the curvature-dimension bound,822
+		Continuity properties of the functionals,830
+		Continuity properties of the functionals Uν and U^β_(π,ν),830
+		Stability of Ricci bounds,848
+		An application in Riemannian geometry,854
+		The space of CD(K,N) spaces,854
+		First Appendix: Regularization in metric-measure spaces,856
+		Second Appendix: Separability of L^1(X;C(Y)),858
+		Bibliographical notes,860
+	30 Weak Ricci curvature bounds II: Geometric and analytic properties,869
+		Elementary properties,869
+		Displacement convexity,873
+		Brunn–Minkowski inequality,884
+		Bishop–Gromov inequalities,886
+		Uniqueness of geodesics,888
+		Regularity of the interpolant,889
+		HWI and logarithmic Sobolev inequalities,893
+		Sobolev inequalities,894
+		Diameter control,894
+		Poincaré inequalities,895
+		Talagrand inequalities,897
+		Equivalence of definitions in nonbranching spaces,898
+		Locality,910
+		Appendix: Localization in measure spaces,918
+		Bibliographical notes,919
+Conclusions and open problems,925
+References,937
+List of short statements,979
+List of figures,987
+Index,989
+Some notable cost functions,993

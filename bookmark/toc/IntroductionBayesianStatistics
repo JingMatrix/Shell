@@ -1,0 +1,152 @@
+Contents,7
+Preface,13
+d=16
+1 Introduction to Statistical Science,1
+	1.1 The Scientific Method: A Process for Learning,3
+	1.2 The Role of Statistics in the Scientific Method,5
+	1.3 Main Approaches to Statistics,5
+	1.4 Purpose and Organization of This Text,8
+2 Scientific Data Gathering,13
+	2.1 Sampling from a Real Population,14
+	2.2 Observational Studies and Designed Experiments,17
+	Monte Carlo Exercises,23
+3 Displaying and Summarizing Data,31
+	3.1 Graphically Displaying a Single Variable,32
+	3.2 Graphically Comparing Two Samples,39
+	3.3 Measures of Location,41
+	3.4 Measures of Spread,44
+	3.5 Displaying Relationships Between Two or More Variables,46
+	3.6 Measures of Association for Two or More Variables,49 Exercises,52
+4 Logic, Probability, and Uncertainty,59
+	4.1 Deductive Logic and Plausible Reasoning,60
+	4.2 Probability,62
+	4.3 Axioms of Probability,64
+	4.4 Joint Probability and Independent Events,65
+	4.5 Conditional Probability,66
+	4.6 Bayes’ Theorem,68
+	4.7 Assigning Probabilities,74
+	4.8 Odds and Bayes Factor,75
+	4.9 Beat the Dealer,76
+	Exercises,80
+5 Discrete Random Variables,83
+	5.1 Discrete Random Variables,84
+	5.2 Probability Distribution of a Discrete Random Variable,86
+	5.3 Binomial Distribution,90
+	5.4 Hypergeometric Distribution,92
+	5.5 Poisson Distribution,93
+	5.6 Joint Random Variables,96
+	5.7 Conditional Probability for Joint Random Variables,100
+	Exercises,104
+6 Bayesian Inference for Discrete Random Variables,109
+	6.1 Two Equivalent Ways of Using Bayes’ Theorem,114
+	6.2 Bayes’ Theorem for Binomial with Discrete Prior,116
+	6.3 Important Consequences of Bayes’ Theorem,119
+	6.4 Bayes’ Theorem for Poisson with Discrete Prior,120
+	Exercises,122
+	Computer Exercises,126
+7 Continuous Random Variables,129
+	7.1 Probability Density Function,131
+	7.2 Some Continuous Distributions,135
+	7.3 Joint Continuous Random Variables,143
+	7.4 Joint Continuous and Discrete Random Variables,144
+	Exercises,147
+8 Bayesian Inference for Binomial Proportion,149
+	8.1 Using a Uniform Prior,150
+	8.2 Using a Beta Prior,151
+	8.3 Choosing Your Prior,154
+	8.4 Summarizing the Posterior Distribution,158
+	8.5 Estimating the Proportion,161
+	8.6 Bayesian Credible Interval,162
+	Exercises,164
+	Computer Exercises,167
+9 Comparing Bayesian and Frequentist Inferences for Proportion,169
+	9.1 Frequentist Interpretation of Probability and Parameters,170
+	9.2 Point Estimation,171
+	9.3 Comparing Estimators for Proportion,174
+	9.4 Interval Estimation,175
+	9.5 Hypothesis Testing,178
+	9.6 Testing a One-Sided Hypothesis,179
+	9.7 Testing a Two-Sided Hypothesis,182
+	Exercises,187
+	Monte Carlo Exercises,190
+10 Bayesian Inference for Poisson,193
+	10.1 Some Prior Distributions for Poisson,194
+	10.2 Inference for Poisson Parameter,200
+	Exercises,207
+	Computer Exercises,208
+11 Bayesian Inference for Normal Mean,211
+	11.1 Bayes’ Theorem for Normal Mean with a Discrete Prior,211
+	11.2 Bayes’ Theorem for Normal Mean with a Continuous Prior,218
+	11.3 Choosing Your Normal Prior,222
+	11.4 Bayesian Credible Interval for Normal Mean,224
+	11.5 Predictive Density for Next Observation,227
+	Exercises,230
+	Computer Exercises,232
+12 Comparing Bayesian and Frequentist Inferences for Mean,237
+	12.1 Comparing Frequentist and Bayesian Point Estimators,238
+	12.2 Comparing Confidence and Credible Intervals for Mean,241
+	12.3 Testing a One-Sided Hypothesis about a Normal Mean,243
+	12.4 Testing a Two-Sided Hypothesis about a Normal Mean,247
+	Exercises,251
+13 Bayesian Inference for Difference Between Means,255
+	13.1 Independent Random Samples from Two Normal Distributions,256
+	13.2 Case 1: Equal Variances,257
+	13.3 Case 2: Unequal Variances,262
+	13.4 Bayesian Inference for Difference Between Two Proportions Using Normal Approximation,265
+	13.5 Normal Random Samples from Paired Experiments,266
+	Exercises,272
+14 Bayesian Inference for Simple Linear Regression,283
+	14.1 Least Squares Regression,284
+	14.2 Exponential Growth Model,288
+	14.3 Simple Linear Regression Assumptions,290
+	14.4 Bayes’ Theorem for the Regression Model,292
+	14.5 Predictive Distribution for Future Observation,298
+	Exercises,303
+	Computer Exercises,312
+15 Bayesian Inference for Standard Deviation,315
+	15.1 Bayes’ Theorem for Normal Variance with a Continuous Prior,316
+	15.2 Some Specific Prior Distributions and the Resulting Posteriors,318
+	15.3 Bayesian Inference for Normal Standard Deviation,326 Exercises,332
+	Computer Exercises,335
+16 Robust Bayesian Methods,337
+	16.1 Effect of Misspecified Prior,338
+	16.2 Bayes’ Theorem with Mixture Priors,340
+	Exercises,349
+	Computer Exercises,351
+17 Bayesian Inference for Normal
+	with Unknown Mean and Variance,355
+	17.1 The Joint Likelihood Function,358
+	17.2 Finding the Posterior when Independent Jeffreys’ Priors for µ and σ 2 Are Used,359
+	17.3 Finding the Posterior when a Joint Conjugate Prior for µ and σ 2 Is Used,361
+	17.4 Difference Between Normal Means with Equal Unknown Variance,367
+	17.5 Difference Between Normal Means with Unequal Unknown Variances,377
+	Computer Exercises,383
+	Appendix: Proof that the Exact Marginal Posterior Distribution of µ is Student’s t,385
+18 Bayesian Inference for Multivariate Normal Mean Vector,393
+	18.1 Bivariate Normal Density,394
+	18.2 Multivariate Normal Distribution,397
+	18.3 The Posterior Distribution of the Multivariate Normal Mean Vector when Covariance Matrix Is Known,398
+	18.4 Credible Region for Multivariate Normal Mean Vector when Covariance Matrix Is Known,400
+	18.5 Multivariate Normal Distribution with Unknown Covariance Matrix,402
+	Computer Exercises,406
+19 Bayesian Inference for the Multiple Linear Regression Model,411
+	19.1 Least Squares Regression for Multiple Linear Regression Model,412
+	19.2 Assumptions of Normal Multiple Linear Regression Model,414
+	19.3 Bayes’ Theorem for Normal Multiple Linear Regression Model,415
+	19.4 Inference in the Multivariate Normal Linear Regression Model,419
+	19.5 The Predictive Distribution for a Future Observation,425
+	Computer Exercises,428
+20 Computational Bayesian Statistics Including Markov Chain Monte Carlo,431
+	20.1 Direct Methods for Sampling from the Posterior,436
+	20.2 Sampling–Importance–Resampling,450
+	20.3 Markov Chain Monte Carlo Methods,454
+	20.4 Slice Sampling,470
+	20.5 Inference from a Posterior Random Sample,473
+	20.6 Where to Next?,475
+A Introduction to Calculus,477
+B Use of Statistical Tables,497
+C Using the Included Minitab Macros,523
+D Using the Included R Functions,543
+E Answers to Selected Exercises,565
+References,591
+Index,595

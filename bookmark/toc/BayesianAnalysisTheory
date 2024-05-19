@@ -1,0 +1,170 @@
+Contents,8
+d=12
+1 Statistical Preliminaries,1
+	1.1 Common Models,1
+		1.1.1 Exponential Families,4
+		1.1.2 Location-Scale Families,5
+		1.1.3 Regular Family,6
+	1.2 Likelihood Function,7
+	1.3 Sufficient Statistics and Ancillary Statistics,9
+	1.4 Three Basic Problems of Inference in Classical Statistics,11
+		1.4.1 Point Estimates,11
+		1.4.2 Testing Hypotheses,16
+		1.4.3 Interval Estimation,20
+	1.5 Inference as a Statistical Decision Problem,21
+	1.6 The Changing Face of Classical Inference,23
+	1.7 Exercises,24
+d=11
+2 Bayesian Inference and Decision Theory,29
+	2.1 Subjective and Frequentist Probability,29
+	2.2 Bayesian Inference,30
+	2.3 Advantages of Being a Bayesian,35
+	2.4 Paradoxes in Classical Statistics,37
+	2.5 Elements of Bayesian Decision Theory,38
+	2.6 Improper Priors,40
+	2.7 Common Problems of Bayesian Inference,41
+		2.7.1 Point Estimates,41
+		2.7.2 Testing,42
+		2.7.3 Credible Intervals,48
+		2.7.4 Testing of a Sharp Null Hypothesis Through Credible Intervals,49
+	2.8 Prediction of a Future Observation,50
+	2.9 Examples of Cox and Welch Revisited,51
+	2.10 Elimination of Nuisance Parameters,51
+	2.11 A High-dimensional Example,53
+	2.12 Exchangeability,54
+	2.13 Normative and Descriptive Aspects of Bayesian Analysis, Elicitation of Probability,55
+	2.14 Objective Priors and Objective Bayesian Analysis,55
+	2.15 Other Paradigms,57
+	2.16 Remarks,57
+	2.17 Exercises,58
+d=10
+3 Utility, Prior, and Bayesian Robustness,65
+	3.1 Utility, Prior, and Rational Preference,65
+	3.2 Utility and Loss,67
+	3.3 Rationality Axioms Leading to the Bayesian Approach,68
+	3.4 Coherence,70
+	3.5 Bayesian Analysis with Subjective Prior,71
+	3.6 Robustness and Sensitivity,72
+	3.7 Classes of Priors,74
+		3.7.1 Conjugate Class,74
+		3.7.2 Neighborhood Class,75
+		3.7.3 Density Ratio Class,75
+	3.8 Posterior Robustness: Measures and Techniques,76
+		3.8.1 Global Measures of Sensitivity,76
+		3.8.2 Belief Functions,81
+		3.8.3 Interactive Robust Bayesian Analysis,83
+		3.8.4 Other Global Measures,84
+		3.8.5 Local Measures of Sensitivity,84
+	3.9 Inherently Robust Procedures,91
+	3.10 Loss Robustness,92
+	3.11 Model Robustness,93
+	3.12 Exercises,94
+d=9
+4 Large Sample Methods,99
+	4.1 Limit of Posterior Distribution,100
+		4.1.1 Consistency of Posterior Distribution,100
+		4.1.2 Asymptotic Normality of Posterior Distribution,101
+	4.2 Asymptotic Expansion of Posterior Distribution,107
+		4.2.1 Determination of Sample Size in Testing,109
+	4.3 Laplace Approximation,113
+		4.3.1 Laplace's Method,113
+		4.3.2 Tierney-Kadane-Kass Refinements,115
+	4.4 Exercises,119
+d=8
+5 Choice of Priors for Low-dimensional Parameters,121
+	5.1 Different Methods of Construction of Objective Priors,122
+		5.1.1 Uniform Distribution and Its Criticisms,123
+		5.1.2 Jeffreys Prior as a Uniform Distribution,125
+		5.1.3 Jeffreys Prior as a Minimizer of Information,126
+		5.1.4 Jeffreys Prior as a Probability Matching Prior,129
+		5.1.5 Conjugate Priors and Mixtures,132
+		5.1.6 Invariant Objective Priors for Location-Scale Families,135
+		5.1.7 Left and Right Invariant Priors,136
+		5.1.8 Properties of the Right Invariant Prior for Location-Scale Families,138
+		5.1.9 General Group Families,139
+		5.1.10 Reference Priors,140
+		5.1.11 Reference Priors Without Entropy Maximization,145
+		5.1.12 Objective Priors with Partial Information,146
+	5.2 Discussion of Objective Priors,147
+	5.3 Exchangeability,149
+	5.4 Elicitation of Hyperparameters for Prior,149
+	5.5 A New Objective Bayes Methodology Using Correlation,155
+	5.6 Exercises,156
+d=7
+6 Hypothesis Testing and Model Selection,159
+	6.1 Preliminaries,159
+		6.1.1 BIC Revisited,161
+	6.2 P-value and Posterior Probability of H 0 as Measures of Evidence Against the Null,163
+	6.3 Bounds on Bayes Factors and Posterior Probabilities,164
+		6.3.1 Introduction,164
+		6.3.2 Choice of Classes of Priors,165
+		6.3.3 Multiparameter Problems,168
+		6.3.4 Invariant Tests,172
+		6.3.5 Interval Null Hypotheses and One-sided Tests,176
+	6.4 Role of the Choice of an Asymptotic Framework,176
+		6.4.1 Comparison of Decisions via P-values and Bayes Factors in Bahadur's Asymptotics,178
+		6.4.2 Pitman Alternative and Rescaled Priors,179
+	6.5 Bayesian P-value,179
+	6.6 Robust Bayesian Outlier Detection,185
+	6.7 Nonsubjective Bayes Factors,188
+		6.7.1 The Intrinsic Bayes Factor,190
+		6.7.2 The Fractional Bayes Factor,191
+		6.7.3 Intrinsic Priors,194
+	6.8 Exercises,199
+7 Bayesian Computations,205
+	7.1 Analytic Approximation,207
+	7.2 The E-M Algorithm,208
+	7.3 Monte Carlo Sampling,211
+	7.4 Markov Chain Monte Carlo Methods,215
+		7.4.1 Introduction,215
+		7.4.2 Markov Chains in MCMC,216
+		7.4.3 Metropolis-Hastings Algorithm,218
+		7.4.4 Gibbs Sampling,220
+		7.4.5 Rao-Blackwellization,223
+		7.4.6 Examples,225
+		7.4.7 Convergence Issues,231
+	7.5 Exercises,233
+d=6
+8 Some Common Problems in Inference,239
+	8.1 Comparing Two Normal Means,239
+	8.2 Linear Regression,241
+	8.3 Logit Model, Pro bit Model, and Logistic Regression,245
+		8.3.1 The Logit Model,246
+		8.3.2 The Probit Model,251
+	8.4 Exercises,252
+9 High-dimensional Problems,255
+	9.1 Exchangeability, Hierarchical Priors, Approximation to Posterior for Large p, and MCMC,256
+		9.1.1 MCMC and E-M Algorithm,259
+	9.2 Parametric Empirical Bayes,260
+		9.2.1 PEB and HB Interval Estimates,262
+	9.3 Linear Models for High-dimensional Parameters,263
+	9.4 Stein's Frequentist Approach to a High-dimensional Problem,264
+	9.5 Comparison of High-dimensional and Low-dimensional Problems,268
+	9.6 High-dimensional Multiple Testing (PEB),269
+		9.6.1 Nonparametric Empirical Bayes Multiple Testing,271
+		9.6.2 False Discovery Rate (FDR),272
+	9.7 Testing of a High-dimensional Null as a Model Selection Problem,273
+	9.8 High-dimensional Estimation and Prediction Based on Model Selection or Model Averaging,276
+	9.9 Discussion,284
+	9.10 Exercises,285
+10 Some Applications,289
+	10.1 Disease Mapping,289
+	10.2 Bayesian Nonparametric Regression Using Wavelets,292
+		10.2.1 A Brief Overview of Wavelets,293
+		10.2.2 Hierarchical Prior Structure and Posterior Computations,296
+	10.3 Estimation of Regression Function Using Dirichlet Multinomial Allocation,299
+	10.4 Exercises,302
+A Common Statistical Densities,303
+	A.1 Continuous Models,303
+	A.2 Discrete Models,306
+B Birnbaum's Theorem on Likelihood Principle,307
+d=5
+C Coherence,311
+D Microarray,313
+E Bayes Sufficiency,315
+d=4
+References,317
+d=3
+Author Index,339
+d=2
+Subject Index,345

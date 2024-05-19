@@ -1,0 +1,162 @@
+Contents,6
+Preface,12
+Acknowledgments,16
+d=17
+Part I Examples in Discrete Time,1
+d=19
+	1 Borel’s Law of Large Numbers,5
+		1.1 A Protocol for Testing Forecasts,6
+		1.2 A Game-Theoretic Generalization of Borel’s Theorem,8
+		1.3 Binary Outcomes,16
+		1.4 Slackenings and Supermartingales,18
+		1.5 Calibration,19
+		1.6 The Computation of Strategies,21
+		1.7 Exercises,21
+		1.8 Context,24
+	2 Bernoulli’s and De Moivre’s Theorems,31
+		2.1 Game-Theoretic Expected Value and Probability,33
+		2.2 Bernoulli’s Theorem for Bounded Forecasting,37
+		2.3 A Central Limit Theorem,39
+		2.4 Global Upper Expected Values for Bounded Forecasting,45
+		2.5 Exercises,46
+		2.6 Context,49
+d=18
+	3 Some Basic Supermartingales,55
+		3.1 Kolmogorov’s Martingale,56
+		3.2 Doléans’s Supermartingale,56
+		3.3 Hoeffding’s Supermartingale,58
+		3.4 Bernstein’s Supermartingale,63
+		3.5 Exercises,66
+		3.6 Context,67
+	4 Kolmogorov’s Law of Large Numbers,69
+		4.1 Stating Kolmogorov’s Law,70
+		4.2 Supermartingale Convergence Theorem,73
+		4.3 How Skeptic Forces Convergence,80
+		4.4 How Reality Forces Divergence,81
+		4.5 Forcing Games,82
+		4.6 Exercises,86
+		4.7 Context,89
+d=17
+	5 The Law of the Iterated Logarithm,93
+		5.1 Validity of the Iterated-Logarithm Bound,94
+		5.2 Sharpness of the Iterated-Logarithm Bound,99
+		5.3 Additional Recent Game-Theoretic Results,100
+		5.4 Connections with Large Deviation Inequalities,104
+		5.5 Exercises,104
+		5.6 Context,106
+Part II Abstract Theory in Discrete Time,109
+	6 Betting on a Single Outcome,111
+		6.1 Upper and Lower Expectations,113
+		6.2 Upper and Lower Probabilities,115
+		6.3 Upper Expectations with Smaller Domains,118
+		6.4 Offers,121
+		6.5 Dropping the Continuity Axiom,125
+		6.6 Exercises,127
+		6.7 Context,131
+d=16
+	7 Abstract Testing Protocols,135
+		7.1 Terminology and Notation,136
+		7.2 Supermartingales,136
+		7.3 Global Upper Expected Values,142
+		7.4 Lindeberg’s Central Limit Theorem for Martingales,145
+		7.5 General Abstract Testing Protocols,146
+		7.6 Making the Results of Part I Abstract,151
+		7.7 Exercises,153
+		7.8 Context,155
+	8 Zero-One Laws,157
+		8.1 Lévy’s Zero-One Law,158
+		8.2 Global Upper Expectation,160
+		8.3 Global Upper and Lower Probabilities,162
+		8.4 Global Expected Values and Probabilities,163
+		8.5 Other Zero-One Laws,165
+		8.6 Exercises,169
+		8.7 Context,170
+d=15
+	9 Relation to Measure-Theoretic Probability,175
+		9.1 Ville’s Theorem,176
+		9.2 Measure-Theoretic Representation of Upper
+		Expectations,180
+		9.3 Embedding Game-Theoretic Martingales in Probability
+		Spaces,189
+		9.4 Exercises,191
+		9.5 Context,192
+Part III Applications in Discrete Time,195
+	10 Using Testing Protocols in Science and Technology,197
+		10.1 Signals in Open Protocols,198
+		10.2 Cournot’s Principle,201
+		10.3 Daltonism,202
+		10.4 Least Squares,207
+		10.5 Parametric Statistics with Signals,212
+		10.6 Quantum Mechanics,215
+		10.7 Jeffreys’s Law,217
+		10.8 Exercises,225
+		10.9 Context,226
+	11 Calibrating Lookbacks and p-Values,229
+		11.1 Lookback Calibrators,230
+		11.2 Lookback Protocols,235
+		11.3 Lookback Compromises,241
+		11.4 Lookbacks in Financial Markets,242
+		11.5 Calibrating p-Values,245
+		11.6 Exercises,248
+		11.7 Context,250
+d=14
+	12 Defensive Forecasting,253
+		12.1 Defeating Strategies for Skeptic,255
+		12.2 Calibrated Forecasts,259
+		12.3 Proving the Calibration Theorems,264
+		12.4 Using Calibrated Forecasts for Decision Making,270
+		12.5 Proving the Decision Theorems,274
+		12.6 From Theory to Algorithm,286
+		12.7 Discontinuous Strategies for Skeptic,291
+		12.8 Exercises,295
+		12.9 Context,299
+Part IV Game-Theoretic Finance,305
+	13 Emergence of Randomness in Idealized Financial Markets,309
+		13.1 Capital Processes and Instant Enforcement,310
+		13.2 Emergence of Brownian Randomness,312
+		13.3 Emergence of Brownian Expectation,320
+		13.4 Applications of Dubins–Schwarz,325
+		13.5 Getting Rich Quick with the Axiom of Choice,331
+		13.6 Exercises,333
+		13.7 Context,334
+d=13
+	14 A Game-Theoretic Itô Calculus,339
+		14.1 Martingale Spaces,340
+		14.2 Conservatism of Continuous Martingales,348
+		14.3 Itô Integration,350
+		14.4 Covariation and Quadratic Variation,355
+		14.5 Itô’s Formula,357
+		14.6 Doléans Exponential and Logarithm,358
+		14.7 Game-Theoretic Expectation and Probability,360
+		14.8 Game-Theoretic Dubins–Schwarz Theorem,361
+		14.9 Coherence,362
+		14.10 Exercises,363
+		14.11 Context,365
+	15 Numeraires in Market Spaces,371
+		15.1 Market Spaces,372
+		15.2 Martingale Theory in Market Spaces,375
+		15.3 Girsanov’s Theorem,376
+		15.4 Exercises,382
+		15.5 Context,382
+d=12
+	16 Equity Premium and CAPM,385
+		16.1 Three Fundamental Continuous I-Martingales,387
+		16.2 Equity Premium,389
+		16.3 Capital Asset Pricing Model,391
+		16.4 Theoretical Performance Deficit,395
+		16.5 Sharpe Ratio,396
+		16.6 Exercises,397
+		16.7 Context,398
+	17 Game-Theoretic Portfolio Theory,403
+		17.1 Stroock–Varadhan Martingales,405
+		17.2 Boosting Stroock–Varadhan Martingales,407
+		17.3 Outperforming the Market with Dubins–Schwarz,413
+		17.4 Jeffreys’s Law in Finance,414
+		17.5 Exercises,415
+		17.6 Context,416
+d=11
+Terminology and Notation,419
+List of Symbols,425
+d=10
+References,429
+Index,455
