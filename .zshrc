@@ -123,7 +123,7 @@ if [[ $USER == jing ]]; then
 		alias pip=$pyenv
 		alias pyenv=$HOME/.local/python/bin/python3
 		export PATH="$PATH:$HOME/.local/python/bin/"
-		export PYTHONPATH="$PYTHONPATH:$HOME/.local/python/lib/python3.11/site-packages/"
+		export PYTHONPATH="$PYTHONPATH:$HOME/.local/python/lib/python3.12/site-packages/"
 	else
 		alias pip=pip3
 	fi

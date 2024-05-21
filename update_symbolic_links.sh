@@ -18,7 +18,7 @@ ln -sf $basedir/terminal/alacritty.yml $HOME/.config/alacritty
 
 mkdir -p $HOME/.local/bin
 ln -sf $basedir/terminal/gnome-terminal $HOME/.local/bin
-if [[ ! -f /etc/alternatives/x-terminal-emulator ]]; then
+if [[ ! -f /etc/alternatives/x-terminal-emulator && -f /usr/bin/kitty ]]; then
 	echo "Set kitty as defult terminal"
 	sudo mkdir -p /etc/alternatives
 	sudo ln -sf /usr/bin/kitty /etc/alternatives/x-terminal-emulator
@@ -52,6 +52,7 @@ mkdir -p $HOME/.goldendict/styles
 ln -sf $basedir/config/goldendict.xml $HOME/.goldendict/config
 rm -rf $HOME/.goldendict/styles/Darktheme
 ln -sf $basedir/config/goldendict_Darktheme $HOME/.goldendict/styles/Darktheme
+ln -sf $basedir/config/goldendict_Darktheme/article-script.js $HOME/.goldendict/
 
 if [[ ! -f $HOME/.config/mimeapps.list ]]; then
 	echo "Install mimeapps.list"

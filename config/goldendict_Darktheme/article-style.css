@@ -5,10 +5,25 @@ html,
 .grambox .compareword,
 .collobox .section,
 .thesbox .section {
-	background: lightgrey;
+  background: lightgrey;
 }
 
-.gddictname {
-  font-size: 10px;
-  margin-top: -6px;
+.gdactivearticle div.gddictname,
+div.gddictname {
+  position: relative;
+  float: none;
+  width: fit-content;
+  margin: auto;
+  padding: 0;
+}
+div.gdcollapsedarticle {
+  height: 1.5em;
+}
+div.gdarticle {
+  padding: 0 0.1rem 0 0.1rem;
+}
+table.programs_plaintext,
+table.programs_play,
+table.programs_html {
+  margin-top: 0;
 }

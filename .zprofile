@@ -5,7 +5,7 @@ export GLFW_IM_MODULE=ibus
 
 export GTK_THEME=Adwaita:dark
 
-PATH="$HOME/.local/bin:/usr/local/bin:/bin:/usr/local/sbin:/sbin"
+PATH="$HOME/.local/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/sbin"
 function fbterm {
 	fbv -ciuker /var/tmp/background.jpeg <<<q
 	export FBTERM_BACKGROUND_IMAGE=1

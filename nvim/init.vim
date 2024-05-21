@@ -112,7 +112,7 @@ augroup formatter
 	autocmd FileType python setl formatprg=yapf
 	autocmd FileType lua setl formatprg=stylua\ -\ -
 	autocmd FileType tex,bib setl formatprg=latexindent\ -m\ -c=/tmp/
-	autocmd FileType javascript,typescript,html,vue,markdown,css,xhtml,scss setl formatexpr= | let &l:formatprg = 'prettier --stdin-filepath ' . expand('%:p') . ' --parser '.expand(&filetype)
+	autocmd FileType javascript,typescript,html,vue,markdown,css,xhtml,scss setl formatexpr= | let &l:formatprg = 'prettier --stdin-filepath ' . expand('%:p') " . ' --parser '.expand(&filetype)
 	autocmd FileType json,jsonc setl formatprg=jq\ '.'
 augroup END
 
@@ -176,10 +176,13 @@ set undofile
 set spelllang=en_us
 set conceallevel=2
 set concealcursor=nc
+set background=dark
+colorscheme torte
+hi Normal guibg=NONE ctermbg=NONE guifg=White
 hi Conceal NONE
-hi Comment cterm=italic ctermfg=gray
-hi Pmenu ctermbg=NONE ctermfg=white
-hi PmenuSel ctermfg=yellow
+hi Comment cterm=italic ctermfg=Grey gui=italic guifg=Grey
+hi Pmenu ctermbg=NONE ctermfg=White guibg=NONE guifg=White
+hi PmenuSel ctermfg=Yellow
 
 set hidden
 set autowrite

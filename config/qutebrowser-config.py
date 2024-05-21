@@ -27,12 +27,12 @@ c.aliases['no-proxy'] = 'set content.proxy none'
 c.aliases['readability'] = 'spawn --userscript readability-js'
 c.content.blocking.adblock.lists = [
     'https://easylist.to/easylist/easylist.txt',
+    'file:///home/jing/Documents/Code/Web/adblock.txt',
     'https://easylist.to/easylist/easyprivacy.txt',
     'https://raw.githubusercontent.com/easylist/easylistchina/master/easylistchina.txt',
     # 'https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt',
     # 'https://www.i-dont-care-about-cookies.eu/abp/',
     # 'https://secure.fanboy.co.nz/fanboy-cookiemonster.txt',
-    'file:///home/jing/Documents/Code/Web/adblock.txt'
 ]
 c.content.blocking.hosts.lists = [
     'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts',
