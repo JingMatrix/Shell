@@ -1,0 +1,77 @@
+Table of Contents,6
+d=1
+0 Introduction,9
+d=12
+1 Expanding graphs,1
+	1.0 Introduction,1
+	1.1 Expanders and their applications,1
+	1.2 Existence of expanders,5
+2 The Banach-Ruziewicz problem,7
+	2.0 Introduction,7
+	2.1 The Hausdorff-Banach-Tarski paradox,7
+	2.2 Invariant measures,13
+	2.3 Notes,18
+3 Kazhdan Property (T) and its applications,19
+	3.0 lntroduction,19
+	3.1 Kazhdan property (T) for semi-simple groups,19
+	3.2 Lattices and arithmetic subgroups,27
+	3.3 Explicit construction of expanders using property (T),30
+	3.4 Solution of the Ruziewicz problern for sn, n >= 4 using property (T),34
+	3.5 Notes,39
+4 The Laplacian and its eigenvalues,41
+	4.0 lntroduction,41
+	4.1 The geometric Laplacian,41
+	4.2 The combinatorial Laplacian,44
+	4.3 Eigenvalues, isoperimetric inequalities and representations,49
+	4.4 Selberg Theorem lambda_1 >= 3/16 and expanders,52
+	4.5 Random walk on k-regular graphs; Ramanujan graphs,55
+	4.6 Notes,59
+5 The representation theory of PGL_2,61
+	5.0 Introduction,61
+	5.1 Representations and spherical functions,62
+	5.2 Irreducihle representations of PSL_2(R) and eigenvalues of the Laplacian,65
+	5.3 The tree associated with PGL_2(Q_p),68
+	5.4 Irreducihle representations of PGLz(O!p) and eigenvalues of the Hecke operator,70
+	5.5 Spectral decomposition of Γ\G,72
+6 Spectral decomposition of L 2 (G(Q)\G(A)),77
+	6.0 Introduction,77
+	6.1 Deligne's Theorem; adelic formulation,77
+	6.2 Quaternion algebras and groups,79
+	6.3 The Strong Approximation Theorem and its applications,81
+	6.4 Notes,83
+7 Banach-Ruziewicz problern for n = 2, 3; Ramanujan graphs,85
+	7.O lntroduction,85
+	7.1 The spectral decomposition of G'(Z[~])\G'(~) x G'(Op),86
+	7.2 The Banach-Ruziewicz problern for n = 2, 3,86
+	7.3 Ramanujan graphs and their extremal properties,88
+	7.4 Explicit constructions,94
+	7.5 Notes,99
+8 Some more discrete mathematics,111
+	8.0 Introduction,111
+	8.1 The diameter of finite simple groups,111
+	8.2 Characters and eigenvalues of finite groups,116
+	8.3 Some more Ramanujan graphs (of unbounded degrees),112
+	8.4 Ramanujan diagrams,115
+9 Distributing points on the sphere,119
+	9.0 lntroduction,119
+	9.1 Heckeoperators of group action,119
+	9.2 Distributing points on S^2 (and S^3),121
+10 Open problems,125
+	10.1 Expanding Graphs,125
+	10.2 The Banach-Ruziewicz Problem,125
+	10.3 Kazhdan Property (T) and its applications,126
+	10.4 The Lap1acian and its eigenvalues,128
+	10.5 The representation theory of PGLz,129
+	10.6 Spectral decomposition of L^2(G(O)/G(A)),129
+	10.7 Banach-Ruziewitz Problem for n = 2, 3; Ramanujan Graphs,130
+	10.8 Some more discrete mathematics,131
+	10.9 Distributing points on the sphere,133
+Appendix: Modular forms, the Ramanujan conjecture and the Jacquet-Langlands correspondence,136
+	A.O Preliminaries,136
+	A.1 Representation theory and modular forms,139
+	A.2 Classification of irreducible representations,149
+	A.3 Quaternion algebras,159
+	A.4 The Seiberg trace formula,164
+	References to the Appendix,175
+References,177
+Index,193
