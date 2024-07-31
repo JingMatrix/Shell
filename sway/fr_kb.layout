@@ -31,3 +31,5 @@ xkb_symbols "vim" {
     key <AB09>	{ [       colon,      slash,             bar,       division ] };
     key <AB10>	{ [      exclam,     dollar,      numbersign,        section ] };
 };
+
+// vim: ft=xkb :

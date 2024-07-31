@@ -73,8 +73,8 @@
   <group id="7" name="Fr local">
    <dictionary name="Trans audio fr">1f821892b86d2b1cfecc3940fd159168</dictionary>
    <dictionary name="Trans fr:zh-CN">b9b5d699c7a6c156d9b73e1562277b93</dictionary>
-   <dictionary name="LAROUSSE DICTIONNAIRE FRANÇAIS-CHINOIS, 2019">187ee560a77d57103cbf5419b938e000</dictionary>
    <dictionary name="Collins English-French French-English Dictionary">66bd030abde77e7f01ceed9872549569</dictionary>
+   <dictionary name="LAROUSSE DICTIONNAIRE FRANÇAIS-CHINOIS, 2019">187ee560a77d57103cbf5419b938e000</dictionary>
    <dictionary name="Larousse Chambers French-English-French">3d4c951699523adcf162073ec5edbb4d</dictionary>
    <dictionary name="Le Grand Dictionnaire des Synonymes et Contraires, 2004">6a042eda9e31be3824975f21518f1fde</dictionary>
    <dictionary name="GrandRobert">7f8e1d5ef992e33ef02f7cf2a701d4a5</dictionary>
@@ -207,7 +207,7 @@
   <escKeyHidesMainWindow>1</escKeyHidesMainWindow>
   <darkMode>0</darkMode>
   <darkReaderMode>0</darkReaderMode>
-  <zoomFactor>2.1</zoomFactor>
+  <zoomFactor>1.9</zoomFactor>
   <helpZoomFactor>1.4</helpZoomFactor>
   <wordsZoomLevel>0</wordsZoomLevel>
   <enableMainWindowHotkey>0</enableMainWindowHotkey>
@@ -229,8 +229,8 @@
   <pronounceOnLoadMain>1</pronounceOnLoadMain>
   <pronounceOnLoadPopup>1</pronounceOnLoadPopup>
   <useInternalPlayer>0</useInternalPlayer>
-  <internalPlayerBackend>FFmpeg</internalPlayerBackend>
-  <audioPlaybackProgram>mpv</audioPlaybackProgram>
+  <internalPlayerBackend>Qt Multimedia</internalPlayerBackend>
+  <audioPlaybackProgram>ffplay -nodisp -autoexit</audioPlaybackProgram>
   <alwaysOnTop>0</alwaysOnTop>
   <searchInDock>0</searchInDock>
   <historyStoreInterval>0</historyStoreInterval>
@@ -288,8 +288,8 @@
  <popupWindowGeometry>AdnQywADAAAAAAI7AAADnQAABWoAAAXvAAACOwAAA50AAAVqAAAF7wAAAAAAAAAAB4AAAAI7AAADnQAABWoAAAXv</popupWindowGeometry>
  <pinPopupWindow>0</pinPopupWindow>
  <popupWindowAlwaysOnTop>0</popupWindowAlwaysOnTop>
- <mainWindowState>AAAA/wAAAAD9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAAAP////8AAACKAP///wAAAAEAAADMAAAEUPwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAAEIAAAFsAAAAYwD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAQAAAbQAAAFsAAAAYwD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAADJgAAAWwAAABjAP///wAABq4AAARQAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAKo/////wAAAAAAAAAA</mainWindowState>
- <mainWindowGeometry>AdnQywADAAAAAAAAAAADogAAB38AAAgzAAAAAAAAA6IAAAd9AAAIMwAAAAACAAAAB4AAAAAAAAADogAAB38AAAgz</mainWindowGeometry>
+ <mainWindowState>AAAA/wAAAAD9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAAAP////8AAACKAP///wAAAAEAAAC0AAAEUPwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAAEIAAAFsAAAAYwD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAQAAAbQAAAFsAAAAYwD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAADJgAAAWwAAABjAP///wAABsYAAARQAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAKo/////wAAAAAAAAAA</mainWindowState>
+ <mainWindowGeometry>AdnQywADAAAAAAAAAAADogAAB38AAAgzAAAAAAAAA6IAAAd/AAAIMwAAAAAAAAAAB4AAAAAAAAADogAAB38AAAgz</mainWindowGeometry>
  <dictInfoGeometry></dictInfoGeometry>
  <inspectorGeometry>AdnQywADAAAAAAAAAAAAAAAAB38AAAQ3AAAEGwAAAMoAAAXcAAAB9QAAAAACAAAAB4AAAAAAAAAAJAAAB38AAAQ3</inspectorGeometry>
  <dictionariesDialogGeometry>AdnQywADAAAAAAEjAAAE4QAABlwAAAb0AAABIwAABOEAAAZcAAAG9AAAAAAAAAAAB4AAAAEjAAAE4QAABlwAAAb0</dictionariesDialogGeometry>

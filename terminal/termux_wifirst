@@ -20,7 +20,7 @@ start_atd() {
 }
 
 # wifi=$(su -c cmd wifi status | grep -oP 'Wifi is connected to "\K[^"]+')
-ifconfig 2>/dev/null | grep 'inet 10.188' 1>/dev/null && ping -c 1 wireless.wifirst.net 2>/dev/null 1>/dev/null
+ifconfig 2>/dev/null | grep 'inet 10.1' 1>/dev/null && ping -c 1 wireless.wifirst.net 2>/dev/null 1>/dev/null
 if [ $? -eq 0 ]; then
 	path_to_current_script=$HOME/.local/bin/wifirst
 	queue=$(atq -q n)

@@ -25,7 +25,7 @@ for dev in devices:
             waybar['tooltip'] += devinfo['Name'] + '\n'
         if not devinfo['Paired']:
             types.append(devinfo['Type'])
-            waybar['text'] += ' ' + ' '
+            waybar['text'] += ' ' + ' '
             waybar['tooltip'] += devinfo['Name'] + '\n'
 
 waybar['types'] = '+'.join(types)

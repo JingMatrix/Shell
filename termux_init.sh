@@ -90,7 +90,7 @@ ln -sf $HOME/init/clash.yaml $HOME/.config/clash/config.yaml
 
 mkdir -p $HOME/Project
 pushd $HOME/Project
-[[ -e $HOME/Project/ZeroTierOne ]] || git clone --depth 1 https://github.com/JingMatrix/ZeroTierOne -b termux-build
+[[ -e $HOME/Project/ZeroTierOne ]] || git clone --depth 10 https://github.com/JingMatrix/ZeroTierOne -b termux-build
 popd
 apt install -y cmake rust nlohmann-json binutils
 pushd $HOME/Project/ZeroTierOne

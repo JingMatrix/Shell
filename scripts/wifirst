@@ -15,7 +15,7 @@ path_to_current_script="$HOME/Documents/Code/Shell/scripts/wifirst"
 # fi
 #
 
-/bin/ip addr 2>/dev/null | grep 'inet 10.188' 1>/dev/null && ping -c 1 wireless.wifirst.net 2>/dev/null 1>/dev/null
+/bin/ip addr 2>/dev/null | grep 'inet 10.1' 1>/dev/null && ping -c 1 wireless.wifirst.net 2>/dev/null 1>/dev/null
 if [ $? -eq 0 ]; then
 
 	# First logout from possible old sessions
