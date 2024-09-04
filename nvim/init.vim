@@ -110,6 +110,7 @@ augroup formatter
 	autocmd!
 	autocmd FileType sh,zsh,bash setl formatprg=shfmt\ -ln\ bash\ -filename\ %
 	autocmd FileType python setl formatprg=yapf
+	autocmd FileType cpp setl formatprg=clang-format
 	autocmd FileType lua setl formatprg=stylua\ -\ -
 	autocmd FileType tex,bib setl formatprg=latexindent\ -m\ -c=/tmp/
 	autocmd FileType javascript,typescript,html,vue,markdown,css,xhtml,scss setl formatexpr= | let &l:formatprg = 'prettier --stdin-filepath ' . expand('%:p') " . ' --parser '.expand(&filetype)

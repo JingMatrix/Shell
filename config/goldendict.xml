@@ -183,7 +183,6 @@
   <program commandLine="trans -t es -no-ansi -show-languages no -show-translation-phonetics no -show-prompt-message no -d %GDWORD%" enabled="1" icon="" id="275bcfd949e669a144c5e15008cd4d44" name="Trans zh-CN:es" type="1"/>
   <program commandLine="trans es:zh-CN -no-ansi -show-languages no -show-translation-phonetics no -show-prompt-message no -d %GDWORD%" enabled="1" icon="" id="e32240087d5b25ba60b3ab995b010216" name="Trans es:zh-CN" type="1"/>
  </programs>
- <voiceEngines/>
  <mutedDictionaries/>
  <popupMutedDictionaries/>
  <preferences>
@@ -230,7 +229,7 @@
   <pronounceOnLoadPopup>1</pronounceOnLoadPopup>
   <useInternalPlayer>0</useInternalPlayer>
   <internalPlayerBackend>Qt Multimedia</internalPlayerBackend>
-  <audioPlaybackProgram>ffplay -nodisp -autoexit</audioPlaybackProgram>
+  <audioPlaybackProgram>cvlc --play-and-exit</audioPlaybackProgram>
   <alwaysOnTop>0</alwaysOnTop>
   <searchInDock>0</searchInDock>
   <historyStoreInterval>0</historyStoreInterval>
@@ -277,19 +276,18 @@
    <dialogGeometry>AdnQywADAAAAAALKAAAEwgAABLUAAAcSAAACygAABMIAAAS1AAAHEgAAAAAAAAAAB4AAAALKAAAEwgAABLUAAAcS</dialogGeometry>
    <disabledTypes></disabledTypes>
    <enabled>1</enabled>
-   <enablePosition>0</enablePosition>
    <maxDictionarySize>0</maxDictionarySize>
    <parallelThreads>5</parallelThreads>
   </fullTextSearch>
  </preferences>
- <lastMainGroupId>7</lastMainGroupId>
+ <lastMainGroupId>6</lastMainGroupId>
  <lastPopupGroupId>6</lastPopupGroupId>
  <popupWindowState>AAAA/wAAAAD9AAAAAAAAAAAAAAAAAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAQAAAAEAAAAaAGQAaQBjAHQAaQBvAG4AYQByAHkAQgBhAHIDAAAAAP////8AAAAAAAAAAA==</popupWindowState>
  <popupWindowGeometry>AdnQywADAAAAAAI7AAADnQAABWoAAAXvAAACOwAAA50AAAVqAAAF7wAAAAAAAAAAB4AAAAI7AAADnQAABWoAAAXv</popupWindowGeometry>
  <pinPopupWindow>0</pinPopupWindow>
  <popupWindowAlwaysOnTop>0</popupWindowAlwaysOnTop>
- <mainWindowState>AAAA/wAAAAD9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAAAP////8AAACKAP///wAAAAEAAAC0AAAEUPwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAAEIAAAFsAAAAYwD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAQAAAbQAAAFsAAAAYwD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAADJgAAAWwAAABjAP///wAABsYAAARQAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAKo/////wAAAAAAAAAA</mainWindowState>
- <mainWindowGeometry>AdnQywADAAAAAAAAAAADogAAB38AAAgzAAAAAAAAA6IAAAd/AAAIMwAAAAAAAAAAB4AAAAAAAAADogAAB38AAAgz</mainWindowGeometry>
+ <mainWindowState>AAAA/wAAAAD9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAAAP////8AAACKAP///wAAAAEAAADeAAAEUPwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAAEIAAAFlAAAAYwD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAQAAAa0AAAFvAAAAYwD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAADIgAAAXAAAABjAP///wAAAtwAAARQAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAKo/////wAAAAAAAAAA</mainWindowState>
+ <mainWindowGeometry>AdnQywADAAAAAAPAAAADogAAB38AAAgzAAAAAAAAA6IAAAd/AAAIMwAAAAACAAAAB4AAAAPAAAADogAAB38AAAgz</mainWindowGeometry>
  <dictInfoGeometry></dictInfoGeometry>
  <inspectorGeometry>AdnQywADAAAAAAAAAAAAAAAAB38AAAQ3AAAEGwAAAMoAAAXcAAAB9QAAAAACAAAAB4AAAAAAAAAAJAAAB38AAAQ3</inspectorGeometry>
  <dictionariesDialogGeometry>AdnQywADAAAAAAEjAAAE4QAABlwAAAb0AAABIwAABOEAAAZcAAAG9AAAAAAAAAAAB4AAAAEjAAAE4QAABlwAAAb0</dictionariesDialogGeometry>

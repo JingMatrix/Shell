@@ -119,6 +119,7 @@ local lsp_servers = {
 	"vimls",
 	"racket_langserver",
 	"clangd",
+	-- "ccls",
 	"cmake",
 	"gopls",
 	"marksman",
@@ -134,23 +135,23 @@ for _, lsp in pairs(lsp_servers) do
 	})
 end
 
+lspconfig.jdtls.setup({
+	cmd = { "jdtls", "--validate-java-version", "-data", "/home/jing/.cache/jdtls/workspace" },
+})
+
 lspconfig.kotlin_language_server.setup({
-	on_attach = lsp_on_attach,
-	settings = { kotlin = { compiler = { jvm = { target = "20" } } } },
+	settings = { kotlin = { compiler = { jvm = { target = "21" } } } },
 })
 
 lspconfig.denols.setup({
-	on_attach = lsp_on_attach,
 	root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc", "deno.lock"),
 })
 
 lspconfig.tsserver.setup({
-	on_attach = lsp_on_attach,
 	root_dir = lspconfig.util.root_pattern("package.json", "tsconfig.json", "jsconfig.json"),
 })
 
 lspconfig.lua_ls.setup({
-	on_attach = lsp_on_attach,
 	settings = {
 		Lua = {
 			diagnostics = {
@@ -161,7 +162,6 @@ lspconfig.lua_ls.setup({
 })
 
 lspconfig.volar.setup({
-	on_attach = lsp_on_attach,
 	filetypes = { "vue" },
 	init_options = {
 		typescript = {
@@ -194,7 +194,7 @@ vim.g.markdown_fenced_languages = {
 local dap = require("dap")
 dap.adapters.lldb = {
 	type = "executable",
-	command = "/usr/bin/lldb-vscode-15", -- adjust as needed, must be absolute path
+	command = "/usr/bin/lldb-dap", -- adjust as needed, must be absolute path
 	name = "lldb",
 }
 dap.configurations.lua = {
@@ -343,12 +343,12 @@ lspconfig.ltex.setup({
 			ltex_settings.ltex.language = splited_args[1]
 			client.notify("workspace/didChangeConfiguration", { setings = ltex_settings })
 		end, {
-			nargs = 1,
-			complete = function(ArgLead, _, _)
-				return vim.tbl_filter(function(el)
-					return el:find(ArgLead, 1, true)
-				end, ltex_languages)
-			end,
-		})
+				nargs = 1,
+				complete = function(ArgLead, _, _)
+					return vim.tbl_filter(function(el)
+						return el:find(ArgLead, 1, true)
+					end, ltex_languages)
+				end,
+			})
 	end,
 })
