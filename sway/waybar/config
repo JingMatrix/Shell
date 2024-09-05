@@ -34,9 +34,8 @@
       "on-click" : "swaync-client -t"
     },
     "sway/language": {
-      "on-click": "swaymsg input type:keyboard xkb_switch_layout next",
+      "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
     },
-
     "clock": {
       "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
       "format-alt": "{:%d/%m/%Y}",
@@ -83,7 +82,7 @@
       "return-type": "json",
       "tooltip": "{tooltip}",
       "interval": 30,
-      "on-click": "gsconnect-preferences",
+      "on-click": "gsconnect-preferences"
     },
     "pulseaudio": {
       // "scroll-step": 1, // %, can be a float
@@ -104,7 +103,7 @@
       },
       "on-click": "pavucontrol",
       "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-      "on-click-middle": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+      "on-click-middle": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
   },
   "custom/media": {
     "format": "{icon} {}",

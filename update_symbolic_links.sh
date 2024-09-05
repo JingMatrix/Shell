@@ -69,6 +69,7 @@ if [[ -d $HOME/Documents/Project/qutebrowser ]]; then
 fi
 mkdir -p $HOME/.config/qutebrowser
 ln -sf $basedir/config/qutebrowser-config.py $HOME/.config/qutebrowser/config.py
+ln -sf $basedir/config/qutebrowser-pyconfig $HOME/.config/qutebrowser/pyconfig
 
 if [[ ! -f /etc/NetworkManager/dispatcher.d/wifi_login ]]; then
 	echo "Install wifi_login hook"

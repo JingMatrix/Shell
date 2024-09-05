@@ -2,25 +2,27 @@
 
 if [[ -d $HOME/.local/python/bin ]]; then
 	export PATH="$PATH:$HOME/.local/python/bin/"
-	export PYTHONPATH="$PYTHONPATH:$HOME/.local/python/lib/python3.11/site-packages/"
+	export PYTHONPATH="$PYTHONPATH:$HOME/.local/python/lib/python3.12/site-packages/"
 fi
 # exec 2> $HOME/log
 export GDK_BACKEND=wayland
 # for nnn, to detach previewer by default
 nohup /bin/zathura "$@" >/dev/null 2>&1 &
 
+SCREEN="HDMI-A"
+[[ "$(hostnamectl hostname)" == "enac.xyz" ]] && SCREEN="DP-4"
 # set -x
 if [[ -n $VIMRUNTIME && -n $SWAYSOCK ]]; then
 	typeset -a _args=($@)
 	title="${_args[-1]:t}"
 	if [[ -z "$(swaymsg -p -t get_workspaces | grep " $title")" ]]; then
-		[[ -z "$(swaymsg -p -t get_outputs | grep HDMI-A)" ]] &&
+		[[ -z "$(swaymsg -p -t get_outputs | grep $SCREEN)" ]] &&
 			[[ -z "$(swaymsg -p -t get_outputs | grep HEADLESS-1)" ]] && exit
 		# wait a bit of for Zathura window to appear
 		sleep 0.4
 		swaymsg "[app_id=org.pwmt.zathura title=$title]" \
 			fullscreen disable, move workspace " $title"
-		if [[ -n "$(swaymsg -p -t get_outputs | grep HDMI-A)" ]]; then
+		if [[ -n "$(swaymsg -p -t get_outputs | grep $SCREEN)" ]]; then
 			swaymsg workspace " $title"
 			swaymsg move workspace output "eDP-1"
 			sleep 0.3 && wtype s
