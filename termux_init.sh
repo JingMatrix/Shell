@@ -88,15 +88,15 @@ gem install colorls
 mkdir -p $HOME/.config/clash
 ln -sf $HOME/init/clash.yaml $HOME/.config/clash/config.yaml
 
-mkdir -p $HOME/Project
-pushd $HOME/Project
-[[ -e $HOME/Project/ZeroTierOne ]] || git clone --depth 10 https://github.com/JingMatrix/ZeroTierOne -b termux-build
-popd
-apt install -y cmake rust nlohmann-json binutils
-pushd $HOME/Project/ZeroTierOne
-make -j 2
-make install
-popd
+# mkdir -p $HOME/Project
+# pushd $HOME/Project
+# [[ -e $HOME/Project/ZeroTierOne ]] || git clone --depth 10 https://github.com/JingMatrix/ZeroTierOne -b termux-build
+# popd
+# apt install -y cmake rust nlohmann-json binutils
+# pushd $HOME/Project/ZeroTierOne
+# make -j 2
+# make install
+# popd
 
 go install mvdan.cc/sh/v3/cmd/shfmt@latest
 apt install -y ripgrep ninja lua-language-server
