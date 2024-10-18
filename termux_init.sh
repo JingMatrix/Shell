@@ -9,6 +9,7 @@ if [[ $USER == "jing" ]]; then
 	adb shell mkdir /sdcard/Download/init
 	adb push scripts/misàjour /sdcard/Download/init
 	adb push terminal/termux_wifirst /sdcard/Download/init
+	adb push terminal/wifirst.py /sdcard/Download/init
 	adb push terminal/termux_proxy /sdcard/Download/init
 	adb push nvim/init.vim /sdcard/Download/init
 	adb push nvim/markdown.snippets /sdcard/Download/init
@@ -20,7 +21,7 @@ if [[ $USER == "jing" ]]; then
 	adb push $HOME/.config/rclone/rclone.conf /sdcard/Download/
 	[[ -e /tmp/nvim.zip ]] || 7z a -xr'!.*' /tmp/nvim.zip $HOME/.local/share/nvim/site/pack/theme $HOME/.local/share/nvim/site/pack/plugin
 	adb push /tmp/nvim.zip /sdcard/Download/init
-	adb shell am start -n com.termux/.HomeActivity
+	adb shell am start -n com.termux/.HomeActivity || adb shell am start -n com.termux/.app.TermuxActivity
 	sleep 1
 	echo "Please allow storage access from the phone screen"
 	adb shell input text 'termux-setup-storage'
@@ -39,6 +40,7 @@ fi
 [[ -e storage/downloads/init ]] && mv storage/downloads/init $HOME
 chmod +x $HOME/init/*
 chmod -x $HOME/init/*.*
+chmod +x $HOME/init/*.py
 rm -rf $HOME/.local/share/nvim/
 mkdir -p $HOME/.local/share/nvim/site/pack
 command -v unzip && unzip $HOME/init/nvim.zip -d $HOME/.local/share/nvim/site/pack
@@ -66,7 +68,8 @@ popd
 
 mkdir -p $HOME/.local/bin
 ln -sf $HOME/init/.zshrc $HOME
-ln -sf $HOME/init/termux_wifirst $HOME/.local/bin/wifirst
+ln -sf $PREFIX/bin/python3 $HOME
+ln -sf $HOME/init/wifirst.py $HOME/.local/bin/wifirst
 ln -sf $HOME/init/termux_proxy $HOME/.local/bin/proxy
 ln -sf $HOME/init/misàjour $HOME/.local/bin/
 mkdir -p $HOME/.config/nvim/UltiSnips
@@ -88,15 +91,15 @@ gem install colorls
 mkdir -p $HOME/.config/clash
 ln -sf $HOME/init/clash.yaml $HOME/.config/clash/config.yaml
 
-mkdir -p $HOME/Project
-pushd $HOME/Project
-[[ -e $HOME/Project/ZeroTierOne ]] || git clone --depth 10 https://github.com/JingMatrix/ZeroTierOne -b termux-build
-popd
-apt install -y cmake rust nlohmann-json binutils
-pushd $HOME/Project/ZeroTierOne
-make -j 2
-make install
-popd
+# mkdir -p $HOME/Project
+# pushd $HOME/Project
+# [[ -e $HOME/Project/ZeroTierOne ]] || git clone --depth 10 https://github.com/JingMatrix/ZeroTierOne -b termux-build
+# popd
+# apt install -y cmake rust nlohmann-json binutils
+# pushd $HOME/Project/ZeroTierOne
+# make -j 2
+# make install
+# popd
 
 go install mvdan.cc/sh/v3/cmd/shfmt@latest
 apt install -y ripgrep ninja lua-language-server
