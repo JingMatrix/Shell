@@ -1,0 +1,56 @@
+Contents,10
+Preface,6
+d=11
+CHAPTER 1 Transition Functions and Resolvents,1
+	1. Markov Chains and Transition Functions: Definitions and Basic Properties,1
+	2. Differentiability Properties of Transition Functions and Significance of the Q-Matrix,8
+	3. Resolvent Functions and Their Properties,21
+	4. The Functional-Analytic Setting for Transition Functions and Resolvents,33
+	5. Feller Transition Functions,42
+	6. Kendall's Representation of Reversible Transition Functions,48
+	7. Appendix,54
+CHAPTER 2 Existence and Uniqueness of Q-Functions,61
+	1. Q-Functions and the Kolmogorov Backward and Forward Equations,61
+	2. Existence and Uniqueness of Q-Functions,67
+CHAPTER 3 Examples of Continuous-Time Markov Chains
+	1. Finite Markov Chains,92
+	2. Birth and Death Processes,96
+	3. Continuous Time Parameter Markov Branching Processes,113
+CHAPTER 4 More on the Uniqueness Problem,120
+	1. Laplace Transform Tools,120
+	2. Non-uniqueness-Construction of Q-Functions Other Than the Minimal One,138
+	3. Uniqueness-The Non-Conservative Case,148
+CHAPTER 5 Classification of States and Invariant Measures,155
+	1. Classification of States,155
+	2. Sub-invariant and Invariant Measures,166
+	3. Classification Based on the Q-Matrix,184
+	4. Determination ofInvariant Measures from the Q-Matrix,191
+CHAPTER 6 Strong and Exponential Ergodicity,204
+	1. The Ergodic Coefficient and Hitting Times,204
+	2. Ordinary Ergodicity,212
+	3. Strong Ergodicity,214
+	4. Geometric Ergodicity for Discrete Time Chains,217
+	5. The Croft-Kingman Lemmas,224
+	6. Exponential Ergodicity for Continuous-Time Chains,226
+CHAPTER 7 Reversibility, Monotonicity, and Other Properties,233
+	1. Symmetry and Reversibility,233
+	2. Exponential Families of Transition Functions,243
+	3. Stochastic Monotonicity and Comparability,246
+	4. Dual Processes,251
+	5. Coupling,254
+CHAPTER 8 Birth and Death Processes,261
+	1. The Potential Coefficients and Feller's Boundary Conditions,261
+	2. Karlin and McGregor's Representation Theorem and Duality,264
+	3. The Stieltjes Moment Problem,273
+	4. The Karlin-McGregor Method of Solution,280
+	5. Total Positivity ofthe Birth and Death Transition Function,288
+CHAPTER 9 Population Processes,292
+	1. Upwardly Skip-Free Processes,292
+	2. Extinction Times and Probability of Extinction for Upwardly Skip-Free Processes,298
+	3. Multidimensional Population Processes,307
+	4. Two-Dimensional Competition Processes,317
+	5. Birth, Death, and Migration Processes,330
+Bibliography,333
+Symbol Index,347
+Author Index,349
+Subject Index,351

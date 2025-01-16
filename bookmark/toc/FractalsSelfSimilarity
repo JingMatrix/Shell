@@ -1,0 +1,32 @@
+  1. Introduction,2
+  2. Preliminaries,3
+  	2.1. Sequences of Integers,3
+  	2.2. Maps in Metric Spaces,4
+  	2.3. Similitudes,4
+  	2.4. Hausdorff Metric,6
+  	2.5. Measures,6
+  	2.6. Hausdorff Measure,7
+  	2.7. Geometric Measure Theory,8
+  3. Invariant Sets,10
+  	3.1. Elementary Proof of Existence and Uniqueness, and Discussion of Properties,10
+  	3.2. Convergence in the Hausdorff Metric,12
+  	3.3. Examples,13
+  	3.4. Remark,14
+  	3.5. Parametrised Curves,14
+  4. Invariant Measures,15
+  	4.1. Motivation,15
+  	4.2. Definitions,16
+  	4.3. The L metric,16
+  	4.4. Existence and Uniqueness,16
+  	4.5. Different Sets of Similitudes Generating the Same Set,17
+  5. Similitudes,18
+  	5.1. Self-Similar Sets,18
+  	5.2. Open Set Condition,18
+  	5.3. Existence of Self Similar Sets,19
+  	5.4. Purely Unrectifiable Sets,21
+  	5.5. Parameter Space,24
+  6. Integral Flat Chains,24
+  	6.1. The F-metric,24
+  	6.2. The C-metric,25
+  	6.3. Invariant Chains,26
+  References,27
