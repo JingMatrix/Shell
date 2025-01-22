@@ -136,10 +136,12 @@ for _, lsp in pairs(lsp_servers) do
 end
 
 lspconfig.jdtls.setup({
+	on_attach = lsp_on_attach,
 	cmd = { "jdtls", "--validate-java-version", "-data", "/home/jing/.cache/jdtls/workspace" },
 })
 
 lspconfig.kotlin_language_server.setup({
+	on_attach = lsp_on_attach,
 	settings = { kotlin = { compiler = { jvm = { target = "21" } } } },
 })
 

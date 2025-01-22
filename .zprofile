@@ -34,11 +34,14 @@ if [[ -z $DBUS_SESSION_BUS_ADDRESS ]]; then
 fi
 
 # export $(gnome-keyring-daemon --start --components=ssh)
-if [[ -d /usr/local/texlive ]]; then
-	export PATH="$PATH:/usr/local/go/bin"
-	export PATH="$PATH:/usr/local/texlive/2023/bin/x86_64-linux"
-	export PATH="$PATH:$HOME/.local/google-cloud-sdk/bin"
-	export PATH="$PATH:/opt/gradle/gradle-8.1.1/bin"
-	export DENO_INSTALL="/home/jing/.deno"
-	export PATH="$PATH:$DENO_INSTALL/bin:"
+if [[ $USER == jing ]]; then
+	pyenv=$HOME/.local/python/bin/pip3
+	if [[ -e $pyenv ]]; then
+		alias pip=$pyenv
+		alias pyenv=$HOME/.local/python/bin/python3
+		export PATH="$HOME/.local/python/bin:$PATH"
+		export PYTHONPATH="$PYTHONPATH:$HOME/.local/python/lib/python3.13/site-packages/"
+	else
+		alias pip=pip3
+	fi
 fi

@@ -118,15 +118,6 @@ if [[ $USER == jing ]]; then
 	export JDTLS_HOME=$HOME/Archives/Data/jdtls
 	export KALDI_ROOT=$HOME/Documents/Project/kaldi
 	alias icat="kitty +kitten icat"
-	pyenv=$HOME/.local/python/bin/pip3
-	if [[ -e $pyenv ]]; then
-		alias pip=$pyenv
-		alias pyenv=$HOME/.local/python/bin/python3
-		export PATH="$PATH:$HOME/.local/python/bin/"
-		export PYTHONPATH="$PYTHONPATH:$HOME/.local/python/lib/python3.12/site-packages/"
-	else
-		alias pip=pip3
-	fi
 	alias msfconsole="TERM=xterm-256color msfconsole"
 	alias luamake=$HOME/Documents/Project/lua-language-server/3rd/luamake/luamake
 	unalias gradle
