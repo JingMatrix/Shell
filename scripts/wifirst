@@ -41,7 +41,7 @@ if [ $? -eq 0 ]; then
 		--compressed | /bin/grep -o -P 'code=\K\d')
 	if [ ${error_code:-0} -eq 2 ]; then
 		# notify-send "Wifi fails with code $error_code" "Attempt to change the mac address"
-		dev=$(/bin/ip link | /bin/grep -o -P 'wl[^:]+')
+		dev=$(/bin/ip link | /bin/grep -o -P 'wlp[^:]+')
 		sudo /bin/ip link set $dev down
 		sudo /bin/macchanger -r $dev
 		sudo /bin/ip link set $dev up

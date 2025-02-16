@@ -38,7 +38,7 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
                     break
                 except:
                     time.sleep(2)
-            login_wifirst()
+            hack_wifirst()
         return None
 
 
