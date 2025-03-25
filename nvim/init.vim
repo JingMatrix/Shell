@@ -109,7 +109,7 @@ let g:suda_smart_edit=0
 augroup formatter
 	autocmd!
 	autocmd FileType sh,zsh,bash setl formatprg=shfmt\ -ln\ bash\ -filename\ %
-	autocmd FileType python setl formatprg=yapf
+	autocmd FileType python setl formatprg=autopep8\ --aggressive\ --aggressive\ -
 	autocmd FileType cpp setl formatprg=clang-format
 	autocmd FileType lua setl formatprg=stylua\ -\ -
 	autocmd FileType tex,bib setl formatprg=latexindent\ -m\ -c=/tmp/

@@ -265,60 +265,60 @@ require("dapui").setup({
 -- ltex config
 --
 local ltex_languages = {
-	"auto",
-	"ar",
-	"ast-ES",
-	"be-BY",
-	"br-FR",
-	"ca-ES",
-	"ca-ES-valencia",
-	"da-DK",
-	"de",
-	"de-AT",
-	"de-CH",
-	"de-DE",
-	"de-DE-x-simple-language",
-	"el-GR",
-	"en",
-	"en-AU",
-	"en-CA",
-	"en-GB",
-	"en-NZ",
+	-- "auto",
+	-- "ar",
+	-- "ast-ES",
+	-- "be-BY",
+	-- "br-FR",
+	-- "ca-ES",
+	-- "ca-ES-valencia",
+	-- "da-DK",
+	-- "de",
+	-- "de-AT",
+	-- "de-CH",
+	-- "de-DE",
+	-- "de-DE-x-simple-language",
+	-- "el-GR",
+	-- "en",
+	-- "en-AU",
+	-- "en-CA",
+	-- "en-GB",
+	-- "en-NZ",
 	"en-US",
-	"en-ZA",
-	"eo",
-	"es",
-	"es-AR",
-	"fa",
+	-- "en-ZA",
+	-- "eo",
+	-- "es",
+	-- "es-AR",
+	-- "fa",
 	"fr",
-	"ga-IE",
-	"gl-ES",
-	"it",
-	"ja-JP",
-	"km-KH",
-	"nl",
-	"nl-BE",
-	"pl-PL",
-	"pt",
-	"pt-AO",
-	"pt-BR",
-	"pt-MZ",
-	"pt-PT",
-	"ro-RO",
-	"ru-RU",
-	"sk-SK",
-	"sl-SI",
-	"sv",
-	"ta-IN",
-	"tl-PH",
-	"uk-UA",
+	-- "ga-IE",
+	-- "gl-ES",
+	-- "it",
+	-- "ja-JP",
+	-- "km-KH",
+	-- "nl",
+	-- "nl-BE",
+	-- "pl-PL",
+	-- "pt",
+	-- "pt-AO",
+	-- "pt-BR",
+	-- "pt-MZ",
+	-- "pt-PT",
+	-- "ro-RO",
+	-- "ru-RU",
+	-- "sk-SK",
+	-- "sl-SI",
+	-- "sv",
+	-- "ta-IN",
+	-- "tl-PH",
+	-- "uk-UA",
 	"zh-CN",
 }
 
 local ltex_settings = {
 	ltex = {
 		enabled = { "markdown", "latex", "mail", "gitcommit" },
-		language = "auto",
+		language = "en-US",
 		additionalRules = {
 			motherTongue = "zh-CN",
 		},
@@ -335,22 +335,22 @@ lspconfig.ltex.setup({
 		-- ltex_settings.ltex.language = fr
 		-- end
 		lsp_on_attach(client, bufnr)
-		require("ltex_extra").setup({
-			load_langs = { "en-US", "fr", "zh-CN" },
-			init_check = true,
-			path = vim.fn.stdpath("config") .. "/spell/ltex",
-		})
+		-- require("ltex_extra").setup({
+		-- 	load_langs = { "en-US", "fr", "zh-CN" },
+		-- 	init_check = true,
+		-- 	path = vim.fn.stdpath("config") .. "/spell/ltex",
+		-- })
 		vim.api.nvim_create_user_command("LtexSwitchLang", function(args)
 			local splited_args = vim.split(args.args, " ", { trimemtpy = true })
 			ltex_settings.ltex.language = splited_args[1]
 			client.notify("workspace/didChangeConfiguration", { setings = ltex_settings })
 		end, {
-				nargs = 1,
-				complete = function(ArgLead, _, _)
-					return vim.tbl_filter(function(el)
-						return el:find(ArgLead, 1, true)
-					end, ltex_languages)
-				end,
-			})
+			nargs = 1,
+			complete = function(ArgLead, _, _)
+				return vim.tbl_filter(function(el)
+					return el:find(ArgLead, 1, true)
+				end, ltex_languages)
+			end,
+		})
 	end,
 })
