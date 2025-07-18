@@ -1,0 +1,67 @@
+Contents,8
+Acknowledgments,7
+Introduction,10
+About This Book,14
+d=15
+1 Cardinal and Ordinal Numbers,1
+	1.1 Countable Sets,1
+	1.2 Order of Inﬁnity,4
+	1.3 The Axiom of Choice,7
+	1.4 More on Equinumerosity,11
+	1.5 Arithmetic of Cardinal Numbers,13
+	1.6 Well-Ordered Sets,15
+	1.7 Transﬁnite Induction,18
+	1.8 Ordinal Numbers,21
+	1.9 Alephs,24
+	1.10 Trees,26
+	1.11 Induction on Trees,29
+	1.12 The Souslin Operation,31
+	1.13 Idempotence of the Souslin Operation,34
+d=14
+2 Topological Preliminaries,39
+	2.1 Metric Spaces,39
+	2.2 Polish Spaces,52
+	2.3 Compact Metric Spaces,57
+	2.4 More Examples,63
+		2.5 The Baire Category Theorem,69
+		2.6 Transfer Theorems,74
+d=13
+3 Standard Borel Spaces,81
+	3.1 Measurable Sets and Functions,81
+	3.2 Borel-Generated Topologies,91
+	3.3 The Borel Isomorphism Theorem,94
+	3.4 Measures,100
+	3.5 Category,107
+	3.6 Borel Pointclasses,115
+d=12
+4 Analytic and Coanalytic Sets,127
+	4.1 Projective Sets,127
+	4.2 Σ^1_1 and Π^1_1 Complete Sets,135
+	4.3 Regularity Properties,141
+	4.4 The First Separation Theorem,147
+	4.5 One-to-One Borel Functions,150
+	4.6 The Generalized First Separation Theorem,155
+	4.7 Borel Sets with Compact Sections,157
+	4.8 Polish Groups,160
+	4.9 Reduction Theorems,164
+	4.10 Choquet Capacitability Theorem,172
+	4.11 The Second Separation Theorem,175
+	4.12 Countable-to-One Borel Functions,178
+5 Selection and Uniformization Theorems,183
+	5.1 Preliminaries,184
+	5.2 Kuratowski and Ryll-Nardzewski’s Theorem,189
+	5.3 Dubins – Savage Selection Theorems,194
+	5.4 Partitions into Closed Sets,195
+	5.5 Von Neumann’s Theorem,198
+	5.6 A Selection Theorem for Group Actions,200
+	5.7 Borel Sets with Small Sections,204
+	5.8 Borel Sets with Large Sections,206
+	5.9 Partitions into Gδ Sets,212
+	5.10 Reﬂection Phenomenon,216
+	5.11 Complementation in Borel Structures,218
+	5.12 Borel Sets with σ-Compact Sections,219
+	5.13 Topological Vaught Conjecture,227
+	5.14 Uniformizing Coanalytic Sets,236
+References,241
+Glossary,251
+Index,253

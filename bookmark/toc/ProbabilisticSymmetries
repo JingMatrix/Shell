@@ -1,0 +1,90 @@
+Preface,5
+Contents,9
+d=11
+Introduction,1
+1. The Basic Symmetries,24
+	1.1. Inﬁnite sequences,24
+	1.2. Finite sequences,30
+	1.3. Continuous-time symmetries,35
+	1.4. Inﬁnite-interval processes,43
+	1.5. Measures on a ﬁnite interval,46
+	1.6. Simple or diﬀuse random measures,52
+	1.7. Rotations and Lp -symmetries,57
+	1.8. Miscellaneous complements,66
+2. Conditioning and Martingales,69
+	2.1. Contractable sequences,69
+	2.2. Continuous-time symmetries,75
+	2.3. Semi-martingale criteria,83
+	2.4. Further criteria and representation,90
+	2.5. Norm relations and regularity,95
+	2.6. Path properties,103
+	2.7. Palm measure invariance,111
+3. Convergence and Approximation,125
+	3.1. Discrete-time case,125
+	3.2. Random measures,129
+	3.3. Exchangeable processes,136
+	3.4. Approximation and representation,143
+	3.5. Restriction and extension,149
+	3.6. Coupling and path properties,155
+	3.7. Sub-sequence principles,162
+4. Predictable Sampling and Mapping,169
+	4.1. Skipping and sampling,169
+	4.2. Gauss and Poisson reduction,173
+	4.3. Predictable mapping,176
+	4.4. Predictable contraction,185
+	4.5. Brownian and stable invariance,189
+	4.6. Mapping of optional times,200
+5. Decoupling Identities,209
+	5.1. Integrability and norm estimates,209
+	5.2. Exchangeable sums,216
+	5.3. Martingale representations,223
+	5.4. Exchangeable integrals,229
+	5.5. Lévy integrals,233
+	5.6. Contractable sums and integrals,240
+	5.7. Predictable sampling revisited,249
+6. Homogeneity and Reﬂections,255
+	6.1. Symmetries and dichotomies,255
+	6.2. Local homogeneity,261
+	6.3. Reﬂection invariance,268
+	6.4. Local time and intensity,271
+	6.5. Exponential and uniform sampling,279
+	6.6. Hitting points and intervals,285
+	6.7. Markov properties,290
+	6.8. Homogeneity and independence,294
+7. Symmetric Arrays,300
+	7.1. Notation and basic symmetries,300
+	7.2. Coupling, extension, and independence,305
+	7.3. Coding and inversion,310
+	7.4. Contractable arrays,318
+	7.5. Exchangeable arrays,325
+	7.6. Equivalence criteria,328
+	7.7. Conditional distributions,335
+	7.8. Symmetric partitions,342
+8. Multi-variate Rotations,350
+	8.1. Rotational symmetries,350
+	8.2. Gaussian and rotatable processes,356
+	8.3. Functionals on a product space,359
+	8.4. Preliminaries for rotatable arrays,363
+	8.5. Separately rotatable arrays and functionals,370
+	8.6. Jointly rotatable functionals,378
+	8.7. Jointly rotatable arrays,384
+	8.8. Separately exchangeable sheets,391
+	8.9. Jointly exchangeable or contractable sheets,395
+9. Symmetric Measures in the Plane,401
+	9.1. Notions of invariance,401
+	9.2. General prerequisites,405
+	9.3. Symmetries on a square,411
+	9.4. Symmetry on a strip,416
+	9.5. Technical preparation,422
+	9.6. Symmetries on a quadrant,432
+Appendices,440
+	A1. Decomposition and selection,440
+	A2. Weak convergence,445
+	A3. Multiple stochastic integrals,449
+	A4. Complete monotonicity,457
+	A5. Palm and Papangelou kernels,459
+Historical and Bibliographical Notes,464
+Bibliography,477
+Author Index,497
+Subject Index,501
+Symbol Index,509

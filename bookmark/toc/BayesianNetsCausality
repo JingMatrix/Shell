@@ -1,0 +1,111 @@
+Acknowledgements,7
+Contents,8
+d=11
+1 Introduction,1
+	1.1 Philosophical Claims,1
+	1.2 Computational Claims,2
+2 Probability,4
+	2.1 Variables,4
+	2.2 Probability Functions,5
+	2.3 Interpretations and Distinctions,7
+	2.4 Frequency,7
+	2.5 Propensity,9
+	2.6 Chance,10
+	2.7 Bayesianism,11
+	2.8 Chance as Ultimate Belief,12
+	2.9 Applying Probability,13
+3 Bayesian Nets,14
+	3.1 Bayesian Networks,14
+	3.2 Independence and D-Separation,16
+	3.3 Representing Probability Functions,17
+	3.4 Inference in Bayesian Nets,20
+	3.5 Constructing Bayesian Nets,21
+	3.6 The Adding-Arrows Algorithm,24
+	3.7 Adding Arrows: an Example,26
+	3.8 The Approximation Subspace,30
+	3.9 Greed of Adding Arrows,38
+	3.10 Complexity of Adding Arrows,43
+	3.11 The Case for Adding Arrows,48
+4 Causal Nets: Foundational Problems,49
+	4.1 Causally Interpreted Bayesian Nets,49
+	4.2 Physical Causality, Physical Probability,51
+	4.3 Mental Causality, Physical Probability,57
+	4.4 Physical Causality, Mental Probability,62
+	4.5 Mental Causality, Mental Probability,63
+5 Objective Bayesianism,65
+	5.1 Objective versus Subjective,65
+	5.2 The Origins of Objective Bayesianism,66
+	5.3 Empirical Constraints: The Calibration Principle,70
+	5.4 Logical Constraints: The Maximum Entropy Principle,79
+	5.5 Maximising Entropy Eﬃciently,84
+	5.6 From Constraints to Markov Network,86
+	5.7 From Markov to Bayesian Network,89
+	5.8 Causal Constraints,95
+6 Two-Stage Bayesian Nets,107
+	6.1 Causal Nets Maximise Entropy,107
+	6.2 Reﬁning Bayesian Nets,108
+	6.3 A Two-Stage Methodology,108
+7 Causality,110
+	7.1 Metaphysics of Causality,110
+	7.2 Mechanisms,111
+	7.3 Probabilistic Causality,112
+	7.4 Counterfactuals,115
+	7.5 Agency,116
+8 Discovering Causal Relationships,118
+	8.1 Epistemology of Causality,118
+	8.2 Hypothetico-Deductive Discovery,118
+	8.3 Inductive Learning,120
+	8.4 Constraint-Based Induction,123
+	8.5 Bayesian Induction,125
+	8.6 Information-Theoretic Induction,125
+	8.7 Shafer’s Causal Conjecturing,127
+	8.8 The Devil and the Deep Blue Sea,129
+9 Epistemic Causality,130
+	9.1 Mental yet Objective,130
+	9.2 Kant,131
+	9.3 Ramsey,133
+	9.4 The Convenience of Causality,135
+	9.5 Causal Beliefs,138
+	9.6 Special Cases,140
+	9.7 Uniqueness and Objectivity,143
+	9.8 Causal Knowledge,146
+	9.9 Discovering Causal Relationships: A Synthesis,148
+	9.10 The Analogy with Objective Bayesianism,150
+10 Recursive Causality,152
+	10.1 Overview,152
+	10.2 Causal Relations as Causes,152
+	10.3 Extension to Recursive Causality,155
+	10.4 Consistency,157
+	10.5 Joint Distributions,165
+	10.6 Related Proposals,169
+	10.7 Structural Equation Models,171
+	10.8 Argumentation Networks,172
+11 Logic,175
+	11.1 Overview,175
+	11.2 Propositional Logic,175
+	11.3 Bayesian Nets for Logical Reasoning,176
+	11.4 Inﬂuence Relations,177
+	11.5 Recursive Logical Nets,180
+	11.6 The Eﬀectiveness of Logical Nets,181
+	11.7 Logic Programming and Logical Nets,183
+	11.8 Logical Constraints and Logical Beliefs,185
+	11.9 Probability Logic,186
+	11.10 Partial Entailment,187
+	11.11 Semantics for Probability Logic,191
+	11.12 Deciding Probabilistic Entailment,192
+12 Language Change,194
+	12.1 Two Problems of Belief Change,194
+	12.2 Language Contains Implicit Knowledge,196
+	12.3 Goodman’s New Problem of Induction,197
+	12.4 The Principle of Indiﬀerence,199
+	12.5 Indirect Evidence,200
+	12.6 Types of Language Change,201
+	12.7 Conservativity,202
+	12.8 Prospects for a Solution,207
+	12.9 Language Change Update Strategies,208
+	12.10 The Maximin Update Strategy,209
+	12.11 Cross Entropy Updating of Bayesian Nets,211
+	12.12 Compatibility and Indirect Evidence,216
+	12.13 The Maxent Update Strategy,217
+References,219
+Index,235
