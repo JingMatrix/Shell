@@ -6,7 +6,6 @@ import typing
 from qutebrowser.api import interceptor, message
 
 REDIRECT_MAP = {
-    "reader.epubee.com": operator.methodcaller('setHost', 'reader.obook.vip'),
     "doi.org": operator.methodcaller('setHost', 'sci-hub.se'),
 }  # type: typing.Dict[str, typing.Callable[..., typing.Optional[bool]]]
 

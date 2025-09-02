@@ -113,6 +113,7 @@ augroup formatter
 	autocmd FileType cpp setl formatprg=clang-format
 	autocmd FileType lua setl formatprg=stylua\ -\ -
 	autocmd FileType tex,bib setl formatprg=latexindent\ -m\ -c=/tmp/
+	autocmd FileType java setl formatexpr= | let &l:formatprg = 'palantir-java-format - --aosp --assume-filename ' . expand('%:t')
 	autocmd FileType javascript,typescript,html,vue,markdown,css,xhtml,scss setl formatexpr= | let &l:formatprg = 'prettier --stdin-filepath ' . expand('%:p') " . ' --parser '.expand(&filetype)
 	autocmd FileType json,jsonc setl formatprg=jq\ '.'
 augroup END

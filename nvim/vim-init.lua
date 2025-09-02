@@ -113,40 +113,26 @@ end
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
 local lsp_servers = {
-	-- "jedi_language_server",
-	-- "pyright",
 	"pylsp",
 	"vimls",
-	"racket_langserver",
 	"clangd",
-	-- "ccls",
 	"cmake",
 	"gopls",
 	"marksman",
 	"tailwindcss",
 	"rust_analyzer",
-	"solargraph",
-	-- Java language server, consider nvim-jdtls when needed
 	"jdtls",
 }
+
 for _, lsp in pairs(lsp_servers) do
 	lspconfig[lsp].setup({
 		on_attach = lsp_on_attach,
 	})
 end
 
-lspconfig.jdtls.setup({
-	on_attach = lsp_on_attach,
-	cmd = { "jdtls", "--validate-java-version", "-data", "/home/jing/.cache/jdtls/workspace" },
-})
-
 lspconfig.kotlin_language_server.setup({
 	on_attach = lsp_on_attach,
 	settings = { kotlin = { compiler = { jvm = { target = "21" } } } },
-})
-
-lspconfig.denols.setup({
-	root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc", "deno.lock"),
 })
 
 -- lspconfig.tsserver.setup({

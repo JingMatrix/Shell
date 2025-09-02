@@ -1,6 +1,7 @@
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 export GLFW_IM_MODULE=ibus
+export GTK_IM_MODULE=fcitx5
 
 export GTK_THEME=Adwaita:dark
 

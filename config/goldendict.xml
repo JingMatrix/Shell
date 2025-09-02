@@ -80,7 +80,9 @@
    <dictionary name="GrandRobert">7f8e1d5ef992e33ef02f7cf2a701d4a5</dictionary>
    <dictionary name="Trans zh-CN:fr">f390c2f051a66fcfbb83e42a548a9d4b</dictionary>
    <dictionary name="Français Morphologie">d4283c8076c9c5c2cf6d034d8c3369c5</dictionary>
-   <mutedDictionaries/>
+   <mutedDictionaries>
+    <popupMutedDictionary>1f821892b86d2b1cfecc3940fd159168</popupMutedDictionary>
+   </mutedDictionaries>
   </group>
   <group id="10" name="Es local">
    <dictionary name="Trans audio es">bc51823fd5521dc4a0de67838024e268</dictionary>
@@ -130,9 +132,6 @@
   </chinese>
   <romaji>
    <enable>0</enable>
-   <enableHepburn>1</enableHepburn>
-   <enableNihonShiki>0</enableNihonShiki>
-   <enableKunreiShiki>0</enableKunreiShiki>
    <enableHiragana>1</enableHiragana>
    <enableKatakana>1</enableKatakana>
   </romaji>
@@ -188,6 +187,7 @@
  <preferences>
   <interfaceLanguage>fr_FR</interfaceLanguage>
   <interfaceFont>Noto Sans</interfaceFont>
+  <interfaceFontSize_0>12</interfaceFontSize_0>
   <customFonts monospace="DejaVu Sans Mono" sans-serif="Noto Sans" serif="Noto Serif" standard="Noto Serif"/>
   <displayStyle>modern</displayStyle>
   <interfaceStyle>Default</interfaceStyle>
@@ -208,7 +208,6 @@
   <darkReaderMode>0</darkReaderMode>
   <zoomFactor>1.9</zoomFactor>
   <helpZoomFactor>1.4</helpZoomFactor>
-  <wordsZoomLevel>0</wordsZoomLevel>
   <enableMainWindowHotkey>0</enableMainWindowHotkey>
   <mainWindowHotkey>Shift+F1</mainWindowHotkey>
   <enableClipboardHotkey>0</enableClipboardHotkey>
@@ -241,8 +240,6 @@
    <port>3128</port>
    <user></user>
    <password></password>
-   <systemProxyUser></systemProxyUser>
-   <systemProxyPassword></systemProxyPassword>
   </proxyserver>
   <ankiConnectServer enabled="0">
    <host>127.0.0.1</host>
@@ -259,6 +256,7 @@
   <maxNetworkCacheSize>50</maxNetworkCacheSize>
   <clearNetworkCacheOnExit>1</clearNetworkCacheOnExit>
   <removeInvalidIndexOnExit>0</removeInvalidIndexOnExit>
+  <enableApplicationLog>0</enableApplicationLog>
   <maxStringsInHistory>500</maxStringsInHistory>
   <storeHistory>1</storeHistory>
   <alwaysExpandOptionalParts>0</alwaysExpandOptionalParts>
@@ -280,24 +278,23 @@
    <parallelThreads>5</parallelThreads>
   </fullTextSearch>
  </preferences>
- <lastMainGroupId>6</lastMainGroupId>
+ <lastMainGroupId>7</lastMainGroupId>
  <lastPopupGroupId>6</lastPopupGroupId>
- <popupWindowState>AAAA/wAAAAD9AAAAAAAAAAAAAAAAAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAQAAAAEAAAAaAGQAaQBjAHQAaQBvAG4AYQByAHkAQgBhAHIDAAAAAP////8AAAAAAAAAAA==</popupWindowState>
- <popupWindowGeometry>AdnQywADAAAAAAI7AAADnQAABWoAAAXvAAACOwAAA50AAAVqAAAF7wAAAAAAAAAAB4AAAAI7AAADnQAABWoAAAXv</popupWindowGeometry>
+ <popupWindowState2>AAAA/wAAAAD9AAAAAAAAA5gAAARKAAAABAAAAAQAAAAIAAAACPwAAAADAAAAAQAAAAEAAAAkAHAAbwBwAHUAcABOAGEAdgBnAGkAYQB0AGkAbwBuAEIAYQByAwAAAAD/////AAAAAAAAAAAAAAACAAAAAgAAABwAcABvAHAAdQBwAFMAZQBhAHIAYwBoAEIAYQByAQAAAAD/////AAAAAAAAAAAAAAAYAHAAbwBwAHUAcABUAG8AbwBsAEIAYQByAQAAAQH/////AAAAAAAAAAAAAAACAAAAAQAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAAA/////wAAAAAAAAAA</popupWindowState2>
+ <popupWindowGeometry2>AdnQywADAAAAAAPAAAAAHgAAB38AAASvAAABGwAAAA8AAATaAAAEoAAAAAACAAAAB4AAAAPAAAAAHgAAB38AAASv</popupWindowGeometry2>
  <pinPopupWindow>0</pinPopupWindow>
  <popupWindowAlwaysOnTop>0</popupWindowAlwaysOnTop>
- <mainWindowState>AAAA/wAAAAD9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAAAP////8AAACKAP///wAAAAEAAADeAAAEUPwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAAEIAAAFlAAAAYwD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAQAAAa0AAAFvAAAAYwD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAADIgAAAXAAAABjAP///wAAAtwAAARQAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAKo/////wAAAAAAAAAA</mainWindowState>
- <mainWindowGeometry>AdnQywADAAAAAAPAAAADogAAB38AAAgzAAAAAAAAA6IAAAd/AAAIMwAAAAACAAAAB4AAAAPAAAADogAAB38AAAgz</mainWindowGeometry>
+ <mainWindowState>AAAA/wAAAAD9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAAAP////8AAACKAP///wAAAAEAAAC0AAAEUPwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAAEIAAAFlAAAAYwD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAQAAAa0AAAFvAAAAYwD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAADIgAAAXAAAABjAP///wAAAwYAAARQAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAKo/////wAAAAAAAAAA</mainWindowState>
+ <mainWindowGeometry>AdnQywADAAAAAAPAAAAAHgAAB38AAASvAAADwAAAAB4AAAd/AAAErwAAAAAAAAAAB4AAAAPAAAAAHgAAB38AAASv</mainWindowGeometry>
  <dictInfoGeometry></dictInfoGeometry>
  <inspectorGeometry>AdnQywADAAAAAAAAAAAAAAAAB38AAAQ3AAAEGwAAAMoAAAXcAAAB9QAAAAACAAAAB4AAAAAAAAAAJAAAB38AAAQ3</inspectorGeometry>
  <dictionariesDialogGeometry>AdnQywADAAAAAAEjAAAE4QAABlwAAAb0AAABIwAABOEAAAZcAAAG9AAAAAAAAAAAB4AAAAEjAAAE4QAABlwAAAb0</dictionariesDialogGeometry>
  <timeForNewReleaseCheck>2020-09-13T00:16:06</timeForNewReleaseCheck>
  <skippedRelease></skippedRelease>
  <showingDictBarNames>0</showingDictBarNames>
- <usingSmallIconsInToolbars>0</usingSmallIconsInToolbars>
+ <usingToolbarsIconSize>1</usingToolbarsIconSize>
  <resourceSavePath>/home/jing/Images</resourceSavePath>
  <articleSavePath>/home/jing/Téléchargements</articleSavePath>
- <editDictionaryCommandLine></editDictionaryCommandLine>
  <maxHeadwordSize>256</maxHeadwordSize>
  <maxHeadwordsToExpand>0</maxHeadwordsToExpand>
  <headwordsDialog>

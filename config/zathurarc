@@ -36,3 +36,6 @@ set window-height 1080
 set selection-notification false
 set page-padding 0
 set scroll-step 100
+
+
+set first-page-column 2:2

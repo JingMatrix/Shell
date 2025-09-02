@@ -1,13 +1,16 @@
 [Default Applications]
 application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
-x-scheme-handler/http=org.qutebrowser.qutebrowser.desktop
-x-scheme-handler/https=org.qutebrowser.qutebrowser.desktop
+x-scheme-handler/http=google-chrome-unstable.desktop
+x-scheme-handler/https=google-chrome-unstable.desktop
 inode/directory=nnn.desktop
 image/jpeg=kitty-open.desktop
 image/png=kitty-open.desktop
 application/json=nvim.desktop
 application/epub+zip=sigil.desktop;
 image/vnd.djvu=org.pwmt.zathura-djvu.desktop;
+text/html=google-chrome-unstable.desktop
+x-scheme-handler/about=google-chrome-unstable.desktop
+x-scheme-handler/unknown=google-chrome-unstable.desktop
 
 [Added Associations]
 x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;

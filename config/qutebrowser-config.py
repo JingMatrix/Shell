@@ -16,7 +16,7 @@ config.bind('ce', 'config-edit')
 # config.bind('O', 'spawn --userscript qutedmenu tab')
 config.bind('<Ctrl+p>',
             'config-cycle -t content.proxy socks://localhost:9050/ none')
-# config.bind('<Ctrl+r>', 'config-cycle colors.webpage.darkmode.enabled ;; restart')
+config.bind('<Ctrl+r>', 'config-cycle colors.webpage.darkmode.enabled true false')
 config.bind('zo', 'set-cmd-text :open file:///home/jing/')
 
 c.zoom.default = '150%'
@@ -64,7 +64,7 @@ c.input.insert_mode.auto_load = True
 
 c.qt.force_platform = 'wayland'
 c.qt.args = [
-    'widevine-path=/opt/google/chrome/WidevineCdm/_platform_specific/linux_x64/libwidevinecdm.so',
+    'widevine-path=/usr/lib/qt6/plugins/ppapi/libwidevinecdm.so',
     # Better to Give up, it is not working for flash
     # 'no-sandbox',
     # 'register-pepper-plugins=/home/jing/.local/lib/adobe-flashplugin/libpepflashplayer.so;application/x-shockwave-flash',
