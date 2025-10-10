@@ -1,17 +1,110 @@
 #!/bin/env python3
 
-import sched, time
+import sched
+import time
 import urllib.request
-import os, json
+import os
+import sys
+import subprocess
+import re
+import json
 
 success_url = "https://www.google.fr"
 error_url = "https://portal-front.wifirst.net"
 
 
 def reset_mac():
-    if os.getlogin() == "jing":
+    if sys.platform.lower() == 'win32':
+        profile_name = None
+        xml_filename = None
+
+        try:
+            # Step 1: Find the profile name of the current Wi-Fi network
+            result = subprocess.run(
+                ['netsh', 'wlan', 'show', 'interfaces'],
+                capture_output=True, text=True, check=True, encoding='utf-8',
+                errors='ignore'
+            )
+            profile_match = re.search(r"Profile\s+:\s(.*)", result.stdout)
+
+            if not profile_match or not profile_match.group(1).strip():
+                print(
+                    "Could not find an active Wi-Fi profile.")
+                return
+
+            profile_name = profile_match.group(1).strip()
+            # Sanitize filename, although netsh handles this well.
+            safe_profile_name = re.sub(r'[<>:"/\\|?*]', '', profile_name)
+            xml_filename = f"Wi-Fi-{safe_profile_name}.xml"
+            print(f"Found active Wi-Fi profile: '{profile_name}'")
+
+            # Step 2: Export the current profile to an XML file
+            print(f"Exporting profile to '{xml_filename}'...")
+            command = f"netsh wlan export profile name=\"{profile_name}\""
+            if os.system(command) != 0:
+                print(f"Error: Failed to export profile '{profile_name}'.")
+                return
+
+            # Step 3: Modify the randomizationSeed in the XML file
+            print("Modifying randomizationSeed...")
+            with open(xml_filename, 'r', encoding='utf-8') as f:
+                xml_content = f.read()
+
+            new_seed = str(int(time.time()))
+
+            # Use regex to find and replace the seed value safely
+            updated_content, replacements = re.subn(
+                r'(<randomizationSeed>)\d+(</randomizationSeed>)',
+                rf'\g<1>{new_seed}\g<2>',
+                xml_content
+            )
+
+            if replacements > 0:
+                with open(xml_filename, 'w', encoding='utf-8') as f:
+                    f.write(updated_content)
+                print(f"Set randomizationSeed to {new_seed}")
+            else:
+                print("Warning: <randomizationSeed> tag not found.")
+                # The script will still proceed, but the MAC might not change.
+
+            # Step 4: Delete the current profile
+            print(f"Deleting profile '{profile_name}'...")
+            command = f"netsh wlan delete profile name=\"{profile_name}\""
+            if os.system(command) != 0:
+                print(f"Error: Failed to delete profile '{profile_name}'.")
+                return
+
+            # Step 5: Add the modified profile from the XML file
+            print(f"Adding modified profile from '{xml_filename}'...")
+            abs_xml_path = os.path.abspath(xml_filename)
+            command = f"netsh wlan add profile filename=\"{abs_xml_path}\""
+            if os.system(command) != 0:
+                print(f"Error: Failed to add profile from '{xml_filename}'.")
+                return
+
+            # Step 6: Connect to the newly added profile
+            print(f"Connecting to '{profile_name}'...")
+            command = f"netsh wlan connect name=\"{profile_name}\""
+            if os.system(command) != 0:
+                print(f"Error: Failed to connect to '{profile_name}'.")
+                return
+
+            print("A new random MAC address should be active.")
+
+        except FileNotFoundError:
+            print(
+                "Error: 'netsh' command not found.")
+        except subprocess.CalledProcessError as e:
+            error_output = e.stdout or e.stderr
+            print(f"An error occurred executing a command: {e}")
+            print(f"Command output:\n{error_output}")
+        finally:
+            # Clean up the created XML file
+            if xml_filename and os.path.exists(xml_filename):
+                os.remove(xml_filename)
+    elif os.getlogin() == "jing":
         cmd = r"""
-            dev=$(/bin/ip link | /bin/grep -o -P 'wl[^:]+')
+            dev=$(/bin/ip link | /bin/grep -o -P 'wlp[^:]+')
             sudo /bin/ip link set $dev down
             sudo /bin/macchanger -r $dev
             sudo /bin/ip link set $dev up"""
@@ -19,10 +112,12 @@ def reset_mac():
     elif os.environ["TERMUX_VERSION"] != "":
         cmd = r"""
             su shell -c svc data disable
-            wifi=$(sudo cmd wifi status) 
-            current_ssid=$(echo $wifi | grep -o -P 'SSID: "\K.*(?=",)')
-            su shell -c cmd wifi forget-network $(echo $wifi | grep -o -P 'Net ID: \K\d+')
-            sudo cmd wifi connect-network "$current_ssid" open -r non_persistent"""
+            wifi=$(sudo cmd wifi status)
+            ssid=$(echo $wifi | grep -o -P 'SSID: "\K.*(?=",)')
+            netid=$(echo $wifi | grep -o -P 'Net ID: \K\d+')
+            su shell -c cmd wifi forget-network $netid
+            sudo cmd wifi connect-network "$ssid" open -r non_persistent
+            """
         os.system(cmd)
 
 
@@ -36,8 +131,10 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
                 try:
                     login_wifirst()
                     break
-                except:
+                except Exception as e:
+                    print(f"Login error: {e}, retrying in 2s")
                     time.sleep(2)
+
             hack_wifirst()
         return None
 
