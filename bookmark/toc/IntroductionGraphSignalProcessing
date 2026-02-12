@@ -1,0 +1,218 @@
+Contents,8
+Preface,14
+Acknowledgments,16
+Notation,19
+d=19
+1 Introduction,1
+	1.1 From Signals to Graph Signals,1
+		1.1.1 Graphs,1
+		1.1.2 Frequency Analysis of Graph Signals,4
+		1.1.3 Filtering and Sampling Graph Signals,8
+		1.1.4 Graph Signal Processing versus Vector Processing,9
+	1.2 GSP Tools Adapt to Graph Characteristics,10
+		1.2.1 Selecting the Right Graph for a Task,10
+		1.2.2 Graph Diversity: How General Are GSP Tools?,10
+	1.3 Graphs in Classical Signal Processing,11
+		1.3.1 Path Graphs, Cycle Graphs and Discrete-Time Signals,11
+		1.3.2 Images and Grid Graphs,14
+		1.3.3 Path and Grid Graphs with Unequal Weights,14
+	1.4 Graphs Everywhere?,15
+		1.4.1 Physical Networks,15
+		1.4.2 Information Networks,17
+		1.4.3 Machine Learning,18
+		1.4.4 Analyzing Complex Systems,19
+		1.4.5 Social Networks,20
+	1.5 Mathematical Models of Graphs,21
+	1.6 Roadmap and Approach,24
+2 Node Domain Processing,29
+	2.1 Basic Definitions,29
+	2.2 Locality,33
+		2.2.1 Importance of Locality,34
+		2.2.2 What Do We Mean by Local Graph Processing?,34
+		2.2.3 Node-Centric Local Processing,36
+		2.2.4 Clustering and Graph Cuts,37
+		2.2.5 Graph Coloring,38
+		2.3 Algebraic Representations of Graphs,41
+		2.3.1 Adjacency, Incidence and Degree Matrices,41
+		2.3.2 Graph Laplacians,46
+		2.3.3 Normalized Graph Operators,49
+		2.4 Node Domain Graph Filters,51
+		2.4.1 Simple One-Hop Filters and Their Interpretation,51
+		2.4.2 Polynomials of One-Hop Operators,53
+		2.5 Graph Operators and Invariant Subspaces,56
+		2.5.1 Minimal Polynomial of a Vector,56
+		2.5.2 Eigenvectors and Eigenvalues,58
+		2.5.3 Minimal Polynomial of Z and Invariant Subspaces,60
+		2.5.4 Algebraic and Geometric Multiplicities and Minimal Polyno-
+		mials,64
+		2.5.5 Practical Implications for Graph Filter Design,69
+3 Graph Signal Frequency - Spectral Graph Theory,75
+		3.1 Graph Fourier Transforms (GFTs),76
+		3.1.1 From Invariant Subspaces to Graph Signal Representations,76
+		3.1.2 Diagonalizable Z,77
+		3.1.3 Defective Z,78
+		3.1.4 How Many GFTs Are There?,78
+		3.2 Graph Signal Variation and Z Quadratic Forms,79
+		3.2.1 Combinatorial Laplacian,79
+		3.2.2 Self-Loops and Variation,81
+		3.2.3 GFTs and Variation,82
+		3.2.4 Symmetric Normalized Laplacian,85
+		3.2.5 Variation Based on Adjacency Matrices,85
+		3.2.6 GFT Visualization,86
+		3.3 Graph Filtering – Frequency Domain,89
+		3.3.1 Frequency Domain Representation of Polynomial Filters,89
+		3.3.2 Node and Frequency Domain Filtering Implementations,90
+		3.3.3 Interpretations of Zk,94
+		3.3.4 Graph Filters, Graph Signals and Convolutions,95
+		3.4 GFTs of Common Graph Operators,96
+		3.4.1 Adjacency Matrix,96
+		3.4.2 Graph Laplacians of Undirected Graphs,97
+		3.4.3 Normalized Adjacency Matrices and Random Walk Laplacian,99
+		3.4.4 Doubly Stochastic Normalization,100
+		3.4.5 Irregularity, Normalization and the Choice of Inner Product,101
+		3.5 Graph Structure and Graph Spectra,104
+		3.5.1 Spanning Trees and the Matrix Tree Theorem,104
+		3.5.2 Topology and Eigenvalue Multiplicity,105
+		3.5.3 Bipartite Graphs,108
+		3.5.4 Bounds on Eigenvalues,109
+		3.5.5 Nodal Domain Theorems,113
+4 Sampling,120
+	4.1 Graph Signal Models,120
+		4.1.1 Challenges in Graph Signal Model Selection,120
+		4.1.2 Bandlimited and Approximately Bandlimited Signals,121
+		4.1.3 Piecewise Smooth Signals,123
+		4.1.4 Statistical Models,125
+		4.1.5 Graph Signal Stationarity,127
+	4.2 Sampling Constraints,131
+		4.2.1 Total Number of Samples,131
+		4.2.2 Distributed Systems,131
+		4.2.3 Diffusion and Sampling,132
+	4.3 Problem Formulation,132
+		4.3.1 Node Domain Sampling,132
+		4.3.2 Frequency Domain Sampling,133
+		4.3.3 General Conditions for Reconstruction,134
+		4.3.4 Reconstruction of Bandlimited Signals,135
+		4.3.5 Alternative Reconstruction Algorithms,136
+	4.4 Sampling-Set-Optimization Algorithms,138
+		4.4.1 Sampling of Noise-Free Data,138
+		4.4.2 Criteria for Robust Sampling,139
+		4.4.3 Robust Spectral Sampling,140
+		4.4.4 Random Sampling,143
+		4.4.5 Sampling Based on Localized Operators,144
+	4.5 Comparisons and Insights,145
+5 Graph Signal Representations,149
+	5.1 Node–Frequency Localization and Uncertainty Principles,149
+		5.1.1 Measuring Localization for Graph Signals,151
+		5.1.2 Compact Support in the Node and Frequency Domains,154
+		5.1.3 Graph Slepians,155
+	5.2 Representing Graph Signals: Goals,155
+		5.2.1 Structured Dictionaries,156
+		5.2.2 Exact Reconstruction,156
+		5.2.3 Orthogonality,157
+		5.2.4 Critical Sampling and Overcomplete Representations,157
+		5.2.5 Localization,157
+		5.2.6 Graph Types Supported, Graph Approximation and Simplifi-
+		cation,158
+	5.3 Building a Simple Representation Based on One-Hop Operations,158
+	5.4 Node Domain Graph Signal Representations,160
+		5.4.1 Node Domain Graph Wavelet Transforms (NGWTs),160
+		5.4.2 Graph Lifting Transforms,162
+		5.4.3 Subgraph Filterbanks,164
+	5.5 Frequency (Spectral) Domain Graph Signal Representations,165
+		5.5.1 Spectral Graph Wavelet Transforms (SGWTs),165
+		5.5.2 Chebyshev Polynomial Implementation,167
+	5.6 Critically Sampled Graph Filterbanks,169
+		5.6.1 Downsampling–Upsampling Operations for Graph Signals,171
+		5.6.2 Bipartite Graphs,171
+		5.6.3 Ideal Filterbank Design,172
+		5.6.4 Graph Filterbanks,174
+		5.6.5 Pyramid Transforms,177
+	5.7 Diffusion Wavelets,178
+6 How to Choose a Graph,181
+	6.1 Graph Approximation,182
+		6.1.1 Edge Removal and Graph Spectrum,183
+		6.1.2 Graph Sparsification,185
+		6.1.3 Graph Simplification and Graph Fourier Transform Computation,187
+		6.1.4 Topology Selection,188
+		6.1.5 Graph Reduction,190
+	6.2 Constructing Graphs from Node Similarity,192
+		6.2.1 Computing Graph Weights as a Function of Similarity,192
+		6.2.2 Similarity Graph Optimization,193
+	6.3 Learning Graphs from Signals,194
+		6.3.1 Basic Principles and Intuition: Empirical Covariance,195
+		6.3.2 Learning Unrestricted Operators from Data,196
+		6.3.3 Node Domain Techniques,197
+		6.3.4 Frequency Domain Methods,200
+		6.3.5 Discussion,200
+7 Applications,202
+	7.1 Overview, Application Domains and Methodology,202
+		7.1.1 Application Domains,203
+		7.1.2 An Application Checklist,204
+	7.2 Physical, Biological and Social Networks,205
+		7.2.1 Transportation Networks: Road Networks,205
+		7.2.2 Infrastructure Networks,206
+		7.2.3 Brain Networks,206
+		7.2.4 Social Networks,207
+	7.3 Distributed Sensor Networks,208
+		7.3.1 Data Transport,208
+		7.3.2 Sensor Data Analysis,210
+	7.4 Image and Video Processing,211
+		7.4.1 Transforms on Regular Grid Graphs,211
+		7.4.2 Graph Selection,215
+		7.4.3 Filtering,217
+		7.4.4 Graph-Based Image and Video Compression,218
+		7.4.5 Image Restoration,222
+		7.4.6 Image Segmentation,224
+		7.5 Machine Learning,224
+		7.5.1 Graphs and Graph Signals in Learning Applications,224
+		7.5.2 Unsupervised Learning and Clustering,227
+		7.5.3 Semi-supervised Learning,229
+		7.5.4 Graph Convolutional Neural Networks,230
+Appendix A Linear Algebra and Signal Representations,235
+	A.1 Signal Spaces and Subspaces,235
+	A.2 Bases,236
+		A.2.1 Span,236
+		A.2.2 Linear Independence,237
+		A.2.3 Bases,238
+	A.3 Inner Product, Distance and Similarity,239
+		A.3.1 Definitions,239
+		A.3.2 Interpretation: Signal Similarity,240
+	A.4 Orthogonal and Biorthogonal Bases,242
+		A.4.1 Biorthogonal Bases,242
+		A.4.2 Orthogonal Bases,243
+		A.4.3 Least Squares Approximation,243
+		A.4.4 Gram–Schmidt Orthogonalization,245
+	A.5 Dictionaries and Overcomplete Representations,245
+		A.5.1 Signal Representations Are Not Unique,246
+		A.5.2 Minimum `2 Norm Representation,246
+		A.5.3 Matching Pursuits and Orthogonal Matching Pursuits,248
+Appendix B GSP with Matlab: The GraSP Toolbox,253
+	B.1 Setting Up Matlab,253
+	B.2 Chapter 1 Use Cases,254
+		B.2.1 Generate a Random Graph: Watts–Strogatz Model,254
+		B.2.2 Additional Random Graphs: Classical Models,255
+		B.2.3 Additional Random Graphs: Sensor Network (Geometric Graph),256
+		B.2.4 Some Non-random Graphs,258
+		B.2.5 Plotting a Graph Signal on a Path Graph,259
+		B.2.6 Importing a Graph,259
+		B.2.7 Building a Graph from Scratch,261
+	B.3 Chapter 2 Use Cases,262
+		B.3.0 The Random Walk Laplacian,262
+		B.3.1 Linear Graph Filter,263
+		B.3.2 Polynomial Graph Filter,263
+	B.4 Chapter 3 Use Cases,265
+		B.4.1 Graph Fourier Transform Computation and Visualization,265
+		B.4.2 Kernelized Filter,266
+		B.4.3 Convolutive Filter,267
+		B.4.4 Polynomial Filter (Approximation),268
+		B.4.5 Chebyshev Polynomial Filter (Approximation),269
+	B.5 Chapter 4 Use Cases,270
+		B.5.1 Node Sampling,270
+	B.6 Chapter 5 Use Cases,273
+		B.6.1 Extended Application: SGWT with the Random Walk Laplacian,273
+	B.7 Chapter 6 Use Cases,277
+		B.7.1 Graph Learning,277
+	B.8 Reference for grasp_show_graph Parameters,279
+	B.9 Reference for grasp_show_transform Parameters,282
+References,286
+Index,297
