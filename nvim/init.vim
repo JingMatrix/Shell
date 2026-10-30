@@ -193,6 +193,7 @@ set foldexpr=nvim_treesitter#foldexpr()
 set fillchars=fold:\ ,
 set modeline
 set autochdir
+set expandtab
 set tabstop=4
 set shiftwidth=0
 

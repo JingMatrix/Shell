@@ -30,6 +30,20 @@ xkb_symbols "vim" {
     key <AB08>	{ [      period,  semicolon,           U2022,       multiply ] }; // •
     key <AB09>	{ [       colon,      slash,             bar,       division ] };
     key <AB10>	{ [      exclam,     dollar,      numbersign,        section ] };
+
+// --- Custom Modifier Key Conversions ---
+
+    // // 1. Remap Caps Lock (<CAPS>) to Right Shift (Shift_R)
+    // replace key <CAPS> { [ Shift_R ] };
+    // modifier_map Shift { <CAPS> };
+
+    // // 2. Remap Page Up (<PGUP>) to Left Control (Control_L)
+    // replace key <PGUP> { [ Control_L ] };
+    // modifier_map Control { <PGUP> };
+
+    // // 3. Remap Page Down (<PGDN>) to Right Control (Control_R)
+    // replace key <PGDN> { [ Control_R ] };
+    // modifier_map Control { <PGDN> };
 };
 
 // vim: ft=xkb :

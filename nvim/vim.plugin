@@ -1,16 +1,16 @@
 /home/jing/.local/share/nvim/site/pack
 ├── plugin
+│   ├── opt
+│   │   └── vim-matchup
 │   └── start
 │       ├── nvim-dap
 │       ├── nvim-nio
 │       ├── plenary.nvim
-│       ├── registers.nvim
 │       ├── suda.vim
 │       ├── ultisnips
 │       ├── undotree
 │       ├── vim-commentary
 │       ├── vim-fugitive
-│       ├── vim-matchup
 │       ├── vim-rsi
 │       ├── vim-snippets
 │       ├── vim-surround
@@ -31,17 +31,17 @@
 │       ├── nvim-treesitter
 │       └── zeavim.vim
 ├── syntax
+│   ├── opt
+│   │   ├── conjure
+│   │   └── vim-markdown
 │   └── start
 │       ├── aniseed
-│       ├── conjure
 │       ├── jsonc.vim
-│       ├── nvim-jdtls
 │       ├── nvim-ts-context-commentstring
 │       ├── one-small-step-for-vimkind
 │       ├── scribble.vim
 │       ├── vim-dadbod
 │       ├── vim-go
-│       ├── vim-markdown
 │       ├── vim-racket
 │       └── vimtex
 └── theme
@@ -52,4 +52,4 @@
         ├── vim-devicons
         └── vim-startify
 
-53 directories, 0 files
+54 directories, 0 files

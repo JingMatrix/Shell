@@ -193,15 +193,27 @@ def captive_time():
 scheduler = sched.scheduler(time.time, time.sleep)
 
 
-def hack_wifirst():
-    hostname = "wireless.wifirst.net"
-    param = '-n' if os.sys.platform.lower() == 'win32' else '-c'
-    response = os.system(f"ping {param} 1 {hostname}")
+def is_on_wifirst_network():
+    url = "https://wireless.wifirst.net/index.txt"
+    try:
+        # We use a short timeout (5s) so the script doesn't hang if there's no connection
+        with urllib.request.urlopen(url, timeout=5) as response:
+            # If we get a 200 OK, we are successfully connected/authenticated
+            return response.getcode() == 200
+    except Exception:
+        # If there's a timeout, DNS error, or 404, it's not "detected"
+        return False
 
-    if response == 0:
+
+def hack_wifirst():
+    # Now using the clean Python check
+    if is_on_wifirst_network():
         next_round = 10 * 60
+
+        # Clear existing tasks in scheduler
         for event in scheduler.queue:
             scheduler.cancel(event)
+
         if captive_time() < 10:
             logout_wifirst()
             login_wifirst()
@@ -209,8 +221,9 @@ def hack_wifirst():
         else:
             scheduler.enter(captive_time(), 1, hack_wifirst)
     else:
-        print("Not connected to Wifirst")
+        print("Not connected to Wifirst or portal unreachable")
 
 
+# Start the loop
 hack_wifirst()
 scheduler.run(blocking=True)

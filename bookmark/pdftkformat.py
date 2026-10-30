@@ -6,7 +6,7 @@ TAB = '\t'
 shift = 0
 for line in sys.stdin:
     if "d=" in line:
-        shift = int(line[2:].strip())
+        shift = int(line.strip()[2:].strip())
         continue
     level = 1 + line.count(TAB)
     line = line.strip()

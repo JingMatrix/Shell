@@ -1,7 +1,7 @@
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 export GLFW_IM_MODULE=ibus
-export GTK_IM_MODULE=fcitx5
+export GTK_IM_MODULE=fcitx
 
 export GTK_THEME=Adwaita:dark
 
@@ -16,7 +16,7 @@ export PERL_MM_OPT="INSTALL_BASE=/home/jing/.local/perl5"
 export PERL5LIB="/home/jing/.local/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
 export PATH="$PATH:$HOME/.local/perl5/bin"
 export ANDROID_HOME=$HOME/Archives/Android
-export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/.local/gem/bin"
 export GEM_HOME="$HOME/.local/gem"
@@ -25,7 +25,7 @@ export PATH="$PATH:$GOPATH/bin"
 export PATH="$HOME/Documents/Code/Shell/scripts:$PATH"
 
 export PNPM_HOME="$HOME/.local/share/pnpm"
-export PATH="$PNPM_HOME:$PATH"
+export PATH="$PNPM_HOME/bin:$PATH"
 # export QT_QPA_PLATFORMTHEME=qt5ct
 export SWAY_INTERACTIVE_SCREENSHOT_SAVEDIR=$HOME/Images/Screenshots
 
@@ -41,7 +41,7 @@ if [[ $USER == jing ]]; then
 		alias pip=$pyenv
 		alias pyenv=$HOME/.local/python/bin/python3
 		export PATH="$HOME/.local/python/bin:$PATH"
-		export PYTHONPATH="$PYTHONPATH:$HOME/.local/python/lib/python3.13/site-packages/"
+		export PYTHONPATH="$PYTHONPATH:$HOME/.local/python/lib/python3.14/site-packages/"
 	else
 		alias pip=pip3
 	fi

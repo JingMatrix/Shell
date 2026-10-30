@@ -14,31 +14,6 @@ vim.keymap.set("i", "<c-x><c-l>", "<plug>(fzf-complete-line)", opts)
 vim.keymap.set("n", "<leader>ne", "<cmd>NnnExplorer<CR>", opts)
 vim.keymap.set("n", "<leader>np", "<cmd>NnnPicker<CR>", opts)
 
--- tree-sitter
---
-require("nvim-treesitter.configs").setup({
-	highlight = {
-		enable = true,
-		disable = { "latex", "vim", "markdown" },
-	},
-	indent = {
-		enable = true,
-	},
-	incremental_selection = {
-		enable = true,
-		keymaps = {
-			init_selection = "gnn",
-			node_incremental = "grn",
-			scope_incremental = "grc",
-			node_decremental = "grm",
-		},
-	},
-})
-
--- registers
---
-require("registers").setup()
-
 -- nnn
 --
 require("nnn").setup()
@@ -46,7 +21,6 @@ require("nnn").setup()
 -- vim-lspconfig
 --
 
-local lspconfig = require("lspconfig")
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 
@@ -120,18 +94,21 @@ local lsp_servers = {
 	"gopls",
 	"marksman",
 	"tailwindcss",
+    -- "kotlin_language_server",
 	"rust_analyzer",
+    "ts_ls",
+    "vue_ls",
 	"jdtls",
 }
 
 for _, lsp in pairs(lsp_servers) do
-	lspconfig[lsp].setup({
+	vim.lsp.enable(lsp)
+	vim.lsp.config(lsp, {
 		on_attach = lsp_on_attach,
 	})
 end
 
-lspconfig.kotlin_language_server.setup({
-	on_attach = lsp_on_attach,
+vim.lsp.config("kotlin_language_server", {
 	settings = { kotlin = { compiler = { jvm = { target = "21" } } } },
 })
 
@@ -139,7 +116,7 @@ lspconfig.kotlin_language_server.setup({
 -- 	root_dir = lspconfig.util.root_pattern("package.json", "tsconfig.json", "jsconfig.json"),
 -- })
 
-lspconfig.lua_ls.setup({
+vim.lsp.config("lua_ls", {
 	settings = {
 		Lua = {
 			diagnostics = {
@@ -149,25 +126,20 @@ lspconfig.lua_ls.setup({
 	},
 })
 
-lspconfig.volar.setup({
-	filetypes = { "vue" },
-	init_options = {
-		typescript = {
-			tsdk = os.getenv("HOME") .. "/.local/share/pnpm/global/5/node_modules/typescript/lib",
-		},
-	},
-})
-
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-lspconfig.cssls.setup({
+vim.lsp.config("ts_ls", {
+    filetypes = {"javascript", "typescript", "vue"}
+})
+
+vim.lsp.config("cssls", {
 	autostart = false,
 	capabilities = capabilities,
 	on_attach = lsp_on_attach,
 })
 
-lspconfig.html.setup({
+vim.lsp.config("html", {
 	capabilities = capabilities,
 	on_attach = lsp_on_attach,
 })
@@ -311,7 +283,7 @@ local ltex_settings = {
 	},
 }
 
-lspconfig.ltex.setup({
+vim.lsp.config("ltex", {
 	settings = ltex_settings,
 	filetypes = { "markdown", "tex", "mail", "gitcommit" },
 	single_file_support = true,

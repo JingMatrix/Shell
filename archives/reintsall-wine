@@ -2,18 +2,21 @@
 
 # Reset the default wine prefix
 
-usrfile=$(mktemp -d)
-cp -r $HOME/.wine/drive_c/users/$USER $usrfile
+# usrfile=$(mktemp -d)
+# cp -r $HOME/.wine/drive_c/users/$USER $usrfile
 # regs=$(mktemp -d)
 # cp $HOME/.wine/*.reg $regs
 rm -rf $HOME/.wine
 wine wineboot
 # cp $regs/*.reg $HOME/.wine
-rm -rf $HOME/.wine/dosdevices/z:
+# rm -rf $HOME/.wine/dosdevices/z:
 # For system-wise mono installation, one shouldn't remove z:
 ln -sf $HOME/Archives/Games/GOG $HOME/.wine/drive_c/'GOG Games'
-rm -rf $HOME/.wine/drive_c/users/$USER
-cp -r $usrfile/$USER $HOME/.wine/drive_c/users
-rm -rf $usrfile $regs
+# rm -rf $HOME/.wine/drive_c/users/$USER
+# cp -r $usrfile/$USER $HOME/.wine/drive_c/users
+# rm -rf $usrfile $regs
+ln -sf $HOME/Archives/Games/Baba.Is.You.v477c $HOME/.wine/drive_c/users/$USER
+ln -sf $HOME/Archives/Games/DREDGE.v1.1.0-GoldBerg $HOME/.wine/drive_c/users/$USER
+ln -sf $HOME/Archives/Games/GNOSIA.v2022.03.03 $HOME/.wine/drive_c/users/$USER
 
 # winetricks d3dx11_43 d3dcompiler_43 d3dcompiler_47 d3dx9_43

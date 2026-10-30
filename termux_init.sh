@@ -8,14 +8,13 @@ if [[ $USER == "jing" ]]; then
 	adb shell rm -rf /sdcard/Download/init
 	adb shell mkdir /sdcard/Download/init
 	adb push scripts/misàjour /sdcard/Download/init
-	adb push terminal/termux_wifirst /sdcard/Download/init
 	adb push terminal/wifirst.py /sdcard/Download/init
 	adb push terminal/termux_proxy /sdcard/Download/init
 	adb push nvim/init.vim /sdcard/Download/init
 	adb push nvim/markdown.snippets /sdcard/Download/init
 	adb push terminal/termux-url-opener /sdcard/Download/init
 	adb push termux_init.sh /sdcard/Download/init
-	adb push config/clash.yaml /sdcard/Download/init
+	# adb push config/clash.yaml /sdcard/Download/init
 	adb push .zshrc /sdcard/Download/init
 	adb push $HOME/.ssh/id_rsa.pub /sdcard/Download/init
 	adb push $HOME/.config/rclone/rclone.conf /sdcard/Download/
@@ -50,7 +49,7 @@ rm -rf $HOME/init/nvim.zip
 apt update && yes | apt upgrade && apt update
 apt install -y git tsu nodejs lua53 python apt-file curl wget jq neovim zsh openssh at
 chsh -s zsh
-apt-file update
+# apt-file update
 cat $HOME/init/id_rsa.pub >$HOME/.ssh/authorized_keys
 sshd
 [[ -e $HOME/init/nvim.zip ]] && unzip $HOME/init/nvim.zip -d $HOME/.local/share/nvim/site/pack
@@ -85,11 +84,11 @@ ln -sf $PREFIX/bin/nvim $HOME/bin/termux-file-editor
 mkdir -p $HOME/.local/go $HOME/.local/gem
 
 apt install -y golang ruby tor i2pd
-go install github.com/Dreamacro/clash@latest
+# go install github.com/Dreamacro/clash@latest
 gem install colorls
 
-mkdir -p $HOME/.config/clash
-ln -sf $HOME/init/clash.yaml $HOME/.config/clash/config.yaml
+# mkdir -p $HOME/.config/clash
+# ln -sf $HOME/init/clash.yaml $HOME/.config/clash/config.yaml
 
 # mkdir -p $HOME/Project
 # pushd $HOME/Project

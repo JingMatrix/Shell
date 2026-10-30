@@ -86,8 +86,10 @@ ln -sf $basedir/config/zathurarc $HOME/.config/zathura
 # Config sway
 mkdir -p $HOME/.config/sway
 ln -sf $basedir/sway/sway.config $HOME/.config/sway/config
-if [[ $(hostnamectl hostname) == "imt.xyz" ]]; then
+current_host=$(hostnamectl hostname)
+if [[ $current_host == "imt.xyz" || $current_host == "matrix.xyz" ]]; then
 	ln -sf $basedir/sway/fr_kb_sway.conf $HOME/.config/sway/input
+	mkdir -p $HOME/.xkb/symbols
 	ln -sf $basedir/sway/fr_kb.layout $HOME/.xkb/symbols/fr
 fi
 rm -rf $HOME/.config/waybar
