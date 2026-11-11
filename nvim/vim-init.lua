@@ -2,6 +2,7 @@
 --
 
 local opts = { noremap = true, silent = true }
+local is_macos = vim.fn.has("macunix") == 1
 
 -- fzf-vim
 vim.keymap.set("n", "<leader><tab>", "<plug>(fzf-maps-n)", opts)
@@ -101,11 +102,60 @@ local lsp_servers = {
 	"jdtls",
 }
 
+if is_macos then
+    vim.list_extend(lsp_servers, { "lua_ls", "bashls", "html", "cssls" })
+    vim.api.nvim_create_autocmd("LspAttach", {
+        callback = function(event)
+            local client = vim.lsp.get_client_by_id(event.data.client_id)
+            if client then
+                lsp_on_attach(client, event.buf)
+            end
+        end,
+    })
+end
+
+local lsp_commands = {
+    jdtls = "jdtls",
+    ts_ls = "typescript-language-server",
+    tailwindcss = "tailwindcss-language-server",
+    html = "vscode-html-language-server",
+    cssls = "vscode-css-language-server",
+}
+if is_macos then
+    local brew_prefix = vim.env.HOMEBREW_PREFIX or "/opt/homebrew"
+    vim.lsp.config("clangd", {
+        cmd = { brew_prefix .. "/opt/llvm/bin/clangd", "--background-index", "--log=error" },
+        -- clangd 23 uses the standard positionEncodings capability.
+        before_init = function(params)
+            params.capabilities.offsetEncoding = nil
+        end,
+    })
+    vim.lsp.config("jdtls", {
+        -- Eclipse's runtime needs Java 25+; keep Java 21 for project builds.
+        cmd_env = { JAVA_HOME = brew_prefix .. "/opt/openjdk/libexec/openjdk.jdk/Contents/Home" },
+        settings = {
+            java = {
+                configuration = {
+                    runtimes = {
+                        { name = "JavaSE-21", path = brew_prefix .. "/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home", default = true },
+                    },
+                },
+            },
+        },
+    })
+end
 for _, lsp in pairs(lsp_servers) do
-	vim.lsp.enable(lsp)
-	vim.lsp.config(lsp, {
-		on_attach = lsp_on_attach,
-	})
+	if not is_macos then
+		vim.lsp.enable(lsp)
+		vim.lsp.config(lsp, { on_attach = lsp_on_attach })
+	else
+		local config = vim.lsp.config[lsp]
+		local command = config and config.cmd
+		if (type(command) == "table" and vim.fn.executable(command[1]) == 1)
+            or (lsp_commands[lsp] and vim.fn.executable(lsp_commands[lsp]) == 1) then
+			vim.lsp.enable(lsp)
+		end
+	end
 end
 
 vim.lsp.config("kotlin_language_server", {
@@ -130,19 +180,31 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 vim.lsp.config("ts_ls", {
-    filetypes = {"javascript", "typescript", "vue"}
+    filetypes = is_macos
+        and {"javascript", "javascriptreact", "typescript", "typescriptreact", "vue"}
+        or {"javascript", "typescript", "vue"},
+    init_options = is_macos and {
+        plugins = {
+            {
+                name = "@vue/typescript-plugin",
+                location = (vim.env.NPM_CONFIG_PREFIX or (vim.env.HOME .. "/.local/share/npm")) .. "/lib/node_modules/@vue/language-server",
+                languages = { "vue" },
+            },
+        },
+    } or nil,
 })
 
 vim.lsp.config("cssls", {
-	autostart = false,
 	capabilities = capabilities,
-	on_attach = lsp_on_attach,
 })
 
 vim.lsp.config("html", {
 	capabilities = capabilities,
-	on_attach = lsp_on_attach,
 })
+if not is_macos then
+    vim.lsp.config("cssls", { autostart = false, on_attach = lsp_on_attach })
+    vim.lsp.config("html", { on_attach = lsp_on_attach })
+end
 
 vim.g.markdown_fenced_languages = {
 	"ts=typescript",
@@ -154,7 +216,7 @@ vim.g.markdown_fenced_languages = {
 local dap = require("dap")
 dap.adapters.lldb = {
 	type = "executable",
-	command = "/usr/bin/lldb-dap", -- adjust as needed, must be absolute path
+	command = is_macos and vim.fn.exepath("lldb-dap") or "/usr/bin/lldb-dap",
 	name = "lldb",
 }
 dap.configurations.lua = {
@@ -182,8 +244,13 @@ dap.configurations.cpp = {
 		type = "lldb",
 		request = "launch",
 		program = function()
-			local project_root = vim.lsp.buf.list_workspace_folders()[1]
-			vim.api.nvim_set_current_dir(project_root)
+			local project_root
+            if is_macos then
+                project_root = vim.fs.root(0, { ".git", "CMakeLists.txt", "Cargo.toml" }) or vim.fn.getcwd()
+            else
+                project_root = vim.lsp.buf.list_workspace_folders()[1]
+                vim.api.nvim_set_current_dir(project_root)
+            end
 			return vim.fn.input("Path to executable: ", project_root .. "/", "file")
 		end,
 		stopOnEntry = false,
@@ -197,7 +264,15 @@ dap.adapters.nlua = function(callback, config)
 	callback({ type = "server", host = config.host, port = config.port })
 end
 
-require("dap-python").setup("/usr/bin/python3")
+local debug_python = vim.fn.has("macunix") == 1
+    and (vim.fn.stdpath("data") .. "/python/bin/python") or "/usr/bin/python3"
+require("dap-python").setup(debug_python)
+
+if is_macos then
+    vim.keymap.set("n", "<leader>pf", "<cmd>Files<CR>", opts)
+    vim.keymap.set("n", "<leader>pg", "<cmd>Rg<CR>", opts)
+    vim.keymap.set("n", "<leader>pb", "<cmd>Buffers<CR>", opts)
+end
 
 require("dapui").setup({
 	{

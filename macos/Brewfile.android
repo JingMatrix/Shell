@@ -1,0 +1,11 @@
+# Command-line SDK bootstrap. SDK packages live in ~/Library/Android/sdk.
+cask "android-commandlinetools"
+
+# APK, DEX, app bundle, and native binary analysis.
+brew "jadx"
+brew "apktool"
+brew "dex2jar"
+brew "bundletool"
+brew "ghidra"
+brew "radare2"
+brew "scrcpy"

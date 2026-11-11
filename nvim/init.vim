@@ -1,7 +1,15 @@
-if system("hostnamectl hostname") =~ "imt.xyz"
+if executable('hostnamectl') && system("hostnamectl hostname") =~ "imt.xyz"
 	call jobstart("swaymsg input type:keyboard xkb_switch_layout 0")
 	autocmd FocusGained * call jobstart("swaymsg input type:keyboard xkb_switch_layout 0")
 	autocmd VimLeavePre * call jobstart("swaymsg input type:keyboard xkb_switch_layout 1")
+endif
+
+if has('macunix')
+	let g:python3_host_prog = stdpath('data') . '/python/bin/python'
+	let g:loaded_perl_provider = 0
+	let g:loaded_ruby_provider = 0
+	let g:loaded_node_provider = 0
+	lua require('plugins')
 endif
 
 " vimtex
@@ -12,11 +20,16 @@ let g:vimtex_compiler_latexmk={'options' : [
 			\'-bibtex',
 			\'-synctex=1',
 			\'-interaction=nonstopmode'],
-			\'out_dir': $PREFIX . '/var/tmp/latex'
+			\'out_dir': has('macunix') ? stdpath('cache') . '/latex' : $PREFIX . '/var/tmp/latex'
 			\}
 let g:vimtex_fold_enabled=1
 let g:vimtex_fold_manual=1
 let g:vimtex_view_method='zathura'
+if has('macunix')
+	let g:vimtex_view_method='skim'
+	let g:vimtex_view_skim_sync=1
+	let g:vimtex_quickfix_method='latexlog'
+endif
 let g:vimtex_log_ignore=['Viewer cannot find Zathura window ID!']
 let g:matchup_override_vimtex=1
 let g:vimtex_complete_close_braces=1
@@ -48,7 +61,13 @@ let g:startify_lists=[
 			\{ 'type': 'bookmarks', 'header': ['   Bookmarks']      },
 			\{ 'type': 'files',	'header': ['   MRU'] },
 			\]
-if system("whoami") =~ "jing"
+if has('macunix')
+	let g:startify_bookmarks=[
+				\{'n': '$HOME/Notes'},
+				\{'c': fnamemodify(resolve(expand('<sfile>:p')), ':h:h')},
+				\{'z': '$HOME/.zshrc'},
+				\{'v': '$HOME/.config/nvim/init.vim'}]
+elseif system("whoami") =~ "jing"
 	let g:startify_bookmarks=[
 				\{'n': '$HOME/Notes'},
 				\{'c': '$HOME/Documents/Code/Shell'},
@@ -114,13 +133,26 @@ augroup formatter
 	autocmd FileType lua setl formatprg=stylua\ -\ -
 	autocmd FileType tex,bib setl formatprg=latexindent\ -m\ -c=/tmp/
 	autocmd FileType java setl formatexpr= | let &l:formatprg = 'palantir-java-format - --aosp --assume-filename ' . expand('%:t')
-	autocmd FileType javascript,typescript,html,vue,markdown,css,xhtml,scss setl formatexpr= | let &l:formatprg = 'prettier --stdin-filepath ' . expand('%:p') " . ' --parser '.expand(&filetype)
+	autocmd FileType javascript,javascriptreact,typescript,typescriptreact,html,vue,markdown,css,xhtml,scss setl formatexpr= | let &l:formatprg = 'prettier --stdin-filepath ' . shellescape(expand('%:p'))
 	autocmd FileType json,jsonc setl formatprg=jq\ '.'
 augroup END
+
+if has('macunix')
+	augroup macos_formatter
+		autocmd!
+		autocmd FileType python setl formatexpr= formatprg=ruff\ format\ --stdin-filename\ %\ -
+		autocmd FileType zsh setl formatprg=
+		autocmd FileType lua setl formatprg=stylua\ -
+	augroup END
+endif
 
 
 " input Chinese
 function ToggleChineseInput()
+	if !executable('fcitx5-remote')
+		echo 'Use the macOS input-source shortcut to switch languages.'
+		return
+	endif
 	if !exists('#chinese#InsertEnter')
 		augroup chinese
 			autocmd! * <buffer>
@@ -138,7 +170,7 @@ nmap yoz :call ToggleChineseInput()<cr>
 augroup writing
 	autocmd!
 	" writing dairy
-	autocmd BufWritePre *otes/*.md 1,7s/\v^modified:\ "\zs.*\ze"$/\=system('date -Is | head -c -1')
+	autocmd BufWritePre *otes/*.md keeppatterns execute '1,' . min([7, line('$')]) . 's/\v^modified: "\zs.*\ze"$/\=strftime("%Y-%m-%dT%H:%M:%S%z")/e'
 	autocmd BufWritePost  *otes/*.md normal ``zz
 	autocmd FileType mail,markdown setl spelllang=fr,en_us
 augroup END
@@ -156,7 +188,7 @@ autocmd CompleteDone * pclose
 
 
 " custom mapping
-if system("whoami") =~ "jing"
+if has('macunix') || system("whoami") =~ "jing"
 	nnoremap <C-T> :vsplit <bar> terminal<cr>i
 	nnoremap <X1Mouse> <C-O>
 	nnoremap <X2Mouse> <C-I>
@@ -189,7 +221,11 @@ hi PmenuSel ctermfg=Yellow
 set hidden
 set autowrite
 set foldmethod=indent
-set foldexpr=nvim_treesitter#foldexpr()
+if has('macunix')
+	set foldexpr=v:lua.vim.treesitter.foldexpr()
+else
+	set foldexpr=nvim_treesitter#foldexpr()
+endif
 set fillchars=fold:\ ,
 set modeline
 set autochdir
@@ -200,16 +236,24 @@ set shiftwidth=0
 " completion
 set omnifunc=syntaxcomplete#Complete
 
-if system("whoami") =~ "jing"
+if has('macunix') || system("whoami") =~ "jing"
 	" file location $HOME/.config/nvim/lua/vim-init.lua
 	lua require('vim-init')
 endif
 
 let g:vimsyn_noerror=1
 
-let $tmpdir=$PREFIX.'/var/tmp/vim'
-set undodir=$tmpdir
-set backupdir=$tmpdir
+if has('macunix')
+	let &undodir=stdpath('state') . '/undo'
+	let &backupdir=stdpath('state') . '/backup'
+	call mkdir(&undodir, 'p', 0700)
+	call mkdir(&backupdir, 'p', 0700)
+	set clipboard=unnamedplus
+else
+	let $tmpdir=$PREFIX.'/var/tmp/vim'
+	set undodir=$tmpdir
+	set backupdir=$tmpdir
+endif
 
 augroup rmundo
 	autocmd!

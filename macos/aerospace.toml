@@ -1,0 +1,67 @@
+# Tiled windows with focus following the mouse and Sway-style workspace navigation.
+config-version = 2
+start-at-login = true
+after-startup-command = ['exec-and-forget /usr/bin/open -gj -a SwiftBar']
+auto-reload-config = true
+default-root-container-layout = 'tiles'
+default-root-container-orientation = 'auto'
+focus-follows-mouse.enabled = true
+accordion-padding = 0
+persistent-workspaces = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+
+# Mouse focus does not cover an empty desktop. Place new windows on the
+# pointer's monitor even when macOS initially creates them on another display.
+[[on-window-detected]]
+if.during-aerospace-startup = false
+run = '''exec-and-forget monitor=$(aerospace list-monitors --mouse --format '%{monitor-id}') && test -n "$monitor" && aerospace move-node-to-monitor --window-id "$AEROSPACE_WINDOW_ID" --focus-follows-window "$monitor" || /usr/bin/logger -t AeroSpace "Failed to place new window on pointer monitor"'''
+
+[gaps]
+inner.horizontal = 0
+inner.vertical = 0
+outer.left = 0
+outer.right = 0
+outer.top = 0
+outer.bottom = 0
+
+[mode.main.binding]
+cmd-enter = '''exec-and-forget monitor=$(aerospace list-monitors --mouse --format '%{monitor-id}') && test -n "$monitor" && aerospace focus-monitor "$monitor" && /usr/bin/open -na /Applications/kitty.app --args --single-instance --directory "$HOME" || /usr/bin/logger -t AeroSpace "Failed to focus pointer monitor or launch Kitty"'''
+
+# Keep ordinary macOS Command shortcuts available to applications.
+alt-h = 'focus --wrap-around left'
+alt-j = 'focus --wrap-around down'
+alt-k = 'focus --wrap-around up'
+alt-l = 'focus --wrap-around right'
+alt-shift-h = 'move left'
+alt-shift-j = 'move down'
+alt-shift-k = 'move up'
+alt-shift-l = 'move right'
+
+alt-1 = 'workspace 1'
+alt-2 = 'workspace 2'
+alt-3 = 'workspace 3'
+alt-4 = 'workspace 4'
+alt-5 = 'workspace 5'
+alt-6 = 'workspace 6'
+alt-7 = 'workspace 7'
+alt-8 = 'workspace 8'
+alt-9 = 'workspace 9'
+# Use the tenth number-row key for workspace 10.
+alt-0 = 'workspace 10'
+alt-shift-1 = 'move-node-to-workspace 1'
+alt-shift-2 = 'move-node-to-workspace 2'
+alt-shift-3 = 'move-node-to-workspace 3'
+alt-shift-4 = 'move-node-to-workspace 4'
+alt-shift-5 = 'move-node-to-workspace 5'
+alt-shift-6 = 'move-node-to-workspace 6'
+alt-shift-7 = 'move-node-to-workspace 7'
+alt-shift-8 = 'move-node-to-workspace 8'
+alt-shift-9 = 'move-node-to-workspace 9'
+alt-shift-0 = 'move-node-to-workspace 10'
+alt-tab = 'workspace-back-and-forth'
+
+alt-comma = 'layout accordion horizontal vertical'
+alt-slash = 'layout tiles horizontal vertical'
+alt-f = 'fullscreen'
+alt-shift-f = 'macos-native-fullscreen'
+alt-shift-space = 'layout floating tiling'
+alt-shift-r = 'reload-config'

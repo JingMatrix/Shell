@@ -1,0 +1,122 @@
+source "${${(%):-%N}:A:h}/env.zsh"
+
+# Oh My Zsh and the prompt are initialized by the local ~/.zshrc.
+HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+HISTSIZE=50000
+SAVEHIST=50000
+setopt HIST_IGNORE_ALL_DUPS HIST_REDUCE_BLANKS SHARE_HISTORY INTERACTIVE_COMMENTS
+unsetopt LIST_BEEP
+KEYTIMEOUT=10
+
+alias gcl='git clone --recursive --shallow-submodules --depth 1'
+(( ! $+commands[nvim] )) || alias vim=nvim
+if (( $+commands[eza] )); then
+    alias ls='eza --group-directories-first'
+    alias l='eza --long --all --git --group-directories-first'
+    alias ll=l
+else
+    alias ls='ls -G'
+    alias l='ls -lahG'
+fi
+if [[ $TERM == xterm-kitty ]]; then
+    (( ! $+commands[eza] )) || alias ls='eza --group-directories-first --hyperlink'
+    alias icat='kitten icat'
+    function rg { kitten hyperlinked_grep "$@"; }
+fi
+(( ! $+commands[msfconsole] )) || alias msfconsole='TERM=xterm-256color msfconsole'
+if [[ -x $HOME/Documents/Project/lua-language-server/3rd/luamake/luamake ]]; then
+    alias luamake="$HOME/Documents/Project/lua-language-server/3rd/luamake/luamake"
+fi
+# Keep the real Gradle CLI instead of the OMZ gradle alias.
+(( ! $+aliases[gradle] )) || unalias gradle
+
+# Ghidra needs its own JDK; Android/Gradle projects keep the shell's JDK 21.
+if [[ -d $HOMEBREW_PREFIX/opt/ghidra && -d $HOMEBREW_PREFIX/opt/openjdk@25 ]]; then
+    function ghidraRun {
+        JAVA_HOME="$HOMEBREW_PREFIX/opt/openjdk@25/libexec/openjdk.jdk/Contents/Home" command ghidraRun "$@"
+    }
+    function pyghidraRun {
+        JAVA_HOME="$HOMEBREW_PREFIX/opt/openjdk@25/libexec/openjdk.jdk/Contents/Home" command pyghidraRun "$@"
+    }
+fi
+
+function keep-buffer {
+    print -rn -- "$BUFFER" | pbcopy || return
+    BUFFER=''
+}
+function start_tmux {
+    BUFFER='tmux attach || tmux'
+}
+zle -N keep-buffer
+zle -N start_tmux
+for keymap in viins emacs; do
+    bindkey -M "$keymap" '^Y' redo
+    bindkey -M "$keymap" '^Z' undo
+    bindkey -M "$keymap" '^H' backward-kill-word
+    bindkey -M "$keymap" '^F' run-help
+    bindkey -M "$keymap" '^K' keep-buffer
+    bindkey -M "$keymap" '^B^B' start_tmux
+done
+unset keymap
+
+# qutebrowser's CLI handles IPC itself; Sway workspaces/sockets do not exist here.
+function qb {
+    if (( $+commands[qutebrowser] )); then
+        command qutebrowser "$@" &!
+    elif [[ -x /Applications/qutebrowser.app/Contents/MacOS/qutebrowser ]]; then
+        /Applications/qutebrowser.app/Contents/MacOS/qutebrowser "$@" &!
+    else
+        print -u2 'qutebrowser is not installed. Install it with: brew install --cask qutebrowser'
+        return 127
+    fi
+}
+
+# ocr [language|num] [image]: use a clipboard image, or select a screen region.
+function ocr {
+    if (( ! $+commands[tesseract] )); then
+        print -u2 'Install OCR first: brew install tesseract pngpaste'
+        return 1
+    fi
+    local lang=${1:-eng} image=${2:-} workdir result
+    local -a options
+    options=()
+    if [[ -d $XDG_DATA_HOME/shell/tessdata ]]; then
+        options+=(--tessdata-dir "$XDG_DATA_HOME/shell/tessdata")
+    fi
+    if [[ $lang == num ]]; then
+        lang=eng
+        options+=(--psm 6 -c tessedit_char_whitelist=0123456789.,+-)
+    fi
+    workdir=$(mktemp -d "${TMPDIR:-/tmp}/shell-ocr.XXXXXXXX") || return
+    {
+        if [[ -z $image ]]; then
+            image=$workdir/image.png
+            # An empty/non-image clipboard is expected; fall back to selection.
+            if (( ! $+commands[pngpaste] )) || ! pngpaste "$image" 2>/dev/null; then
+                /usr/sbin/screencapture -i "$image" || return
+                [[ -s $image ]] || return 1
+            fi
+        fi
+        result=$(tesseract "$image" stdout -l "$lang" "${options[@]}") || return
+        print -rn -- "$result" | pbcopy || return
+        print -r -- "$result"
+    } always {
+        command rm -rf -- "$workdir"
+    }
+}
+function _ocr {
+    local -a languages
+    languages=('eng:English' 'fra:French' 'chi_sim:Simplified Chinese' 'chi_tra:Traditional Chinese' 'num:Numbers')
+    _describe language languages
+}
+compdef _ocr ocr
+
+(( ! $+commands[fzf] )) || source <(fzf --zsh)
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor line)
+typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[cursor]=bold
+if [[ -n $HOMEBREW_PREFIX ]]; then
+    [[ ! -r $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]] || source "$HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+    # Syntax highlighting must be loaded after widgets and keybindings.
+    [[ ! -r $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] || source "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+fi

@@ -1,6 +1,9 @@
 #! /bin/zsh
 
 set -e
+if [[ $OSTYPE == darwin* ]]; then
+	exec /bin/zsh "${0:A:h}/macos/link-configs.sh"
+fi
 basedir=$(readlink -f $(dirname $0))
 
 # The two most basic config files

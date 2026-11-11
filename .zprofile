@@ -1,3 +1,8 @@
+if [[ $OSTYPE == darwin* ]]; then
+	source "${${(%):-%N}:A:h}/macos/env.zsh"
+	return
+fi
+
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 export GLFW_IM_MODULE=ibus
@@ -46,3 +51,5 @@ if [[ $USER == jing ]]; then
 		alias pip=pip3
 	fi
 fi
+
+touch $HOME/.hushlogin

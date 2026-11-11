@@ -1,7 +1,7 @@
 snippet notable "Add front matter for notable format" b
 ---
-created: "`date -Is`"
-modified: "`date -Is`"
+created: "`!v strftime('%Y-%m-%dT%H:%M:%S%z')`"
+modified: "`!v strftime('%Y-%m-%dT%H:%M:%S%z')`"
 title: "`!v expand('%:t:r')`"
 tags: ["Jing/${1:Daily}"]
 ---

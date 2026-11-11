@@ -1,0 +1,11 @@
+# Stable development SDKs plus an ARM64 Google APIs image for the RE emulator.
+cmdline-tools;latest
+platform-tools
+platforms;android-37.0
+platforms;android-36
+build-tools;37.0.0
+sources;android-37.0
+ndk;30.0.16248370
+cmake;3.31.6
+emulator
+system-images;android-36;google_apis;arm64-v8a

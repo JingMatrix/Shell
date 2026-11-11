@@ -1,3 +1,8 @@
+if [[ $OSTYPE == darwin* ]]; then
+	source "${${(%):-%N}:A:h}/macos/zshrc"
+	return
+fi
+
 export ZSH="$HOME/.oh-my-zsh"
 plugins=(git vi-mode pip gradle)
 # plugins+=(yarn urltools rust pass ripgrep nmap gradle)
