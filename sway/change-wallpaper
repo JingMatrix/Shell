@@ -17,9 +17,9 @@ fi
 # gsettings set org.gnome.desktop.background picture-uri "file://$pic"
 # gsettings set org.gnome.desktop.background picture-uri-dark "file://$pic"
 
+# cron runs with no SWAYSOCK, so point it at the running sway instance.
+# Always target '*': matrix.xyz drives DP-1, not the laptop panel eDP-1.
 if [[ -z "$SWAYSOCK" ]]; then
 	export SWAYSOCK=/run/user/$(id -u)/sway-ipc.$(id -u).$(pgrep -x sway).sock
-	swaymsg output 'eDP-1' background "$pic" fill
-else
-	swaymsg output '*' background "$pic" fill
 fi
+swaymsg output '*' background "$pic" fill

@@ -83,6 +83,7 @@ button:hover {
 #disk,
 #temperature,
 #backlight,
+#bluetooth,
 #network,
 #pulseaudio,
 #wireplumber,
@@ -161,6 +162,22 @@ label:focus {
 
 #backlight {
     background-color: #90b1b1;
+}
+
+#bluetooth {
+    background-color: #0082fc;
+}
+
+#bluetooth.off,
+#bluetooth.disabled,
+#bluetooth.no-controller {
+    background-color: #90b1b1;
+    color: #2a5c45;
+}
+
+#bluetooth.connected {
+    background-color: #0082fc;
+    color: #ffffff;
 }
 
 #network {

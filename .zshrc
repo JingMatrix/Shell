@@ -86,7 +86,6 @@ else
 fi
 
 export MANPAGER='nvim +Man!'
-export MUTTBOX="gmail"
 export PAGER="less -P?n -R"
 
 # keybinding
@@ -98,18 +97,13 @@ function keep-buffer {
 	fi
 	BUFFER=''
 }
-function start_tmux {
-	BUFFER='tmux attach || tmux'
-}
 
 zle -N keep-buffer
-zle -N start_tmux
 bindkey "^Y" redo
 bindkey "^Z" undo
 bindkey "^F" run-help
 bindkey "^K" keep-buffer
 bindkey "^H" backward-kill-word
-bindkey "^B^B" start_tmux
 
 # zsh-highlight
 
@@ -120,11 +114,8 @@ ZSH_HIGHLIGHT_STYLES[cursor]=bold
 [[ -f /usr/share/fzf/key-bindings.zsh ]] && source /usr/share/fzf/key-bindings.zsh
 
 if [[ $USER == jing ]]; then
-	export JDTLS_HOME=$HOME/Archives/Data/jdtls
-	export KALDI_ROOT=$HOME/Documents/Project/kaldi
 	alias icat="kitty +kitten icat"
 	alias msfconsole="TERM=xterm-256color msfconsole"
-	alias luamake=$HOME/Documents/Project/lua-language-server/3rd/luamake/luamake
 	unalias gradle
 
 	[[ -z $ALACRITTY_WAYLAND ]] || export WAYLAND_DISPLAY=$ALACRITTY_WAYLAND
@@ -141,6 +132,8 @@ else
 	export BROWSER=termux-open-url
 fi
 
-if [[ $TERM == linux ]]; then
-	export TERM=fbterm
-fi
+# No "export TERM=fbterm" on a linux VT. fbterm sets TERM itself
+# (src/lib/shell.cpp: setenv("TERM", term-is-linux ? "linux" : "fbterm")), so
+# inside fbterm the old test never even fired -- while on a bare console it
+# announced a 256-colour fbterm to a terminal that only speaks linux escape
+# sequences. That is why the Ctrl+Alt+F<n> console rendered unstyled.

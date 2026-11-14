@@ -1,27 +1,95 @@
 #! /bin/zsh
 
-# Usage: 500wallpaper [options]
+# Download fresh landscape wallpapers into ~/Images/Wallpapers.
+#
+# Source: Wallhaven (https://wallhaven.cc/help/api) -- no API key needed for
+# public SFW searches. Files are saved as *.jpeg because sway/change-wallpaper
+# globs only "$folder"/*.jpeg.
+#
+# ---------------------------------------------------------------------------
+# Why not 500px any more (tested 2026-11-14)
+# ---------------------------------------------------------------------------
+# The old `500wallpaper` npm tool hits https://api.500px.com/v1/photos, and the
+# whole api.500px.com host is now a blanket CloudFront 302 to https://500px.com/api
+# for every path and method, so v1 is gone for good.
+#
+# The site itself still has a working, unauthenticated hidden API:
+#   POST https://api-neo.500px.com/graphql
+#   headers: content-type: application/json
+#            x-500px-device-id: <any uuid>   # omit it and you get
+#                                            # "500: Internal Server Error" with
+#                                            # error_msg naming this header
+#   useful queries: editorsChoices(first, after, resourceTypes:[PHOTO],
+#                                  categories:[String!], excludeNsfw)
+#                   freshResources(first, after, qualityEnabled, categories, ...)
+#                   getPhotoById(id)
+# Introspection is disabled, but the query ASTs are recoverable from the
+# precompiled bundles under https://500px.com/assets/*.generated-*.js
+#
+# It is still useless for wallpapers: Photo.urls exposes size_600, size_1024,
+# size_2048, size_4k, small, medium and large, but the resolver only ever mints
+# two signed CDN URLs -- "?s=1" (600px) and "?s=2&w=1" (1024px). size_2048 and
+# size_4k return the *same* 1024px URL, verified by download: a 7436x5730
+# source came back as 1024x789. The signature covers the s/w query params, so
+# bumping them gives 403, there is no unsigned origin host, and every photo
+# reports downloadable: RESTRICT regardless of x-500px-platform. 1024px is the
+# hard anonymous cap, which is below this machine's 1920x1080 panel.
+# ---------------------------------------------------------------------------
 
-# Options:
-#   -V, --version                  output the version number
-#   -f, --feature <featureName>    photo stream to be retrieved
-#   -c, --category <categoryName>  category to return photos from (case sensitive, separate multiple values with a comma)
-#   -w, --width <minWidth>         minimum width of the photo to be downloaded
-#   -H, --height <minHeight>       minimum height of the photo to be downloaded
-#   -l, --landscape                the photo must be in landscape orientation
-#   -o, --output <fileName>        destination file name without extension
-#   -h, --help                     display help for command
+set -u
 
-# Features:
-#   popular, highest_rated, upcoming, editors, fresh_today, fresh_yesterday, fresh_week
+folder="$HOME/Images/Wallpapers"
+mkdir -p "$folder" || exit 1
 
-# Categories:
-#   Uncategorized, Abstract, Aerial, Animals, Black and White, Celebrities, City and Architecture, Commercial, Concert, Family, Fashion, Film, Fine Art, Food, Journalism, Landscapes, Macro, Nature, Night, Nude, People, Performing Arts, Sport, Still Life, Street, Transportation, Travel, Underwater, Urban Exploration, Wedding
+# Minimum acceptable size, and landscape only -- mirrors the old -H/-l flags.
+atleast="${WALLPAPER_ATLEAST:-1920x1080}"
 
-export PATH=$PATH:$HOME/.local/share/pnpm
-pushd "$HOME/Images/Wallpapers"
-typeset -a categories=("Fine Art" Abstract "Performing Arts" Landscapes Nature)
-for category in $categories; do
-	500wallpaper -H 2048 -l -c "$category" >/dev/null
+# Search terms, one wallpaper pulled per entry. These replace the old 500px
+# category names, which have no equivalent on Wallhaven ("fine art" and
+# "performing arts" match almost nothing there, so they map to broader tags).
+typeset -a queries=(painting abstract dance landscape nature)
+
+# categories=100 -> General only (no anime/people); purity=100 -> SFW only.
+api='https://wallhaven.cc/api/v1/search'
+typeset -a auth=()
+[[ -n "${WALLHAVEN_API_KEY:-}" ]] && auth=(-H "X-API-Key: ${WALLHAVEN_API_KEY}")
+
+for query in $queries; do
+	json=$(curl -sfG --max-time 30 "${auth[@]}" "$api" \
+		--data-urlencode "q=$query" \
+		--data-urlencode "atleast=$atleast" \
+		--data-urlencode 'categories=100' \
+		--data-urlencode 'purity=100' \
+		--data-urlencode 'ratios=landscape' \
+		--data-urlencode 'sorting=random') || {
+		print -u2 "getWallpaper: search failed for '$query'"
+		continue
+	}
+
+	# Only JPEGs: change-wallpaper ignores anything that is not *.jpeg.
+	# Pick the first candidate we have not already downloaded.
+	url=''
+	id=''
+	while IFS=$'\t' read -r cand_id cand_url; do
+		[[ -z $cand_id ]] && continue
+		[[ -e "$folder/wallhaven-$cand_id.jpeg" ]] && continue
+		id=$cand_id
+		url=$cand_url
+		break
+	done < <(print -r -- "$json" |
+		jq -r '.data[] | select(.file_type == "image/jpeg") | "\(.id)\t\(.path)"')
+
+	if [[ -z $url ]]; then
+		print "getWallpaper: nothing new for '$query'"
+		continue
+	fi
+
+	dest="$folder/wallhaven-$id.jpeg"
+	if curl -sf --max-time 120 -o "$dest.part" "$url"; then
+		mv -f "$dest.part" "$dest"
+		print "getWallpaper: $query -> ${dest:t}"
+	else
+		rm -f "$dest.part"
+		print -u2 "getWallpaper: download failed for '$query' ($url)"
+	fi
 done
-popd

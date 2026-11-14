@@ -2,7 +2,7 @@
 [
   {
     "height": 10, // Waybar height (to be removed for auto height)
-    "output": "!eDP-1",
+    "output": "!DP-1",
     "ipc": true,
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
@@ -12,12 +12,12 @@
   },
   {
     "height": 30, // Waybar height (to be removed for auto height)
-    "output": "eDP-1",
+    "output": "DP-1",
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
     "modules-center": ["sway/window"],
-    "modules-right": ["custom/gsconnect", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "sway/language", "tray"],
+    "modules-right": ["custom/gsconnect", "idle_inhibitor", "bluetooth", "pulseaudio", "network", "cpu", "memory", "temperature", "custom/brightness", "clock", "custom/language", "tray"],
 
     // Modules configuration
     "idle_inhibitor": {
@@ -33,8 +33,14 @@
     "sway/window": {
       "on-click" : "swaync-client -t"
     },
-    "sway/language": {
-      "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
+    "custom/language": {
+      // Not sway/language: that module cannot blank its label once it has shown
+      // a value, so returning to fr(vim) (which has no xkb short name, by design)
+      // left a stale "fr" on the bar. See waybar/language.sh.
+      "exec": "$HOME/.config/waybar/language.sh",
+      "interval": 1,
+      "signal": 8,
+      "on-click": "swaymsg input type:keyboard xkb_switch_layout next && pkill -RTMIN+8 waybar"
     },
     "clock": {
       "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -51,17 +57,30 @@
       "on-click": "kitty --start-as=fullscreen -- htop --sort-key PERCENT_MEM -H"
     },
 
-    "backlight": {
-      "format": "{percent}% {icon}",
-      "format-icons": ["", "", "", "", "", "", "", "", ""],
-      "on-scroll-up": "brightnessctl set 1%+",
-      "on-scroll-down": "brightnessctl set 1%-"
+    "temperature": {
+      // This host exposes no /sys/class/thermal/thermal_zone*, so the module's
+      // default source does not exist and it rendered nothing. k10temp's Tctl is
+      // the CPU package sensor. The PCI path is stable across reboots, whereas
+      // the hwmonN number is not, so address it via hwmon-path-abs.
+      "hwmon-path-abs": "/sys/devices/pci0000:00/0000:00:18.3/hwmon",
+      "input-filename": "temp1_input",
+      "critical-threshold": 85,
+      "format": "{temperatureC}°C {icon}",
+      "format-icons": ["", "", ""]
     },
-    "battery": {
-      "format": "{capacity}% {icon}",
-      "format-charging": "{capacity}% 󰂄",
-      "format-plugged": "{capacity}% ",
-      "format-icons": ["", "", "", "", ""]
+
+    "custom/brightness": {
+      // Replaces the built-in backlight module: this host has no
+      // /sys/class/backlight (external DisplayPort monitor), so brightness goes
+      // over DDC/CI instead. See waybar/brightness.sh.
+      "exec": "$HOME/.config/waybar/brightness.sh",
+      "return-type": "json",
+      "format": "{percentage}% {icon}",
+      "format-icons": ["", "", "", "", "", "", "", "", ""],
+      "interval": "once",
+      "signal": 9,
+      "on-scroll-up": "$HOME/.config/waybar/brightness.sh + 5",
+      "on-scroll-down": "$HOME/.config/waybar/brightness.sh - 5"
     },
     "network": {
       // "interface": "wlp2*", // (Optional) To force the use of this interface
@@ -83,6 +102,26 @@
       "tooltip": "{tooltip}",
       "interval": 30,
       "on-click": "gsconnect-preferences"
+    },
+    "bluetooth": {
+      // The controller is a Qualcomm device on the WiFi 7 card (usb 0489:e10a);
+      // the kernel already drives it, only bluez + bluez-utils (bluetoothd) were
+      // missing. PipeWire ships the bluez5 SPA plugin with SBC/AAC/aptX/LDAC/LC3
+      // out of the box, so a paired headset shows up as a sink by itself.
+      // {device_battery_percentage} additionally needs "Experimental = true"
+      // under [General] in /etc/bluetooth/main.conf.
+      "format": "\uf00af {status}",
+      "format-on": "\uf00af",
+      "format-off": "\uf00b2",
+      "format-disabled": "\uf00b2",
+      "format-no-controller": "\uf00b2",
+      "format-connected": "\uf00b1 {device_alias}",
+      "format-connected-battery": "\uf00b1 {device_alias} {device_battery_percentage}%",
+      "tooltip-format": "{controller_alias}\t{controller_address}",
+      "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+      "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+      "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+      "on-click": "kitty --app-id launcher bluetui"
     },
     "pulseaudio": {
       // "scroll-step": 1, // %, can be a float

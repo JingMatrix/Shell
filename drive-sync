@@ -3,13 +3,13 @@
 # Sync Google Drive files with my local machines using rclone
 
 ## Pull news change
-rclone copy -L --ignore-existing drive:Mathematics ~/Mathematics
-rclone copy -L --ignore-existing drive:Reading ~/Reading
+rclone copy -L --ignore-existing drive:Mathematics ~/Documents/Mathematics
+rclone copy -L --ignore-existing drive:Reading ~/Documents/Reading
 
 ## Upload local changes
-rclone -L sync ~/Mathematics drive:Mathematics
-rclone -L sync ~/Reading drive:Reading
+rclone -L sync ~/Documents/Mathematics drive:Mathematics
+rclone -L sync ~/Documents/Reading drive:Reading
 
 ## Backup to Seafile at cnrs
-rclone -L sync ~/Mathematics cnrs:Mathematics
-rclone -L sync ~/Reading cnrs:Reading
+rclone -L sync ~/Documents/Mathematics cnrs:Mathematics
+rclone -L sync ~/Documents/Reading cnrs:Reading

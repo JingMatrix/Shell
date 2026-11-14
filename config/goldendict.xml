@@ -128,6 +128,7 @@
    <enableSCToTWConversion>1</enableSCToTWConversion>
    <enableSCToHKConversion>1</enableSCToHKConversion>
    <enableTCToSCConversion>1</enableTCToSCConversion>
+   <enableJapaneseConversion>1</enableJapaneseConversion>
   </chinese>
   <romaji>
    <enable>0</enable>
@@ -183,7 +184,6 @@
  </programs>
  <mutedDictionaries/>
  <popupMutedDictionaries/>
- <dictionariesToReindex/>
  <preferences>
   <interfaceLanguage>fr_FR</interfaceLanguage>
   <interfaceFont>Noto Sans</interfaceFont>
@@ -202,6 +202,7 @@
   <enableTrayIcon>1</enableTrayIcon>
   <startToTray>1</startToTray>
   <closeToTray>1</closeToTray>
+  <showDockIcon>0</showDockIcon>
   <autoStart>1</autoStart>
   <doubleClickTranslates>1</doubleClickTranslates>
   <selectWordBySingleClick>1</selectWordBySingleClick>
@@ -251,6 +252,7 @@
    <text>selected_text</text>
    <word>word</word>
    <sentence>marked_sentence</sentence>
+   <addAudio>1</addAudio>
   </ankiConnectServer>
   <checkForNewReleases>0</checkForNewReleases>
   <disallowContentFromOtherSites>0</disallowContentFromOtherSites>
@@ -286,8 +288,8 @@
  <popupWindowGeometry2>AdnQywADAAAAAAA+AAAERwAAA/0AAAjYAAAAPgAABEcAAAP9AAAI2AAAAAAAAAAAB4AAAAA+AAAERwAAA/0AAAjY</popupWindowGeometry2>
  <pinPopupWindow>0</pinPopupWindow>
  <popupWindowAlwaysOnTop>0</popupWindowAlwaysOnTop>
- <mainWindowState>AAAA/wAAAAD9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAAAP////8AAACKAP///wAAAAEAAAC0AAAD9vwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAAEIAAAFFAAAAYwD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAQAAAY0AAAFSAAAAYwD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAAC5QAAAVMAAABjAP///wAAAwYAAAP2AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAALK/////wAAAAAAAAAA</mainWindowState>
- <mainWindowGeometry>AdnQywADAAAAAAAAAAAAAAAAA78AAAQ3AAAAAAAAAAAAAAO/AAAENwAAAAEAAAAAB4AAAAAAAAAAAAAAA78AAAQ3</mainWindowGeometry>
+ <mainWindowState>AAAA/wAAAAD9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAAAP////8AAACKAP///wAAAAEAAAC0AAAD2PwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAAEIAAAE8AAAAYwD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAQAAAYQAAAFHAAAAYwD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAAC0QAAAUkAAABjAP///wAAAwYAAAPYAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAALK/////wAAAAAAAAAA</mainWindowState>
+ <mainWindowGeometry>AdnQywADAAAAAAAAAAAAAAAAA78AAAQZAAAAAAAAAAAAAAO/AAAEGQAAAAAAAAAAB4AAAAAAAAAAAAAAA78AAAQZ</mainWindowGeometry>
  <dictInfoGeometry></dictInfoGeometry>
  <inspectorGeometry>AdnQywADAAAAAAAAAAAAAAAAB38AAAQ3AAAEGwAAAMoAAAXcAAAB9QAAAAACAAAAB4AAAAAAAAAAJAAAB38AAAQ3</inspectorGeometry>
  <dictionariesDialogGeometry>AdnQywADAAAAAACDAAAAuAAABbwAAALLAAAAgwAAALgAAAW8AAACywAAAAAAAAAABkAAAACDAAAAuAAABbwAAALL</dictionariesDialogGeometry>

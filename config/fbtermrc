@@ -1,0 +1,37 @@
+# ~/.fbtermrc -- fbterm 1.7 configuration (symlinked by update_symbolic_links.sh)
+#
+# fbterm writes a default copy of this file on first start if it is absent,
+# which is why the styling never appeared: there was nothing to style with.
+# Keys are exactly the long options of fbterm(1); unknown keys are ignored.
+# Invoke through the `fbterm` wrapper in .zprofile, not directly.
+
+# Fonts are resolved by fontconfig, in order, per glyph: the first family that
+# has the character wins. Hack Nerd Font Mono carries the powerlevel10k glyphs,
+# Noto Sans Mono CJK SC the Chinese in ~/Documents/Notes, AR PL UKai CN is the
+# kai fallback. Verify a family name with `fc-match '<name>'` before adding it:
+# fontconfig answers every query, so a typo silently degrades to Noto Sans.
+font-names=Hack Nerd Font Mono,Noto Sans Mono CJK SC,AR PL UKai CN
+
+# Pixel size, not points. The kernel VT font is 8x16; at 20px this console is
+# roughly 160x50 cells on the 1920x1080 panel instead of an unreadable 240x67.
+font-size=20
+
+# Indices into the 16 basic terminal colours, as with the -f/-b options.
+color-foreground=7
+color-background=0
+
+# Internally fbterm is UTF-8 and binds the locale encoding to Ctrl+Alt+F1;
+# these two get Ctrl+Alt+F2 and F3, for older Chinese text files.
+text-encodings=gbk,big5
+
+# CJK ambiguous-width characters render as full width, matching kitty.
+ambiguous-wide=yes
+
+# Keep TERM=fbterm (the default) so the 256-colour private sequences and the
+# "fbterm" terminfo entry are usable. Setting this to yes would report
+# TERM=linux and silently drop 256-colour support.
+term-is-linux=no
+
+# Block cursor, flashing at 500ms.
+cursor-shape=0
+cursor-interval=500

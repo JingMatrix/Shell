@@ -13,7 +13,7 @@ Therefore, the basic strategy should be considering the following things in orde
 	- you find them on online book websites which usually contains outlines in the item introduction part.
 3. Use `pdfgrep` for example: 
 ```sh
-pdfgrep --page-range=7-449 -n -P '\n\K(§|Chapter)' ~/Mathematics/Geometry\ and\ Topology/Complex\ Geometry/Complex\ Analytic\ and\ Differential\ Geometry.pdf > toc/DemaillyCADG
+pdfgrep --page-range=7-449 -n -P '\n\K(§|Chapter)' ~/Documents/Mathematics/Geometry\ and\ Topology/Complex\ Geometry/Complex\ Analytic\ and\ Differential\ Geometry.pdf > toc/DemaillyCADG
 ```
 4. Perform OCR manually, painful and not effcient.
 

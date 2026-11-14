@@ -1,4 +1,4 @@
-if executable('hostnamectl') && system("hostnamectl hostname") =~ "imt.xyz"
+if executable('hostnamectl') && system("hostnamectl hostname") =~ "matrix.xyz"
 	call jobstart("swaymsg input type:keyboard xkb_switch_layout 0")
 	autocmd FocusGained * call jobstart("swaymsg input type:keyboard xkb_switch_layout 0")
 	autocmd VimLeavePre * call jobstart("swaymsg input type:keyboard xkb_switch_layout 1")

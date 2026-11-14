@@ -1,5 +1,5 @@
 env:
-  NNN_BMS: a:~/Mathematics/Textbook_Archive;r:~/Mathematics/Research;c:~/Reading/Computer;g:~/Archives/Games;h:~/Reading/Hobby;v:/run/user/1000/gvfs
+  NNN_BMS: a:~/Documents/Mathematics/Textbook_Archive;r:~/Documents/Mathematics/Research;h:~/Documents/Reading/Hobby;v:/run/user/1000/gvfs
   NNN_PLUG: n:preview-note;f:fzcd;g:gsconnect;p:preview-tui
   NNN_OPTS: acQu
   NNN_TRASH: '1'

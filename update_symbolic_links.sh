@@ -86,14 +86,35 @@ fi
 mkdir -p $HOME/.config/zathura
 ln -sf $basedir/config/zathurarc $HOME/.config/zathura
 
+# nnn plugins. The 58 upstream plugins are installed separately with the
+# official `getplugs` plugin and are not tracked here; preview-note is ours,
+# referenced by NNN_PLUG in terminal/kitty.conf and terminal/alacritty.yml.
+mkdir -p $HOME/.config/nnn/plugins
+ln -sf $basedir/archives/preview-note $HOME/.config/nnn/plugins/
+
 # Config sway
 mkdir -p $HOME/.config/sway
 ln -sf $basedir/sway/sway.config $HOME/.config/sway/config
 current_host=$(hostnamectl hostname)
-if [[ $current_host == "imt.xyz" || $current_host == "matrix.xyz" ]]; then
+if [[ $current_host == "matrix.xyz" ]]; then
 	ln -sf $basedir/sway/fr_kb_sway.conf $HOME/.config/sway/input
 	mkdir -p $HOME/.xkb/symbols
 	ln -sf $basedir/sway/fr_kb.layout $HOME/.xkb/symbols/fr
 fi
 rm -rf $HOME/.config/waybar
 ln -sf $basedir/sway/waybar $HOME/.config/waybar
+
+# fbterm (framebuffer console, Ctrl+Alt+F1-F6). fbterm reads only ~/.fbtermrc
+# and writes a bare default there if it is missing, so this link is what makes
+# the console styling exist at all. The optional background image is NOT
+# tracked: drop a jpeg at ~/.config/fbterm/background.jpeg to enable it.
+mkdir -p $HOME/.config/fbterm
+ln -sf $basedir/config/fbtermrc $HOME/.fbtermrc
+
+# fontconfig. 09-archives-dirs.conf is what makes ~/Archives/Fonts visible at
+# all (fontconfig scans no such path by default); 64-prefer.conf came from
+# imt.xyz. Without the first one, terminal/kitty.conf's `symbol_map ... Kai`
+# silently falls back to Noto Sans, because fc-match answers every query.
+mkdir -p $HOME/.config/fontconfig/conf.d
+ln -sf $basedir/config/fontconfig/09-archives-dirs.conf $HOME/.config/fontconfig/conf.d/
+ln -sf $basedir/config/fontconfig/64-prefer.conf $HOME/.config/fontconfig/conf.d/

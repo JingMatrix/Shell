@@ -3,7 +3,7 @@
 if [[ -n $1 ]]; then
 	file=${1:a}
 else
-	local folder=$(shuf -n 1 -e $HOME/Reading/*)
+	local folder=$(shuf -n 1 -e $HOME/Documents/Reading/*)
 	local file=$(shuf -n 1 -e $folder/*)
 fi
 case ${file:e} in
